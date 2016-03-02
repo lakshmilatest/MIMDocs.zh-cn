@@ -26,14 +26,23 @@
   "4122a8fe62c5c953be0f604e4084e184f0a6bb4f": [
     "MIMDocs\\DeployUse\\journey-deploy-use.md"
   ],
+  "3534eb2ea3c1f967889db1a5eb5a0d2942614f03": [
+    "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-install-server-components.md"
+  ],
   "dca88164b94513b68a9bb4cfd0ae1da7e94f2c6c": [
     "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-install-server-components.md"
+  ],
+  "64a308b97ecf9dc8698733be741a3b680423a1a1": [
+    "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md"
   ],
   "e0a7a55df11909e3355ff0ef638b58ad40ba0166": [
     "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md"
   ],
   "930926ce2e98d3dc09de10c4dc146738ccca9291": [
     "MIMDocs\\DeployUse\\microsoft-identity-manager-deploy.md"
+  ],
+  "03d579187700930cac21c5569c3d91d8d488dd5e": [
+    "MIMDocs\\DeployUse\\preparing-corporate-identity-management-server.md"
   ],
   "e510ab606a76ef49a39c4f0eaf355c4e9d65efbe": [
     "MIMDocs\\DeployUse\\preparing-corporate-identity-management-server.md"
@@ -58,11 +67,17 @@
   "3522e4b533ad2bf7f5b03e425e639ab93ed2015c": [
     "MIMDocs\\DeployUse\\TOC.md"
   ],
+  "9af0320317c63d2e6f7420feb925f38e8cf490fd": [
+    "MIMDocs\\DeployUse\\working-with-identity-manager-hybrid-reporting.md"
+  ],
   "e72d61a367d82c08f07beb541b4ff5ecad17e847": [
     "MIMDocs\\DeployUse\\working-with-identity-manager-hybrid-reporting.md"
   ],
   "2301d1260c9e3a2f18e6bb5a203b3eba596a6321": [
     "MIMDocs\\DeployUse\\working-with-mim-certificate-manager.md"
+  ],
+  "27419290118ad73f59c868db4515bf4436823f64": [
+    "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md"
   ],
   "83cea8145864deb3eba5e1bc53b14a53d9d937e5": [
     "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md"
@@ -172,7 +187,7 @@
     "MIMDocs\\privileged-access-management-deployment-considerations.md"
   ],
   "e1f4b80e684a1074c6f0f244dc0374e070f5d494": [
-    "MIMDocs\\privileged-access-management-get-started.md"
+    "MIMDocs\\DeployUse\\privileged-access-management-get-started.md"
   ],
   "7bfee48962b953c83fcf69eca37e148831b7322d": [
     "MIMDocs\\privileged-access-management-operations.md"
@@ -304,28 +319,36 @@
     "MIMDocs\\set-up-self-service-password-reset-account-unlock.md"
   ],
   "88a42605d95ab1540935a549885dcea0237547bc": [
-    "MIMDocs\\media\\MIM_SSPR_workflow.jpg"
+    "MIMDocs\\media\\MIM_SSPR_workflow.jpg",
+    "MIMDocs\\DeployUse\\media\\MIM-SSPR-workflow.jpg"
   ],
   "7ec434bf74c833488130414bb563ce050dd858dc": [
-    "MIMDocs\\media\\MIM_SSPR_PwdResetAuthNworkflow.jpg"
+    "MIMDocs\\media\\MIM_SSPR_PwdResetAuthNworkflow.jpg",
+    "MIMDocs\\DeployUse\\media\\MIM-SSPR-PwdResetAuthNworkflow.jpg"
   ],
   "4ee7745a1fc0116503c52c0585d2f57be93c032e": [
-    "MIMDocs\\media\\MIM_SSPR_Azureportal.png"
+    "MIMDocs\\media\\MIM_SSPR_Azureportal.png",
+    "MIMDocs\\DeployUse\\media\\MIM-SSPR-Azureportal.png"
   ],
   "98580a3dcd4d4d6e166dfaa59af61ae8f9869077": [
-    "MIMDocs\\media\\MIM_SSPR_ManageButton.png"
+    "MIMDocs\\media\\MIM_SSPR_ManageButton.png",
+    "MIMDocs\\DeployUse\\media\\MIM-SSPR-ManageButton.png"
   ],
   "eb16bf2dbbe30b0919cdba186f097ee64c93993d": [
-    "MIMDocs\\media\\MIM_SSPR_Azure_MFA.png"
+    "MIMDocs\\media\\MIM_SSPR_Azure_MFA.png",
+    "MIMDocs\\DeployUse\\media\\MIM-SSPR-Azure-MFA.png"
   ],
   "f06bbd988080f2be18b0b8cfdcdbd343ef02d16a": [
-    "MIMDocs\\media\\MIM_SSPR_pFile.png"
+    "MIMDocs\\media\\MIM_SSPR_pFile.png",
+    "MIMDocs\\DeployUse\\media\\MIM-SSPR-pFile.png"
   ],
   "b6355f089a1e13e5f99415f6a4a6b4b6461043b9": [
-    "MIMDocs\\media\\MIM_SSPR_PhoneVerification.JPG"
+    "MIMDocs\\media\\MIM_SSPR_PhoneVerification.JPG",
+    "MIMDocs\\DeployUse\\media\\MIM-SSPR-PhoneVerification.JPG"
   ],
   "e5ed1583b31bdf6ce64d2e10c6433f851e3a6ca8": [
-    "MIMDocs\\media\\MIM_SSPR_PR1.JPG"
+    "MIMDocs\\media\\MIM_SSPR_PR1.JPG",
+    "MIMDocs\\DeployUse\\media\\MIM-SSPR-PR1.JPG"
   ],
   "cea2fd7f210e962825520e937926350c0f5e0f01": [
     "MIMDocs\\media\\MIM_SSPR_PR2.jpg"
@@ -390,6 +413,9 @@
   "3d011289ef303537b5062d999a686830c2da9d8e": [
     "MIMDocs\\topology-overview.md"
   ],
+  "16c897839f045515da91efbce08d8f4033d0252c": [
+    "MIMDocs\\Understand\\identity-manager-hybrid-reporting-azure.md"
+  ],
   "c4885302bbd3b0a75dd89c82f123f32cc8b93c1f": [
     "MIMDocs\\Understand\\identity-manager-hybrid-reporting-azure.md"
   ],
@@ -413,5 +439,112 @@
   ],
   "bbc144ed0ddc70ac4cd9031f87a4368bc40bcfff": [
     "MIMDocs\\media\\PAM-Azure-MFA-Activation-Image-2.png"
+  ],
+  "654d8d73d70e3a97280711ab65efd5ccdbef7807": [
+    "MIMDocs\\DeployUse\\media\\MIM-Install1.png"
+  ],
+  "2107373de6a5ad0115d29fd854338f1de1b014ff": [
+    "MIMDocs\\DeployUse\\media\\MIM-Install2.png"
+  ],
+  "b3bfc6c071bc0e9e9acd63c595a8e5211dac4892": [
+    "MIMDocs\\DeployUse\\media\\MIM-Install3.png"
+  ],
+  "604aa21115c1fc97046b7db7788d5e2b2a397f95": [
+    "MIMDocs\\DeployUse\\media\\MIM-Install4.png",
+    "MIMDocs\\DeployUse\\media\\MIM-UpgFIM3.png"
+  ],
+  "118d113aaea7645d7b4e43492ea26776ef750d18": [
+    "MIMDocs\\DeployUse\\media\\MIM-Install5.png",
+    "MIMDocs\\DeployUse\\media\\MIM-UpgFIM4.png"
+  ],
+  "90669e138cdb9e8bd3f650e9d7eb28d87d8a6abf": [
+    "MIMDocs\\DeployUse\\media\\MIM-Install6.png",
+    "MIMDocs\\DeployUse\\media\\MIM-UpgFIM7.png"
+  ],
+  "829797a06946c3fa724e6af395d084858cfa7157": [
+    "MIMDocs\\DeployUse\\media\\MIM-Install7.png"
+  ],
+  "e2495f3a3af2ca7b105187bca71dfeb665cc6135": [
+    "MIMDocs\\DeployUse\\media\\MIM-Install8.png",
+    "MIMDocs\\DeployUse\\media\\MIM-UpgSP1.png"
+  ],
+  "5f2c0134cddca6319c8df69af780633f3aeef482": [
+    "MIMDocs\\DeployUse\\media\\MIM-Install10.png"
+  ],
+  "5902b5dd9caf9a4505f491bdfd371054709d6135": [
+    "MIMDocs\\DeployUse\\media\\MIM-Install11.png",
+    "MIMDocs\\DeployUse\\media\\MIM-UpgSP6.png"
+  ],
+  "86552c75a719abf0e4adbe967a98d3a5cf3167c1": [
+    "MIMDocs\\DeployUse\\media\\MIM-Install12.png",
+    "MIMDocs\\DeployUse\\media\\MIM-UpgSP9.png"
+  ],
+  "5ee68a6ebd1a59b06c624da17ed0a27f8fef0dd2": [
+    "MIMDocs\\DeployUse\\media\\MIM-Install13.png"
+  ],
+  "8752c0063eb59f3849d5c8c2834f736b7bdbdf4c": [
+    "MIMDocs\\DeployUse\\media\\MIM-Install14.png",
+    "MIMDocs\\DeployUse\\media\\MIM-UpgSP15.png",
+    "MIMDocs\\DeployUse\\media\\MIM-UpgSP16.png"
+  ],
+  "5de3abcdc01ccfbf2cec14641636a1a487cef40d": [
+    "MIMDocs\\DeployUse\\media\\MIM-Install15.png",
+    "MIMDocs\\DeployUse\\media\\MIM-UpgSP17.png"
+  ],
+  "5209ec61770fd5fbf32f21df0f46081d58d5c67e": [
+    "MIMDocs\\DeployUse\\media\\MIM-Install16.png",
+    "MIMDocs\\DeployUse\\media\\MIM-UpgSP2.png"
+  ],
+  "7a0dcd58442a2d039d0173992124e04205475e68": [
+    "MIMDocs\\DeployUse\\media\\MIM-UpgFIM1.PNG"
+  ],
+  "dc2e89455a4ff0d4c93bb8f51372b324408547eb": [
+    "MIMDocs\\DeployUse\\media\\MIM-UpgFIM9.PNG"
+  ],
+  "e76ee275db2754bc2bef6b739b7a735a10d89fe0": [
+    "MIMDocs\\DeployUse\\media\\MIM-UpgSP4.png"
+  ],
+  "2fc132e83f6d875b2b872ece9db8f11b87c06c92": [
+    "MIMDocs\\DeployUse\\media\\MIM-UpgSP7.png"
+  ],
+  "a0c86274e483e6f9a8ffd55b1884e70cee24560d": [
+    "MIMDocs\\DeployUse\\media\\MIM-UpgSP8.PNG"
+  ],
+  "b1783547058b69272ea97171d8f75f7b95668d55": [
+    "MIMDocs\\DeployUse\\media\\MIM-UpgSP10.png"
+  ],
+  "faa4f7f1b6a3337d8dede5d3aff03a218eaa5376": [
+    "MIMDocs\\DeployUse\\media\\MIM-DeployWS2.png"
+  ],
+  "15fff62827350f7c645f5f6a3e027caa8d471a8c": [
+    "MIMDocs\\DeployUse\\media\\MIM-DeploySP1.png"
+  ],
+  "822dbf0d65d682e1ffd044f05f147e6cf1086779": [
+    "MIMDocs\\DeployUse\\media\\MIM-DeploySP2.png"
+  ],
+  "f21f8cd1fd0c882b8768f543e10487140c67dc1c": [
+    "MIMDocs\\DeployUse\\media\\MIM-Hybrid-passwordreset.jpg",
+    "MIMDocs\\Understand\\media\\MIM-Hybrid-passwordreset.jpg"
+  ],
+  "cb3fff029779bf2fc3efd96fe3f90f38f2129dc8": [
+    "MIMDocs\\DeployUse\\media\\MIM-SSPR-mobilephoneverification.JPG"
+  ],
+  "a83ceb5eb5779c23e5a3cac682c6e9c21a23f086": [
+    "MIMDocs\\DeployUse\\media\\MIM-SSPR-problemsloggingin.JPG"
+  ],
+  "5c7b53097393ddeeb4ae606c968a6d01ac1458bb": [
+    "MIMDocs\\DeployUse\\media\\MIM-SSPR-keepcurrentorsetnewpwd.JPG"
+  ],
+  "50edb5dfa84929fc614b735bcf3536b507655168": [
+    "MIMDocs\\DeployUse\\media\\MIM-SSPR-accountUnlock.JPG"
+  ],
+  "c8dfc3f1495deeaa1ff2239f44a454c2899358bd": [
+    "MIMDocs\\DeployUse\\media\\MIM-SSPR-account-unlock.JPG"
+  ],
+  "7c71abe1409d6676539927896ab4415a043d4340": [
+    "MIMDocs\\Understand\\media\\MIM-Hybrid-downloadReportAgent.jpg"
+  ],
+  "47bcebc7b3a069d07f32a5a211af8cb66ad3ce51": [
+    "MIMDocs\\Understand\\media\\MIM-Hybrid-howitworks.png"
   ]
 }
