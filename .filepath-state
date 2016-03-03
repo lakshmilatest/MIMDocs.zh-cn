@@ -1,18 +1,12 @@
 {
-  "c1e15c9548e46cbbff7810e63478074ceeb06152": [
-    "MIMDocs\\appendix-diagnosing-problems.md"
-  ],
-  "50e9a389a1b55fb6e90bb6523102d18926dfcbcb": [
-    "MIMDocs\\certificate-retrieval.md"
-  ],
   "ecbf791f8baceaec666df0bb58428a3439c0c0f3": [
     "MIMDocs\\configuring-mim-environment-for-pam.md"
   ],
-  "244790d9871b50bd5fed2e6804bbe16460b0b50c": [
-    "MIMDocs\\configuring-mim-for-pam.md"
-  ],
   "567b0f74626301097108d9488e811cfd22195daa": [
     "MIMDocs\\defining-roles-for-pam.md"
+  ],
+  "88a6fb4f89c5e7f3e5fd96090b9b58de5b136f17": [
+    "MIMDocs\\DeployUse\\certificate-manager-for-non-administrators.md"
   ],
   "82a4b43d59c5bb31968285b1412608b4238b42ee": [
     "MIMDocs\\DeployUse\\certificate-manager-for-non-administrators.md"
@@ -88,9 +82,6 @@
   "83cea8145864deb3eba5e1bc53b14a53d9d937e5": [
     "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md"
   ],
-  "53d4b2b6c4e93f78dd2b5d888855b2a85b54fb52": [
-    "MIMDocs\\document-revision-history.md"
-  ],
   "c1e99be11f6e20a17296aeaff30809cbe7e98b8b": [
     "MIMDocs\\environment-overview.md"
   ],
@@ -116,8 +107,8 @@
     "MIMDocs\\GetStarted\\TOC.md",
     "MIMDocs\\Troubleshoot\\TOC.md"
   ],
-  "35eaa0a4225770957cada16dd91f237bcc2ebcf6": [
-    "MIMDocs\\hardware-software-requirements.md"
+  "e02e93ae53b8db97e46d849e18e26291ffa2608f": [
+    "MIMDocs\\high-availability-disaster-recovery-considerations-bastion-environment.md"
   ],
   "b40760fec7397329db21765df449a21dc21f7635": [
     "MIMDocs\\high-availability-disaster-recovery-considerations-bastion-environment.md"
@@ -140,27 +131,8 @@
   "b208bfbb4990cc814ea5a22bc8d663af175eb6ed": [
     "MIMDocs\\media\\bastion6.png"
   ],
-  "f872a6d5a08da0fb483c1ca311b1f2a761f76bb6": [
-    "MIMDocs\\issues.md"
-  ],
-  "82666fd53de67dfb9b6b8d3e1d27297cc7f54b67": [
-    "MIMDocs\\journey-develop-applications.md"
-  ],
-  "3b02df0d67b27d4a37f8e3fba9e53659bd6f4d0e": [
-    "MIMDocs\\LizaNewTopic.md",
-    "MIMDocs\\LizaNewTopic2.md"
-  ],
-  "b289332b34a946e5dde3fce82f35de513efe1356": [
-    "MIMDocs\\markdown-template-for-caps.md"
-  ],
-  "57631fe16a669aa9eb88b9334c41da6b7ddd0f7d": [
-    "MIMDocs\\microsoft-identity-manager-2015-public-preview.md"
-  ],
   "25a102e10144aa0b4336a01b16921df280ae41d8": [
     "MIMDocs\\microsoft-identity-manager-2016-release-notes.md"
-  ],
-  "982d5ecd40baaf52580302e9eecd32fc2dc4db35": [
-    "MIMDocs\\microsoft-identity-manager.md"
   ],
   "113a261f979896f9f7e1bd750edf4510521a9a03": [
     "MIMDocs\\PlanDesign\\journey-plan-design.md"
@@ -177,32 +149,29 @@
   "36aa470a9638912716b489fa32bcd2b2468ddc9a": [
     "MIMDocs\\PlanDesign\\TOC.md"
   ],
+  "60e25f254eed153466c164c27bdd5f185e8c887c": [
+    "MIMDocs\\planning-bastion-environment.md"
+  ],
   "90087cab6a3618e327c208d5f9504b2fc3e4a429": [
     "MIMDocs\\planning-bastion-environment.md"
   ],
   "870e53cf04a6b23f96f763201f0387eb53fd523b": [
-    "MIMDocs\\media\\pam-group-policy-management.jpg",
-    "MIMDocs\\media\\PAM_GS_GroupPolicyManagement.png"
+    "MIMDocs\\media\\pam-group-policy-management.jpg"
   ],
   "c7f7b606729dd8176074a54cd4b9d0afeedda6eb": [
-    "MIMDocs\\media\\pam-group-policy-management-editor.jpg",
-    "MIMDocs\\media\\PAM_GS_Group_Policy_Management_Editor.png"
+    "MIMDocs\\media\\pam-group-policy-management-editor.jpg"
   ],
   "4fd41a23a6ee153c8e02615ff8ed09ccbe44fc51": [
-    "MIMDocs\\media\\pam-group-policy-management-editor2.jpg",
-    "MIMDocs\\media\\PAM_GS_Group_Policy_Management_Editor2.png"
-  ],
-  "70cf05e91c9bf94afe9f85d2da61b88a8f6c4b55": [
-    "MIMDocs\\principles-of-operation.md"
+    "MIMDocs\\media\\pam-group-policy-management-editor2.jpg"
   ],
   "aab1453791f2307fbd0b3013654812ba2aaf0fc5": [
     "MIMDocs\\privileged-access-management-deployment-considerations.md"
   ],
   "e1f4b80e684a1074c6f0f244dc0374e070f5d494": [
-    "MIMDocs\\DeployUse\\privileged-access-management-get-started.md"
+    "MIMDocs\\privileged-access-management-get-started.md"
   ],
-  "7bfee48962b953c83fcf69eca37e148831b7322d": [
-    "MIMDocs\\privileged-access-management-operations.md"
+  "3e39c7e49140e4ecd8475779dec4d3c977125082": [
+    "MIMDocs\\privileged-identity-management-for-active-directory-domain-services.md"
   ],
   "f197b3e43b7bc04e7554e65fd4857cea3705fedd": [
     "MIMDocs\\privileged-identity-management-for-active-directory-domain-services.md"
@@ -330,55 +299,35 @@
   "c49813b84aef1af60341c204dd69c67789cd3ad9": [
     "MIMDocs\\reference\\update-smartcard-status.md"
   ],
-  "6d51f789071730106ef192c34b0f2246fedac8f7": [
-    "MIMDocs\\set-up-self-service-password-reset-account-unlock.md"
-  ],
   "88a42605d95ab1540935a549885dcea0237547bc": [
-    "MIMDocs\\media\\MIM_SSPR_workflow.jpg",
     "MIMDocs\\DeployUse\\media\\MIM-SSPR-workflow.jpg"
   ],
   "7ec434bf74c833488130414bb563ce050dd858dc": [
-    "MIMDocs\\media\\MIM_SSPR_PwdResetAuthNworkflow.jpg",
     "MIMDocs\\DeployUse\\media\\MIM-SSPR-PwdResetAuthNworkflow.jpg"
   ],
   "4ee7745a1fc0116503c52c0585d2f57be93c032e": [
-    "MIMDocs\\media\\MIM_SSPR_Azureportal.png",
     "MIMDocs\\DeployUse\\media\\MIM-SSPR-Azureportal.png"
   ],
   "98580a3dcd4d4d6e166dfaa59af61ae8f9869077": [
-    "MIMDocs\\media\\MIM_SSPR_ManageButton.png",
     "MIMDocs\\DeployUse\\media\\MIM-SSPR-ManageButton.png"
   ],
   "eb16bf2dbbe30b0919cdba186f097ee64c93993d": [
-    "MIMDocs\\media\\MIM_SSPR_Azure_MFA.png",
     "MIMDocs\\DeployUse\\media\\MIM-SSPR-Azure-MFA.png"
   ],
   "f06bbd988080f2be18b0b8cfdcdbd343ef02d16a": [
-    "MIMDocs\\media\\MIM_SSPR_pFile.png",
     "MIMDocs\\DeployUse\\media\\MIM-SSPR-pFile.png"
   ],
   "b6355f089a1e13e5f99415f6a4a6b4b6461043b9": [
-    "MIMDocs\\media\\MIM_SSPR_PhoneVerification.JPG",
     "MIMDocs\\DeployUse\\media\\MIM-SSPR-PhoneVerification.JPG"
   ],
   "e5ed1583b31bdf6ce64d2e10c6433f851e3a6ca8": [
-    "MIMDocs\\media\\MIM_SSPR_PR1.JPG",
     "MIMDocs\\DeployUse\\media\\MIM-SSPR-PR1.JPG"
-  ],
-  "cea2fd7f210e962825520e937926350c0f5e0f01": [
-    "MIMDocs\\media\\MIM_SSPR_PR2.jpg"
-  ],
-  "b94b1edf371657ed5cd3b52c6620932f82d3cc86": [
-    "MIMDocs\\step-1-prepare-corp-domain-controller.md"
   ],
   "42d81b5eb53467a6ebc09d6caffa2e7136de599c": [
     "MIMDocs\\media\\PAM_GS_Select_WS2012.png"
   ],
   "fdb4b8fdbb941a0d49a933ab011a89cab9fa0d51": [
     "MIMDocs\\step-1-prepare-corp-domain.md"
-  ],
-  "247af07bdb758bf3675949a8047ed63ca6ef4da6": [
-    "MIMDocs\\step-2-prepare-priv-domain-controller.md"
   ],
   "978a45973d238da485b357ca4a0cf0c07358b519": [
     "MIMDocs\\step-2-prepare-the-priv-domain-controller.md"
@@ -428,9 +377,6 @@
   "85599cd4a385a40486cd3b6f0d37370f4127c076": [
     "MIMDocs\\toc.md"
   ],
-  "3d011289ef303537b5062d999a686830c2da9d8e": [
-    "MIMDocs\\topology-overview.md"
-  ],
   "16c897839f045515da91efbce08d8f4033d0252c": [
     "MIMDocs\\Understand\\identity-manager-hybrid-reporting-azure.md"
   ],
@@ -439,6 +385,9 @@
   ],
   "53b27ce9b1fcdd5b32efa771dbb02dae228b5871": [
     "MIMDocs\\Understand\\journey-understand-evaluate.md"
+  ],
+  "6adefc4ccfe8ec7382c9def09ef2a81d62d51b38": [
+    "MIMDocs\\Understand\\microsoft-identity-manager-2016.md"
   ],
   "4e81d11774ecab8ad3b4f6381e366de81d1896f9": [
     "MIMDocs\\Understand\\microsoft-identity-manager-2016.md"
@@ -449,8 +398,8 @@
   "881e8c48f33a3430e88d5b08165b067944f868ae": [
     "MIMDocs\\Understand\\TOC.md"
   ],
-  "66fd1738f06168c0c17312b770d8295375b8b960": [
-    "MIMDocs\\update-title-here.md"
+  "1c783bc90fedc324d89be8a6e28b83c539ce58d8": [
+    "MIMDocs\\use-azure-mfa-for-activation.md"
   ],
   "826285f56bd314897f15393e5998c75dcfaf8dac": [
     "MIMDocs\\use-azure-mfa-for-activation.md"
@@ -567,5 +516,17 @@
   ],
   "47bcebc7b3a069d07f32a5a211af8cb66ad3ce51": [
     "MIMDocs\\Understand\\media\\MIM-Hybrid-howitworks.png"
+  ],
+  "848b6f65a7ac40310563ae4abecc246f4ab6b9a5": [
+    "MIMDocs\\PlanDesign\\microsoft-identity-manager-capacity-planning-guide.md"
+  ],
+  "dfac0b5d3e79d5b2406a22b740fc606fb76df982": [
+    "MIMDocs\\PlanDesign\\topology-considerations.md"
+  ],
+  "ff89d0e903b04df6182700b474bc3aef1b0ba24d": [
+    "MIMDocs\\PlanDesign\\media\\MIM-topo-multitier.png"
+  ],
+  "c465fc00bd089b73b86daa72968dd67dab832aee": [
+    "MIMDocs\\PlanDesign\\media\\MIM-topo-multitier-multiservice.png"
   ]
 }
