@@ -5,13 +5,13 @@
  -------- | ----- 
  Total Files | 312
 [ Handoff Failed Files ](#handoff-failed-list)| 1
-[ Handoff Success Files ](#handoff-success-list)| 248
+[ Handoff Success Files ](#handoff-success-list)| 247
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 0
 [ Handback Failed Files ](#handback-failed-list)| 0
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 0
 [ In Sync Handback Files ](#insync-handback-success-list)| 0
-[ Ignored Files ](#ignored-list)| 63
+[ Ignored Files ](#ignored-list)| 64
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
  Source File | Status | Details 
@@ -85,7 +85,6 @@
  [MIMDocs\DeployUse\preparing-corporate-identity-management-server.md](https://github.com/Microsoft/MIMDocs-pr/blob/9411cf67965bff66b7e24b967f1b77332b02633e/MIMDocs/DeployUse/preparing-corporate-identity-management-server.md) | HandedOffSuccess | [Details](#03d579187700930cac21c5569c3d91d8d488dd5e67)
  [MIMDocs\DeployUse\preparing-domain.md](https://github.com/Microsoft/MIMDocs-pr/blob/9411cf67965bff66b7e24b967f1b77332b02633e/MIMDocs/DeployUse/preparing-domain.md) | HandedOffSuccess | [Details](#acdbac44553c3a75249f2d85ad61bab1c5cf4f7e68)
  [MIMDocs\DeployUse\Sample.md](https://github.com/Microsoft/MIMDocs-pr/blob/9411cf67965bff66b7e24b967f1b77332b02633e/MIMDocs/DeployUse/Sample.md) | HandedOffSuccess | [Details](#80f16e5851e574014594e4d93ba194beb2cc965370)
- [MIMDocs\DeployUse\TOC.md](https://github.com/Microsoft/MIMDocs-pr/blob/9411cf67965bff66b7e24b967f1b77332b02633e/MIMDocs/DeployUse/TOC.md) | HandedOffSuccess | [Details](#e80fccd3b1b49f01e863080db380e4609a627b3171)
  [MIMDocs\DeployUse\working-with-identity-manager-hybrid-reporting.md](https://github.com/Microsoft/MIMDocs-pr/blob/9411cf67965bff66b7e24b967f1b77332b02633e/MIMDocs/DeployUse/working-with-identity-manager-hybrid-reporting.md) | HandedOffSuccess | [Details](#9af0320317c63d2e6f7420feb925f38e8cf490fd72)
  [MIMDocs\DeployUse\working-with-mim-certificate-manager.md](https://github.com/Microsoft/MIMDocs-pr/blob/9411cf67965bff66b7e24b967f1b77332b02633e/MIMDocs/DeployUse/working-with-mim-certificate-manager.md) | HandedOffSuccess | [Details](#2301d1260c9e3a2f18e6bb5a203b3eba596a632173)
  [MIMDocs\DeployUse\working-with-self-service-password-reset.md](https://github.com/Microsoft/MIMDocs-pr/blob/9411cf67965bff66b7e24b967f1b77332b02633e/MIMDocs/DeployUse/working-with-self-service-password-reset.md) | HandedOffSuccess | [Details](#27419290118ad73f59c868db4515bf4436823f6474)
@@ -289,6 +288,7 @@
  [.openpublishing.build.ps1](https://github.com/Microsoft/MIMDocs-pr/blob/9411cf67965bff66b7e24b967f1b77332b02633e/.openpublishing.build.ps1) | Ignored | [Details](#9103b6933f2481864ecb6a66b76ba730e7f133b43)
  [.openpublishing.publish.config.json](https://github.com/Microsoft/MIMDocs-pr/blob/9411cf67965bff66b7e24b967f1b77332b02633e/.openpublishing.publish.config.json) | Ignored | [Details](#e2140f473f95e0bec10c3efefa750d72e6bec1f64)
  [MIMDocs\DeployUse\docfx.json](https://github.com/Microsoft/MIMDocs-pr/blob/9411cf67965bff66b7e24b967f1b77332b02633e/MIMDocs/DeployUse/docfx.json) | Ignored | [Details](#3f5bf9a5604969c2444cf301e2bfe62744c8559913)
+ [MIMDocs\DeployUse\TOC.md](https://github.com/Microsoft/MIMDocs-pr/blob/9411cf67965bff66b7e24b967f1b77332b02633e/MIMDocs/DeployUse/TOC.md) | Ignored | [Details](#e6bff1b117dd3fe5ed4b0cbf91365d104e61606671)
  [MIMDocs\docfx.json](https://github.com/Microsoft/MIMDocs-pr/blob/9411cf67965bff66b7e24b967f1b77332b02633e/MIMDocs/docfx.json) | Ignored | [Details](#e719b4e7102378f42d8290311857b68124a912f575)
  [MIMDocs\GetStarted\docfx.json](https://github.com/Microsoft/MIMDocs-pr/blob/9411cf67965bff66b7e24b967f1b77332b02633e/MIMDocs/GetStarted/docfx.json) | Ignored | [Details](#22b0b2198896708aed6b459c276604f9e363f91b81)
  [MIMDocs\index.html](https://github.com/Microsoft/MIMDocs-pr/blob/9411cf67965bff66b7e24b967f1b77332b02633e/MIMDocs/index.html) | Ignored | [Details](#7ff7d0b29fb9cd1ce8c68a66da4feb4e24a62d4187)
@@ -1250,12 +1250,12 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='e80fccd3b1b49f01e863080db380e4609a627b3171'></a> Source: [MIMDocs\DeployUse\TOC.md](https://github.com/Microsoft/MIMDocs-pr/blob/9411cf67965bff66b7e24b967f1b77332b02633e/MIMDocs/DeployUse/TOC.md)
-* Status: HandedOffSuccess
+##### <a name='e6bff1b117dd3fe5ed4b0cbf91365d104e61606671'></a> Source: [MIMDocs\DeployUse\TOC.md](https://github.com/Microsoft/MIMDocs-pr/blob/9411cf67965bff66b7e24b967f1b77332b02633e/MIMDocs/DeployUse/TOC.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [TOC.113860bc4c6a12249fc3a8d5e5f59fce2f8ca102.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/7c71b91f8a8a1020f27a4bb52b49f37adc120f32/ol-handoff/Microsoft/MIMDocs-pr.zh-cn/master/TOC.113860bc4c6a12249fc3a8d5e5f59fce2f8ca102.zh-cn.xlf)
-* Handoff Datetime: 2016-03-02 23:42:23
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
