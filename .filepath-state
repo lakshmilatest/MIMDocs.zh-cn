@@ -32,6 +32,9 @@
   "e0a7a55df11909e3355ff0ef638b58ad40ba0166": [
     "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md"
   ],
+  "174101615ee966388e79f37a9d276b4fbc7463a9": [
+    "MIMDocs\\DeployUse\\microsoft-identity-manager-deploy.md"
+  ],
   "930926ce2e98d3dc09de10c4dc146738ccca9291": [
     "MIMDocs\\DeployUse\\microsoft-identity-manager-deploy.md"
   ],
@@ -142,6 +145,9 @@
   ],
   "f6abe675b936b07e17a5d663f37e52821ea27271": [
     "MIMDocs\\PlanDesign\\microsoft-identity-manager-2016-supported-platforms.md"
+  ],
+  "23db485c8435fcc9bf1a642c0f71aeccfab6889c": [
+    "MIMDocs\\PlanDesign\\TOC.md"
   ],
   "dc80c1a80085ca99440b24792d86e3172d24e103": [
     "MIMDocs\\PlanDesign\\TOC.md"
@@ -517,8 +523,8 @@
   "47bcebc7b3a069d07f32a5a211af8cb66ad3ce51": [
     "MIMDocs\\Understand\\media\\MIM-Hybrid-howitworks.png"
   ],
-  "848b6f65a7ac40310563ae4abecc246f4ab6b9a5": [
-    "MIMDocs\\PlanDesign\\microsoft-identity-manager-capacity-planning-guide.md"
+  "cdec5df24f58a25b264f7ca8fe951f037c7d2925": [
+    "MIMDocs\\PlanDesign\\topology-considerations.md"
   ],
   "dfac0b5d3e79d5b2406a22b740fc606fb76df982": [
     "MIMDocs\\PlanDesign\\topology-considerations.md"
@@ -528,5 +534,8 @@
   ],
   "c465fc00bd089b73b86daa72968dd67dab832aee": [
     "MIMDocs\\PlanDesign\\media\\MIM-topo-multitier-multiservice.png"
+  ],
+  "6914fcd651afa80f3069339e2d1aa3adca91f0ed": [
+    "MIMDocs\\PlanDesign\\capacity-planning-guide.md"
   ]
 }
