@@ -20,17 +20,14 @@
   "4122a8fe62c5c953be0f604e4084e184f0a6bb4f": [
     "MIMDocs\\DeployUse\\journey-deploy-use.md"
   ],
-  "3534eb2ea3c1f967889db1a5eb5a0d2942614f03": [
-    "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-install-server-components.md"
-  ],
-  "dca88164b94513b68a9bb4cfd0ae1da7e94f2c6c": [
-    "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-install-server-components.md"
-  ],
   "64a308b97ecf9dc8698733be741a3b680423a1a1": [
     "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md"
   ],
   "e0a7a55df11909e3355ff0ef638b58ad40ba0166": [
     "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md"
+  ],
+  "1734bfe9450149c3b86bcf62305368ea86bea8e9": [
+    "MIMDocs\\DeployUse\\microsoft-identity-manager-deploy.md"
   ],
   "174101615ee966388e79f37a9d276b4fbc7463a9": [
     "MIMDocs\\DeployUse\\microsoft-identity-manager-deploy.md"
@@ -38,11 +35,8 @@
   "930926ce2e98d3dc09de10c4dc146738ccca9291": [
     "MIMDocs\\DeployUse\\microsoft-identity-manager-deploy.md"
   ],
-  "03d579187700930cac21c5569c3d91d8d488dd5e": [
-    "MIMDocs\\DeployUse\\preparing-corporate-identity-management-server.md"
-  ],
-  "e510ab606a76ef49a39c4f0eaf355c4e9d65efbe": [
-    "MIMDocs\\DeployUse\\preparing-corporate-identity-management-server.md"
+  "86922c78f84a88f04d95f26c07c1987f057ce520": [
+    "MIMDocs\\DeployUse\\preparing-domain.md"
   ],
   "acdbac44553c3a75249f2d85ad61bab1c5cf4f7e": [
     "MIMDocs\\DeployUse\\preparing-domain.md"
@@ -57,6 +51,9 @@
   "84421bf7f4ba657e685239fb27f4798a46485f71": [
     "MIMDocs\\DeployUse\\media\\150x150.png"
   ],
+  "4a8a890a20cbc1c47f7455b224f295f2de507775": [
+    "MIMDocs\\DeployUse\\TOC.md"
+  ],
   "e6bff1b117dd3fe5ed4b0cbf91365d104e616066": [
     "MIMDocs\\DeployUse\\TOC.md"
   ],
@@ -66,6 +63,9 @@
   "3522e4b533ad2bf7f5b03e425e639ab93ed2015c": [
     "MIMDocs\\DeployUse\\TOC.md"
   ],
+  "fdbaa1b6d84590c44f161e54d9fdac8fb7b8b660": [
+    "MIMDocs\\DeployUse\\working-with-identity-manager-hybrid-reporting.md"
+  ],
   "9af0320317c63d2e6f7420feb925f38e8cf490fd": [
     "MIMDocs\\DeployUse\\working-with-identity-manager-hybrid-reporting.md"
   ],
@@ -74,6 +74,9 @@
   ],
   "2301d1260c9e3a2f18e6bb5a203b3eba596a6321": [
     "MIMDocs\\DeployUse\\working-with-mim-certificate-manager.md"
+  ],
+  "7499bfa9db3e4f89e47376601d1216e9c2cf1afd": [
+    "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md"
   ],
   "27419290118ad73f59c868db4515bf4436823f64": [
     "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md"
@@ -412,59 +415,32 @@
   "bbc144ed0ddc70ac4cd9031f87a4368bc40bcfff": [
     "MIMDocs\\media\\PAM-Azure-MFA-Activation-Image-2.png"
   ],
-  "654d8d73d70e3a97280711ab65efd5ccdbef7807": [
-    "MIMDocs\\DeployUse\\media\\MIM-Install1.png"
-  ],
-  "2107373de6a5ad0115d29fd854338f1de1b014ff": [
-    "MIMDocs\\DeployUse\\media\\MIM-Install2.png"
-  ],
-  "b3bfc6c071bc0e9e9acd63c595a8e5211dac4892": [
-    "MIMDocs\\DeployUse\\media\\MIM-Install3.png"
-  ],
   "604aa21115c1fc97046b7db7788d5e2b2a397f95": [
-    "MIMDocs\\DeployUse\\media\\MIM-Install4.png",
     "MIMDocs\\DeployUse\\media\\MIM-UpgFIM3.png"
   ],
   "118d113aaea7645d7b4e43492ea26776ef750d18": [
-    "MIMDocs\\DeployUse\\media\\MIM-Install5.png",
     "MIMDocs\\DeployUse\\media\\MIM-UpgFIM4.png"
   ],
   "90669e138cdb9e8bd3f650e9d7eb28d87d8a6abf": [
-    "MIMDocs\\DeployUse\\media\\MIM-Install6.png",
     "MIMDocs\\DeployUse\\media\\MIM-UpgFIM7.png"
   ],
-  "829797a06946c3fa724e6af395d084858cfa7157": [
-    "MIMDocs\\DeployUse\\media\\MIM-Install7.png"
-  ],
   "e2495f3a3af2ca7b105187bca71dfeb665cc6135": [
-    "MIMDocs\\DeployUse\\media\\MIM-Install8.png",
     "MIMDocs\\DeployUse\\media\\MIM-UpgSP1.png"
   ],
-  "5f2c0134cddca6319c8df69af780633f3aeef482": [
-    "MIMDocs\\DeployUse\\media\\MIM-Install10.png"
-  ],
   "5902b5dd9caf9a4505f491bdfd371054709d6135": [
-    "MIMDocs\\DeployUse\\media\\MIM-Install11.png",
     "MIMDocs\\DeployUse\\media\\MIM-UpgSP6.png"
   ],
   "86552c75a719abf0e4adbe967a98d3a5cf3167c1": [
-    "MIMDocs\\DeployUse\\media\\MIM-Install12.png",
     "MIMDocs\\DeployUse\\media\\MIM-UpgSP9.png"
   ],
-  "5ee68a6ebd1a59b06c624da17ed0a27f8fef0dd2": [
-    "MIMDocs\\DeployUse\\media\\MIM-Install13.png"
-  ],
   "8752c0063eb59f3849d5c8c2834f736b7bdbdf4c": [
-    "MIMDocs\\DeployUse\\media\\MIM-Install14.png",
     "MIMDocs\\DeployUse\\media\\MIM-UpgSP15.png",
     "MIMDocs\\DeployUse\\media\\MIM-UpgSP16.png"
   ],
   "5de3abcdc01ccfbf2cec14641636a1a487cef40d": [
-    "MIMDocs\\DeployUse\\media\\MIM-Install15.png",
     "MIMDocs\\DeployUse\\media\\MIM-UpgSP17.png"
   ],
   "5209ec61770fd5fbf32f21df0f46081d58d5c67e": [
-    "MIMDocs\\DeployUse\\media\\MIM-Install16.png",
     "MIMDocs\\DeployUse\\media\\MIM-UpgSP2.png"
   ],
   "7a0dcd58442a2d039d0173992124e04205475e68": [
@@ -484,15 +460,6 @@
   ],
   "b1783547058b69272ea97171d8f75f7b95668d55": [
     "MIMDocs\\DeployUse\\media\\MIM-UpgSP10.png"
-  ],
-  "faa4f7f1b6a3337d8dede5d3aff03a218eaa5376": [
-    "MIMDocs\\DeployUse\\media\\MIM-DeployWS2.png"
-  ],
-  "15fff62827350f7c645f5f6a3e027caa8d471a8c": [
-    "MIMDocs\\DeployUse\\media\\MIM-DeploySP1.png"
-  ],
-  "822dbf0d65d682e1ffd044f05f147e6cf1086779": [
-    "MIMDocs\\DeployUse\\media\\MIM-DeploySP2.png"
   ],
   "f21f8cd1fd0c882b8768f543e10487140c67dc1c": [
     "MIMDocs\\DeployUse\\media\\MIM-Hybrid-passwordreset.jpg",
@@ -536,5 +503,26 @@
   ],
   "7ff7d0b29fb9cd1ce8c68a66da4feb4e24a62d41": [
     "MIMDocs\\index.html"
+  ],
+  "014e023f45f050a2fa9a47f5872de7c454ee7781": [
+    "MIMDocs\\DeployUse\\install-mim-service-portal.md"
+  ],
+  "2b1f0a313f2f00ae9490d869eb416dfec3ebe229": [
+    "MIMDocs\\DeployUse\\install-mim-sync.md"
+  ],
+  "5a757ccdc6d91df7cf473032860f55613a68a90e": [
+    "MIMDocs\\DeployUse\\install-mim-sync-ad-service.md"
+  ],
+  "e051581a6881198379957e310fbc13a7f0d5ea96": [
+    "MIMDocs\\DeployUse\\prepare-server-exchange.md"
+  ],
+  "d1d879181f0db889a2d133f182bcafc7c8745903": [
+    "MIMDocs\\DeployUse\\prepare-server-sharepoint.md"
+  ],
+  "386a4f5db58cde7cd45370b4c43d87fcf7d9ca6c": [
+    "MIMDocs\\DeployUse\\prepare-server-sql2014.md"
+  ],
+  "8e2035a6c1240ac84a4c809add71bad5c9551c78": [
+    "MIMDocs\\DeployUse\\prepare-server-ws2012r2.md"
   ]
 }
