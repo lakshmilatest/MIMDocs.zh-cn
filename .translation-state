@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "d3196e23a3bcacc8e563d6a16ec00be7be68fb6d",
+  "LastProcessedCommit": "abd8ccf8966cf2a672183fb23cbadef0a710297d",
   "LastTranslatedCommit": null,
   "Items": {
     "c1e15c9548e46cbbff7810e63478074ceeb06152": {
@@ -1544,18 +1544,18 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-09T00:00:22.5314801Z",
+      "HandoffDateTime": "2016-03-14T06:31:44.1801903Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
         "internal_error_message": "Handoff source file: MIMDocs\\privileged-access-management-get-started.md transformed failed.",
         "internal_error_retriable": false,
-        "exception_message": "Object reference not set to an instance of an object.",
-        "exception_type": "System.NullReferenceException",
-        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass9_0.<GetHandoffFiles>b__0(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 331",
+        "exception_message": "MIMDocs\\privileged-access-management-get-started.md file with commit id 9411cf67965bff66b7e24b967f1b77332b02633e can not be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 362",
         "extended_information": null
       },
-      "HandoffFailureTimes": 7,
+      "HandoffFailureTimes": 8,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,

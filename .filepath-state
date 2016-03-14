@@ -55,11 +55,7 @@
     "MIMDocs\\Understand\\Sample.md"
   ],
   "84421bf7f4ba657e685239fb27f4798a46485f71": [
-    "MIMDocs\\DeployUse\\media\\150x150.png",
-    "MIMDocs\\GetStarted\\media\\150x150.png",
-    "MIMDocs\\PlanDesign\\media\\150x150.png",
-    "MIMDocs\\Troubleshoot\\media\\150x150.png",
-    "MIMDocs\\Understand\\media\\150x150.png"
+    "MIMDocs\\DeployUse\\media\\150x150.png"
   ],
   "e6bff1b117dd3fe5ed4b0cbf91365d104e616066": [
     "MIMDocs\\DeployUse\\TOC.md"
