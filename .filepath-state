@@ -525,6 +525,9 @@
   "386a4f5db58cde7cd45370b4c43d87fcf7d9ca6c": [
     "MIMDocs\\DeployUse\\prepare-server-sql2014.md"
   ],
+  "2f7d202be96c8f4fc58747bb66bd3acfcaf4a13e": [
+    "MIMDocs\\DeployUse\\prepare-server-ws2012r2.md"
+  ],
   "8e2035a6c1240ac84a4c809add71bad5c9551c78": [
     "MIMDocs\\DeployUse\\prepare-server-ws2012r2.md"
   ]

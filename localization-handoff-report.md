@@ -6,15 +6,15 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [MIMDocs\index.html](https://github.com/Microsoft/MIMDocs-pr/blob/b8fdc643c64460a44d88a8b5c24d4473a0c98f26/MIMDocs/index.html) | HandedOffSuccess | [Details](#c96ec3952309a33e1724eadd69bb5c1b42b4e45487)
+ [MIMDocs\DeployUse\prepare-server-ws2012r2.md](https://github.com/Microsoft/MIMDocs-pr/blob/62aaaf9c6129a43d9b64444d976848449cdb589e/MIMDocs/DeployUse/prepare-server-ws2012r2.md) | HandedOffSuccess | [Details](#2f7d202be96c8f4fc58747bb66bd3acfcaf4a13e70)
  [MIMDocs\privileged-access-management-get-started.md](https://github.com/Microsoft/MIMDocs-pr/blob/9411cf67965bff66b7e24b967f1b77332b02633e/MIMDocs/privileged-access-management-get-started.md) | HandedOffFailed | [Details](#e1f4b80e684a1074c6f0f244dc0374e070f5d494237)
 
 ## Item Details
-##### <a name='c96ec3952309a33e1724eadd69bb5c1b42b4e45487'></a> Source: [MIMDocs\index.html](https://github.com/Microsoft/MIMDocs-pr/blob/b8fdc643c64460a44d88a8b5c24d4473a0c98f26/MIMDocs/index.html)
+##### <a name='2f7d202be96c8f4fc58747bb66bd3acfcaf4a13e70'></a> Source: [MIMDocs\DeployUse\prepare-server-ws2012r2.md](https://github.com/Microsoft/MIMDocs-pr/blob/62aaaf9c6129a43d9b64444d976848449cdb589e/MIMDocs/DeployUse/prepare-server-ws2012r2.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [c96ec3952309a33e1724eadd69bb5c1b42b4e454.html](https://github.com/Microsoft/EM.handoff/blob/7024cd0704b2d3b099bcfc43a2e5adaa294689df/ol-handoff/Microsoft/MIMDocs-pr.zh-cn/master/c96ec3952309a33e1724eadd69bb5c1b42b4e454.html)
-* Handoff Datetime: 2016-03-14 20:23:26
+* Handoff File: [prepare-server-ws2012r2.da656f0c9d903e4ab85b248548bd985fcaa0c74a.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/496cc15afb33ccfa66cbedfee4f50adbec777691/ol-handoff/Microsoft/MIMDocs-pr.zh-cn/master/prepare-server-ws2012r2.da656f0c9d903e4ab85b248548bd985fcaa0c74a.zh-cn.xlf)
+* Handoff Datetime: 2016-03-14 21:55:36
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
