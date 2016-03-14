@@ -5,13 +5,13 @@
  -------- | ----- 
  Total Files | 303
 [ Handoff Failed Files ](#handoff-failed-list)| 1
-[ Handoff Success Files ](#handoff-success-list)| 238
+[ Handoff Success Files ](#handoff-success-list)| 237
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 0
 [ Handback Failed Files ](#handback-failed-list)| 0
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 0
 [ In Sync Handback Files ](#insync-handback-success-list)| 0
-[ Ignored Files ](#ignored-list)| 64
+[ Ignored Files ](#ignored-list)| 65
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
  Source File | Status | Details 
@@ -83,7 +83,6 @@
  [MIMDocs\DeployUse\prepare-server-exchange.md](https://github.com/Microsoft/MIMDocs-pr/blob/e956afaa041025be3acc4f5a6213a2aea7453e1d/MIMDocs/DeployUse/prepare-server-exchange.md) | HandedOffSuccess | [Details](#e051581a6881198379957e310fbc13a7f0d5ea9667)
  [MIMDocs\DeployUse\prepare-server-sharepoint.md](https://github.com/Microsoft/MIMDocs-pr/blob/e956afaa041025be3acc4f5a6213a2aea7453e1d/MIMDocs/DeployUse/prepare-server-sharepoint.md) | HandedOffSuccess | [Details](#d1d879181f0db889a2d133f182bcafc7c874590368)
  [MIMDocs\DeployUse\prepare-server-sql2014.md](https://github.com/Microsoft/MIMDocs-pr/blob/e956afaa041025be3acc4f5a6213a2aea7453e1d/MIMDocs/DeployUse/prepare-server-sql2014.md) | HandedOffSuccess | [Details](#386a4f5db58cde7cd45370b4c43d87fcf7d9ca6c69)
- [MIMDocs\DeployUse\prepare-server-ws2012r2.md](https://github.com/Microsoft/MIMDocs-pr/blob/e956afaa041025be3acc4f5a6213a2aea7453e1d/MIMDocs/DeployUse/prepare-server-ws2012r2.md) | HandedOffSuccess | [Details](#8e2035a6c1240ac84a4c809add71bad5c9551c7870)
  [MIMDocs\DeployUse\preparing-domain.md](https://github.com/Microsoft/MIMDocs-pr/blob/e956afaa041025be3acc4f5a6213a2aea7453e1d/MIMDocs/DeployUse/preparing-domain.md) | HandedOffSuccess | [Details](#86922c78f84a88f04d95f26c07c1987f057ce52071)
  [MIMDocs\DeployUse\Sample.md](https://github.com/Microsoft/MIMDocs-pr/blob/1a14f9ebdec94d9e153f802b6c02fd229ba6f633/MIMDocs/DeployUse/Sample.md) | HandedOffSuccess | [Details](#80f16e5851e574014594e4d93ba194beb2cc965372)
  [MIMDocs\DeployUse\TOC.md](https://github.com/Microsoft/MIMDocs-pr/blob/e956afaa041025be3acc4f5a6213a2aea7453e1d/MIMDocs/DeployUse/TOC.md) | HandedOffSuccess | [Details](#4a8a890a20cbc1c47f7455b224f295f2de50777573)
@@ -281,6 +280,7 @@
  [MIMDocs\DeployUse\docfx.json](https://github.com/Microsoft/MIMDocs-pr/blob/b8fdc643c64460a44d88a8b5c24d4473a0c98f26/MIMDocs/DeployUse/docfx.json) | Ignored | [Details](#3f5bf9a5604969c2444cf301e2bfe62744c8559910)
  [MIMDocs\DeployUse\media\MIM-DeploySP2.png](https://github.com/Microsoft/MIMDocs-pr/blob/b8fdc643c64460a44d88a8b5c24d4473a0c98f26/MIMDocs/DeployUse/media/MIM-DeploySP2.png) | Ignored | [Details](#1480f345e6fc12e8ad603b50ef2781697be09b9717)
  [MIMDocs\DeployUse\media\MIM-DeployWS3.png](https://github.com/Microsoft/MIMDocs-pr/blob/b8fdc643c64460a44d88a8b5c24d4473a0c98f26/MIMDocs/DeployUse/media/MIM-DeployWS3.png) | Ignored | [Details](#319d2a29ee531bb584574825c60b698ab5a6357519)
+ [MIMDocs\DeployUse\prepare-server-ws2012r2.md](https://github.com/Microsoft/MIMDocs-pr/blob/b8fdc643c64460a44d88a8b5c24d4473a0c98f26/MIMDocs/DeployUse/prepare-server-ws2012r2.md) | Ignored | [Details](#2f7d202be96c8f4fc58747bb66bd3acfcaf4a13e70)
  [MIMDocs\docfx.json](https://github.com/Microsoft/MIMDocs-pr/blob/b8fdc643c64460a44d88a8b5c24d4473a0c98f26/MIMDocs/docfx.json) | Ignored | [Details](#e719b4e7102378f42d8290311857b68124a912f577)
  [MIMDocs\GetStarted\docfx.json](https://github.com/Microsoft/MIMDocs-pr/blob/b8fdc643c64460a44d88a8b5c24d4473a0c98f26/MIMDocs/GetStarted/docfx.json) | Ignored | [Details](#22b0b2198896708aed6b459c276604f9e363f91b82)
  [MIMDocs\media\AzureWebsiteIcons-enroll.png](https://github.com/Microsoft/MIMDocs-pr/blob/b8fdc643c64460a44d88a8b5c24d4473a0c98f26/MIMDocs/media/AzureWebsiteIcons-enroll.png) | Ignored | [Details](#5e9287dcfe1e1fad1a9320d535b75ce74b5275ed89)
@@ -1227,12 +1227,12 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='8e2035a6c1240ac84a4c809add71bad5c9551c7870'></a> Source: [MIMDocs\DeployUse\prepare-server-ws2012r2.md](https://github.com/Microsoft/MIMDocs-pr/blob/e956afaa041025be3acc4f5a6213a2aea7453e1d/MIMDocs/DeployUse/prepare-server-ws2012r2.md)
-* Status: HandedOffSuccess
+##### <a name='2f7d202be96c8f4fc58747bb66bd3acfcaf4a13e70'></a> Source: [MIMDocs\DeployUse\prepare-server-ws2012r2.md](https://github.com/Microsoft/MIMDocs-pr/blob/b8fdc643c64460a44d88a8b5c24d4473a0c98f26/MIMDocs/DeployUse/prepare-server-ws2012r2.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [prepare-server-ws2012r2.da656f0c9d903e4ab85b248548bd985fcaa0c74a.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/a3e71ddc36a57364236d11d768b75d679e1b8ddd/ol-handoff/Microsoft/MIMDocs-pr.zh-cn/master/prepare-server-ws2012r2.da656f0c9d903e4ab85b248548bd985fcaa0c74a.zh-cn.xlf)
-* Handoff Datetime: 2016-03-14 19:25:15
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
