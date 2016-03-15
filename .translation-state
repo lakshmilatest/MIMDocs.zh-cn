@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "62aaaf9c6129a43d9b64444d976848449cdb589e",
+  "LastProcessedCommit": "6597b118777079dabdacfe25304a6a178234f33f",
   "LastTranslatedCommit": null,
   "Items": {
     "c1e15c9548e46cbbff7810e63478074ceeb06152": {
@@ -1544,7 +1544,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-14T21:55:36.5852285Z",
+      "HandoffDateTime": "2016-03-15T15:24:30.5958511Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -1555,7 +1555,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 362",
         "extended_information": null
       },
-      "HandoffFailureTimes": 11,
+      "HandoffFailureTimes": 12,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -3903,7 +3903,8 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\media\\MIM-Install1.png",
       "HandoffReason": 2,
       "DependencyFrom": [
-        "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-install-server-components.md"
+        "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-install-server-components.md",
+        "MIMDocs\\DeployUse\\install-mim-sync.md"
       ],
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-Install1.png"
@@ -3933,7 +3934,8 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\media\\MIM-Install2.png",
       "HandoffReason": 2,
       "DependencyFrom": [
-        "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-install-server-components.md"
+        "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-install-server-components.md",
+        "MIMDocs\\DeployUse\\install-mim-sync.md"
       ],
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-Install2.png"
@@ -3963,7 +3965,8 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\media\\MIM-Install3.png",
       "HandoffReason": 2,
       "DependencyFrom": [
-        "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-install-server-components.md"
+        "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-install-server-components.md",
+        "MIMDocs\\DeployUse\\install-mim-sync.md"
       ],
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-Install3.png"
@@ -3994,7 +3997,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-install-server-components.md",
-        "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md"
+        "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md",
+        "MIMDocs\\DeployUse\\install-mim-sync.md"
       ],
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-Install4.png",
@@ -4026,7 +4030,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-install-server-components.md",
-        "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md"
+        "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md",
+        "MIMDocs\\DeployUse\\install-mim-sync.md"
       ],
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-Install5.png",
@@ -4058,7 +4063,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-install-server-components.md",
-        "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md"
+        "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md",
+        "MIMDocs\\DeployUse\\install-mim-sync.md"
       ],
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-Install6.png",
@@ -4089,7 +4095,8 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\media\\MIM-Install7.png",
       "HandoffReason": 2,
       "DependencyFrom": [
-        "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-install-server-components.md"
+        "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-install-server-components.md",
+        "MIMDocs\\DeployUse\\install-mim-sync.md"
       ],
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-Install7.png"
@@ -4120,7 +4127,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-install-server-components.md",
-        "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md"
+        "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md",
+        "MIMDocs\\DeployUse\\install-mim-sync.md"
       ],
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-Install8.png",
@@ -4151,7 +4159,8 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\media\\MIM-Install10.png",
       "HandoffReason": 2,
       "DependencyFrom": [
-        "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-install-server-components.md"
+        "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-install-server-components.md",
+        "MIMDocs\\DeployUse\\install-mim-service-portal.md"
       ],
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-Install10.png"
@@ -4182,7 +4191,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-install-server-components.md",
-        "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md"
+        "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md",
+        "MIMDocs\\DeployUse\\install-mim-service-portal.md"
       ],
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-Install11.png",
@@ -4214,7 +4224,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-install-server-components.md",
-        "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md"
+        "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md",
+        "MIMDocs\\DeployUse\\install-mim-service-portal.md"
       ],
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-Install12.png",
@@ -4245,7 +4256,8 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\media\\MIM-Install13.png",
       "HandoffReason": 2,
       "DependencyFrom": [
-        "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-install-server-components.md"
+        "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-install-server-components.md",
+        "MIMDocs\\DeployUse\\install-mim-service-portal.md"
       ],
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-Install13.png"
@@ -4276,7 +4288,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-install-server-components.md",
-        "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md"
+        "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md",
+        "MIMDocs\\DeployUse\\install-mim-service-portal.md"
       ],
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-Install14.png",
@@ -4309,7 +4322,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-install-server-components.md",
-        "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md"
+        "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md",
+        "MIMDocs\\DeployUse\\install-mim-service-portal.md"
       ],
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-Install15.png",
@@ -4341,7 +4355,8 @@
       "HandoffReason": 2,
       "DependencyFrom": [
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-install-server-components.md",
-        "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md"
+        "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md",
+        "MIMDocs\\DeployUse\\install-mim-service-portal.md"
       ],
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-Install16.png",
@@ -4608,7 +4623,8 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\media\\MIM-DeployWS2.png",
       "HandoffReason": 2,
       "DependencyFrom": [
-        "MIMDocs\\DeployUse\\preparing-corporate-identity-management-server.md"
+        "MIMDocs\\DeployUse\\preparing-corporate-identity-management-server.md",
+        "MIMDocs\\DeployUse\\prepare-server-ws2012r2.md"
       ],
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-DeployWS2.png"
@@ -4638,7 +4654,8 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\media\\MIM-DeploySP1.png",
       "HandoffReason": 2,
       "DependencyFrom": [
-        "MIMDocs\\DeployUse\\preparing-corporate-identity-management-server.md"
+        "MIMDocs\\DeployUse\\preparing-corporate-identity-management-server.md",
+        "MIMDocs\\DeployUse\\prepare-server-sharepoint.md"
       ],
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-DeploySP1.png"
@@ -6014,6 +6031,822 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.zh-cn\\master\\prepare-server-ws2012r2.da656f0c9d903e4ab85b248548bd985fcaa0c74a.zh-cn.xlf",
       "HandoffFileCommit": "496cc15afb33ccfa66cbedfee4f50adbec777691",
       "HandoffDateTime": "2016-03-14T21:55:36.5852285Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "1afdfd1c9a2f67d66c3d9dfd66d28034cf7f2108": {
+      "FileHash": "1afdfd1c9a2f67d66c3d9dfd66d28034cf7f2108",
+      "SourceFileCommit": "6597b118777079dabdacfe25304a6a178234f33f",
+      "SourceFilePath": "MIMDocs\\configuring-mim-environment-for-pam.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "MIMDocs\\configuring-mim-environment-for-pam.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.zh-cn\\master\\configuring-mim-environment-for-pam.3438abcf5146ffa6a2eccd93b9e645bd9d98114b.zh-cn.xlf",
+      "HandoffFileCommit": "b9d4d743e7070fd334c5e19ffe0c81fd213a36c7",
+      "HandoffDateTime": "2016-03-15T15:24:30.5958511Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "850bd9814cd79926b3ae7f197e3a0389a0500a4e": {
+      "FileHash": "850bd9814cd79926b3ae7f197e3a0389a0500a4e",
+      "SourceFileCommit": "6597b118777079dabdacfe25304a6a178234f33f",
+      "SourceFilePath": "MIMDocs\\DeployUse\\certificate-manager-for-non-administrators.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "MIMDocs\\DeployUse\\certificate-manager-for-non-administrators.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.zh-cn\\master\\certificate-manager-for-non-administrators.2d024c7e4e9ca80f8293c9ea15d5d5fe93a207d7.zh-cn.xlf",
+      "HandoffFileCommit": "b9d4d743e7070fd334c5e19ffe0c81fd213a36c7",
+      "HandoffDateTime": "2016-03-15T15:24:30.5958511Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "7347dff9f3cf48bc25c4450060e88d51b1973669": {
+      "FileHash": "7347dff9f3cf48bc25c4450060e88d51b1973669",
+      "SourceFileCommit": "6597b118777079dabdacfe25304a6a178234f33f",
+      "SourceFilePath": "MIMDocs\\DeployUse\\certificate-manager-for-software-certificates.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "MIMDocs\\DeployUse\\certificate-manager-for-software-certificates.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.zh-cn\\master\\certificate-manager-for-software-certificates.e916e294593565422260dde1e4f131163490451c.zh-cn.xlf",
+      "HandoffFileCommit": "b9d4d743e7070fd334c5e19ffe0c81fd213a36c7",
+      "HandoffDateTime": "2016-03-15T15:24:30.5958511Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "e206f385c3bfec23b56d39a7c410bbf698cd8290": {
+      "FileHash": "e206f385c3bfec23b56d39a7c410bbf698cd8290",
+      "SourceFileCommit": "6597b118777079dabdacfe25304a6a178234f33f",
+      "SourceFilePath": "MIMDocs\\DeployUse\\deploying-mim-password-change-notification-service-on-domain-controller.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "MIMDocs\\DeployUse\\deploying-mim-password-change-notification-service-on-domain-controller.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.zh-cn\\master\\deploying-mim-password-change-notification-service-on-domain-controller.afdb373626bbd0d122da747e9f586318deea2e70.zh-cn.xlf",
+      "HandoffFileCommit": "b9d4d743e7070fd334c5e19ffe0c81fd213a36c7",
+      "HandoffDateTime": "2016-03-15T15:24:30.5958511Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "1a1b7fa5a033b18b2370a5143dc8009b794f11a9": {
+      "FileHash": "1a1b7fa5a033b18b2370a5143dc8009b794f11a9",
+      "SourceFileCommit": "6597b118777079dabdacfe25304a6a178234f33f",
+      "SourceFilePath": "MIMDocs\\DeployUse\\install-mim-service-portal.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "MIMDocs\\DeployUse\\install-mim-service-portal.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.zh-cn\\master\\install-mim-service-portal.bc0a636322f2b40d28e326917fd5d60c15ff855e.zh-cn.xlf",
+      "HandoffFileCommit": "b9d4d743e7070fd334c5e19ffe0c81fd213a36c7",
+      "HandoffDateTime": "2016-03-15T15:24:30.5958511Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "868e84d203e6f9a9984260c316e51ccea19727cd": {
+      "FileHash": "868e84d203e6f9a9984260c316e51ccea19727cd",
+      "SourceFileCommit": "6597b118777079dabdacfe25304a6a178234f33f",
+      "SourceFilePath": "MIMDocs\\DeployUse\\install-mim-sync.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "MIMDocs\\DeployUse\\install-mim-sync.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.zh-cn\\master\\install-mim-sync.187fbc84d7198ab90d1445b38ea0a3044b228547.zh-cn.xlf",
+      "HandoffFileCommit": "b9d4d743e7070fd334c5e19ffe0c81fd213a36c7",
+      "HandoffDateTime": "2016-03-15T15:24:30.5958511Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "f0125a57d39988874098ffedf0b73716d3869f38": {
+      "FileHash": "f0125a57d39988874098ffedf0b73716d3869f38",
+      "SourceFileCommit": "6597b118777079dabdacfe25304a6a178234f33f",
+      "SourceFilePath": "MIMDocs\\DeployUse\\install-mim-sync-ad-service.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "MIMDocs\\DeployUse\\install-mim-sync-ad-service.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.zh-cn\\master\\install-mim-sync-ad-service.2a07d4547ca2bf0ca43e7ed04fa3bf20de000a33.zh-cn.xlf",
+      "HandoffFileCommit": "b9d4d743e7070fd334c5e19ffe0c81fd213a36c7",
+      "HandoffDateTime": "2016-03-15T15:24:30.5958511Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "1480f345e6fc12e8ad603b50ef2781697be09b97": {
+      "FileHash": "1480f345e6fc12e8ad603b50ef2781697be09b97",
+      "SourceFileCommit": "6597b118777079dabdacfe25304a6a178234f33f",
+      "SourceFilePath": "MIMDocs\\DeployUse\\media\\MIM-DeploySP2.png",
+      "HandoffReason": 2,
+      "DependencyFrom": [
+        "MIMDocs\\DeployUse\\prepare-server-sharepoint.md"
+      ],
+      "FilePathList": [
+        "MIMDocs\\DeployUse\\media\\MIM-DeploySP2.png"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.zh-cn\\master\\1480f345e6fc12e8ad603b50ef2781697be09b97.png",
+      "HandoffFileCommit": "b9d4d743e7070fd334c5e19ffe0c81fd213a36c7",
+      "HandoffDateTime": "2016-03-15T15:24:30.5958511Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "319d2a29ee531bb584574825c60b698ab5a63575": {
+      "FileHash": "319d2a29ee531bb584574825c60b698ab5a63575",
+      "SourceFileCommit": "6597b118777079dabdacfe25304a6a178234f33f",
+      "SourceFilePath": "MIMDocs\\DeployUse\\media\\MIM-DeployWS3.png",
+      "HandoffReason": 2,
+      "DependencyFrom": [
+        "MIMDocs\\DeployUse\\prepare-server-ws2012r2.md"
+      ],
+      "FilePathList": [
+        "MIMDocs\\DeployUse\\media\\MIM-DeployWS3.png"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.zh-cn\\master\\319d2a29ee531bb584574825c60b698ab5a63575.png",
+      "HandoffFileCommit": "b9d4d743e7070fd334c5e19ffe0c81fd213a36c7",
+      "HandoffDateTime": "2016-03-15T15:24:30.5958511Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "f41c8e546c037de1f8c0002d5448b4cf2ad7ed4d": {
+      "FileHash": "f41c8e546c037de1f8c0002d5448b4cf2ad7ed4d",
+      "SourceFileCommit": "6597b118777079dabdacfe25304a6a178234f33f",
+      "SourceFilePath": "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.zh-cn\\master\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.436268391a37f93654c5a63fc781f1eae0c91603.zh-cn.xlf",
+      "HandoffFileCommit": "b9d4d743e7070fd334c5e19ffe0c81fd213a36c7",
+      "HandoffDateTime": "2016-03-15T15:24:30.5958511Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "83fc514aa90cedb09773af2382681a8a9c540cd7": {
+      "FileHash": "83fc514aa90cedb09773af2382681a8a9c540cd7",
+      "SourceFileCommit": "6597b118777079dabdacfe25304a6a178234f33f",
+      "SourceFilePath": "MIMDocs\\DeployUse\\microsoft-identity-manager-deploy.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "MIMDocs\\DeployUse\\microsoft-identity-manager-deploy.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.zh-cn\\master\\microsoft-identity-manager-deploy.44247d56914b6ca85c7193b74b9004ace0e1246d.zh-cn.xlf",
+      "HandoffFileCommit": "b9d4d743e7070fd334c5e19ffe0c81fd213a36c7",
+      "HandoffDateTime": "2016-03-15T15:24:30.5958511Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "75e66230764d8375b945d4174b362b044faa8142": {
+      "FileHash": "75e66230764d8375b945d4174b362b044faa8142",
+      "SourceFileCommit": "6597b118777079dabdacfe25304a6a178234f33f",
+      "SourceFilePath": "MIMDocs\\DeployUse\\prepare-server-exchange.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "MIMDocs\\DeployUse\\prepare-server-exchange.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.zh-cn\\master\\prepare-server-exchange.62b650aec624862b1ad85b574bfdb8525ebc36e5.zh-cn.xlf",
+      "HandoffFileCommit": "b9d4d743e7070fd334c5e19ffe0c81fd213a36c7",
+      "HandoffDateTime": "2016-03-15T15:24:30.5958511Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "1f22f09075ce2d82690b106d60b83ce6607012f4": {
+      "FileHash": "1f22f09075ce2d82690b106d60b83ce6607012f4",
+      "SourceFileCommit": "6597b118777079dabdacfe25304a6a178234f33f",
+      "SourceFilePath": "MIMDocs\\DeployUse\\prepare-server-sharepoint.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "MIMDocs\\DeployUse\\prepare-server-sharepoint.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.zh-cn\\master\\prepare-server-sharepoint.ea9bf41d1869c4bf8841649fee7599cbc80b640e.zh-cn.xlf",
+      "HandoffFileCommit": "b9d4d743e7070fd334c5e19ffe0c81fd213a36c7",
+      "HandoffDateTime": "2016-03-15T15:24:30.5958511Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "2229f35a87f6949bc45d58aa618a3aa3d111fd7c": {
+      "FileHash": "2229f35a87f6949bc45d58aa618a3aa3d111fd7c",
+      "SourceFileCommit": "6597b118777079dabdacfe25304a6a178234f33f",
+      "SourceFilePath": "MIMDocs\\DeployUse\\prepare-server-sql2014.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "MIMDocs\\DeployUse\\prepare-server-sql2014.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.zh-cn\\master\\prepare-server-sql2014.908ce04c42d7be500304a71be06bc4b1acfdd6b7.zh-cn.xlf",
+      "HandoffFileCommit": "b9d4d743e7070fd334c5e19ffe0c81fd213a36c7",
+      "HandoffDateTime": "2016-03-15T15:24:30.5958511Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "75c507e63dba9385ddfc47505cb719123d60391e": {
+      "FileHash": "75c507e63dba9385ddfc47505cb719123d60391e",
+      "SourceFileCommit": "6597b118777079dabdacfe25304a6a178234f33f",
+      "SourceFilePath": "MIMDocs\\DeployUse\\prepare-server-ws2012r2.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "MIMDocs\\DeployUse\\prepare-server-ws2012r2.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.zh-cn\\master\\prepare-server-ws2012r2.da656f0c9d903e4ab85b248548bd985fcaa0c74a.zh-cn.xlf",
+      "HandoffFileCommit": "b9d4d743e7070fd334c5e19ffe0c81fd213a36c7",
+      "HandoffDateTime": "2016-03-15T15:24:30.5958511Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "4f8660f09d266700f43024de37ce9e4c6916e7a2": {
+      "FileHash": "4f8660f09d266700f43024de37ce9e4c6916e7a2",
+      "SourceFileCommit": "6597b118777079dabdacfe25304a6a178234f33f",
+      "SourceFilePath": "MIMDocs\\DeployUse\\preparing-domain.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "MIMDocs\\DeployUse\\preparing-domain.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.zh-cn\\master\\preparing-domain.9b77cd90d5739c58d60a5f1157edad1db6f26bb3.zh-cn.xlf",
+      "HandoffFileCommit": "b9d4d743e7070fd334c5e19ffe0c81fd213a36c7",
+      "HandoffDateTime": "2016-03-15T15:24:30.5958511Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "f3dc4a9fee19b340b354e72f4b3873f2d58a9907": {
+      "FileHash": "f3dc4a9fee19b340b354e72f4b3873f2d58a9907",
+      "SourceFileCommit": "6597b118777079dabdacfe25304a6a178234f33f",
+      "SourceFilePath": "MIMDocs\\DeployUse\\TOC.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "MIMDocs\\DeployUse\\TOC.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.zh-cn\\master\\TOC.113860bc4c6a12249fc3a8d5e5f59fce2f8ca102.zh-cn.xlf",
+      "HandoffFileCommit": "b9d4d743e7070fd334c5e19ffe0c81fd213a36c7",
+      "HandoffDateTime": "2016-03-15T15:24:30.5958511Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "69f2820af734179ada6ae5d6e58beecd45b6fdfd": {
+      "FileHash": "69f2820af734179ada6ae5d6e58beecd45b6fdfd",
+      "SourceFileCommit": "6597b118777079dabdacfe25304a6a178234f33f",
+      "SourceFilePath": "MIMDocs\\DeployUse\\working-with-identity-manager-hybrid-reporting.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "MIMDocs\\DeployUse\\working-with-identity-manager-hybrid-reporting.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.zh-cn\\master\\working-with-identity-manager-hybrid-reporting.5a9babf73d10bd3782be289eab3b82b139127433.zh-cn.xlf",
+      "HandoffFileCommit": "b9d4d743e7070fd334c5e19ffe0c81fd213a36c7",
+      "HandoffDateTime": "2016-03-15T15:24:30.5958511Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "dae44eea591f49901422ad00448867aa64612cc0": {
+      "FileHash": "dae44eea591f49901422ad00448867aa64612cc0",
+      "SourceFileCommit": "6597b118777079dabdacfe25304a6a178234f33f",
+      "SourceFilePath": "MIMDocs\\DeployUse\\working-with-mim-certificate-manager.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "MIMDocs\\DeployUse\\working-with-mim-certificate-manager.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.zh-cn\\master\\working-with-mim-certificate-manager.96aa090a3f47ac4d3cab460f5cd884461f8c2180.zh-cn.xlf",
+      "HandoffFileCommit": "b9d4d743e7070fd334c5e19ffe0c81fd213a36c7",
+      "HandoffDateTime": "2016-03-15T15:24:30.5958511Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "6296234e86d2187fb4278e691f227e396b4983d8": {
+      "FileHash": "6296234e86d2187fb4278e691f227e396b4983d8",
+      "SourceFileCommit": "6597b118777079dabdacfe25304a6a178234f33f",
+      "SourceFilePath": "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.zh-cn\\master\\working-with-self-service-password-reset.bcd57dd12a02054bccbba77422a81b03c5e3b624.zh-cn.xlf",
+      "HandoffFileCommit": "b9d4d743e7070fd334c5e19ffe0c81fd213a36c7",
+      "HandoffDateTime": "2016-03-15T15:24:30.5958511Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "3fefd148b171439cc1ab1fbbc3cbf8bf6d99b3ec": {
+      "FileHash": "3fefd148b171439cc1ab1fbbc3cbf8bf6d99b3ec",
+      "SourceFileCommit": "6597b118777079dabdacfe25304a6a178234f33f",
+      "SourceFilePath": "MIMDocs\\index.html",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "MIMDocs\\index.html"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.zh-cn\\master\\3fefd148b171439cc1ab1fbbc3cbf8bf6d99b3ec.html",
+      "HandoffFileCommit": "b9d4d743e7070fd334c5e19ffe0c81fd213a36c7",
+      "HandoffDateTime": "2016-03-15T15:24:30.5958511Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "23c1930dcb1c37d256d0af6f14458e6ce8812ffa": {
+      "FileHash": "23c1930dcb1c37d256d0af6f14458e6ce8812ffa",
+      "SourceFileCommit": "6597b118777079dabdacfe25304a6a178234f33f",
+      "SourceFilePath": "MIMDocs\\PlanDesign\\capacity-planning-guide.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "MIMDocs\\PlanDesign\\capacity-planning-guide.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.zh-cn\\master\\capacity-planning-guide.a5b5577289101cd375376319cbd1fa3f32f4d38f.zh-cn.xlf",
+      "HandoffFileCommit": "b9d4d743e7070fd334c5e19ffe0c81fd213a36c7",
+      "HandoffDateTime": "2016-03-15T15:24:30.5958511Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "1ba05ad12ab9da3513881ea5964c8514c6defd12": {
+      "FileHash": "1ba05ad12ab9da3513881ea5964c8514c6defd12",
+      "SourceFileCommit": "6597b118777079dabdacfe25304a6a178234f33f",
+      "SourceFilePath": "MIMDocs\\PlanDesign\\microsoft-identity-manager-2016-supported-platforms.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "MIMDocs\\PlanDesign\\microsoft-identity-manager-2016-supported-platforms.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.zh-cn\\master\\microsoft-identity-manager-2016-supported-platforms.4b048f6545582058fc7c39478e8dcee91c096f40.zh-cn.xlf",
+      "HandoffFileCommit": "b9d4d743e7070fd334c5e19ffe0c81fd213a36c7",
+      "HandoffDateTime": "2016-03-15T15:24:30.5958511Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "f6e7f89affbc8d133ad220b8fce233127f09a4f7": {
+      "FileHash": "f6e7f89affbc8d133ad220b8fce233127f09a4f7",
+      "SourceFileCommit": "6597b118777079dabdacfe25304a6a178234f33f",
+      "SourceFilePath": "MIMDocs\\PlanDesign\\TOC.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "MIMDocs\\PlanDesign\\TOC.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.zh-cn\\master\\TOC.4ef4520be73ef9e7aa69c2f08e700c80a68a239d.zh-cn.xlf",
+      "HandoffFileCommit": "b9d4d743e7070fd334c5e19ffe0c81fd213a36c7",
+      "HandoffDateTime": "2016-03-15T15:24:30.5958511Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "58e3789177659652ef6ff9982f1a19f7a8161325": {
+      "FileHash": "58e3789177659652ef6ff9982f1a19f7a8161325",
+      "SourceFileCommit": "6597b118777079dabdacfe25304a6a178234f33f",
+      "SourceFilePath": "MIMDocs\\PlanDesign\\topology-considerations.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "MIMDocs\\PlanDesign\\topology-considerations.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.zh-cn\\master\\topology-considerations.d6cd599c7ba227a86e53f481eef3d2a96ce028cd.zh-cn.xlf",
+      "HandoffFileCommit": "b9d4d743e7070fd334c5e19ffe0c81fd213a36c7",
+      "HandoffDateTime": "2016-03-15T15:24:30.5958511Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "1a56fce5b065da09db5f7d8b617b8f3b88b77af2": {
+      "FileHash": "1a56fce5b065da09db5f7d8b617b8f3b88b77af2",
+      "SourceFileCommit": "6597b118777079dabdacfe25304a6a178234f33f",
+      "SourceFilePath": "MIMDocs\\reference\\toc.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "MIMDocs\\reference\\toc.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.zh-cn\\master\\toc.593e7022daca6d9da4dae7c1e4324df430b1adb4.zh-cn.xlf",
+      "HandoffFileCommit": "b9d4d743e7070fd334c5e19ffe0c81fd213a36c7",
+      "HandoffDateTime": "2016-03-15T15:24:30.5958511Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "69e2b7c612644acbaac43ab7c5acc598eb29762e": {
+      "FileHash": "69e2b7c612644acbaac43ab7c5acc598eb29762e",
+      "SourceFileCommit": "6597b118777079dabdacfe25304a6a178234f33f",
+      "SourceFilePath": "MIMDocs\\Understand\\identity-manager-hybrid-reporting-azure.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "MIMDocs\\Understand\\identity-manager-hybrid-reporting-azure.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.zh-cn\\master\\identity-manager-hybrid-reporting-azure.50c26252fc76f6c50be4c477e24cfaf05cf3c4c7.zh-cn.xlf",
+      "HandoffFileCommit": "b9d4d743e7070fd334c5e19ffe0c81fd213a36c7",
+      "HandoffDateTime": "2016-03-15T15:24:30.5958511Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "3f12160c8acd643d00a41ef81ce41e65441c3e85": {
+      "FileHash": "3f12160c8acd643d00a41ef81ce41e65441c3e85",
+      "SourceFileCommit": "6597b118777079dabdacfe25304a6a178234f33f",
+      "SourceFilePath": "MIMDocs\\Understand\\microsoft-identity-manager-2016.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "MIMDocs\\Understand\\microsoft-identity-manager-2016.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.zh-cn\\master\\microsoft-identity-manager-2016.c859ce21f65f43a82f84385a63d9b72e566e0aa6.zh-cn.xlf",
+      "HandoffFileCommit": "b9d4d743e7070fd334c5e19ffe0c81fd213a36c7",
+      "HandoffDateTime": "2016-03-15T15:24:30.5958511Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "36580ae1c22c6be6a42a531603d4c49764627277": {
+      "FileHash": "36580ae1c22c6be6a42a531603d4c49764627277",
+      "SourceFileCommit": "6597b118777079dabdacfe25304a6a178234f33f",
+      "SourceFilePath": "MIMDocs\\Understand\\TOC.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "MIMDocs\\Understand\\TOC.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.zh-cn\\master\\TOC.cf3c9303083fb125b50bea7db798a930a73afc51.zh-cn.xlf",
+      "HandoffFileCommit": "b9d4d743e7070fd334c5e19ffe0c81fd213a36c7",
+      "HandoffDateTime": "2016-03-15T15:24:30.5958511Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
