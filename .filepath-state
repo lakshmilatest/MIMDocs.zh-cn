@@ -29,6 +29,9 @@
   "8c20cf7d5872afa659089d2842f1cf7b51c61f07": [
     "MIMDocs\\DeployUse\\deploying-mim-password-change-notification-service-on-domain-controller.md"
   ],
+  "e5b397b4000ea9165f09e854fa4197774b29e717": [
+    "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md"
+  ],
   "f41c8e546c037de1f8c0002d5448b4cf2ad7ed4d": [
     "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md"
   ],
@@ -84,6 +87,9 @@
   "3522e4b533ad2bf7f5b03e425e639ab93ed2015c": [
     "MIMDocs\\DeployUse\\TOC.md"
   ],
+  "0799e6e808dfbbda330111a63055d77424424ef3": [
+    "MIMDocs\\DeployUse\\working-with-identity-manager-hybrid-reporting.md"
+  ],
   "69f2820af734179ada6ae5d6e58beecd45b6fdfd": [
     "MIMDocs\\DeployUse\\working-with-identity-manager-hybrid-reporting.md"
   ],
@@ -101,6 +107,9 @@
   ],
   "2301d1260c9e3a2f18e6bb5a203b3eba596a6321": [
     "MIMDocs\\DeployUse\\working-with-mim-certificate-manager.md"
+  ],
+  "66789e1c31489fbe45c0b806f6fc644b1ff84772": [
+    "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md"
   ],
   "6296234e86d2187fb4278e691f227e396b4983d8": [
     "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md"
@@ -346,14 +355,23 @@
   "7ec434bf74c833488130414bb563ce050dd858dc": [
     "MIMDocs\\DeployUse\\media\\MIM-SSPR-PwdResetAuthNworkflow.jpg"
   ],
+  "05c612cab12ab17981567ac30a24c8f056ac4399": [
+    "MIMDocs\\DeployUse\\media\\MIM-SSPR-Azureportal.png"
+  ],
   "4ee7745a1fc0116503c52c0585d2f57be93c032e": [
     "MIMDocs\\DeployUse\\media\\MIM-SSPR-Azureportal.png"
   ],
   "98580a3dcd4d4d6e166dfaa59af61ae8f9869077": [
     "MIMDocs\\DeployUse\\media\\MIM-SSPR-ManageButton.png"
   ],
+  "773d7c2a80e98ba6e602103140f6828886458e35": [
+    "MIMDocs\\DeployUse\\media\\MIM-SSPR-Azure-MFA.png"
+  ],
   "eb16bf2dbbe30b0919cdba186f097ee64c93993d": [
     "MIMDocs\\DeployUse\\media\\MIM-SSPR-Azure-MFA.png"
+  ],
+  "1ff0807544bfe5121656e9472e43c792d804af7f": [
+    "MIMDocs\\DeployUse\\media\\MIM-SSPR-pFile.png"
   ],
   "f06bbd988080f2be18b0b8cfdcdbd343ef02d16a": [
     "MIMDocs\\DeployUse\\media\\MIM-SSPR-pFile.png"
@@ -417,6 +435,9 @@
   ],
   "85599cd4a385a40486cd3b6f0d37370f4127c076": [
     "MIMDocs\\toc.md"
+  ],
+  "c2b4c7e0de9e21f59f22cfa3b7a14f2443b02b9c": [
+    "MIMDocs\\Understand\\identity-manager-hybrid-reporting-azure.md"
   ],
   "69e2b7c612644acbaac43ab7c5acc598eb29762e": [
     "MIMDocs\\Understand\\identity-manager-hybrid-reporting-azure.md"
@@ -501,8 +522,7 @@
   ],
   "8752c0063eb59f3849d5c8c2834f736b7bdbdf4c": [
     "MIMDocs\\DeployUse\\media\\MIM-Install14.png",
-    "MIMDocs\\DeployUse\\media\\MIM-UpgSP15.png",
-    "MIMDocs\\DeployUse\\media\\MIM-UpgSP16.png"
+    "MIMDocs\\DeployUse\\media\\MIM-UpgSP15.png"
   ],
   "5de3abcdc01ccfbf2cec14641636a1a487cef40d": [
     "MIMDocs\\DeployUse\\media\\MIM-Install15.png",
@@ -520,6 +540,9 @@
   ],
   "e76ee275db2754bc2bef6b739b7a735a10d89fe0": [
     "MIMDocs\\DeployUse\\media\\MIM-UpgSP4.png"
+  ],
+  "1f1a18f843216bed4052f09815b6b75fd759cbb9": [
+    "MIMDocs\\DeployUse\\media\\MIM-UpgSP7.png"
   ],
   "2fc132e83f6d875b2b872ece9db8f11b87c06c92": [
     "MIMDocs\\DeployUse\\media\\MIM-UpgSP7.png"
@@ -567,6 +590,9 @@
   "47bcebc7b3a069d07f32a5a211af8cb66ad3ce51": [
     "MIMDocs\\Understand\\media\\MIM-Hybrid-howitworks.png"
   ],
+  "893cb4c7936dc217aedf3e0dafa4d70ee3296502": [
+    "MIMDocs\\PlanDesign\\topology-considerations.md"
+  ],
   "58e3789177659652ef6ff9982f1a19f7a8161325": [
     "MIMDocs\\PlanDesign\\topology-considerations.md"
   ],
@@ -600,11 +626,17 @@
   "7ff7d0b29fb9cd1ce8c68a66da4feb4e24a62d41": [
     "MIMDocs\\index.html"
   ],
+  "41f9769b32fbf8311db3e7bf8bd3a19158775098": [
+    "MIMDocs\\DeployUse\\install-mim-service-portal.md"
+  ],
   "1a1b7fa5a033b18b2370a5143dc8009b794f11a9": [
     "MIMDocs\\DeployUse\\install-mim-service-portal.md"
   ],
   "014e023f45f050a2fa9a47f5872de7c454ee7781": [
     "MIMDocs\\DeployUse\\install-mim-service-portal.md"
+  ],
+  "8b6afa5c4dd153b0cc5e235d19095b53c5eab526": [
+    "MIMDocs\\DeployUse\\install-mim-sync.md"
   ],
   "868e84d203e6f9a9984260c316e51ccea19727cd": [
     "MIMDocs\\DeployUse\\install-mim-sync.md"
@@ -624,6 +656,9 @@
   "e051581a6881198379957e310fbc13a7f0d5ea96": [
     "MIMDocs\\DeployUse\\prepare-server-exchange.md"
   ],
+  "50aceecb81a2b6ab5eec0d1c1ad27aa613e0315d": [
+    "MIMDocs\\DeployUse\\prepare-server-sharepoint.md"
+  ],
   "1f22f09075ce2d82690b106d60b83ce6607012f4": [
     "MIMDocs\\DeployUse\\prepare-server-sharepoint.md"
   ],
@@ -636,6 +671,9 @@
   "386a4f5db58cde7cd45370b4c43d87fcf7d9ca6c": [
     "MIMDocs\\DeployUse\\prepare-server-sql2014.md"
   ],
+  "6b8c4dcfca7f14f9c2b76eb06df0232b0ebdd86f": [
+    "MIMDocs\\DeployUse\\prepare-server-ws2012r2.md"
+  ],
   "75c507e63dba9385ddfc47505cb719123d60391e": [
     "MIMDocs\\DeployUse\\prepare-server-ws2012r2.md"
   ],
@@ -647,5 +685,8 @@
   ],
   "319d2a29ee531bb584574825c60b698ab5a63575": [
     "MIMDocs\\DeployUse\\media\\MIM-DeployWS3.png"
+  ],
+  "41e36ef43e62d24a1ffa3c74c585e9b9579e72e2": [
+    "MIMDocs\\DeployUse\\media\\MIM-SSPR-Azureportal-2.png"
   ]
 }
