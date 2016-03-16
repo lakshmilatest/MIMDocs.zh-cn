@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "1a58da5fbc756bca7da3bb17d508ed75975fe148",
+  "LastProcessedCommit": "769fa431aa4834733c2f6cd5b888465191a58de0",
   "LastTranslatedCommit": null,
   "Items": {
     "c1e15c9548e46cbbff7810e63478074ceeb06152": {
@@ -1544,7 +1544,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-16T09:24:09.7954786Z",
+      "HandoffDateTime": "2016-03-16T10:23:34.6371573Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -1555,7 +1555,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 362",
         "extended_information": null
       },
-      "HandoffFailureTimes": 13,
+      "HandoffFailureTimes": 14,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
