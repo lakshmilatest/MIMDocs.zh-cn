@@ -8,6 +8,7 @@
       "SourceFilePath": "MIMDocs\\appendix-diagnosing-problems.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\appendix-diagnosing-problems.md"
       ],
@@ -36,6 +37,7 @@
       "SourceFilePath": "MIMDocs\\certificate-retrieval.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\certificate-retrieval.md"
       ],
@@ -64,6 +66,7 @@
       "SourceFilePath": "MIMDocs\\configuring-mim-environment-for-pam.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\configuring-mim-environment-for-pam.md"
       ],
@@ -92,6 +95,7 @@
       "SourceFilePath": "MIMDocs\\configuring-mim-for-pam.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\configuring-mim-for-pam.md"
       ],
@@ -120,6 +124,7 @@
       "SourceFilePath": "MIMDocs\\defining-roles-for-pam.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\defining-roles-for-pam.md"
       ],
@@ -148,6 +153,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\certificate-manager-for-non-administrators.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\certificate-manager-for-non-administrators.md"
       ],
@@ -176,6 +182,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\certificate-manager-for-software-certificates.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\certificate-manager-for-software-certificates.md"
       ],
@@ -204,6 +211,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\deploying-mim-password-change-notification-service-on-domain-controller.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\deploying-mim-password-change-notification-service-on-domain-controller.md"
       ],
@@ -232,6 +240,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\journey-deploy-use.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\journey-deploy-use.md"
       ],
@@ -260,6 +269,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-install-server-components.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-install-server-components.md"
       ],
@@ -288,6 +298,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md"
       ],
@@ -316,6 +327,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\microsoft-identity-manager-deploy.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\microsoft-identity-manager-deploy.md"
       ],
@@ -344,6 +356,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\preparing-corporate-identity-management-server.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\preparing-corporate-identity-management-server.md"
       ],
@@ -372,6 +385,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\preparing-domain.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\preparing-domain.md"
       ],
@@ -400,6 +414,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\Sample.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\Sample.md",
         "MIMDocs\\GetStarted\\Sample.md",
@@ -438,6 +453,7 @@
         "MIMDocs\\Troubleshoot\\Sample.md",
         "MIMDocs\\Understand\\Sample.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\150x150.png",
         "MIMDocs\\GetStarted\\media\\150x150.png",
@@ -470,6 +486,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\TOC.md"
       ],
@@ -498,6 +515,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\working-with-identity-manager-hybrid-reporting.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\working-with-identity-manager-hybrid-reporting.md"
       ],
@@ -526,6 +544,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\working-with-mim-certificate-manager.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\working-with-mim-certificate-manager.md"
       ],
@@ -554,6 +573,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md"
       ],
@@ -582,6 +602,7 @@
       "SourceFilePath": "MIMDocs\\document-revision-history.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\document-revision-history.md"
       ],
@@ -610,6 +631,7 @@
       "SourceFilePath": "MIMDocs\\environment-overview.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\environment-overview.md"
       ],
@@ -640,6 +662,7 @@
       "DependencyFrom": [
         "MIMDocs\\environment-overview.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\media\\pam-test-lab-architecture.png"
       ],
@@ -668,6 +691,7 @@
       "SourceFilePath": "MIMDocs\\forefront-identity-manager-issues-solutions.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\forefront-identity-manager-issues-solutions.md"
       ],
@@ -698,6 +722,7 @@
       "DependencyFrom": [
         "MIMDocs\\forefront-identity-manager-issues-solutions.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\media\\fim-request-email.jpg"
       ],
@@ -726,6 +751,7 @@
       "SourceFilePath": "MIMDocs\\forefront-identity-manager-updates-issues-solutions.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\forefront-identity-manager-updates-issues-solutions.md"
       ],
@@ -754,6 +780,7 @@
       "SourceFilePath": "MIMDocs\\forefront-identity-manager-updates.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\forefront-identity-manager-updates.md"
       ],
@@ -784,6 +811,7 @@
       "DependencyFrom": [
         "MIMDocs\\forefront-identity-manager-updates.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\media\\Test-Animated-Gif.gif"
       ],
@@ -812,6 +840,7 @@
       "SourceFilePath": "MIMDocs\\GetStarted\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\GetStarted\\TOC.md",
         "MIMDocs\\Troubleshoot\\TOC.md"
@@ -841,6 +870,7 @@
       "SourceFilePath": "MIMDocs\\hardware-software-requirements.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\hardware-software-requirements.md"
       ],
@@ -869,6 +899,7 @@
       "SourceFilePath": "MIMDocs\\high-availability-disaster-recovery-considerations-bastion-environment.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\high-availability-disaster-recovery-considerations-bastion-environment.md"
       ],
@@ -899,6 +930,7 @@
       "DependencyFrom": [
         "MIMDocs\\high-availability-disaster-recovery-considerations-bastion-environment.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\media\\bastion1.png"
       ],
@@ -929,6 +961,7 @@
       "DependencyFrom": [
         "MIMDocs\\high-availability-disaster-recovery-considerations-bastion-environment.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\media\\bastion2.png"
       ],
@@ -959,6 +992,7 @@
       "DependencyFrom": [
         "MIMDocs\\high-availability-disaster-recovery-considerations-bastion-environment.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\media\\bastion3.png"
       ],
@@ -989,6 +1023,7 @@
       "DependencyFrom": [
         "MIMDocs\\high-availability-disaster-recovery-considerations-bastion-environment.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\media\\bastion4.png"
       ],
@@ -1019,6 +1054,7 @@
       "DependencyFrom": [
         "MIMDocs\\high-availability-disaster-recovery-considerations-bastion-environment.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\media\\bastion5.png"
       ],
@@ -1049,6 +1085,7 @@
       "DependencyFrom": [
         "MIMDocs\\high-availability-disaster-recovery-considerations-bastion-environment.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\media\\bastion6.png"
       ],
@@ -1077,6 +1114,7 @@
       "SourceFilePath": "MIMDocs\\issues.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\issues.md"
       ],
@@ -1105,6 +1143,7 @@
       "SourceFilePath": "MIMDocs\\journey-develop-applications.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\journey-develop-applications.md"
       ],
@@ -1133,6 +1172,7 @@
       "SourceFilePath": "MIMDocs\\LizaNewTopic.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\LizaNewTopic.md",
         "MIMDocs\\LizaNewTopic2.md"
@@ -1162,6 +1202,7 @@
       "SourceFilePath": "MIMDocs\\markdown-template-for-caps.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\markdown-template-for-caps.md"
       ],
@@ -1190,6 +1231,7 @@
       "SourceFilePath": "MIMDocs\\microsoft-identity-manager-2015-public-preview.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\microsoft-identity-manager-2015-public-preview.md"
       ],
@@ -1218,6 +1260,7 @@
       "SourceFilePath": "MIMDocs\\microsoft-identity-manager-2016-release-notes.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\microsoft-identity-manager-2016-release-notes.md"
       ],
@@ -1246,6 +1289,7 @@
       "SourceFilePath": "MIMDocs\\microsoft-identity-manager.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\microsoft-identity-manager.md"
       ],
@@ -1274,6 +1318,7 @@
       "SourceFilePath": "MIMDocs\\PlanDesign\\journey-plan-design.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\PlanDesign\\journey-plan-design.md"
       ],
@@ -1302,6 +1347,7 @@
       "SourceFilePath": "MIMDocs\\PlanDesign\\microsoft-identity-manager-2016-supported-platforms.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\PlanDesign\\microsoft-identity-manager-2016-supported-platforms.md"
       ],
@@ -1330,6 +1376,7 @@
       "SourceFilePath": "MIMDocs\\PlanDesign\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\PlanDesign\\TOC.md"
       ],
@@ -1358,6 +1405,7 @@
       "SourceFilePath": "MIMDocs\\planning-bastion-environment.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\planning-bastion-environment.md"
       ],
@@ -1389,6 +1437,7 @@
         "MIMDocs\\planning-bastion-environment.md",
         "MIMDocs\\step-1-prepare-corp-domain-controller.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\media\\pam-group-policy-management.jpg",
         "MIMDocs\\media\\PAM_GS_GroupPolicyManagement.png"
@@ -1421,6 +1470,7 @@
         "MIMDocs\\planning-bastion-environment.md",
         "MIMDocs\\step-1-prepare-corp-domain-controller.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\media\\pam-group-policy-management-editor.jpg",
         "MIMDocs\\media\\PAM_GS_Group_Policy_Management_Editor.png"
@@ -1453,6 +1503,7 @@
         "MIMDocs\\planning-bastion-environment.md",
         "MIMDocs\\step-1-prepare-corp-domain-controller.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\media\\pam-group-policy-management-editor2.jpg",
         "MIMDocs\\media\\PAM_GS_Group_Policy_Management_Editor2.png"
@@ -1482,6 +1533,7 @@
       "SourceFilePath": "MIMDocs\\principles-of-operation.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\principles-of-operation.md"
       ],
@@ -1510,6 +1562,7 @@
       "SourceFilePath": "MIMDocs\\privileged-access-management-deployment-considerations.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\privileged-access-management-deployment-considerations.md"
       ],
@@ -1538,6 +1591,7 @@
       "SourceFilePath": "MIMDocs\\privileged-access-management-get-started.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\privileged-access-management-get-started.md",
         "MIMDocs\\DeployUse\\privileged-access-management-get-started.md"
@@ -1575,6 +1629,7 @@
       "SourceFilePath": "MIMDocs\\privileged-access-management-operations.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\privileged-access-management-operations.md"
       ],
@@ -1603,6 +1658,7 @@
       "SourceFilePath": "MIMDocs\\privileged-identity-management-for-active-directory-domain-services.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\privileged-identity-management-for-active-directory-domain-services.md"
       ],
@@ -1633,6 +1689,7 @@
       "DependencyFrom": [
         "MIMDocs\\privileged-identity-management-for-active-directory-domain-services.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\media\\MIM_PIM_SetupProcess.png"
       ],
@@ -1663,6 +1720,7 @@
       "DependencyFrom": [
         "MIMDocs\\privileged-identity-management-for-active-directory-domain-services.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\media\\MIM_PIM_howitworks.png"
       ],
@@ -1691,6 +1749,7 @@
       "SourceFilePath": "MIMDocs\\reference\\assign-smartcard-to-request.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\assign-smartcard-to-request.md"
       ],
@@ -1719,6 +1778,7 @@
       "SourceFilePath": "MIMDocs\\reference\\cancel-abandon-complete-request.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\cancel-abandon-complete-request.md"
       ],
@@ -1747,6 +1807,7 @@
       "SourceFilePath": "MIMDocs\\reference\\certificate-management-rest-api-reference.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\certificate-management-rest-api-reference.md"
       ],
@@ -1775,6 +1836,7 @@
       "SourceFilePath": "MIMDocs\\reference\\certificate-management-rest-api-service-details.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\certificate-management-rest-api-service-details.md"
       ],
@@ -1803,6 +1865,7 @@
       "SourceFilePath": "MIMDocs\\reference\\certificate-operations.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\certificate-operations.md"
       ],
@@ -1831,6 +1894,7 @@
       "SourceFilePath": "MIMDocs\\reference\\certificate-request-operations.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\certificate-request-operations.md"
       ],
@@ -1859,6 +1923,7 @@
       "SourceFilePath": "MIMDocs\\reference\\create-request.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\create-request.md"
       ],
@@ -1887,6 +1952,7 @@
       "SourceFilePath": "MIMDocs\\reference\\get-certificate-request-generation-options.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\get-certificate-request-generation-options.md"
       ],
@@ -1915,6 +1981,7 @@
       "SourceFilePath": "MIMDocs\\reference\\get-certificate-responses.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\get-certificate-responses.md"
       ],
@@ -1943,6 +2010,7 @@
       "SourceFilePath": "MIMDocs\\reference\\get-profile-data.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\get-profile-data.md"
       ],
@@ -1971,6 +2039,7 @@
       "SourceFilePath": "MIMDocs\\reference\\get-profile-state-operations.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\get-profile-state-operations.md"
       ],
@@ -1999,6 +2068,7 @@
       "SourceFilePath": "MIMDocs\\reference\\get-profile-templates.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\get-profile-templates.md"
       ],
@@ -2027,6 +2097,7 @@
       "SourceFilePath": "MIMDocs\\reference\\get-request.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\get-request.md"
       ],
@@ -2055,6 +2126,7 @@
       "SourceFilePath": "MIMDocs\\reference\\get-smartcard-authentication-response.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\get-smartcard-authentication-response.md"
       ],
@@ -2083,6 +2155,7 @@
       "SourceFilePath": "MIMDocs\\reference\\get-smartcard-data.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\get-smartcard-data.md"
       ],
@@ -2111,6 +2184,7 @@
       "SourceFilePath": "MIMDocs\\reference\\get-smartcard-diversified-admin-key.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\get-smartcard-diversified-admin-key.md"
       ],
@@ -2139,6 +2213,7 @@
       "SourceFilePath": "MIMDocs\\reference\\get-smartcard-policy.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\get-smartcard-policy.md"
       ],
@@ -2167,6 +2242,7 @@
       "SourceFilePath": "MIMDocs\\reference\\get-smartcard-profile-certificates.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\get-smartcard-profile-certificates.md"
       ],
@@ -2195,6 +2271,7 @@
       "SourceFilePath": "MIMDocs\\reference\\get-smartcard-proposed-pin.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\get-smartcard-proposed-pin.md"
       ],
@@ -2223,6 +2300,7 @@
       "SourceFilePath": "MIMDocs\\reference\\get-user-certificates.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\get-user-certificates.md"
       ],
@@ -2251,6 +2329,7 @@
       "SourceFilePath": "MIMDocs\\reference\\get-workflow-policy.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\get-workflow-policy.md"
       ],
@@ -2279,6 +2358,7 @@
       "SourceFilePath": "MIMDocs\\reference\\microsoft-identity-manager-2016-developer-reference.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\microsoft-identity-manager-2016-developer-reference.md"
       ],
@@ -2307,6 +2387,7 @@
       "SourceFilePath": "MIMDocs\\reference\\policy-operations.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\policy-operations.md"
       ],
@@ -2335,6 +2416,7 @@
       "SourceFilePath": "MIMDocs\\reference\\privileged-access-management-approve-reject-pending-request.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\privileged-access-management-approve-reject-pending-request.md"
       ],
@@ -2363,6 +2445,7 @@
       "SourceFilePath": "MIMDocs\\reference\\privileged-access-management-close-request.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\privileged-access-management-close-request.md"
       ],
@@ -2391,6 +2474,7 @@
       "SourceFilePath": "MIMDocs\\reference\\privileged-access-management-create-request.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\privileged-access-management-create-request.md"
       ],
@@ -2419,6 +2503,7 @@
       "SourceFilePath": "MIMDocs\\reference\\privileged-access-management-get-pending-requests.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\privileged-access-management-get-pending-requests.md"
       ],
@@ -2447,6 +2532,7 @@
       "SourceFilePath": "MIMDocs\\reference\\privileged-access-management-get-requests.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\privileged-access-management-get-requests.md"
       ],
@@ -2475,6 +2561,7 @@
       "SourceFilePath": "MIMDocs\\reference\\privileged-access-management-get-roles.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\privileged-access-management-get-roles.md"
       ],
@@ -2503,6 +2590,7 @@
       "SourceFilePath": "MIMDocs\\reference\\privileged-access-management-get-session-info.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\privileged-access-management-get-session-info.md"
       ],
@@ -2531,6 +2619,7 @@
       "SourceFilePath": "MIMDocs\\reference\\privileged-access-management-rest-api-reference.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\privileged-access-management-rest-api-reference.md"
       ],
@@ -2559,6 +2648,7 @@
       "SourceFilePath": "MIMDocs\\reference\\privileged-access-management-rest-api-service-details.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\privileged-access-management-rest-api-service-details.md"
       ],
@@ -2587,6 +2677,7 @@
       "SourceFilePath": "MIMDocs\\reference\\profile-operations.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\profile-operations.md"
       ],
@@ -2615,6 +2706,7 @@
       "SourceFilePath": "MIMDocs\\reference\\request-operations.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\request-operations.md"
       ],
@@ -2643,6 +2735,7 @@
       "SourceFilePath": "MIMDocs\\reference\\sample-enrollment-walkthrough.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\sample-enrollment-walkthrough.md"
       ],
@@ -2671,6 +2764,7 @@
       "SourceFilePath": "MIMDocs\\reference\\smartcard-operations.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\smartcard-operations.md"
       ],
@@ -2699,6 +2793,7 @@
       "SourceFilePath": "MIMDocs\\reference\\toc.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\toc.md"
       ],
@@ -2727,6 +2822,7 @@
       "SourceFilePath": "MIMDocs\\reference\\update-smartcard-status.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\update-smartcard-status.md"
       ],
@@ -2755,6 +2851,7 @@
       "SourceFilePath": "MIMDocs\\set-up-self-service-password-reset-account-unlock.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\set-up-self-service-password-reset-account-unlock.md"
       ],
@@ -2786,6 +2883,7 @@
         "MIMDocs\\set-up-self-service-password-reset-account-unlock.md",
         "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\media\\MIM_SSPR_workflow.jpg",
         "MIMDocs\\DeployUse\\media\\MIM-SSPR-workflow.jpg"
@@ -2818,6 +2916,7 @@
         "MIMDocs\\set-up-self-service-password-reset-account-unlock.md",
         "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\media\\MIM_SSPR_PwdResetAuthNworkflow.jpg",
         "MIMDocs\\DeployUse\\media\\MIM-SSPR-PwdResetAuthNworkflow.jpg"
@@ -2850,6 +2949,7 @@
         "MIMDocs\\set-up-self-service-password-reset-account-unlock.md",
         "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\media\\MIM_SSPR_Azureportal.png",
         "MIMDocs\\DeployUse\\media\\MIM-SSPR-Azureportal.png"
@@ -2882,6 +2982,7 @@
         "MIMDocs\\set-up-self-service-password-reset-account-unlock.md",
         "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\media\\MIM_SSPR_ManageButton.png",
         "MIMDocs\\DeployUse\\media\\MIM-SSPR-ManageButton.png"
@@ -2914,6 +3015,7 @@
         "MIMDocs\\set-up-self-service-password-reset-account-unlock.md",
         "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\media\\MIM_SSPR_Azure_MFA.png",
         "MIMDocs\\DeployUse\\media\\MIM-SSPR-Azure-MFA.png"
@@ -2946,6 +3048,7 @@
         "MIMDocs\\set-up-self-service-password-reset-account-unlock.md",
         "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\media\\MIM_SSPR_pFile.png",
         "MIMDocs\\DeployUse\\media\\MIM-SSPR-pFile.png"
@@ -2978,6 +3081,7 @@
         "MIMDocs\\set-up-self-service-password-reset-account-unlock.md",
         "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\media\\MIM_SSPR_PhoneVerification.JPG",
         "MIMDocs\\DeployUse\\media\\MIM-SSPR-PhoneVerification.JPG"
@@ -3010,6 +3114,7 @@
         "MIMDocs\\set-up-self-service-password-reset-account-unlock.md",
         "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\media\\MIM_SSPR_PR1.JPG",
         "MIMDocs\\DeployUse\\media\\MIM-SSPR-PR1.JPG"
@@ -3041,6 +3146,7 @@
       "DependencyFrom": [
         "MIMDocs\\set-up-self-service-password-reset-account-unlock.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\media\\MIM_SSPR_PR2.jpg"
       ],
@@ -3069,6 +3175,7 @@
       "SourceFilePath": "MIMDocs\\step-1-prepare-corp-domain-controller.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\step-1-prepare-corp-domain-controller.md"
       ],
@@ -3101,6 +3208,7 @@
         "MIMDocs\\step-2-prepare-priv-domain-controller.md",
         "MIMDocs\\step-3-prepare-pam-server.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\media\\PAM_GS_Select_WS2012.png"
       ],
@@ -3129,6 +3237,7 @@
       "SourceFilePath": "MIMDocs\\step-1-prepare-corp-domain.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\step-1-prepare-corp-domain.md"
       ],
@@ -3157,6 +3266,7 @@
       "SourceFilePath": "MIMDocs\\step-2-prepare-priv-domain-controller.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\step-2-prepare-priv-domain-controller.md"
       ],
@@ -3185,6 +3295,7 @@
       "SourceFilePath": "MIMDocs\\step-2-prepare-the-priv-domain-controller.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\step-2-prepare-the-priv-domain-controller.md"
       ],
@@ -3213,6 +3324,7 @@
       "SourceFilePath": "MIMDocs\\step-3-prepare-pam-server.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\step-3-prepare-pam-server.md"
       ],
@@ -3241,6 +3353,7 @@
       "SourceFilePath": "MIMDocs\\step-4-install-mim-components-on-pam-server.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\step-4-install-mim-components-on-pam-server.md"
       ],
@@ -3271,6 +3384,7 @@
       "DependencyFrom": [
         "MIMDocs\\step-4-install-mim-components-on-pam-server.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\media\\PAM_GS_MIM_2015_Service_Portal.png"
       ],
@@ -3301,6 +3415,7 @@
       "DependencyFrom": [
         "MIMDocs\\step-4-install-mim-components-on-pam-server.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\media\\PAM_GS_MIM_2015_Service_Portal_configure_application_pool.png"
       ],
@@ -3331,6 +3446,7 @@
       "DependencyFrom": [
         "MIMDocs\\step-4-install-mim-components-on-pam-server.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\media\\PAM_GS_Configure_Component_Service.png"
       ],
@@ -3361,6 +3477,7 @@
       "DependencyFrom": [
         "MIMDocs\\step-4-install-mim-components-on-pam-server.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\media\\PAM_GS_Configure_MIM_PAM_component_service.png"
       ],
@@ -3391,6 +3508,7 @@
       "DependencyFrom": [
         "MIMDocs\\step-4-install-mim-components-on-pam-server.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\media\\PAM_GS_Configur_PAM_Monitoring_service.png"
       ],
@@ -3419,6 +3537,7 @@
       "SourceFilePath": "MIMDocs\\step-5-establish-trust-between-priv-and-corp-forests.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\step-5-establish-trust-between-priv-and-corp-forests.md"
       ],
@@ -3449,6 +3568,7 @@
       "DependencyFrom": [
         "MIMDocs\\step-5-establish-trust-between-priv-and-corp-forests.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\media\\PAM_GS_DNS_Manager.png"
       ],
@@ -3477,6 +3597,7 @@
       "SourceFilePath": "MIMDocs\\step-6-transition-group-to-pam.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\step-6-transition-group-to-pam.md"
       ],
@@ -3505,6 +3626,7 @@
       "SourceFilePath": "MIMDocs\\step-7-elevate-user-access.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\step-7-elevate-user-access.md"
       ],
@@ -3533,6 +3655,7 @@
       "SourceFilePath": "MIMDocs\\tier-model-for-partitioning-administrative-privileges.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\tier-model-for-partitioning-administrative-privileges.md"
       ],
@@ -3563,6 +3686,7 @@
       "DependencyFrom": [
         "MIMDocs\\tier-model-for-partitioning-administrative-privileges.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\media\\pam-tiers.png"
       ],
@@ -3591,6 +3715,7 @@
       "SourceFilePath": "MIMDocs\\toc.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\toc.md"
       ],
@@ -3619,6 +3744,7 @@
       "SourceFilePath": "MIMDocs\\topology-overview.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\topology-overview.md"
       ],
@@ -3647,6 +3773,7 @@
       "SourceFilePath": "MIMDocs\\Understand\\identity-manager-hybrid-reporting-azure.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\Understand\\identity-manager-hybrid-reporting-azure.md"
       ],
@@ -3675,6 +3802,7 @@
       "SourceFilePath": "MIMDocs\\Understand\\journey-understand-evaluate.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\Understand\\journey-understand-evaluate.md"
       ],
@@ -3703,6 +3831,7 @@
       "SourceFilePath": "MIMDocs\\Understand\\microsoft-identity-manager-2016.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\Understand\\microsoft-identity-manager-2016.md"
       ],
@@ -3731,6 +3860,7 @@
       "SourceFilePath": "MIMDocs\\Understand\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\Understand\\TOC.md"
       ],
@@ -3759,6 +3889,7 @@
       "SourceFilePath": "MIMDocs\\update-title-here.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\update-title-here.md"
       ],
@@ -3787,6 +3918,7 @@
       "SourceFilePath": "MIMDocs\\use-azure-mfa-for-activation.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\use-azure-mfa-for-activation.md"
       ],
@@ -3817,6 +3949,7 @@
       "DependencyFrom": [
         "MIMDocs\\use-azure-mfa-for-activation.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\media\\PAM-Azure-MFA-Activation-Image-1.png"
       ],
@@ -3847,6 +3980,7 @@
       "DependencyFrom": [
         "MIMDocs\\use-azure-mfa-for-activation.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\media\\PAM-Azure-MFA-Activation-Image-2.png"
       ],
@@ -3875,6 +4009,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-install-server-components.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-install-server-components.md"
       ],
@@ -3906,6 +4041,7 @@
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-install-server-components.md",
         "MIMDocs\\DeployUse\\install-mim-sync.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-Install1.png"
       ],
@@ -3937,6 +4073,7 @@
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-install-server-components.md",
         "MIMDocs\\DeployUse\\install-mim-sync.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-Install2.png"
       ],
@@ -3968,6 +4105,7 @@
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-install-server-components.md",
         "MIMDocs\\DeployUse\\install-mim-sync.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-Install3.png"
       ],
@@ -4000,6 +4138,7 @@
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md",
         "MIMDocs\\DeployUse\\install-mim-sync.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-Install4.png",
         "MIMDocs\\DeployUse\\media\\MIM-UpgFIM3.png"
@@ -4033,6 +4172,7 @@
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md",
         "MIMDocs\\DeployUse\\install-mim-sync.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-Install5.png",
         "MIMDocs\\DeployUse\\media\\MIM-UpgFIM4.png"
@@ -4066,6 +4206,7 @@
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md",
         "MIMDocs\\DeployUse\\install-mim-sync.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-Install6.png",
         "MIMDocs\\DeployUse\\media\\MIM-UpgFIM7.png"
@@ -4098,6 +4239,7 @@
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-install-server-components.md",
         "MIMDocs\\DeployUse\\install-mim-sync.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-Install7.png"
       ],
@@ -4130,6 +4272,7 @@
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md",
         "MIMDocs\\DeployUse\\install-mim-sync.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-Install8.png",
         "MIMDocs\\DeployUse\\media\\MIM-UpgSP1.png"
@@ -4162,6 +4305,7 @@
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-install-server-components.md",
         "MIMDocs\\DeployUse\\install-mim-service-portal.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-Install10.png"
       ],
@@ -4194,6 +4338,7 @@
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md",
         "MIMDocs\\DeployUse\\install-mim-service-portal.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-Install11.png",
         "MIMDocs\\DeployUse\\media\\MIM-UpgSP6.png"
@@ -4227,6 +4372,7 @@
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md",
         "MIMDocs\\DeployUse\\install-mim-service-portal.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-Install12.png",
         "MIMDocs\\DeployUse\\media\\MIM-UpgSP9.png"
@@ -4259,6 +4405,7 @@
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-install-server-components.md",
         "MIMDocs\\DeployUse\\install-mim-service-portal.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-Install13.png"
       ],
@@ -4291,6 +4438,7 @@
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md",
         "MIMDocs\\DeployUse\\install-mim-service-portal.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-Install14.png",
         "MIMDocs\\DeployUse\\media\\MIM-UpgSP15.png",
@@ -4325,6 +4473,7 @@
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md",
         "MIMDocs\\DeployUse\\install-mim-service-portal.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-Install15.png",
         "MIMDocs\\DeployUse\\media\\MIM-UpgSP17.png"
@@ -4358,6 +4507,7 @@
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md",
         "MIMDocs\\DeployUse\\install-mim-service-portal.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-Install16.png",
         "MIMDocs\\DeployUse\\media\\MIM-UpgSP2.png"
@@ -4387,6 +4537,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md"
       ],
@@ -4417,6 +4568,7 @@
       "DependencyFrom": [
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-UpgFIM1.PNG"
       ],
@@ -4447,6 +4599,7 @@
       "DependencyFrom": [
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-UpgFIM9.PNG"
       ],
@@ -4477,6 +4630,7 @@
       "DependencyFrom": [
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-UpgSP4.png"
       ],
@@ -4507,6 +4661,7 @@
       "DependencyFrom": [
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-UpgSP7.png"
       ],
@@ -4537,6 +4692,7 @@
       "DependencyFrom": [
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-UpgSP8.PNG"
       ],
@@ -4567,6 +4723,7 @@
       "DependencyFrom": [
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-UpgSP10.png"
       ],
@@ -4595,6 +4752,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\preparing-corporate-identity-management-server.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\preparing-corporate-identity-management-server.md"
       ],
@@ -4626,6 +4784,7 @@
         "MIMDocs\\DeployUse\\preparing-corporate-identity-management-server.md",
         "MIMDocs\\DeployUse\\prepare-server-ws2012r2.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-DeployWS2.png"
       ],
@@ -4657,6 +4816,7 @@
         "MIMDocs\\DeployUse\\preparing-corporate-identity-management-server.md",
         "MIMDocs\\DeployUse\\prepare-server-sharepoint.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-DeploySP1.png"
       ],
@@ -4687,6 +4847,7 @@
       "DependencyFrom": [
         "MIMDocs\\DeployUse\\preparing-corporate-identity-management-server.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-DeploySP2.png"
       ],
@@ -4715,6 +4876,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\working-with-identity-manager-hybrid-reporting.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\working-with-identity-manager-hybrid-reporting.md"
       ],
@@ -4746,6 +4908,7 @@
         "MIMDocs\\DeployUse\\working-with-identity-manager-hybrid-reporting.md",
         "MIMDocs\\Understand\\identity-manager-hybrid-reporting-azure.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-Hybrid-passwordreset.jpg",
         "MIMDocs\\Understand\\media\\MIM-Hybrid-passwordreset.jpg"
@@ -4775,6 +4938,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md"
       ],
@@ -4805,6 +4969,7 @@
       "DependencyFrom": [
         "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-SSPR-mobilephoneverification.JPG"
       ],
@@ -4835,6 +5000,7 @@
       "DependencyFrom": [
         "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-SSPR-problemsloggingin.JPG"
       ],
@@ -4865,6 +5031,7 @@
       "DependencyFrom": [
         "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-SSPR-keepcurrentorsetnewpwd.JPG"
       ],
@@ -4895,6 +5062,7 @@
       "DependencyFrom": [
         "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-SSPR-accountUnlock.JPG"
       ],
@@ -4925,6 +5093,7 @@
       "DependencyFrom": [
         "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-SSPR-account-unlock.JPG"
       ],
@@ -4953,6 +5122,7 @@
       "SourceFilePath": "MIMDocs\\Understand\\identity-manager-hybrid-reporting-azure.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\Understand\\identity-manager-hybrid-reporting-azure.md"
       ],
@@ -4983,6 +5153,7 @@
       "DependencyFrom": [
         "MIMDocs\\Understand\\identity-manager-hybrid-reporting-azure.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\Understand\\media\\MIM-Hybrid-downloadReportAgent.jpg"
       ],
@@ -5013,6 +5184,7 @@
       "DependencyFrom": [
         "MIMDocs\\Understand\\identity-manager-hybrid-reporting-azure.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\Understand\\media\\MIM-Hybrid-howitworks.png"
       ],
@@ -5041,6 +5213,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\TOC.md"
       ],
@@ -5069,6 +5242,7 @@
       "SourceFilePath": "MIMDocs\\PlanDesign\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\PlanDesign\\TOC.md"
       ],
@@ -5097,6 +5271,7 @@
       "SourceFilePath": "MIMDocs\\reference\\toc.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\toc.md"
       ],
@@ -5125,6 +5300,7 @@
       "SourceFilePath": "MIMDocs\\toc.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\toc.md"
       ],
@@ -5153,6 +5329,7 @@
       "SourceFilePath": "MIMDocs\\Understand\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\Understand\\TOC.md"
       ],
@@ -5181,6 +5358,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\TOC.md"
       ],
@@ -5209,6 +5387,7 @@
       "SourceFilePath": "MIMDocs\\PlanDesign\\microsoft-identity-manager-2016-supported-platforms.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\PlanDesign\\microsoft-identity-manager-2016-supported-platforms.md"
       ],
@@ -5237,6 +5416,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\certificate-manager-for-non-administrators.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\certificate-manager-for-non-administrators.md"
       ],
@@ -5265,6 +5445,7 @@
       "SourceFilePath": "MIMDocs\\high-availability-disaster-recovery-considerations-bastion-environment.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\high-availability-disaster-recovery-considerations-bastion-environment.md"
       ],
@@ -5293,6 +5474,7 @@
       "SourceFilePath": "MIMDocs\\PlanDesign\\microsoft-identity-manager-capacity-planning-guide.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\PlanDesign\\microsoft-identity-manager-capacity-planning-guide.md"
       ],
@@ -5321,6 +5503,7 @@
       "SourceFilePath": "MIMDocs\\PlanDesign\\topology-considerations.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\PlanDesign\\topology-considerations.md"
       ],
@@ -5351,6 +5534,7 @@
       "DependencyFrom": [
         "MIMDocs\\PlanDesign\\topology-considerations.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\PlanDesign\\media\\MIM-topo-multitier.png"
       ],
@@ -5381,6 +5565,7 @@
       "DependencyFrom": [
         "MIMDocs\\PlanDesign\\topology-considerations.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\PlanDesign\\media\\MIM-topo-multitier-multiservice.png"
       ],
@@ -5409,6 +5594,7 @@
       "SourceFilePath": "MIMDocs\\planning-bastion-environment.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\planning-bastion-environment.md"
       ],
@@ -5437,6 +5623,7 @@
       "SourceFilePath": "MIMDocs\\privileged-identity-management-for-active-directory-domain-services.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\privileged-identity-management-for-active-directory-domain-services.md"
       ],
@@ -5465,6 +5652,7 @@
       "SourceFilePath": "MIMDocs\\Understand\\microsoft-identity-manager-2016.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\Understand\\microsoft-identity-manager-2016.md"
       ],
@@ -5493,6 +5681,7 @@
       "SourceFilePath": "MIMDocs\\use-azure-mfa-for-activation.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\use-azure-mfa-for-activation.md"
       ],
@@ -5521,6 +5710,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\microsoft-identity-manager-deploy.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\microsoft-identity-manager-deploy.md"
       ],
@@ -5549,6 +5739,7 @@
       "SourceFilePath": "MIMDocs\\PlanDesign\\capacity-planning-guide.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\PlanDesign\\capacity-planning-guide.md"
       ],
@@ -5577,6 +5768,7 @@
       "SourceFilePath": "MIMDocs\\PlanDesign\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\PlanDesign\\TOC.md"
       ],
@@ -5605,6 +5797,7 @@
       "SourceFilePath": "MIMDocs\\PlanDesign\\topology-considerations.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\PlanDesign\\topology-considerations.md"
       ],
@@ -5633,6 +5826,7 @@
       "SourceFilePath": "MIMDocs\\index.html",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\index.html"
       ],
@@ -5661,6 +5855,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\install-mim-service-portal.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\install-mim-service-portal.md"
       ],
@@ -5689,6 +5884,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\install-mim-sync.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\install-mim-sync.md"
       ],
@@ -5717,6 +5913,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\install-mim-sync-ad-service.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\install-mim-sync-ad-service.md"
       ],
@@ -5745,6 +5942,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\microsoft-identity-manager-deploy.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\microsoft-identity-manager-deploy.md"
       ],
@@ -5773,6 +5971,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\prepare-server-exchange.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\prepare-server-exchange.md"
       ],
@@ -5801,6 +6000,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\prepare-server-sharepoint.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\prepare-server-sharepoint.md"
       ],
@@ -5829,6 +6029,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\prepare-server-sql2014.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\prepare-server-sql2014.md"
       ],
@@ -5857,6 +6058,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\prepare-server-ws2012r2.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\prepare-server-ws2012r2.md"
       ],
@@ -5885,6 +6087,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\preparing-domain.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\preparing-domain.md"
       ],
@@ -5913,6 +6116,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\TOC.md"
       ],
@@ -5941,6 +6145,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\working-with-identity-manager-hybrid-reporting.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\working-with-identity-manager-hybrid-reporting.md"
       ],
@@ -5969,6 +6174,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md"
       ],
@@ -5997,6 +6203,7 @@
       "SourceFilePath": "MIMDocs\\index.html",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\index.html"
       ],
@@ -6025,6 +6232,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\prepare-server-ws2012r2.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\prepare-server-ws2012r2.md"
       ],
@@ -6053,6 +6261,7 @@
       "SourceFilePath": "MIMDocs\\configuring-mim-environment-for-pam.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\configuring-mim-environment-for-pam.md"
       ],
@@ -6081,6 +6290,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\certificate-manager-for-non-administrators.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\certificate-manager-for-non-administrators.md"
       ],
@@ -6109,6 +6319,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\certificate-manager-for-software-certificates.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\certificate-manager-for-software-certificates.md"
       ],
@@ -6137,6 +6348,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\deploying-mim-password-change-notification-service-on-domain-controller.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\deploying-mim-password-change-notification-service-on-domain-controller.md"
       ],
@@ -6165,6 +6377,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\install-mim-service-portal.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\install-mim-service-portal.md"
       ],
@@ -6193,6 +6406,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\install-mim-sync.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\install-mim-sync.md"
       ],
@@ -6221,6 +6435,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\install-mim-sync-ad-service.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\install-mim-sync-ad-service.md"
       ],
@@ -6251,6 +6466,7 @@
       "DependencyFrom": [
         "MIMDocs\\DeployUse\\prepare-server-sharepoint.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-DeploySP2.png"
       ],
@@ -6281,6 +6497,7 @@
       "DependencyFrom": [
         "MIMDocs\\DeployUse\\prepare-server-ws2012r2.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-DeployWS3.png"
       ],
@@ -6309,6 +6526,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md"
       ],
@@ -6337,6 +6555,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\microsoft-identity-manager-deploy.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\microsoft-identity-manager-deploy.md"
       ],
@@ -6365,6 +6584,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\prepare-server-exchange.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\prepare-server-exchange.md"
       ],
@@ -6393,6 +6613,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\prepare-server-sharepoint.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\prepare-server-sharepoint.md"
       ],
@@ -6421,6 +6642,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\prepare-server-sql2014.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\prepare-server-sql2014.md"
       ],
@@ -6449,6 +6671,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\prepare-server-ws2012r2.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\prepare-server-ws2012r2.md"
       ],
@@ -6477,6 +6700,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\preparing-domain.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\preparing-domain.md"
       ],
@@ -6505,6 +6729,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\TOC.md"
       ],
@@ -6533,6 +6758,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\working-with-identity-manager-hybrid-reporting.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\working-with-identity-manager-hybrid-reporting.md"
       ],
@@ -6561,6 +6787,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\working-with-mim-certificate-manager.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\working-with-mim-certificate-manager.md"
       ],
@@ -6589,6 +6816,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md"
       ],
@@ -6617,6 +6845,7 @@
       "SourceFilePath": "MIMDocs\\index.html",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\index.html"
       ],
@@ -6645,6 +6874,7 @@
       "SourceFilePath": "MIMDocs\\PlanDesign\\capacity-planning-guide.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\PlanDesign\\capacity-planning-guide.md"
       ],
@@ -6673,6 +6903,7 @@
       "SourceFilePath": "MIMDocs\\PlanDesign\\microsoft-identity-manager-2016-supported-platforms.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\PlanDesign\\microsoft-identity-manager-2016-supported-platforms.md"
       ],
@@ -6701,6 +6932,7 @@
       "SourceFilePath": "MIMDocs\\PlanDesign\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\PlanDesign\\TOC.md"
       ],
@@ -6729,6 +6961,7 @@
       "SourceFilePath": "MIMDocs\\PlanDesign\\topology-considerations.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\PlanDesign\\topology-considerations.md"
       ],
@@ -6757,6 +6990,7 @@
       "SourceFilePath": "MIMDocs\\reference\\toc.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\reference\\toc.md"
       ],
@@ -6785,6 +7019,7 @@
       "SourceFilePath": "MIMDocs\\Understand\\identity-manager-hybrid-reporting-azure.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\Understand\\identity-manager-hybrid-reporting-azure.md"
       ],
@@ -6813,6 +7048,7 @@
       "SourceFilePath": "MIMDocs\\Understand\\microsoft-identity-manager-2016.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\Understand\\microsoft-identity-manager-2016.md"
       ],
@@ -6841,6 +7077,7 @@
       "SourceFilePath": "MIMDocs\\Understand\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\Understand\\TOC.md"
       ],
@@ -6869,6 +7106,7 @@
       "SourceFilePath": "MIMDocs\\index.html",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\index.html"
       ],
@@ -6897,6 +7135,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\install-mim-service-portal.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\install-mim-service-portal.md"
       ],
@@ -6925,6 +7164,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\install-mim-sync.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\install-mim-sync.md"
       ],
@@ -6955,6 +7195,7 @@
       "DependencyFrom": [
         "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-SSPR-Azure-MFA.png"
       ],
@@ -6985,6 +7226,7 @@
       "DependencyFrom": [
         "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-SSPR-Azureportal.png"
       ],
@@ -7015,6 +7257,7 @@
       "DependencyFrom": [
         "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-SSPR-Azureportal-2.png"
       ],
@@ -7045,6 +7288,7 @@
       "DependencyFrom": [
         "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-SSPR-pFile.png"
       ],
@@ -7075,6 +7319,7 @@
       "DependencyFrom": [
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\media\\MIM-UpgSP7.png"
       ],
@@ -7103,6 +7348,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md"
       ],
@@ -7131,6 +7377,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\prepare-server-sharepoint.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\prepare-server-sharepoint.md"
       ],
@@ -7159,6 +7406,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\prepare-server-ws2012r2.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\prepare-server-ws2012r2.md"
       ],
@@ -7187,6 +7435,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\working-with-identity-manager-hybrid-reporting.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\working-with-identity-manager-hybrid-reporting.md"
       ],
@@ -7215,6 +7464,7 @@
       "SourceFilePath": "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md"
       ],
@@ -7243,6 +7493,7 @@
       "SourceFilePath": "MIMDocs\\PlanDesign\\topology-considerations.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\PlanDesign\\topology-considerations.md"
       ],
@@ -7271,6 +7522,7 @@
       "SourceFilePath": "MIMDocs\\Understand\\identity-manager-hybrid-reporting-azure.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\Understand\\identity-manager-hybrid-reporting-azure.md"
       ],
@@ -7299,6 +7551,7 @@
       "SourceFilePath": "MIMDocs\\index.html",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "MIMDocs\\index.html"
       ],
