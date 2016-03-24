@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "04b51a21323265f3393b1e3aed5b8abd190f2b71",
+  "LastProcessedCommit": "f1b5e52df0644e45ce4420bc67997547cbe16c67",
   "LastTranslatedCommit": null,
   "Items": {
     "c1e15c9548e46cbbff7810e63478074ceeb06152": {
@@ -1598,7 +1598,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-17T23:24:51.6275031Z",
+      "HandoffDateTime": "2016-03-24T22:09:52.4237588Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -1606,10 +1606,10 @@
         "internal_error_retriable": false,
         "exception_message": "MIMDocs\\privileged-access-management-get-started.md file with commit id 9411cf67965bff66b7e24b967f1b77332b02633e can not be found",
         "exception_type": "System.IO.FileNotFoundException",
-        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 362",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 371",
         "extended_information": null
       },
-      "HandoffFailureTimes": 16,
+      "HandoffFailureTimes": 17,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
