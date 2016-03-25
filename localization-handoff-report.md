@@ -1,14 +1,27 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 2
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
+ [MIMDocs\index.html](https://github.com/Microsoft/MIMDocs-pr/blob/a021c64922e09d2d2710855da9f30be0be23b725/MIMDocs/index.html) | HandedOffSuccess | [Details](#661ab885005a67bf037291acc42f4d16f9c7e0a687)
  [MIMDocs\privileged-access-management-get-started.md](https://github.com/Microsoft/MIMDocs-pr/blob/9411cf67965bff66b7e24b967f1b77332b02633e/MIMDocs/privileged-access-management-get-started.md) | HandedOffFailed | [Details](#e1f4b80e684a1074c6f0f244dc0374e070f5d494236)
 
 ## Item Details
+##### <a name='661ab885005a67bf037291acc42f4d16f9c7e0a687'></a> Source: [MIMDocs\index.html](https://github.com/Microsoft/MIMDocs-pr/blob/a021c64922e09d2d2710855da9f30be0be23b725/MIMDocs/index.html)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [661ab885005a67bf037291acc42f4d16f9c7e0a6.html](https://github.com/Microsoft/EM.handoff/blob/2432ddd48f8136ed249fcb028c8688d6276a0f9b/ol-handoff/Microsoft/MIMDocs-pr.zh-cn/master/661ab885005a67bf037291acc42f4d16f9c7e0a6.html)
+* Handoff Datetime: 2016-03-25 17:41:13
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* [Back to Top](#report-top)
+
 ##### <a name='e1f4b80e684a1074c6f0f244dc0374e070f5d494236'></a> Source: [MIMDocs\privileged-access-management-get-started.md](https://github.com/Microsoft/MIMDocs-pr/blob/9411cf67965bff66b7e24b967f1b77332b02633e/MIMDocs/privileged-access-management-get-started.md)
 * Status: HandedOffFailed
 * Target File: 

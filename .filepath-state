@@ -70,7 +70,9 @@
     "MIMDocs\\Understand\\Sample.md"
   ],
   "84421bf7f4ba657e685239fb27f4798a46485f71": [
-    "MIMDocs\\DeployUse\\media\\150x150.png"
+    "MIMDocs\\DeployUse\\media\\150x150.png",
+    "MIMDocs\\GetStarted\\media\\150x150.png",
+    "MIMDocs\\PlanDesign\\media\\150x150.png"
   ],
   "f3dc4a9fee19b340b354e72f4b3873f2d58a9907": [
     "MIMDocs\\DeployUse\\TOC.md"
@@ -613,6 +615,9 @@
   ],
   "6914fcd651afa80f3069339e2d1aa3adca91f0ed": [
     "MIMDocs\\PlanDesign\\capacity-planning-guide.md"
+  ],
+  "661ab885005a67bf037291acc42f4d16f9c7e0a6": [
+    "MIMDocs\\index.html"
   ],
   "6fdb5a211a1edda7f5b7f632302c568db9653c95": [
     "MIMDocs\\index.html"
