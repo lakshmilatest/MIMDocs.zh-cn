@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "a021c64922e09d2d2710855da9f30be0be23b725",
+  "LastProcessedCommit": "f554436741867d674f4c16894cb21b17c1a375c8",
   "LastTranslatedCommit": null,
   "Items": {
     "c1e15c9548e46cbbff7810e63478074ceeb06152": {
@@ -1598,7 +1598,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-25T17:41:13.3207773Z",
+      "HandoffDateTime": "2016-03-28T21:50:59.2419111Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -1609,7 +1609,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 371",
         "extended_information": null
       },
-      "HandoffFailureTimes": 18,
+      "HandoffFailureTimes": 19,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -7587,6 +7587,35 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.zh-cn\\master\\661ab885005a67bf037291acc42f4d16f9c7e0a6.html",
       "HandoffFileCommit": "2432ddd48f8136ed249fcb028c8688d6276a0f9b",
       "HandoffDateTime": "2016-03-25T17:41:13.3207773Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "1e00f86e0dec2c4a64ad4e34caacbd94ef1579bd": {
+      "FileHash": "1e00f86e0dec2c4a64ad4e34caacbd94ef1579bd",
+      "SourceFileCommit": "f554436741867d674f4c16894cb21b17c1a375c8",
+      "SourceFilePath": "MIMDocs\\index.html",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "MIMDocs\\index.html"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.zh-cn\\master\\1e00f86e0dec2c4a64ad4e34caacbd94ef1579bd.html",
+      "HandoffFileCommit": "b4634ef0e94ca7b6ff85efee825d346bdd860760",
+      "HandoffDateTime": "2016-03-28T21:50:59.2419111Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
