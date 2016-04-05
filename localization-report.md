@@ -328,7 +328,7 @@
  [MIMDocs\Troubleshoot\docfx.json](https://github.com/Microsoft/MIMDocs-pr/blob/c6524ad298091701cc2c5bcbd29edf40f9287944/MIMDocs/Troubleshoot/docfx.json) | Ignored | [Details](#9875b87bbea7a4c9249e9839416be84179f3bdc9283)
  [MIMDocs\Understand\docfx.json](https://github.com/Microsoft/MIMDocs-pr/blob/c6524ad298091701cc2c5bcbd29edf40f9287944/MIMDocs/Understand/docfx.json) | Ignored | [Details](#78bf6c629669d8deba0b8bdf1afffed325a33d53286)
  [README.md](https://github.com/Microsoft/MIMDocs-pr/blob/c6524ad298091701cc2c5bcbd29edf40f9287944/README.md) | Ignored | [Details](#89ebb31a1a2d25ec957b92aaafb67092db676993295)
- [template.md](https://github.com/Microsoft/MIMDocs-pr/blob/c6524ad298091701cc2c5bcbd29edf40f9287944/template.md) | Ignored | [Details](#7a163efdec5a79af7b1185ebe12dbb4dd4fc5091296)
+ [template.md](https://github.com/Microsoft/MIMDocs-pr/blob/c6524ad298091701cc2c5bcbd29edf40f9287944/template.md) | Ignored | [Details](#68090a038cec49009b6bd0ce0515a075f62483b8296)
 
 ## Item Details
 ##### <a name='7c4de7495fb4bb76bd8b9102a4ab583ce46e5cad0'></a> Source: [.gitignore](https://github.com/Microsoft/MIMDocs-pr/blob/c6524ad298091701cc2c5bcbd29edf40f9287944/.gitignore)
@@ -4030,7 +4030,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='7a163efdec5a79af7b1185ebe12dbb4dd4fc5091296'></a> Source: [template.md](https://github.com/Microsoft/MIMDocs-pr/blob/c6524ad298091701cc2c5bcbd29edf40f9287944/template.md)
+##### <a name='68090a038cec49009b6bd0ce0515a075f62483b8296'></a> Source: [template.md](https://github.com/Microsoft/MIMDocs-pr/blob/c6524ad298091701cc2c5bcbd29edf40f9287944/template.md)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
