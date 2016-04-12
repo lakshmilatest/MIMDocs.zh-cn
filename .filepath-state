@@ -1,19 +1,4 @@
 {
-  "24d9b579361c750a24c12f62af9813f4c8cc0ee1": [
-    "MIMDocs\\configuring-mim-environment-for-pam.md"
-  ],
-  "1afdfd1c9a2f67d66c3d9dfd66d28034cf7f2108": [
-    "MIMDocs\\configuring-mim-environment-for-pam.md"
-  ],
-  "ecbf791f8baceaec666df0bb58428a3439c0c0f3": [
-    "MIMDocs\\configuring-mim-environment-for-pam.md"
-  ],
-  "914aba6b6af45def96c4aa800d9dc69c090766da": [
-    "MIMDocs\\defining-roles-for-pam.md"
-  ],
-  "567b0f74626301097108d9488e811cfd22195daa": [
-    "MIMDocs\\defining-roles-for-pam.md"
-  ],
   "d577c0a9bd2d25f6404d2620f4f7422a46dbe06e": [
     "MIMDocs\\DeployUse\\certificate-manager-for-non-administrators.md"
   ],
@@ -191,72 +176,9 @@
   "83cea8145864deb3eba5e1bc53b14a53d9d937e5": [
     "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md"
   ],
-  "a88c250d3d9e6be482425583a656feb37169593c": [
-    "MIMDocs\\environment-overview.md"
-  ],
-  "c1e99be11f6e20a17296aeaff30809cbe7e98b8b": [
-    "MIMDocs\\environment-overview.md"
-  ],
-  "62e3543c21396f5f913ab618c4891be78d4df77c": [
-    "MIMDocs\\media\\pam-test-lab-architecture.png"
-  ],
-  "577dd8e6317ed55cd18ee8e37612a867db3b6d1a": [
-    "MIMDocs\\forefront-identity-manager-issues-solutions.md"
-  ],
-  "9e2f39ee7051489625f08aeb1b1fe5c0342d72d6": [
-    "MIMDocs\\forefront-identity-manager-issues-solutions.md"
-  ],
-  "b662f4e0dc02d738a8293ed6285d0590c8b3f5af": [
-    "MIMDocs\\media\\fim-request-email.jpg"
-  ],
-  "19e9794ea720c192a34abe6a6b69aabc4de457e2": [
-    "MIMDocs\\forefront-identity-manager-updates-issues-solutions.md"
-  ],
-  "00a3fd51fd6b24c1d0b60dc12811438270b72dd6": [
-    "MIMDocs\\forefront-identity-manager-updates-issues-solutions.md"
-  ],
-  "09bbf984bad08e6dc69b5131025a0467b69032c7": [
-    "MIMDocs\\forefront-identity-manager-updates.md"
-  ],
-  "cff775ec0de881aa396b70c55c95433885dc04d7": [
-    "MIMDocs\\forefront-identity-manager-updates.md"
-  ],
-  "369373e2252ef841f0cf358c3885530591ed7110": [
-    "MIMDocs\\forefront-identity-manager-updates.md"
-  ],
-  "883c81b159d638e49f4baeac06a081656c1dba8c": [
-    "MIMDocs\\media\\Test-Animated-Gif.gif"
-  ],
   "3036877a4f389967e58c7aa350a9c1fa54ecb5a4": [
     "MIMDocs\\GetStarted\\TOC.md",
     "MIMDocs\\Troubleshoot\\TOC.md"
-  ],
-  "b2b73c846fe9fff5e303e94c9b2019b72a768ed3": [
-    "MIMDocs\\high-availability-disaster-recovery-considerations-bastion-environment.md"
-  ],
-  "e02e93ae53b8db97e46d849e18e26291ffa2608f": [
-    "MIMDocs\\high-availability-disaster-recovery-considerations-bastion-environment.md"
-  ],
-  "b40760fec7397329db21765df449a21dc21f7635": [
-    "MIMDocs\\high-availability-disaster-recovery-considerations-bastion-environment.md"
-  ],
-  "f93247ee57858fc3d5ac1a2502d4d796658538db": [
-    "MIMDocs\\media\\bastion1.png"
-  ],
-  "db0691b07e0e53d52174d860df9d8dd5fa3c245a": [
-    "MIMDocs\\media\\bastion2.png"
-  ],
-  "6d8e45ac6bf297ad806c8205ab443c26de9ab25e": [
-    "MIMDocs\\media\\bastion3.png"
-  ],
-  "47f89d6dccad2e087d174a8ec14ba110a5b79922": [
-    "MIMDocs\\media\\bastion4.png"
-  ],
-  "8d8f96ac3d835f2529b52cdc2552028979b9d183": [
-    "MIMDocs\\media\\bastion5.png"
-  ],
-  "b208bfbb4990cc814ea5a22bc8d663af175eb6ed": [
-    "MIMDocs\\media\\bastion6.png"
   ],
   "12f245624e644b12825239e378a26752f7a86846": [
     "MIMDocs\\microsoft-identity-manager-2016-release-notes.md"
@@ -293,51 +215,6 @@
   ],
   "36aa470a9638912716b489fa32bcd2b2468ddc9a": [
     "MIMDocs\\PlanDesign\\TOC.md"
-  ],
-  "2a42227ff112b08e760db2189e555f32741958d2": [
-    "MIMDocs\\planning-bastion-environment.md"
-  ],
-  "60e25f254eed153466c164c27bdd5f185e8c887c": [
-    "MIMDocs\\planning-bastion-environment.md"
-  ],
-  "90087cab6a3618e327c208d5f9504b2fc3e4a429": [
-    "MIMDocs\\planning-bastion-environment.md"
-  ],
-  "870e53cf04a6b23f96f763201f0387eb53fd523b": [
-    "MIMDocs\\media\\pam-group-policy-management.jpg"
-  ],
-  "c7f7b606729dd8176074a54cd4b9d0afeedda6eb": [
-    "MIMDocs\\media\\pam-group-policy-management-editor.jpg"
-  ],
-  "4fd41a23a6ee153c8e02615ff8ed09ccbe44fc51": [
-    "MIMDocs\\media\\pam-group-policy-management-editor2.jpg"
-  ],
-  "07f74119db34ce9ecf090163b2f40af6ee95ca91": [
-    "MIMDocs\\privileged-access-management-deployment-considerations.md"
-  ],
-  "aab1453791f2307fbd0b3013654812ba2aaf0fc5": [
-    "MIMDocs\\privileged-access-management-deployment-considerations.md"
-  ],
-  "e886692ba214428345ee290241c49b961d33b73c": [
-    "MIMDocs\\privileged-access-management-get-started.md"
-  ],
-  "e1f4b80e684a1074c6f0f244dc0374e070f5d494": [
-    "MIMDocs\\privileged-access-management-get-started.md"
-  ],
-  "016439b1abc9b1b6c8af863fb5998c8963a635d5": [
-    "MIMDocs\\privileged-identity-management-for-active-directory-domain-services.md"
-  ],
-  "3e39c7e49140e4ecd8475779dec4d3c977125082": [
-    "MIMDocs\\privileged-identity-management-for-active-directory-domain-services.md"
-  ],
-  "f197b3e43b7bc04e7554e65fd4857cea3705fedd": [
-    "MIMDocs\\privileged-identity-management-for-active-directory-domain-services.md"
-  ],
-  "c5d6e98ea24eb0c263bc87ba04d2bfee655e8099": [
-    "MIMDocs\\media\\MIM_PIM_SetupProcess.png"
-  ],
-  "05b50925245bfca2c89fa412e8af23eff305fc61": [
-    "MIMDocs\\media\\MIM_PIM_howitworks.png"
   ],
   "170f8b5b3fc3545362c5fa859af155203ef17f3b": [
     "MIMDocs\\reference\\assign-smartcard-to-request.md"
@@ -606,83 +483,14 @@
   "e5ed1583b31bdf6ce64d2e10c6433f851e3a6ca8": [
     "MIMDocs\\DeployUse\\media\\MIM-SSPR-PR1.JPG"
   ],
-  "42d81b5eb53467a6ebc09d6caffa2e7136de599c": [
-    "MIMDocs\\media\\PAM_GS_Select_WS2012.png"
-  ],
-  "1383d54dcf4702511f082f68f73957a950bb0440": [
-    "MIMDocs\\step-1-prepare-corp-domain.md"
-  ],
-  "fdb4b8fdbb941a0d49a933ab011a89cab9fa0d51": [
-    "MIMDocs\\step-1-prepare-corp-domain.md"
-  ],
-  "8c8b045046a5ee8c6082f4c44c66b002439b2c84": [
-    "MIMDocs\\step-2-prepare-the-priv-domain-controller.md"
-  ],
-  "978a45973d238da485b357ca4a0cf0c07358b519": [
-    "MIMDocs\\step-2-prepare-the-priv-domain-controller.md"
-  ],
-  "49a2ae5075dd38b415d012b46fd5b2d858411af7": [
-    "MIMDocs\\step-3-prepare-pam-server.md"
-  ],
-  "b0bb6867e08e0b522c48e8ea1c69d048986e4ea4": [
-    "MIMDocs\\step-3-prepare-pam-server.md"
-  ],
-  "37991d824a4c7b5b4a9cc2716cef207752581478": [
-    "MIMDocs\\step-4-install-mim-components-on-pam-server.md"
-  ],
-  "602ec0f97def695fffdad60212dfc08630006732": [
-    "MIMDocs\\step-4-install-mim-components-on-pam-server.md"
-  ],
-  "d3659f1d690b4bea1150d55204841ea9671fcb7d": [
-    "MIMDocs\\media\\PAM_GS_MIM_2015_Service_Portal.png"
-  ],
-  "b2a77856d9968a2ce1a05926e23176ae7d089c20": [
-    "MIMDocs\\media\\PAM_GS_MIM_2015_Service_Portal_configure_application_pool.png"
-  ],
-  "70440e4d1ae7d0bec93fde7a3968cc72c6e83f16": [
-    "MIMDocs\\media\\PAM_GS_Configure_Component_Service.png"
-  ],
-  "f99055488a3fd8a08040c0fd302dae9177ba5a63": [
-    "MIMDocs\\media\\PAM_GS_Configure_MIM_PAM_component_service.png"
-  ],
-  "dff58a3131b39009831a87d95625116040d7f3a0": [
-    "MIMDocs\\media\\PAM_GS_Configur_PAM_Monitoring_service.png"
-  ],
-  "20e50e55f5615f48bd1c079fd6c9c8f78d2ed909": [
-    "MIMDocs\\step-5-establish-trust-between-priv-and-corp-forests.md"
-  ],
-  "d269abb76d6321b373b036c63dd923a589774233": [
-    "MIMDocs\\step-5-establish-trust-between-priv-and-corp-forests.md"
-  ],
-  "b2422affe887810181cc77c15291639b53249368": [
-    "MIMDocs\\media\\PAM_GS_DNS_Manager.png"
-  ],
-  "a959510aca84194d7c5a6458a83449c2cce5b83e": [
-    "MIMDocs\\step-6-transition-group-to-pam.md"
-  ],
-  "7c2015e0a6c825882ef314930b1845e3ecba351e": [
-    "MIMDocs\\step-6-transition-group-to-pam.md"
-  ],
-  "ee9d5ba0b4fe246e97c5bda63fe1494242182f11": [
-    "MIMDocs\\step-7-elevate-user-access.md"
-  ],
-  "668186b052599f8268fc48fef9adfb31a7477764": [
-    "MIMDocs\\step-7-elevate-user-access.md"
-  ],
-  "6dea0e3b819b62e2f385b19ec17e7e9b9e35034e": [
-    "MIMDocs\\tier-model-for-partitioning-administrative-privileges.md"
-  ],
-  "ff103c9c44c8c02b976f4dc149643cc0a9408c13": [
-    "MIMDocs\\tier-model-for-partitioning-administrative-privileges.md"
-  ],
-  "def923940dacee0e5fdeeef9b0669c9418b5d9ab": [
-    "MIMDocs\\media\\pam-tiers.png"
-  ],
   "b23b075b34e915308d532dce949a691881c84d56": [
     "MIMDocs\\toc.md"
   ],
   "85599cd4a385a40486cd3b6f0d37370f4127c076": [
     "MIMDocs\\toc.md"
+  ],
+  "03b75e428c920f68b1816a934cc4ffed8cb47be0": [
+    "MIMDocs\\Understand\\identity-manager-hybrid-reporting-azure.md"
   ],
   "9ba30c4008bd83aa3a419249388a28af7d3c8b91": [
     "MIMDocs\\Understand\\identity-manager-hybrid-reporting-azure.md"
@@ -728,21 +536,6 @@
   ],
   "881e8c48f33a3430e88d5b08165b067944f868ae": [
     "MIMDocs\\Understand\\TOC.md"
-  ],
-  "611dd4856e49e43070848b4a20b4307970f5aacb": [
-    "MIMDocs\\use-azure-mfa-for-activation.md"
-  ],
-  "1c783bc90fedc324d89be8a6e28b83c539ce58d8": [
-    "MIMDocs\\use-azure-mfa-for-activation.md"
-  ],
-  "826285f56bd314897f15393e5998c75dcfaf8dac": [
-    "MIMDocs\\use-azure-mfa-for-activation.md"
-  ],
-  "25e41f7b09448d1b244ea8321b36c29d61001f5e": [
-    "MIMDocs\\media\\PAM-Azure-MFA-Activation-Image-1.png"
-  ],
-  "bbc144ed0ddc70ac4cd9031f87a4368bc40bcfff": [
-    "MIMDocs\\media\\PAM-Azure-MFA-Activation-Image-2.png"
   ],
   "654d8d73d70e3a97280711ab65efd5ccdbef7807": [
     "MIMDocs\\DeployUse\\media\\MIM-Install1.png"
