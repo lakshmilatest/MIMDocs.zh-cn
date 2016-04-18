@@ -1305,8 +1305,8 @@
 ##### <a name='48d3e50678a1a44aa42ab9b3048c04dbf0aef31879'></a> Source: [MIMDocs\index.md](https://github.com/Microsoft/MIMDocs-pr/blob/8c552ebf799f8260cde686537f3dd04ffcafd4fd/MIMDocs/index.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [index - new design.46097eff2f7e1f52bebfde3a88d3265d0f385a7f.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/85c94fd9e5fa891f58b7bbfd2f337fc052fb96f1/ol-handoff/Microsoft/MIMDocs-pr.zh-cn/master/index - new design.46097eff2f7e1f52bebfde3a88d3265d0f385a7f.zh-cn.xlf)
-* Handoff Datetime: 2016-04-14 18:10:45
+* Handoff File: [index.a54b2324d63a6d513b6900195023b9a8089553b4.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/87eabd4f3b9c9d56c97b9f5a81843c21bdf1bb72/ol-handoff/Microsoft/MIMDocs-pr.zh-cn/master/index.a54b2324d63a6d513b6900195023b9a8089553b4.zh-cn.xlf)
+* Handoff Datetime: 2016-04-18 17:25:29
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
