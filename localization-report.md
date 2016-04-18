@@ -80,8 +80,8 @@
  [MIMDocs\DeployUse\preparing-domain.md](https://github.com/Microsoft/MIMDocs-pr/blob/c023d147d0fcc1525fefbe866c952e217f7bee6b/MIMDocs/DeployUse/preparing-domain.md) | HandedOffSuccess | [Details](#19181bc2a629d6a0301861a7cd95a7982d663edf69)
  [MIMDocs\DeployUse\TOC.md](https://github.com/Microsoft/MIMDocs-pr/blob/ae96c9d8ff6d9c4694f1526f18a586b315c1e69f/MIMDocs/DeployUse/TOC.md) | HandedOffSuccess | [Details](#ef20cb9c84401229f1e11a3c9f3e28dfdb6148ee70)
  [MIMDocs\GetStarted\media\150x150.png](https://github.com/Microsoft/MIMDocs-pr/blob/04a56844197487bb284fe6361ddc3b57f4b85d2e/MIMDocs/GetStarted/media/150x150.png) | HandedOffSuccess | [Details](#84421bf7f4ba657e685239fb27f4798a46485f7176)
- [MIMDocs\index - new design.md](https://github.com/Microsoft/MIMDocs-pr/blob/4c59da666fa15850b967a5efe9eb850aa3413534/MIMDocs/index - new design.md) | HandedOffSuccess | [Details](#48d3e50678a1a44aa42ab9b3048c04dbf0aef31878)
- [MIMDocs\index.html](https://github.com/Microsoft/MIMDocs-pr/blob/e99c69ab72609fc3c717dc2f8264ad96f0e892c0/MIMDocs/index.html) | HandedOffSuccess | [Details](#512010f0017a5c1736a1aa71045fc97e4fa1780879)
+ [MIMDocs\index.md](https://github.com/Microsoft/MIMDocs-pr/blob/8c552ebf799f8260cde686537f3dd04ffcafd4fd/MIMDocs/index.md) | HandedOffSuccess | [Details](#48d3e50678a1a44aa42ab9b3048c04dbf0aef31879)
+ [MIMDocs\index-oldformat.html](https://github.com/Microsoft/MIMDocs-pr/blob/8c552ebf799f8260cde686537f3dd04ffcafd4fd/MIMDocs/index-oldformat.html) | HandedOffSuccess | [Details](#512010f0017a5c1736a1aa71045fc97e4fa1780878)
  [MIMDocs\media\150x150.png](https://github.com/Microsoft/MIMDocs-pr/blob/35671ae2c7f051c00c5163373ce895d300cdfa28/MIMDocs/media/150x150.png) | HandedOffSuccess | [Details](#84421bf7f4ba657e685239fb27f4798a46485f7180)
  [MIMDocs\media\bastion1.png](https://github.com/Microsoft/MIMDocs-pr/blob/d3196e23a3bcacc8e563d6a16ec00be7be68fb6d/MIMDocs/media/bastion1.png) | HandedOffSuccess | [Details](#f93247ee57858fc3d5ac1a2502d4d796658538db84)
  [MIMDocs\media\bastion2.png](https://github.com/Microsoft/MIMDocs-pr/blob/d3196e23a3bcacc8e563d6a16ec00be7be68fb6d/MIMDocs/media/bastion2.png) | HandedOffSuccess | [Details](#db0691b07e0e53d52174d860df9d8dd5fa3c245a85)
@@ -1302,7 +1302,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='48d3e50678a1a44aa42ab9b3048c04dbf0aef31878'></a> Source: [MIMDocs\index - new design.md](https://github.com/Microsoft/MIMDocs-pr/blob/4c59da666fa15850b967a5efe9eb850aa3413534/MIMDocs/index - new design.md)
+##### <a name='48d3e50678a1a44aa42ab9b3048c04dbf0aef31879'></a> Source: [MIMDocs\index.md](https://github.com/Microsoft/MIMDocs-pr/blob/8c552ebf799f8260cde686537f3dd04ffcafd4fd/MIMDocs/index.md)
 * Status: HandedOffSuccess
 * Target File: 
 * Handoff File: [index - new design.46097eff2f7e1f52bebfde3a88d3265d0f385a7f.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/85c94fd9e5fa891f58b7bbfd2f337fc052fb96f1/ol-handoff/Microsoft/MIMDocs-pr.zh-cn/master/index - new design.46097eff2f7e1f52bebfde3a88d3265d0f385a7f.zh-cn.xlf)
@@ -1314,7 +1314,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='512010f0017a5c1736a1aa71045fc97e4fa1780879'></a> Source: [MIMDocs\index.html](https://github.com/Microsoft/MIMDocs-pr/blob/e99c69ab72609fc3c717dc2f8264ad96f0e892c0/MIMDocs/index.html)
+##### <a name='512010f0017a5c1736a1aa71045fc97e4fa1780878'></a> Source: [MIMDocs\index-oldformat.html](https://github.com/Microsoft/MIMDocs-pr/blob/8c552ebf799f8260cde686537f3dd04ffcafd4fd/MIMDocs/index-oldformat.html)
 * Status: HandedOffSuccess
 * Target File: 
 * Handoff File: [512010f0017a5c1736a1aa71045fc97e4fa17808.html](https://github.com/Microsoft/EM.handoff/blob/51640327fddc0a2f79d5d8c39b60b08bfa14cb1c/ol-handoff/Microsoft/MIMDocs-pr.zh-cn/master/512010f0017a5c1736a1aa71045fc97e4fa17808.html)
