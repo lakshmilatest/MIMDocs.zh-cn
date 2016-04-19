@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "d9a6f6bcce9c7e4dcefe770f5a579b92e95d8878",
-  "LastTranslatedCommit": null,
+  "LastTranslatedCommit": "56a9fbc1b3798f43fa74f847672588fe95074a07",
   "Items": {
     "c1e15c9548e46cbbff7810e63478074ceeb06152": {
       "FileHash": "c1e15c9548e46cbbff7810e63478074ceeb06152",
@@ -851,14 +851,14 @@
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
-      "TargetFileCommit": null,
-      "TargetFilePath": null,
-      "HandbackFilePath": null,
-      "HandbackFileCommit": null,
-      "HandbackDateTime": "0001-01-01T00:00:00",
+      "TargetFileCommit": "56a9fbc1b3798f43fa74f847672588fe95074a07",
+      "TargetFilePath": "MIMDocs\\GetStarted\\TOC.md",
+      "HandbackFilePath": "ol-handback\\Microsoft\\MIMDocs-pr.zh-cn\\master\\TOC.402c587164e5dc6d994d6d89f44517503a7bfa2b.zh-cn.xlf",
+      "HandbackFileCommit": "4bea3b3733fb42a8d2b1d42e3e5bffc56e2df5a6",
+      "HandbackDateTime": "2016-04-19T01:13:09.8237603Z",
       "HandbackException": null,
       "HandbackFailureTimes": 0,
-      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "UpdatedDateTime": "2016-04-19T01:13:09.8237603Z",
       "ArchiveFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.zh-cn\\master\\archive\\TOC.402c587164e5dc6d994d6d89f44517503a7bfa2b.zh-cn.xlf",
       "ArchiveFileCommit": "5276f38a532ce68e12210e4fe7ec4ec1d0441683",
       "ArchiveFileDateTime": "2016-04-16T01:46:43.3363534Z",
