@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "2838734de416ccc919ec6a8a8c1830f2e1002af5",
+  "LastProcessedCommit": "c307fd85c9ecc4fb9e5e1f42a27b3d31c3becd53",
   "LastTranslatedCommit": "56a9fbc1b3798f43fa74f847672588fe95074a07",
   "Items": {
     "c1e15c9548e46cbbff7810e63478074ceeb06152": {
@@ -11967,6 +11967,35 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.zh-cn\\master\\deploying-mim-password-change-notification-service-on-domain-controller.afdb373626bbd0d122da747e9f586318deea2e70.zh-cn.xlf",
       "HandoffFileCommit": "59836c136b162eed29d75ef99b4c1943c159bd4e",
       "HandoffDateTime": "2016-04-21T18:50:53.8964263Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "fd417049ca3f5fa7d29ee1fdc8fb2f5e6686b1ae": {
+      "FileHash": "fd417049ca3f5fa7d29ee1fdc8fb2f5e6686b1ae",
+      "SourceFileCommit": "7d409d04d785e1ae4858fee4573bf964a09af930",
+      "SourceFilePath": "MIMDocs\\index.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "MIMDocs\\index.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.zh-cn\\master\\index.a54b2324d63a6d513b6900195023b9a8089553b4.zh-cn.xlf",
+      "HandoffFileCommit": "a04574e323c907b7759b5c8dec0f8032b2a53117",
+      "HandoffDateTime": "2016-04-21T22:54:04.6636428Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,

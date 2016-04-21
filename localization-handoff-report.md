@@ -1,45 +1,19 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 3
+ Total Files | 1
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [MIMDocs\DeployUse\certificate-manager-for-non-administrators.md](https://github.com/Microsoft/MIMDocs-pr/blob/875ed6b96929822ac166a4a262cc8547a4ea3b2a/MIMDocs/DeployUse/certificate-manager-for-non-administrators.md) | HandedOffSuccess | [Details](#50c0edd60abfa6550cb5a873d32a842e8c0998115)
- [MIMDocs\DeployUse\deploying-mim-password-change-notification-service-on-domain-controller.md](https://github.com/Microsoft/MIMDocs-pr/blob/875ed6b96929822ac166a4a262cc8547a4ea3b2a/MIMDocs/DeployUse/deploying-mim-password-change-notification-service-on-domain-controller.md) | HandedOffSuccess | [Details](#85e83b85f047ca2c2648b42ec68b832caae645ee7)
- [MIMDocs\index.md](https://github.com/Microsoft/MIMDocs-pr/blob/0459e0053de4309e53598aab5d40e9ad246f6a06/MIMDocs/index.md) | HandedOffSuccess | [Details](#31b7456e6ed45620f5fa209bd377f586217bd98b81)
+ [MIMDocs\index.md](https://github.com/Microsoft/MIMDocs-pr/blob/7d409d04d785e1ae4858fee4573bf964a09af930/MIMDocs/index.md) | HandedOffSuccess | [Details](#fd417049ca3f5fa7d29ee1fdc8fb2f5e6686b1ae81)
 
 ## Item Details
-##### <a name='50c0edd60abfa6550cb5a873d32a842e8c0998115'></a> Source: [MIMDocs\DeployUse\certificate-manager-for-non-administrators.md](https://github.com/Microsoft/MIMDocs-pr/blob/875ed6b96929822ac166a4a262cc8547a4ea3b2a/MIMDocs/DeployUse/certificate-manager-for-non-administrators.md)
+##### <a name='fd417049ca3f5fa7d29ee1fdc8fb2f5e6686b1ae81'></a> Source: [MIMDocs\index.md](https://github.com/Microsoft/MIMDocs-pr/blob/7d409d04d785e1ae4858fee4573bf964a09af930/MIMDocs/index.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [certificate-manager-for-non-administrators.2d024c7e4e9ca80f8293c9ea15d5d5fe93a207d7.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/59836c136b162eed29d75ef99b4c1943c159bd4e/ol-handoff/Microsoft/MIMDocs-pr.zh-cn/master/certificate-manager-for-non-administrators.2d024c7e4e9ca80f8293c9ea15d5d5fe93a207d7.zh-cn.xlf)
-* Handoff Datetime: 2016-04-21 18:50:53
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='85e83b85f047ca2c2648b42ec68b832caae645ee7'></a> Source: [MIMDocs\DeployUse\deploying-mim-password-change-notification-service-on-domain-controller.md](https://github.com/Microsoft/MIMDocs-pr/blob/875ed6b96929822ac166a4a262cc8547a4ea3b2a/MIMDocs/DeployUse/deploying-mim-password-change-notification-service-on-domain-controller.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [deploying-mim-password-change-notification-service-on-domain-controller.afdb373626bbd0d122da747e9f586318deea2e70.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/59836c136b162eed29d75ef99b4c1943c159bd4e/ol-handoff/Microsoft/MIMDocs-pr.zh-cn/master/deploying-mim-password-change-notification-service-on-domain-controller.afdb373626bbd0d122da747e9f586318deea2e70.zh-cn.xlf)
-* Handoff Datetime: 2016-04-21 18:50:53
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='31b7456e6ed45620f5fa209bd377f586217bd98b81'></a> Source: [MIMDocs\index.md](https://github.com/Microsoft/MIMDocs-pr/blob/0459e0053de4309e53598aab5d40e9ad246f6a06/MIMDocs/index.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [index.a54b2324d63a6d513b6900195023b9a8089553b4.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/59836c136b162eed29d75ef99b4c1943c159bd4e/ol-handoff/Microsoft/MIMDocs-pr.zh-cn/master/index.a54b2324d63a6d513b6900195023b9a8089553b4.zh-cn.xlf)
-* Handoff Datetime: 2016-04-21 18:50:53
+* Handoff File: [index.a54b2324d63a6d513b6900195023b9a8089553b4.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/a04574e323c907b7759b5c8dec0f8032b2a53117/ol-handoff/Microsoft/MIMDocs-pr.zh-cn/master/index.a54b2324d63a6d513b6900195023b9a8089553b4.zh-cn.xlf)
+* Handoff Datetime: 2016-04-21 22:54:04
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
