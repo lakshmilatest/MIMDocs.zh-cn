@@ -1,4 +1,7 @@
 {
+  "50c0edd60abfa6550cb5a873d32a842e8c099811": [
+    "MIMDocs\\DeployUse\\certificate-manager-for-non-administrators.md"
+  ],
   "d577c0a9bd2d25f6404d2620f4f7422a46dbe06e": [
     "MIMDocs\\DeployUse\\certificate-manager-for-non-administrators.md"
   ],
@@ -25,6 +28,9 @@
   ],
   "9f5c083196ca277237779618c9ff4b9fcb5f15b4": [
     "MIMDocs\\DeployUse\\certificate-manager-for-software-certificates.md"
+  ],
+  "85e83b85f047ca2c2648b42ec68b832caae645ee": [
+    "MIMDocs\\DeployUse\\deploying-mim-password-change-notification-service-on-domain-controller.md"
   ],
   "6deaa38f2cde7490ea2f18caa4294d525226efb9": [
     "MIMDocs\\DeployUse\\deploying-mim-password-change-notification-service-on-domain-controller.md"
