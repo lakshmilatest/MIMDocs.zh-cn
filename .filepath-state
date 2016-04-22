@@ -89,6 +89,9 @@
   "930926ce2e98d3dc09de10c4dc146738ccca9291": [
     "MIMDocs\\DeployUse\\microsoft-identity-manager-deploy.md"
   ],
+  "b22ccf69e6a1a6c8e13baa35c57bde0c6c07183a": [
+    "MIMDocs\\DeployUse\\preparing-domain.md"
+  ],
   "19181bc2a629d6a0301861a7cd95a7982d663edf": [
     "MIMDocs\\DeployUse\\preparing-domain.md"
   ],
@@ -617,6 +620,9 @@
   ],
   "386a4f5db58cde7cd45370b4c43d87fcf7d9ca6c": [
     "MIMDocs\\DeployUse\\prepare-server-sql2014.md"
+  ],
+  "cd4ac84af4e5416512cf546a5d23b342ebe13c39": [
+    "MIMDocs\\DeployUse\\prepare-server-ws2012r2.md"
   ],
   "0f403b58798f698d09c3b1f2a12b329070fb1048": [
     "MIMDocs\\DeployUse\\prepare-server-ws2012r2.md"
