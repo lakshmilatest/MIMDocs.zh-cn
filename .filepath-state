@@ -62,6 +62,9 @@
   "e0a7a55df11909e3355ff0ef638b58ad40ba0166": [
     "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md"
   ],
+  "ec49c8c517a80ccbebe22675e1bfd29302c77a0c": [
+    "MIMDocs\\DeployUse\\microsoft-identity-manager-deploy.md"
+  ],
   "a56ead9777f1dad1aa0d214a506cf1242f51e167": [
     "MIMDocs\\DeployUse\\microsoft-identity-manager-deploy.md"
   ],
@@ -282,6 +285,9 @@
   "85599cd4a385a40486cd3b6f0d37370f4127c076": [
     "MIMDocs\\toc.md"
   ],
+  "aefbbabcd891f326336865ad2524dc892c86b1ac": [
+    "MIMDocs\\Understand\\identity-manager-hybrid-reporting-azure.md"
+  ],
   "a8734866b43d2e3e120e3ab43f5cd40ac9fcbcb6": [
     "MIMDocs\\Understand\\identity-manager-hybrid-reporting-azure.md"
   ],
@@ -467,6 +473,9 @@
   ],
   "c465fc00bd089b73b86daa72968dd67dab832aee": [
     "MIMDocs\\PlanDesign\\media\\MIM-topo-multitier-multiservice.png"
+  ],
+  "e7439475453ee1e2454f116cdde4930fcd9749d6": [
+    "MIMDocs\\PlanDesign\\capacity-planning-guide.md"
   ],
   "3b5683d5e9a1439e83a606784d051d2ab586fbad": [
     "MIMDocs\\PlanDesign\\capacity-planning-guide.md"
