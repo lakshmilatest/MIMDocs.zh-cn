@@ -275,45 +275,45 @@
  [MIMDocs\media\pam-test-lab-guide-architecture.png](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/media/pam-test-lab-guide-architecture.png) | Ignored | [Details](#bb288576a1bb20d056635f764cc2d6773cf7cc4e203)
  [MIMDocs\PlanDesign\docfx.json](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/PlanDesign/docfx.json) | Ignored | [Details](#ea052fb2f3e06f2f576d831ab42b80f96fc1ee14221)
  [MIMDocs\PlanDesign\md.style](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/PlanDesign/md.style) | Ignored | [Details](#755db60abb7859af5065e2c5ddfbfc6cfb7aeeda222)
- [MIMDocs\reference\assign-smartcard-to-request.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/assign-smartcard-to-request.md) | Ignored | [Details](#eaa7b38f7f38f6535465908287652cf9ba8c7562229)
- [MIMDocs\reference\cancel-abandon-complete-request.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/cancel-abandon-complete-request.md) | Ignored | [Details](#26da35af05db887bed2765c36251637c256cb4dd230)
+ [MIMDocs\reference\assign-smartcard-to-request.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/assign-smartcard-to-request.md) | Ignored | [Details](#c4f8acfe4371db3a1b2bf7b01f3aaef8d2b4ae2c229)
+ [MIMDocs\reference\cancel-abandon-complete-request.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/cancel-abandon-complete-request.md) | Ignored | [Details](#b3a9b4cabddfb16050e1f9ab571260e83270b82e230)
  [MIMDocs\reference\certificate-management-rest-api-reference.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/certificate-management-rest-api-reference.md) | Ignored | [Details](#5fe33db2451941a4eb854ce4ae8ce93ac3355291231)
- [MIMDocs\reference\certificate-management-rest-api-service-details.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/certificate-management-rest-api-service-details.md) | Ignored | [Details](#4adb85a35fe9cb3c5f2457273455f3f5d06b82a8232)
+ [MIMDocs\reference\certificate-management-rest-api-service-details.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/certificate-management-rest-api-service-details.md) | Ignored | [Details](#f09a821b864cfe991866362b40a5bd3684e99594232)
  [MIMDocs\reference\certificate-operations.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/certificate-operations.md) | Ignored | [Details](#9051b84d1d0f098d214672a9866fb8ce16ec3125233)
  [MIMDocs\reference\certificate-request-operations.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/certificate-request-operations.md) | Ignored | [Details](#6229dec1b312766e92060be86a17bf9e0878b073234)
- [MIMDocs\reference\create-request.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/create-request.md) | Ignored | [Details](#ccb63ae38a70ae57590d796a932e1ac6c71e4b39235)
- [MIMDocs\reference\get-certificate-request-generation-options.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-certificate-request-generation-options.md) | Ignored | [Details](#027252858319340dee8c262e82206c955ff25a2d236)
- [MIMDocs\reference\get-certificate-responses.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-certificate-responses.md) | Ignored | [Details](#e00bd6ec8347fd0ff31f1948f243a5109e55994d237)
- [MIMDocs\reference\get-profile-data.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-profile-data.md) | Ignored | [Details](#e0f99f16dfe08292012db695cee4efe76c40c759238)
- [MIMDocs\reference\get-profile-state-operations.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-profile-state-operations.md) | Ignored | [Details](#624a40bddb9f7d9d1eaac4119e3d62eabea3dc98239)
+ [MIMDocs\reference\create-request.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/create-request.md) | Ignored | [Details](#f009aa025db6e720653148bbfea68c2e9e12ba55235)
+ [MIMDocs\reference\get-certificate-request-generation-options.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-certificate-request-generation-options.md) | Ignored | [Details](#60355a9ec7322facb38aec0e70d4922146864a74236)
+ [MIMDocs\reference\get-certificate-responses.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-certificate-responses.md) | Ignored | [Details](#cdbc042e8d67afbdde72dce45bca877fbe59c124237)
+ [MIMDocs\reference\get-profile-data.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-profile-data.md) | Ignored | [Details](#8b1e2bf954788c24e9ac757f008e120618a85d8d238)
+ [MIMDocs\reference\get-profile-state-operations.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-profile-state-operations.md) | Ignored | [Details](#b5c416b7ad1517cd1965d2a37b6ead0814b52833239)
  [MIMDocs\reference\get-profile-templates.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-profile-templates.md) | Ignored | [Details](#8716444108b5c9d40c77dd8da473942803e7bc2b240)
- [MIMDocs\reference\get-request.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-request.md) | Ignored | [Details](#0e5b6d9d3788e0b6cb56d8cab94ee75aa5deba2f241)
- [MIMDocs\reference\get-smartcard-authentication-response.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-smartcard-authentication-response.md) | Ignored | [Details](#94b91f3d482d3d51ae21838b2f966410554dd966242)
- [MIMDocs\reference\get-smartcard-data.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-smartcard-data.md) | Ignored | [Details](#d375686a6b6bf6147bb3a44ce4e2b4e257c70760243)
- [MIMDocs\reference\get-smartcard-diversified-admin-key.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-smartcard-diversified-admin-key.md) | Ignored | [Details](#b7851a7fe8571fba72a7d5fe734d2368b9c87846244)
+ [MIMDocs\reference\get-request.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-request.md) | Ignored | [Details](#1c6011b91e55ab0e319833077a4a1288cb6015b4241)
+ [MIMDocs\reference\get-smartcard-authentication-response.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-smartcard-authentication-response.md) | Ignored | [Details](#73f3ac7bd6ceba85252bcb9b8f0d38c7a33b4c7a242)
+ [MIMDocs\reference\get-smartcard-data.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-smartcard-data.md) | Ignored | [Details](#ea4a0971754e6e1ba75bec75115f7fa3ac7a1643243)
+ [MIMDocs\reference\get-smartcard-diversified-admin-key.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-smartcard-diversified-admin-key.md) | Ignored | [Details](#56980969e94c88b350e9ac08463ea95e8a0fea55244)
  [MIMDocs\reference\get-smartcard-policy.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-smartcard-policy.md) | Ignored | [Details](#1eaf4bfa2076c746becf72d4a0d178abf518b6f8245)
- [MIMDocs\reference\get-smartcard-profile-certificates.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-smartcard-profile-certificates.md) | Ignored | [Details](#3ac2868fe24cab61e41ba470dbf573e816231558246)
- [MIMDocs\reference\get-smartcard-proposed-pin.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-smartcard-proposed-pin.md) | Ignored | [Details](#d5ef308c8a2bd9f8704650cf5818ddc8a9b252ba247)
- [MIMDocs\reference\get-user-certificates.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-user-certificates.md) | Ignored | [Details](#7dcc7d21a4ccc693a9bdeeaccf9134814c907a77248)
- [MIMDocs\reference\get-workflow-policy.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-workflow-policy.md) | Ignored | [Details](#083247e0b28cb53cbfe0c6a9c56161f2c838d02c249)
+ [MIMDocs\reference\get-smartcard-profile-certificates.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-smartcard-profile-certificates.md) | Ignored | [Details](#76fa1ae6f65d2f9d97c57628b81552a0b2cade84246)
+ [MIMDocs\reference\get-smartcard-proposed-pin.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-smartcard-proposed-pin.md) | Ignored | [Details](#7314288087c279d3d1effb8560c0690bde2a0963247)
+ [MIMDocs\reference\get-user-certificates.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-user-certificates.md) | Ignored | [Details](#a6c2d63a7e84bbef9df3139b7c444cff5f9e6724248)
+ [MIMDocs\reference\get-workflow-policy.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-workflow-policy.md) | Ignored | [Details](#f080a5eb0dccc77b524a6f0683fb8124248f6400249)
  [MIMDocs\reference\microsoft-identity-manager-2016-developer-reference.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/microsoft-identity-manager-2016-developer-reference.md) | Ignored | [Details](#b226fe29fbb2a4578976024afefbe7fc9dc87d9d250)
  [MIMDocs\reference\oldtier-model-for-partitioning-administrative-privileges.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/oldtier-model-for-partitioning-administrative-privileges.md) | Ignored | [Details](#e3c97ad2179b8b076a34219d9f358d7c9d9a9175251)
  [MIMDocs\reference\policy-operations.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/policy-operations.md) | Ignored | [Details](#29103ef354916bdfb2d4c72d56837b235b4ba725252)
- [MIMDocs\reference\privileged-access-management-approve-reject-pending-request.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/privileged-access-management-approve-reject-pending-request.md) | Ignored | [Details](#37ea65db144dd9b3b2efcb205bf7668bbd743ef7253)
- [MIMDocs\reference\privileged-access-management-close-request.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/privileged-access-management-close-request.md) | Ignored | [Details](#0fa35df7ca3e6deac553c74df154950f539903b6254)
- [MIMDocs\reference\privileged-access-management-create-request.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/privileged-access-management-create-request.md) | Ignored | [Details](#ab6f82ff6f0419656df8bff2ebe4cb088079b440255)
- [MIMDocs\reference\privileged-access-management-get-pending-requests.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/privileged-access-management-get-pending-requests.md) | Ignored | [Details](#df660423f717b1d2b0b4ad2e7ae5c494a2bd0273256)
- [MIMDocs\reference\privileged-access-management-get-requests.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/privileged-access-management-get-requests.md) | Ignored | [Details](#36dcefc130143e3928919c2d928b430617a89f66257)
- [MIMDocs\reference\privileged-access-management-get-roles.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/privileged-access-management-get-roles.md) | Ignored | [Details](#3a438f050056fe1cea88d79ba42770dc0ee03840258)
- [MIMDocs\reference\privileged-access-management-get-session-info.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/privileged-access-management-get-session-info.md) | Ignored | [Details](#f9aaba06387f40ef7ee0ad09482fba2695257273259)
+ [MIMDocs\reference\privileged-access-management-approve-reject-pending-request.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/privileged-access-management-approve-reject-pending-request.md) | Ignored | [Details](#710c3b8a60e3d0d4b2c13e4d914c21856964c2b9253)
+ [MIMDocs\reference\privileged-access-management-close-request.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/privileged-access-management-close-request.md) | Ignored | [Details](#a81117b1782cd6256b9c9cfef02356a48aeaca6d254)
+ [MIMDocs\reference\privileged-access-management-create-request.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/privileged-access-management-create-request.md) | Ignored | [Details](#a931dde9fb3fdd852cbe888a90dfb608e1a7965f255)
+ [MIMDocs\reference\privileged-access-management-get-pending-requests.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/privileged-access-management-get-pending-requests.md) | Ignored | [Details](#f9b1a5a0419877fc9182d771cc60622905e27a24256)
+ [MIMDocs\reference\privileged-access-management-get-requests.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/privileged-access-management-get-requests.md) | Ignored | [Details](#df9879257bcf9805895989faa956d7770e771edc257)
+ [MIMDocs\reference\privileged-access-management-get-roles.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/privileged-access-management-get-roles.md) | Ignored | [Details](#49875bbd7fa44c635b6f0eadd6ead403119dcc72258)
+ [MIMDocs\reference\privileged-access-management-get-session-info.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/privileged-access-management-get-session-info.md) | Ignored | [Details](#aa885b77dcbc2b2e21498b94b1b6f702bbffb051259)
  [MIMDocs\reference\privileged-access-management-rest-api-reference.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/privileged-access-management-rest-api-reference.md) | Ignored | [Details](#14d5b54a46b7811161669b587142e95746cddb02260)
- [MIMDocs\reference\privileged-access-management-rest-api-service-details.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/privileged-access-management-rest-api-service-details.md) | Ignored | [Details](#413f722a07a3f41e7e5c79ef3c305ec04bcd675c261)
+ [MIMDocs\reference\privileged-access-management-rest-api-service-details.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/privileged-access-management-rest-api-service-details.md) | Ignored | [Details](#eb620a31da6ea48028a1c0f3d4100c23d5dc9128261)
  [MIMDocs\reference\profile-operations.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/profile-operations.md) | Ignored | [Details](#e63fb6addf10cad9f0f29dd3250d382d6e2388c3262)
  [MIMDocs\reference\request-operations.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/request-operations.md) | Ignored | [Details](#23b5425e417d600e3f26915a9d089c3d270b2071263)
  [MIMDocs\reference\sample-enrollment-walkthrough.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/sample-enrollment-walkthrough.md) | Ignored | [Details](#4c8b3565d6b61ac7a80d2526777017943ce9c4a6264)
  [MIMDocs\reference\smartcard-operations.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/smartcard-operations.md) | Ignored | [Details](#def4ea94bbc551e975145769c85f389ec8d1cfa5265)
  [MIMDocs\reference\toc.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/toc.md) | Ignored | [Details](#ea18503e22da855eb135e267e40198e1c49b96ce266)
- [MIMDocs\reference\update-smartcard-status.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/update-smartcard-status.md) | Ignored | [Details](#0de8c32af47be301b6cecfd906f4ed864ff00c11267)
+ [MIMDocs\reference\update-smartcard-status.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/update-smartcard-status.md) | Ignored | [Details](#18b9c1f7d0027ecee204ea19e9c180e01fde93ec267)
  [MIMDocs\Troubleshoot\docfx.json](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/Troubleshoot/docfx.json) | Ignored | [Details](#9875b87bbea7a4c9249e9839416be84179f3bdc9269)
  [MIMDocs\Troubleshoot\md.style](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/Troubleshoot/md.style) | Ignored | [Details](#755db60abb7859af5065e2c5ddfbfc6cfb7aeeda270)
  [MIMDocs\Understand\docfx.json](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/Understand/docfx.json) | Ignored | [Details](#78bf6c629669d8deba0b8bdf1afffed325a33d53273)
@@ -3212,7 +3212,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='eaa7b38f7f38f6535465908287652cf9ba8c7562229'></a> Source: [MIMDocs\reference\assign-smartcard-to-request.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/assign-smartcard-to-request.md)
+##### <a name='c4f8acfe4371db3a1b2bf7b01f3aaef8d2b4ae2c229'></a> Source: [MIMDocs\reference\assign-smartcard-to-request.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/assign-smartcard-to-request.md)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -3224,7 +3224,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='26da35af05db887bed2765c36251637c256cb4dd230'></a> Source: [MIMDocs\reference\cancel-abandon-complete-request.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/cancel-abandon-complete-request.md)
+##### <a name='b3a9b4cabddfb16050e1f9ab571260e83270b82e230'></a> Source: [MIMDocs\reference\cancel-abandon-complete-request.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/cancel-abandon-complete-request.md)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -3248,7 +3248,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='4adb85a35fe9cb3c5f2457273455f3f5d06b82a8232'></a> Source: [MIMDocs\reference\certificate-management-rest-api-service-details.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/certificate-management-rest-api-service-details.md)
+##### <a name='f09a821b864cfe991866362b40a5bd3684e99594232'></a> Source: [MIMDocs\reference\certificate-management-rest-api-service-details.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/certificate-management-rest-api-service-details.md)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -3284,7 +3284,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='ccb63ae38a70ae57590d796a932e1ac6c71e4b39235'></a> Source: [MIMDocs\reference\create-request.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/create-request.md)
+##### <a name='f009aa025db6e720653148bbfea68c2e9e12ba55235'></a> Source: [MIMDocs\reference\create-request.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/create-request.md)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -3296,7 +3296,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='027252858319340dee8c262e82206c955ff25a2d236'></a> Source: [MIMDocs\reference\get-certificate-request-generation-options.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-certificate-request-generation-options.md)
+##### <a name='60355a9ec7322facb38aec0e70d4922146864a74236'></a> Source: [MIMDocs\reference\get-certificate-request-generation-options.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-certificate-request-generation-options.md)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -3308,7 +3308,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='e00bd6ec8347fd0ff31f1948f243a5109e55994d237'></a> Source: [MIMDocs\reference\get-certificate-responses.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-certificate-responses.md)
+##### <a name='cdbc042e8d67afbdde72dce45bca877fbe59c124237'></a> Source: [MIMDocs\reference\get-certificate-responses.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-certificate-responses.md)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -3320,7 +3320,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='e0f99f16dfe08292012db695cee4efe76c40c759238'></a> Source: [MIMDocs\reference\get-profile-data.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-profile-data.md)
+##### <a name='8b1e2bf954788c24e9ac757f008e120618a85d8d238'></a> Source: [MIMDocs\reference\get-profile-data.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-profile-data.md)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -3332,7 +3332,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='624a40bddb9f7d9d1eaac4119e3d62eabea3dc98239'></a> Source: [MIMDocs\reference\get-profile-state-operations.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-profile-state-operations.md)
+##### <a name='b5c416b7ad1517cd1965d2a37b6ead0814b52833239'></a> Source: [MIMDocs\reference\get-profile-state-operations.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-profile-state-operations.md)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -3356,7 +3356,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='0e5b6d9d3788e0b6cb56d8cab94ee75aa5deba2f241'></a> Source: [MIMDocs\reference\get-request.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-request.md)
+##### <a name='1c6011b91e55ab0e319833077a4a1288cb6015b4241'></a> Source: [MIMDocs\reference\get-request.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-request.md)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -3368,7 +3368,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='94b91f3d482d3d51ae21838b2f966410554dd966242'></a> Source: [MIMDocs\reference\get-smartcard-authentication-response.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-smartcard-authentication-response.md)
+##### <a name='73f3ac7bd6ceba85252bcb9b8f0d38c7a33b4c7a242'></a> Source: [MIMDocs\reference\get-smartcard-authentication-response.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-smartcard-authentication-response.md)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -3380,7 +3380,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='d375686a6b6bf6147bb3a44ce4e2b4e257c70760243'></a> Source: [MIMDocs\reference\get-smartcard-data.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-smartcard-data.md)
+##### <a name='ea4a0971754e6e1ba75bec75115f7fa3ac7a1643243'></a> Source: [MIMDocs\reference\get-smartcard-data.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-smartcard-data.md)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -3392,7 +3392,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='b7851a7fe8571fba72a7d5fe734d2368b9c87846244'></a> Source: [MIMDocs\reference\get-smartcard-diversified-admin-key.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-smartcard-diversified-admin-key.md)
+##### <a name='56980969e94c88b350e9ac08463ea95e8a0fea55244'></a> Source: [MIMDocs\reference\get-smartcard-diversified-admin-key.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-smartcard-diversified-admin-key.md)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -3416,7 +3416,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='3ac2868fe24cab61e41ba470dbf573e816231558246'></a> Source: [MIMDocs\reference\get-smartcard-profile-certificates.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-smartcard-profile-certificates.md)
+##### <a name='76fa1ae6f65d2f9d97c57628b81552a0b2cade84246'></a> Source: [MIMDocs\reference\get-smartcard-profile-certificates.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-smartcard-profile-certificates.md)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -3428,7 +3428,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='d5ef308c8a2bd9f8704650cf5818ddc8a9b252ba247'></a> Source: [MIMDocs\reference\get-smartcard-proposed-pin.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-smartcard-proposed-pin.md)
+##### <a name='7314288087c279d3d1effb8560c0690bde2a0963247'></a> Source: [MIMDocs\reference\get-smartcard-proposed-pin.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-smartcard-proposed-pin.md)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -3440,7 +3440,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='7dcc7d21a4ccc693a9bdeeaccf9134814c907a77248'></a> Source: [MIMDocs\reference\get-user-certificates.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-user-certificates.md)
+##### <a name='a6c2d63a7e84bbef9df3139b7c444cff5f9e6724248'></a> Source: [MIMDocs\reference\get-user-certificates.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-user-certificates.md)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -3452,7 +3452,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='083247e0b28cb53cbfe0c6a9c56161f2c838d02c249'></a> Source: [MIMDocs\reference\get-workflow-policy.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-workflow-policy.md)
+##### <a name='f080a5eb0dccc77b524a6f0683fb8124248f6400249'></a> Source: [MIMDocs\reference\get-workflow-policy.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/get-workflow-policy.md)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -3500,7 +3500,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='37ea65db144dd9b3b2efcb205bf7668bbd743ef7253'></a> Source: [MIMDocs\reference\privileged-access-management-approve-reject-pending-request.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/privileged-access-management-approve-reject-pending-request.md)
+##### <a name='710c3b8a60e3d0d4b2c13e4d914c21856964c2b9253'></a> Source: [MIMDocs\reference\privileged-access-management-approve-reject-pending-request.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/privileged-access-management-approve-reject-pending-request.md)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -3512,7 +3512,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='0fa35df7ca3e6deac553c74df154950f539903b6254'></a> Source: [MIMDocs\reference\privileged-access-management-close-request.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/privileged-access-management-close-request.md)
+##### <a name='a81117b1782cd6256b9c9cfef02356a48aeaca6d254'></a> Source: [MIMDocs\reference\privileged-access-management-close-request.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/privileged-access-management-close-request.md)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -3524,7 +3524,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='ab6f82ff6f0419656df8bff2ebe4cb088079b440255'></a> Source: [MIMDocs\reference\privileged-access-management-create-request.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/privileged-access-management-create-request.md)
+##### <a name='a931dde9fb3fdd852cbe888a90dfb608e1a7965f255'></a> Source: [MIMDocs\reference\privileged-access-management-create-request.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/privileged-access-management-create-request.md)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -3536,7 +3536,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='df660423f717b1d2b0b4ad2e7ae5c494a2bd0273256'></a> Source: [MIMDocs\reference\privileged-access-management-get-pending-requests.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/privileged-access-management-get-pending-requests.md)
+##### <a name='f9b1a5a0419877fc9182d771cc60622905e27a24256'></a> Source: [MIMDocs\reference\privileged-access-management-get-pending-requests.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/privileged-access-management-get-pending-requests.md)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -3548,7 +3548,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='36dcefc130143e3928919c2d928b430617a89f66257'></a> Source: [MIMDocs\reference\privileged-access-management-get-requests.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/privileged-access-management-get-requests.md)
+##### <a name='df9879257bcf9805895989faa956d7770e771edc257'></a> Source: [MIMDocs\reference\privileged-access-management-get-requests.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/privileged-access-management-get-requests.md)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -3560,7 +3560,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='3a438f050056fe1cea88d79ba42770dc0ee03840258'></a> Source: [MIMDocs\reference\privileged-access-management-get-roles.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/privileged-access-management-get-roles.md)
+##### <a name='49875bbd7fa44c635b6f0eadd6ead403119dcc72258'></a> Source: [MIMDocs\reference\privileged-access-management-get-roles.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/privileged-access-management-get-roles.md)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -3572,7 +3572,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='f9aaba06387f40ef7ee0ad09482fba2695257273259'></a> Source: [MIMDocs\reference\privileged-access-management-get-session-info.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/privileged-access-management-get-session-info.md)
+##### <a name='aa885b77dcbc2b2e21498b94b1b6f702bbffb051259'></a> Source: [MIMDocs\reference\privileged-access-management-get-session-info.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/privileged-access-management-get-session-info.md)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -3596,7 +3596,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='413f722a07a3f41e7e5c79ef3c305ec04bcd675c261'></a> Source: [MIMDocs\reference\privileged-access-management-rest-api-service-details.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/privileged-access-management-rest-api-service-details.md)
+##### <a name='eb620a31da6ea48028a1c0f3d4100c23d5dc9128261'></a> Source: [MIMDocs\reference\privileged-access-management-rest-api-service-details.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/privileged-access-management-rest-api-service-details.md)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -3668,7 +3668,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='0de8c32af47be301b6cecfd906f4ed864ff00c11267'></a> Source: [MIMDocs\reference\update-smartcard-status.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/update-smartcard-status.md)
+##### <a name='18b9c1f7d0027ecee204ea19e9c180e01fde93ec267'></a> Source: [MIMDocs\reference\update-smartcard-status.md](https://github.com/Microsoft/MIMDocs-pr/blob/4fdeddbade3aaace6d8386e5f5d1e6e412ba92e7/MIMDocs/reference/update-smartcard-status.md)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
