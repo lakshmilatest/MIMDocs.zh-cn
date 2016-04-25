@@ -282,7 +282,7 @@
  [MIMDocs\reference\certificate-operations.md](https://github.com/Microsoft/MIMDocs-pr/blob/9644325f7f19a75acc8cae5d6588f59a33ae760a/MIMDocs/reference/certificate-operations.md) | Ignored | [Details](#9051b84d1d0f098d214672a9866fb8ce16ec3125233)
  [MIMDocs\reference\certificate-request-operations.md](https://github.com/Microsoft/MIMDocs-pr/blob/9644325f7f19a75acc8cae5d6588f59a33ae760a/MIMDocs/reference/certificate-request-operations.md) | Ignored | [Details](#6229dec1b312766e92060be86a17bf9e0878b073234)
  [MIMDocs\reference\create-request.md](https://github.com/Microsoft/MIMDocs-pr/blob/9644325f7f19a75acc8cae5d6588f59a33ae760a/MIMDocs/reference/create-request.md) | Ignored | [Details](#f009aa025db6e720653148bbfea68c2e9e12ba55235)
- [MIMDocs\reference\get-certificate-request-generation-options.md](https://github.com/Microsoft/MIMDocs-pr/blob/9644325f7f19a75acc8cae5d6588f59a33ae760a/MIMDocs/reference/get-certificate-request-generation-options.md) | Ignored | [Details](#60355a9ec7322facb38aec0e70d4922146864a74236)
+ [MIMDocs\reference\get-certificate-request-generation-options.md](https://github.com/Microsoft/MIMDocs-pr/blob/9644325f7f19a75acc8cae5d6588f59a33ae760a/MIMDocs/reference/get-certificate-request-generation-options.md) | Ignored | [Details](#104de3e37ca33968d1d8fc506ac8695f6ce827c1236)
  [MIMDocs\reference\get-certificate-responses.md](https://github.com/Microsoft/MIMDocs-pr/blob/9644325f7f19a75acc8cae5d6588f59a33ae760a/MIMDocs/reference/get-certificate-responses.md) | Ignored | [Details](#cdbc042e8d67afbdde72dce45bca877fbe59c124237)
  [MIMDocs\reference\get-profile-data.md](https://github.com/Microsoft/MIMDocs-pr/blob/9644325f7f19a75acc8cae5d6588f59a33ae760a/MIMDocs/reference/get-profile-data.md) | Ignored | [Details](#8b1e2bf954788c24e9ac757f008e120618a85d8d238)
  [MIMDocs\reference\get-profile-state-operations.md](https://github.com/Microsoft/MIMDocs-pr/blob/9644325f7f19a75acc8cae5d6588f59a33ae760a/MIMDocs/reference/get-profile-state-operations.md) | Ignored | [Details](#b5c416b7ad1517cd1965d2a37b6ead0814b52833239)
@@ -291,7 +291,7 @@
  [MIMDocs\reference\get-smartcard-authentication-response.md](https://github.com/Microsoft/MIMDocs-pr/blob/9644325f7f19a75acc8cae5d6588f59a33ae760a/MIMDocs/reference/get-smartcard-authentication-response.md) | Ignored | [Details](#73f3ac7bd6ceba85252bcb9b8f0d38c7a33b4c7a242)
  [MIMDocs\reference\get-smartcard-data.md](https://github.com/Microsoft/MIMDocs-pr/blob/9644325f7f19a75acc8cae5d6588f59a33ae760a/MIMDocs/reference/get-smartcard-data.md) | Ignored | [Details](#ea4a0971754e6e1ba75bec75115f7fa3ac7a1643243)
  [MIMDocs\reference\get-smartcard-diversified-admin-key.md](https://github.com/Microsoft/MIMDocs-pr/blob/9644325f7f19a75acc8cae5d6588f59a33ae760a/MIMDocs/reference/get-smartcard-diversified-admin-key.md) | Ignored | [Details](#56980969e94c88b350e9ac08463ea95e8a0fea55244)
- [MIMDocs\reference\get-smartcard-policy.md](https://github.com/Microsoft/MIMDocs-pr/blob/9644325f7f19a75acc8cae5d6588f59a33ae760a/MIMDocs/reference/get-smartcard-policy.md) | Ignored | [Details](#1eaf4bfa2076c746becf72d4a0d178abf518b6f8245)
+ [MIMDocs\reference\get-smartcard-policy.md](https://github.com/Microsoft/MIMDocs-pr/blob/9644325f7f19a75acc8cae5d6588f59a33ae760a/MIMDocs/reference/get-smartcard-policy.md) | Ignored | [Details](#001fb2dea8846a56aa591d7d8defcaef8d495cfd245)
  [MIMDocs\reference\get-smartcard-profile-certificates.md](https://github.com/Microsoft/MIMDocs-pr/blob/9644325f7f19a75acc8cae5d6588f59a33ae760a/MIMDocs/reference/get-smartcard-profile-certificates.md) | Ignored | [Details](#76fa1ae6f65d2f9d97c57628b81552a0b2cade84246)
  [MIMDocs\reference\get-smartcard-proposed-pin.md](https://github.com/Microsoft/MIMDocs-pr/blob/9644325f7f19a75acc8cae5d6588f59a33ae760a/MIMDocs/reference/get-smartcard-proposed-pin.md) | Ignored | [Details](#7314288087c279d3d1effb8560c0690bde2a0963247)
  [MIMDocs\reference\get-user-certificates.md](https://github.com/Microsoft/MIMDocs-pr/blob/9644325f7f19a75acc8cae5d6588f59a33ae760a/MIMDocs/reference/get-user-certificates.md) | Ignored | [Details](#a6c2d63a7e84bbef9df3139b7c444cff5f9e6724248)
@@ -3295,7 +3295,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='60355a9ec7322facb38aec0e70d4922146864a74236'></a> Source: [MIMDocs\reference\get-certificate-request-generation-options.md](https://github.com/Microsoft/MIMDocs-pr/blob/9644325f7f19a75acc8cae5d6588f59a33ae760a/MIMDocs/reference/get-certificate-request-generation-options.md)
+##### <a name='104de3e37ca33968d1d8fc506ac8695f6ce827c1236'></a> Source: [MIMDocs\reference\get-certificate-request-generation-options.md](https://github.com/Microsoft/MIMDocs-pr/blob/9644325f7f19a75acc8cae5d6588f59a33ae760a/MIMDocs/reference/get-certificate-request-generation-options.md)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
@@ -3403,7 +3403,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='1eaf4bfa2076c746becf72d4a0d178abf518b6f8245'></a> Source: [MIMDocs\reference\get-smartcard-policy.md](https://github.com/Microsoft/MIMDocs-pr/blob/9644325f7f19a75acc8cae5d6588f59a33ae760a/MIMDocs/reference/get-smartcard-policy.md)
+##### <a name='001fb2dea8846a56aa591d7d8defcaef8d495cfd245'></a> Source: [MIMDocs\reference\get-smartcard-policy.md](https://github.com/Microsoft/MIMDocs-pr/blob/9644325f7f19a75acc8cae5d6588f59a33ae760a/MIMDocs/reference/get-smartcard-policy.md)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
