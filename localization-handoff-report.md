@@ -1,19 +1,45 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 3
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [MIMDocs\index.md](https://github.com/Microsoft/MIMDocs-pr/blob/879031b9ec31973d7fc4bcb4b93cc58b94d781dc/MIMDocs/index.md) | HandedOffSuccess | [Details](#0587181471cbd28168d3f3de2147c237bd012a9c81)
+ [MIMDocs\DeployUse\microsoft-identity-manager-deploy.md](https://github.com/Microsoft/MIMDocs-pr/blob/ca7fdef81eb8a68aff46df528e1989f019f5d2a4/MIMDocs/DeployUse/microsoft-identity-manager-deploy.md) | HandedOffSuccess | [Details](#a56ead9777f1dad1aa0d214a506cf1242f51e16765)
+ [MIMDocs\PlanDesign\capacity-planning-guide.md](https://github.com/Microsoft/MIMDocs-pr/blob/ca7fdef81eb8a68aff46df528e1989f019f5d2a4/MIMDocs/PlanDesign/capacity-planning-guide.md) | HandedOffSuccess | [Details](#71a7b21f31391344437e1c799a5444af816d5336220)
+ [MIMDocs\Understand\identity-manager-hybrid-reporting-azure.md](https://github.com/Microsoft/MIMDocs-pr/blob/ca7fdef81eb8a68aff46df528e1989f019f5d2a4/MIMDocs/Understand/identity-manager-hybrid-reporting-azure.md) | HandedOffSuccess | [Details](#525ca91e695ecfb05d65c531d6c236993b20139c273)
 
 ## Item Details
-##### <a name='0587181471cbd28168d3f3de2147c237bd012a9c81'></a> Source: [MIMDocs\index.md](https://github.com/Microsoft/MIMDocs-pr/blob/879031b9ec31973d7fc4bcb4b93cc58b94d781dc/MIMDocs/index.md)
+##### <a name='a56ead9777f1dad1aa0d214a506cf1242f51e16765'></a> Source: [MIMDocs\DeployUse\microsoft-identity-manager-deploy.md](https://github.com/Microsoft/MIMDocs-pr/blob/ca7fdef81eb8a68aff46df528e1989f019f5d2a4/MIMDocs/DeployUse/microsoft-identity-manager-deploy.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [index.a54b2324d63a6d513b6900195023b9a8089553b4.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/7eed97ba611b0dae4a0f5956ee7b8c57e4232e96/ol-handoff/Microsoft/MIMDocs-pr.zh-cn/master/index.a54b2324d63a6d513b6900195023b9a8089553b4.zh-cn.xlf)
-* Handoff Datetime: 2016-04-26 21:17:05
+* Handoff File: [microsoft-identity-manager-deploy.44247d56914b6ca85c7193b74b9004ace0e1246d.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/8e0b9c0b34b1bac22c0a71850346ef8339dd0789/ol-handoff/Microsoft/MIMDocs-pr.zh-cn/master/microsoft-identity-manager-deploy.44247d56914b6ca85c7193b74b9004ace0e1246d.zh-cn.xlf)
+* Handoff Datetime: 2016-04-26 22:18:06
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* [Back to Top](#report-top)
+
+##### <a name='71a7b21f31391344437e1c799a5444af816d5336220'></a> Source: [MIMDocs\PlanDesign\capacity-planning-guide.md](https://github.com/Microsoft/MIMDocs-pr/blob/ca7fdef81eb8a68aff46df528e1989f019f5d2a4/MIMDocs/PlanDesign/capacity-planning-guide.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [capacity-planning-guide.a5b5577289101cd375376319cbd1fa3f32f4d38f.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/8e0b9c0b34b1bac22c0a71850346ef8339dd0789/ol-handoff/Microsoft/MIMDocs-pr.zh-cn/master/capacity-planning-guide.a5b5577289101cd375376319cbd1fa3f32f4d38f.zh-cn.xlf)
+* Handoff Datetime: 2016-04-26 22:18:06
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* [Back to Top](#report-top)
+
+##### <a name='525ca91e695ecfb05d65c531d6c236993b20139c273'></a> Source: [MIMDocs\Understand\identity-manager-hybrid-reporting-azure.md](https://github.com/Microsoft/MIMDocs-pr/blob/ca7fdef81eb8a68aff46df528e1989f019f5d2a4/MIMDocs/Understand/identity-manager-hybrid-reporting-azure.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [identity-manager-hybrid-reporting-azure.50c26252fc76f6c50be4c477e24cfaf05cf3c4c7.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/8e0b9c0b34b1bac22c0a71850346ef8339dd0789/ol-handoff/Microsoft/MIMDocs-pr.zh-cn/master/identity-manager-hybrid-reporting-azure.50c26252fc76f6c50be4c477e24cfaf05cf3c4c7.zh-cn.xlf)
+* Handoff Datetime: 2016-04-26 22:18:06
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
