@@ -1,26 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md](https://github.com/Microsoft/MIMDocs-pr/blob/f9b01ac2cee2b96f64a9fda917f4f4146ca2eeda/MIMDocs/DeployUse/microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md) | InSyncHandedBackSuccess | [Details](#023100b79dea1a512ccd610cd7ec7cac228eff7064)
 
 ## Item Details
-##### <a name='023100b79dea1a512ccd610cd7ec7cac228eff7064'></a> Source: [MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md](https://github.com/Microsoft/MIMDocs-pr/blob/f9b01ac2cee2b96f64a9fda917f4f4146ca2eeda/MIMDocs/DeployUse/microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md](https://github.com/Microsoft/MIMDocs-pr.zh-cn/blob/7168dbd3707acd81b097f94c26d63f7905bff2b7/MIMDocs/DeployUse/microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md)
-* Handoff File: [microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.436268391a37f93654c5a63fc781f1eae0c91603.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/da7146f9235f8297b5701a2b0bf330550f2d48af/ol-handoff/Microsoft/MIMDocs-pr.zh-cn/master/microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.436268391a37f93654c5a63fc781f1eae0c91603.zh-cn.xlf)
-* Handoff Datetime: 2016-04-11 22:08:42
-* Handoff Reason: Include
-* Archive File: [microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.436268391a37f93654c5a63fc781f1eae0c91603.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/2d10805032711419201bfee1bc6485e7fc9666d4/ol-handoff/Microsoft/MIMDocs-pr.zh-cn/master/archive/microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.436268391a37f93654c5a63fc781f1eae0c91603.zh-cn.xlf)
-* Archive Datetime: 2016-04-16 01:41:56
-* Handback File: [microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.436268391a37f93654c5a63fc781f1eae0c91603.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/bbb963822d397166a168cc6fe58bbafc1c46dfe7/ol-handback/Microsoft/MIMDocs-pr.zh-cn/master/microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.436268391a37f93654c5a63fc781f1eae0c91603.zh-cn.xlf)
-* Handback Datetime: 2016-05-04 07:34:16
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
