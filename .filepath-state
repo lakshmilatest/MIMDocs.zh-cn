@@ -14,6 +14,9 @@
   "6deaa38f2cde7490ea2f18caa4294d525226efb9": [
     "MIMDocs\\DeployUse\\deploying-mim-password-change-notification-service-on-domain-controller.md"
   ],
+  "24a7bf5bfb0a7450becd08be6743ed7ab1755559": [
+    "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md"
+  ],
   "023100b79dea1a512ccd610cd7ec7cac228eff70": [
     "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md"
   ],
@@ -84,6 +87,9 @@
   "b23b075b34e915308d532dce949a691881c84d56": [
     "MIMDocs\\toc.md"
   ],
+  "b3f3982ade46932b18fb730fe5c16d52cde188a1": [
+    "MIMDocs\\Understand\\identity-manager-hybrid-reporting-azure.md"
+  ],
   "525ca91e695ecfb05d65c531d6c236993b20139c": [
     "MIMDocs\\Understand\\identity-manager-hybrid-reporting-azure.md"
   ],
@@ -116,6 +122,9 @@
   ],
   "1b2297c086ad7933c5804128f1b3f33d1ef7fe4d": [
     "MIMDocs\\PlanDesign\\topology-considerations.md"
+  ],
+  "323a875aba14a238aa7cb3a0e6df192729ce53d6": [
+    "MIMDocs\\PlanDesign\\capacity-planning-guide.md"
   ],
   "71a7b21f31391344437e1c799a5444af816d5336": [
     "MIMDocs\\PlanDesign\\capacity-planning-guide.md"
