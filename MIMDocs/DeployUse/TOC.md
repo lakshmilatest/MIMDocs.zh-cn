@@ -1,5 +1,5 @@
-# [了解和探索](/microsoft-identity-manager/Understand/microsoft-identity-manager-2016)
-# [规划和设计](/microsoft-identity-manager/PlanDesign/microsoft-identity-manager-2016-supported-platforms)
+# [了解和探索](/microsoft-identity-manager/understand-explore/microsoft-identity-manager-2016)
+# [规划和设计](/microsoft-identity-manager/plan-design/microsoft-identity-manager-2016-supported-platforms)
 # [部署和使用](microsoft-identity-manager-deploy.md)
 ## [首次部署](microsoft-identity-manager-deploy.md)
 ### [域设置](preparing-domain.md)
@@ -20,6 +20,6 @@
 # [开发人员参考](/microsoft-identity-manager/reference/microsoft-identity-manager-2016-developer-reference)
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=Apr16_HO4-->
 
 
