@@ -2,7 +2,7 @@
 # required metadata
 
 title: 部署 MIM 的拓扑注意事项 | Microsoft 标识管理器
-description: 了解 MIM 2016 组件，并获取有关如何在你的环境中部署它们的建议。 
+description: 了解 MIM 2016 组件，并获取有关如何在你的环境中部署它们的建议。
 keywords:
 author: kgremban
 manager: stevenpo
@@ -59,24 +59,18 @@ ms.suite: ems
 
 
 ## 具有多个 MIM 服务的多层拓扑
-与外部系统进行数据同步会极大增加系统负担并导致系统运行时间过长。 如果同步配置导致触发工作流策略，这些策略会与最终用户工作流争用资源。 身份验证工作流（例如密码重置）可能会出现这类问题，这些工作流为实时进行并有最终用户等待进程的完成。 通过提供用于最终用户操作的 MIM 服务的一个实例和用于管理数据同步的单独门户，你可以提供更好的最终用户操作响应性。
+与外部系统进行数据同步会花费很长时间，在此期间还将极大地增加系统负载。 如果同步配置导致触发工作流策略，这些策略会与最终用户工作流争用资源。 身份验证工作流（例如密码重置）可能会出现这类问题，这些工作流为实时进行并有最终用户等待进程的完成。 通过提供用于最终用户操作的 MIM 服务的一个实例和用于管理数据同步的单独门户，你可以提供更好的最终用户操作响应性。
 
 ![多 MIM 多层拓扑图](media/MIM-topo-multitier-multiservice.png)
 
 使用标准多层拓扑，可通过使用 NLB 群集和按需增加群集中的节点数来提高 MIM 门户性能。
 
-运行承载了 MIM 同步服务和 MIM 服务数据库的 SQL Server 的性能计算机将极大影响 MIM 部署的整体性能。 因此，请遵循 SQL Server 文档中有关优化数据库性能的建议。 有关详细信息，请参阅以下文档：
-
-- [10 大最佳存储实践](http://go.microsoft.com/fwlink/?LinkID=183663)
-
-- [优化 tempdb 性能](http://go.microsoft.com/fwlink/?LinkID=188267)
-
-- [SQL Server 最佳做法文章](http://go.microsoft.com/fwlink/?LinkID=188268)
+如果计算机运行承载了 MIM 同步服务和 MIM 服务数据库的 SQL Server，则其将极大影响 MIM 部署的整体性能。 因此，请遵循 SQL Server 文档中有关优化数据库性能的建议。 有关详细信息，请参阅以下文档：
 
 ## 另请参阅
 - [Forefront 标识管理器 (FIM) 2010 容量规划指南](http://go.microsoft.com/fwlink/?LinkId=200180)（可下载）详尽介绍了有关测试版本和性能测试结果的相关信息。
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=Apr16_HO3-->
 
 

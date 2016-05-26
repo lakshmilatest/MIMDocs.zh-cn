@@ -32,7 +32,10 @@ ms.suite: ems
 [SharePoint »](prepare-server-sharepoint.md)
 
 > [!NOTE]
-> 在下面的所有示例中，**mimservername** 表示域控制器的名称，**contoso** 表示你的域名，**Pass@word1** 表示示例密码。
+> 本演练使用名为 Contoso 的公司中的示例名和值。 将其替换为你自己的。 例如：
+> - 域控制器名称 - **mimservername**
+> - 域名 - **contoso**
+> - 密码 - **Pass@word1**
 
 ## 安装 **SQL Server 2014 标准版**。
 
@@ -51,6 +54,6 @@ ms.suite: ems
 [SharePoint »](prepare-server-sharepoint.md)
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=Apr16_HO3-->
 
 

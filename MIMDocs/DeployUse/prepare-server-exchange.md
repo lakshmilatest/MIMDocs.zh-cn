@@ -2,7 +2,7 @@
 # required metadata
 
 title: 设置标识管理服务器 &#58; Exchange | Microsoft 标识管理器
-description: 作为可选步骤，可部署 Exchange 服务器以使 MIM 2016 可发送电子邮件和创建邮箱。 
+description: 作为可选步骤，可部署 Exchange 服务器以使 MIM 2016 可发送电子邮件和创建邮箱。
 keywords:
 author: kgremban
 manager: stevenpo
@@ -31,11 +31,8 @@ ms.suite: ems
 [« SharePoint](prepare-server-sharepoint.md)
 [MIM 同步服务 »](install-mim-sync.md)
 
-> [!NOTE]
-> 在下面的所有示例中，**mimservername** 表示域控制器的名称，**contoso** 表示你的域名，**Pass@word1** 表示示例密码。
-
 ## 部署 Microsoft Exchange Server
-如果想要配置 MIM 以便发送和接收电子邮件或设置邮箱，则必须在此环境中安装 Exchange。 如果仍未部署 Exchange，可以安装用于评估目的的试用版。
+如果想要配置 MIM 以便发送和接收电子邮件或设置邮箱，则必须在此环境中安装 Exchange。 如果仍未部署 Exchange，则可安装用于评估目的的试用版：
 
 1. 下载并安装 Microsoft Office 2010 筛选包（版本 2.0）以及 Microsoft Office 2010 筛选包（版本 2.0 SP1）
 
@@ -52,6 +49,6 @@ ms.suite: ems
 [MIM 同步服务 »](install-mim-sync.md)
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=Apr16_HO3-->
 
 

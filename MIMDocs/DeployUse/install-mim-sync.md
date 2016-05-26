@@ -32,27 +32,30 @@ ms.suite: ems
 [MIM 服务和门户 »](install-mim-service-portal.md)
 
 > [!NOTE]
-> 在下面的所有示例中，**mimservername** 表示域控制器的名称，**contoso** 表示你的域名，**Pass@word1** 表示示例密码。
+> 本演练使用名为 Contoso 的公司中的示例名和值。 将其替换为你自己的。 例如：
+> - 域控制器名称 - **mimservername**
+> - 域名 - **contoso**
+> - 密码 - **Pass@word1**
 
-要安装 Microsoft 标识管理器 2016 组件，首先：
+要安装 Microsoft Identity Manager 2016 组件，请先设置安装包。
 
-1. 以 *contoso\Administrator* 身份登录到用于标识管理的 CORPIDM 服务器。
+1. 以 *contoso\Administrator* 身份登录到用于标识管理的服务器。
 
 2. 解压缩 MIM 安装包或装载 MIM 映像 DVD。
 
-## 安装 MIM 2016 同步 (Sync) 服务
+## 安装 MIM 2016 同步服务
 
-1. 在已解压缩的 MIM 安装文件夹中，导航到“同步服务” **** 文件夹。
+1. 在已解压缩的 MIM 安装文件夹中，导航到“同步服务”  文件夹。
 
-2. 运行“MIM 同步服务安装程序” ****。 按照安装程序的说明操作并完成安装。
+2. 运行“MIM 同步服务安装程序” 。 按照安装程序的说明操作并完成安装。
 
-3. 在欢迎屏幕上 – 单击“下一步” ****。
+3. 在欢迎屏幕上 – 单击“下一步” 。
 
     ![MIM 安装程序向导欢迎图像](media/MIM-Install1.png)
 
-4. 查看许可条款，如果接受它们，单击“下一步” ****。
+4. 查看许可条款，并单击**下一步**来接受它们。
 
-5. 在“自定义安装”****屏幕上，单击“下一步”****。
+5. 在“自定义安装”屏幕上，单击“下一步”。
 
     ![自定义安装图像](media/MIM-Install2.png)
 
@@ -76,43 +79,39 @@ ms.suite: ems
 
 8.  使用相关安全组提供 MIM 同步安装程序：
 
-    1.  Administrator = *contoso\MIMSyncAdmins*
+    1. Administrator = *contoso\MIMSyncAdmins*
 
-    2.  Operator= *contoso\MIMSyncOperators*
+    2. Operator= *contoso\MIMSyncOperators*
 
-    3.  Joiner = *contoso\MIMSyncJoiners*
+    3. Joiner = *contoso\MIMSyncJoiners*
 
-    4.  Connector Browse = *contoso\MIMSyncBrowse*
+    4. Connector Browse = *contoso\MIMSyncBrowse*
 
-    5.  WMI Password Management= *contoso\MIMSyncPasswordReset*
+    5. WMI Password Management= *contoso\MIMSyncPasswordReset*
 
     ![安全组图像](media/MIM-Install5.png)
 
-9. 在安全设置屏幕中，选中“为入站 RPC 通信启用防火墙规则”****，然后单击“下一步”****。
+9. 在安全设置屏幕中，选中“为入站 RPC 通信启用防火墙规则”，然后单击“下一步”。
 
-10. 单击“安装”****以开始安装 MIM 同步。
+10. 单击“安装”以开始安装 MIM 同步。
 
-    1.  可能会出现有关 MIM 同步服务帐户的警告 – 单击“确定” ****。
+    1. 可能会出现有关 MIM 同步服务帐户的警告 – 单击“确定” 。
 
-    2.  马上将安装 MIM 同步。
+    2. 此时将安装 MIM 同步。
 
-        ![MIM 同步安装状态图像](media/MIM-Install6.png)
-
-    3.  会出现为加密密钥创建备份的通知 – 单击“确定”****，然后选择要存储加密密钥备份的文件夹。
+    3. 会出现为加密密钥创建备份的通知 – 单击“确定”，然后选择要存储加密密钥备份的文件夹。
 
         ![MIM 同步备份加密密钥通知图像](media/MIM-Install7.png)
 
-    4.  当安装程序成功完成安装时，请单击“完成” ****。
+    4. 当安装程序成功完成安装时，请单击“完成” 。
 
-        ![MIM 同步安装成功图像](media/MIM-Install8.png)
-
-    5.  你需要注销，然后登录，才能使组成员身份更改生效。 单击“是”****以注销。
+    5. 你需要注销，然后登录，才能使组成员身份更改生效。 单击“是”以注销。
 
 >[!div class="step-by-step"]  
 [« Exchange Server](prepare-server-exchange.md)
 [MIM 服务和门户 »](install-mim-service-portal.md)
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=Apr16_HO3-->
 
 

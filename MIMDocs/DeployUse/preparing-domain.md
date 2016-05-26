@@ -30,42 +30,49 @@ ms.suite: ems
 >[!div class="step-by-step"]  
 [Windows Server 2012 R2 »](prepare-server-ws2012r2.md)
 
+Microsoft Identity Manger (MIM) 适用于你的 Active Directory (AD) 域。 应已安装了 AD，并确保你的环境中有一个你能够管理的域的域控制器。
+
+本文将指导你完成一些步骤来准备要与 MIM 协同使用的域。
+
 ## 创建用户帐户和组
 
-MIM 需要已安装 Active Directory。 请确保你的环境中有一个你能够管理的域的域控制器。
+MIM 部署的所有组件都需要在域中具有自己的标识。 这包括 MIM 组件（如服务和同步），以及 SharePoint 和 SQL。
 
 > [!NOTE]
-> 在下面的所有示例中，**mimservername** 表示域控制器的名称，**contoso** 表示你的域名，**Pass@word1** 表示示例密码。
+> 本演练使用名为 Contoso 的公司中的示例名和值。 将其替换为你自己的。 例如：
+> - 域控制器名称 - **mimservername**
+> - 域名 - **contoso**
+> - 密码 - **Pass@word1**
 
 1. 以域管理员的身份登录到域控制器（*例如：Contoso\Administrator*）。
 
 2. 为 MIM 服务创建以下用户账户。 启动 PowerShell 并键入以下 PowerShell 脚本来更新域。
 
-        ```
-        import-module activedirectory
-        $sp = ConvertTo-SecureString "Pass@word1" –asplaintext –force
-        New-ADUser –SamAccountName MIMMA –name MIMMA
-        Set-ADAccountPassword –identity MIMMA –NewPassword $sp
-        Set-ADUser –identity MIMMA –Enabled 1 –PasswordNeverExpires 1
-        New-ADUser –SamAccountName MIMSync –name MIMSync
-        Set-ADAccountPassword –identity MIMSync –NewPassword $sp
-        Set-ADUser –identity MIMSync –Enabled 1 –PasswordNeverExpires 1
-        New-ADUser –SamAccountName MIMService –name MIMService
-        Set-ADAccountPassword –identity MIMService –NewPassword $sp
-        Set-ADUser –identity MIMService –Enabled 1 –PasswordNeverExpires 1
-        New-ADUser –SamAccountName MIMSSPR –name MIMSSPR
-        Set-ADAccountPassword –identity MIMSSPR –NewPassword $sp
-        Set-ADUser –identity MIMSSPR –Enabled 1 –PasswordNeverExpires 1
-        New-ADUser –SamAccountName SharePoint –name SharePoint
-        Set-ADAccountPassword –identity SharePoint –NewPassword $sp
-        Set-ADUser –identity SharePoint –Enabled 1 –PasswordNeverExpires 1
-        New-ADUser –SamAccountName SqlServer –name SqlServer
-        Set-ADAccountPassword –identity SqlServer –NewPassword $sp
-        Set-ADUser –identity SqlServer –Enabled 1 –PasswordNeverExpires 1
-        New-ADUser –SamAccountName BackupAdmin –name BackupAdmin
-        Set-ADAccountPassword –identity BackupAdmin –NewPassword $sp
-        Set-ADUser –identity BackupAdmin –Enabled 1 -PasswordNeverExpires 1
-        ```
+    ```
+    import-module activedirectory
+    $sp = ConvertTo-SecureString "Pass@word1" –asplaintext –force
+    New-ADUser –SamAccountName MIMMA –name MIMMA
+    Set-ADAccountPassword –identity MIMMA –NewPassword $sp
+    Set-ADUser –identity MIMMA –Enabled 1 –PasswordNeverExpires 1
+    New-ADUser –SamAccountName MIMSync –name MIMSync
+    Set-ADAccountPassword –identity MIMSync –NewPassword $sp
+    Set-ADUser –identity MIMSync –Enabled 1 –PasswordNeverExpires 1
+    New-ADUser –SamAccountName MIMService –name MIMService
+    Set-ADAccountPassword –identity MIMService –NewPassword $sp
+    Set-ADUser –identity MIMService –Enabled 1 –PasswordNeverExpires 1
+    New-ADUser –SamAccountName MIMSSPR –name MIMSSPR
+    Set-ADAccountPassword –identity MIMSSPR –NewPassword $sp
+    Set-ADUser –identity MIMSSPR –Enabled 1 –PasswordNeverExpires 1
+    New-ADUser –SamAccountName SharePoint –name SharePoint
+    Set-ADAccountPassword –identity SharePoint –NewPassword $sp
+    Set-ADUser –identity SharePoint –Enabled 1 –PasswordNeverExpires 1
+    New-ADUser –SamAccountName SqlServer –name SqlServer
+    Set-ADAccountPassword –identity SqlServer –NewPassword $sp
+    Set-ADUser –identity SqlServer –Enabled 1 –PasswordNeverExpires 1
+    New-ADUser –SamAccountName BackupAdmin –name BackupAdmin
+    Set-ADAccountPassword –identity BackupAdmin –NewPassword $sp
+    Set-ADUser –identity BackupAdmin –Enabled 1 -PasswordNeverExpires 1
+    ```
 
 2.  为所有组创建安全组。
 
@@ -92,6 +99,6 @@ MIM 需要已安装 Active Directory。 请确保你的环境中有一个你能�
 [Windows Server 2012 R2 »](prepare-server-ws2012r2.md)
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO3-->
 
 
