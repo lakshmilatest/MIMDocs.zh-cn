@@ -65,10 +65,10 @@
     }
   ],
   "notification_subscribers": [
-    "OPBuild@microsoft.com"
+    ""
   ],
   "branches_to_filter": [
-    "live"
+    "live", "master-oldev"
   ],
   "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/MIMDocs",
   "skip_source_output_uploading": false
