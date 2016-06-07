@@ -1265,14 +1265,14 @@
 
 ##### <a name='3e0e6cea0b268836bb6347e81694deec93320ce374'></a> Source: [MIMDocs\DeployUse\working-with-mim-certificate-manager.md](https://github.com/Microsoft/MIMDocs-pr/blob/f9b01ac2cee2b96f64a9fda917f4f4146ca2eeda/MIMDocs/DeployUse/working-with-mim-certificate-manager.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [MIMDocs\DeployUse\working-with-mim-certificate-manager.md](https://github.com/Microsoft/MIMDocs-pr.zh-cn/blob/4b2c83bd75e8c9cd77ce1f6b482e6394d68485c5/MIMDocs/DeployUse/working-with-mim-certificate-manager.md)
+* Target File: [MIMDocs\DeployUse\working-with-mim-certificate-manager.md](https://github.com/Microsoft/MIMDocs-pr.zh-cn/blob/1106fc146c0c4cbe4615f3984878adc0af83b9f3/MIMDocs/DeployUse/working-with-mim-certificate-manager.md)
 * Handoff File: [working-with-mim-certificate-manager.96aa090a3f47ac4d3cab460f5cd884461f8c2180.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/da7146f9235f8297b5701a2b0bf330550f2d48af/ol-handoff/Microsoft/MIMDocs-pr.zh-cn/master/working-with-mim-certificate-manager.96aa090a3f47ac4d3cab460f5cd884461f8c2180.zh-cn.xlf)
 * Handoff Datetime: 2016-04-11 22:08:42
 * Handoff Reason: Include
 * Archive File: [working-with-mim-certificate-manager.96aa090a3f47ac4d3cab460f5cd884461f8c2180.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/2d10805032711419201bfee1bc6485e7fc9666d4/ol-handoff/Microsoft/MIMDocs-pr.zh-cn/master/archive/working-with-mim-certificate-manager.96aa090a3f47ac4d3cab460f5cd884461f8c2180.zh-cn.xlf)
 * Archive Datetime: 2016-04-16 01:41:56
-* Handback File: [working-with-mim-certificate-manager.96aa090a3f47ac4d3cab460f5cd884461f8c2180.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/622353e1a8eabeb86eea3c0c67cc7c43cc6cc0eb/ol-handback/Microsoft/MIMDocs-pr.zh-cn/master/working-with-mim-certificate-manager.96aa090a3f47ac4d3cab460f5cd884461f8c2180.zh-cn.xlf)
-* Handback Datetime: 2016-05-03 20:20:32
+* Handback File: [working-with-mim-certificate-manager.96aa090a3f47ac4d3cab460f5cd884461f8c2180.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/1d890be0652f97b3472e533fe677d0bbc3d8b53d/ol-handback/Microsoft/MIMDocs-pr.zh-cn/master/working-with-mim-certificate-manager.96aa090a3f47ac4d3cab460f5cd884461f8c2180.zh-cn.xlf)
+* Handback Datetime: 2016-06-07 22:23:10
 * [Back to Top](#report-top)
 
 ##### <a name='3a4350e54383dc1098c778090bb29b435082045f75'></a> Source: [MIMDocs\DeployUse\working-with-self-service-password-reset.md](https://github.com/Microsoft/MIMDocs-pr/blob/f9b01ac2cee2b96f64a9fda917f4f4146ca2eeda/MIMDocs/DeployUse/working-with-self-service-password-reset.md)
