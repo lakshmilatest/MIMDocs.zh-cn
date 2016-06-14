@@ -27,8 +27,7 @@ ms.suite: ems
 
 # 安装 MIM 2016：同步 Active Directory 和 MIM 服务
 
->[!div class="step-by-step"]
-[« MIM 服务和门户](install-mim-service-portal.md)
+>[!div class="step-by-step"] [« MIM 服务和门户](install-mim-service-portal.md)
 
 > [!NOTE]
 > 本演练使用名为 Contoso 的公司中的示例名和值。 将其替换为你自己的。 例如：
@@ -43,8 +42,7 @@ MIM 管理代理 (MA) 是 MIM 同步到 MIM 服务的连接器。 若要创建�
 
 在配置 MIM 管理代理时，需要指定一个用户帐户。 本文档使用 **MIMMA** 作为此帐户的名称。
 
-> [!NOTE]
-> 用于 MIM 管理代理的帐户必须与 MIM 服务安装过程中指定的帐户相同。
+> [!NOTE] 用于 MIM 管理代理的帐户必须与 MIM 服务安装过程中指定的帐户相同。
 
 ###创建 MIM MA
 
@@ -99,69 +97,69 @@ MIM 管理代理 (MA) 是 MIM 同步到 MIM 服务的连接器。 若要创建�
 
 9.  在“配置属性流”页上，应用以下属性流映射，然后单击“下一步”
 
-    | **流方向** | **数据源属性** | **Metaverse 属性** |
+    | **数据源属性** | **流方向** | **Metaverse 属性** |
     |-|-|-|
-    |导入|导入|accountName|
-    |导入|导入|company|
-    |导入|导入|displayName|
-    |导入|导入|employeeID|
-    |导入|导入|employee类型|
-    |导入|导入|firstName|
-    |导入|导入|lastName|
-    |导入|导入|Manager|
-    |导入|导入|objectSid|
-    |导出|导出|accountName|
-    |导出|导出|company|
-    |导出|导出|displayName|
-    |导出|导出|domain|
-    |导出|导出|employeeID|
-    |导出|导出|employee类型|
-    |导出|导出|firstName|
-    |导出|导出|lastName|
-    |导出|导出|manager|
-    |导出|导出|objectSid|
+    | AccountName | 导出 | accountName |
+    | DisplayName | 导出 | displayName |
+    | Domain | 导出 | domain |
+    | EmployeeID | 导出 | employeeID |
+    | Employee类型 | 导出 | employee类型 |
+    | Email | 导出 | mail |
+    | 名字 | 导出 | firstName |
+    | 姓氏 | 导出 | lastName |
+    | ObjectSID | 导出 | objectSid |
 
 10.  选择“Person”作为数据源对象类型。
 
-    -   Select **Person** as the Metaverse object type.
+    -   选择**Person**作为 Metaverse 对象类型。
 
-    -   Select **Direct** as the Mapping Type.
+    -   选择**Direct**作为映射类型。
 
-    -   For each row in the previous table, complete the following steps:
+    -   对于上表中的每一行，完成以下步骤：
 
-        -   Select the **Flow direction** shown for that row in the table.
+        -   选择为表中该行显示的**流方向**。
 
-        -   Select the **Data source attribute** shown for that row in the table.
+        -   选择为表中该行显示的**数据源属性**。
 
-        -   Select the **Metaverse attribute** shown for that row in the table.
+        -   选择为表中该行显示的**Metaverse 属性**。
 
-        -   To apply the flow mapping, click **New**.
+        -   若要应用数据流映射，请单击**新建**。
 
-    -   Select **Group** as the data source type and as the metaverse object type.
+    -   选择**Group**作为数据源类型和 metaverse 对象类型。
 
-    -   Select **Direct** as the Mapping Type.
+    -   选择**Direct**作为映射类型。
 
-    -   For each row in the following table, complete these steps:
+    -   对于下表中的每一行，完成这些步骤：
 
-        -   Select the **Flow direction** shown for that row in the table.
+        -   选择为表中该行显示的**流方向**。
 
-        -   Select the **Data source attribute** shown for that row in the table.
+        -   选择为表中该行显示的**数据源属性**。
 
-        -   Select the **Metaverse attribute** shown for that row in the table.
+        -   选择为表中该行显示的**Metaverse 属性**。
 
-        -   To apply the flow mapping, click **New**.
+        -   若要应用数据流映射，请单击**新建**。
 
-    | Flow Direction | Data Source Attribute | Metaverse Attribute |
+    | **数据源属性** | **流方向** | **Metaverse 属性** |
     |-|-|-|
-    | Export | AccountName | accountName |
-    | Export | DisplayName | displayName |
-    | Export | Domain | domain |
-    | Export | Scope | scope |
-    | Export | Type | type |
-    | Export | Member | member |
-    | Export | MembershipLocked | membershipLocked |
-    | Export | MembershipAddWorkflow | membershipAddWorkflow |
-    | Export | Manager | manager |
+    | AccountName | 导出 | accountName |
+    | DisplayName | 导出 | displayName |
+    | Domain | 导出 | domain |
+    | Email | 导出 | mail |
+    | MailNickName | 导出 | mailNickName |
+    | 成员 | 导出 | 成员 |
+    | ObjectSID | 导出 | objectSid |
+    | 作用域 | 导出 | scope |
+    | 类型 | 导出 | 类型 |
+    | 成员shipAddWorkflow | 导出 | membershipAddWorkflow |
+    | 成员shipLocked | 导出 | membershipLocked |
+    | DisplayName | 导入 | displayName |
+    | 作用域 | 导入 | scope |
+    | 类型 | 导入 | 类型 |
+    | 成员 | 导入 | 成员 |
+    | AccountName | 导入 | accountName |
+    | DisplayedOwner | 导入 | displayedOwner |
+    | MailNickName | 导入 | mailNickName |
+
 
 11.  在“取消配置设置”页上，单击“下一步”
 
@@ -181,7 +179,7 @@ Active Directory 管理代理是 AD 域服务的连接器。 若要创建此连�
 
     - 林名称：contoso.local
     - 用户名：administrator
-    - 密码：&lt;账户的密码&gt;
+    - 密码：&lt;帐户的密码&gt;
     - 域：contoso
 
 4. 在“配置目录分区”页上，提供以下设置，然后单击“下一步”：
@@ -439,10 +437,9 @@ Active Directory 管理代理是 AD 域服务的连接器。 若要创建此连�
     - 在**运行配置文件**列表中，选择想要运行的运行配置文件。
     - 单击**确定**以启动运行配置文件。
 
->[!div class="step-by-step"]
-[« MIM 服务和门户](install-mim-service-portal.md)
+>[!div class="step-by-step"] [« MIM 服务和门户](install-mim-service-portal.md)
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Jun16_HO1-->
 
 
