@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "f136c2516810ec3b143052ba243358da1bb19ff9",
-  "LastTranslatedCommit": "1106fc146c0c4cbe4615f3984878adc0af83b9f3",
+  "LastTranslatedCommit": "c877b1743dcef1f976657d54200db0d011f176d6",
   "Items": {
     "c1e15c9548e46cbbff7810e63478074ceeb06152": {
       "FileHash": "c1e15c9548e46cbbff7810e63478074ceeb06152",
@@ -14739,14 +14739,14 @@
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
-      "TargetFileCommit": null,
-      "TargetFilePath": null,
-      "HandbackFilePath": null,
-      "HandbackFileCommit": null,
-      "HandbackDateTime": "0001-01-01T00:00:00",
+      "TargetFileCommit": "c877b1743dcef1f976657d54200db0d011f176d6",
+      "TargetFilePath": "MIMDocs\\DeployUse\\install-mim-sync-ad-service.md",
+      "HandbackFilePath": "ol-handback\\Microsoft\\MIMDocs-pr.zh-cn\\master\\install-mim-sync-ad-service.2a07d4547ca2bf0ca43e7ed04fa3bf20de000a33.zh-cn.xlf",
+      "HandbackFileCommit": "6cac7a994941377b658b172e5722bad0376f525b",
+      "HandbackDateTime": "2016-06-14T14:24:09.9271019Z",
       "HandbackException": null,
       "HandbackFailureTimes": 0,
-      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "UpdatedDateTime": "2016-06-14T14:24:09.9271019Z",
       "ArchiveFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.zh-cn\\master\\archive\\install-mim-sync-ad-service.2a07d4547ca2bf0ca43e7ed04fa3bf20de000a33.zh-cn.xlf",
       "ArchiveFileCommit": "927eb74f19422c9c17d41f4b71b3aa02b0ab9d47",
       "ArchiveFileDateTime": "2016-06-09T00:21:58.9769534Z",
