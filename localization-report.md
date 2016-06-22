@@ -1199,14 +1199,14 @@
 
 ##### <a name='b69ea20f375869d4ad08987a08aba05913fd1db167'></a> Source: [MIMDocs\DeployUse\prepare-server-exchange.md](https://github.com/Microsoft/MIMDocs-pr/blob/c023d147d0fcc1525fefbe866c952e217f7bee6b/MIMDocs/DeployUse/prepare-server-exchange.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [MIMDocs\DeployUse\prepare-server-exchange.md](https://github.com/Microsoft/MIMDocs-pr.zh-cn/blob/3e1d93c0f367af17ac9c3af338aa11e551a556c5/MIMDocs/DeployUse/prepare-server-exchange.md)
+* Target File: [MIMDocs\DeployUse\prepare-server-exchange.md](https://github.com/Microsoft/MIMDocs-pr.zh-cn/blob/0bdf13c0fc3d764d59df743c2c3fdb44351e0284/MIMDocs/DeployUse/prepare-server-exchange.md)
 * Handoff File: [prepare-server-exchange.62b650aec624862b1ad85b574bfdb8525ebc36e5.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/28fbd45766e7e7a73a7a04bcac1cfbae0134f0fa/ol-handoff/Microsoft/MIMDocs-pr.zh-cn/master/prepare-server-exchange.62b650aec624862b1ad85b574bfdb8525ebc36e5.zh-cn.xlf)
 * Handoff Datetime: 2016-04-18 16:57:53
 * Handoff Reason: Include
 * Archive File: [prepare-server-exchange.62b650aec624862b1ad85b574bfdb8525ebc36e5.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/1af1b71bd13433bb659e26275975d89942f060cc/ol-handoff/Microsoft/MIMDocs-pr.zh-cn/master/archive/prepare-server-exchange.62b650aec624862b1ad85b574bfdb8525ebc36e5.zh-cn.xlf)
 * Archive Datetime: 2016-05-19 21:38:43
-* Handback File: [prepare-server-exchange.62b650aec624862b1ad85b574bfdb8525ebc36e5.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/1f8d35db625b86cc67bbb9f68fbf182fc02b8a2d/ol-handback/Microsoft/MIMDocs-pr.zh-cn/master/prepare-server-exchange.62b650aec624862b1ad85b574bfdb8525ebc36e5.zh-cn.xlf)
-* Handback Datetime: 2016-05-26 13:40:36
+* Handback File: [prepare-server-exchange.62b650aec624862b1ad85b574bfdb8525ebc36e5.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/264cee9ddef693529096901bb34ef8fb3653cc0e/ol-handback/Microsoft/MIMDocs-pr.zh-cn/master/prepare-server-exchange.62b650aec624862b1ad85b574bfdb8525ebc36e5.zh-cn.xlf)
+* Handback Datetime: 2016-06-22 19:48:31
 * [Back to Top](#report-top)
 
 ##### <a name='4333d587041fcfa24620812872e312c6e9dc97d868'></a> Source: [MIMDocs\DeployUse\prepare-server-sharepoint.md](https://github.com/Microsoft/MIMDocs-pr/blob/c023d147d0fcc1525fefbe866c952e217f7bee6b/MIMDocs/DeployUse/prepare-server-sharepoint.md)
