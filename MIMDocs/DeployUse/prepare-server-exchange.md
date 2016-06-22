@@ -38,7 +38,7 @@ ms.suite: ems
 
     - [MS Office10 FP2.0](http://www.microsoft.com/en-us/download/details.aspx?id=17062)
 
-    - [MS Office10 FP2。0 SP1](http://www.microsoft.com/en-us/download/details.aspx?id=26604)
+    - [MS Office10 FP2.0 SP1](http://www.microsoft.com/en-us/download/details.aspx?id=26604)
 
 2. 下载并安装 [Microsoft 统一通信托管 API 4.0、核心运行时 64 位](http://www.microsoft.com/en-us/download/details.aspx?id=34992)
 
