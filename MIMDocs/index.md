@@ -21,7 +21,7 @@ ms.assetid: 90d66a75-a7ec-4fa1-911c-cce683908838
     <section id="hero-content">
       <h1>Microsoft 标识管理器文档</h1>
       <h2>Microsoft Identity Manager (MIM) 提供了本地标识和访问管理功能，包括标识同步、防范标识盗用等</h2>
-      <h3>第一次使用 MIM？ <a href="http://www.microsoft.com/en-us/server-cloud/products/microsoft-identity-manager/" target="\_blank">请访问产品页 &rarr;</a></h3>     
+      <h3>第一次使用 MIM？ <a href="http://go.microsoft.com/fwlink/?LinkId=816853" target="\_blank">请访问产品页 &rarr;</a></h3>     
     </section>
     <aside class="alert section-border">
       <p>准备进行体验？</p>
@@ -140,6 +140,6 @@ ms.assetid: 90d66a75-a7ec-4fa1-911c-cce683908838
 </article>
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO4-->
 
 
