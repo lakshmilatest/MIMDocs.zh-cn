@@ -19,12 +19,11 @@
           "**/*.gif",
           "**/*.bmp",
           "**/*.html",
-          "**/*.css",
-          "_themes/**"
+          "**/*.css"
           ],
         "exclude": [
           "**/obj/**",
-          "_themes/DocPacker/**"
+          "_themes/**"
         ]
       }
     ],
@@ -32,8 +31,7 @@
     "template": "docs.html",
     "globalMetadata": {
       "layout": "Conceptual",
-      "breadcrumb_path": "/enterprise-mobility/toc.json",
-      "ms.locale": "en-us"
+      "breadcrumb_path": "/enterprise-mobility/toc.json"
     }
   },
   "render": {
@@ -42,3 +40,4 @@
   },
   "basepath": "/MIM/DeployUse"
 }
+

@@ -9,7 +9,7 @@
           "**/obj/**",
           "Understand/**",
           "GetStarted/**",
-          "DeployUser/**",
+          "DeployUse/**",
           "PlanDesign/**",
           "Troubleshoot/**" 
         ]
@@ -23,15 +23,14 @@
           "**/*.jpg",
           "**/*.gif",
           "**/*.bmp",
-          "**/*.html",
-          "_themes/**"
+          "**/*.html"
           ],
         "exclude": [
           "**/obj/**",
-          "_themes/DocPacker/**",
+          "_themes/**",
           "Understand/**",
           "GetStarted/**",
-          "DeployUser/**",
+          "DeployUse/**",
           "PlanDesign/**",
           "Troubleshoot/**" 
         ]
@@ -41,8 +40,7 @@
     "template": "docs.html",
     "globalMetadata": {
       "layout": "Conceptual",
-      "breadcrumb_path": "/enterprise-mobility/toc.json",
-      "ms.locale": "en-us"
+      "breadcrumb_path": "/enterprise-mobility/toc.json"
     }
   },
   "render": {
