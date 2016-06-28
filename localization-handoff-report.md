@@ -1,29 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [MIMDocs\index.md](https://github.com/Microsoft/MIMDocs-pr/blob/0bbdacbfc5b912221257a9425db13804d6dd6a25/MIMDocs/index.md) | OutofSyncHandedBackSuccess | [Details](#f589140e0feac52474256e7ab29b9d3a7a36c5ec81)
 
 ## Item Details
-##### <a name='f589140e0feac52474256e7ab29b9d3a7a36c5ec81'></a> Source: [MIMDocs\index.md](https://github.com/Microsoft/MIMDocs-pr/blob/0bbdacbfc5b912221257a9425db13804d6dd6a25/MIMDocs/index.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [index.a54b2324d63a6d513b6900195023b9a8089553b4.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/2228c741db3e5b5937c2d73d1a0d377a649ee965/ol-handoff/Microsoft/MIMDocs-pr.zh-cn/master/index.a54b2324d63a6d513b6900195023b9a8089553b4.zh-cn.xlf)
-* Handoff Datetime: 2016-06-23 23:05:04
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [MIMDocs\index.md](https://github.com/Microsoft/MIMDocs-pr.zh-cn/blob/4930530f5f6d966b0bb49e45ee97b95977ba587b/MIMDocs/index.md)
-* Current Handback File: [index.a54b2324d63a6d513b6900195023b9a8089553b4.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/3eece3f8857d7cf954876ab5163d94cc4a04b6f9/ol-handback/Microsoft/MIMDocs-pr.zh-cn/master/index.a54b2324d63a6d513b6900195023b9a8089553b4.zh-cn.xlf)
-* Current Handback Datetime: 2016-06-14 17:08:13
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
