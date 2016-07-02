@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: MIM 2016 支持的平台 | Microsoft 标识管理器
-description: 查找与各 MIM 2016 组件兼容的产品和版本
-keywords:
+title: "MIM 2016 支持的平台 | Microsoft 标识管理器"
+description: "查找与各 MIM 2016 组件兼容的产品和版本"
+keywords: 
 author: kgremban
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 4978f60d-044d-4e84-8d93-65801fce1144
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mwahl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: a59e7471a8aaafc6752c9be34d52fd3509104dec
+ms.openlocfilehash: bb3e3abfdc12d78108676d4a9f029531d9df17fd
+
 
 ---
 
@@ -64,6 +58,7 @@ ms.suite: ems
 || Web 浏览器 | 带有 Silverlight 的 Internet Explorer 7、8、9、10 或 11 |
 
 
-<!--HONumber=Apr16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
