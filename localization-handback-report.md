@@ -1,39 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 2
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [MIMDocs\pam\step-1-prepare-corp-domain.md](https://github.com/Microsoft/MIMDocs-pr/blob/9e5f51d5ca731b3564b8262db0f4cddeb850231a/MIMDocs/pam/step-1-prepare-corp-domain.md) | InSyncHandedBackSuccess | [Details](#7d6888ad4d694ad0ed746598563de32d7c363936230)
- [MIMDocs\pam\step-4-install-mim-components-on-pam-server.md](https://github.com/Microsoft/MIMDocs-pr/blob/9e5f51d5ca731b3564b8262db0f4cddeb850231a/MIMDocs/pam/step-4-install-mim-components-on-pam-server.md) | InSyncHandedBackSuccess | [Details](#4e0298099dad9b11812d533e23101fb995fe33d5233)
 
 ## Item Details
-##### <a name='7d6888ad4d694ad0ed746598563de32d7c363936230'></a> Source: [MIMDocs\pam\step-1-prepare-corp-domain.md](https://github.com/Microsoft/MIMDocs-pr/blob/9e5f51d5ca731b3564b8262db0f4cddeb850231a/MIMDocs/pam/step-1-prepare-corp-domain.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [MIMDocs\pam\step-1-prepare-corp-domain.md](https://github.com/Microsoft/MIMDocs-pr.zh-cn/blob/c7c8faa2a1409d8593992361d467cb944863fba2/MIMDocs/pam/step-1-prepare-corp-domain.md)
-* Handoff File: [step-1-prepare-corp-domain.3299162240531aab6e6a826d154cd65f4f0408ab.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/ab1b5ee0315575cd70d3ee08733196e7b16816f0/ol-handoff/Microsoft/MIMDocs-pr.zh-cn/master/step-1-prepare-corp-domain.3299162240531aab6e6a826d154cd65f4f0408ab.zh-cn.xlf)
-* Handoff Datetime: 2016-06-29 01:01:58
-* Handoff Reason: Include
-* Archive File: [step-1-prepare-corp-domain.3299162240531aab6e6a826d154cd65f4f0408ab.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/1a87d2a79364f0b8ab53947b30f17fd5c99fd454/ol-handoff/Microsoft/MIMDocs-pr.zh-cn/master/archive/step-1-prepare-corp-domain.3299162240531aab6e6a826d154cd65f4f0408ab.zh-cn.xlf)
-* Archive Datetime: 2016-07-01 23:28:16
-* Handback File: [step-1-prepare-corp-domain.3299162240531aab6e6a826d154cd65f4f0408ab.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/db34644bba30dd6c6528e338afc0fc99a39af1c0/ol-handback/Microsoft/MIMDocs-pr.zh-cn/master/step-1-prepare-corp-domain.3299162240531aab6e6a826d154cd65f4f0408ab.zh-cn.xlf)
-* Handback Datetime: 2016-07-11 23:19:53
-* [Back to Top](#report-top)
-
-##### <a name='4e0298099dad9b11812d533e23101fb995fe33d5233'></a> Source: [MIMDocs\pam\step-4-install-mim-components-on-pam-server.md](https://github.com/Microsoft/MIMDocs-pr/blob/9e5f51d5ca731b3564b8262db0f4cddeb850231a/MIMDocs/pam/step-4-install-mim-components-on-pam-server.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [MIMDocs\pam\step-4-install-mim-components-on-pam-server.md](https://github.com/Microsoft/MIMDocs-pr.zh-cn/blob/c7c8faa2a1409d8593992361d467cb944863fba2/MIMDocs/pam/step-4-install-mim-components-on-pam-server.md)
-* Handoff File: [step-4-install-mim-components-on-pam-server.4677a6f6312d5d742c28aa62d8b27ad483ddcd27.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/ab1b5ee0315575cd70d3ee08733196e7b16816f0/ol-handoff/Microsoft/MIMDocs-pr.zh-cn/master/step-4-install-mim-components-on-pam-server.4677a6f6312d5d742c28aa62d8b27ad483ddcd27.zh-cn.xlf)
-* Handoff Datetime: 2016-06-29 01:01:58
-* Handoff Reason: Include
-* Archive File: [step-4-install-mim-components-on-pam-server.4677a6f6312d5d742c28aa62d8b27ad483ddcd27.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/1a87d2a79364f0b8ab53947b30f17fd5c99fd454/ol-handoff/Microsoft/MIMDocs-pr.zh-cn/master/archive/step-4-install-mim-components-on-pam-server.4677a6f6312d5d742c28aa62d8b27ad483ddcd27.zh-cn.xlf)
-* Archive Datetime: 2016-07-01 23:28:16
-* Handback File: [step-4-install-mim-components-on-pam-server.4677a6f6312d5d742c28aa62d8b27ad483ddcd27.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/db34644bba30dd6c6528e338afc0fc99a39af1c0/ol-handback/Microsoft/MIMDocs-pr.zh-cn/master/step-4-install-mim-components-on-pam-server.4677a6f6312d5d742c28aa62d8b27ad483ddcd27.zh-cn.xlf)
-* Handback Datetime: 2016-07-11 23:19:53
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
