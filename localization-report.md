@@ -7,10 +7,10 @@
 [ Handoff Failed Files ](#handoff-failed-list)| 0
 [ Handoff Success Files ](#handoff-success-list)| 147
 [ Archive Failed Files ](#archive-failed-list)| 0
-[ Archive Success Files ](#archive-success-list)| 3
+[ Archive Success Files ](#archive-success-list)| 1
 [ Handback Failed Files ](#handback-failed-list)| 0
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 14
-[ In Sync Handback Files ](#insync-handback-success-list)| 31
+[ In Sync Handback Files ](#insync-handback-success-list)| 33
 [ Ignored Files ](#ignored-list)| 109
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
@@ -171,8 +171,6 @@
 ## <a name='archive-success-list'></a> Archive Success File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [MIMDocs\pam\step-1-prepare-corp-domain.md](https://github.com/Microsoft/MIMDocs-pr/blob/9e5f51d5ca731b3564b8262db0f4cddeb850231a/MIMDocs/pam/step-1-prepare-corp-domain.md) | ArchivedSuccess | [Details](#7d6888ad4d694ad0ed746598563de32d7c363936230)
- [MIMDocs\pam\step-4-install-mim-components-on-pam-server.md](https://github.com/Microsoft/MIMDocs-pr/blob/9e5f51d5ca731b3564b8262db0f4cddeb850231a/MIMDocs/pam/step-4-install-mim-components-on-pam-server.md) | ArchivedSuccess | [Details](#4e0298099dad9b11812d533e23101fb995fe33d5233)
  [MIMDocs\PlanDesign\supported-management-agents.md](https://github.com/Microsoft/MIMDocs-pr/blob/bddc8ba2deec0dfb434e26082891a5199e0a15eb/MIMDocs/PlanDesign/supported-management-agents.md) | ArchivedSuccess | [Details](#e1f18ad9bfc7946a751af0b73bba4faf0689c265247)
 
 ## <a name='handback-failed-list'></a> Handback Failed File List
@@ -218,8 +216,10 @@
  [MIMDocs\microsoft-identity-manager-2016-release-notes.md](https://github.com/Microsoft/MIMDocs-pr/blob/62108908497d1dcf69579ba144545346b6a42266/MIMDocs/microsoft-identity-manager-2016-release-notes.md) | InSyncHandedBackSuccess | [Details](#12f245624e644b12825239e378a26752f7a86846196)
  [MIMDocs\pam\high-availability-disaster-recovery-considerations-bastion-environment.md](https://github.com/Microsoft/MIMDocs-pr/blob/9e5f51d5ca731b3564b8262db0f4cddeb850231a/MIMDocs/pam/high-availability-disaster-recovery-considerations-bastion-environment.md) | InSyncHandedBackSuccess | [Details](#1d9e005bfb3e26f9a2b818667f14acd3e5239523202)
  [MIMDocs\pam\privileged-identity-management-for-active-directory-domain-services.md](https://github.com/Microsoft/MIMDocs-pr/blob/9e5f51d5ca731b3564b8262db0f4cddeb850231a/MIMDocs/pam/privileged-identity-management-for-active-directory-domain-services.md) | InSyncHandedBackSuccess | [Details](#959c92f2e98fe712703ca23d3e38cdec6a8b85dc229)
+ [MIMDocs\pam\step-1-prepare-corp-domain.md](https://github.com/Microsoft/MIMDocs-pr/blob/9e5f51d5ca731b3564b8262db0f4cddeb850231a/MIMDocs/pam/step-1-prepare-corp-domain.md) | InSyncHandedBackSuccess | [Details](#7d6888ad4d694ad0ed746598563de32d7c363936230)
  [MIMDocs\pam\step-2-prepare-priv-domain-controller.md](https://github.com/Microsoft/MIMDocs-pr/blob/9e5f51d5ca731b3564b8262db0f4cddeb850231a/MIMDocs/pam/step-2-prepare-priv-domain-controller.md) | InSyncHandedBackSuccess | [Details](#62d80222ea85fe5066cfa396b5e5a10bced4d3cd231)
  [MIMDocs\pam\step-3-prepare-pam-server.md](https://github.com/Microsoft/MIMDocs-pr/blob/9e5f51d5ca731b3564b8262db0f4cddeb850231a/MIMDocs/pam/step-3-prepare-pam-server.md) | InSyncHandedBackSuccess | [Details](#ec65078cea33b73aa9482e831a1870df477c6581232)
+ [MIMDocs\pam\step-4-install-mim-components-on-pam-server.md](https://github.com/Microsoft/MIMDocs-pr/blob/9e5f51d5ca731b3564b8262db0f4cddeb850231a/MIMDocs/pam/step-4-install-mim-components-on-pam-server.md) | InSyncHandedBackSuccess | [Details](#4e0298099dad9b11812d533e23101fb995fe33d5233)
  [MIMDocs\pam\step-7-elevate-user-access.md](https://github.com/Microsoft/MIMDocs-pr/blob/9e5f51d5ca731b3564b8262db0f4cddeb850231a/MIMDocs/pam/step-7-elevate-user-access.md) | InSyncHandedBackSuccess | [Details](#ee47c69788a98075372ca62943e0c4b101c5354f236)
  [MIMDocs\pam\tier-model-for-partitioning-administrative-privileges.md](https://github.com/Microsoft/MIMDocs-pr/blob/9e5f51d5ca731b3564b8262db0f4cddeb850231a/MIMDocs/pam/tier-model-for-partitioning-administrative-privileges.md) | InSyncHandedBackSuccess | [Details](#509c05bbda5f0a0b936518fb023000771c45d4f7237)
  [MIMDocs\pam\use-azure-mfa-for-activation.md](https://github.com/Microsoft/MIMDocs-pr/blob/9e5f51d5ca731b3564b8262db0f4cddeb850231a/MIMDocs/pam/use-azure-mfa-for-activation.md) | InSyncHandedBackSuccess | [Details](#d6f6927eec479c705fd9ef7f33fafdeec05857e0239)
@@ -3247,15 +3247,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='7d6888ad4d694ad0ed746598563de32d7c363936230'></a> Source: [MIMDocs\pam\step-1-prepare-corp-domain.md](https://github.com/Microsoft/MIMDocs-pr/blob/9e5f51d5ca731b3564b8262db0f4cddeb850231a/MIMDocs/pam/step-1-prepare-corp-domain.md)
-* Status: ArchivedSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [MIMDocs\pam\step-1-prepare-corp-domain.md](https://github.com/Microsoft/MIMDocs-pr.zh-cn/blob/c7c8faa2a1409d8593992361d467cb944863fba2/MIMDocs/pam/step-1-prepare-corp-domain.md)
 * Handoff File: [step-1-prepare-corp-domain.3299162240531aab6e6a826d154cd65f4f0408ab.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/ab1b5ee0315575cd70d3ee08733196e7b16816f0/ol-handoff/Microsoft/MIMDocs-pr.zh-cn/master/step-1-prepare-corp-domain.3299162240531aab6e6a826d154cd65f4f0408ab.zh-cn.xlf)
 * Handoff Datetime: 2016-06-29 01:01:58
 * Handoff Reason: Include
 * Archive File: [step-1-prepare-corp-domain.3299162240531aab6e6a826d154cd65f4f0408ab.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/1a87d2a79364f0b8ab53947b30f17fd5c99fd454/ol-handoff/Microsoft/MIMDocs-pr.zh-cn/master/archive/step-1-prepare-corp-domain.3299162240531aab6e6a826d154cd65f4f0408ab.zh-cn.xlf)
 * Archive Datetime: 2016-07-01 23:28:16
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback File: [step-1-prepare-corp-domain.3299162240531aab6e6a826d154cd65f4f0408ab.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/db34644bba30dd6c6528e338afc0fc99a39af1c0/ol-handback/Microsoft/MIMDocs-pr.zh-cn/master/step-1-prepare-corp-domain.3299162240531aab6e6a826d154cd65f4f0408ab.zh-cn.xlf)
+* Handback Datetime: 2016-07-11 23:19:53
 * [Back to Top](#report-top)
 
 ##### <a name='62d80222ea85fe5066cfa396b5e5a10bced4d3cd231'></a> Source: [MIMDocs\pam\step-2-prepare-priv-domain-controller.md](https://github.com/Microsoft/MIMDocs-pr/blob/9e5f51d5ca731b3564b8262db0f4cddeb850231a/MIMDocs/pam/step-2-prepare-priv-domain-controller.md)
@@ -3283,15 +3283,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='4e0298099dad9b11812d533e23101fb995fe33d5233'></a> Source: [MIMDocs\pam\step-4-install-mim-components-on-pam-server.md](https://github.com/Microsoft/MIMDocs-pr/blob/9e5f51d5ca731b3564b8262db0f4cddeb850231a/MIMDocs/pam/step-4-install-mim-components-on-pam-server.md)
-* Status: ArchivedSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [MIMDocs\pam\step-4-install-mim-components-on-pam-server.md](https://github.com/Microsoft/MIMDocs-pr.zh-cn/blob/c7c8faa2a1409d8593992361d467cb944863fba2/MIMDocs/pam/step-4-install-mim-components-on-pam-server.md)
 * Handoff File: [step-4-install-mim-components-on-pam-server.4677a6f6312d5d742c28aa62d8b27ad483ddcd27.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/ab1b5ee0315575cd70d3ee08733196e7b16816f0/ol-handoff/Microsoft/MIMDocs-pr.zh-cn/master/step-4-install-mim-components-on-pam-server.4677a6f6312d5d742c28aa62d8b27ad483ddcd27.zh-cn.xlf)
 * Handoff Datetime: 2016-06-29 01:01:58
 * Handoff Reason: Include
 * Archive File: [step-4-install-mim-components-on-pam-server.4677a6f6312d5d742c28aa62d8b27ad483ddcd27.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/1a87d2a79364f0b8ab53947b30f17fd5c99fd454/ol-handoff/Microsoft/MIMDocs-pr.zh-cn/master/archive/step-4-install-mim-components-on-pam-server.4677a6f6312d5d742c28aa62d8b27ad483ddcd27.zh-cn.xlf)
 * Archive Datetime: 2016-07-01 23:28:16
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback File: [step-4-install-mim-components-on-pam-server.4677a6f6312d5d742c28aa62d8b27ad483ddcd27.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/db34644bba30dd6c6528e338afc0fc99a39af1c0/ol-handback/Microsoft/MIMDocs-pr.zh-cn/master/step-4-install-mim-components-on-pam-server.4677a6f6312d5d742c28aa62d8b27ad483ddcd27.zh-cn.xlf)
+* Handback Datetime: 2016-07-11 23:19:53
 * [Back to Top](#report-top)
 
 ##### <a name='1260b4e1792bf43a7288866cf3afa41fabe79fe9234'></a> Source: [MIMDocs\pam\step-5-establish-trust-between-priv-corp-forests.md](https://github.com/Microsoft/MIMDocs-pr/blob/06319438d93d8d92edc833e2d0bf6492dd5919a6/MIMDocs/pam/step-5-establish-trust-between-priv-corp-forests.md)

@@ -117,9 +117,6 @@
   "7d6888ad4d694ad0ed746598563de32d7c363936": [
     "MIMDocs\\pam\\step-1-prepare-corp-domain.md"
   ],
-  "4d59ec5bb28b6a2f3602628618a536dcdb7b73b6": [
-    "MIMDocs\\pam\\step-1-prepare-corp-domain.md"
-  ],
   "62d80222ea85fe5066cfa396b5e5a10bced4d3cd": [
     "MIMDocs\\pam\\step-2-prepare-priv-domain-controller.md"
   ],
@@ -127,9 +124,6 @@
     "MIMDocs\\pam\\step-3-prepare-pam-server.md"
   ],
   "4e0298099dad9b11812d533e23101fb995fe33d5": [
-    "MIMDocs\\pam\\step-4-install-mim-components-on-pam-server.md"
-  ],
-  "0bca00af16d83d2069ed10140add975c01516984": [
     "MIMDocs\\pam\\step-4-install-mim-components-on-pam-server.md"
   ],
   "1260b4e1792bf43a7288866cf3afa41fabe79fe9": [
