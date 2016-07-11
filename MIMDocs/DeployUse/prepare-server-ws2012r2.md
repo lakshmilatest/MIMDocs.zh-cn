@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 设置标识管理服务器 &#58; Windows Server 2012 R2 | Microsoft 标识管理器
-description: 获取准备 Windows Server 2012 RS 以使用 MIM 2016 的步骤和最低要求。
-keywords:
+title: "设置标识管理服务器 &#58; Windows Server 2012 R2 | Microsoft 标识管理器"
+description: "获取准备 Windows Server 2012 RS 以使用 MIM 2016 的步骤和最低要求。"
+keywords: 
 author: kgremban
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 51507d0a-2aeb-4cfd-a642-7c71e666d6cd
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mwahl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: af9f7f75f19bb29f2e29577c787252f6b7fabb7d
+ms.openlocfilehash: cd4ac84af4e5416512cf546a5d23b342ebe13c39
+
 
 ---
 
@@ -61,7 +55,7 @@ ms.suite: ems
 
     ![PowerShell 功能映像](media/MIM-DeployWS2.png)
 
-7. 在 PowerShell 中，键入以下命令。 请注意，可能需要为 **.NET Framework** 3.5 功能的源文件指定其他位置。 这些功能通常在安装 Windows Server 时并不存在，但在操作系统安装磁盘源文件夹上的并行 (SxS) 文件夹中提供这些功能，例如，“*d:\Sources\SxS\*”。
+7. 在 PowerShell 中，键入以下命令。 请注意，可能需要为 **.NET Framework** 3.5 功能的源文件指定其他位置。 这些功能通常在安装 Windows Server 时并不存在，但在操作系统安装磁盘源文件夹上的并行 (SxS) 文件夹中可见，例如，“*d:\Sources\SxS\*”。
 
     ```
     import-module ServerManager
@@ -116,6 +110,7 @@ ms.suite: ems
 [SQL Server 2014 »](prepare-server-sql2014.md)
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

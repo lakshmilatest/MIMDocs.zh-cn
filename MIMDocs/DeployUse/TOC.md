@@ -17,9 +17,10 @@
 ## [MIM 证书管理器](working-with-mim-certificate-manager.md)
 ### [注册智能卡](certificate-manager-for-non-administrators.md)
 ### [创建软件证书](certificate-manager-for-software-certificates.md)
+# [使用 Privileged Access Management](/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services)
 # [开发人员参考](/microsoft-identity-manager/reference/microsoft-identity-manager-2016-developer-reference)
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO3-->
 
 

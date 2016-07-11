@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 设置标识管理服务器 &#58; SQL Server 2014 | Microsoft 标识管理器
-description: 安装 SQL Server 2014，为 MIM 2016 的安装做准备。
-keywords:
+title: "设置标识管理服务器 &#58; SQL Server 2014 | Microsoft 标识管理器"
+description: "安装 SQL Server 2014，为 MIM 2016 的安装做准备。"
+keywords: 
 author: kgremban
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 297df3b3-192e-4ed9-82ed-c95eb5297c84
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mwahl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c023d147d0fcc1525fefbe866c952e217f7bee6b
+ms.openlocfilehash: 2c0ff0bdbba4bcf979def8d5c7aa381947d6cc87
+
 
 ---
 
@@ -54,6 +48,7 @@ ms.suite: ems
 [SharePoint »](prepare-server-sharepoint.md)
 
 
-<!--HONumber=Apr16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 为非管理员注册智能卡 | Microsoft Identity Manager
-description: 对于不具有自己计算机的管理员访问权限的用户，了解如何为其注册智能卡，以便他们使用证书管理器。
-keywords:
+title: "为非管理员注册智能卡 | Microsoft Identity Manager"
+description: "对于不具有自己计算机的管理员访问权限的用户，了解如何为其注册智能卡，以便他们使用证书管理器。"
+keywords: 
 author: kgremban
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: bfabc562-a2f0-4cff-ac31-36927f41e102
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mwahl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 875ed6b96929822ac166a4a262cc8547a4ea3b2a
+ms.openlocfilehash: 50c0edd60abfa6550cb5a873d32a842e8c099811
+
 
 ---
 
@@ -76,7 +70,7 @@ ms.suite: ems
 
     1.  作为拥有管理员权限的用户登录到 CM 门户。
 
-    2.  依次转到“管理”  &gt;“管理配置文件模板”  并确保已选中靠近所创建的配置文件模板的复选框，然后单击“复制选定的配置文件模板”。
+    2.  转到“管理”&gt;“管理配置文件模板”并确保已选中所创建的配置文件模板旁的复选框，然后单击“复制选定的配置文件模板”。
 
     3.  键入配置文件模板的名称、添加“nonAdmin”，然后单击“确定” 。
 
@@ -101,6 +95,7 @@ ms.suite: ems
 8.  **启动 CM 应用并注册虚拟智能卡**
 
 
-<!--HONumber=Apr16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 
