@@ -20,7 +20,8 @@ ms.openlocfilehash: 1260b4e1792bf43a7288866cf3afa41fabe79fe9
 
 # 步骤 5 - 在 PRIV 和 CORP 林之间建立信任关系
 
->[!div class="step-by-step"][«步骤 4](step-4-install-mim-components-on-pam-server.md)
+>[!div class="step-by-step"]
+[!div class="step-by-step"][«步骤 4](step-4-install-mim-components-on-pam-server.md)
 [步骤 6»](step-6-transition-group-to-pam.md)
 
 
@@ -104,11 +105,12 @@ ms.openlocfilehash: 1260b4e1792bf43a7288866cf3afa41fabe79fe9
 
 下一步将介绍向 PAM 移动组。
 
->[!div class="step-by-step"][«步骤 4](step-4-install-mim-components-on-pam-server.md)
+>[!div class="step-by-step"]
+[!div class="step-by-step"][«步骤 4](step-4-install-mim-components-on-pam-server.md)
 [步骤 6»](step-6-transition-group-to-pam.md)
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

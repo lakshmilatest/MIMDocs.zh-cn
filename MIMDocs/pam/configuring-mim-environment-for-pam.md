@@ -37,10 +37,11 @@ ms.openlocfilehash: c9f2cf2ba1f42ea1513ae38d8089839d85ae5553
 
 7.  演示请求、接收和使用对受保护资源的提升的特权访问权限。
 
->[!div class="step-by-step"] [开始 »](step-1-prepare-corp-domain.md)
+>[!div class="step-by-step"]
+[[!div class="step-by-step"] [开始 »](step-1-prepare-corp-domain.md)](step-1-prepare-corp-domain.md)
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 
