@@ -20,7 +20,8 @@ ms.openlocfilehash: b21e2fed4588572fd1b793c4942860871ae9a51c
 
 # 步骤 6 – 将某个组转换为特权访问管理
 
->[!div class="step-by-step"] [ 步骤 5 ](step-5-establish-trust-between-priv-corp-forests.md)
+>[!div class="step-by-step"]
+[!div class="step-by-step"] [ 步骤 5 ](step-5-establish-trust-between-priv-corp-forests.md)
 [步骤 7 »](step-7-elevate-user-access.md)
 
 使用 PowerShell cmdlet 在 PRIV 林中创建了特权帐户。 这些 cmdlet 执行以下功能：
@@ -82,11 +83,12 @@ ms.openlocfilehash: b21e2fed4588572fd1b793c4942860871ae9a51c
 
 如果你想要证明跨林的访问权限对用户的管理员帐户有效，则继续下一步。
 
->[!div class="step-by-step"] [ 步骤 5 ](step-5-establish-trust-between-priv-corp-forests.md)
+>[!div class="step-by-step"]
+[!div class="step-by-step"] [ 步骤 5 ](step-5-establish-trust-between-priv-corp-forests.md)
 [步骤 7 »](step-7-elevate-user-access.md)
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 
