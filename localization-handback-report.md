@@ -1,11 +1,26 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [MIMDocs\PlanDesign\supported-management-agents.md](https://github.com/Microsoft/MIMDocs-pr/blob/bddc8ba2deec0dfb434e26082891a5199e0a15eb/MIMDocs/PlanDesign/supported-management-agents.md) | InSyncHandedBackSuccess | [Details](#e1f18ad9bfc7946a751af0b73bba4faf0689c265247)
 
 ## Item Details
+##### <a name='e1f18ad9bfc7946a751af0b73bba4faf0689c265247'></a> Source: [MIMDocs\PlanDesign\supported-management-agents.md](https://github.com/Microsoft/MIMDocs-pr/blob/bddc8ba2deec0dfb434e26082891a5199e0a15eb/MIMDocs/PlanDesign/supported-management-agents.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [MIMDocs\PlanDesign\supported-management-agents.md](https://github.com/Microsoft/MIMDocs-pr.zh-cn/blob/f387d221d8fc1877e6360d7438431fb07d2968a3/MIMDocs/PlanDesign/supported-management-agents.md)
+* Handoff File: [supported-management-agents.11fc61920c5e2299976de7e0176ead23128cfc9b.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/dfff74f0cdab39724b658486eacfdc9f95e4e3e4/ol-handoff/Microsoft/MIMDocs-pr.zh-cn/master/supported-management-agents.11fc61920c5e2299976de7e0176ead23128cfc9b.zh-cn.xlf)
+* Handoff Datetime: 2016-07-06 22:22:22
+* Handoff Reason: Include
+* Archive File: [supported-management-agents.11fc61920c5e2299976de7e0176ead23128cfc9b.zh-cn.xlf](https://github.com/Microsoft/EM.handoff/blob/40d49a03da3d89fad6bc415bb8e327591530a57d/ol-handoff/Microsoft/MIMDocs-pr.zh-cn/master/archive/supported-management-agents.11fc61920c5e2299976de7e0176ead23128cfc9b.zh-cn.xlf)
+* Archive Datetime: 2016-07-08 23:17:19
+* Handback File: [supported-management-agents.11fc61920c5e2299976de7e0176ead23128cfc9b.zh-cn.xlf](https://github.com/Microsoft/EM.handback/blob/3b133c2548bbda5e46ed164f0060eccb66fd51b1/ol-handback/Microsoft/MIMDocs-pr.zh-cn/master/supported-management-agents.11fc61920c5e2299976de7e0176ead23128cfc9b.zh-cn.xlf)
+* Handback Datetime: 2016-07-15 10:14:43
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
