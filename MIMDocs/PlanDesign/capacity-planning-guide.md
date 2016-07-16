@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 容量规划指南 | Microsoft 标识管理器
-description: 使用本指南了解部署 MIM 2016（包括负载级别和策略决策）之前应该考虑的变量。
-keywords:
+title: "容量规划指南 | Microsoft 标识管理器"
+description: "使用本指南了解部署 MIM 2016（包括负载级别和策略决策）之前应该考虑的变量。"
+keywords: 
 author: kgremban
 manager: stevenpo
 ms.date: 05/13/2016
@@ -12,16 +10,12 @@ ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 3ac5b990-1678-4996-996d-cbd84b8426b4
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mwahl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0ea8b3d9032a01bd6a6b1faad8ea27d2cb889fc6
+ms.openlocfilehash: 323a875aba14a238aa7cb3a0e6df192729ce53d6
+
 
 ---
 
@@ -100,6 +94,7 @@ MIM 策略配置还包括环境中的相关配置决策。 请确保考虑了以
 - [Forefront 标识管理器 (FIM) 2010 容量规划指南](http://go.microsoft.com/fwlink/?LinkId=200180)（可下载）详尽介绍了有关测试版本和性能测试结果的相关信息。
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

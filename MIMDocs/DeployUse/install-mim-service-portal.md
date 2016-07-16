@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 安装 MIM 2016&#58; MIM 服务和门户 | Microsoft 标识管理器
-description: 获取为 Microsoft 标识管理器 2016 配置和安装 MIM 服务和门户的步骤
-keywords:
+title: "安装 MIM 2016&#58; MIM 服务和门户 | Microsoft 标识管理器"
+description: "获取为 Microsoft 标识管理器 2016 配置和安装 MIM 服务和门户的步骤"
+keywords: 
 author: kgremban
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,24 +10,20 @@ ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mwahl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c023d147d0fcc1525fefbe866c952e217f7bee6b
+ms.openlocfilehash: eb2af412d9638035de591197fa191e990ade0ca1
+
 
 ---
 
 # 安装 MIM 2016：MIM 服务和门户
 
 >[!div class="step-by-step"]
-[« MIM 同步服务](install-mim-sync.md)
-[同步数据库 »](install-mim-sync-ad-service.md)
+[«MIM 同步服务](install-mim-sync.md)
+[同步数据库»](install-mim-sync-ad-service.md)
 
 > [!NOTE]
 > 本演练使用名为 Contoso 的公司中的示例名和值。 将其替换为你自己的。 例如：
@@ -153,10 +147,11 @@ ms.suite: ems
 > 可选：此时，你可以安装 MIM 外接程序和扩展。
 
 >[!div class="step-by-step"]  
-[« MIM 同步服务](install-mim-sync.md)
-[同步数据库 »](install-mim-sync-ad-service.md)
+[«MIM 同步服务](install-mim-sync.md)
+[同步数据库»](install-mim-sync-ad-service.md)
 
 
-<!--HONumber=Apr16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 
