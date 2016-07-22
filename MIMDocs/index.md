@@ -1,9 +1,8 @@
 ---
 asset_id: 90d66a75-a7ec-4fa1-911c-cce683908838
 layout: HubPage
-
-title: Microsoft 标识管理器文档
-description: Microsoft Intune 技术文档 - 移动设备和应用程序管理
+title: "Microsoft 标识管理器文档"
+description: "Microsoft Intune 技术文档 - 移动设备和应用程序管理"
 keywords: intune documentation, MDM documentation, Mobile Device Management Documentation, Mobile Device and Application Management Documentation
 author: msstevenpo
 manager: stevenpo
@@ -14,6 +13,10 @@ ms.service: microsoft-identity-manager
 ms.technology: security
 ms.suite: ems
 ms.assetid: 90d66a75-a7ec-4fa1-911c-cce683908838
+translationtype: Human Translation
+ms.sourcegitcommit: 0bbdacbfc5b912221257a9425db13804d6dd6a25
+ms.openlocfilehash: f589140e0feac52474256e7ab29b9d3a7a36c5ec
+
 
 ---
 # Microsoft 标识管理文档
@@ -138,6 +141,7 @@ ms.assetid: 90d66a75-a7ec-4fa1-911c-cce683908838
       </ol>
     </aside>
 </article>
+
 
 
 <!--HONumber=Jun16_HO4-->

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 部署 MIM 2016 | Microsoft 标识管理器
-description: 获取部署 Microsoft 标识管理器 2016 的完整步骤列表，包括从准备环境到配置门户的全部步骤。
-keywords:
+title: "部署 MIM 2016 | Microsoft 标识管理器"
+description: "获取部署 Microsoft 标识管理器 2016 的完整步骤列表，包括从准备环境到配置门户的全部步骤。"
+keywords: 
 author: kgremban
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: fa0af422-b5e9-4599-9d9b-cb6c18ea07f9
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mwahl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ca7fdef81eb8a68aff46df528e1989f019f5d2a4
+ms.openlocfilehash: a56ead9777f1dad1aa0d214a506cf1242f51e167
+
 
 ---
 
@@ -55,6 +49,7 @@ MIM 与 Active Directory (AD) 协同工作，因此请按照以下步骤来配�
 - [同步 Active Directory 和 MIM 服务数据库](install-mim-sync-ad-service.md)
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

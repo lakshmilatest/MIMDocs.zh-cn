@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 从 Forefront 标识管理器 2010 R2 升级 | Microsoft 标识管理器
-description: 了解如何升级你的 FIM 2010 R2 组件，然后安装 MIM 2016 中的新增组件。
-keywords:
+title: "从 Forefront 标识管理器 2010 R2 升级 | Microsoft 标识管理器"
+description: "了解如何升级你的 FIM 2010 R2 组件，然后安装 MIM 2016 中的新增组件。"
+keywords: 
 author: kgremban
 manager: stevenpo
 ms.date: 05/13/2016
@@ -12,16 +10,12 @@ ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 9471ccc1-bafe-46ee-b169-1464262380e1
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mwahl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 7e61e201b277a2e8ec9fee785e9e34fca3b1cb29
+ms.openlocfilehash: 24a7bf5bfb0a7450becd08be6743ed7ab1755559
+
 
 ---
 
@@ -207,6 +201,7 @@ ms.suite: ems
 注意：如果当前在用户的计算机上部署了 FIM 外接程序和扩展以实现 SSPR，那么请务必先将所有 FIM 外接程序和扩展升级到 MIM 2016，再配置新的 MFA 电话入口以用于密码重置。  由于 FIM 2010 和 FIM 2010 R2 外接程序和扩展不识别新的入口，它们会给出错误信息，用户便无法完成密码重置。
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

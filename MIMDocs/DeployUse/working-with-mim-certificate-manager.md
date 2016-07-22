@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 使用 MIM 证书管理器 | Microsoft 标识管理器
-description: 了解如何部署证书管理器应用以使用户可以管理自己的访问权限。 
-keywords:
+title: "使用 MIM 证书管理器 | Microsoft 标识管理器"
+description: "了解如何部署证书管理器应用以使用户可以管理自己的访问权限。"
+keywords: 
 author: kgremban
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 66060045-d0be-4874-914b-5926fd924ede
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mwahl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f9b01ac2cee2b96f64a9fda917f4f4146ca2eeda
+ms.openlocfilehash: 3e0e6cea0b268836bb6347e81694deec93320ce3
+
 
 ---
 
@@ -43,7 +37,7 @@ ms.suite: ems
 
 2.  打开 MMC。
 
-3.  单击“文件 &gt; 添加/删除管理单元”；
+3.  单击“文件”&gt;“添加/删除管理单元”；
 
 4.  在可用管理单元列表中，单击“证书模板”，然后单击“添加”。
 
@@ -71,7 +65,7 @@ ms.suite: ems
 
 14. 在 MMC 左窗格中，展开“证书颁发机构（本地）”  ，然后再展开证书颁发机构列表内的 CA。
 
-15. 右键单击“证书模板”，单击“新建 &gt; 要颁发的证书模板”。
+15. 右键单击“证书模板”，单击“新建”&gt;要颁发的证书模板”。
 
 16. 从列表中选择你创建的新模板，然后单击“确定” 。
 
@@ -80,7 +74,7 @@ ms.suite: ems
 
 1.  作为拥有管理员权限的用户登录到 CM 门户。
 
-2.  依次转到“管理”&gt;“管理配置文件模板”，并确保已选中靠近“MIM CM 示例智能卡登录配置文件模板”的复选框，然后单击“复制选定的配置文件模板”。
+2.  转到“管理”&gt;“管理配置文件模板”并确保选中“MIM CM 示例智能卡登录配置文件模板”旁边的框，然后单击“复制所选的配置文件模板”。
 
 3.  键入配置文件模板名称，然后单击“确定” 。
 
@@ -96,7 +90,7 @@ ms.suite: ems
 
 9. 在“用户 PIN 策略”  下选择“用户提供” 。
 
-10. 在左窗格中，单击“续订策略&gt;更改常规设置” 。 选择“在续订时重复使用卡”  ，然后单击“确定” 。
+10. 在左窗格中，单击“续订策略”&gt;“更改常规设置”。 选择“在续订时重复使用卡”  ，然后单击“确定” 。
 
 11. 你必须通过单击左窗格中的策略，然后选中“示例数据项”  旁边的框来为每个策略禁用数据收集项，然后单击“删除数据收集项” 。 然后单击“确定” 。
 
@@ -132,7 +126,7 @@ ms.suite: ems
 
 7.  在开始此部分前，你需要获取一个签名证书。 如下所示，在 MIM 2016 证书管理器的步骤 1 中为非管理员启动智能卡续订。
 
-8.  在&lt;标识&gt;元素中，将 Publisher 属性的值修改为与签名证书中列出的主题相同，例如“CN=SUBJECT”。
+8.  在 &lt;Identity&gt; 元素中，将 Publisher 属性的值修改为与签名证书中列出的主题相同，例如“CN=SUBJECT”。
 
 9. 保存该文件并退出编辑器。
 
@@ -154,7 +148,7 @@ ms.suite: ems
 
     -   打开虚拟智能卡应用程序。 这使你可以更轻松地找到下一步所需的值。
 
-    -   若要将应用程序作为客户端添加到 AD FS 服务器并在服务器上配置 CM，请在 AD FS 服务器上，打开 Windows PowerShell 并运行命令 `ConfigureMimCMClientAndRelyingParty.ps1 –redirectUri <redirectUriString> -serverFQDN <MimCmServerFQDN>`。
+    -   若要将应用程序作为客户端添加到 AD FS 服务器并在服务器上配置 CM，请在 AD FS 服务器上，打开 Windows PowerShell 并运行命令 `ConfigureMimCMClientAndRelyingParty.ps1 –redirectUri <redirectUriString> -serverFQDN <MimCmServerFQDN>`
 
         下面是 ConfigureMimCMClientAndRelyingParty.ps1 脚本：
 
@@ -261,6 +255,7 @@ ms.suite: ems
 设置 CM 应用后，在下载中心中下载文件 MIMDMModernApp_&lt;version&gt;_AnyCPU_Test.zip 并提取其所有内容。 .appx 文件是安装程序。 你可以使用通常部署 Windows 应用商店应用时使用的任何方式来部署它，使用 [System Center Configuration Manager](https://technet.microsoft.com/library/dn613840.aspx)，或使用 [Intune](https://technet.microsoft.com/library/dn613839.aspx) 旁加载应用，以使用户必须通过公司门户访问它或直接向其计算机推送。
 
 
-<!--HONumber=Apr16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

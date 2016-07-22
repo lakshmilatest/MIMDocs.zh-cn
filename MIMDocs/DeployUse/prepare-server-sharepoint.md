@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 设置标识管理服务器 &#58; SharePoint | Microsoft 标识管理器
-description: 安装和配置 SharePoint Foundation，以便它能承载 MIM 门户页。
-keywords:
+title: "设置标识管理服务器 &#58; SharePoint | Microsoft 标识管理器"
+description: "安装和配置 SharePoint Foundation，以便它能承载 MIM 门户页。"
+keywords: 
 author: kgremban
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: c01487f2-3de6-4fc4-8c3a-7d62f7c2496c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mwahl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9e5f51d5ca731b3564b8262db0f4cddeb850231a
+ms.openlocfilehash: b144f28b41eb8e02afa44495c0019ccc81022005
+
 
 ---
 
@@ -98,7 +92,8 @@ ms.suite: ems
     -ApplicationPoolAccount $dbManagedAccount -AuthenticationMethod "Kerberos" -Port 82 -URL http://corpidm.contoso.local
     ```
 
-    > [!NOTE] 将显示一条警告消息，指示 Windows 经典身份验证方法正在使用中，最后的命令可能需要几分钟才能返回。 完成后，输出将显示新门户的 URL。 保持 **SharePoint 2013 命令行管理程序** 窗口处于打开状态，以供稍后参考。
+    > [!NOTE] 
+    > 将显示一条警告消息，指示 Windows 经典身份验证方法正在使用中，最后的命令可能需要几分钟才能返回。 完成后，输出将显示新门户的 URL。 保持 **SharePoint 2013 命令行管理程序** 窗口处于打开状态，以供稍后参考。
 
 2. 启动 SharePoint 2013 命令行管理程序并运行以下 PowerShell 脚本，以创建与 Web 应用程序关联的 **Sharepoint 站点集合**。
 
@@ -112,7 +107,8 @@ ms.suite: ems
   $s.CompatibilityLevel
   ```
 
-  > [!NOTE] 验证 *CompatibilityLevel* 变量的结果是否是“14”。 如果结果为“15”，则站点集合不是针对 2010 体验版本创建的；删除该站点集合并重新创建它。
+  > [!NOTE] 
+  > 验证 *CompatibilityLevel* 变量的结果是否是“14”。 如果结果为“15”，则站点集合不是针对 2010 体验版本创建的；删除该站点集合并重新创建它。
 
 3. 通过在 **SharePoint 2013 Management Shell** 中运行以下 PowerShell 命令来禁用 **SharePoint 服务器端师徒状态**和 SharePoint 任务“运行状况分析作业（每小时、Microsoft SharePoint Foundation 计时器、所有服务器）”：
 
@@ -140,6 +136,7 @@ ms.suite: ems
 [Exchange Server »](prepare-server-exchange.md)
 
 
-<!--HONumber=Apr16_HO3-->
+
+<!--HONumber=Jun16_HO5-->
 
 

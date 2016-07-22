@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 安装 MIM 2016&#58; 同步 Active Directory 和 MIM 服务 | Microsoft 标识管理器
-description: 使用管理代理和 MIM 同步服务来同步 Active Directory 和 MIM 数据库。
-keywords:
+title: "安装 MIM 2016&#58; 同步 Active Directory 和 MIM 服务 | Microsoft 标识管理器"
+description: "使用管理代理和 MIM 同步服务来同步 Active Directory 和 MIM 数据库。"
+keywords: 
 author: kgremban
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,22 +10,19 @@ ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 5e532b67-64a6-4af6-a806-980a6c11a82d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mwahl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8fd779bcc4d41b6e67d0fa31aa0f37c4ea2b410a
+ms.openlocfilehash: f4e94980c6a03b08221fd46e19c421cce226086d
+
 
 ---
 
 # 安装 MIM 2016：同步 Active Directory 和 MIM 服务
 
->[!div class="step-by-step"] [« MIM 服务和门户](install-mim-service-portal.md)
+>[!div class="step-by-step"]
+[« MIM 服务和门户](install-mim-service-portal.md)
 
 > [!NOTE]
 > 本演练使用名为 Contoso 的公司中的示例名和值。 将其替换为你自己的。 例如：
@@ -42,7 +37,8 @@ MIM 管理代理 (MA) 是 MIM 同步到 MIM 服务的连接器。 若要创建�
 
 在配置 MIM 管理代理时，需要指定一个用户帐户。 本文档使用 **MIMMA** 作为此帐户的名称。
 
-> [!NOTE] 用于 MIM 管理代理的帐户必须与 MIM 服务安装过程中指定的帐户相同。
+> [!NOTE]
+> 用于 MIM 管理代理的帐户必须与 MIM 服务安装过程中指定的帐户相同。
 
 ###创建 MIM MA
 
@@ -437,9 +433,11 @@ Active Directory 管理代理是 AD 域服务的连接器。 若要创建此连�
     - 在**运行配置文件**列表中，选择想要运行的运行配置文件。
     - 单击**确定**以启动运行配置文件。
 
->[!div class="step-by-step"] [« MIM 服务和门户](install-mim-service-portal.md)
+>[!div class="step-by-step"]
+[« MIM 服务和门户](install-mim-service-portal.md)
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

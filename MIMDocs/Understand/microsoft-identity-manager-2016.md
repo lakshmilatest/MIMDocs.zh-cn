@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Microsoft 标识管理器 2016 | Microsoft 标识管理器
-description: 了解 MIM 2016 如何在云中和本地创建更安全、更方便的标识管理体验。
-keywords:
+title: "Microsoft 标识管理器 2016 | Microsoft 标识管理器"
+description: "了解 MIM 2016 如何在云中和本地创建更安全、更方便的标识管理体验。"
+keywords: 
 author: kgremban
-manager: stevenpo
-ms.date: 04/28/2016
+manager: femila
+ms.date: 06/27/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: ccdd8a9f-02da-440a-81a8-354800dcd2a8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mwahl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9e5f51d5ca731b3564b8262db0f4cddeb850231a
+ms.openlocfilehash: 5247cce895344ac6148b735fe550eb16c39103c7
+
 
 ---
 
@@ -36,21 +30,10 @@ Microsoft Identity Manager 2016 与 Azure 协同工作，让你能够控制整�
 ## 特权标识管理
 借助 Privileged Identity Management，可基于任务暂时性地访问敏感资源，从而对管理访问权限进行控制和管理。 这意味着你可仅授予用户所需的足够权限，从而降低网络攻击者获取完全管理访问权限的几率。 此外，特权标识管理还可从现有 Active Directory 林提取和隔离管理帐户。
 
-## 受支持的平台
-
-MIM 支持产品和平台的更新的列表，包括最新的 Microsoft 平台和 Office/服务器堆栈、Windows 客户端操作系统、Windows Server 操作系统、SharePoint、SQL 和 Outlook，特别是：
-
--   具有 Internet Explorer 8 的 Windows 8.1 及更高版本
-
--   Windows Server 2012 R2
-
--   SQL 2014
-
--   Outlook 2013
-
--   System Center Service Manager 2012 and 2012 R2
+MIM 支持用于管理 Active Director 的本地 Privileged Identity Management 解决方案。 请从[使用 Privileged Access Management](/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services) 开始。
 
 
-<!--HONumber=Apr16_HO3-->
+
+<!--HONumber=Jun16_HO5-->
 
 
