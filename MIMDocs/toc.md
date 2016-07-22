@@ -1,10 +1,10 @@
-# [了解和探索](/understand-explore/microsoft-identity-manager-2016.md)
-# [规划和设计](/plan-design/microsoft-identity-manager-2016-supported-platforms.md)
-# [部署和使用](/deploy-use/microsoft-identity-manager-deploy.md)
-# [使用 Privileged Access Management](/pam/privileged-identity-management-for-active-directory-domain-services.md)
-# [开发人员参考](/reference/microsoft-identity-manager-2016-developer-reference.md)
+# [了解和探索](/microsoft-identity-manager/understand-explore/microsoft-identity-manager-2016)
+# [规划和设计](/microsoft-identity-manager/plan-design/microsoft-identity-manager-2016-supported-platforms)
+# [部署和使用](/microsoft-identity-manager/deploy-use/microsoft-identity-manager-deploy)
+# [使用 Privileged Access Management](/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services)
+# [开发人员参考](/microsoft-identity-manager/reference/microsoft-identity-manager-2016-developer-reference)
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 
