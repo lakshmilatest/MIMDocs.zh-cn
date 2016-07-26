@@ -1,10 +1,10 @@
 ---
-title: "环境概述 | Microsoft Identity Manager"
-description: 
+title: "PAM 环境概述 | Microsoft Identity Manager"
+description: "查找要成功部署 Privileged Access Management 所需的虚拟机数量和配置"
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 06/14/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -12,15 +12,16 @@ ms.technology: active-directory-domain-services
 ms.assetid: 479db14c-1bfb-4d7c-a344-cd718a01f328
 ms.reviewer: mwahl
 ms.suite: ems
-ms.sourcegitcommit: b8af77d2354428da19d91d5f02b490012835f544
-ms.openlocfilehash: a01cb2e1df52f3157b3d84a4eab837cececfbe1b
+translationtype: Human Translation
+ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
+ms.openlocfilehash: 3057618c609ed251efe1f6cc6b2d3694ac61eafd
 
 
 ---
 
 # 环境概述
 
-PAM 与具有单独驱动器的虚拟机 (VM) 一起工作，这些虚拟机通过共享的网络相互连接。 可以通过 Windows 8.1、Windows Server 2012 R2 或其他操作系统平台托管这些虚拟机。
+Privileged Access Management 与具有各自分开的驱动器的虚拟机 (VM) 协同工作，这些驱动器在共享网络上相互连接。 可以通过 Windows 8.1、Windows Server 2012 R2 或其他操作系统平台托管这些虚拟机。
 
 ![PAM 服务器：关系和支持的平台 - 关系图](media/pam-test-lab-architecture.png)
 
@@ -33,6 +34,6 @@ PAM 与具有单独驱动器的虚拟机 (VM) 一起工作，这些虚拟机通�
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

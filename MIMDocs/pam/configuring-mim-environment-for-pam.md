@@ -1,10 +1,10 @@
 ---
-title: "为 Privileged Access Management 配置 MIM 环境 | Microsoft Identity Manager"
-description: 
+title: "部署和配置 PAM | Microsoft Identity Manager"
+description: "安装 MIM 并为 Privileged Access Management 对其进行配置的路线图。"
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 06/15/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -12,8 +12,9 @@ ms.technology: active-directory-domain-services
 ms.assetid: c4ca5b58-ad0c-48af-a9eb-b71b22d0c67c
 ms.reviewer: mwahl
 ms.suite: ems
-ms.sourcegitcommit: 9cf126d898c93faf89d7119136cce4e4963bb63d
-ms.openlocfilehash: c9f2cf2ba1f42ea1513ae38d8089839d85ae5553
+translationtype: Human Translation
+ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
+ms.openlocfilehash: 4b4953089cb676baae97988f380debbfefcd1083
 
 
 ---
@@ -38,10 +39,10 @@ ms.openlocfilehash: c9f2cf2ba1f42ea1513ae38d8089839d85ae5553
 7.  演示请求、接收和使用对受保护资源的提升的特权访问权限。
 
 >[!div class="step-by-step"]
-[[!div class="step-by-step"] [开始 »](step-1-prepare-corp-domain.md)](step-1-prepare-corp-domain.md)
+[启动 »](step-1-prepare-corp-domain.md)
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,10 +1,10 @@
 ---
-title: "为 Privileged Access Management 定义角色 | Microsoft Identity Manager"
-description: 
+title: "定义 PAM 的特权角色 | Microsoft Identity Manager"
+description: "决定哪些特权角色应该进行管理，并为每个角色定义管理策略。"
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 06/14/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -12,15 +12,16 @@ ms.technology: active-directory-domain-services
 ms.assetid: 1a368e8e-68e1-4f40-a279-916e605581bc
 ms.reviewer: mwahl
 ms.suite: ems
-ms.sourcegitcommit: b8af77d2354428da19d91d5f02b490012835f544
-ms.openlocfilehash: 7ba6f744f7fb7a1c5052b14669aa3de2cd10ddbb
+translationtype: Human Translation
+ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
+ms.openlocfilehash: 442b596107d9ade0ca466500440a32b2dd26fa14
 
 
 ---
 
 # 为 Privileged Access Management 定义角色
 
-使用 Privileged Access Management，可以将用户分配到特权角色，以便根据需要激活这些角色以进行即时访问。 在堡垒环境中手动定义和建立这些角色。 本文将指导你完成确定哪些角色要通过 PAM 进行管理的过程，以及介绍如何使用适当的权限和限制定义这些角色。
+使用 Privileged Access Management，可以将用户分配到特权角色，以便根据需要激活这些角色以进行即时访问。 这些角色是在堡垒环境中手动定义和建立的。 本文将指导你完成确定哪些角色要通过 PAM 进行管理的过程，以及介绍如何使用适当的权限和限制定义这些角色。
 
 定义特权访问管理的角色一种简单直接的方法是对电子表格中的所有信息进行编译。 在角色中列出角色，并使用列来标识管理要求和权限。
 
@@ -202,6 +203,6 @@ ms.openlocfilehash: 7ba6f744f7fb7a1c5052b14669aa3de2cd10ddbb
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

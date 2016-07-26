@@ -1,10 +1,10 @@
 ---
-title: "Active Directory 域服务的 Privileged Access Management | Microsoft Identity Manager"
-description: 
+title: "什么是 ADDS 的 PAM？ | Microsoft Identity Manager"
+description: "了解 Privileged Access Management，以及它如何帮助你管理和保护 Active Directory 环境。"
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 06/13/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: cf3796f7-bc68-4cf7-b887-c5b14e855297
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9e5f51d5ca731b3564b8262db0f4cddeb850231a
-ms.openlocfilehash: 959c92f2e98fe712703ca23d3e38cdec6a8b85dc
+ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
+ms.openlocfilehash: bbc5c6760bc035d57f9d76d102246abbfe298e8b
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: 959c92f2e98fe712703ca23d3e38cdec6a8b85dc
 # Active Directory 域服务的 Privileged Access Management
 Privileged Access Management (PAM) 是一个基于 Microsoft Identity Manager (MIM)、Windows Server 2012 R2 和 Windows Server Technical Preview 的解决方案。 它可帮助组织限制现有 Active Directory 环境内的特权访问权限。
 
-> [!NOTE] 
+> [!NOTE]
 > PAM 是采用 Microsoft Identity Manager (MIM) 实现的 [Privileged Identity Management](https://azure.microsoft.com/documentation/articles/active-directory-privileged-identity-management-configure/) (PIM) 实例。
 
 Privileged Access Management 完成了两个目标：
@@ -95,6 +95,6 @@ PAM 具有以下优势：
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,10 +1,10 @@
 ---
-title: "步骤 4 - 在 PAM 服务器和工作站上安装 MIM 组件 | Microsoft Identity Manager"
-description: 
+title: "部署 PAM 步骤 4 – 安装 MIM | Microsoft Identity Manager"
+description: "在 Privileged Access Management 服务器和工作站上安装和配置 MIM 服务和门户。"
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 06/16/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9e5f51d5ca731b3564b8262db0f4cddeb850231a
-ms.openlocfilehash: 4e0298099dad9b11812d533e23101fb995fe33d5
+ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
+ms.openlocfilehash: 92939d32da25896d07bec61e4633f58230a78181
 
 
 ---
@@ -29,7 +29,7 @@ ms.openlocfilehash: 4e0298099dad9b11812d533e23101fb995fe33d5
 
 在 PAMSRV 上，以 PRIV\Administrator 身份登录，以便能够安装 MIM 服务和门户以及示例门户 Web 应用程序。
 
-  > [!NOTE] 
+  > [!NOTE]
   > 必须具有域管理员身份；如果你不是以域管理员身份运行以下命令，下一步中的信任验证检查将无法完成。
 
 如果已下载了 MIM，请将 MIM 安装存档解压缩到新的文件夹。
@@ -44,7 +44,7 @@ ms.openlocfilehash: 4e0298099dad9b11812d533e23101fb995fe33d5
 
 2.  配置通用服务和 MIM 数据库连接时，请指定**创建一个新数据库**。
 
-    > [!NOTE] 
+    > [!NOTE]
     > 如果为实现高可用性安装 MIM 服务多次，请为所有后续安装指定**使用现有数据库**。
 
 3.  在配置邮件服务器连接时，请将邮件服务器设置为 CORP 环境的 Exchange 或 SMTP 服务器的主机名（如果没有邮件服务器，请使用 corpdc.contoso.local），并取消选中“使用 SSL”和“邮件服务器是 Exchange Server 2007 或 Exchange Server 2010”复选框。
@@ -193,6 +193,6 @@ ms.openlocfilehash: 4e0298099dad9b11812d533e23101fb995fe33d5
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

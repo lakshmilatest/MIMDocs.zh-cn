@@ -1,10 +1,10 @@
 ---
-title: "步骤 6 – 将某个组迁移到 Privileged Access Management | Microsoft Identity Manager"
-description: 
+title: "部署 PAM 步骤 6 – 移动组 | Microsoft Identity Manager"
+description: "将组迁移到 PRIV 林，以便可以通过 Privileged Access Management 对它们进行管理。"
 keywords: 
-author: 
+author: kgremban
 manager: femila
-ms.date: 06/16/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -12,8 +12,9 @@ ms.technology: active-directory-domain-services
 ms.assetid: 7b689eff-3a10-4f51-97b2-cb1b4827b63c
 ms.reviewer: mwahl
 ms.suite: ems
-ms.sourcegitcommit: 01470689e862b47625346d5d5bc6bc7def11da9c
-ms.openlocfilehash: b21e2fed4588572fd1b793c4942860871ae9a51c
+translationtype: Human Translation
+ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
+ms.openlocfilehash: 603e5e28f0eee0f648ef7e00ef137f5a08b2ba34
 
 
 ---
@@ -21,7 +22,7 @@ ms.openlocfilehash: b21e2fed4588572fd1b793c4942860871ae9a51c
 # 步骤 6 – 将某个组转换为特权访问管理
 
 >[!div class="step-by-step"]
-[!div class="step-by-step"] [ 步骤 5 ](step-5-establish-trust-between-priv-corp-forests.md)
+[« 步骤 5 ](step-5-establish-trust-between-priv-corp-forests.md)
 [步骤 7 »](step-7-elevate-user-access.md)
 
 使用 PowerShell cmdlet 在 PRIV 林中创建了特权帐户。 这些 cmdlet 执行以下功能：
@@ -84,11 +85,11 @@ ms.openlocfilehash: b21e2fed4588572fd1b793c4942860871ae9a51c
 如果你想要证明跨林的访问权限对用户的管理员帐户有效，则继续下一步。
 
 >[!div class="step-by-step"]
-[!div class="step-by-step"] [ 步骤 5 ](step-5-establish-trust-between-priv-corp-forests.md)
+[« 步骤 5 ](step-5-establish-trust-between-priv-corp-forests.md)
 [步骤 7 »](step-7-elevate-user-access.md)
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

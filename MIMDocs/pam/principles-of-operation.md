@@ -1,10 +1,10 @@
 ---
-title: "了解 PAM 的组件 |Microsoft Identity Manager"
-description: 
+title: "了解 PAM 组件 | Microsoft Identity Manager"
+description: "Privileged Access Management 与 MIM 共享某些组件，且拥有少数自身的组件。 了解它们如何协同工作。"
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 06/13/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -12,8 +12,9 @@ ms.technology: active-directory-domain-services
 ms.assetid: 6498f68f-36d3-448c-8fe6-649ad5a7f97d
 ms.reviewer: mwahl
 ms.suite: ems
-ms.sourcegitcommit: a6bdf1b947ee3ebc4c9e89e74b2912697ebf1f60
-ms.openlocfilehash: 49f47050703095d402a1514342baf4e928f66c70
+translationtype: Human Translation
+ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
+ms.openlocfilehash: d17feb5d78b864bef8f0b96bfbf92a18c3c91694
 
 
 ---
@@ -42,6 +43,6 @@ Privileged Access Management 将管理访问权限与日常的用户帐户分开
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

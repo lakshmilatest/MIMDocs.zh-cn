@@ -1,10 +1,10 @@
 ---
-title: "堡垒环境的高可用性和灾难恢复注意事项 |Microsoft Identity Manager"
-description: 
+title: "PAM 灾难恢复 | Microsoft Identity Manager"
+description: "了解如何配置 Privileged Access Management，以便获得高可用性和灾难恢复。"
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 06/17/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: 03e521cd-cbf0-49f8-9797-dbc284c63018
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9e5f51d5ca731b3564b8262db0f4cddeb850231a
-ms.openlocfilehash: 1d9e005bfb3e26f9a2b818667f14acd3e5239523
+ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
+ms.openlocfilehash: 9164e48bf10fa27ff6c87ba3816b586a940dda69
 
 
 ---
@@ -161,7 +161,7 @@ Windows Server Active Directory 域服务原生支持高可用性和灾难恢复
 
 有关添加其他域控制器的过程，请参阅[在现有域中安装副本 Windows Server 2012 域控制器（级别 200）](https://technet.microsoft.com/library/jj574134.aspx)。  
 
->[!NOTE] 
+>[!NOTE]
 > 如果域控制器要在虚拟化平台上托管，例如 Hyper-V，请查阅[虚拟化域控制器部署和配置](https://technet.microsoft.com/library/jj574223.aspx)中的注意事项。
 
 #### 恢复
@@ -199,7 +199,7 @@ MIM 服务需要处理激活请求。  为了在托管 MIM 服务的计算机停
 
 对于跨多个服务器的生产部署，可以使用网络负载平衡 (NLB) 来分配处理负载。  你还需要一个别名（例如，A 或 CNAME 记录），以便向用户公开一个公用名。
 
->[!IMPORTANT] 
+>[!IMPORTANT]
 > 如果使用除 Windows Server 2012 R2 中的 NLB 功能以外的负载平衡技术，请确保你的解决方案会将会话重定向到同一台服务器，而不是随机的服务器。
 
 在多服务器 MIM 部署中，每个 MIM 服务都具有外部主机名、服务名称和服务分区名称。  服务名称的默认值是计算机的名称，外部主机名和服务分区名称的默认值在 MIM 服务安装期间的询问 MIM 服务的服务器地址的屏幕上配置。 这三个名称分别作为配置节点 `resourceManagementService` 的属性 `externalHostName`、`serviceName` 和 `servicePartitionName` 存储在 %ProgramFiles%\Microsoft Forefront Identity Manager\Service\Microsoft.ResourceManagementService.exe.config 文件中。  
@@ -224,6 +224,6 @@ MIM 服务和门户安装程序还包含附加的 PAM 组件，包括 PowerShell
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

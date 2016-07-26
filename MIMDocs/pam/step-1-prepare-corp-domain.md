@@ -1,10 +1,10 @@
 ---
-title: "步骤 1 - 准备主机和 CORP 域 | Microsoft Identity Manager"
-description: 
+title: "部署 PAM 步骤 1 - CORP 域 | Microsoft Identity Manager"
+description: "准备 CORP 域，其具有将由 Privileged Identity Manager 管理的现有标识或新标识"
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 06/10/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9e5f51d5ca731b3564b8262db0f4cddeb850231a
-ms.openlocfilehash: 7d6888ad4d694ad0ed746598563de32d7c363936
+ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
+ms.openlocfilehash: 9a2fafa86c5c928339ff8d7ad1593472046ccb98
 
 
 ---
@@ -94,7 +94,7 @@ ms.openlocfilehash: 7d6888ad4d694ad0ed746598563de32d7c363936
 
 如果创建了新的 CORP 域，那么应创建用于演示 PAM 场景的其他用户和组。 用于演示的用户和组不应为域管理员或由 AD 中的 adminSDHolder 设置控制。
 
-> [!NOTE] 
+> [!NOTE]
 > 如果有将用作 CORP 域的域，并且它具有可用于演示的用户和组，则可以跳到[配置审核](#configure-auditing)部分。
 
 我们将创建一个名为“CorpAdmins”的安全组和一个名为“Jen”的用户。 如果你想要，可以使用不同的名称。
@@ -167,7 +167,7 @@ ms.openlocfilehash: 7d6888ad4d694ad0ed746598563de32d7c363936
 
 如果还没有加入到域中的工作站计算机，请按照以下说明准备该计算机。  
 
-> [!NOTE] 
+> [!NOTE]
 > 如果已经有加入到域中的工作站，请跳到[创建用于演示的资源](#create-a-resource-for-demonstration-purposes)。
 
 ### 安装 Windows 8.1 或者 Windows 10 企业版作为 VM
@@ -215,6 +215,6 @@ ms.openlocfilehash: 7d6888ad4d694ad0ed746598563de32d7c363936
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

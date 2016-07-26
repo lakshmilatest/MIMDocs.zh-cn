@@ -11,7 +11,7 @@
 ### [定义角色](defining-roles-for-pam.md)
 ### [高可用性和灾难恢复](high-availability-disaster-recovery-considerations-bastion-environment.md)
 ### [硬件和软件要求](hardware-software-requirements.md)
-## [为 Privileged Access Management 部署 MIM](configuring-mim-environment-for-pam.md)
+## [为 Privileged Access Management 配置 MIM](configuring-mim-environment-for-pam.md)
 ### [步骤 1 - CORP 域](step-1-prepare-corp-domain.md)
 ### [步骤 2 - PRIV 域控制器](step-2-prepare-priv-domain-controller.md)
 ### [步骤 3 - PAM 服务器](step-3-prepare-pam-server.md)
@@ -23,6 +23,6 @@
 # [开发人员参考](/microsoft-identity-manager/reference/microsoft-identity-manager-2016-developer-reference)
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

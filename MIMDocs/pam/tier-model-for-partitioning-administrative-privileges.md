@@ -1,10 +1,10 @@
 ---
-title: "按管理权限分区的层模型 | Microsoft Identity Manager"
-description: 
+title: "PAM 环境层模型 | Microsoft Identity Manager"
+description: "了解基于对风险的承受程度分离系统的层模型。"
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 06/14/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: c6e3cd02-1e32-4194-a8ed-3a0b3d022a43
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9e5f51d5ca731b3564b8262db0f4cddeb850231a
-ms.openlocfilehash: 509c05bbda5f0a0b936518fb023000771c45d4f7
+ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
+ms.openlocfilehash: 1a750bedee2aac667c84113d2d08daa20428c260
 
 
 ---
@@ -44,7 +44,7 @@ ms.openlocfilehash: 509c05bbda5f0a0b936518fb023000771c45d4f7
 - 域管理员（第 0 层）无法登录到企业服务器（第 1 层）和标准用户工作站（第 2 层）。
 - 服务器管理员（第 1 层）无法登录到标准用户工作站（第 2 层）。
 
->[!NOTE] 
+>[!NOTE]
 > 服务器管理员不应在域管理员组中。 应为负责管理域控制器和企业服务器的人员提供独立的帐户。
 
 可以通过以下方式强制执行登录限制：
@@ -62,6 +62,6 @@ ms.openlocfilehash: 509c05bbda5f0a0b936518fb023000771c45d4f7
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

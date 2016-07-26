@@ -1,10 +1,10 @@
 ---
-title: "混合标识管理报告 | Microsoft Identity Manager"
+title: "什么是混合报告 | Microsoft Identity Manager"
 description: "Azure Active Directory 混合报告使你可以创建包括云和本地事件的自定义报告。"
 keywords: 
 author: kgremban
-manager: stevenpo
-ms.date: 05/13/2016
+manager: femila
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: 7320f014-8b60-4866-92de-cfbd3e6edc48
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7e61e201b277a2e8ec9fee785e9e34fca3b1cb29
-ms.openlocfilehash: b3f3982ade46932b18fb730fe5c16d52cde188a1
+ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
+ms.openlocfilehash: a074f3361e6d5be497b1a3c25d56aaa7008b128e
 
 
 ---
@@ -47,6 +47,6 @@ ms.openlocfilehash: b3f3982ade46932b18fb730fe5c16d52cde188a1
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

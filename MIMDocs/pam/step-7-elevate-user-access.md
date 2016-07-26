@@ -1,10 +1,10 @@
 ---
-title: "步骤 7- 提升用户的访问权限 | Microsoft Identity Manager"
-description: 
+title: "部署 PAM 步骤 7 – 用户访问权限 | Microsoft Identity Manager"
+description: "作为最后一步，授予特权用户临时访问权限，以演示 Privileged Access Management 部署已成功。"
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 06/16/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: 5325fce2-ae35-45b0-9c1a-ad8b592fcd07
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9e5f51d5ca731b3564b8262db0f4cddeb850231a
-ms.openlocfilehash: ee47c69788a98075372ca62943e0c4b101c5354f
+ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
+ms.openlocfilehash: b4b3f4c0605fabc7166e8ff8309078f80461301e
 
 
 ---
@@ -46,7 +46,7 @@ ms.openlocfilehash: ee47c69788a98075372ca62943e0c4b101c5354f
 2. 出现提示时，键入 PRIV.Jen 帐户的密码。 将出现新的命令提示符窗口。
 3. 出现 PowerShell 窗口时，键入以下命令。
 
-    > [!NOTE] 
+    > [!NOTE]
     > 运行这些命令后，所有以下步骤都具有时效性。
 
     ```
@@ -92,7 +92,7 @@ dir \\corpwkstn\corpfs
 7. 关闭“Internet 选项”  对话框。
 8. 在左侧选项卡上，单击“激活” 。 选择“PAM 角色”，然后单击“激活”。
 
-> [!Note] 
+> [!Note]
 > 在此环境中，你还可以了解如何开发可使用 PAM REST API 的应用程序，如 [Privileged Access Management REST API REST API 引用](/microsoft-identity-manager/reference/privileged-access-management-rest-api-reference.md)中所述。
 
 ## “摘要”
@@ -103,6 +103,6 @@ dir \\corpwkstn\corpfs
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

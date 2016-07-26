@@ -1,10 +1,10 @@
 ---
-title: "将 Azure MFA 用于激活 | Microsoft Identity Manager"
-description: 
+title: "使用 Azure MFA 激活 PAM | Microsoft Identity Manager"
+description: "当你的用户激活 Privileged Access Management 中的角色时，将 Azure MFA 设置为安全性的第二层。"
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 06/17/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: 5134a112-f73f-41d0-a5a5-a89f285e1f73
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9e5f51d5ca731b3564b8262db0f4cddeb850231a
-ms.openlocfilehash: d6f6927eec479c705fd9ef7f33fafdeec05857e0
+ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
+ms.openlocfilehash: 518a7e165946049745c8eea15ecb61866d6f9c04
 
 
 ---
@@ -70,7 +70,7 @@ Microsoft Azure 多因素身份验证 (MFA) 是要求用户通过使用移动应
 
 7.  将生成的 ZIP 文件复制到安装了 MIM 服务的每个系统。 
 
->[!NOTE] 
+>[!NOTE]
 > 该 ZIP 文件包含用于对 Azure MFA 服务进行身份验证的密钥材料。
 
 ## 配置适用于 Azure MFA 的 MIM 服务
@@ -99,7 +99,7 @@ Microsoft Azure 多因素身份验证 (MFA) 是要求用户通过使用移动应
 
 11.  保存并覆盖 MIM 服务文件夹 `C:\\Program Files\\Microsoft Forefront Identity Manager\\2010\\Service` 中的 **MfaSettings.xml** 文件。 
 
-> [!NOTE] 
+> [!NOTE]
 > 在该过程结束时，请确保文件 **MfaSettings.xml** 及其任何副本或 ZIP 文件均不可公开读取。
 
 ## 为 Azure MFA 配置 PAM 用户
@@ -151,6 +151,6 @@ Set-PAMRole (Get-PAMRole -DisplayName "R") -MFAEnabled 1
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

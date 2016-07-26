@@ -1,10 +1,10 @@
 ---
-title: "安装 MIM 2016&#58; 同步 Active Directory 和 MIM 服务 | Microsoft 标识管理器"
+title: "同步 AD 和 MIM 服务 | Microsoft Identity Manager"
 description: "使用管理代理和 MIM 同步服务来同步 Active Directory 和 MIM 数据库。"
 keywords: 
 author: kgremban
-manager: stevenpo
-ms.date: 04/28/2016
+manager: femila
+ms.date: 07/21/2016
 ms.topic: get-started-article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: 5e532b67-64a6-4af6-a806-980a6c11a82d
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8fd779bcc4d41b6e67d0fa31aa0f37c4ea2b410a
-ms.openlocfilehash: f4e94980c6a03b08221fd46e19c421cce226086d
+ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
+ms.openlocfilehash: f17f256653936ffd06da9fae87dccfbf1c12a553
 
 
 ---
@@ -316,7 +316,7 @@ Active Directory 管理代理是 AD 域服务的连接器。 若要创建此连�
 
     -   Metaverse 资源类型：person
     -   外部系统：ADMA
-    -   外部系统资源类型：person
+    -   外部系统资源类型：user
 
 6. 在“关系”选项卡上，提供以下信息，然后单击“下一步”：
 
@@ -328,10 +328,10 @@ Active Directory 管理代理是 AD 域服务的连接器。 若要创建此连�
 
     | 流规则 | 源 | 目标 |
     |-|-|-|
-    |规则 1|samAccountName|f|
+    |规则 1|samAccountName|accountName|
     |规则 2|displayName|displayName|
-    |规则 3|Employee类型|Employee类型|
-    |规则 4|givenName|givenName|
+    |规则 3|Employee类型|employee类型|
+    |规则 4|givenName|firstName|
     |规则 5|sn|lastName|
     |规则 6|Manager|manager|
     |规则 7|objectSID|ObjectSID|
@@ -438,6 +438,6 @@ Active Directory 管理代理是 AD 域服务的连接器。 若要创建此连�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

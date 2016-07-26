@@ -1,10 +1,10 @@
 ---
-title: "步骤 3 - 准备 PAM 服务器 | Microsoft Identity Manager"
-description: 
+title: "部署 PAM 步骤 3 - PAM 服务器 | Microsoft Identity Manager"
+description: "准备 PAM 服务器，它将为你的 Privileged Access Management 部署托管 SQL 和 SharePoint。"
 keywords: 
-author: 
+author: kgremban
 manager: femila
-ms.date: 06/17/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9e5f51d5ca731b3564b8262db0f4cddeb850231a
-ms.openlocfilehash: ec65078cea33b73aa9482e831a1870df477c6581
+ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
+ms.openlocfilehash: 1a21399df9528f689b811400a660543853d88472
 
 
 ---
@@ -118,7 +118,7 @@ ms.openlocfilehash: ec65078cea33b73aa9482e831a1870df477c6581
 
 使用 SharePoint Foundation 2013 SP1 安装程序，在 PAMSRV 上安装 SharePoint 的软件必备组件。
 
-> [!NOTE] 
+> [!NOTE]
 > 此安装程序需要 Internet 连接才能下载必备组件。 安装所需组件后，服务器将重启。
 
 1. 右键单击“PowerShell”，然后选择“以管理员身份运行”。  
@@ -158,7 +158,7 @@ SharePoint 必备组件安装完成后，请安装 SharePoint Foundation 2013 SP
 
 2. 将显示一条警告消息，指示 Windows 经典身份验证方法正在使用中，最后的命令可能需要几分钟才能返回。  完成后，输出将提供新门户的 URL。
 
-> [!NOTE] 
+> [!NOTE]
 > 保持 SharePoint 2013 命令行管理程序窗口处于打开状态，以供下一步使用。
 
 ## 创建 Sharepoint 站点集合
@@ -212,6 +212,6 @@ SharePoint 必备组件安装完成后，请安装 SharePoint Foundation 2013 SP
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

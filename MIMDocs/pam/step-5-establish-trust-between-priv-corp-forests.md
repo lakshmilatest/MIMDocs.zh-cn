@@ -1,10 +1,10 @@
 ---
-title: "步骤 5 - 在 PRIV 和 CORP 林之间建立信任关系 | Microsoft Identity Manager"
-description: 
+title: "部署 PAM 步骤 5 – 林链接 | Microsoft Identity Manager"
+description: "建立 PRIV 和 CORP 林之间的信任关系，以便 PRIV 中的特权用户仍然可以访问 CORP 中的资源。"
 keywords: 
-author: 
+author: kgremban
 manager: femila
-ms.date: 06/16/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -12,8 +12,9 @@ ms.technology: active-directory-domain-services
 ms.assetid: eef248c4-b3b6-4b28-9dd0-ae2f0b552425
 ms.reviewer: mwahl
 ms.suite: ems
-ms.sourcegitcommit: 06319438d93d8d92edc833e2d0bf6492dd5919a6
-ms.openlocfilehash: 1260b4e1792bf43a7288866cf3afa41fabe79fe9
+translationtype: Human Translation
+ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
+ms.openlocfilehash: 3a7039f5d7c950cd0d4c8ab713a7beacc5c45526
 
 
 ---
@@ -21,8 +22,8 @@ ms.openlocfilehash: 1260b4e1792bf43a7288866cf3afa41fabe79fe9
 # 步骤 5 - 在 PRIV 和 CORP 林之间建立信任关系
 
 >[!div class="step-by-step"]
-[!div class="step-by-step"][«步骤 4](step-4-install-mim-components-on-pam-server.md)
-[步骤 6»](step-6-transition-group-to-pam.md)
+[« 步骤 4](step-4-install-mim-components-on-pam-server.md)
+[步骤 6 »](step-6-transition-group-to-pam.md)
 
 
 对于每个 CORP 域（如 contoso.local），都需要在 PRIV 和 CONTOSO 域控制器之间建立信任关系。 以便 PRIV 域中的用户能够访问 CORP 域中的资源。
@@ -106,11 +107,11 @@ ms.openlocfilehash: 1260b4e1792bf43a7288866cf3afa41fabe79fe9
 下一步将介绍向 PAM 移动组。
 
 >[!div class="step-by-step"]
-[!div class="step-by-step"][«步骤 4](step-4-install-mim-components-on-pam-server.md)
-[步骤 6»](step-6-transition-group-to-pam.md)
+[« 步骤 4](step-4-install-mim-components-on-pam-server.md)
+[步骤 6 »](step-6-transition-group-to-pam.md)
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

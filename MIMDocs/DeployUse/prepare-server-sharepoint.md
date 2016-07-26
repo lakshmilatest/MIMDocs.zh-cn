@@ -1,10 +1,10 @@
 ---
-title: "设置标识管理服务器 &#58; SharePoint | Microsoft 标识管理器"
+title: "配置 SharePoint | Microsoft Identity Manager"
 description: "安装和配置 SharePoint Foundation，以便它能承载 MIM 门户页。"
 keywords: 
 author: kgremban
-manager: stevenpo
-ms.date: 04/28/2016
+manager: femila
+ms.date: 07/21/2016
 ms.topic: get-started-article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: c01487f2-3de6-4fc4-8c3a-7d62f7c2496c
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9e5f51d5ca731b3564b8262db0f4cddeb850231a
-ms.openlocfilehash: b144f28b41eb8e02afa44495c0019ccc81022005
+ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
+ms.openlocfilehash: 9885579d9fb72dd4e73ec5a8a359b35c49d10440
 
 
 ---
@@ -92,7 +92,7 @@ ms.openlocfilehash: b144f28b41eb8e02afa44495c0019ccc81022005
     -ApplicationPoolAccount $dbManagedAccount -AuthenticationMethod "Kerberos" -Port 82 -URL http://corpidm.contoso.local
     ```
 
-    > [!NOTE] 
+    > [!NOTE]
     > 将显示一条警告消息，指示 Windows 经典身份验证方法正在使用中，最后的命令可能需要几分钟才能返回。 完成后，输出将显示新门户的 URL。 保持 **SharePoint 2013 命令行管理程序** 窗口处于打开状态，以供稍后参考。
 
 2. 启动 SharePoint 2013 命令行管理程序并运行以下 PowerShell 脚本，以创建与 Web 应用程序关联的 **Sharepoint 站点集合**。
@@ -107,7 +107,7 @@ ms.openlocfilehash: b144f28b41eb8e02afa44495c0019ccc81022005
   $s.CompatibilityLevel
   ```
 
-  > [!NOTE] 
+  > [!NOTE]
   > 验证 *CompatibilityLevel* 变量的结果是否是“14”。 如果结果为“15”，则站点集合不是针对 2010 体验版本创建的；删除该站点集合并重新创建它。
 
 3. 通过在 **SharePoint 2013 Management Shell** 中运行以下 PowerShell 命令来禁用 **SharePoint 服务器端师徒状态**和 SharePoint 任务“运行状况分析作业（每小时、Microsoft SharePoint Foundation 计时器、所有服务器）”：
@@ -137,6 +137,6 @@ ms.openlocfilehash: b144f28b41eb8e02afa44495c0019ccc81022005
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

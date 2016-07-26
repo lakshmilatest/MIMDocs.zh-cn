@@ -1,10 +1,10 @@
 ---
-title: "硬件和软件要求 | Microsoft Identity Manager"
-description: 
+title: "PAM 软件要求 | Microsoft Identity Manager"
+description: "查找用于成功部署 Privileged Access Management 的硬件和软件要求"
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 06/17/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -12,13 +12,18 @@ ms.technology: active-directory-domain-services
 ms.assetid: 82a9085c-9667-4b3b-8079-657eab1d1e58
 ms.reviewer: mwahl
 ms.suite: ems
-ms.sourcegitcommit: a6bdf1b947ee3ebc4c9e89e74b2912697ebf1f60
-ms.openlocfilehash: 77e7174e94ea8032c4e57155db489f493ce18177
+translationtype: Human Translation
+ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
+ms.openlocfilehash: 75a748f7035cfb10e833e4fdbfdc208b5245d3ea
 
 
 ---
 
-除基础软件平台、足够内存或磁盘空间以及网络连接外，对硬件不做任何要求。 本文提供了基本部署的最低要求。 此文并非用于演示性能、可伸缩性或高可用性，并且不表示针对大型企业或生产环境的推荐的部署拓扑。
+# 硬件和软件要求
+
+Privileged Access Management 没有超出基础软件平台所需的任何硬件要求。 只需确保你拥有足够的内存或磁盘空间，以及网络连接。
+
+本文提供了基本部署的最低要求。 此文并非用于演示性能、可伸缩性或高可用性，并且不表示针对大型企业或生产环境的推荐的部署拓扑。
 
 ## 从软件包安装
 
@@ -70,6 +75,6 @@ ms.openlocfilehash: 77e7174e94ea8032c4e57155db489f493ce18177
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

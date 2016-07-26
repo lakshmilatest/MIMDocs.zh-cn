@@ -1,10 +1,10 @@
 ---
-title: "步骤 2 - 准备 PRIV 域控制器 | Microsoft Identity Manager"
-description: 
+title: "部署 PAM 步骤 2 – PRIV DC | Microsoft Identity Manager"
+description: "准备 PRIV 域控制器，它将提供堡垒环境，Privileged Access Management 在此环境中是独立的。"
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 06/16/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: 0e9993a0-b8ae-40e2-8228-040256adb7e2
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9e5f51d5ca731b3564b8262db0f4cddeb850231a
-ms.openlocfilehash: 62d80222ea85fe5066cfa396b5e5a10bced4d3cd
+ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
+ms.openlocfilehash: 048a17c6b8150501185b7a13c3d2cb292791c9e8
 
 
 ---
@@ -221,7 +221,7 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
   Add-DnsServerConditionalForwarderZone –name "contoso.local" –masterservers 10.1.1.31
   ```
 
-> [!NOTE] 
+> [!NOTE]
 > 其他林也必须能够按指定路线将 PRIV 林的 DNS 查询发送到此域控制器。  如果具有多个现有的 Active Directory 林，则还必须为这些林的每一个添加一个 DNS 条件转发器。
 
 ### 配置 Kerberos
@@ -235,7 +235,7 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
   setspn -S FIMService/pamsrv PRIV\MIMService
   ```
 
-> [!NOTE] 
+> [!NOTE]
 > 本文的后续步骤将介绍如何在单台计算机上安装 MIM 2016 服务器组件。 如果打算添加另一台服务器以实现高可用性，则将需要如 [FIM 2010: Kerberos Authentication Setup](http://social.technet.microsoft.com/wiki/contents/articles/3385.fim-2010-kerberos-authentication-setup.aspx)（FIM 2010：Kerberos 身份验证设置）中所述的其他 Kerberos 配置。
 
 ### 配置委派以提供 MIM 服务帐户访问权限
@@ -307,6 +307,6 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 
