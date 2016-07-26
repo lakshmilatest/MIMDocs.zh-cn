@@ -1,12 +1,12 @@
 ---
 asset_id: 90d66a75-a7ec-4fa1-911c-cce683908838
 layout: HubPage
-title: "Microsoft 标识管理器文档"
-description: "Microsoft Intune 技术文档 - 移动设备和应用程序管理"
-keywords: intune documentation, MDM documentation, Mobile Device Management Documentation, Mobile Device and Application Management Documentation
-author: msstevenpo
-manager: stevenpo
-ms.date: 04/28/2016
+title: "标识管理器文档 | Microsoft 文档"
+description: "Microsoft Identity Manager 文档的技术文档 - 本地标识和访问管理"
+keywords: "标识管理器文档、Microsoft Identity Manager、MIM"
+author: kgremban
+manager: femila
+ms.date: 07/21/2016
 ms.topic: hubpage
 ms.prod: microsoft-identity-manager
 ms.service: microsoft-identity-manager
@@ -14,16 +14,16 @@ ms.technology: security
 ms.suite: ems
 ms.assetid: 90d66a75-a7ec-4fa1-911c-cce683908838
 translationtype: Human Translation
-ms.sourcegitcommit: 0bbdacbfc5b912221257a9425db13804d6dd6a25
-ms.openlocfilehash: f589140e0feac52474256e7ab29b9d3a7a36c5ec
+ms.sourcegitcommit: 455a24d3008a2ef54e1229100e7150a1090c9b2e
+ms.openlocfilehash: 0ccbac817271b01e38bfb3e84fa5fc7ece787299
 
 
 ---
-# Microsoft 标识管理文档
+# 标识管理文档
 <article id="main">
     <section id="hero-content">
-      <h1>Microsoft 标识管理器文档</h1>
-      <h2>Microsoft Identity Manager (MIM) 提供了本地标识和访问管理功能，包括标识同步、防范标识盗用等</h2>
+      <h1>标识管理器文档</h1>
+      <h2>了解如何通过 Microsoft Identity Manager 设置本地标识管理。 教程演示如何配置标识同步、身份盗用预防等。</h2>
       <h3>第一次使用 MIM？ <a href="http://go.microsoft.com/fwlink/?LinkId=816853" target="\_blank">请访问产品页 &rarr;</a></h3>     
     </section>
     <aside class="alert section-border">
@@ -44,6 +44,7 @@ ms.openlocfilehash: f589140e0feac52474256e7ab29b9d3a7a36c5ec
         </ul>
         <ul class="column column-half">
           <li><a href="/microsoft-identity-manager/deploy-use/microsoft-identity-manager-deploy">在全新服务器上部署 MIM 软件</a></li>
+          <li><a href="/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services">了解 Privileged Access Management</a></li>
         </ul>
       </div>
     </section>
@@ -144,6 +145,6 @@ ms.openlocfilehash: f589140e0feac52474256e7ab29b9d3a7a36c5ec
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
