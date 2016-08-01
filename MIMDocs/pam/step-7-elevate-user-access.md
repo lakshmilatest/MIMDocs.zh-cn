@@ -13,8 +13,8 @@ ms.assetid: 5325fce2-ae35-45b0-9c1a-ad8b592fcd07
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
-ms.openlocfilehash: b4b3f4c0605fabc7166e8ff8309078f80461301e
+ms.sourcegitcommit: 9b5b7460e6307ab38b1b9356a638eb0200fd97d1
+ms.openlocfilehash: 009091a65dba31de2066e45930e438442fcd89a0
 
 
 ---
@@ -93,7 +93,7 @@ dir \\corpwkstn\corpfs
 8. 在左侧选项卡上，单击“激活” 。 选择“PAM 角色”，然后单击“激活”。
 
 > [!Note]
-> 在此环境中，你还可以了解如何开发可使用 PAM REST API 的应用程序，如 [Privileged Access Management REST API REST API 引用](/microsoft-identity-manager/reference/privileged-access-management-rest-api-reference.md)中所述。
+> 在此环境中，还可了解如何开发使用 PAM REST API 的哟哟林程序，如 [Privileged Access Management REST API 参考](/microsoft-identity-manager/reference/privileged-access-management-rest-api-reference)中所述。
 
 ## “摘要”
 完成本演练中的步骤后，你已演示了一个 Privileged Access Management 方案，其中在有限时间内对用户权限进行了提升，从而允许用户使用独立的特权帐户访问受保护的资源。 当提升会话过期时，特权帐户将无法再访问受保护的资源。 哪些安全组表示特权角色的决策由 PAM 管理员来协调。 访问权限迁移到 Privileged Access Management 系统后，以前可使用原始用户帐户实现的访问现在只能通过登录特殊特权帐户来实现，并且仅在请求时提供。 因此，高特权组的组成员资源只在有限时间内有效。
@@ -103,6 +103,6 @@ dir \\corpwkstn\corpfs
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

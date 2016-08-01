@@ -12,18 +12,19 @@ ms.technology: active-directory-domain-services
 ms.assetid: cf3796f7-bc68-4cf7-b887-c5b14e855297
 ms.reviewer: mwahl
 ms.suite: ems
-experimental: true
 experiment_id: kgremban_images
 translationtype: Human Translation
 ms.sourcegitcommit: e695dd47e4bd31c4004c7d0d9ec76498d52fb56a
-ms.openlocfilehash: b46c2b50873023d504fb7b440a1d4e40e8fa3ac7
+ms.openlocfilehash: 82c97351f66558c3270821f786560ef4b3e0c473
 
 ---
 
 # Active Directory 域服务的 Privileged Access Management
-Privileged Access Management (PAM) 是一种解决方案，可帮助组织限制现有 Active Directory 环境内的特权访问权限。
+Privileged Access Management (PAM) 可帮助组织限制现有 Active Directory 环境内的特权访问权限。
 
-Privileged Access Management 完成了两个目标：
+![PAM 步骤：准备、保护、操作、监视 - 关系图](media/MIM_PIM_SetupProcess.png)
+
+通过关注准备、保护和监视环境的周期，Privileged Access Management 可实现以下两个目标：
 
 - 通过维护已知不受恶意攻击影响的单独堡垒环境，重新建立对存在隐患的 Active Directory 环境的控制。  
 - 隔离特权帐户的使用，以减少这些凭据被盗的风险。
@@ -43,7 +44,6 @@ PAM 基于实时管理准则构建，该管理与[充分管理 (JEA)](http://cha
 
 PAM 安装和操作具有四个步骤。
 
-![PAM 步骤：准备、保护、操作、监视 - 关系图](media/MIM_PIM_SetupProcess.png)
 
 1.  **准备域**：标识现有林中的哪些组具有重要权限。 在堡垒林中，重新创建这些不含成员的组。
 
