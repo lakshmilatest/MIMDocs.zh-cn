@@ -59,9 +59,9 @@ ms.openlocfilehash: 92939d32da25896d07bec61e4633f58230a78181
 
 6.  接受同步服务器主机名的默认值，并将 MIM 管理代理帐户指定为“PRIV\MIMMA”。 将显示 MIM 同步服务不存在的警告消息。 这没有关系，因为此场景中不使用 MIM 同步服务。
 
-7.  将“PAMSRV”指定为 MIM 服务服务器地址。
+7.  将*“PAMSRV”*指定为 MIM 服务服务器地址。
 
-8.  将 “http://pamsrv.priv.contoso.local:82”设为 SharePoint 网站集 URL。
+8.  将 *“http://pamsrv.priv.contoso.local:82”*设为 SharePoint 网站集 URL。
 
 9. 将注册门户 URL 留空。
 
