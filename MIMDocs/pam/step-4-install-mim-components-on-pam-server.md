@@ -61,7 +61,7 @@ ms.openlocfilehash: 92939d32da25896d07bec61e4633f58230a78181
 
 7.  将*“PAMSRV”*指定为 MIM 服务服务器地址。
 
-8.  将 *“http://pamsrv.priv.contoso.local:82”* 设为 SharePoint 网站集 URL。
+8.  将 *http://pamsrv.priv.contoso.local:82* 设为 SharePoint 网站集 URL。
 
 9. 将注册门户 URL 留空。
 
