@@ -4,7 +4,7 @@ description: "获取部署 Microsoft 标识管理器 2016 的完整步骤列表�
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 07/21/2016
+ms.date: 08/11/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: fa0af422-b5e9-4599-9d9b-cb6c18ea07f9
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
-ms.openlocfilehash: db062cf8dafe0b480db06cd8d913583c5b709246
+ms.sourcegitcommit: 406269e3c8dc3137c2dcd625c50c6cf4eb126d86
+ms.openlocfilehash: 74d7bfd1e0c89c880b2b6a06756f84ad63d3a8cc
 
 
 ---
@@ -25,11 +25,9 @@ ms.openlocfilehash: db062cf8dafe0b480db06cd8d913583c5b709246
 > [!NOTE]
 > 本部分中所述部署拓扑仅用于开始使用和了解 MIM。  [容量计划指南](/microsoft-identity-manager/plan-design/capacity-planning-guide)提供有关生产部署拓扑的详细信息。  我们建议应在查看该文档后，再部署 MIM 生产规模或使用。
 
-<!---
-Comment: Restore after PAM content is included
+部署特许访问权限管理方案与其他 MIM 方案不同，因为其需要专用堡垒林环境。  如果希望了解有关部署用于 Privileged Identity Management 的 MIM 的详细信息，请参阅 [Privileged Access Management 入门](/microsoft-identity-manager/pam/privileged-access-management-get-started)。
 
-The privileged access management scenario is deployed differently than other MIM scenarios, as it requires a dedicated bastion forest environment.  If you want to learn more about deploying MIM for Privileged Identity Management, see [Getting Started with Privileged Access Management](privileged-access-management-get-started.md).
---->
+部署 MIM 2016 的过程与部署其前身 FIM 2010 R2 的过程非常类似。 如果想引用 FIM 文档，请参阅 [Forefront Identity Manager 2010 R2 部署指南](https://technet.microsoft.com/library/jj134310)。
 
 ## 第一步：准备域
 MIM 与 Active Directory (AD) 协同工作，因此请按照以下步骤来配置你的 AD 域控制器。
@@ -50,6 +48,6 @@ MIM 与 Active Directory (AD) 协同工作，因此请按照以下步骤来配�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

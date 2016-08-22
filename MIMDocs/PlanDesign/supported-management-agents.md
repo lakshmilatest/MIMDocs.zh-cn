@@ -4,7 +4,7 @@ description: "使用连接器来管理 MIM 与目录之间的数据传输。"
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 07/21/2016
+ms.date: 08/11/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: 8bc2f6d2-9f53-4db6-aee6-a937ae468163
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
-ms.openlocfilehash: 28847b6d494cf5166e22be31b63fdfb027f96ed0
+ms.sourcegitcommit: 309011c81959971e696d70aa4ec5e1610cc8a2f0
+ms.openlocfilehash: f0842781e3730dae5548ce02a3cb247376d12dc8
 
 
 ---
@@ -29,13 +29,13 @@ ms.openlocfilehash: 28847b6d494cf5166e22be31b63fdfb027f96ed0
 
 ## MIM 2016 中支持的连接器
 
-| 名称 | 支持的已连接数据源版本 |
+| Name | 支持的已连接数据源版本 |
 | ---- | ----------------------------------------------- |
 | Active Directory 域服务 | Active Directory 2000、2003、2003 R2、2008、2008 R2、2012 |
 | Active Directory 轻型目录服务 (ADLDS) | Active Directory 轻型目录服务 (ADLDS) |
 | Active Directory 全局地址列表 (GAL) | Active Directory 全局地址列表 (GAL) – Exchange 2000、2003、2007、2010、2013 |
 | Extensible Connectivity 2.0 | 任何基于呼叫或基于文件的数据源 |
-| MIM 服务 | Microsoft 标识管理器 2016 |
+| MIM 服务 | Microsoft Identity Manager 2016 |
 | IBM DB2 Universal Database | IBM DB2 版本 9.1、9.5 或 9.7；IBM DB2 OLEDB v9.5 FP5 或 v9.7 FP1 |
 | IBM Directory Server | IBM Tivoli Directory Server 6.x |
 | Novell eDirectory | Novell eDirectory 版本 8.7.3、8.8.5 和 8.8.6 |
@@ -54,8 +54,12 @@ ms.openlocfilehash: 28847b6d494cf5166e22be31b63fdfb027f96ed0
 | 定宽文本文件 | 定宽文本文件 |
 | LDAP 数据交换格式 (LDIF) | LDAP 数据交换格式 (LDIF) |
 
+## 相关主题
+
+[FIM 2010 R2 中的管理代理](https://technet.microsoft.com/library/jj133885.aspx)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO2-->
 
 

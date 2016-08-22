@@ -4,7 +4,7 @@ description: "通过安装和配置同步服务立刻开始使用 MIM 2016 组�
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 07/21/2016
+ms.date: 08/11/2016
 ms.topic: get-started-article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: 2585e9c5-ce34-46c7-bdcf-8c08773901dc
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
-ms.openlocfilehash: 2dfc89d32ef3b615201f1eb57ed3b8f5daed513e
+ms.sourcegitcommit: 739797502e09c2b92e35767e2c943308cd1de5c9
+ms.openlocfilehash: ba399da1431ea1d2d1633d0469e054ffd89f1d34
 
 
 ---
@@ -53,7 +53,7 @@ ms.openlocfilehash: 2dfc89d32ef3b615201f1eb57ed3b8f5daed513e
 
     ![自定义安装图像](media/MIM-Install2.png)
 
-6.  在同步数据库配置屏幕中，选择：
+6.  在同步服务数据库配置屏幕中，选择：
 
     1.  SQL Server 的位置： **这台计算机**。
 
@@ -71,7 +71,7 @@ ms.openlocfilehash: 2dfc89d32ef3b615201f1eb57ed3b8f5daed513e
 
     ![服务帐户图像](media/MIM-Install4.png)
 
-8.  使用相关安全组提供 MIM 同步安装程序：
+8.  提供具有相关安全组的 MIM 同步服务安装程序：
 
     1. Administrator = *contoso\MIMSyncAdmins*
 
@@ -87,11 +87,11 @@ ms.openlocfilehash: 2dfc89d32ef3b615201f1eb57ed3b8f5daed513e
 
 9. 在安全设置屏幕中，选中“为入站 RPC 通信启用防火墙规则”，然后单击“下一步”。
 
-10. 单击“安装”以开始安装 MIM 同步。
+10. 单击“安装”以开始安装 MIM 同步服务。
 
     1. 可能会出现有关 MIM 同步服务帐户的警告 – 单击“确定” 。
 
-    2. 此时将安装 MIM 同步。
+    2. 将安装 MIM 同步服务。
 
     3. 会出现为加密密钥创建备份的通知 – 单击“确定”，然后选择要存储加密密钥备份的文件夹。
 
@@ -107,6 +107,6 @@ ms.openlocfilehash: 2dfc89d32ef3b615201f1eb57ed3b8f5daed513e
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 
