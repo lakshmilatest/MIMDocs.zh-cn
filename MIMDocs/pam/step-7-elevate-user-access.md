@@ -86,7 +86,7 @@ dir \\corpwkstn\corpfs
     ```
 
 3. 出现提示时，键入 PRIV.Jen 帐户的密码。 将出现新的 Web 浏览器窗口。
-4. 导航到 http://pamsrv.priv.contoso.local:8090，并确保示例门户中的网页可见。
+4. 导航到 http://pamsrv.priv.contoso.local:8090 ，并确保示例门户中的网页可见。
 5. 在 Internet Explorer 中，依次选择“工具” > “Internet 选项”，然后单击“安全”选项卡。
 6. 依次单击“本地 Intranet 区域” > “站点” > “高级”，然后将该网站添加到该区域。
 7. 关闭“Internet 选项”  对话框。
