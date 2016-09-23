@@ -4,7 +4,7 @@ description: "获取部署 Microsoft 标识管理器 2016 的完整步骤列表�
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 08/11/2016
+ms.date: 09/07/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: fa0af422-b5e9-4599-9d9b-cb6c18ea07f9
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 406269e3c8dc3137c2dcd625c50c6cf4eb126d86
-ms.openlocfilehash: 74d7bfd1e0c89c880b2b6a06756f84ad63d3a8cc
+ms.sourcegitcommit: 40dbec941eb2f0b1a01de0f47d44e01717aaca21
+ms.openlocfilehash: 77dae279f9078c55abf342a8956aaf77c62773d5
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: 74d7bfd1e0c89c880b2b6a06756f84ad63d3a8cc
 > [!NOTE]
 > 本部分中所述部署拓扑仅用于开始使用和了解 MIM。  [容量计划指南](/microsoft-identity-manager/plan-design/capacity-planning-guide)提供有关生产部署拓扑的详细信息。  我们建议应在查看该文档后，再部署 MIM 生产规模或使用。
 
-部署特许访问权限管理方案与其他 MIM 方案不同，因为其需要专用堡垒林环境。  如果希望了解有关部署用于 Privileged Identity Management 的 MIM 的详细信息，请参阅 [Privileged Access Management 入门](/microsoft-identity-manager/pam/privileged-access-management-get-started)。
+部署特许访问权限管理方案与其他 MIM 方案不同，因为其需要专用堡垒林环境。  若要了解有关针对 Privileged Identity Management 部署 MIM 的详细信息，请参阅[为 Privileged Access Management 配置 MIM 环境](/microsoft-identity-manager/pam/configuring-mim-environment-for-pam)。
 
 部署 MIM 2016 的过程与部署其前身 FIM 2010 R2 的过程非常类似。 如果想引用 FIM 文档，请参阅 [Forefront Identity Manager 2010 R2 部署指南](https://technet.microsoft.com/library/jj134310)。
 
@@ -48,6 +48,6 @@ MIM 与 Active Directory (AD) 协同工作，因此请按照以下步骤来配�
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Sep16_HO2-->
 
 
