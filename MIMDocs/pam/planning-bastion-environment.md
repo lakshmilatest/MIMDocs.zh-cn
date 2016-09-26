@@ -4,7 +4,7 @@ description:
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 06/14/2016
+ms.date: 09/16/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: bfc7cb64-60c7-4e35-b36a-bbe73b99444b
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b8af77d2354428da19d91d5f02b490012835f544
-ms.openlocfilehash: 0ed48d43825e1a876c4d96cafcb6c17cac26610f
+ms.sourcegitcommit: 9eefdf21d0cab3f7c488a66cbb3984d40498f4ef
+ms.openlocfilehash: fc4161f98d4367a2124e6253fe11dd1f2712d614
 
 
 ---
@@ -43,7 +43,7 @@ ms.openlocfilehash: 0ed48d43825e1a876c4d96cafcb6c17cac26610f
 
 生产 CORP 林应信任管理 PRIV 林，反之则不行。 这可以是域信任，也可以是林信任。 管理林域不需要信任托管的域和林来管理 Active Directory，尽管其他应用程序可能需要双向信任关系、安全验证以及测试。
 
-应使用选择性身份验证，以确保管理林中的帐户仅使用适当的生产主机。 至于在 Active Directory 中维护域控制器和委派权限，这通常需要将域控制器的“允许登录”权限授予管理林中指定的第 0 层管理帐户。 有关详细信息，请参阅 [Configuring Selective Authentication Settings](http://technet.microsoft.com/library/cc755844.aspx)（配置选择性身份验证设置）。
+应使用选择性身份验证，以确保管理林中的帐户仅使用适当的生产主机。 至于在 Active Directory 中维护域控制器和委派权限，这通常需要将域控制器的“允许登录”权限授予管理林中指定的第 0 层管理帐户。 有关详细信息，请参阅 [Configuring Selective Authentication Settings](http://technet.microsoft.com/library/cc816580.aspx)（配置选择性身份验证设置）。
 
 ## 保持逻辑分隔
 
@@ -149,7 +149,7 @@ MIM 使用 PowerShell cmdlet 在现有 AD 域和堡垒环境中的专用管理�
 
 当现有 Active Directory 拓扑发生改变时，可使用 `Test-PAMTrust`、 `Test-PAMDomainConfiguration`、 `Remove-PAMTrust` 和 `Remove-PAMDomainConfiguration` cmdlet 来更新信任关系。
 
-### 为每个林建立信任关系
+## 为每个林建立信任关系
 
 必须为每个现有林都运行一次 `New-PAMTrust` cmdlet。 该命令在管理域中的 MIM 服务计算机上调用。 此命令的参数是现有林顶级域的域名以及该域管理员的凭据。
 
@@ -159,11 +159,11 @@ New-PAMTrust -SourceForest "contoso.local" -Credentials (get-credential)
 
 建立信任关系后，要对每个域都进行配置，以便从堡垒环境中进行管理，如下一部分中所述。
 
-### 启用每个域的管理
+## 启用每个域的管理
 
 启用现有域管理具有七项要求。
 
-#### 1.本地域上的安全组
+### 1.本地域上的安全组
 
 现有域中必须有一个组，其名称为后跟三个美元符号的 NetBIOS 域名（例如，CONTOSO$$$）。 组作用域必须为“本地域”，并且组类型必须为“安全”。 在专用管理林中创建与此域中的组具有相同“安全”标识符的组时需要满足此要求。 通过以下 PowerShell 命令创建此组，由现有域的管理员执行并在已加入到现有域的工作站上运行：
 
@@ -171,7 +171,7 @@ New-PAMTrust -SourceForest "contoso.local" -Credentials (get-credential)
 New-ADGroup -name 'CONTOSO$$$' -GroupCategory Security -GroupScope DomainLocal -SamAccountName 'CONTOSO$$$'
 ```
 
-#### 2.成功和失败的审核
+### 2.成功和失败的审核
 
 对于审核，域控制器上的组策略设置必须包括“审核”帐户管理和“审核”目录服务访问的成功和失败审核。 可以通过组策略管理控制台实现此目的，由现有域的管理员执行并在已加入到现有域的工作站上运行：
 
@@ -201,7 +201,7 @@ New-ADGroup -name 'CONTOSO$$$' -GroupCategory Security -GroupScope DomainLocal -
 
 消息“计算机策略更新成功完成。” 应在几分钟之后出现。
 
-#### 3.允许连接到本地安全机构
+### 3.允许连接到本地安全机构
 
 域控制器必须允许本地安全机构 (LSA) 的 TCP/IP 上的 RPC 连接（来自堡垒环境）。 在较旧版本的 Windows Server 上，必须在注册表中启用 LSA 中的 TCP/IP 支持：
 
@@ -209,7 +209,7 @@ New-ADGroup -name 'CONTOSO$$$' -GroupCategory Security -GroupScope DomainLocal -
 New-ItemProperty -Path HKLM:SYSTEM\\CurrentControlSet\\Control\\Lsa -Name TcpipClientSupport -PropertyType DWORD -Value 1
 ```
 
-#### 4.创建 PAM 域配置
+### 4.创建 PAM 域配置
 
 `New-PAMDomainConfiguration` cmdle 必须在管理域中的 MIM 服务计算机上运行。 此命令的参数是现有域的域名以及该域管理员的凭据。
 
@@ -217,7 +217,7 @@ New-ItemProperty -Path HKLM:SYSTEM\\CurrentControlSet\\Control\\Lsa -Name TcpipC
  New-PAMDomainConfiguration -SourceDomain "contoso" -Credentials (get-credential)
 ```
 
-#### 5.为帐户授予读取权限
+### 5.为帐户授予读取权限
 
 堡垒林中用于建立角色（使用 `New-PAMUser` 和 `New-PAMGroup` cmdlet 的管理员）的帐户，以及 MIM 监视器服务使用的帐户需要在该域中拥有读取权限。
 
@@ -239,11 +239,11 @@ New-ItemProperty -Path HKLM:SYSTEM\\CurrentControlSet\\Control\\Lsa -Name TcpipC
 
 18. 关闭“Active Directory 用户和计算机”。
 
-#### 6.Break glass 帐户
+### 6.Break glass 帐户
 
 如果特权访问管理项目的目标是减少向域永久分配的具有域管理特权的帐户数量，则域中必须具有 *break glass* 帐户，以防止信任关系以后出现问题。 每个域中都应存在用于紧急访问生产林的帐户，并且应只能登录到预控制器。 对于具有多个站点的组织，可能还需要其他帐户以备不时之需。
 
-#### 7.在堡垒环境中更新权限
+### 7.在堡垒环境中更新权限
 
 查看该域的系统容器中 AdminSDHolder 对象上的特权。 *AdminSDHolder* 对象具有唯一的访问控制列表 (ACL)，用于控制安全主体成员（为内置特权 Active Directory 组的成员）的权限。 请注意，如果对默认权限进行了任何更改，都会影响到域中具有管理权限的用户，因为这些权限将不适用于帐户在堡垒环境中的用户。
 
@@ -253,6 +253,6 @@ New-ItemProperty -Path HKLM:SYSTEM\\CurrentControlSet\\Control\\Lsa -Name TcpipC
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO3-->
 
 
