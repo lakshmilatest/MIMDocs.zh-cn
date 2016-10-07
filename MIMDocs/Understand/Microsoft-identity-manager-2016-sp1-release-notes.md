@@ -69,7 +69,8 @@ ms.openlocfilehash: b791b18fa3775295e9c199086aa11a0d6c6a55e7
 
 升级到 Microsoft Identity Manager 2016 Service Pack 1 的客户应遵循以下有关适用于其部署的所有服务的指南。
 
->[!Note] 运行 Forefront Identity Manager 2010 R2 SP1 或更早版本的客户必须先将环境升级到 2015 年 8 月发布的 Microsoft Identity Manager 2016，然后按照下面的步骤进行操作。
+>[!Note]
+>运行 Forefront Identity Manager 2010 R2 SP1 或更早版本的客户必须先将环境升级到 2015 年 8 月发布的 Microsoft Identity Manager 2016，然后按照下面的步骤进行操作。
 
 在开始之前
 
