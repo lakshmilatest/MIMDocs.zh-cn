@@ -6,7 +6,7 @@ description: "Microsoft Identity Manager 文档的技术文档 - 本地标识和
 keywords: "标识管理器文档、Microsoft Identity Manager、MIM"
 author: kgremban
 manager: femila
-ms.date: 07/21/2016
+ms.date: 09/25/2016
 ms.topic: hubpage
 ms.prod: microsoft-identity-manager
 ms.service: microsoft-identity-manager
@@ -14,8 +14,8 @@ ms.technology: security
 ms.suite: ems
 ms.assetid: 90d66a75-a7ec-4fa1-911c-cce683908838
 translationtype: Human Translation
-ms.sourcegitcommit: 455a24d3008a2ef54e1229100e7150a1090c9b2e
-ms.openlocfilehash: 0ccbac817271b01e38bfb3e84fa5fc7ece787299
+ms.sourcegitcommit: 75b316ef30d16eee573f40e2ddcd9390dd5c695f
+ms.openlocfilehash: 1bf743563c2e61463071ac26ccf8bfe92d946a2d
 
 
 ---
@@ -31,20 +31,17 @@ ms.openlocfilehash: 0ccbac817271b01e38bfb3e84fa5fc7ece787299
       <ol class="action-list">
         <li><a href="https://www.microsoft.com/evalcenter/evaluate-microsoft-identity-manager-2016" target="\_blank" class="button-bordered button-translucent">开始使用免费试用版</a></li>
       </ol>
-      <ol class="action-list">
-        <li><a href="http://connect.microsoft.com/site1164/Downloads/DownloadDetails.aspx?DownloadID=61395" target="\_blank" class="button-bordered button-translucent">预览即将推出的功能</a></li>
-      </ol>
     </aside>
     <section id="featured" class="container">
       <h2 class="section-heading"><span class="icon icon-warning"></span> 特色内容</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="/microsoft-identity-manager/understand-explore/microsoft-identity-manager-2016">什么是 Microsoft Identity Manager？</a></li>
-          <li><a href="/microsoft-identity-manager/reference/privileged-access-management-rest-api-reference">Privileged Identity Management REST API 参考</a></li>
+          <li><mark><b>新 </b></mark><a href="/microsoft-identity-manager/understand-explore/microsoft-identity-manager-2016-sp1-release-notes"> Microsoft Identity Manager 2016 Service Pack 1</a></li>
+          <li><a href="/microsoft-identity-manager/deploy-use/microsoft-identity-manager-deploy">在全新服务器上部署 MIM 软件</a></li>
         </ul>
         <ul class="column column-half">
-          <li><a href="/microsoft-identity-manager/deploy-use/microsoft-identity-manager-deploy">在全新服务器上部署 MIM 软件</a></li>
-          <li><a href="/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services">了解 Privileged Access Management</a></li>
+          <li><a href="/microsoft-identity-manager/reference/privileged-access-management-rest-api-reference">Privileged Identity Management REST API 参考</a></li>
+          <li><a href="/microsoft-identity-manager/understand-explore/microsoft-identity-manager-2016">MIM 2016 概述</a></li>
         </ul>
       </div>
     </section>
@@ -56,7 +53,7 @@ ms.openlocfilehash: 0ccbac817271b01e38bfb3e84fa5fc7ece787299
               <a href="/microsoft-identity-manager/understand-explore/microsoft-identity-manager-2016">
                 <div class="title column-third">
                   <span class="step-number">1</span>
-                  <p>了解和探索</p>
+                  <p>了解 &amp; 探索</p>
                 </div>
                 <p class="description column-two-thirds">了解 Microsoft Identity Manager 的高级概念、特性和功能。
                 </p>
@@ -78,7 +75,7 @@ ms.openlocfilehash: 0ccbac817271b01e38bfb3e84fa5fc7ece787299
                 </li>
                 <li class="column-third">
                   <a href="/microsoft-identity-manager/plan-design/microsoft-identity-manager-2016-supported-platforms">
-                    <h3>支持的平台</h3>
+                    <h3>受支持的平台</h3>
                     <p>列出 MIM 支持的平台、服务器和应用程序。</p>
                   </a>
                 </li>
@@ -145,6 +142,6 @@ ms.openlocfilehash: 0ccbac817271b01e38bfb3e84fa5fc7ece787299
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 
