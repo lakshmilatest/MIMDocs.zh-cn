@@ -20,9 +20,19 @@
 ### [步骤 6 - 创建特权帐户](step-6-transition-group-to-pam.md)
 ### [步骤 7 - 提升用户的访问权限](step-7-elevate-user-access.md)
 ### [设置 Azure MFA](use-azure-mfa-for-activation.md)
+## [使用脚本配置 PAM](sp1-pam-configure-using-scripts.md)
+### [步骤 1 配置 Priv 域](sp1-step1-configuring-priv-domain.md)
+### [步骤 2 配置 CORP 域](sp1-step2-configuring-corp-domain.md)
+### [步骤 3 配置 SQL](sp1-step3-installing-configuring-sql.md)
+### [步骤 4 配置 SharePoint](sp1-step4-configuring-sharepoint.md)
+### [步骤 5 安装/配置 PAM](sp1-step5-configuring-pam.md)
+### [步骤 6 安装 PAM 信任](sp1-step6-setup-pam-trust.md)
+### [步骤 7 安装 SID 历史记录/SID 筛选](sp1-step7-setup-sidhistory-sidfiltering.md)
+### [步骤 8 PAM 部署验证](sp1-step8-pam-deployment-verification.md)
+### [附录](sp1-pam-deployment-addendum.md)
 # [开发人员参考](/microsoft-identity-manager/reference/microsoft-identity-manager-2016-developer-reference)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 
