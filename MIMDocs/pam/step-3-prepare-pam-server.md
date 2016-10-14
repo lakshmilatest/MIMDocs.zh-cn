@@ -51,7 +51,7 @@ ms.openlocfilehash: 1a21399df9528f689b811400a660543853d88472
 
 1.  以 PRIV 域管理员 (PRIV\Administrator) 身份登录并启动 PowerShell。
 
-2.  键入下列命令。 请注意，可能需要为 .NET Framework 3.5 功能的源文件指定不同的位置。 这些功能通常在安装 Windows Server 时并不存在，但可在操作系统安装磁盘源文件夹上的并行 (SxS) 文件夹（例如 d:\Sources\SxS）中使用\.
+2.  键入下列命令。 请注意，可能需要为 .NET Framework 3.5 功能的源文件指定不同的位置。 这些功能通常在安装 Windows Server 时并不存在，但在操作系统安装磁盘源文件夹上的并行 (SxS) 文件夹中可见，例如，“*d:\Sources\SxS”。
 
     ```
     import-module ServerManager
@@ -212,6 +212,6 @@ SharePoint 必备组件安装完成后，请安装 SharePoint Foundation 2013 SP
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 
