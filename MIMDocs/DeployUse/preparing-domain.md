@@ -13,15 +13,15 @@ ms.assetid: 50345fda-56d7-4b6e-a861-f49ff90a8376
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
-ms.openlocfilehash: 9c029a9edee015f8843f6001d23c72e3ef98b5af
+ms.sourcegitcommit: 80fde32862a322a7a067982d0b02c99a8b43063e
+ms.openlocfilehash: 4ee1742e388da1ccb973b64316629debe570add0
 
 
 ---
 
 # 设置域
 
->[!div class="step-by-step"]  
+>[!div class="step-by-step"]
 [Windows Server 2012 R2 »](prepare-server-ws2012r2.md)
 
 Microsoft Identity Manger (MIM) 适用于你的 Active Directory (AD) 域。 应已安装了 AD，并确保你的环境中有一个你能够管理的域的域控制器。
@@ -68,7 +68,7 @@ MIM 部署的所有组件都需要在域中具有自己的标识。 这包括 MI
     Set-ADUser –identity BackupAdmin –Enabled 1 -PasswordNeverExpires 1
     ```
 
-2.  为所有组创建安全组。
+3.  为所有组创建安全组。
 
     ```
     New-ADGroup –name MIMSyncAdmins –GroupCategory Security –GroupScope Global      –SamAccountName MIMSyncAdmins
@@ -80,20 +80,20 @@ MIM 部署的所有组件都需要在域中具有自己的标识。 这包括 MI
     Add-ADGroupmember -identity MIMSyncAdmins -Members MIMService
     ```
 
-3.  添加 SPN，以便为服务账户启用 Kerberos 身份验证
+4.  添加 SPN，以便为服务账户启用 Kerberos 身份验证
 
     ```
     setspn -S http/mimservername.contoso.local Contoso\SharePoint
     setspn -S http/mimservername Contoso\SharePoint
-    setspn -S MIMService/mimservername.contoso.local Contoso\MIMService
-    setspn -S MIMSync/mimservername.contoso.local Contoso\MIMSync
+    setspn -S FIMService/mimservername.contoso.local Contoso\MIMService
+    setspn -S FIMSynchronizationService/mimservername.contoso.local Contoso\MIMSync
     ```
 
->[!div class="step-by-step"]  
+>[!div class="step-by-step"]
 [Windows Server 2012 R2 »](prepare-server-ws2012r2.md)
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO3-->
 
 
