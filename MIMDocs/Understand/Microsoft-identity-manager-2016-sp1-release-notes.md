@@ -6,7 +6,6 @@ author: barclayn
 manager: mbaldwin
 ms.date: 09/28/2016
 ms.topic: article
-ms.prod: identity-manager-2016
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: ccdd8a9f-02da-440a-81a8-354800dcd2a8
@@ -18,7 +17,7 @@ ms.openlocfilehash: b791b18fa3775295e9c199086aa11a0d6c6a55e7
 
 
 ---
-# Microsoft Identity Manager 2016 Service Pack 1 新增功能 #
+# <a name="whats-new-for-microsoft-identity-manager-2016-service-pack-1"></a>Microsoft Identity Manager 2016 Service Pack 1 新增功能 #
 
 作为用于维护和更新 Microsoft Identity Manager 的定期发布周期的一部分，我们非常高兴地宣布推出 [Microsoft Identity Manager (MIM) 2016 Service Pack 1 (SP1)](https://msdn.microsoft.com/subscriptions/downloads/?fileid=70212#searchTerm=&Languages=en&PageSize=10&PageIndex=0&FileId=70212)。 本文档概述了更新、增强功能、功能以及此版本中所包含的更改。
 
@@ -28,9 +27,9 @@ ms.openlocfilehash: b791b18fa3775295e9c199086aa11a0d6c6a55e7
 
 
 
-## Service Pack 更新 #
+## <a name="updates-in-this-service-pack"></a>Service Pack 更新 #
 
-### MIM
+### <a name="mim"></a>MIM
 
 - **最终用户自助服务的 MIM 门户跨浏览器兼容性：**在此 Service Pack 中，我们引入了对大多数主流浏览器的支持。 现在，用户可以访问并与 MIM 门户交互，以从 Edge、Chrome 和 Safari 实现自助服务组和配置文件管理。
 
@@ -38,7 +37,7 @@ ms.openlocfilehash: b791b18fa3775295e9c199086aa11a0d6c6a55e7
 
 - **图像文件格式上载验证：**将图像文件格式上载到门户时，MIM 现在可进行验证。
 
-### 特权访问管理 (PAM)
+### <a name="privileged-access-managementpam"></a>特权访问管理 (PAM)
 
 - **PAM“PRIV”（堡垒）林支持 Windows Server 2016 功能级别：**MIM PAM 服务可能在域控制器在 Windows Server 2016 的 Active Directory 域服务林功能级别运行的环境中进行配置。 配置时，用户 Kerberos 票证角色激活的剩余时间将会受到限制。
 
@@ -55,17 +54,17 @@ ms.openlocfilehash: b791b18fa3775295e9c199086aa11a0d6c6a55e7
     这些 Cmdlet 会作为部署脚本的一部分自动运行。
 
 
-## 平台支持
+## <a name="platform-support"></a>平台支持
 更新后的平台支持信息可在名为 [MIM 2016 支持的平台](/microsoft-identity-manager/plan-design/microsoft-identity-manager-2016-supported-platforms)文档中找到。  此 Service Pack 中支持的新平台包括 SQL Server 2016、SharePoint 2016
 
-## 自 MIM 2016 公开发行以来该版本中修复的问题
+## <a name="issues-fixed-in-this-release-from-mim-2016-general-availability"></a>自 MIM 2016 公开发行以来该版本中修复的问题
 
-### PAM
+### <a name="pam"></a>PAM
 - New-PAMGroup 未在 PRIV 林中为域本地组创建 MIM 对象
 - New-PAMDomainConfiguration 将失败，并显示“netdom”错误消息
 - PAM 监视服务记录 PRIV 林中的组的警告
 
-## 如何升级到 Service Pack 1
+## <a name="how-to-upgrade-to-service-pack-1"></a>如何升级到 Service Pack 1
 
 升级到 Microsoft Identity Manager 2016 Service Pack 1 的客户应遵循以下有关适用于其部署的所有服务的指南。
 
