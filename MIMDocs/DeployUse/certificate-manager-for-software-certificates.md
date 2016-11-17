@@ -1,28 +1,28 @@
 ---
-title: "创建软件证书 | Microsoft 标识管理器"
+title: "创建软件证书 | Microsoft Docs"
 description: "了解如何使用证书管理器来创建和续订带配置文件模板的软件证书。"
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 07/21/2016
 ms.topic: article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: fed5ada9-d80f-4825-aad7-4172ac5d71d3
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
-ms.openlocfilehash: d5c8fc4f9a3eaab95441f7a915f7e02d55042ae9
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: 31385a18c0b93e5ceaf78a2b6b8d5bed5aac224a
 
 
 ---
 
-# 使用证书管理器创建软件证书
+# <a name="create-software-certificates-with-certificate-manager"></a>使用证书管理器创建软件证书
 注册和续订软件证书无需是管理员，而且也无需虚拟智能卡。 值得注意的是，在某一时刻会提示允许证书操作，这是正常现象。
 
-## 在 MIM 2016 证书管理器中创建软件证书配置文件模板
+## <a name="create-a-software-certificate-profile-template-in-mim-2016-certificate-manager"></a>在 MIM 2016 证书管理器中创建软件证书配置文件模板
 
 1.  创建请求有关虚拟智能卡证书的模板。 打开 mmc。
 
@@ -72,7 +72,7 @@ ms.openlocfilehash: d5c8fc4f9a3eaab95441f7a915f7e02d55042ae9
 
     10. 在列表中选择刚刚创建的新模板（“存档证书模板”），然后单击“确定” 。
 
-## 创建配置文件模板
+## <a name="create-the-profile-template"></a>创建配置文件模板
 
 1.  作为拥有管理员权限的用户登录到 CM 门户。
 
@@ -98,6 +98,6 @@ ms.openlocfilehash: d5c8fc4f9a3eaab95441f7a915f7e02d55042ae9
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

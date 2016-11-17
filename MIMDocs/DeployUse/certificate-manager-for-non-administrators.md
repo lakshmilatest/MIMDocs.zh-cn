@@ -1,28 +1,28 @@
 ---
-title: "自助服务智能卡续订 | Microsoft Identity Manager"
+title: "自助服务智能卡续订 | Microsoft Docs"
 description: "对于不具有自己计算机的管理员访问权限的用户，了解如何为其注册智能卡，以便他们使用证书管理器。"
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 07/21/2016
 ms.topic: article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: bfabc562-a2f0-4cff-ac31-36927f41e102
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
-ms.openlocfilehash: 2fddede481b5ba677d0d463be4b14cda4b463865
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: 76d72211e1dbddb2647729c796ac19eb82a3b2c6
 
 
 ---
 
-# 为非管理员注册智能卡
+# <a name="enroll-smart-cards-for-nonadministrators"></a>为非管理员注册智能卡
 如果用户不是计算机的本地管理员，则默认情况下，他们将无法在自己的计算机上注册智能卡。 以下过程可以让你解决此限制。
 
-## 在 MIM 2016 证书管理器中启用非管理员智能卡续订
+## <a name="enabling-smart-card-renewal-for-nonadmins-in-mim-2016-certificate-manager"></a>在 MIM 2016 证书管理器中启用非管理员智能卡续订
 
 1.  **解压缩 appx 文件**
 
@@ -56,7 +56,7 @@ ms.openlocfilehash: 2fddede481b5ba677d0d463be4b14cda4b463865
 
     6.  保存文件并退出编辑器。
 
-3.  **重新打包并签署应用程序包（appx 文件）**
+3.  **重新打包并签署应用包（appx 文件）**
 
     运行以下命令以打包和签署 appx 文件：
 
@@ -96,6 +96,6 @@ ms.openlocfilehash: 2fddede481b5ba677d0d463be4b14cda4b463865
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -1,25 +1,25 @@
 ---
-title: "部署 PAM 步骤 2 – PRIV DC | Microsoft Identity Manager"
+title: "部署 PAM 步骤 2 – PRIV DC | Microsoft Docs"
 description: "准备 PRIV 域控制器，它将提供堡垒环境，Privileged Access Management 在此环境中是独立的。"
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 07/15/2016
 ms.topic: article
-ms.prod: microsoft-identity-manager
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 0e9993a0-b8ae-40e2-8228-040256adb7e2
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
-ms.openlocfilehash: 048a17c6b8150501185b7a13c3d2cb292791c9e8
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: f84229908f31242b6d2f7636a7c67ca669de45b3
 
 
 ---
 
-# 步骤 2 - 准备第一个 PRIV 域控制器
+# <a name="step-2-prepare-the-first-priv-domain-controller"></a>步骤 2 - 准备第一个 PRIV 域控制器
 
 >[!div class="step-by-step"]
 [« 步骤 1](step-1-prepare-corp-domain.md)
@@ -27,11 +27,11 @@ ms.openlocfilehash: 048a17c6b8150501185b7a13c3d2cb292791c9e8
 
 在此步骤中，你将创建一个新域，用于为管理员进行身份验证提供堡垒环境。  此林将需要至少一个域控制器和至少一个成员服务器。 成员服务器将在下一步骤中进行配置。
 
-## 创建一个新的 Privileged Access Management 域控制器
+## <a name="create-a-new-privileged-access-management-domain-controller"></a>创建一个新的 Privileged Access Management 域控制器
 
 本节将安装一个虚拟机，充当新林的域控制器
 
-### 安装 Windows Server 2012 R2
+### <a name="install-windows-server-2012-r2"></a>安装 Windows Server 2012 R2
 在未安装任何软件的另一台新虚拟机上，请安装 Windows Server 2012 R2 以使计算机为“PRIVDC”。
 
 1. 选择执行 Windows Server 的自定义（非升级）安装。 在安装时，指定 **Windows Server 2012 R2 Standard（带有 GUI 的服务器）x64**；_不要选择_“数据中心或服务器核心”。
@@ -44,7 +44,7 @@ ms.openlocfilehash: 048a17c6b8150501185b7a13c3d2cb292791c9e8
 
 5. 重启服务器后，以管理员身份登录。 使用“控制面板”，配置计算机以检查更新，并安装所需的任何更新。 这可能需要重新启动服务器。
 
-### 添加角色
+### <a name="add-roles"></a>添加角色
 添加 Active Directory 域服务 (AD DS) 和 DNS 服务器角色。
 
 1. 以管理员身份启动 PowerShell。
@@ -57,7 +57,7 @@ ms.openlocfilehash: 048a17c6b8150501185b7a13c3d2cb292791c9e8
   Install-WindowsFeature AD-Domain-Services,DNS –restart –IncludeAllSubFeature -IncludeManagementTools
   ```
 
-### 配置 SID 历史记录迁移所需的注册表设置
+### <a name="configure-registry-settings-for-sid-history-migration"></a>配置 SID 历史记录迁移所需的注册表设置
 
 启动 PowerShell 并键入以下命令，以便将源域配置为允许远程过程调用 (RPC) 访问安全帐户管理器 (SAM) 数据库。
 
@@ -65,13 +65,13 @@ ms.openlocfilehash: 048a17c6b8150501185b7a13c3d2cb292791c9e8
 New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name TcpipClientSupport –PropertyType DWORD –Value 1
 ```
 
-## 创建一个新的 Privileged Access Management 林
+## <a name="create-a-new-privileged-access-management-forest"></a>创建一个新的 Privileged Access Management 林
 
 然后，将此服务器提升为新林中的域控制器。
 
 在本文中，名称 priv.contoso.local 用作新林的域名。  林的名称并不重要，并且它不需要从属于组织中现有的林名称。 但是，新林的域名和 NetBIOS 名称必须具有唯一性且不同于组织中任何其他域的名称。  
 
-### 创建一个域和林
+### <a name="create-a-domain-and-forest"></a>创建一个域和林
 
 1. 在“PowerShell”窗口中，键入以下命令以创建新域。  此操作还将在上一步骤所创建的高级域 (contoso.local) 中创建一个 DNS 委派。  如果想要在以后配置 DNS，则忽略 `CreateDNSDelegation -DNSDelegationCredential $ca` 参数。
 
@@ -87,12 +87,12 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
 
 完成林创建后，服务器将自动重新启动。
 
-### 创建用户和服务帐户
+### <a name="create-user-and-service-accounts"></a>创建用户和服务帐户
 创建用于 MIM 服务和门户设置的用户和服务帐户。 这些帐户都将置于 priv.contoso.local 域的用户容器中。
 
 1. 重启服务器后，以域管理员身份 (PRIV\\Administrator) 登录到 PRIVDC。
 
-2. 启动 PowerShell，键入以下命令。 密码 Pass@word1 只是一个示例，应为帐户使用不同的密码。
+2. 启动 PowerShell，键入以下命令。 密码 'Pass@word1' 只是一个示例，应为帐户使用不同的密码。
 
   ```
   import-module activedirectory
@@ -158,7 +158,7 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
   Add-ADGroupMember "Domain Admins" MIMService
   ```
 
-### 配置审核和登录权限
+### <a name="configure-auditing-and-logon-rights"></a>配置审核和登录权限
 
 你需要设置审核权限，以便跨林实现 PAM 配置。  
 
@@ -207,7 +207,7 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
   一分钟后，它将完成并显示消息“计算机策略更新已成功完成”。
 
 
-### 在 PRIVDC 上配置 DNS 名称转发
+### <a name="configure-dns-name-forwarding-on-privdc"></a>在 PRIVDC 上配置 DNS 名称转发
 
 使用 PRIVDC 中的 PowerShell，配置 DNS 名称转发以使 PRIV 域能够识别其他现有的林。
 
@@ -224,7 +224,7 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
 > [!NOTE]
 > 其他林也必须能够按指定路线将 PRIV 林的 DNS 查询发送到此域控制器。  如果具有多个现有的 Active Directory 林，则还必须为这些林的每一个添加一个 DNS 条件转发器。
 
-### 配置 Kerberos
+### <a name="configure-kerberos"></a>配置 Kerberos
 
 1. 使用 PowerShell 添加 SPN，以便 SharePoint、PAM REST API 和 MIM 服务可以使用 Kerberos 身份验证。
 
@@ -238,7 +238,7 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
 > [!NOTE]
 > 本文的后续步骤将介绍如何在单台计算机上安装 MIM 2016 服务器组件。 如果打算添加另一台服务器以实现高可用性，则将需要如 [FIM 2010: Kerberos Authentication Setup](http://social.technet.microsoft.com/wiki/contents/articles/3385.fim-2010-kerberos-authentication-setup.aspx)（FIM 2010：Kerberos 身份验证设置）中所述的其他 Kerberos 配置。
 
-### 配置委派以提供 MIM 服务帐户访问权限
+### <a name="configure-delegation-to-give-mim-service-accounts-access"></a>配置委派以提供 MIM 服务帐户访问权限
 
 以域管理员身份在 PRIVDC 上执行以下步骤。
 
@@ -271,21 +271,21 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
 
 17. 打开命令提示符。  
 18. 查看 PRIV 域中 Admin SD Holder 对象上的访问控制列表。 例如，如果你的域为“priv.contoso.local”，则键入以下命令  
-  ```  
-  dsacls "cn=adminsdholder,cn=system,dc=priv,dc=contoso,dc=local"  
-  ```  
+  ```
+  dsacls "cn=adminsdholder,cn=system,dc=priv,dc=contoso,dc=local"
+  ```
 19. 根据需要更新访问控制列表，以确保 MIM 服务和 MIM 组件服务可以更新由此 ACL 保护的组成员。  键入命令：  
-  ```  
+  ```
   dsacls "cn=adminsdholder,cn=system,dc=priv,dc=contoso,dc=local" /G priv\mimservice:WP;"member"  
-  dsacls "cn=adminsdholder,cn=system,dc=priv,dc=contoso,dc=local" /G priv\mimcomponent:WP;"member"  
-  ```  
+  dsacls "cn=adminsdholder,cn=system,dc=priv,dc=contoso,dc=local" /G priv\mimcomponent:WP;"member"
+  ```
 20. 重新启动 PRIVDC 服务器以使这些更改起效。
 
-## 准备 PRIV 工作站
+## <a name="prepare-a-priv-workstation"></a>准备 PRIV 工作站
 
 如果还没有将加入到 PRIV 域以执行 PRIV 资源（例如 MIM）维护的工作站计算机，请按照这些说明来准备工作站。  
 
-### 安装 Windows 8.1 或者 Windows 10 企业版
+### <a name="install-windows-81-or-windows-10-enterprise"></a>安装 Windows 8.1 或者 Windows 10 企业版
 
 在未安装任何软件的另一台新虚拟机上，安装 Windows 8.1 或 Windows 10 企业版，以使计算机为“PRIVWKSTN”。
 
@@ -307,6 +307,6 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

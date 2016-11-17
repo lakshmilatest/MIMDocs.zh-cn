@@ -1,25 +1,25 @@
 ---
-title: "MIM 证书管理器 | Microsoft Identity Manager"
+title: "MIM 证书管理器 | Microsoft Docs"
 description: "了解如何部署证书管理器应用以使用户可以管理自己的访问权限。"
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 07/21/2016
 ms.topic: article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 66060045-d0be-4874-914b-5926fd924ede
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
-ms.openlocfilehash: 1aea9543af4dd7f3eab4f01eab52d8c11b36191d
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: a2be6b5640dde5e2908dce36ea13d920a6643874
 
 
 ---
 
-# 使用 MIM 证书管理器
+# <a name="working-with-the-mim-certificate-manager"></a>使用 MIM 证书管理器
 在你启动并运行 MIM 2016 和证书管理器后，你可以部署 MIM 证书管理器 Windows 应用商店应用程序，以便你的用户可以轻松地管理其物理智能卡、虚拟智能卡和软件证书。 部署 MIM CM 应用的步骤如下所示：
 
 1.  创建证书模板。
@@ -30,7 +30,7 @@ ms.openlocfilehash: 1aea9543af4dd7f3eab4f01eab52d8c11b36191d
 
 4.  通过 SCCM 或 Intune 部署应用。
 
-## 创建证书模板
+## <a name="create-a-certificate-template"></a>创建证书模板
 使用与平时相同的方法为 CM 应用创建证书模板，只不过你必须确保证书模板为版本 3 和更高版本。
 
 1.  登录到运行 AD CS 的服务器（证书服务器）。
@@ -69,7 +69,7 @@ ms.openlocfilehash: 1aea9543af4dd7f3eab4f01eab52d8c11b36191d
 
 16. 从列表中选择你创建的新模板，然后单击“确定” 。
 
-## 创建配置文件模板
+## <a name="create-a-profile-template"></a>创建配置文件模板
 请确保在创建配置文件模板时将其设置为创建/销毁 vSC 并删除数据收集。 CM 应用无法处理已收集的数据，因此禁用它很重要，如下所示。
 
 1.  作为拥有管理员权限的用户登录到 CM 门户。
@@ -94,7 +94,7 @@ ms.openlocfilehash: 1aea9543af4dd7f3eab4f01eab52d8c11b36191d
 
 11. 你必须通过单击左窗格中的策略，然后选中“示例数据项”  旁边的框来为每个策略禁用数据收集项，然后单击“删除数据收集项” 。 然后单击“确定” 。
 
-## 使 CM 为部署做好准备
+## <a name="prepare-the-cm-app-for-deployment"></a>使 CM 为部署做好准备
 
 1.  在命令提示符处，运行以下命令来解包该应用，然后将内容提取到名为 appx 的新子文件夹并创建一个副本，这样你无需修改原始文件。
 
@@ -148,7 +148,7 @@ ms.openlocfilehash: 1aea9543af4dd7f3eab4f01eab52d8c11b36191d
 
     -   打开虚拟智能卡应用程序。 这使你可以更轻松地找到下一步所需的值。
 
-    -   若要将应用程序作为客户端添加到 AD FS 服务器并在服务器上配置 CM，请在 AD FS 服务器上，打开 Windows PowerShell 并运行命令 `ConfigureMimCMClientAndRelyingParty.ps1 –redirectUri <redirectUriString> -serverFQDN <MimCmServerFQDN>`
+    -   若要将应用程序作为客户端添加到 AD FS 服务器并在服务器上配置 CM，请在 AD FS 服务器上，打开 Windows PowerShell 并运行命令 `ConfigureMimCMClientAndRelyingParty.ps1 –redirectUri <redirectUriString> -serverFQDN <MimCmServerFQDN>`。
 
         下面是 ConfigureMimCMClientAndRelyingParty.ps1 脚本：
 
@@ -251,11 +251,11 @@ ms.openlocfilehash: 1aea9543af4dd7f3eab4f01eab52d8c11b36191d
 
     -   有关 **ConfigureMIimCMClientAndRelyingParty.ps1** 脚本的帮助，请运行 `get-help  -detailed ConfigureMimCMClientAndRelyingParty.ps1`
 
-## 部署应用
+## <a name="deploy-the-app"></a>部署应用
 设置 CM 应用后，在下载中心中下载文件 MIMDMModernApp_&lt;version&gt;_AnyCPU_Test.zip 并提取其所有内容。 .appx 文件是安装程序。 你可以使用通常部署 Windows 应用商店应用时使用的任何方式来部署它，使用 [System Center Configuration Manager](https://technet.microsoft.com/library/dn613840.aspx)，或使用 [Intune](https://technet.microsoft.com/library/dn613839.aspx) 旁加载应用，以使用户必须通过公司门户访问它或直接向其计算机推送。
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

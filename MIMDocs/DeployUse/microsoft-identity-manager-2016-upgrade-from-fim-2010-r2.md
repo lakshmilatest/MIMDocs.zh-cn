@@ -1,25 +1,25 @@
 ---
-title: "从 FIM 2010 R2 升级 | Microsoft Identity Manager"
+title: "从 FIM 2010 R2 升级 | Microsoft Docs"
 description: "了解如何升级你的 FIM 2010 R2 组件，然后安装 MIM 2016 中的新增组件。"
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 07/21/2016
 ms.topic: article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 9471ccc1-bafe-46ee-b169-1464262380e1
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
-ms.openlocfilehash: c77a41b47baa81f003e52f79d338a7810fa817b5
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: ef272ffe665aa5753fa2bf02d26f2ce73efa025b
 
 
 ---
 
-# 从 Forefront 标识管理器 2010 R2 升级
+# <a name="upgrade-from-forefront-identity-manager-2010-r2"></a>从 Forefront 标识管理器 2010 R2 升级
 
 如果你具有Forefront Identity Manager (FIM) 2010 R2 环境，且想要试用 Microsoft Identity Manager (MIM) 2016，请以本文作为指南。 在此升级过程中有 3 个阶段：
 
@@ -36,7 +36,7 @@ ms.openlocfilehash: c77a41b47baa81f003e52f79d338a7810fa817b5
 - 为 FIM 2010 R2 配置的本地和环境先决条件（SQL Server、Exchange Server、SharePoint Services 等）。
 
 
-## 准备
+## <a name="preparation"></a>准备
 
 1.  备份 FIM 服务数据库、FIM 同步数据库、FIM 同步和服务配置和软件。
 
@@ -44,7 +44,7 @@ ms.openlocfilehash: c77a41b47baa81f003e52f79d338a7810fa817b5
 
 3.  下载或解压缩 MIM 软件。
 
-## 升级同步服务
+## <a name="upgrade-the-synchronization-service"></a>升级同步服务
 
 1.  以管理员身份登录到已部署 FIM 2010 R2 同步服务（“Sync”）的服务器。
 
@@ -82,7 +82,7 @@ ms.openlocfilehash: c77a41b47baa81f003e52f79d338a7810fa817b5
 
 13. 请注意，“同步服务”  已重新启动。
 
-## 升级服务和门户
+## <a name="upgrade-the-service-and-portal"></a>升级服务和门户
 
 1.  以管理员身份登录到已部署 FIM 2010 R2 服务和门户的服务器。
 
@@ -138,7 +138,7 @@ ms.openlocfilehash: c77a41b47baa81f003e52f79d338a7810fa817b5
 
 14. 安装 MIM 门户时，提供 FIM 门户当前托管在其中的 SharePoint 站点集的 URL。 单击“下一步” 。
 
-## 安装 MIM 密码注册门户
+## <a name="install-the-mim-password-registration-portal"></a>安装 MIM 密码注册门户
 
 1. 如果正在安装 MIM 密码注册门户，提供针对密码注册门户请求的 URL。 单击“下一步” 。
 
@@ -168,7 +168,7 @@ ms.openlocfilehash: c77a41b47baa81f003e52f79d338a7810fa817b5
 
     2.  确定此门户是否可由外联网用户和局域网用户访问，还是仅限局域网用户访问，如先前针对 FIM 密码重置进行的配置。
 
-## 安装 MIM 密码重置门户
+## <a name="install-the-mim-password-reset-portal"></a>安装 MIM 密码重置门户
 
 1. 如果正在安装 MIM 密码重置门户，提供 MIM 密码重置的访问详细信息和凭据。
 
@@ -188,7 +188,7 @@ ms.openlocfilehash: c77a41b47baa81f003e52f79d338a7810fa817b5
 
     2.  指定此门户是否可以由外联网用户和局域网用户访问，还是仅限局域网用户访问。
 
-## 完成安装和升级
+## <a name="finish-installation-and-upgrade"></a>完成安装和升级
 
 1. 成功完成所有配置定义后，会显示安装页面。 单击“安装”  以开始安装和升级 MIM 服务和门户。
 
@@ -202,6 +202,6 @@ ms.openlocfilehash: c77a41b47baa81f003e52f79d338a7810fa817b5
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

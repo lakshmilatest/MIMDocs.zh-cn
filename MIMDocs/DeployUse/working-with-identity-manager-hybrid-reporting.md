@@ -1,27 +1,27 @@
 ---
-title: "Azure 中的混合报告 | Microsoft Identity Manager"
+title: "Azure 中的混合报告 | Microsoft Docs"
 description: "了解如何将本地和云中的数据结合到 Azure 中的混合报告内，以及如何管理和查看这些报告。"
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 07/21/2016
 ms.topic: article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 68df2817-2040-407d-b6d2-f46b9a9a3dbb
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
-ms.openlocfilehash: 0a104a5f79dd48cb2dfc3d739e3ce8dcbd236c0f
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: ff0469da204a9bfa861273d66b04f5da51557c99
 
 
 ---
 
-# 使用标识管理器混合报告
+# <a name="working-with-identity-manager-hybrid-reporting"></a>使用标识管理器混合报告
 
-## 可用混合报告
+## <a name="available-hybrid-reports"></a>可用混合报告
 Azure AD 中可用的前三个 Microsoft 标识管理器 (MIM) 报告是“密码重置活动”、“密码重置注册”和“自助服务组活动”。
 
 -   当用户使用 SSPR 执行密码重置并提供用于身份验证的入口或 **方法** 时，密码重置活动将显示每个实例。
@@ -38,7 +38,7 @@ Azure AD 中可用的前三个 Microsoft 标识管理器 (MIM) 报告是“密�
 >
 > 如果要卸载混合报告，请卸载 MIMreportingAgent.msi 代理。
 
-## 必备条件
+## <a name="prerequisites"></a>必备条件
 
 1.  安装 Microsoft 标识管理器 2016，包括 MIM 服务。
 
@@ -46,7 +46,7 @@ Azure AD 中可用的前三个 Microsoft 标识管理器 (MIM) 报告是“密�
 
 3.  请确保你具有从 Microsoft 标识管理器服务器到 Azure 的传出 Internet 连接。
 
-## 在 Azure AD 中安装 Microsoft 标识管理器报告。
+## <a name="install-microsoft-identity-manager-reporting-in-azure-ad"></a>在 Azure AD 中安装 Microsoft 标识管理器报告。
 安装报告代理后，Microsoft 标识管理器活动中的数据从 MIM 导出到 Windows 事件日志。 MIM 报告代理处理这些事件，并将其上传到 Azure。 在 Azure 中，针对所需的报告解析、解密并筛选这些事件。
 
 1.  安装 Microsoft 标识管理器 2016。
@@ -75,7 +75,7 @@ Azure AD 中可用的前三个 Microsoft 标识管理器 (MIM) 报告是“密�
 
     可以通过使用 Microsoft 标识管理器自助服务密码重置门户来重置用户的密码，从而创建报告数据。 请确保密码重置已成功完成，然后检查该数据是否在 Azure AD 管理门户中显示。
 
-## 在 Azure 经典门户中查看混合报告
+## <a name="view-hybrid-reports-in-the-azure-classic-portal"></a>在 Azure 经典门户中查看混合报告
 
 1.  为租户使用全局管理员帐户登录到 [Azure 经典门户](https://manage.windowsazure.com/)。
 
@@ -90,10 +90,10 @@ Azure AD 中可用的前三个 Microsoft 标识管理器 (MIM) 报告是“密�
 > [!WARNING]
 > Microsoft 标识管理器数据需要一些时间才能显示在 Azure AD 中。
 
-## 停止创建混合报告
+## <a name="stop-creating-hybrid-reports"></a>停止创建混合报告
 如果要停止将报告数据从 Microsoft 标识管理器上传到 Azure Active Directory，请卸载混合报告代理。 使用 Windows“添加或删除程序”工具，卸载 Microsoft 标识管理器混合报告。
 
-## 用于混合报告的 Windows 事件
+## <a name="windows-events-used-for-hybrid-reporting"></a>用于混合报告的 Windows 事件
 由 Microsoft Identity Manager 生成的事件记录在 Windows 事件日志中，并且在事件查看器中可见，位于以下位置：“应用程序和服务”日志 -&gt;“Identity Manager 请求日志”。 每个 MIM 请求以 JSON 结构导出为 Windows 事件日志中的事件。 这可以导出到你的 SIEM。
 
 |事件类型|ID|事件详细信息|
@@ -103,6 +103,6 @@ Azure AD 中可用的前三个 Microsoft 标识管理器 (MIM) 报告是“密�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 
