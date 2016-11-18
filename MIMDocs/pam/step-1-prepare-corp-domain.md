@@ -1,25 +1,25 @@
 ---
-title: "部署 PAM 步骤 1 - CORP 域 | Microsoft Identity Manager"
+title: "部署 PAM 步骤 1 - CORP 域 | Microsoft Docs"
 description: "准备 CORP 域，其具有将由 Privileged Identity Manager 管理的现有标识或新标识"
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 07/15/2016
 ms.topic: article
-ms.prod: microsoft-identity-manager
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
-ms.openlocfilehash: 9a2fafa86c5c928339ff8d7ad1593472046ccb98
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: 127d368c15cce125ba7f69302cfa329b600d9498
 
 
 ---
 
-# 步骤 1 - 准备主机和 CORP 域
+# <a name="step-1-prepare-the-host-and-the-corp-domain"></a>步骤 1 - 准备主机和 CORP 域
 
 >[!div class="step-by-step"]
 [步骤 2 »](step-2-prepare-priv-domain-controller.md)
@@ -29,11 +29,11 @@ ms.openlocfilehash: 9a2fafa86c5c928339ff8d7ad1593472046ccb98
 
 如果你有现有的 Active Directory (AD) 域，并且其域控制器运行 Windows Server 2012 R2 或更高版本，而你是域管理员，那么你可以改用该域。  
 
-## 准备 CORP 域控制器
+## <a name="prepare-the-corp-domain-controller"></a>准备 CORP 域控制器
 
 本节介绍如何设置 CORP 域的域控制器。 在 CORP 域中，管理用户由堡垒环境管理。 本示例中使用的 CORP 域的域名系统 (DNS) 名称为 *contoso.local*。
 
-### 安装 Windows Server
+### <a name="install-windows-server"></a>安装 Windows Server
 
 在一台虚拟机上安装 Windows Server 2012 R2 或 Windows Server 2016 Technical Preview 4 或更高版本以创建名为 *CORPDC* 的计算机。
 
@@ -47,7 +47,7 @@ ms.openlocfilehash: 9a2fafa86c5c928339ff8d7ad1593472046ccb98
 
 5. 在服务器重启后，以管理员身份登录。 导航到“控制面板”。 配置计算机以检查更新，并安装所需的任何更新。 重新启动服务器。
 
-### 添加角色以建立域控制器
+### <a name="add-roles-to-establish-a-domain-controller"></a>添加角色以建立域控制器
 
 在本节中你将添加 Active Directory 域服务 (AD DS)、DNS 服务器和文件服务器（文件和存储服务部分的一部分）角色，并将此服务器提升到新林“contoso.local”的域控制器。
 
@@ -72,7 +72,7 @@ ms.openlocfilehash: 9a2fafa86c5c928339ff8d7ad1593472046ccb98
 
 4. 在服务器重启后，以该域的管理员身份登录到 CORPDC。 通常为用户 CONTOSO\\管理员，该用户具有在 CORPDC 上安装 Windows 时创建的密码。
 
-### 创建组
+### <a name="create-a-group"></a>创建组
 
 使用 Active Directory 创建用于审核的组，如果该组不存在。 组的名称必须是后跟三个美元符号的 NetBIOS 域名，例如“CONTOSO$$$”。
 
@@ -90,7 +90,7 @@ ms.openlocfilehash: 9a2fafa86c5c928339ff8d7ad1593472046ccb98
 
 在某些情况下该组可能已经存在 - 如果 AD 迁移场景中也使用该域，则这是正常情况。
 
-### 创建用于演示的其他用户和组
+### <a name="create-additional-users-and-groups-for-demonstration-purposes"></a>创建用于演示的其他用户和组
 
 如果创建了新的 CORP 域，那么应创建用于演示 PAM 场景的其他用户和组。 用于演示的用户和组不应为域管理员或由 AD 中的 adminSDHolder 设置控制。
 
@@ -101,7 +101,7 @@ ms.openlocfilehash: 9a2fafa86c5c928339ff8d7ad1593472046ccb98
 
 1. 启动 PowerShell。
 
-2. 键入下列命令。 将密码“Pass@word1”替换为不同的密码字符串。
+2. 键入下列命令。 将密码 'Pass@word1' 替换为其他密码字符串。
 
   ```
   import-module activedirectory
@@ -119,7 +119,7 @@ ms.openlocfilehash: 9a2fafa86c5c928339ff8d7ad1593472046ccb98
   Set-ADUser –identity Jen –Enabled 1 -DisplayName "Jen"
   ```
 
-### 配置审核
+### <a name="configure-auditing"></a>配置审核
 
 你需要在现有林中启用审核，才能在这些林中建立 PAM 配置。  
 
@@ -147,7 +147,7 @@ ms.openlocfilehash: 9a2fafa86c5c928339ff8d7ad1593472046ccb98
 
 几分钟后将显示消息“计算机策略更新已成功完成”。
 
-### 配置注册表设置
+### <a name="configure-registry-settings"></a>配置注册表设置
 
 在本节中你将配置 SID 历史记录迁移所需的注册表设置，该设置将用于 Privileged Access Management 组创建。
 
@@ -163,14 +163,14 @@ ms.openlocfilehash: 9a2fafa86c5c928339ff8d7ad1593472046ccb98
 
 这将重启域控制器，CORPDC。 有关此注册表设置的详细信息，请参阅[《如何解决在使用 ADMTv2 进行林间 SIDHistory 迁移时出现的问题》](http://support.microsoft.com/kb/322970)。
 
-## 准备 CORP 工作站和资源
+## <a name="prepare-a-corp-workstation-and-resource"></a>准备 CORP 工作站和资源
 
 如果还没有加入到域中的工作站计算机，请按照以下说明准备该计算机。  
 
 > [!NOTE]
 > 如果已经有加入到域中的工作站，请跳到[创建用于演示的资源](#create-a-resource-for-demonstration-purposes)。
 
-### 安装 Windows 8.1 或者 Windows 10 企业版作为 VM
+### <a name="install-windows-81-or-windows-10-enterprise-as-a-vm"></a>安装 Windows 8.1 或者 Windows 10 企业版作为 VM
 
 在未安装任何软件的另一台新虚拟机上，安装 Windows 8.1 企业版或 Windows 10 企业版以创建计算机“CORPWKSTN”。
 
@@ -182,7 +182,7 @@ ms.openlocfilehash: 9a2fafa86c5c928339ff8d7ad1593472046ccb98
 
 4. 使用“控制面板”，将 CORPWKSTN 计算机加入到 contoso.local 域。 你需要提供 Contoso 域管理员凭据。 完成此步骤后，重新启动计算机 CORPWKSTN。
 
-### 创建用于演示的资源
+### <a name="create-a-resource-for-demonstration-purposes"></a>创建用于演示的资源
 
 你需要资源来演示使用 PAM 的基于安全组的访问控制。  如果还没有资源，可以使用文件文件夹进行演示。  这将使用在 contoso.local 域中创建的“Jen”和“CorpAdmins”AD 对象。
 
@@ -215,6 +215,6 @@ ms.openlocfilehash: 9a2fafa86c5c928339ff8d7ad1593472046ccb98
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

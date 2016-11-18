@@ -1,25 +1,25 @@
 ---
-title: "部署 MIM 2016 | Microsoft 标识管理器"
+title: "部署 MIM 2016 | Microsoft Docs"
 description: "获取部署 Microsoft 标识管理器 2016 的完整步骤列表，包括从准备环境到配置门户的全部步骤。"
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 09/07/2016
 ms.topic: article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: fa0af422-b5e9-4599-9d9b-cb6c18ea07f9
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 40dbec941eb2f0b1a01de0f47d44e01717aaca21
-ms.openlocfilehash: 77dae279f9078c55abf342a8956aaf77c62773d5
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: 7fdad09650af245157264778d2732ac4327f25b5
 
 
 ---
 
-# 部署 MIM 2016
+# <a name="deploy-mim-2016"></a>部署 MIM 2016
 本部分中的文章提供部署 Microsoft 标识管理器 (MIM) 2016 的分步说明，这些说明适用于此前未部署过 FIM 或 MIM 的新服务器上的最终用户自助服务方案。
 
 > [!NOTE]
@@ -29,18 +29,18 @@ ms.openlocfilehash: 77dae279f9078c55abf342a8956aaf77c62773d5
 
 部署 MIM 2016 的过程与部署其前身 FIM 2010 R2 的过程非常类似。 如果想引用 FIM 文档，请参阅 [Forefront Identity Manager 2010 R2 部署指南](https://technet.microsoft.com/library/jj134310)。
 
-## 第一步：准备域
+## <a name="first-prepare-a-domain"></a>第一步：准备域
 MIM 与 Active Directory (AD) 协同工作，因此请按照以下步骤来配置你的 AD 域控制器。
 - [域设置](preparing-domain.md)
 
-## 第二步：准备标识管理服务器
+## <a name="next-prepare-an-identity-management-server"></a>第二步：准备标识管理服务器
 设置并配置好域后，准备你的企业标识管理服务器。 这包括设置：
 - [Windows Server 2012 R2](prepare-server-ws2012r2.md)
 - [SQL Server 2014](prepare-server-sql2014.md)
 - [SharePoint](prepare-server-sharepoint.md)
 - [Exchange Server](prepare-server-exchange.md)（可选）
 
-## 第三步：安装 Microsoft 标识管理器 2016 组件
+## <a name="finally-install-microsoft-identity-manager-2016-components"></a>第三步：安装 Microsoft 标识管理器 2016 组件
 设置好域和服务器后，便可立即安装 MIM 组件，并将其配置为与 AD 同步。
 - [MIM 同步服务](install-mim-sync.md)
 - [MIM 服务和门户](install-mim-service-portal.md)
@@ -48,6 +48,6 @@ MIM 与 Active Directory (AD) 协同工作，因此请按照以下步骤来配�
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

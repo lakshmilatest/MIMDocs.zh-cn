@@ -1,25 +1,25 @@
 ---
-title: "部署和配置 PAM | Microsoft Identity Manager"
+title: "部署和配置 PAM | Microsoft Docs"
 description: "安装 MIM 并为 Privileged Access Management 对其进行配置的路线图。"
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 07/15/2016
 ms.topic: article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: c4ca5b58-ad0c-48af-a9eb-b71b22d0c67c
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
-ms.openlocfilehash: 4b4953089cb676baae97988f380debbfefcd1083
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: a081b49ca8d0de7ce7d5f7385e5a652b09b722c3
 
 
 ---
 
-# 为 Privileged Access Management 配置 MIM 环境
+# <a name="configure-the-mim-environment-for-privileged-access-management"></a>为 Privileged Access Management 配置 MIM 环境
 在设置跨林访问环境、安装和配置 Active Directory 和 Microsoft Identity Manager 以及演示实时访问请求时，需要完成 7 个步骤。
 
 下面列出了这些步骤，以便你从头开始生成测试环境。 如果要将 PAM 应用到现有的环境中，则可以使用自己的域控制器或者用户帐户，而不是创建一个新的帐户以匹配实例。
@@ -39,10 +39,10 @@ ms.openlocfilehash: 4b4953089cb676baae97988f380debbfefcd1083
 7.  演示请求、接收和使用对受保护资源的提升的特权访问权限。
 
 >[!div class="step-by-step"]
-[启动 »](step-1-prepare-corp-domain.md)
+[开始 »](step-1-prepare-corp-domain.md)
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

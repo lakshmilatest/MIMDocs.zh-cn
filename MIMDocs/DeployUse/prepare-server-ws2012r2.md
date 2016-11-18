@@ -1,25 +1,25 @@
 ---
-title: "配置 Windows Server | Microsoft Identity Manager"
+title: "配置 Windows Server | Microsoft Docs"
 description: "获取准备 Windows Server 2012 RS 以使用 MIM 2016 的步骤和最低要求。"
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 08/11/2016
 ms.topic: get-started-article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 51507d0a-2aeb-4cfd-a642-7c71e666d6cd
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 739797502e09c2b92e35767e2c943308cd1de5c9
-ms.openlocfilehash: bdf1f4b7c5762095f4986506f9e17369dadea011
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: 06d2365808858dc09d04ab37eafa9d6e3212cbcf
 
 
 ---
 
-# 设置标识管理服务器：Windows Server 2012 R2
+# <a name="set-up-an-identity-management-server-windows-server-2012-r2"></a>设置标识管理服务器：Windows Server 2012 R2
 
 >[!div class="step-by-step"]
 [« 准备域](preparing-domain.md)
@@ -31,7 +31,7 @@ ms.openlocfilehash: bdf1f4b7c5762095f4986506f9e17369dadea011
 > - 域名 - **contoso**
 > - 密码 - **Pass@word1**
 
-## 将 Windows Server 2012 R2 加入到你的域中
+## <a name="join-windows-server-2012-r2-to-your-domain"></a>将 Windows Server 2012 R2 加入到你的域中
 
 开始使用 Windows Server 2012 R2 计算机（具有最少 8GB 的 RAM）。 安装时，请指定“Windows Server 2012 R2 标准（带有 GUI 的服务器）x64”版本。
 
@@ -62,7 +62,7 @@ ms.openlocfilehash: bdf1f4b7c5762095f4986506f9e17369dadea011
     Install-WindowsFeature Web-WebServer, Net-Framework-Features,rsat-ad-powershell,Web-Mgmt-Tools,Application-Server,Windows-Identity-Foundation,Server-Media-Foundation,Xps-Viewer –includeallsubfeature -restart -source d:\sources\SxS
     ```
 
-## 配置服务器安全策略
+## <a name="configure-the-server-security-policy"></a>配置服务器安全策略
 
 将服务器安全策略设置为允许新创建的帐户以服务身份运行。
 
@@ -93,7 +93,7 @@ ms.openlocfilehash: bdf1f4b7c5762095f4986506f9e17369dadea011
 12. 关闭本地安全策略窗口。
 
 
-## 更改 IIS Windows 身份验证模式
+## <a name="change-the-iis-windows-authentication-mode"></a>更改 IIS Windows 身份验证模式
 
 1.  打开 PowerShell 窗口。
 
@@ -111,6 +111,6 @@ ms.openlocfilehash: bdf1f4b7c5762095f4986506f9e17369dadea011
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

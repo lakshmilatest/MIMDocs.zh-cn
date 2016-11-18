@@ -1,29 +1,29 @@
 ---
-title: "安装 MIM 服务和门户 | Microsoft Identity Manager"
+title: "安装 MIM 服务和门户 | Microsoft Docs"
 description: "获取为 Microsoft 标识管理器 2016 配置和安装 MIM 服务和门户的步骤"
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 08/11/2016
 ms.topic: get-started-article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 739797502e09c2b92e35767e2c943308cd1de5c9
-ms.openlocfilehash: 438754773057043b8560562bab0ae260fb3a4bc2
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: 4d0f08d84c39c982d43b2a0e0ba2f694aed508da
 
 
 ---
 
-# 安装 MIM 2016：MIM 服务和门户
+# <a name="install-mim-2016-mim-service-and-portal"></a>安装 MIM 2016：MIM 服务和门户
 
 >[!div class="step-by-step"]
-[«MIM 同步服务](install-mim-sync.md)
-[同步数据库»](install-mim-sync-ad-service.md)
+[« MIM 同步服务](install-mim-sync.md)
+[同步数据库 »](install-mim-sync-ad-service.md)
 
 > [!NOTE]
 > 本演练使用名为 Contoso 的公司中的示例名和值。 将其替换为你自己的。 例如：
@@ -35,7 +35,7 @@ ms.openlocfilehash: 438754773057043b8560562bab0ae260fb3a4bc2
 如果你在最后一步中没有设置 MIM 安装包，请先返回并安装 Microsoft Identity Manager 2016 组件，才继续操作。
 
 
-## 配置 MIM 服务和门户以便安装
+## <a name="configure-mim-service-and-portal-for-installation"></a>配置 MIM 服务和门户以便安装
 
 1. 从解压缩的“服务和门户”子文件夹运行“MIM 服务和门户安装程序”。
 
@@ -77,7 +77,7 @@ ms.openlocfilehash: 438754773057043b8560562bab0ae260fb3a4bc2
 
 16. 选中打开防火墙中的端口 5725 和 5726 的复选框，以及授予所有经过身份验证的用户访问 MIM 门户权限的复选框。
 
-## 配置 MIM 密码注册门户
+## <a name="configure-mim-password-registration-portal"></a>配置 MIM 密码注册门户
 
 1.  将 SSPR 注册的服务帐户名设为 *contoso\MIMSSPR*，并将其密码设为 *Pass@word1*。
 
@@ -89,7 +89,7 @@ ms.openlocfilehash: 438754773057043b8560562bab0ae260fb3a4bc2
 
 4. 在下一个 MIM 密码注册门户配置屏幕中，将 *http://CorpIDM.contoso.local* 指定为密码注册门户的 MIM 服务服务器地址。
 
-## 配置 FIM 密码重置门户
+## <a name="configure-mim-password-reset-portal"></a>配置 FIM 密码重置门户
 
 1.  将 SSPR 注册的服务帐户名设为 *Contoso\MIMSSPRService*，并将其密码设为 *Pass@word1*。
 
@@ -101,7 +101,7 @@ ms.openlocfilehash: 438754773057043b8560562bab0ae260fb3a4bc2
 
 4. 在下一个 MIM 密码注册门户配置屏幕中，将 *CorpIDname  http://CorpIDname.domain.local* 指定为密码重置门户的 MIM 服务服务器地址。
 
-## 安装 MIM 服务和门户
+## <a name="install-mim-service-and-portal"></a>安装 MIM 服务和门户
 
 所有预安装定义准备就绪后，单击“安装”以开始安装所选的“服务和门户”组件。
 
@@ -125,7 +125,7 @@ ms.openlocfilehash: 438754773057043b8560562bab0ae260fb3a4bc2
 
 4.  验证防火墙是否允许传入连接到 TCP 端口 5725 和 5726。
 
-    1.  通过“高级安全”启动“管理工具”»“Windows 防火墙” 。
+    1.  通过“高级安全”启动“管理工具” »“Windows 防火墙”。
 
     2.  单击“入站规则” 。
 
@@ -137,7 +137,7 @@ ms.openlocfilehash: 438754773057043b8560562bab0ae260fb3a4bc2
 
     4.  完成向导并关闭“Windows 防火墙”  应用程序。
 
-    5.  启动“控制面板”»“网络和 Internet”»”查看网络状态和任务”。
+    5.  在“控制面板”的“网络和 Internet”中启动“查看网络状态和任务”。
 
     6.  验证是否有活动的网络将 contoso.local 列为域网络。
 
@@ -147,11 +147,11 @@ ms.openlocfilehash: 438754773057043b8560562bab0ae260fb3a4bc2
 > 可选：此时，你可以安装 MIM 外接程序和扩展。
 
 >[!div class="step-by-step"]  
-[«MIM 同步服务](install-mim-sync.md)
-[同步数据库»](install-mim-sync-ad-service.md)
+[« MIM 同步服务](install-mim-sync.md)
+[同步数据库 »](install-mim-sync-ad-service.md)
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

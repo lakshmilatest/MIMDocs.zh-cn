@@ -1,25 +1,25 @@
 ---
-title: "PAM 环境概述 | Microsoft Identity Manager"
+title: "PAM 环境概述 | Microsoft Docs"
 description: "查找要成功部署 Privileged Access Management 所需的虚拟机数量和配置"
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 07/15/2016
 ms.topic: article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 479db14c-1bfb-4d7c-a344-cd718a01f328
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
-ms.openlocfilehash: 3057618c609ed251efe1f6cc6b2d3694ac61eafd
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: 750ba152813b4c03c913453c42e0e503e90b883b
 
 
 ---
 
-# 环境概述
+# <a name="environment-overview"></a>环境概述
 
 Privileged Access Management 与具有各自分开的驱动器的虚拟机 (VM) 协同工作，这些驱动器在共享网络上相互连接。 可以通过 Windows 8.1、Windows Server 2012 R2 或其他操作系统平台托管这些虚拟机。
 
@@ -34,6 +34,6 @@ Privileged Access Management 与具有各自分开的驱动器的虚拟机 (VM) 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

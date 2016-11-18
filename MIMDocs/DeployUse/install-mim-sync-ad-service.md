@@ -1,25 +1,25 @@
 ---
-title: "同步 AD 和 MIM 服务 | Microsoft Identity Manager"
+title: "同步 AD 和 MIM 服务 | Microsoft Docs"
 description: "使用管理代理和 MIM 同步服务来同步 Active Directory 和 MIM 数据库。"
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 07/21/2016
 ms.topic: get-started-article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 5e532b67-64a6-4af6-a806-980a6c11a82d
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
-ms.openlocfilehash: f17f256653936ffd06da9fae87dccfbf1c12a553
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: 59e050c8ccd811586e2da8476f842b853d37f2f1
 
 
 ---
 
-# 安装 MIM 2016：同步 Active Directory 和 MIM 服务
+# <a name="install-mim-2016-synchronize-active-directory-and-mim-service"></a>安装 MIM 2016：同步 Active Directory 和 MIM 服务
 
 >[!div class="step-by-step"]
 [« MIM 服务和门户](install-mim-service-portal.md)
@@ -32,7 +32,7 @@ ms.openlocfilehash: f17f256653936ffd06da9fae87dccfbf1c12a553
 
 默认情况下，MIM 同步服务 (Sync) 未配置任何连接器。  典型的第一步是通过 MIM 同步来使用现有的 Active Directory 帐户填充 MIM 服务数据库。 为此，你将使用 MIM 同步服务应用程序。
 
-## 创建 MIM 管理代理
+## <a name="create-the-mim-management-agent"></a>创建 MIM 管理代理
 MIM 管理代理 (MA) 是 MIM 同步到 MIM 服务的连接器。 若要创建此连接器，请使用“创建管理代理向导”。
 
 在配置 MIM 管理代理时，需要指定一个用户帐户。 本文档使用 **MIMMA** 作为此帐户的名称。
@@ -40,15 +40,15 @@ MIM 管理代理 (MA) 是 MIM 同步到 MIM 服务的连接器。 若要创建�
 > [!NOTE]
 > 用于 MIM 管理代理的帐户必须与 MIM 服务安装过程中指定的帐户相同。
 
-###创建 MIM MA
+###<a name="to-create-the-mim-ma"></a>创建 MIM MA
 
 1.  打开“同步服务管理器”。
 
-2.  若要打开“创建管理代理向导”，请单击“操作”菜单上的“创建”。
+2.  若要打开“创建管理代理”向导，请转到“管理操作”页面，然后在“操作”菜单上单击“创建”。
 
 3.  在“创建管理代理”页上，提供以下设置，然后单击“下一步”。
 
-    -   下列管理代理：MIM 服务管理代理
+    -   下列管理代理：FIM 服务管理代理
 
     -   名称：MIMMA
 
@@ -56,7 +56,7 @@ MIM 管理代理 (MA) 是 MIM 同步到 MIM 服务的连接器。 若要创建�
 
     -   服务器：localhost
 
-    -   数据库：MIMService
+    -   数据库：FIMService
 
     -   MIM 服务基址：http://localhost:5725
 
@@ -70,17 +70,17 @@ MIM 管理代理 (MA) 是 MIM 同步到 MIM 服务的连接器。 若要创建�
 
 5.  在“所选对象类型”页上，验证是否选择了下面列出的对象类型，然后单击“下一步”
 
-    -   ExpectedRuleEntry
-
     -   DetectedRuleEntry
 
-    -   SynchronizationRule
+    -   ExpectedRuleEntry
+
+    -   Group
 
     -   Person
 
-    -   组
+    -   SynchronizationRule
 
-6.  在“所选属性”页上，验证是否选择了所有列出的属性，然后单击“下一步”。
+6.  在“所选属性”页面上，勾选“全部显示”并验证是否选择了列出的所有属性，然后单击“下一步”。
 
 7.  在“配置连接器筛选”页上，单击“下一步”。
 
@@ -90,28 +90,18 @@ MIM 管理代理 (MA) 是 MIM 同步到 MIM 服务的连接器。 若要创建�
     - 单击**添加映射**，以打开“映射”对话框。
     - 在**Metaverse 对象类型**列表中，选择**person**。
     - 单击**确定**，以关闭“映射”对话框。
+    - 在“数据源对象类型”列表中选择“Group”。
+    - 单击**添加映射**，以打开“映射”对话框。
+    - 在“Metaverse 对象类型”列表中选择“group”。
+    - 单击**确定**，以关闭“映射”对话框。
 
-9.  在“配置属性流”页上，应用以下属性流映射，然后单击“下一步”
+9.  在“配置属性流”页面上，如下所示创建属性流映射，然后单击“下一步”
 
-    | **数据源属性** | **流方向** | **Metaverse 属性** |
-    |-|-|-|
-    | AccountName | 导出 | accountName |
-    | DisplayName | 导出 | displayName |
-    | Domain | 导出 | domain |
-    | EmployeeID | 导出 | employeeID |
-    | Employee类型 | 导出 | employee类型 |
-    | Email | 导出 | mail |
-    | 名字 | 导出 | firstName |
-    | 姓氏 | 导出 | lastName |
-    | ObjectSID | 导出 | objectSid |
-
-10.  选择“Person”作为数据源对象类型。
-
-    -   选择**Person**作为 Metaverse 对象类型。
+    -   选择“Person”作为数据源和 Metaverse 对象类型。
 
     -   选择**Direct**作为映射类型。
 
-    -   对于上表中的每一行，完成以下步骤：
+    -   对于下表中的每一行，完成这些步骤：
 
         -   选择为表中该行显示的**流方向**。
 
@@ -121,7 +111,19 @@ MIM 管理代理 (MA) 是 MIM 同步到 MIM 服务的连接器。 若要创建�
 
         -   若要应用数据流映射，请单击**新建**。
 
-    -   选择**Group**作为数据源类型和 metaverse 对象类型。
+    | **数据源属性** | **流方向** | **Metaverse 属性** |
+    |-|-|-|
+    | AccountName | 导出 | accountName |
+    | DisplayName | 导出 | displayName |
+    | Domain | 导出 | domain |
+    | Email | 导出 | mail |
+    | EmployeeID | 导出 | employeeID |
+    | Employee类型 | 导出 | employee类型 |
+    | 名字 | 导出 | firstName |
+    | 姓氏 | 导出 | lastName |
+    | ObjectSID | 导出 | objectSid |
+
+    -   选择“Group”作为数据源类型和 Metaverse 对象类型。
 
     -   选择**Direct**作为映射类型。
 
@@ -148,20 +150,19 @@ MIM 管理代理 (MA) 是 MIM 同步到 MIM 服务的连接器。 若要创建�
     | 类型 | 导出 | 类型 |
     | 成员shipAddWorkflow | 导出 | membershipAddWorkflow |
     | 成员shipLocked | 导出 | membershipLocked |
-    | DisplayName | 导入 | displayName |
-    | 作用域 | 导入 | scope |
-    | 类型 | 导入 | 类型 |
-    | 成员 | 导入 | 成员 |
     | AccountName | 导入 | accountName |
     | DisplayedOwner | 导入 | displayedOwner |
+    | DisplayName | 导入 | displayName |
     | MailNickName | 导入 | mailNickName |
+    | 成员 | 导入 | 成员 |
+    | 作用域 | 导入 | scope |
+    | 类型 | 导入 | 类型 |
 
+10.  在“取消配置设置”页上，单击“下一步”
 
-11.  在“取消配置设置”页上，单击“下一步”
+11.  若要创建管理代理，请单击“配置扩展”页上的“完成”。
 
-12.  若要创建管理代理，请单击“配置扩展”页上的“完成”。
-
-## 创建 AD 管理代理
+## <a name="create-the-ad-management-agent"></a>创建 AD 管理代理
 Active Directory 管理代理是 AD 域服务的连接器。 若要创建此连接器，请使用“创建管理代理向导”。
 
 1. 若要打开“创建管理代理向导”，请单击“操作”菜单上的“创建”。
@@ -194,20 +195,16 @@ Active Directory 管理代理是 AD 域服务的连接器。 若要创建此连�
 
     - 在“对象类型”列表中，选择“用户”和“组”。
 
-7. 在“选择属性”页上，提供以下设置，然后单击“下一步”：
-
-    - 选择“全部显示”。
-
-8. 在“属性列表”中，选择以下属性：
+7. 在“选择属性”页面上，勾选“全部显示”并选择以下属性，然后单击“下一步”：
 
     -   company
     -   displayName
     -   employeeID
-    -   employee类型
+    -   employeeType
     -   givenName
-    -   groupType
-    -   manager
+    -   group类型
     -   managedBy
+    -   manager
     -   成员
     -   objectSid
     -   sAMAccountName
@@ -216,22 +213,22 @@ Active Directory 管理代理是 AD 域服务的连接器。 若要创建此连�
     -   unicodePwd
     -   userAccountControl
 
-9. 在“配置连接器筛选”页上，单击“下一步”。
+8. 在“配置连接器筛选”页上，单击“下一步”。
 
-10. 在“配置联接和投影规则”页上，单击“下一步”。
+9. 在“配置联接和投影规则”页上，单击“下一步”。
 
-11. 在“配置属性流”页上，单击“下一步”。
+10. 在“配置属性流”页上，单击“下一步”。
 
-12. 在“取消配置设置” 页上，单击“下一步”。
+11. 在“取消配置设置” 页上，单击“下一步”。
 
-13. 在“配置扩展”页上，单击“完成”。
+12. 在“配置扩展”页上，单击“完成”。
 
 
-## 创建运行配置文件
+## <a name="create-run-profiles"></a>创建运行配置文件
 
 创建 ADMA 和 MIMMA 连接器的运行配置文件。
 
-### 创建 ADMA 连接器的运行配置文件
+### <a name="create-run-profiles-for-the-adma-connector"></a>创建 ADMA 连接器的运行配置文件
 
 下表展示需要创建的用于 ADMA 连接器的 5 个运行配置文件
 
@@ -263,7 +260,7 @@ Active Directory 管理代理是 AD 域服务的连接器。 若要创建此连�
 
 5. 若要关闭“配置运行配置文件”对话框，请单击“确定”。
 
-### 创建 MIMMA 连接器的运行配置文件
+### <a name="create-run-profiles-for-the-mimma-connector"></a>创建 MIMMA 连接器的运行配置文件
 
 下表显示与 MIMMA 连接器匹配的五个运行配置文件：
 
@@ -295,7 +292,7 @@ Active Directory 管理代理是 AD 域服务的连接器。 若要创建此连�
 
 5. 若要关闭“配置运行配置文件”对话框，请单击“确定”。
 
-## 配置 MIM 服务
+## <a name="configure-the-mim-service"></a>配置 MIM 服务
 
 使用 MIM 门户，你将为 MIM 服务创建 AD 用户入站同步规则。
 
@@ -322,7 +319,7 @@ Active Directory 管理代理是 AD 域服务的连接器。 若要创建此连�
 
     -   若要配置关系条件，从 MetaverseObject:person（属性）列表和ConnectedSystemObject:person（属性）列表中选择“ObjectSID”。
 
-    -   选择“在 MIM 中创建资源”。
+    -   选择“在 FIM 中创建资源”。
 
 7. 在“入站属性流”页上，提供以下信息，然后单击“下一步”：
 
@@ -349,10 +346,10 @@ Active Directory 管理代理是 AD 域服务的连接器。 若要创建此连�
 
 8. 在“摘要”选项卡上，单击“提交”。
 
-## 初始化测试环境
+## <a name="initialize-the-testing-environment"></a>初始化测试环境
 需要执行 4 个步骤，才可使用 AD 数据测试 MIM 配置：
 
-### 启用设置
+### <a name="enable-provisioning"></a>启用设置
 
 1. 打开“同步服务管理器”。
 
@@ -362,7 +359,7 @@ Active Directory 管理代理是 AD 域服务的连接器。 若要创建此连�
 
 4. 若要关闭“选项”对话框，请单击“确定”。
 
-### 初始化 MIMMA
+### <a name="initialize-the-mimma"></a>初始化 MIMMA
 
 在此连接器上运行完整同步周期。 完整周期包括以下运行配置文件：
 
@@ -387,13 +384,13 @@ Active Directory 管理代理是 AD 域服务的连接器。 若要创建此连�
 
     - 若要开始运行配置文件，请单击“确定”。
 
-#### 配置属性流优先顺序
+#### <a name="configure-attribute-flow-precedence"></a>配置属性流优先顺序
 
 在初始化 MIM 连接器期间，已对 metaverse 应用了配置的同步规则。
 
 调整由此连接器提供的属性的属性流优先顺序，以确保已在 AD 中的属性可以流入 metaverse 并且稍后还可以流入 MIM 服务数据库。
 
-### 初始化 ADMA
+### <a name="initialize-the-adma"></a>初始化 ADMA
 
 若要初始化 Active Directory 连接器，需要在该连接器上运行完全导入和完全同步。 完全导入会将现有对象从 AD 带入连接器空间。 完全同步将更新同步规则，以匹配这些 MIM 连接器。
 
@@ -411,7 +408,7 @@ Active Directory 管理代理是 AD 域服务的连接器。 若要创建此连�
 
     - 若要开始运行配置文件，请单击“确定”。
 
-### 填充 MIM 服务数据库
+### <a name="populate-the-mim-service-database"></a>填充 MIM 服务数据库
 
 若要使用对象填充 MIM 服务数据库，需要在 MIMMA 连接器上运行同步周期。 周期包括：
 
@@ -438,6 +435,6 @@ Active Directory 管理代理是 AD 域服务的连接器。 若要创建此连�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

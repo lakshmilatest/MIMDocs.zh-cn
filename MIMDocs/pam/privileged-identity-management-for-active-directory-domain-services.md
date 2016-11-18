@@ -1,12 +1,12 @@
 ---
-title: "什么是 ADDS 的 PAM？ | Microsoft Identity Manager"
+title: "什么是 ADDS 的 PAM？ |Microsoft Docs"
 description: "了解 Privileged Access Management，以及它如何帮助你管理和保护 Active Directory 环境。"
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
-ms.date: 07/27/2016
+ms.date: 10/25/2016
 ms.topic: article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: cf3796f7-bc68-4cf7-b887-c5b14e855297
@@ -15,12 +15,12 @@ ms.suite: ems
 experimental: true
 experiment_id: kgremban_images
 translationtype: Human Translation
-ms.sourcegitcommit: e695dd47e4bd31c4004c7d0d9ec76498d52fb56a
-ms.openlocfilehash: b46c2b50873023d504fb7b440a1d4e40e8fa3ac7
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: 4b3779f33a8bbd2ad62c88343ef3611b17fc81a2
 
 ---
 
-# Active Directory 域服务的 Privileged Access Management
+# <a name="privileged-access-management-for-active-directory-domain-services"></a>Active Directory 域服务的 Privileged Access Management
 Privileged Access Management (PAM) 是一种解决方案，可帮助组织限制现有 Active Directory 环境内的特权访问权限。
 
 Privileged Access Management 完成了两个目标：
@@ -31,14 +31,14 @@ Privileged Access Management 完成了两个目标：
 > [!NOTE]
 > PAM 是采用 Microsoft Identity Manager (MIM) 实现的 [Privileged Identity Management](https://azure.microsoft.com/documentation/articles/active-directory-privileged-identity-management-configure/) (PIM) 实例。
 
-## PAM 可帮助解决哪些问题？
+## <a name="what-problems-does-pam-help-solve"></a>PAM 可帮助解决哪些问题？
 企业现在关心的一个实际问题有关 Active Directory 环境内的资源访问问题。 特别麻烦的问题是有关漏洞、未经授权的特权提升和其他类型的未经授权的访问的消息（包括哈希传递、票证传递、鱼叉式网络钓鱼和 Kerberos 泄露）。
 
 现在，攻击者可以非常轻松地获取域管理员帐户凭据，但用户却很难在发生这些攻击后立即发现。 PAM 的目标是在提高你对环境的控制和感知的同时，减少恶意用户获得访问权的机会。
 
 PAM 使攻击者更难入侵网络和获取特权帐户访问。 PAM 添加了对特权组的保护，以便控制对一系列加入域的计算机和这些计算机上的应用程序的访问权限。 它还添加了监视能力更强、可见性更高且更精细的控制，以便组织可以看到谁是其特权管理员以及他们正在执行的操作。 PAM 可使组织更深入地了解如何在该环境中使用管理帐户。
 
-## 如何安装 PAM？
+## <a name="how-is-pam-set-up"></a>如何安装 PAM？
 PAM 基于实时管理准则构建，该管理与[充分管理 (JEA)](http://channel9.msdn.com/Events/TechEd/NorthAmerica/2014/DCIM-B362) 相关。 JEA 是一个 Windows PowerShell 工具包，可定义一组用于执行特权活动的命令，以及一个管理员在其中获取运行这些命令授权的终结点。 在 JEA 中，管理员决定具有特定特权的用户可以执行特定任务。 每当符合条件的用户需要执行该任务时，启用他们相应的权限。 权限在指定时间段后过期，以防恶意用户盗用访问权限。
 
 PAM 安装和操作具有四个步骤。
@@ -53,7 +53,7 @@ PAM 安装和操作具有四个步骤。
 
 4.  **监视**：PAM 将添加特权访问请求的审核、警报和报告。 你可以查看特权访问的历史记录，并查看执行了某个活动的人员。 你可以决定该活动是否有效并轻松标识未经授权的活动，例如尝试将用户直接添加到原始林中的某个特权组。 无论是在标识恶意软件，还是在跟踪“内部”攻击者方面，此步骤都非常重要。
 
-## PAM 的工作原理是怎样的？
+## <a name="how-does-pam-work"></a>PAM 的工作原理是怎样的？
 PAM 基于 AD DS 中的新功能（特别是域帐户身份验证和授权）和 Microsoft Identity Manager 中的新功能。 PAM 将特权帐户从现有 Active Directory 环境中分隔出来。 当需要使用特权帐户时，需要先请求并随后批准该帐户。 批准后，将通过新堡垒林（而不是用户或应用程序的当前林）中的外主体组向该特权帐户提供相关权限。 使用堡垒林可使组织获得更大的控制权，例如用户何时可成为特权组成员以及用户需要进行身份验证的方式。
 
 还可以在高可用性配置中部署此解决方案的 Active Directory、MIM 服务和其他部分。
@@ -76,13 +76,15 @@ PAM 具有以下优势：
 
 -   **可自定义的工作流**：基于请求用户或已请求角色的参数，可以针对不同方案配置 MIM 工作流，并且可以使用多个工作流。
 
-## 用户如何请求特权访问？
+## <a name="how-do-users-request-privileged-access"></a>用户如何请求特权访问？
 用户可通过多种方式提交请求，包括：  
 - MIM 服务 Web 服务 API  
 - REST 终结点  
 - Windows PowerShell (`New-PAMRequest`)
 
-## 提供了哪些工作流和监视选项？
+获取有关 [Privileged Access Management cmdlet](https://technet.microsoft.com/library/mt604080.aspx) 的详细信息。
+
+## <a name="what-workflows-and-monitoring-options-are-available"></a>提供了哪些工作流和监视选项？
 例如，假设在安装 PIM 之前，用户已是管理组的某个成员。 作为 PIM 安装的一部分，将从管理组中删除该用户，并且将在 MIM 中创建策略。 该策略指明如果该用户请求管理权限并且通过 MFA 进行身份验证，将批准该请求，并且用户的单独帐户将添加到堡垒林中的特权组。
 
 假定该请求获得批准，操作工作流将直接与堡垒林 Active Directory 通信，以将用户放入某个组中。 例如，当 Jen 请求管理 HR 数据库时，Jen 的管理帐户将在几秒内添加到堡垒林中的特权组。 此组中她的管理帐户成员身份将在时间限制后过期。 在 Windows Server Technical Preview 中，该成员身份在 Active Directory 中与时间限制相关联；在 Windows Server 2012 R2 中，该时间限制在堡垒林中由 MIM 强制执行。
@@ -96,6 +98,6 @@ PAM 具有以下优势：
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 
