@@ -3,23 +3,23 @@ title: "使用脚本配置 PAM"
 description: "准备 CORP 域，其具有将由 Privileged Identity Manager 使用脚本进行管理的现有标识或新标识"
 keywords: 
 author: barclayn
+ms.author: barclayn
 manager: MBaldwin
-ms.date: 09/26/2016
+ms.date: 10/04/2016
 ms.topic: article
-ms.prod: microsoft-identity-manager
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 96c734ade75f5c206858387cf45106761bc0a881
-ms.openlocfilehash: a1e4e5561bf8d38c56c3d27249d94f4bf7103b8c
+ms.sourcegitcommit: 365989693f844f117f76ee2b69db85df82f06f35
+ms.openlocfilehash: 3aca2fb513280f118e760bdbc2ba471151c41b17
 
 
 ---
 
-# 使用脚本配置 PAM
+# <a name="configure-pam-using-scripts"></a>使用脚本配置 PAM
 
 如果你选择在单独的服务器上安装 SQL 和 SharePoint，必须使用以下说明进行配置。 如果 SQL、SharePoint 和 PAM 组件安装在同一台计算机上，必须在此计算机上运行以下步骤。
 
@@ -39,11 +39,11 @@ ms.openlocfilehash: a1e4e5561bf8d38c56c3d27249d94f4bf7103b8c
 5. 将同一 PAMDeploymentConfig.xml 复制到所有计算机、CORPDC、PRIVDC、PAM 服务器、SQL Server 和 SharePoint 服务器上的 %SYSTEMDRIVE%\PAM 文件夹。
 
 
-## 部署工作表
+## <a name="deployment-worksheet"></a>部署工作表
 
 在继续操作之前，请更新 PAMDeploymentConfig.xml 并将更新的副本放置到所有计算机上。
 
-### Setup
+### <a name="setup"></a>Setup
 
 |机   | 运行人员   |命令   |
 |---|---|---|
@@ -55,7 +55,7 @@ ms.openlocfilehash: a1e4e5561bf8d38c56c3d27249d94f4bf7103b8c
 | PAMServer  | 本地管理员（加入域后的 MIM 管理员）  | .\PAMDeployment.ps1 菜单选项 5（MIM PAM 安装程序）   |
 |  PAMServer |MIMAdmin   | .\PAMDeployment.ps1 选择菜单选项 6（ PAM 信任安装程序）.\PAMDeployment.ps1 选择菜单选项 6（PAM 信任安装程序） |
 
-### 验证
+### <a name="validation"></a>验证
 
 |  机 | 运行人员   | 命令   |
 |---|---|---|
@@ -66,7 +66,11 @@ ms.openlocfilehash: a1e4e5561bf8d38c56c3d27249d94f4bf7103b8c
 |  CORPClient | <PRIV>\PRIV.pamRequestor 用户，如果是 PRIVOnly：<CORP>\pamrequestor   | Import-module .\PAMValidation.psm1；Test-PAMValidationScenarioNoApprovalRequest  |
 
 
+>[!div class="step-by-step"]
+[开始 »](sp1-step1-configuring-priv-domain.md)
 
-<!--HONumber=Sep16_HO4-->
+
+
+<!--HONumber=Nov16_HO2-->
 
 

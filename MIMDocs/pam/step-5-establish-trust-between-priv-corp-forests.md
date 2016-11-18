@@ -1,25 +1,25 @@
 ---
-title: "部署 PAM 步骤 5 – 林链接 | Microsoft Identity Manager"
+title: "部署 PAM 步骤 5 – 林链接 | Microsoft Docs"
 description: "建立 PRIV 和 CORP 林之间的信任关系，以便 PRIV 中的特权用户仍然可以访问 CORP 中的资源。"
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 07/15/2016
 ms.topic: article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: eef248c4-b3b6-4b28-9dd0-ae2f0b552425
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
-ms.openlocfilehash: 3a7039f5d7c950cd0d4c8ab713a7beacc5c45526
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: 16208efe08c5a2c0f63ee121c64c45cad5a73909
 
 
 ---
 
-# 步骤 5 - 在 PRIV 和 CORP 林之间建立信任关系
+# <a name="step-5-establish-trust-between-priv-and-corp-forests"></a>步骤 5 - 在 PRIV 和 CORP 林之间建立信任关系
 
 >[!div class="step-by-step"]
 [« 步骤 4](step-4-install-mim-components-on-pam-server.md)
@@ -28,7 +28,7 @@ ms.openlocfilehash: 3a7039f5d7c950cd0d4c8ab713a7beacc5c45526
 
 对于每个 CORP 域（如 contoso.local），都需要在 PRIV 和 CONTOSO 域控制器之间建立信任关系。 以便 PRIV 域中的用户能够访问 CORP 域中的资源。
 
-## 将每个域控制器连接到其对应项
+## <a name="connect-each-domain-controller-to-its-counterpart"></a>将每个域控制器连接到其对应项
 
 建立信任关系前，根据其他域控制器/DNS 服务器的 IP 地址，每个域控制器必须为其对应项的 DNS 名称解析进行配置。
 
@@ -46,7 +46,7 @@ ms.openlocfilehash: 3a7039f5d7c950cd0d4c8ab713a7beacc5c45526
 
     ![私钥的文件结构 - 屏幕截图](./media/PAM_GS_DNS_Manager.png)
 
-## 在 PAMSRV 中建立信任关系
+## <a name="establish-trust-on-pamsrv"></a>在 PAMSRV 中建立信任关系
 
 在 PAMSRV 中，与每个域（如 CORPDC）建立单向信任关系，以使 CORP 域控制器信任 PRIV 林。
 
@@ -68,7 +68,7 @@ ms.openlocfilehash: 3a7039f5d7c950cd0d4c8ab713a7beacc5c45526
     New-PAMDomainConfiguration -SourceDomain "contoso" -Credentials $ca
     ```
 
-## 授予林对 Active Directory 的读取访问权限
+## <a name="give-forests-read-access-to-active-directory"></a>授予林对 Active Directory 的读取访问权限
 
 对于现有的每个林，启用 PRIV 管理员和监视服务对 AD 的读取访问权限。
 
@@ -91,7 +91,7 @@ ms.openlocfilehash: 3a7039f5d7c950cd0d4c8ab713a7beacc5c45526
 
     输出还应指示“没有为此信任关系启用 SID 筛选功能”。 有关详细信息，请参阅 [Disable SID filter quarantining](http://technet.microsoft.com/library/cc772816.aspx)（禁用 SID 筛选隔离功能）。
 
-## 启动监控和组件服务
+## <a name="start-the-monitoring-and-component-services"></a>启动监控和组件服务
 
 1.  以 PRIV 域管理员 (PRIV\Administrator) 身份登录 PAMSRV。
 
@@ -112,6 +112,6 @@ ms.openlocfilehash: 3a7039f5d7c950cd0d4c8ab713a7beacc5c45526
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

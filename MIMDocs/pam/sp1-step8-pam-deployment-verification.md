@@ -3,28 +3,33 @@ title: "步骤 8 PAM 部署验证"
 description: "准备 CORP 域，其具有将由 Privileged Identity Manager 使用脚本进行管理的现有标识或新标识"
 keywords: 
 author: barclayn
+ms.author: barclayn
 manager: MBaldwin
-ms.date: 09/27/2016
+ms.date: 10/25/2016
 ms.topic: article
-ms.prod: microsoft-identity-manager
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 689c2ef0e4e4a681a398ba7e94fb3def525937ea
-ms.openlocfilehash: 743ba586374ccc04e9ddafff759a00574e13f6ac
+ms.sourcegitcommit: 365989693f844f117f76ee2b69db85df82f06f35
+ms.openlocfilehash: 7709b4df5bb196aba6abf056830bc73e024174ef
 
 
 ---
 
-# 步骤 8 PAM 部署验证
+# <a name="step-8-pam-deployment-verification"></a>步骤 8 PAM 部署验证
+
+>[!div class="step-by-step"]
+[« 步骤 7](sp1-step7-setup-sidhistory-sidfiltering.md)
+[附录 »](sp1-pam-deployment-addendum.md)
 
 部署包附带可执行 PAM 方案的验证脚本，以验证 PAM 部署是否按预期运行。
 若要使用部署验证，请修改名为 <PamValidation/> 的PAMDeploymentConfig.xml 部分。
 
->[!Note] 验证要求客户端计算机加入到 CORP 域，并安装 PAM 客户端组件。 有关如何安装客户端的脚本，请参阅附录。
+>[!NOTE]
+>验证要求客户端计算机加入到 CORP 域，并安装 PAM 客户端组件。 有关如何安装客户端的脚本，请参阅附录。
 
 必须在 PAMDeploymentConfig.xml <PAMValidationClient/> 标记中更新客户端计算机的名称，<PAMValidation/> 节点中的其余数据只有在与现有用户/组冲突的情况下才需要编辑，因为此验证将尝试创建用户和组。
 使用以下步骤来执行验证：
@@ -72,8 +77,12 @@ ms.openlocfilehash: 743ba586374ccc04e9ddafff759a00574e13f6ac
   初始情况下，用户不具备资源访问权限。 用户实时添加到角色后，将授予用户访问权限。 请求持续时间到期后，用户将无权再次访问。
   对于请求到期时间，该脚本使用默认值（11 分钟）。
 
+>[!div class="step-by-step"]
+[« 步骤 7](sp1-step7-setup-sidhistory-sidfiltering.md)
+[附录 »](sp1-pam-deployment-addendum.md)
 
 
-<!--HONumber=Sep16_HO4-->
+
+<!--HONumber=Nov16_HO2-->
 
 

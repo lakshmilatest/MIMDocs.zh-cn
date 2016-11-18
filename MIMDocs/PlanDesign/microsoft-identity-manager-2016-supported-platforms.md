@@ -1,25 +1,25 @@
 ---
-title: "支持的软件平台 | Microsoft Identity Manager"
+title: "支持的软件平台 | Microsoft Docs"
 description: "查找与各 MIM 2016 组件兼容的产品和版本"
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 09/29/2016
 ms.topic: article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 4978f60d-044d-4e84-8d93-65801fce1144
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 69e2c327cf897dea450c43618a9b4ce3ab555cc0
-ms.openlocfilehash: 522e9321d7709a7967cfea3eb1cea809dfe8202e
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: 55b7dc3c76c5e95153b5839ce1eb6bf4a7997889
 
 
 ---
 
-# MIM 2016 支持的平台
+# <a name="supported-platforms-for-mim-2016"></a>MIM 2016 支持的平台
 
 下表介绍了 Microsoft Identity Manager 2016 每个组件支持的平台和版本。 标有 * 的版本仅在 MIM 2016 Service Pack 1 中受支持。
 
@@ -41,7 +41,7 @@ ms.openlocfilehash: 522e9321d7709a7967cfea3eb1cea809dfe8202e
 || | MIM 服务数据库 | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2<br/>SQL Server 2014 SP1 <br/> SQL Server 2016 * |
 || | SharePoint | SharePoint Foundation 2010<br/>SharePoint Foundation 2013 SP1 <br/> SharePoint 2016 * |
 || | 适用于 MIM 服务审批和组管理电子邮件的邮件服务器（可选） | Exchange Server 2007 SP3（已安装 Exchange 管理控制台）<br/>Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1 <br/> Exchange Server 2016 * <br/> Exchange Online * |
-|| | 浏览器 | 所有主要浏览器 |
+|| | 浏览器 | 所有主流浏览器 |
 | **MIM 服务报告** | Windows Server | Windows Server 2012 <br/> Windows Server 2016 * |
 || | 数据仓库 | System Center 2012 Service Manager SP1 |
 || | 数据仓库数据库 | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2 |
@@ -62,6 +62,6 @@ ms.openlocfilehash: 522e9321d7709a7967cfea3eb1cea809dfe8202e
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

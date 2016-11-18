@@ -1,29 +1,29 @@
 ---
-title: "安装 MIM 同步服务 | Microsoft Identity Manager"
+title: "安装 MIM 同步服务 | Microsoft Docs"
 description: "通过安装和配置同步服务立刻开始使用 MIM 2016 组件。"
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 08/11/2016
 ms.topic: get-started-article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 2585e9c5-ce34-46c7-bdcf-8c08773901dc
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 739797502e09c2b92e35767e2c943308cd1de5c9
-ms.openlocfilehash: ba399da1431ea1d2d1633d0469e054ffd89f1d34
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: dc1f7ff40ed5f657c24e7293ff76241c3a7082f1
 
 
 ---
 
-# 安装 MIM 2016：MIM 同步服务
+# <a name="install-mim-2016-mim-synchronization-service"></a>安装 MIM 2016：MIM 同步服务
 
 >[!div class="step-by-step"]
-[«Exchange Server](prepare-server-exchange.md)
-[MIM 服务和门户»](install-mim-service-portal.md)
+[« Exchange Server](prepare-server-exchange.md)
+[MIM 服务和门户 »](install-mim-service-portal.md)
 
 > [!NOTE]
 > 本演练使用名为 Contoso 的公司中的示例名和值。 将其替换为你自己的。 例如：
@@ -37,7 +37,7 @@ ms.openlocfilehash: ba399da1431ea1d2d1633d0469e054ffd89f1d34
 
 2. 解压缩 MIM 安装包或装载 MIM 映像 DVD。
 
-## 安装 MIM 2016 同步服务
+## <a name="install-mim-2016-synchronization-service"></a>安装 MIM 2016 同步服务
 
 1. 在已解压缩的 MIM 安装文件夹中，导航到“同步服务”  文件夹。
 
@@ -65,7 +65,7 @@ ms.openlocfilehash: ba399da1431ea1d2d1633d0469e054ffd89f1d34
 
     1.  服务帐户： *MIMSync*
 
-    2.  密码： *Pass@word1*
+    2.  密码：*Pass@word1*
 
     3.  服务帐户域或本地计算机名称： *contoso*
 
@@ -102,11 +102,11 @@ ms.openlocfilehash: ba399da1431ea1d2d1633d0469e054ffd89f1d34
     5. 你需要注销，然后登录，才能使组成员身份更改生效。 单击“是”以注销。
 
 >[!div class="step-by-step"]  
-[«Exchange Server](prepare-server-exchange.md)
-[MIM 服务和门户»](install-mim-service-portal.md)
+[« Exchange Server](prepare-server-exchange.md)
+[MIM 服务和门户 »](install-mim-service-portal.md)
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

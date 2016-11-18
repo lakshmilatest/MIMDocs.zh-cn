@@ -1,12 +1,12 @@
 ---
-title: "部署 PAM 步骤 4 – 安装 MIM | Microsoft Identity Manager"
+title: "部署 PAM 步骤 4 – 安装 MIM | Microsoft Docs"
 description: "在 Privileged Access Management 服务器和工作站上安装和配置 MIM 服务和门户。"
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 07/15/2016
 ms.topic: article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: ef605496-7ed7-40f4-9475-5e4db4857b4f
@@ -14,13 +14,13 @@ ROBOTS: noindex,nofollow
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
-ms.openlocfilehash: 92939d32da25896d07bec61e4633f58230a78181
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: 5b9653cb8de9e9fc788685ba027f84a795467cf6
 
 
 ---
 
-# 步骤 4 - 在 PAM 服务器和工作站上安装 MIM 组件
+# <a name="step-4-install-mim-components-on-pam-server-and-workstation"></a>步骤 4 - 在 PAM 服务器和工作站上安装 MIM 组件
 
 >[!div class="step-by-step"]
 [« 步骤 3](step-3-prepare-pam-server.md)
@@ -34,7 +34,7 @@ ms.openlocfilehash: 92939d32da25896d07bec61e4633f58230a78181
 
 如果已下载了 MIM，请将 MIM 安装存档解压缩到新的文件夹。
 
-##  运行服务和门户安装程序。  
+##  <a name="run-the-service-and-portal-install-program"></a>运行服务和门户安装程序。  
 
 按照安装程序的说明操作并完成安装。
 
@@ -53,7 +53,7 @@ ms.openlocfilehash: 92939d32da25896d07bec61e4633f58230a78181
 
 5.  设置以下帐户凭据：
     - 服务帐户名称：*MIMService*  
-    - 服务帐户密码：*Pass@word1*（或者是在步骤 2 中创建的密码）  
+    - 服务帐户密码：*Pass@word1*（或者步骤 2 中创建的密码）  
     - 服务帐户域：*PRIV*  
     - 服务电子邮件帐户：*MIMService@priv.contoso.local*  
 
@@ -73,7 +73,7 @@ ms.openlocfilehash: 92939d32da25896d07bec61e4633f58230a78181
 
 12. 将 MIM PAM REST API 帐户配置为使用和 SharePoint 一样的帐户（因为 MIM 门户也位于该服务器上）：
     - 应用程序池帐户名：SharePoint  
-    - 应用程序池帐户密码：Pass@word1（或者是在步骤 2 中创建的密码）  
+    - 应用程序池帐户密码：*Pass@word1*（或者步骤 2 中创建的密码）  
     - 应用程序池帐户域：PRIV  
 
     ![应用程序池帐户凭据 - 屏幕截图](./media/PAM_GS_Configure_Component_Service.png)
@@ -82,14 +82,14 @@ ms.openlocfilehash: 92939d32da25896d07bec61e4633f58230a78181
 
 13. 配置 MIM PAM 组件服务：
     - 服务帐户名称：MIMComponent
-    - 服务帐户密码：*Pass@word1*（或者是在步骤 2 中创建的密码）  
+    - 服务帐户密码：*Pass@word1*（或者步骤 2 中创建的密码）  
     - 服务帐户域：*PRIV*
 
   ![PAM 组件服务帐户凭据 - 屏幕截图](./media/PAM_GS_Configure_MIM_PAM_component_service.png)
 
 14. 配置 PAM 监视服务：
     - 服务帐户名称：MIMMonitor  
-    - 服务帐户密码：*Pass@word1*（或者是在步骤 2 中创建的密码）  
+    - 服务帐户密码：*Pass@word1*（或者步骤 2 中创建的密码）  
     - 服务帐户域：*PRIV*  
 
   ![PAM 监视服务帐户凭据 - 屏幕截图](./media/PAM_GS_Configur_PAM_Monitoring_service.png)
@@ -98,7 +98,7 @@ ms.openlocfilehash: 92939d32da25896d07bec61e4633f58230a78181
 
 安装完成后，将重新启动服务器，再验证 MIM 门户是否处于活动状态，并使用户能够查看其在 MIM 中的对象资源。
 
-## 设置 MIM 门户管理策略规则
+## <a name="set-up-mim-portal-management-policy-rules"></a>设置 MIM 门户管理策略规则
 
 1. 重启 PAMSRV 后，以 PRIV\Administrator 身份登录。
 
@@ -114,7 +114,7 @@ ms.openlocfilehash: 92939d32da25896d07bec61e4633f58230a78181
 
 7. 选择此管理策略规则，取消选中“策略已禁用”，单击“确定”，然后单击“提交”。
 
-## 确认防火墙连接
+## <a name="verify-the-firewall-connections"></a>确认防火墙连接
 
 防火墙应允许到 TCP 端口 5725、5726、8086 和 8090 的传入连接。
 
@@ -131,7 +131,7 @@ ms.openlocfilehash: 92939d32da25896d07bec61e4633f58230a78181
 8.  验证是否有活动网络（作为 priv.contoso.local 列出）和域网络。  
 9. 关闭“控制面板” 。
 
-## 设置示例 Web 应用程序
+## <a name="set-up-the-sample-web-application"></a>设置示例 Web 应用程序
 
 在本节中你将为 MIM PAM REST API 安装和配置示例 Web 应用程序。
 
@@ -167,7 +167,7 @@ ms.openlocfilehash: 92939d32da25896d07bec61e4633f58230a78181
 
 7.  （可选）验证用户是否可以对 REST API 进行身份验证。 在 PAMSRV 上，以管理员身份打开 Web 浏览器。  导航至网站 URL http://pamsrv.priv.contoso.local:8086/api/pamresources/pamroles/ 进行身份验证（如需要），并确保将进行下载。
 
-## 安装 MIM PAM 请求程序 cmdlet
+## <a name="install-the-mim-pam-requestor-cmdlets"></a>安装 MIM PAM 请求程序 cmdlet
 
 在步骤 1 中配置的工作站上安装 MIM PAM 请求程序 cmdlet。
 
@@ -193,6 +193,6 @@ ms.openlocfilehash: 92939d32da25896d07bec61e4633f58230a78181
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

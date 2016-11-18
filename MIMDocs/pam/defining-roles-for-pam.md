@@ -1,25 +1,25 @@
 ---
-title: "定义 PAM 的特权角色 | Microsoft Identity Manager"
+title: "为 PAM 定义特权角色 | Microsoft Docs"
 description: "决定哪些特权角色应该进行管理，并为每个角色定义管理策略。"
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 07/15/2016
 ms.topic: article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 1a368e8e-68e1-4f40-a279-916e605581bc
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
-ms.openlocfilehash: 442b596107d9ade0ca466500440a32b2dd26fa14
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: ae582e6aff2449aeee8b68ebe90b22b18e5a67d2
 
 
 ---
 
-# 为 Privileged Access Management 定义角色
+# <a name="define-roles-for-privileged-access-management"></a>为 Privileged Access Management 定义角色
 
 使用 Privileged Access Management，可以将用户分配到特权角色，以便根据需要激活这些角色以进行即时访问。 这些角色是在堡垒环境中手动定义和建立的。 本文将指导你完成确定哪些角色要通过 PAM 进行管理的过程，以及介绍如何使用适当的权限和限制定义这些角色。
 
@@ -33,7 +33,7 @@ ms.openlocfilehash: 442b596107d9ade0ca466500440a32b2dd26fa14
 
 - 管理 Active Directory 中保存的数据（例如，创建用户和组）所需的权限
 
-## 确定角色
+## <a name="identify-roles"></a>确定角色
 
 首先确定你要使用 PAM 管理的所有角色。 在电子表格中，每个潜在的角色将具有自己的行。
 
@@ -57,7 +57,7 @@ ms.openlocfilehash: 442b596107d9ade0ca466500440a32b2dd26fa14
 
 - 是否可以将管理与审核分离，以便处于管理角色的用户无法清除其操作的审核记录？
 
-## 建立角色管理要求
+## <a name="establish-role-governance-requirements"></a>建立角色管理要求
 
 在确定候选角色后，开始填写电子表格。 针对与组织相关的要求创建列。 要考虑的一些要求包括：
 
@@ -79,7 +79,7 @@ ms.openlocfilehash: 442b596107d9ade0ca466500440a32b2dd26fa14
 
 - 哪些应用程序权限（参见下面的 AD 的示例列表）与此角色相关联？
 
-## 选择访问方法
+## <a name="select-an-access-method"></a>选择访问方法
 
 如果不同用户群具有截然不同的访问管理要求，则一个特权访问管理系统中可能存在多个角色，但分配了相同的权限。 例如，对于全职员工与来自其他组织的外包 IT 员工，组织可以对他们应用不同的策略。
 
@@ -95,7 +95,7 @@ ms.openlocfilehash: 442b596107d9ade0ca466500440a32b2dd26fa14
 
 对于担心凭据可能遭到盗窃或滥用的组织，[《Using Azure MFA for activation》](use-azure-mfa-for-activation.md)（使用 Azure MFA 进行激活）指南提供了有关如何将 MIM 配置为在进行角色激活时需要额外带外检查的说明。
 
-## 委派 Active Directory 权限
+## <a name="delegate-active-directory-permissions"></a>委派 Active Directory 权限
 
 创建新域时，Windows Server 将自动创建默认组，例如“域管理员”。 这些组可以简化入门过程，并可能适合较小的组织。 但是，对于大型组织，或是那些需要更多地隔离管理权限的组织，需要清空如“域管理员”这样的组，并将它们替换为提供细化权限的组。
 
@@ -106,11 +106,11 @@ ms.openlocfilehash: 442b596107d9ade0ca466500440a32b2dd26fa14
 
 在不使用默认组（如“域管理员”）的情况下，组织可以创建仅提供必要权限的新安全组，并使用 MIM 来动态提供具有这些组成员身份的管理员帐户。
 
-### 服务管理权限
+### <a name="service-management-permissions"></a>服务管理权限
 
 下表提供了与用于管理 AD 的所含角色相关的权限示例。
 
-| Role | 说明 |
+| Role | 描述 |
 | ---- | ---- |
 | 域/DC 维护 | “域\管理员”组的成员身份支持对域控制器操作系统进行故障排除和更改、将新的域控制器提升到林和 AD 角色委派中的现有域。
 |管理虚拟 DC | 使用虚拟化管理软件管理域控制器 (DC) 虚拟机 (VM)。 可以通过完全控制管理工具中所有虚拟机或使用基于角色的访问控制 (RBAC) 功能授予此特权。 |
@@ -122,11 +122,11 @@ ms.openlocfilehash: 442b596107d9ade0ca466500440a32b2dd26fa14
 | 管理区域 | 在 Active Directory 中创建、删除和修改 DNS 区域和对象 |
 | 修改第 0 层 OU | 在 Active Directory 中修改第 0 层 OU 和包含的对象。 |
 
-### 数据管理权限
+### <a name="data-management-permissions"></a>数据管理权限
 
 下表提供了一些权限示例，这些权限与用于管理或使用 AD 中保存数据的所含角色相关。
 
-| Role | 说明 |
+| 角色 | 说明 |
 | ---- | ---- |
 | 修改第 1 层管理员 OU                 | 在 Active Directory 中修改包含第 1 层管理员对象的 OU |
 | 修改第 2 层管理员 OU                 | 在 Active Directory 中修改包含第 2 层管理员对象的 OU |
@@ -138,13 +138,13 @@ ms.openlocfilehash: 442b596107d9ade0ca466500440a32b2dd26fa14
 | 加入电脑/本地管理员                    | 所有工作站的本地管理权限                               |
 | 加入 Srv/本地管理员                   | 所有服务器的本地管理权限                                    |
 
-## 角色定义示例
+## <a name="example-role-definitions"></a>角色定义示例
 
 角色定义的选择取决于由特权帐户托管的服务器层。 它还取决于对托管应用程序的选择，因为应用程序（如 Exchange）或第三方企业产品（如 SAP）通常以自己的方式对委派管理进行其他角色定义。
 
 以下部分提供了典型企业方案的示例。
 
-### 第 0 层 - 管理林
+### <a name="tier-0-administrative-forest"></a>第 0 层 - 管理林
 
 适用于堡垒环境中帐户的角色可能包括：
 
@@ -153,7 +153,7 @@ ms.openlocfilehash: 442b596107d9ade0ca466500440a32b2dd26fa14
 - 生产林的管理员用户
 - 生产林中得到应用程序有限管理权限委派的用户
 
-### 第 0 层 - 企业生产林
+### <a name="tier-0-enterprise-production-forest"></a>第 0 层 - 企业生产林
 
 适用于管理第 0 层生产林帐户和资源的角色可能包括：
 
@@ -170,7 +170,7 @@ ms.openlocfilehash: 442b596107d9ade0ca466500440a32b2dd26fa14
 - 第 0 层的备份管理员
 - 连接到第 0 层主机的带外和基板管理控制器（用于 KVM 或无人值守管理）的用户
 
-### 第 1 层
+### <a name="tier-1"></a>第 1 层
 
 适用于管理和备份第 1 层中服务器的角色可能包括：
 
@@ -192,7 +192,7 @@ ms.openlocfilehash: 442b596107d9ade0ca466500440a32b2dd26fa14
 - 云服务管理员，例如公司网站或公共 DNS 的管理员
 - HCM、财务或法律系统的管理员
 
-### 第 2 层
+### <a name="tier-2"></a>第 2 层
 
 适用于非管理员用户和计算机管理的角色可能包括：
 
@@ -203,6 +203,6 @@ ms.openlocfilehash: 442b596107d9ade0ca466500440a32b2dd26fa14
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 
