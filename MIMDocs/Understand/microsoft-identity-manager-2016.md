@@ -1,11 +1,11 @@
 ---
 title: Microsoft Identity Manager 2016 | Microsoft Docs
-description: "了解 MIM 2016 如何在云中和本地创建更安全、更方便的标识管理体验。"
+description: "MIM 包括 FIM 2010 的访问权限管理功能，有助于管理用户、凭据、策略及组织中的访问权限。"
 keywords: 
 author: kgremban
 ms.author: kgremban
 manager: femila
-ms.date: 08/11/2016
+ms.date: 01/18/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -13,8 +13,8 @@ ms.assetid: ccdd8a9f-02da-440a-81a8-354800dcd2a8
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: 74d93047ad30d81546940fc4ece3d892fe6df2f8
+ms.sourcegitcommit: 4f7af7cfc258f95bf1fff77e732e5cf11d0ae239
+ms.openlocfilehash: 9db813d870de433757ff3dac69c82771bb7fbd7b
 
 
 ---
@@ -30,13 +30,13 @@ Microsoft Identity Manager 2016 与 Azure 协同工作，让你能够控制整�
 ## <a name="privileged-identity-management"></a>特权标识管理
 借助 Privileged Identity Management，可基于任务暂时性地访问敏感资源，从而对管理访问权限进行控制和管理。 这意味着你可仅授予用户所需的足够权限，从而降低网络攻击者获取完全管理访问权限的几率。 此外，特权标识管理还可从现有 Active Directory 林提取和隔离管理帐户。
 
-MIM 支持用于管理 Active Director 的本地 Privileged Identity Management 解决方案。 请从[使用 Privileged Access Management](/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services) 开始。
+MIM 支持用于管理 Active Directory 的本地 Privileged Identity Management 解决方案。 请从[使用 Privileged Access Management](/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services) 开始。
 
 ## <a name="related-topics"></a>相关主题
 Microsoft Identity Manager 与其前身 Forefront Identity Manager 仍然紧密相关。 如果仍然使用 FIM，或者想要引用其他文档，请参阅 [FIM 2010 R2 文档路线图](https://technet.microsoft.com/library/jj133885.aspx)。
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO3-->
 
 
