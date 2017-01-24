@@ -5,7 +5,7 @@ keywords:
 author: kgremban
 ms.author: kgremban
 manager: femila
-ms.date: 09/29/2016
+ms.date: 01/12/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -13,8 +13,8 @@ ms.assetid: 4978f60d-044d-4e84-8d93-65801fce1144
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: 55b7dc3c76c5e95153b5839ce1eb6bf4a7997889
+ms.sourcegitcommit: 2f2ae09ab8bc28b83b66073985b3574517a220b7
+ms.openlocfilehash: bed26316673d777f3d1934011668686b3e9def1d
 
 
 ---
@@ -27,41 +27,41 @@ ms.openlocfilehash: 55b7dc3c76c5e95153b5839ce1eb6bf4a7997889
 | **MIM 组件** | **平台** | **版本** |
 |-------------------|--------------|-------------|
 | **MIM 同步** | Windows Server | Windows Server 2008 R2 SP1<br/>Windows Server 2012<br/>Windows Server 2012 R2<br/>Windows Server 2016 * |
-|| | MIM 同步数据库 | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2<br/>SQL Server 2014 SP1 <br/> SQL Server 2016 * |
-|| | 适用于用户设置、PCNS 和 GAL 同步的 Active Directory（可选）|Windows Server 2008 R2 SP1<br/>Windows Server 2012<br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |
-|| | 适用于邮箱设置和 GAL 同步的 Exchange（可选）|Exchange Server 2007 SP3<br/>Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1 |
-|| | 开发环境（可选） | Visual Studio 2012<br/>Visual Studio 2013 |
-|| | 其他已连接的系统（可选） | Active Directory 域服务<br/>Active Directory<br/>轻型目录服务<br/>SQL Server 2000 或更高版本<br/>SharePoint Server 2013<br/> SharePoint Server 2016 * <br/> 其他第三方产品 |
+| | MIM 同步数据库 | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2<br/>SQL Server 2014 SP1 <br/> SQL Server 2016 * |
+| | 适用于用户设置、PCNS 和 GAL 同步的 Active Directory（可选）|Windows Server 2008 R2 SP1<br/>Windows Server 2012<br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |
+| | 适用于邮箱设置和 GAL 同步的 Exchange（可选）|Exchange Server 2007 SP3<br/>Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1 |
+| | 开发环境（可选） | Visual Studio 2012<br/>Visual Studio 2013 <br/> Visual Studio 2015  |
+| | 其他已连接的系统（可选） | Active Directory 域服务<br/>Active Directory<br/>轻型目录服务<br/>SQL Server 2000 或更高版本<br/>SharePoint Server 2013<br/> SharePoint Server 2016 * <br/> 其他第三方产品 |
 | **MIM 服务** （除了 PAM 方案） | Windows Server | Windows Server 2008 R2 SP1<br/>Windows Server 2012<br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |
-|| | MIM 服务数据库 | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2<br/>SQL Server 2014 SP1 <br/> SQL Server 2016 * |
-|| | 适用于 MIM 服务审批和组管理电子邮件的 Exchange（可选） | Exchange Server 2007 SP3（已安装 Exchange 管理控制台）<br/>Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1 <br/> Exchange Server 2016 * <br/> Exchange Online * |
+| | MIM 服务数据库 | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2<br/>SQL Server 2014 SP1 <br/> SQL Server 2016 * |
+| | 适用于 MIM 服务审批和组管理电子邮件的 Exchange（可选） | Exchange Server 2007 SP3（已安装 Exchange 管理控制台）<br/>Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1 <br/> Exchange Server 2016 * <br/> Exchange Online * |
 | **MIM 服务和门户** （仅 PAM 方案）| Windows Server | Windows Server 2012<br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |
-|| | 适用于堡垒环境 PAM 林的 Active Directory | Windows Server 2012 R2 <br/> Windows Server 2016 * |
-|| | 适用于现有林的 Active Directory | Windows Server 2008 <br/> Windows Server 2008 R2 * <br/> Windows Server 2012 * <br/> Windows Server 2012 R2 * <br/> Windows Server 2016 * |
-|| | MIM 服务数据库 | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2<br/>SQL Server 2014 SP1 <br/> SQL Server 2016 * |
-|| | SharePoint | SharePoint Foundation 2010<br/>SharePoint Foundation 2013 SP1 <br/> SharePoint 2016 * |
-|| | 适用于 MIM 服务审批和组管理电子邮件的邮件服务器（可选） | Exchange Server 2007 SP3（已安装 Exchange 管理控制台）<br/>Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1 <br/> Exchange Server 2016 * <br/> Exchange Online * |
-|| | 浏览器 | 所有主流浏览器 |
+| | 适用于堡垒环境 PAM 林的 Active Directory | Windows Server 2012 R2 <br/> Windows Server 2016 * |
+| | 适用于现有林的 Active Directory | Windows Server 2008 <br/> Windows Server 2008 R2 * <br/> Windows Server 2012 * <br/> Windows Server 2012 R2 * <br/> Windows Server 2016 * |
+| | MIM 服务数据库 | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2<br/>SQL Server 2014 SP1 <br/> SQL Server 2016 * |
+| | SharePoint | SharePoint Foundation 2010<br/>SharePoint Foundation 2013 SP1 <br/> SharePoint 2016 * |
+| | 适用于 MIM 服务审批和组管理电子邮件的邮件服务器（可选） | Exchange Server 2007 SP3（已安装 Exchange 管理控制台）<br/>Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1 <br/> Exchange Server 2016 * <br/> Exchange Online * |
+| | 浏览器 | 所有主流浏览器 |
 | **MIM 服务报告** | Windows Server | Windows Server 2012 <br/> Windows Server 2016 * |
-|| | 数据仓库 | System Center 2012 Service Manager SP1 |
-|| | 数据仓库数据库 | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2 |
+| | 数据仓库 | System Center 2012 Service Manager SP1 |
+| | 数据仓库数据库 | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2 |
 | **MIM 密码重置和注册门户** | Windows Server | Windows Server 2008 R2 SP1<br/>Windows Server 2012<br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |
-|| | Web 浏览器 | 所有主流浏览器 |
+| | Web 浏览器 | 所有主流浏览器 |
 | **MIM 加载项和扩展** | Windows | Windows 7<br/>Windows 8<br/>Windows 8.1<br/>Windows 10 |
-|| | Outlook 集成（可选） | Outlook 2007 SP2<br/>Outlook 2010<br/>Outlook 2013 <br/> Outlook 2016（在 Windows 10 上） * |
-|| | PAM PowerShell 请求程序 cmdlet（可选） | Windows 8.1<br/>Windows 10 |
+| | Outlook 集成（可选） | Outlook 2007 SP2<br/>Outlook 2010<br/>Outlook 2013 <br/> Outlook 2016（在 Windows 10 上） * |
+| | PAM PowerShell 请求程序 cmdlet（可选） | Windows 8.1<br/>Windows 10 |
 | **MIM 证书管理**（服务器和 CA 集成） | Windows server | Windows Server 2008 R2 SP1<br/>Windows Server 2012 R2 |
-|| | 证书颁发机构 | Windows Server 2008 R2 SP1<br/>Windows Server 2012<br/>Windows Server 2012 R2 |
-|| | MIM CM 数据库 | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2<br/>SQL Server 2014 SP1 |
+| | 证书颁发机构 | Windows Server 2008 R2 SP1<br/>Windows Server 2012<br/>Windows Server 2012 R2 |
+| | MIM CM 数据库 | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2<br/>SQL Server 2014 SP1 |
 | **MIM 证书管理**（应用程序） | Windows | Windows 8<br/>Windows 8.1<br/>Windows 10 |
 | **MIM 证书管理**（客户端和批量客户端） | Windows | Windows 7 |
 | **MIM BHOLD 套件** | Windows Server | Windows Server 2008 R2 SP1<br/>Windows Server 2012 R2 |
-|| | BHOLD 数据库 | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2 <br/> SQL Server 2014 * |
-|| | 邮件服务器（可选） | Exchange Server 2007 SP3<br/>Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1 |
-|| | Web 浏览器 | 带有 Silverlight 的 Internet Explorer 7、8、9、10 或 11 |
+| | BHOLD 数据库 | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2 <br/> SQL Server 2014 * |
+| | 邮件服务器（可选） | Exchange Server 2007 SP3<br/>Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1 |
+| | Web 浏览器 | 带有 Silverlight 的 Internet Explorer 7、8、9、10 或 11 |
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 
