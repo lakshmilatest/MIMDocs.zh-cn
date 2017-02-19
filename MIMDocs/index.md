@@ -1,152 +1,132 @@
 ---
-asset_id: 90d66a75-a7ec-4fa1-911c-cce683908838
-layout: HubPage
-title: "标识管理器文档 | Microsoft 文档"
-description: "Microsoft Identity Manager 文档的技术文档 - 本地标识和访问管理"
-keywords: "标识管理器文档、Microsoft Identity Manager、MIM"
-author: kgremban
-manager: femila
-ms.date: 10/25/2016
-ms.topic: hubpage
-ms.prod: microsoft-identity-manager
-ms.service: microsoft-identity-manager
-ms.technology: security
-ms.suite: ems
-ms.assetid: 90d66a75-a7ec-4fa1-911c-cce683908838
+layout: LandingPage
+title: "Microsoft Identity Manager 文档 | Microsoft Docs"
+description: "了解如何使用 Microsoft Identity Manager。"
 translationtype: Human Translation
-ms.sourcegitcommit: 584efc6cc60eebe69fb32e7a0bdff25f568eee7f
-ms.openlocfilehash: b857664f1065f975e6d7e95508928b679548b52c
-
+ms.sourcegitcommit: d6b2c0db8fa071d3cec9ea680667b9e9b7f75267
+ms.openlocfilehash: 921e34c6625d798909e6ded0ea611c731141a052
 
 ---
-# 标识管理文档
-<article id="main">
-    <section id="hero-content">
-      <h1>标识管理器文档</h1>
-      <h2>了解如何通过 Microsoft Identity Manager 设置本地标识管理。 教程演示如何配置标识同步、身份盗用预防等。</h2>
-      <h3>第一次使用 MIM？ <a href="http://go.microsoft.com/fwlink/?LinkId=816853" target="\_blank">请访问产品页 &rarr;</a></h3>     
-    </section>
-    <aside class="alert section-border">
-      <p>准备进行体验？</p>
-      <ol class="action-list">
-        <li><a href="https://www.microsoft.com/evalcenter/evaluate-microsoft-identity-manager-2016" target="\_blank" class="button-bordered button-translucent">开始使用免费试用版</a></li>
-      </ol>
-    </aside>
-    <section id="featured" class="container">
-      <h2 class="section-heading"><span class="icon icon-warning"></span> 特色内容</h2>
-      <div class="features row">
-        <ul class="column column-half">
-          <li><mark><b>新 </b></mark><a href="/microsoft-identity-manager/understand-explore/microsoft-identity-manager-2016-sp1-release-notes"> Microsoft Identity Manager 2016 Service Pack 1</a></li>
-          <li><a href="/microsoft-identity-manager/deploy-use/microsoft-identity-manager-deploy">在全新服务器上部署 MIM 软件</a></li>
-        </ul>
-        <ul class="column column-half">
-          <li><a href="/microsoft-identity-manager/reference/privileged-access-management-rest-api-reference">Privileged Identity Management REST API 参考</a></li>
-          <li><a href="/microsoft-identity-manager/understand-explore/microsoft-identity-manager-2016">MIM 2016 概述</a></li>
-        </ul>
-      </div>
-    </section>
-    <div id="journeys">
-      <section class="container">
-        <ul class="journeys-list">
-          <li class="journey-step">
-            <header class="journey-step-header row">
-              <a href="/microsoft-identity-manager/understand-explore/microsoft-identity-manager-2016">
-                <div class="title column-third">
-                  <span class="step-number">1</span>
-                  <p>了解 &amp; 探索</p>
+# <a name="microsoft-identity-manager-documentation"></a>Microsoft Identity Manager 文档
+
+Microsoft Identity Manager 2016 将 Active Directory、LDAP、Oracle 和其他应用程序等多个本地身份验证存储与 Azure Active Directory 无缝结合在一起，进而结合 Microsoft 的标识和访问管理解决方案。 这向本地 LOB 应用程序和 SaaS 解决方案提供了一致的体验。
+
+<ul class="panelContent cardsFTitle">
+    <li>
+        <a href="/microsoft-identity-manager/understand-explore/microsoft-identity-manager-2016-sp1-release-notes">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_whats-new.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Microsoft Identity Manager 2016 Service Pack 1 的新增功能</h3>
+                    </div>
                 </div>
-                <p class="description column-two-thirds">了解 Microsoft Identity Manager 的高级概念、特性和功能。
-                </p>
-              </a>
-            </header>
-            <section class="journey-step-elements content">
-              <ul class="row">
-                <li class="column-third">
-                  <a href="/microsoft-identity-manager/understand-explore/microsoft-identity-manager-2016">
-                    <h3>什么是 MIM 2016？</h3>
-                    <p>了解 MIM 2016 如何提供本地标识、混合标识和访问管理功能</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="/microsoft-identity-manager/understand-explore/identity-manager-hybrid-reporting-azure">
-                    <h3>Azure 中的混合报告</h3>
-                    <p>创建本地和云中发生的事件的单一报告</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="/microsoft-identity-manager/plan-design/microsoft-identity-manager-2016-supported-platforms">
-                    <h3>受支持的平台</h3>
-                    <p>列出 MIM 支持的平台、服务器和应用程序。</p>
-                  </a>
-                </li>
-              </ul>
-            </section>
-          </li>
-          <li class="journey-step">
-            <header class="journey-step-header row">
-              <a href="/microsoft-identity-manager/deploy-use/microsoft-identity-manager-deploy">
-                <div class="title column-third">
-                  <span class="step-number">2</span>
-                  <p>部署和使用</p>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/microsoft-identity-manager/understand-explore/microsoft-identity-manager-2016">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_learn-about.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>了解 Microsoft Identity Manager</h3>
+                    </div>
                 </div>
-                <p class="description column-two-thirds">部署和使用 MIM。
-                </p>
-              </a>
-            </header>
-            <section class="journey-step-elements content">
-              <ul class="row">
-                <li class="column-third">
-                  <a href="/microsoft-identity-manager/deploy-use/microsoft-identity-manager-deploy">
-                    <h3>首次部署</h3>
-                    <p>在以前没有 FIM 或 MIM 的新服务器上部署 MIM。</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="/microsoft-identity-manager/deploy-use/microsoft-identity-manager-2016-upgrade-from-fim-2010-R2">
-                    <h3>从 FIM 2010 R2 进行升级</h3>
-                    <p>将现有的 FIM 2010 R2 测试系统升级到 MIM 2016。</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="/microsoft-identity-manager/deploy-use/deploying-mim-password-change-notification-service-on-domain-controller">
-                    <h3>密码更改通知服务</h3>
-                    <p>在每一台域控制器服务器上安装 PCNS，以实现密码同步。</p>
-                  </a>
-                </li>
-              </ul>
-            </section>
-          </li>
-        </ul>
-      </section>
-    </div>
-    <div class="section-border">
-      <section class="resources container">
-        <h2 class="section-heading"><span class="icon icon-options"></span> 开发人员参考</h2>
-        <div class="resource-list row">
-          <ul class="column-half">
-            <li><a href="/microsoft-identity-manager/reference/privileged-access-management-rest-api-reference">Privileged Access Management REST API 参考</a></li>
-          </ul>
-          <ul class="column-half">
-            <li><a href="/microsoft-identity-manager/reference/certificate-management-rest-api-reference">证书管理 REST API 参考</a></li>
-          </ul>
+            </div>
         </div>
-        <div class="resource-list row">
-          <ul class="column-half">
-            <li><a href="https://technet.microsoft.com/library/mt604080.aspx">Privileged Access Management cmdlet</a></li>
-          </ul>
+        </a>
+    </li>
+    <li>
+        <a href="/microsoft-identity-manager/deploy-use/microsoft-identity-manager-deploy"> 
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/deploy.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>部署 Microsoft Identity Manager 2016</h3>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
-    </div>
-    <aside class="alert alert-social">
-      <p>持续跟进 MIM 支持新闻</p>
-      <ol class="action-list">
-        <li><a href="https://blogs.technet.microsoft.com/iamsupport/" target="\_blank" class="button-bordered button-translucent">官方支持博客</a></li>
-      </ol>
-    </aside>
-</article>
+        </a>
+    </li>
+</ul>
+
+---
+
+<h2>参考</h2>
+<ul class="panelContent cardsFTitle">
+    <li>
+        <a href="/microsoft-identity-manager/reference/privileged-access-management-rest-api-reference">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_reference.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Privileged Access Management REST API 参考</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://blogs.technet.microsoft.com/iamsupport/">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_blog.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>标识和访问管理支持团队博客</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+</ul>
+
+<h2>解决方案</h2>
+<ul class="panelContent cardsW">
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
+                        <p><a href="/enterprise-mobility-security/solutions/manage-access-at-scale">大规模管理访问权限</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 
