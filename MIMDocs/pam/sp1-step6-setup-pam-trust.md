@@ -1,11 +1,11 @@
 ---
 title: "步骤 6 安装 PAM 信任"
-description: "准备 CORP 域，其具有将由 Privileged Identity Manager 使用脚本进行管理的现有标识或新标识"
+description: "步骤 6 使用脚本配置 PAM。 本部分介绍在 corp 域和 priv 域间设置必要的信任"
 keywords: 
 author: barclayn
 ms.author: barclayn
 manager: MBaldwin
-ms.date: 10/25/2016
+ms.date: 01/10/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
@@ -13,8 +13,9 @@ ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 365989693f844f117f76ee2b69db85df82f06f35
-ms.openlocfilehash: 5bcf4f4ef201236746ec1bf75c1c8900841a6c79
+ms.sourcegitcommit: f08b0197341351bd5f33552f26b96132b1356239
+ms.openlocfilehash: 3b232dfa515b42fd42a5606d1beff9d3fe50389c
+ms.lasthandoff: 01/10/2017
 
 
 ---
@@ -38,9 +39,4 @@ ms.openlocfilehash: 5bcf4f4ef201236746ec1bf75c1c8900841a6c79
 >[!div class="step-by-step"]
 [« 步骤 5](sp1-step5-configuring-pam.md)
 [步骤 7 »](sp1-step7-setup-sidhistory-sidfiltering.md)
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 
