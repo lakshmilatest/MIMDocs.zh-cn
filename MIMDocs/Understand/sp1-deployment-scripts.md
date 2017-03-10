@@ -1,11 +1,11 @@
 ---
 title: "MIM2016 SP1 PAM 部署脚本"
-description: "准备 CORP 域，其具有将由 Privileged Identity Manager 使用脚本进行管理的现有标识或新标识"
+description: "此页包含在关于使用脚本配置 Privileged Identity Manager 的系列文章中。 其中包括一系列有关环境的假设。"
 keywords: 
 author: barclayn
 ms.author: barclayn
 manager: MBaldwin
-ms.date: 09/26/2016
+ms.date: 01/10/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
@@ -13,8 +13,9 @@ ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 365989693f844f117f76ee2b69db85df82f06f35
-ms.openlocfilehash: 2bf445f2103c2793d613e001f15e06bdc8b9ad54
+ms.sourcegitcommit: f08b0197341351bd5f33552f26b96132b1356239
+ms.openlocfilehash: 10d06ae573e378797467ab1eb91e977d59b821d1
+ms.lasthandoff: 01/10/2017
 
 
 ---
@@ -34,9 +35,4 @@ ms.openlocfilehash: 2bf445f2103c2793d613e001f15e06bdc8b9ad54
 >如果遇到脚本执行的任何问题，可能需要看一下这些日志。 所有脚本日志都保存在 %AppData%\MIMPAMInstall 中。 请将文件夹压缩到 Zip 文件，然后通过电子邮件发送到 mim2016@microsoft.com，写明操作和错误的详细信息。
 
 准备好开始使用 PAM 部署脚本了吗？ 首先来[使用脚本配置 PAM](/microsoft-identity-manager/pam/sp1-pam-configure-using-scripts)。
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

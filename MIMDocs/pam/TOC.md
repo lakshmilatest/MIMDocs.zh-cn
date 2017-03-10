@@ -19,6 +19,7 @@
 ### [步骤 5 - 在 PRIV 和 CORP 之间建立信任关系](step-5-establish-trust-between-priv-corp-forests.md)
 ### [步骤 6 - 创建特权帐户](step-6-transition-group-to-pam.md)
 ### [步骤 7 - 提升用户的访问权限](step-7-elevate-user-access.md)
+### [通过 Windows Server 2016 部署 MIM PAM](deploy-pam-with-windows-server-2016.md)
 ### [设置 Azure MFA](use-azure-mfa-for-activation.md)
 ## [使用脚本配置 PAM](sp1-pam-configure-using-scripts.md)
 ### [步骤 1 配置 Priv 域](sp1-step1-configuring-priv-domain.md)
@@ -33,6 +34,6 @@
 # [开发人员参考](/microsoft-identity-manager/reference/microsoft-identity-manager-2016-developer-reference)
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

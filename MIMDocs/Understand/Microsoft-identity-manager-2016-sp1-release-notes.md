@@ -1,11 +1,11 @@
 ---
-title: Microsoft Identity Manager 2016 | Microsoft Docs
+title: Microsoft Identity Manager 2016 Service Pack 1 | Microsoft Docs
 description: "了解 MIM 2016 如何在云中和本地创建更安全、更方便的标识管理体验。"
 keywords: 
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
-ms.date: 09/28/2016
+ms.date: 01/10/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -13,8 +13,9 @@ ms.assetid: ccdd8a9f-02da-440a-81a8-354800dcd2a8
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: ed477de53abbf646f47efb90e617b04184bc29a9
+ms.sourcegitcommit: f0947f186b5206d06a67140706ada33a5bc0e016
+ms.openlocfilehash: 4f293a349916ae1a55d8551ef949758cab851b74
+ms.lasthandoff: 01/11/2017
 
 
 ---
@@ -24,7 +25,7 @@ ms.openlocfilehash: ed477de53abbf646f47efb90e617b04184bc29a9
 
 如果在 MIM SP1 的生产部署过程中遇到问题，请与 Microsoft 客户支持联系。
 
-我们也希望倾听你的意见！ 如果有任何与产品团队相关的反馈、意见或问题，请发送电子邮件到 [mim2016@microsoft.com.](mailto:mim2016@microsoft.com) 与我们联系
+我们也希望倾听你的意见！ 如有任何与产品团队相关的反馈、意见或问题，请发送电子邮件到 [mim2016@microsoft.com.](mailto:mim2016@microsoft.com) 与我们联系
 
 
 
@@ -82,9 +83,4 @@ ms.openlocfilehash: ed477de53abbf646f47efb90e617b04184bc29a9
   3. 选择要升级的 MIM 组件
   4. 按照提示继续进行安装
     * MIM 服务和门户的安装：选择 Exchange Online 作为邮件帐户时，在下一个屏幕上输入 Exchange Online 帐户的电子邮件地址和凭据。
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

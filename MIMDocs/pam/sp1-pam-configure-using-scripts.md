@@ -1,11 +1,11 @@
 ---
 title: "使用脚本配置 PAM"
-description: "准备 CORP 域，其具有将由 Privileged Identity Manager 使用脚本进行管理的现有标识或新标识"
+description: "本文是使用脚本配置 PAM 系列的一部分。 它介绍了如何修改 PAM 部署脚本将使用 XML 文件。"
 keywords: 
 author: barclayn
 ms.author: barclayn
 manager: MBaldwin
-ms.date: 10/04/2016
+ms.date: 01/10/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
@@ -13,15 +13,16 @@ ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 365989693f844f117f76ee2b69db85df82f06f35
-ms.openlocfilehash: 3aca2fb513280f118e760bdbc2ba471151c41b17
+ms.sourcegitcommit: f08b0197341351bd5f33552f26b96132b1356239
+ms.openlocfilehash: bd73f43a096d58e1f7250e28b59e33f4411e88a3
+ms.lasthandoff: 01/10/2017
 
 
 ---
 
 # <a name="configure-pam-using-scripts"></a>使用脚本配置 PAM
 
-如果你选择在单独的服务器上安装 SQL 和 SharePoint，必须使用以下说明进行配置。 如果 SQL、SharePoint 和 PAM 组件安装在同一台计算机上，必须在此计算机上运行以下步骤。
+如果选择在单独服务器上安装 SQL 和 SharePoint，则必须使用以下说明进行配置。 如果 SQL、SharePoint 和 PAM 组件安装在同一台计算机上，必须在此计算机上运行以下步骤。
 
 以下步骤假设 PRIV 域已安装，有关配置 PRIV 域的说明，请查看文档末尾的附录。
 
@@ -68,9 +69,4 @@ ms.openlocfilehash: 3aca2fb513280f118e760bdbc2ba471151c41b17
 
 >[!div class="step-by-step"]
 [开始 »](sp1-step1-configuring-priv-domain.md)
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

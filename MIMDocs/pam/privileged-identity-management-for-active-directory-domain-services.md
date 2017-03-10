@@ -1,11 +1,11 @@
 ---
-title: "什么是 ADDS 的 PAM？ |Microsoft Docs"
+title: "Active Directory 域服务的 Privileged Access Management | Microsoft Docs"
 description: "了解 Privileged Access Management，以及它如何帮助你管理和保护 Active Directory 环境。"
 keywords: 
 author: kgremban
 ms.author: kgremban
 manager: femila
-ms.date: 10/25/2016
+ms.date: 01/10/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
@@ -15,8 +15,9 @@ ms.suite: ems
 experimental: true
 experiment_id: kgremban_images
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: 4b3779f33a8bbd2ad62c88343ef3611b17fc81a2
+ms.sourcegitcommit: f0947f186b5206d06a67140706ada33a5bc0e016
+ms.openlocfilehash: cea5a2fc162870c1125b35b75376881eb15cd2e9
+ms.lasthandoff: 01/11/2017
 
 ---
 
@@ -95,9 +96,4 @@ PAM 具有以下优势：
 > 与此相反，已到期的链接由安全帐户管理器 (SAM) 实时评估。 即使组成员的添加需要由接收访问请求的 DC 重复执行，也可在任意 DC 上对组成员的重复删除直接进行评估。
 
 此工作流专门适用于这些管理帐户。 仅需要对特权组的偶尔访问权限的管理员（甚至是脚本）可以精确请求该访问权限。 MIM 将记录请求和 Active Directory 中的更改，你可在事件查看器中查看它们或将该数据发送到企业监视解决方案中，如 System Center 2012 - Operations Manager 审核收集服务 (ACS) 或其他第三方工具。
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 
