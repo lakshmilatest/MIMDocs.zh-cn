@@ -15,6 +15,7 @@ ms.suite: ems
 translationtype: Human Translation
 ms.sourcegitcommit: 2f2ae09ab8bc28b83b66073985b3574517a220b7
 ms.openlocfilehash: bed26316673d777f3d1934011668686b3e9def1d
+ms.lasthandoff: 01/13/2017
 
 
 ---
@@ -34,13 +35,13 @@ ms.openlocfilehash: bed26316673d777f3d1934011668686b3e9def1d
 | | 其他已连接的系统（可选） | Active Directory 域服务<br/>Active Directory<br/>轻型目录服务<br/>SQL Server 2000 或更高版本<br/>SharePoint Server 2013<br/> SharePoint Server 2016 * <br/> 其他第三方产品 |
 | **MIM 服务** （除了 PAM 方案） | Windows Server | Windows Server 2008 R2 SP1<br/>Windows Server 2012<br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |
 | | MIM 服务数据库 | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2<br/>SQL Server 2014 SP1 <br/> SQL Server 2016 * |
-| | 适用于 MIM 服务审批和组管理电子邮件的 Exchange（可选） | Exchange Server 2007 SP3（已安装 Exchange 管理控制台）<br/>Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1 <br/> Exchange Server 2016 * <br/> Exchange Online * |
+| | 适用于 MIM 服务审批和组管理电子邮件的 Exchange（可选） | Exchange Server 2007 SP3（已安装 Exchange 管理控制台）<br/>Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1 <br/> Exchange Server 2016 *<br/> Exchange Online* |
 | **MIM 服务和门户** （仅 PAM 方案）| Windows Server | Windows Server 2012<br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |
 | | 适用于堡垒环境 PAM 林的 Active Directory | Windows Server 2012 R2 <br/> Windows Server 2016 * |
-| | 适用于现有林的 Active Directory | Windows Server 2008 <br/> Windows Server 2008 R2 * <br/> Windows Server 2012 * <br/> Windows Server 2012 R2 * <br/> Windows Server 2016 * |
+| | 适用于现有林的 Active Directory | Windows Server 2008 <br/> Windows Server 2008 R2 *<br/> Windows Server 2012* <br/> Windows Server 2012 R2 *<br/> Windows Server 2016* |
 | | MIM 服务数据库 | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2<br/>SQL Server 2014 SP1 <br/> SQL Server 2016 * |
 | | SharePoint | SharePoint Foundation 2010<br/>SharePoint Foundation 2013 SP1 <br/> SharePoint 2016 * |
-| | 适用于 MIM 服务审批和组管理电子邮件的邮件服务器（可选） | Exchange Server 2007 SP3（已安装 Exchange 管理控制台）<br/>Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1 <br/> Exchange Server 2016 * <br/> Exchange Online * |
+| | 适用于 MIM 服务审批和组管理电子邮件的邮件服务器（可选） | Exchange Server 2007 SP3（已安装 Exchange 管理控制台）<br/>Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1 <br/> Exchange Server 2016 *<br/> Exchange Online* |
 | | 浏览器 | 所有主流浏览器 |
 | **MIM 服务报告** | Windows Server | Windows Server 2012 <br/> Windows Server 2016 * |
 | | 数据仓库 | System Center 2012 Service Manager SP1 |
@@ -59,9 +60,4 @@ ms.openlocfilehash: bed26316673d777f3d1934011668686b3e9def1d
 | | BHOLD 数据库 | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2 <br/> SQL Server 2014 * |
 | | 邮件服务器（可选） | Exchange Server 2007 SP3<br/>Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1 |
 | | Web 浏览器 | 带有 Silverlight 的 Internet Explorer 7、8、9、10 或 11 |
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 
