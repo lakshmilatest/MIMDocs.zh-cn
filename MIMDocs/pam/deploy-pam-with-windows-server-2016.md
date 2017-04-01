@@ -5,14 +5,15 @@ keywords:
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
-ms.date: 02/15/2017
+ms.date: 03/24/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 
 translationtype: Human Translation
-ms.sourcegitcommit: 18accbf24fc7af1a27e2e88059a9a8371dfd2c4d
-ms.openlocfilehash: 49be7f3bd364e9202b177ead1fbe2607be91a323
+ms.sourcegitcommit: 77ecdb91ccfdb1afec830e9662163ab9a7ef250c
+ms.openlocfilehash: dc68c4dcf2ae2d347e10930613bd32ca02031f8b
+ms.lasthandoff: 03/24/2017
 
 
 ---
@@ -73,7 +74,7 @@ Technical Preview 5 之前的 Windows Server 2016 早期技术预览版不可与
 
     ```
     $of = get-ADOptionalFeature -filter "name -eq 'privileged access management feature'"
-    Enable-ADOptionalFeature \$of -scope ForestOrConfigurationSet -target "priv.contoso.local"
+    Enable-ADOptionalFeature $of -scope ForestOrConfigurationSet -target "priv.contoso.local"
     ```
 
   -   配置委派后且在重启服务器之前，请向 MIM 管理员和 MIM 服务帐户授予创建和更新卷影主体的权限。
@@ -94,7 +95,7 @@ Technical Preview 5 之前的 Windows Server 2016 早期技术预览版不可与
 
  -   配置委派后且在重启服务器之前，请向 MIM 管理员授予创建和更新身份验证策略的权限。
 
-     a.  启动 Powershell 窗口并键入以下命令，将每一行（共&4; 行）中 MIM 管理员帐户的名称替换为“mimadmin”：
+     a.  启动提升的**命令提示符**，然后键入以下命令，将每行（共 4 行）中 MIM 管理员帐户的名称替换为“mimadmin”：
     ```
        dsacls "CN=AuthN Policies,CN=AuthN Policy
        Configuration,CN=Services,CN=configuration,DC=priv,DC=contoso,DC=local" /g
@@ -149,9 +150,4 @@ Technical Preview 5 之前的 Windows Server 2016 早期技术预览版不可与
 - [Active Directory 域服务的 Privileged Access Management](/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services.md)
 - [为 Privileged Access Management 配置 MIM 环境](/microsoft-identity-manager/pam/configuring-mim-environment-for-pam.md)
 - [使用脚本配置 PAM](/microsoft-identity-manager/pam/sp1-pam-configure-using-scripts.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 
