@@ -3,8 +3,9 @@ layout: LandingPage
 title: "Microsoft Identity Manager 文档 | Microsoft Docs"
 description: "了解如何使用 Microsoft Identity Manager。"
 translationtype: Human Translation
-ms.sourcegitcommit: 6e171f09720503eedf43fe292d0f251a29671112
-ms.openlocfilehash: 3596e474912d1b56b01a2659886de0baa4cb5f1e
+ms.sourcegitcommit: 1ff73d0bdfcbcb4ab79d0d81feca9abdc33f9213
+ms.openlocfilehash: 244b4e1ba3c51edfcbc78e2dfe9472792184b472
+ms.lasthandoff: 04/04/2017
 
 ---
 # <a name="microsoft-identity-manager-documentation"></a>Microsoft Identity Manager 文档
@@ -71,7 +72,7 @@ Microsoft Identity Manager 2016 将 Active Directory、LDAP、Oracle 和其他�
 ---
 <br>
 >[!Warning]
-Forefront Identity Manager (FIM) 主流支持将于 2017/10/10 结束。 请[升级](/deploy-use/microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md)到 Microsoft Identity Manager 2016。 更多信息： </br>  - [此处](https://support.microsoft.com/lifecycle/search?alpha=Microsoft%20Forefront%20Identity%20Manager%202010%20R2%20Service%20Pack%201,Microsoft%20Identity%20Manager%202016,Microsoft%20Forefront%20Identity%20Manager%202010)提供了 FIM 生命周期信息 </br> - 有关公用版标识产品的信息，请参阅 [Microsoft Identity Software: Public Release Build Versions](https://blogs.technet.microsoft.com/iamsupport/idmbuildversions/)（Microsoft 标识软件：公用版本）一文
+Forefront Identity Manager (FIM) 主流支持将于 2017/10/10 结束。 请[升级](deploy-use/microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md)到 Microsoft Identity Manager 2016。 更多信息： </br>  - [此处](https://support.microsoft.com/lifecycle/search?alpha=Microsoft%20Forefront%20Identity%20Manager%202010%20R2%20Service%20Pack%201,Microsoft%20Identity%20Manager%202016,Microsoft%20Forefront%20Identity%20Manager%202010)提供了 FIM 生命周期信息 </br> - 有关公用版标识产品的信息，请参阅 [Microsoft Identity Software: Public Release Build Versions](https://blogs.technet.microsoft.com/iamsupport/idmbuildversions/)（Microsoft 标识软件：公用版本）一文
 
 <h2>参考</h2>
 <ul class="panelContent cardsFTitle">
@@ -127,9 +128,4 @@ Forefront Identity Manager (FIM) 主流支持将于 2017/10/10 结束。 请[升
         </div>
     </li>
 </ul>
-
-
-
-<!--HONumber=Feb17_HO4-->
-
 
