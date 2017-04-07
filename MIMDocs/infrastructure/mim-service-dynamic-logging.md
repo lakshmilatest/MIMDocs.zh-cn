@@ -11,9 +11,9 @@ ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 
 translationtype: Human Translation
-ms.sourcegitcommit: 90a0f144b7674bbfaf13138dfd926dbfc3c74f28
-ms.openlocfilehash: ddd707210d5cd6b618709a477d40e7771d73cfa1
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 1ff73d0bdfcbcb4ab79d0d81feca9abdc33f9213
+ms.openlocfilehash: 1e2fb9a9ae508ab601ebad1dec7acc21dc44d13e
+ms.lasthandoff: 04/04/2017
 
 
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 03/27/2017
 *    行 8：``<dynamicLogging mode="true" loggingLevel="Verbose" />``
 *    行 266：``</system.diagnostics> ``
 
-![高亮部分显示新的动态日志记录条目](/media/mim-service-dynamic-logging/screen01.png)
+![高亮部分显示新的动态日志记录条目](media/mim-service-dynamic-logging/screen01.png)
 
 有关动态日志记录级别，可参见[此处](https://msdn.microsoft.com/library/ms733025(v=vs.110).aspx#Anchor_3)
 
@@ -36,11 +36,11 @@ ms.lasthandoff: 03/27/2017
 
 动态日志记录配置位于行 266：Microsoft.ResourceManagement.Service.exe.config
 
-![高亮部分显示具有各种可用日志记录区域的行](/media/mim-service-dynamic-logging/screen02.png)
+![高亮部分显示具有各种可用日志记录区域的行](media/mim-service-dynamic-logging/screen02.png)
 
 日志记录位置将默认位于 **C:\Program Files\Microsoft Forefront Identity Manager\2010\Service**，且 FIM 服务帐户将需要此位置的写入权限才可生成动态日志。
 
-![日志的文件夹位置](/media/mim-service-dynamic-logging/screen03.png)
+![日志的文件夹位置](media/mim-service-dynamic-logging/screen03.png)
 
  >[!NOTE]
  如果出现意外错误（配置文件 Microsoft.ResourceManagement.Service.exe.config 中的语法错误或其他错误），相应错误消息将写入 %TMP%、%TEMP% 或 %USERPROFILE% 路径（第一个存在的）下的文件 Microsoft.ResourceManagement.Service.exe_Emergency.log。  
@@ -50,5 +50,5 @@ ms.lasthandoff: 03/27/2017
 
 若要查看跟踪，可使用[服务跟踪查看器工具](https://msdn.microsoft.com//library/aa751795(v=vs.110).aspx)
 
- ![服务跟踪查看器屏幕截图](/media/mim-service-dynamic-logging/screen04.png)
+ ![服务跟踪查看器屏幕截图](media/mim-service-dynamic-logging/screen04.png)
 
