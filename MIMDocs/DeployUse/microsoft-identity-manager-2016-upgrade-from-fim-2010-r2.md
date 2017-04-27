@@ -15,13 +15,14 @@ ms.suite: ems
 translationtype: Human Translation
 ms.sourcegitcommit: 2d3092d7d41090e4e03b971fb62ca896cc8db282
 ms.openlocfilehash: 20e733f17d6ed590844c526888b649eb6bf5f322
+ms.lasthandoff: 02/13/2017
 
 
 ---
 
 # <a name="upgrade-from-forefront-identity-manager-2010-r2"></a>从 Forefront 标识管理器 2010 R2 升级
 
-如果你具有Forefront Identity Manager (FIM) 2010 R2 环境，且想要试用 Microsoft Identity Manager (MIM) 2016，请以本文作为指南。 在此升级过程中有&3; 个阶段：
+如果你具有Forefront Identity Manager (FIM) 2010 R2 环境，且想要试用 Microsoft Identity Manager (MIM) 2016，请以本文作为指南。 在此升级过程中有 3 个阶段：
 
 1.  在已加入你的 Active Directory (AD) 域的服务器上安装 MIM 同步服务 (Sync)。 这将替换同步的 FIM 2010 R2 实例。
 
@@ -201,9 +202,4 @@ ms.openlocfilehash: 20e733f17d6ed590844c526888b649eb6bf5f322
 注意：如果当前在用户的计算机上部署了 FIM 外接程序和扩展以实现 SSPR，那么请务必先将所有 FIM 外接程序和扩展升级到 MIM 2016，再配置新的 MFA 电话入口以用于密码重置。  由于 FIM 2010 和 FIM 2010 R2 外接程序和扩展不识别新的入口，它们会给出错误信息，用户便无法完成密码重置。
 
 有关 Microsoft Identity Manager 2016 SP1 升级指南，请参阅 [Microsoft Identity Manager 2016 Service Pack 1 update package](https://blogs.technet.microsoft.com/iamsupport/2016/11/08/microsoft-identity-manager-2016-service-pack-1-update-package/)（Microsoft Identity Manager 2016 Service Pack 1 更新包）
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
