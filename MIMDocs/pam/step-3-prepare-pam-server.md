@@ -52,7 +52,7 @@ ms.lasthandoff: 11/10/2016
 
 1.  以 PRIV 域管理员 (PRIV\Administrator) 身份登录并启动 PowerShell。
 
-2.  键入下列命令。 请注意，可能需要为 .NET Framework 3.5 功能的源文件指定不同的位置。 这些功能通常在安装 Windows Server 时并不存在，但在操作系统安装磁盘源文件夹上的并行 (SxS) 文件夹中可见，例如，“*d:\Sources\SxS”。
+2.  键入下列命令。 请注意，可能需要为 .NET Framework 3.5 功能的源文件指定不同的位置。 这些功能通常在安装 Windows Server 时并不存在，但在操作系统安装磁盘源文件夹上的并行 (SxS) 文件夹中可见，例如，“d:\Sources\SxS\”。
 
     ```
     import-module ServerManager
