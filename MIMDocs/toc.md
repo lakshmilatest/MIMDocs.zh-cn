@@ -112,3 +112,5 @@
 #### [获取挂起的 PAM 请求](/microsoft-identity-manager/reference/privileged-access-management-get-pending-requests)
 #### [批准或拒绝挂起的 PAM 请求](/microsoft-identity-manager/reference/privileged-access-management-approve-reject-pending-request)
 #### [获取 PAM 会话信息](/microsoft-identity-manager/reference/privileged-access-management-get-session-info)
+## [技术参考]
+### [Resource Control Display Configuration XML Reference](/microsoft-identity-manager/reference/rcd-configuration-xml-reference)（资源控制显示配置 XML 参考）
