@@ -2,10 +2,10 @@
 title: "什么是 ADDS 的 PAM？ |Microsoft Docs"
 description: "Privileged Access Management (PAM) 可帮助组织限制现有 Active Directory 环境内的特权访问权限。"
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 01/10/2017
+ms.date: 03/10/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
@@ -16,6 +16,7 @@ experiment_id: kgremban_images
 translationtype: Human Translation
 ms.sourcegitcommit: f0947f186b5206d06a67140706ada33a5bc0e016
 ms.openlocfilehash: 9a047644d07e3ee3c2d1abfde7753849b5ddc63b
+ms.lasthandoff: 01/11/2017
 
 ---
 
@@ -93,9 +94,4 @@ PAM 具有以下优势：
 > 与此相反，已到期的链接由安全帐户管理器 (SAM) 实时评估。 即使组成员的添加需要由接收访问请求的 DC 重复执行，也可在任意 DC 上对组成员的重复删除直接进行评估。
 
 此工作流专门适用于这些管理帐户。 仅需要对特权组的偶尔访问权限的管理员（甚至是脚本）可以精确请求该访问权限。 MIM 将记录请求和 Active Directory 中的更改，你可在事件查看器中查看它们或将该数据发送到企业监视解决方案中，如 System Center 2012 - Operations Manager 审核收集服务 (ACS) 或其他第三方工具。
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

@@ -2,10 +2,10 @@
 title: "配置 Windows Server 2012 R2 for MIM 2016 | Microsoft Docs"
 description: "获取准备 Windows Server 2012 RS 以使用 MIM 2016 的步骤和最低要求。"
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 01/23/2017
+ms.date: 03/23/2017
 ms.topic: get-started-article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -15,6 +15,7 @@ ms.suite: ems
 translationtype: Human Translation
 ms.sourcegitcommit: 3623bffb099a83d0eba47ba25e9777c3d590e529
 ms.openlocfilehash: 1cb0d6cd310372ecaeff47c9cc4461ebc43b3390
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -108,9 +109,4 @@ ms.openlocfilehash: 1cb0d6cd310372ecaeff47c9cc4461ebc43b3390
 >[!div class="step-by-step"]  
 [« 准备域](preparing-domain.md)
 [SQL Server 2014 »](prepare-server-sql2014.md)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

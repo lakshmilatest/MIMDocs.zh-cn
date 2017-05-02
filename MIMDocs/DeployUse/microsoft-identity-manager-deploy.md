@@ -2,10 +2,10 @@
 title: "Microsoft Identity Manager 2016 的必需部署步骤 | Microsoft Docs"
 description: "获取部署 Microsoft 标识管理器 2016 的完整步骤列表，包括从准备环境到配置门户的全部步骤。"
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 01/27/2017
+ms.date: 03/27/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -15,6 +15,7 @@ ms.suite: ems
 translationtype: Human Translation
 ms.sourcegitcommit: 3623bffb099a83d0eba47ba25e9777c3d590e529
 ms.openlocfilehash: 804f957d5cf9f5fb09efa65944983b1d5013fff3
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -45,9 +46,4 @@ MIM 与 Active Directory (AD) 协同工作，因此请按照以下步骤来配�
 - [MIM 同步服务](install-mim-sync.md)
 - [MIM 服务和门户](install-mim-service-portal.md)
 - [同步 Active Directory 和 MIM 服务数据库](install-mim-sync-ad-service.md)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

@@ -2,10 +2,10 @@
 title: "部署 MIM 证书管理器 Windows 应用程序 | Microsoft Docs"
 description: "了解如何部署证书管理器应用以使用户可以管理自己的访问权限。"
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 01/23/2017
+ms.date: 03/23/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -15,6 +15,7 @@ ms.suite: ems
 translationtype: Human Translation
 ms.sourcegitcommit: 3623bffb099a83d0eba47ba25e9777c3d590e529
 ms.openlocfilehash: d714a58796d3a86fc82ed1eb6dc29bdc45920933
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -253,9 +254,4 @@ ms.openlocfilehash: d714a58796d3a86fc82ed1eb6dc29bdc45920933
 
 ## <a name="deploy-the-app"></a>部署应用
 设置 CM 应用后，在下载中心中下载文件 MIMDMModernApp_&lt;version&gt;_AnyCPU_Test.zip 并提取其所有内容。 .appx 文件是安装程序。 你可以使用通常部署 Windows 应用商店应用时使用的任何方式来部署它，使用 [System Center Configuration Manager](https://technet.microsoft.com/library/dn613840.aspx)，或使用 [Intune](https://technet.microsoft.com/library/dn613839.aspx) 旁加载应用，以使用户必须通过公司门户访问它或直接向其计算机推送。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

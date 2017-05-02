@@ -2,10 +2,10 @@
 title: "使用模板在证书管理器中申请证书 | Microsoft Docs"
 description: "了解如何使用证书管理器来创建和续订带配置文件模板的软件证书。"
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 01/23/2017
+ms.date: 03/23/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -15,6 +15,7 @@ ms.suite: ems
 translationtype: Human Translation
 ms.sourcegitcommit: 54d03fbd03f6c44298139324ea2dc7d945f008bc
 ms.openlocfilehash: 23cfb1134d1cbf2cf838354cb7d915084803cd41
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -38,7 +39,7 @@ ms.openlocfilehash: 23cfb1134d1cbf2cf838354cb7d915084803cd41
 
     1.  在“常规”  选项卡上，在显示名称字段中键入 **存档证书模板**。
 
-    2.  b。  在“请求处理”  选项卡上
+    2.  b。    在“请求处理”  选项卡上
 
         1.  将“目的”  设置为签名和加密。
 
@@ -95,9 +96,4 @@ ms.openlocfilehash: 23cfb1134d1cbf2cf838354cb7d915084803cd41
 10. 如果你想要重新颁发已存档证书，请选中“重新颁发存档证书”  左侧的复选框，然后单击“确定” 。
 
 11. 如果你使用的是虚拟智能卡 CM，则必须禁用数据收集项，因为它不能与打开的数据收集一起使用。 单击左窗格中的策略，禁用每个策略的数据收集，然后取消选中“示例数据项”  旁边的复选框，再单击“删除数据集合项” 。 然后单击“确定” 。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

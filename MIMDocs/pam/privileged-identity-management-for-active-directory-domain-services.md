@@ -2,10 +2,10 @@
 title: "Active Directory 域服务的 Privileged Access Management | Microsoft Docs"
 description: "了解 Privileged Access Management，以及它如何帮助你管理和保护 Active Directory 环境。"
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 01/10/2017
+ms.date: 03/10/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services

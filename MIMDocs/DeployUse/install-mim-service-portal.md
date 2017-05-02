@@ -2,10 +2,10 @@
 title: "安装 Microsoft Identity Manager 服务和门户 | Microsoft Docs"
 description: "获取为 Microsoft 标识管理器 2016 配置和安装 MIM 服务和门户的步骤"
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 01/23/2017
+ms.date: 03/23/2017
 ms.topic: get-started-article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -15,6 +15,7 @@ ms.suite: ems
 translationtype: Human Translation
 ms.sourcegitcommit: 54d03fbd03f6c44298139324ea2dc7d945f008bc
 ms.openlocfilehash: eb572bc3f062763265a9f24910a82be0cac77a5e
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -149,9 +150,4 @@ ms.openlocfilehash: eb572bc3f062763265a9f24910a82be0cac77a5e
 >[!div class="step-by-step"]  
 [« MIM 同步服务](install-mim-sync.md)
 [同步数据库 »](install-mim-sync-ad-service.md)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
