@@ -2,10 +2,10 @@
 title: "部署密码更改通知服务 | Microsoft Docs"
 description: "获取在域控制器上安装和配置 MIM 密码更改通知服务的步骤。"
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 01/23/2017
+ms.date: 03/23/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -15,6 +15,7 @@ ms.suite: ems
 translationtype: Human Translation
 ms.sourcegitcommit: 54d03fbd03f6c44298139324ea2dc7d945f008bc
 ms.openlocfilehash: 1929703baffad4177ea7ea058cb07f44a9c71667
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -58,9 +59,4 @@ ms.openlocfilehash: 1929703baffad4177ea7ea058cb07f44a9c71667
 
 ## <a name="configuring-the-password-change-notification-service"></a>配置密码更改通知服务
 以域管理员身份重新连接到 DC 服务器后，请转到 *C:\Program Files\Microsoft Password Change Notification。* 运行 *pcnscfg.exe*。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

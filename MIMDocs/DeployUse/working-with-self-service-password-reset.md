@@ -2,10 +2,10 @@
 title: "使用自助服务密码重置门户 | Microsoft Docs"
 description: "请参阅 MIM 2016 中有关自助服务密码重置的新增内容，包括 SSPR 如何使用多重身份验证的相关内容。"
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 01/23/2017
+ms.date: 03/23/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -15,6 +15,7 @@ ms.suite: ems
 translationtype: Human Translation
 ms.sourcegitcommit: 3623bffb099a83d0eba47ba25e9777c3d590e529
 ms.openlocfilehash: 72c773601cd722290b6e7a9d5d13458f0409cfdc
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -203,9 +204,4 @@ Azure MFA 提供了额外的身份验证机制，可加强现有的身份验证�
 6.  如果用户选择重置其密码，他们将需要键入新密码两次，并单击“下一步”  以更改密码。
 
     ![MIM 登录助手密码重置图像](media/MIM-SSPR-PR1.JPG)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

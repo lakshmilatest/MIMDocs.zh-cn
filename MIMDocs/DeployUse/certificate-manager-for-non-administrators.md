@@ -2,10 +2,10 @@
 title: "Microsoft Identity Manager 自助服务智能卡续订（无需管理员访问权限）| Microsoft Docs"
 description: "对于不具有自己计算机的管理员访问权限的用户，了解如何为其注册智能卡，以便他们使用证书管理器。"
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 01/23/2017
+ms.date: 03/23/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -15,6 +15,7 @@ ms.suite: ems
 translationtype: Human Translation
 ms.sourcegitcommit: 54d03fbd03f6c44298139324ea2dc7d945f008bc
 ms.openlocfilehash: 89e095cff66984140cdcef3617dd0ccc3d3714d8
+ms.lasthandoff: 02/07/2017
 
 
 ---
@@ -93,9 +94,4 @@ ms.openlocfilehash: 89e095cff66984140cdcef3617dd0ccc3d3714d8
 7.  **在非管理员帐户中安装 CM 应用**
 
 8.  **启动 CM 应用并注册虚拟智能卡**
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

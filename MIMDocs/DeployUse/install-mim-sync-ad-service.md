@@ -2,10 +2,10 @@
 title: "使用 Microsoft Identity Manager 与 AD 同步 | Microsoft Docs"
 description: "使用管理代理和 MIM 同步服务来同步 Active Directory 和 MIM 数据库。"
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 01/23/2017
+ms.date: 03/23/2017
 ms.topic: get-started-article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -15,6 +15,7 @@ ms.suite: ems
 translationtype: Human Translation
 ms.sourcegitcommit: 54d03fbd03f6c44298139324ea2dc7d945f008bc
 ms.openlocfilehash: f84fbbdc8de5cfffc8570c52f8298cc69273c3ee
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -432,9 +433,4 @@ Active Directory 管理代理是 AD 域服务的连接器。 若要创建此连�
 
 >[!div class="step-by-step"]
 [« MIM 服务和门户](install-mim-service-portal.md)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

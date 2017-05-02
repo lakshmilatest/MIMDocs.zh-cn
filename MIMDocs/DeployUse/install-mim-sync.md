@@ -2,10 +2,10 @@
 title: "安装 Microsoft Identity Manager 同步服务 | Microsoft Docs"
 description: "通过安装和配置同步服务立刻开始使用 MIM 2016 组件。"
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 01/23/2017
+ms.date: 03/23/2017
 ms.topic: get-started-article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -15,6 +15,7 @@ ms.suite: ems
 translationtype: Human Translation
 ms.sourcegitcommit: 54d03fbd03f6c44298139324ea2dc7d945f008bc
 ms.openlocfilehash: c6cf0c93679319716c34904ea6239902010e0860
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -104,9 +105,4 @@ ms.openlocfilehash: c6cf0c93679319716c34904ea6239902010e0860
 >[!div class="step-by-step"]  
 [« Exchange Server](prepare-server-exchange.md)
 [MIM 服务和门户 »](install-mim-service-portal.md)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

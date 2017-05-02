@@ -2,8 +2,8 @@
 title: "支持的软件平台 | Microsoft Docs"
 description: "查找与各 MIM 2016 组件兼容的产品和版本"
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
 ms.date: 03/28/2017
 ms.topic: article
