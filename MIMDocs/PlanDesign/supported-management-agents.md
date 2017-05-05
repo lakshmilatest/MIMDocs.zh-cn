@@ -2,10 +2,10 @@
 title: "支持的连接器 | Microsoft Docs"
 description: "使用连接器来管理 MIM 与目录之间的数据传输。"
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 08/11/2016
+ms.date: 03/11/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -13,8 +13,9 @@ ms.assetid: 8bc2f6d2-9f53-4db6-aee6-a937ae468163
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: 5841f549cc7f9369943cc5b31c27005f89afcccb
+ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
+ms.openlocfilehash: b26fe7bc56ab8229054afb1409c3652e81464a3d
+ms.lasthandoff: 05/02/2017
 
 
 ---
@@ -57,9 +58,4 @@ ms.openlocfilehash: 5841f549cc7f9369943cc5b31c27005f89afcccb
 ## <a name="related-topics"></a>相关主题
 
 [FIM 2010 R2 中的管理代理](https://technet.microsoft.com/library/jj133885.aspx)
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

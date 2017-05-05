@@ -2,10 +2,10 @@
 title: "部署 PAM 步骤 2 – PRIV DC | Microsoft Docs"
 description: "准备 PRIV 域控制器，它将提供堡垒环境，Privileged Access Management 在此环境中是独立的。"
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 07/15/2016
+ms.date: 03/15/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
@@ -13,9 +13,9 @@ ms.assetid: 0e9993a0-b8ae-40e2-8228-040256adb7e2
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: f84229908f31242b6d2f7636a7c67ca669de45b3
-ms.lasthandoff: 11/10/2016
+ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
+ms.openlocfilehash: edc15b41d4248887f4a93217f68d8125f6500585
+ms.lasthandoff: 05/02/2017
 
 
 ---
@@ -216,7 +216,7 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
 
 2. 对于每个现有林顶部的每个域，键入以下命令，指定现有的 DNS 域（例如：contoso.local）以及该域的主服务器的 IP 地址。  
 
-  如果在上一步创建了一个 contoso.local 域，则指定 *10.1.1.31* 作为 CORPDC 计算机的虚拟网络 IP 地址。
+  如果在上一步创建了一个 contoso.local 域，则指定  *10.1.1.31* 作为 CORPDC 计算机的虚拟网络 IP 地址。
 
   ```
   Add-DnsServerConditionalForwarderZone –name "contoso.local" –masterservers 10.1.1.31
@@ -270,12 +270,12 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
 15. 在权限列表中，选择“更改密码”  和“重置密码” 。 然后依次单击“下一步”  和“完成” 。  
 16. 关闭“Active Directory 用户和计算机”。
 
-17. 打开命令提示符。  
-18. 查看 PRIV 域中 Admin SD Holder 对象上的访问控制列表。 例如，如果你的域为“priv.contoso.local”，则键入以下命令  
+17.    打开命令提示符。  
+18.    查看 PRIV 域中 Admin SD Holder 对象上的访问控制列表。 例如，如果你的域为“priv.contoso.local”，则键入以下命令  
   ```
   dsacls "cn=adminsdholder,cn=system,dc=priv,dc=contoso,dc=local"
   ```
-19. 根据需要更新访问控制列表，以确保 MIM 服务和 MIM 组件服务可以更新由此 ACL 保护的组成员。  键入命令：  
+19.    根据需要更新访问控制列表，以确保 MIM 服务和 MIM 组件服务可以更新由此 ACL 保护的组成员。  键入命令：  
   ```
   dsacls "cn=adminsdholder,cn=system,dc=priv,dc=contoso,dc=local" /G priv\mimservice:WP;"member"  
   dsacls "cn=adminsdholder,cn=system,dc=priv,dc=contoso,dc=local" /G priv\mimcomponent:WP;"member"

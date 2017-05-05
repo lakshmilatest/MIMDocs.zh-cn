@@ -2,10 +2,10 @@
 title: "部署 PAM 步骤 4 – 安装 MIM | Microsoft Docs"
 description: "在 Privileged Access Management 服务器和工作站上安装和配置 MIM 服务和门户。"
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 07/15/2016
+ms.date: 03/15/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
@@ -14,13 +14,14 @@ ROBOTS: noindex,nofollow
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: 5b9653cb8de9e9fc788685ba027f84a795467cf6
+ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
+ms.openlocfilehash: 3a1ec9db6da0a77f963dde76a3efe8d92f89078d
+ms.lasthandoff: 05/02/2017
 
 
 ---
 
-# <a name="step-4-install-mim-components-on-pam-server-and-workstation"></a>步骤 4 - 在 PAM 服务器和工作站上安装 MIM 组件
+# <a name="step-4--install-mim-components-on-pam-server-and-workstation"></a>步骤 4 - 在 PAM 服务器和工作站上安装 MIM 组件
 
 >[!div class="step-by-step"]
 [« 步骤 3](step-3-prepare-pam-server.md)
@@ -190,9 +191,4 @@ ms.openlocfilehash: 5b9653cb8de9e9fc788685ba027f84a795467cf6
 >[!div class="step-by-step"]
 [« 步骤 3](step-3-prepare-pam-server.md)
 [步骤 5 »](step-5-establish-trust-between-priv-corp-forests.md)
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

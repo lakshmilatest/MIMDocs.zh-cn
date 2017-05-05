@@ -2,10 +2,10 @@
 title: "部署 PAM 步骤 6 - 移动组 | Microsoft Docs"
 description: "将组迁移到 PRIV 林，以便可以通过 Privileged Access Management 对它们进行管理。"
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 07/15/2016
+ms.date: 03/15/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
@@ -13,13 +13,14 @@ ms.assetid: 7b689eff-3a10-4f51-97b2-cb1b4827b63c
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: 9e70bdd3c586a16a9a55c91bd0e099a500950a64
+ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
+ms.openlocfilehash: aeffca2c4e5467ec039c2077a88f36a652493e90
+ms.lasthandoff: 05/02/2017
 
 
 ---
 
-# <a name="step-6-transition-a-group-to-privileged-access-management"></a>步骤 6 – 将某个组转换为特权访问管理
+# <a name="step-6--transition-a-group-to-privileged-access-management"></a>步骤 6 – 将某个组转换为特权访问管理
 
 >[!div class="step-by-step"]
 [« 步骤 5 ](step-5-establish-trust-between-priv-corp-forests.md)
@@ -87,9 +88,4 @@ ms.openlocfilehash: 9e70bdd3c586a16a9a55c91bd0e099a500950a64
 >[!div class="step-by-step"]
 [« 步骤 5 ](step-5-establish-trust-between-priv-corp-forests.md)
 [步骤 7 »](step-7-elevate-user-access.md)
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 
