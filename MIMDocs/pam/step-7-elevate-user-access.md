@@ -2,10 +2,10 @@
 title: "部署 PAM 步骤 7 - 用户访问权限 | Microsoft Docs"
 description: "作为最后一步，授予特权用户临时访问权限，以演示 Privileged Access Management 部署已成功。"
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 07/15/2016
+ms.date: 03/15/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
@@ -13,13 +13,14 @@ ms.assetid: 5325fce2-ae35-45b0-9c1a-ad8b592fcd07
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: e543453946ea70c2c7360363df87946d973322bf
+ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
+ms.openlocfilehash: 89d9b38177b91f64e746fea583684abcecc9d7ff
+ms.lasthandoff: 05/02/2017
 
 
 ---
 
-# <a name="step-7-elevate-a-users-access"></a>步骤 7 - 提升用户的访问权限
+# <a name="step-7--elevate-a-users-access"></a>步骤 7 - 提升用户的访问权限
 
 >[!div class="step-by-step"]
 [« 步骤 6](step-6-transition-group-to-pam.md)
@@ -100,9 +101,4 @@ dir \\corpwkstn\corpfs
 
 >[!div class="step-by-step"]
 [« 步骤 6](step-6-transition-group-to-pam.md)
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

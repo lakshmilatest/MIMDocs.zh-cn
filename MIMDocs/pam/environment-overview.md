@@ -2,10 +2,10 @@
 title: "PAM 环境概述 | Microsoft Docs"
 description: "查找要成功部署 Privileged Access Management 所需的虚拟机数量和配置"
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 07/15/2016
+ms.date: 03/15/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
@@ -13,8 +13,9 @@ ms.assetid: 479db14c-1bfb-4d7c-a344-cd718a01f328
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: 750ba152813b4c03c913453c42e0e503e90b883b
+ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
+ms.openlocfilehash: 3e6c5a70c6b9ed140a56135676bbd14a84504317
+ms.lasthandoff: 05/02/2017
 
 
 ---
@@ -31,9 +32,4 @@ Privileged Access Management 与具有各自分开的驱动器的虚拟机 (VM) 
 
 > [!NOTE]
 > MIM 当前的客户技术预览版 (CTP) 与以前的 CTP 中的数据库或目录内容不兼容。 如果你以前曾为 PAM 或其他方案评估 MIM，请备份并存档用于该测试的虚拟机，并使用以前未用于 MIM 方案的新虚拟机映像启动部署。
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

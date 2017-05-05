@@ -2,10 +2,10 @@
 title: "为 PAM 定义特权角色 | Microsoft Docs"
 description: "决定哪些特权角色应该进行管理，并为每个角色定义管理策略。"
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 07/15/2016
+ms.date: 03/15/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
@@ -13,8 +13,9 @@ ms.assetid: 1a368e8e-68e1-4f40-a279-916e605581bc
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: ae582e6aff2449aeee8b68ebe90b22b18e5a67d2
+ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
+ms.openlocfilehash: 807ee44c23f367c33b820251012008324bb2c005
+ms.lasthandoff: 05/02/2017
 
 
 ---
@@ -144,7 +145,7 @@ ms.openlocfilehash: ae582e6aff2449aeee8b68ebe90b22b18e5a67d2
 
 以下部分提供了典型企业方案的示例。
 
-### <a name="tier-0-administrative-forest"></a>第 0 层 - 管理林
+### <a name="tier-0---administrative-forest"></a>第 0 层 - 管理林
 
 适用于堡垒环境中帐户的角色可能包括：
 
@@ -153,7 +154,7 @@ ms.openlocfilehash: ae582e6aff2449aeee8b68ebe90b22b18e5a67d2
 - 生产林的管理员用户
 - 生产林中得到应用程序有限管理权限委派的用户
 
-### <a name="tier-0-enterprise-production-forest"></a>第 0 层 - 企业生产林
+### <a name="tier-0---enterprise-production-forest"></a>第 0 层 - 企业生产林
 
 适用于管理第 0 层生产林帐户和资源的角色可能包括：
 
@@ -200,9 +201,4 @@ ms.openlocfilehash: ae582e6aff2449aeee8b68ebe90b22b18e5a67d2
 - 支持人员
 - 安全组管理员
 - 工作站桌边支持
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

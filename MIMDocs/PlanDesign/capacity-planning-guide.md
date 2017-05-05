@@ -2,10 +2,10 @@
 title: "容量规划指南 | Microsoft Docs"
 description: "使用本指南了解部署 MIM 2016（包括负载级别和策略决策）之前应该考虑的变量。"
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 07/21/2016
+ms.date: 03/21/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -13,8 +13,9 @@ ms.assetid: 3ac5b990-1678-4996-996d-cbd84b8426b4
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: 33e7d901dcd9d8cf1bcaddcfa521625060bb3dbc
+ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
+ms.openlocfilehash: e33c5bb284d15a5e94118e621b968fcad5b65e2d
+ms.lasthandoff: 05/02/2017
 
 
 ---
@@ -92,9 +93,4 @@ MIM 策略配置还包括环境中的相关配置决策。 请确保考虑了以
 ## <a name="see-also"></a>另请参阅
 - [部署 MIM 的拓扑注意事项](topology-considerations.md)
 - [Forefront 标识管理器 (FIM) 2010 容量规划指南](http://go.microsoft.com/fwlink/?LinkId=200180)（可下载）详尽介绍了有关测试版本和性能测试结果的相关信息。
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

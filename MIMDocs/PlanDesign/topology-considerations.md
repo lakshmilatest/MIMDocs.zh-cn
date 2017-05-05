@@ -2,10 +2,10 @@
 title: "用于部署的拓扑指南 | Microsoft Docs"
 description: "了解 MIM 2016 组件，并获取有关如何在你的环境中部署它们的建议。"
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 07/21/2016
+ms.date: 03/21/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -13,8 +13,9 @@ ms.assetid: 735dc357-dfba-4f68-a5b3-d66d6c018803
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: 23ef8843201790bc758e9ef6def5d77d175bfcf0
+ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
+ms.openlocfilehash: f7e4dc737444df70de3a8a78eb518e9e6f26aadc
+ms.lasthandoff: 05/02/2017
 
 
 ---
@@ -26,7 +27,7 @@ ms.openlocfilehash: 23ef8843201790bc758e9ef6def5d77d175bfcf0
 ## <a name="mim-components"></a>MIM 组件
 在设计部署拓扑时，应了解每个组件的作用以及它们之间的交互方式，这一点很重要。
 
-- <a name="mim-portal-an-interface-for-password-resets-group-management-and-administrative-operations"></a>**MIM 门户** - 用于密码重置、组管理和管理操作的接口。
+- <a name="mim-portal---an-interface-for-password-resets-group-management-and-administrative-operations"></a>**MIM 门户** - 用于密码重置、组管理和管理操作的接口。
     -
 - **MIM 服务** - 实现 MIM 2016 标识管理功能的 Web 服务。
 - **MIM 同步服务** - 同步数据与其他标识系统。
@@ -63,9 +64,4 @@ ms.openlocfilehash: 23ef8843201790bc758e9ef6def5d77d175bfcf0
 
 ## <a name="see-also"></a>另请参阅
 - [Forefront 标识管理器 (FIM) 2010 容量规划指南](http://go.microsoft.com/fwlink/?LinkId=200180)（可下载）详尽介绍了有关测试版本和性能测试结果的相关信息。
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 
