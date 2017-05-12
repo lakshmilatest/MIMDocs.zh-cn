@@ -5,15 +5,16 @@ keywords:
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
-ms.date: 03/24/2017
+ms.date: 05/08/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 
-translationtype: Human Translation
-ms.sourcegitcommit: 77ecdb91ccfdb1afec830e9662163ab9a7ef250c
-ms.openlocfilehash: dc68c4dcf2ae2d347e10930613bd32ca02031f8b
-ms.lasthandoff: 03/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3797f5789bb4e48836eb21776dafd5a2e0e11613
+ms.openlocfilehash: fbdebd59249667a0e60d3a248f183bcb6a75085a
+ms.contentlocale: zh-cn
+ms.lasthandoff: 05/09/2017
 
 
 ---
@@ -40,9 +41,9 @@ Technical Preview 5 之前的 Windows Server 2016 早期技术预览版不可与
 如果实验室环境中尚无“CORP”域，则需要为该域额外添加一个域控制器。 “CORP”域控制器可运行 Windows Server 2016 或 Windows Server 2012 R2。
 
 
-执行[入门指南](/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services.md)中所述的安装，**下述所示除外**：
+执行[入门指南](privileged-identity-management-for-active-directory-domain-services.md)中所述的安装，**下述所示除外**：
 
--   如果正在新建 CORP 域，则在按照[步骤 1 - 准备 CORP 域控制器](/microsoft-identity-manager/pam/step-1-prepare-corp-domain.md)中的说明操作时，可选择根据需要将 CORP 域配置为位于 Windows Server 2016 功能级别上。 **若选择此选项，请进行以下调整**：
+-   如果正在新建 CORP 域，则在按照[步骤 1 - 准备 CORP 域控制器](step-1-prepare-corp-domain.md)中的说明操作时，可选择根据需要将 CORP 域配置为位于 Windows Server 2016 功能级别上。 **若选择此选项，请进行以下调整**：
 
     -   如果使用 Windows Server 2016 介质，则安装选项将称为 Windows Server 2016（带桌面版体验的服务器）。
 
@@ -56,7 +57,7 @@ Technical Preview 5 之前的 Windows Server 2016 早期技术预览版不可与
 
 -   如果选择使用 Windows Server 2012 R2 作为 CORPDC 的操作系统，则必须在 CORPDC 上安装修补程序 2919442、2919355[和更新 3155495](http://support.microsoft.com/kb/3156418)。
 
--   按照[步骤 2 - 准备 PRIV 域控制器](/microsoft-identity-manager/pam/step-2-prepare-priv-domain-controller.md)中的说明操作，下述调整除外：
+-   按照[步骤 2 - 准备 PRIV 域控制器](step-2-prepare-priv-domain-controller.md)中的说明操作，下述调整除外：
 
     -   使用 Windows Server 2016 介质进行安装。 安装选项将称为 Windows Server 2016（带桌面版体验的服务器）。
 
@@ -115,19 +116,19 @@ Technical Preview 5 之前的 Windows Server 2016 早期技术预览版不可与
     ```
 
 
--   按照[步骤 3 - 准备 PAM 服务器](/microsoft-identity-manager/pam/step-3-prepare-pam-server.md)中的说明操作并进行下述调整。
+-   按照[步骤 3 - 准备 PAM 服务器](step-3-prepare-pam-server.md)中的说明操作并进行下述调整。
 
     -   若在 Windows Server 2016 上进行安装，请注意“ApplicationServer”角色不可用。
 
     -   若在 Windows Server 2016 上安装 MIM，**则不可安装 SharePoint 2013**。
 
--   按照[步骤 4 – 在 PAM 服务器和工作站上安装 MIM 组件](/microsoft-identity-manager/pam/step-4-install-mim-components-on-pam-server.md)中的说明操作并进行下述调整。
+-   按照[步骤 4 – 在 PAM 服务器和工作站上安装 MIM 组件](step-4-install-mim-components-on-pam-server.md)中的说明操作并进行下述调整。
 
     -   安装 MIM 服务和 PAM 组件的用户**必须在 AD 中具有到 PRIV 域的写权限**，因为 MIM 安装将创建新的 AD OU“PAM 对象”。
 
     -   如果未安装 SharePoint，请不要安装 MIM 门户。
 
--   按照[步骤 5 - 建立信任](/microsoft-identity-manager/pam/step-5-establish-trust-between-priv-corp-forests.md)中的说明操作并进行下述调整：
+-   按照[步骤 5 - 建立信任](step-5-establish-trust-between-priv-corp-forests.md)中的说明操作并进行下述调整：
 
     -   建立单向信任时，仅指定前两个 PowerShell 命令（get-credential 和 New-PAMTrust），请**不要执行 New-PAMDomainConfiguration 命令**。
 
@@ -147,7 +148,7 @@ Technical Preview 5 之前的 Windows Server 2016 早期技术预览版不可与
 
 ## <a name="more-information"></a>更多信息
 
-- [Active Directory 域服务的 Privileged Access Management](/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services.md)
-- [为 Privileged Access Management 配置 MIM 环境](/microsoft-identity-manager/pam/configuring-mim-environment-for-pam.md)
-- [使用脚本配置 PAM](/microsoft-identity-manager/pam/sp1-pam-configure-using-scripts.md)
+- [Active Directory 域服务的 Privileged Access Management](privileged-identity-management-for-active-directory-domain-services.md)
+- [为 Privileged Access Management 配置 MIM 环境](configuring-mim-environment-for-pam.md)
+- [使用脚本配置 PAM](sp1-pam-configure-using-scripts.md)
 
