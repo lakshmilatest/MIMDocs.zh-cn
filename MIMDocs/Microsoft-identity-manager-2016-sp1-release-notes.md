@@ -34,7 +34,7 @@ ms.lasthandoff: 05/09/2017
 
 ### <a name="mim"></a>MIM
 
-- **最终用户自助服务的 MIM 门户跨浏览器兼容性：**在此 Service Pack 中，我们引入了对大多数主流浏览器的支持。 现在，用户可以访问并与 MIM 门户交互，以从 Edge、Chrome 和 Safari 实现自助服务组和配置文件管理。
+- **最终用户自助服务的 MIM 门户跨浏览器兼容性：**在此 Service Pack 中，我们引入了对大多数主流浏览器的支持。 现在，用户可以访问并与 MIM 门户交互，以从 Microsoft Edge、Chrome 和 Safari 实现自助服务组和配置文件管理。
 
 - **Exchange Online 的 MIM 服务支持：**MIM 服务长期以来一直支持发送和接收电子邮件来进行审批和通知。 在 SP1 MIM 之前，仅支持 Exchange Server 或 SMTP。 有了 Service Pack 1，MIM 服务可以使用 Office365 Exchange 联机帐户发送和接收请求以及电子邮件通知。
 
