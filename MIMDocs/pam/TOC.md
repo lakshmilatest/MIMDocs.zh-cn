@@ -32,8 +32,3 @@
 ### [步骤 8 PAM 部署验证](sp1-step8-pam-deployment-verification.md)
 ### [附录](sp1-pam-deployment-addendum.md)
 # [开发人员参考](/microsoft-identity-manager/reference/microsoft-identity-manager-2016-developer-reference)
-
-
-<!--HONumber=Feb17_HO3-->
-
-
