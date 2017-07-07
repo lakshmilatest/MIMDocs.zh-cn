@@ -40,8 +40,3 @@
 #### [获取挂起的 PAM 请求](privileged-access-management-get-pending-requests.md)
 #### [批准或拒绝挂起的 PAM 请求](privileged-access-management-approve-reject-pending-request.md)
 #### [获取 PAM 会话信息](privileged-access-management-get-session-info.md)
-
-
-<!--HONumber=Jan17_HO3-->
-
-
