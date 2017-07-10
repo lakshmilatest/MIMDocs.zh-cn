@@ -10,22 +10,24 @@ ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 1ff73d0bdfcbcb4ab79d0d81feca9abdc33f9213
 ms.openlocfilehash: 1e2fb9a9ae508ab601ebad1dec7acc21dc44d13e
-ms.lasthandoff: 04/04/2017
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/10/2017
 
 
 
 ---
-# <a name="mim-sp1-4414360--service-dynamic-logging"></a>MIM SP1 (4.4.1436.0) 服务动态日志记录
+<a id="mim-sp1-4414360--service-dynamic-logging" class="xliff"></a>
+# MIM SP1 (4.4.1436.0) 服务动态日志记录
 在 4.4.1436.0 中引入了新的日志记录功能。 这使得管理员和支持工程师无需重启管理服务即可打开日志记录功能。
 
 安装后，将在 Microsoft.ResourceManagement.Service.exe.config 中看到以下新行
 
-*    行 6：``<section name="dynamicLogging" type="Microsoft.ResourceManagement.Utilities.DynamicLoggingSection, Microsoft.ResourceManagement.Service" />``
-*    行 8：``<dynamicLogging mode="true" loggingLevel="Verbose" />``
-*    行 266：``</system.diagnostics> ``
+*   行 6：``<section name="dynamicLogging" type="Microsoft.ResourceManagement.Utilities.DynamicLoggingSection, Microsoft.ResourceManagement.Service" />``
+*   行 8：``<dynamicLogging mode="true" loggingLevel="Verbose" />``
+*   行 266：``</system.diagnostics> ``
 
 ![高亮部分显示新的动态日志记录条目](media/mim-service-dynamic-logging/screen01.png)
 

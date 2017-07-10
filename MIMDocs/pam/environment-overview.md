@@ -12,15 +12,17 @@ ms.technology: active-directory-domain-services
 ms.assetid: 479db14c-1bfb-4d7c-a344-cd718a01f328
 ms.reviewer: mwahl
 ms.suite: ems
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
 ms.openlocfilehash: 3e6c5a70c6b9ed140a56135676bbd14a84504317
-ms.lasthandoff: 05/02/2017
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/10/2017
 
 
 ---
 
-# <a name="environment-overview"></a>环境概述
+<a id="environment-overview" class="xliff"></a>
+# 环境概述
 
 Privileged Access Management 与具有各自分开的驱动器的虚拟机 (VM) 协同工作，这些驱动器在共享网络上相互连接。 可以通过 Windows 8.1、Windows Server 2012 R2 或其他操作系统平台托管这些虚拟机。
 

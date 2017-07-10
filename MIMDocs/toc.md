@@ -1,116 +1,232 @@
+
 # [了解和探索](microsoft-identity-manager-2016.md)
+
 ## [什么是 MIM 2016？](microsoft-identity-manager-2016.md)
+
 ## [Service Pack 1 新增功能](Microsoft-identity-manager-2016-sp1-release-notes.md)
+
 ### [MIM2016 SP1 PAM 部署脚本](sp1-deployment-scripts.md)
+
 ## [Azure 中的混合报告](identity-manager-hybrid-reporting-azure.md)
+
 # [规划和设计](microsoft-identity-manager-2016-supported-platforms.md)
+
 ## [支持的平台](microsoft-identity-manager-2016-supported-platforms.md)
+
 ## [连接到目录](supported-management-agents.md)
+
 ## [容量规划](capacity-planning-guide.md)
+
 ## [部署拓扑](topology-considerations.md)
+
 # [部署和使用](microsoft-identity-manager-deploy.md)
+
 ## [首次部署](microsoft-identity-manager-deploy.md)
+
 ### [域设置](preparing-domain.md)
+
 ### [服务器设置：Windows Server](prepare-server-ws2012r2.md)
+
 ### [服务器设置：SQL](prepare-server-sql2014.md)
+
 ### [服务器设置：SharePoint](prepare-server-sharepoint.md)
+
 ### [服务器设置：Exchange](prepare-server-exchange.md)
+
 ### [安装 MIM：同步](install-mim-sync.md)
+
 ### [安装 MIM：服务和门户](install-mim-service-portal.md)
+
 ### [安装 MIM：同步数据库](install-mim-sync-ad-service.md)
+
 ## [从 Forefront Identity Manager 2010 R2 升级](microsoft-identity-manager-2016-upgrade-from-fim-2010-R2.md)
+
 ## [密码更改通知服务](deploying-mim-password-change-notification-service-on-domain-controller.md)
+
 ## [Identity Manager 混合报告](working-with-identity-manager-hybrid-reporting.md)
+
 ## [自助服务密码重置](working-with-self-service-password-reset.md)
+
 ## [MIM 证书管理器](working-with-mim-certificate-manager.md)
+
 ### [注册智能卡](certificate-manager-for-non-administrators.md)
+
 ### [创建软件证书](certificate-manager-for-software-certificates.md)
+
 # [使用 Privileged Access Management](./pam/privileged-identity-management-for-active-directory-domain-services.md)
+
 ## [了解 PAM](./pam/privileged-identity-management-for-active-directory-domain-services.md)
+
 ### [了解组件](./pam/principles-of-operation.md)
+
 ## [计划 PAM 部署](./pam/environment-overview.md)
+
 ### [环境概述](./pam/environment-overview.md)
+
 ### [层模型](./pam/tier-model-for-partitioning-administrative-privileges.md)
+
 ### [计划堡垒环境](./pam/planning-bastion-environment.md)
+
 ### [定义角色](./pam/defining-roles-for-pam.md)
+
 ### [高可用性和灾难恢复](./pam/high-availability-disaster-recovery-considerations-bastion-environment.md)
+
 ### [硬件和软件要求](./pam/hardware-software-requirements.md)
+
 ## [为 Privileged Access Management 配置 MIM](./pam/configuring-mim-environment-for-pam.md)
+
 ### [步骤 1 - CORP 域](./pam/step-1-prepare-corp-domain.md)
+
 ### [步骤 2 - PRIV 域控制器](./pam/step-2-prepare-priv-domain-controller.md)
+
 ### [步骤 3 - PAM 服务器](./pam/step-3-prepare-pam-server.md)
+
 ### [步骤 4 - 在 PAM 服务器上安装 MIM](./pam/step-4-install-mim-components-on-pam-server.md)
+
 ### [步骤 5 - 在 PRIV 和 CORP 之间建立信任关系](./pam/step-5-establish-trust-between-priv-corp-forests.md)
+
 ### [步骤 6 - 创建特权帐户](./pam/step-6-transition-group-to-pam.md)
+
 ### [步骤 7 - 提升用户的访问权限](./pam/step-7-elevate-user-access.md)
+
 ### [通过 Windows Server 2016 部署 MIM PAM](./pam/deploy-pam-with-windows-server-2016.md)
+
 ### [设置 Azure MFA](./pam/use-azure-mfa-for-activation.md)
+
 ## [使用脚本配置 PAM](./pam/sp1-pam-configure-using-scripts.md)
+
 ### [步骤 1 配置 Priv 域](./pam/sp1-step1-configuring-priv-domain.md)
+
 ### [步骤 2 配置 CORP 域](./pam/sp1-step2-configuring-corp-domain.md)
+
 ### [步骤 3 配置 SQL](./pam/sp1-step3-installing-configuring-sql.md)
+
 ### [步骤 4 配置 SharePoint](./pam/sp1-step4-configuring-sharepoint.md)
+
 ### [步骤 5 安装/配置 PAM](./pam/sp1-step5-configuring-pam.md)
+
 ### [步骤 6 安装 PAM 信任](./pam/sp1-step6-setup-pam-trust.md)
+
 ### [步骤 7 安装 SID 历史记录/SID 筛选](./pam/sp1-step7-setup-sidhistory-sidfiltering.md)
+
 ### [步骤 8 PAM 部署验证](./pam/sp1-step8-pam-deployment-verification.md)
+
 ### [附录](./pam/sp1-pam-deployment-addendum.md)
+
 # 管理基础结构
+
 ## [Best Practice Analyzer for Identity Manager](https://technet.microsoft.com/library/jj203402)（用于 Identity Manager 的最佳做法分析器）
+
 ## [密码更改通知服务](https://technet.microsoft.com/library/e27c0bc6-c808-4fdb-9e59-58feeb419308)
+
 ## 证书管理
+
 ### [CLMUtil 命令行工具](https://technet.microsoft.com/library/cc720647)
+
 ### [配置配置文件模板](https://technet.microsoft.com/library/cc708656)
+
 ### [使用证书管理网站](https://technet.microsoft.com/library/cc720560)
+
 ### [管理智能卡应用程序](https://technet.microsoft.com/library/cc708681)
+
 ### [备份和还原](https://technet.microsoft.com/library/dd883245)
+
 ## 自助服务密码重置
+
 ### [编程式用户注册](https://technet.microsoft.com/library/jj134294)
+
 ### [自定义](https://technet.microsoft.com/library/jj134312)
+
 ## 服务和门户
+
 ### [Kerberos](https://technet.microsoft.com/library/jj134299)
+
 ### [动态日志记录](./infrastructure/mim-service-dynamic-logging.md)
+
 ### [导出性能指南](https://technet.microsoft.com/library/hh322883)
+
 ## 报表
+
 ### [报表 - 自定义报表和扩展性](https://technet.microsoft.com/library/jj133861)
+
 ## [Microsoft Identity 软件：公开发布版本历史记录](https://blogs.technet.microsoft.com/iamsupport/idmbuildversions/)
+
 # [开发人员参考](./reference/microsoft-identity-manager-2016-developer-reference.md)
+
 ## [Microsoft Identity Manager 2016 开发人员参考](./reference/microsoft-identity-manager-2016-developer-reference.md)
+
 ### [证书管理 REST API 参考](./reference/certificate-management-rest-api-reference.md)
+
 #### [CM REST API 服务详细信息](./reference/certificate-management-rest-api-service-details.md)
+
 #### [示例注册演练](./reference/sample-enrollment-walkthrough.md)
+
 #### [获取配置文件模板](./reference/get-profile-templates.md)
+
 #### [策略操作](./reference/policy-operations.md)
+
 ##### [获取工作流策略](./reference/get-workflow-policy.md)
+
 ##### [获取智能卡策略](./reference/get-smartcard-policy.md)
+
 #### [请求操作](./reference/request-operations.md)
+
 ##### [创建请求](./reference/create-request.md)
+
 ##### [获取请求](./reference/get-request.md)
+
 ##### [取消、放弃或完成请求](./reference/cancel-abandon-complete-request.md)
+
 #### [证书请求操作](./reference/certificate-request-operations.md)
+
 ##### [获取证书请求生成选项](./reference/get-certificate-request-generation-options.md)
+
 ##### [获取证书响应](./reference/get-certificate-responses.md)
+
 #### [智能卡操作](./reference/smartcard-operations.md)
+
 ##### [将智能卡分配给请求](./reference/assign-smartcard-to-request.md)
+
 ##### [获取智能卡数据](./reference/get-smartcard-data.md)
+
 ##### [获取智能卡身份验证响应](./reference/get-smartcard-authentication-response.md)
+
 ##### [获取智能卡多样化管理密钥](./reference/get-smartcard-diversified-admin-key.md)
+
 ##### [获取智能卡建议的 PIN](./reference/get-smartcard-proposed-pin.md)
+
 ##### [更新智能卡状态](./reference/update-smartcard-status.md)
+
 #### [配置文件操作](./reference/profile-operations.md)
+
 ##### [获取配置文件数据](./reference/get-profile-data.md)
+
 ##### [获取配置文件状态操作](./reference/get-profile-state-operations.md)
+
 #### [证书操作](./reference/certificate-operations.md)
+
 ##### [获取智能卡或配置文件证书](./reference/get-smartcard-profile-certificates.md)
+
 ##### [获取用户证书](./reference/get-user-certificates.md)
+
 ### [Privileged Access Management REST API 参考](./reference/privileged-access-management-rest-api-reference.md)
+
 #### [PAM REST API 服务详细信息](./reference/privileged-access-management-rest-api-service-details.md)
+
 #### [获取 PAM 角色](./reference/privileged-access-management-get-roles.md)
+
 #### [创建 PAM 请求](./reference/privileged-access-management-create-request.md)
+
 #### [获取 PAM 请求](./reference/privileged-access-management-get-requests.md)
+
 #### [关闭 PAM 请求](./reference/privileged-access-management-close-request.md)
+
 #### [获取挂起的 PAM 请求](./reference/privileged-access-management-get-pending-requests.md)
+
 #### [批准或拒绝挂起的 PAM 请求](./reference/privileged-access-management-approve-reject-pending-request.md)
+
 #### [获取 PAM 会话信息](./reference/privileged-access-management-get-session-info.md)
+
 ## [技术参考]
+
 ### [Resource Control Display Configuration XML Reference](./reference/rcd-configuration-xml-reference.md)（资源控制显示配置 XML 参考）

@@ -12,15 +12,17 @@ ms.technology: active-directory-domain-services
 ms.assetid: eef248c4-b3b6-4b28-9dd0-ae2f0b552425
 ms.reviewer: mwahl
 ms.suite: ems
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
 ms.openlocfilehash: 1239ca2c0c6d376420723da01d7aa42821f5980f
-ms.lasthandoff: 05/02/2017
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/10/2017
 
 
 ---
 
-# <a name="step-5--establish-trust-between-priv-and-corp-forests"></a>步骤 5 - 在 PRIV 和 CORP 林之间建立信任关系
+<a id="step-5--establish-trust-between-priv-and-corp-forests" class="xliff"></a>
+# 步骤 5 - 在 PRIV 和 CORP 林之间建立信任关系
 
 >[!div class="step-by-step"]
 [« 步骤 4](step-4-install-mim-components-on-pam-server.md)
@@ -29,7 +31,8 @@ ms.lasthandoff: 05/02/2017
 
 对于每个 CORP 域（如 contoso.local），都需要在 PRIV 和 CONTOSO 域控制器之间建立信任关系。 以便 PRIV 域中的用户能够访问 CORP 域中的资源。
 
-## <a name="connect-each-domain-controller-to-its-counterpart"></a>将每个域控制器连接到其对应项
+<a id="connect-each-domain-controller-to-its-counterpart" class="xliff"></a>
+## 将每个域控制器连接到其对应项
 
 建立信任关系前，根据其他域控制器/DNS 服务器的 IP 地址，每个域控制器必须为其对应项的 DNS 名称解析进行配置。
 
@@ -47,7 +50,8 @@ ms.lasthandoff: 05/02/2017
 
     ![私钥的文件结构 - 屏幕截图](./media/PAM_GS_DNS_Manager.png)
 
-## <a name="establish-trust-on-pamsrv"></a>在 PAMSRV 中建立信任关系
+<a id="establish-trust-on-pamsrv" class="xliff"></a>
+## 在 PAMSRV 中建立信任关系
 
 在 PAMSRV 中，与每个域（如 CORPDC）建立单向信任关系，以使 CORP 域控制器信任 PRIV 林。
 
@@ -69,7 +73,8 @@ ms.lasthandoff: 05/02/2017
     New-PAMDomainConfiguration -SourceDomain "contoso" -Credentials $ca
     ```
 
-## <a name="give-forests-read-access-to-active-directory"></a>授予林对 Active Directory 的读取访问权限
+<a id="give-forests-read-access-to-active-directory" class="xliff"></a>
+## 授予林对 Active Directory 的读取访问权限
 
 对于现有的每个林，启用 PRIV 管理员和监视服务对 AD 的读取访问权限。
 
@@ -92,7 +97,8 @@ ms.lasthandoff: 05/02/2017
 
     输出还应指示“没有为此信任关系启用 SID 筛选功能”。 有关详细信息，请参阅 [Disable SID filter quarantining](http://technet.microsoft.com/library/cc772816.aspx)（禁用 SID 筛选隔离功能）。
 
-## <a name="start-the-monitoring-and-component-services"></a>启动监控和组件服务
+<a id="start-the-monitoring-and-component-services" class="xliff"></a>
+## 启动监控和组件服务
 
 1.  以 PRIV 域管理员 (PRIV\Administrator) 身份登录 PAMSRV。
 
