@@ -12,25 +12,29 @@ ms.technology: active-directory-domain-services
 ms.assetid: c6e3cd02-1e32-4194-a8ed-3a0b3d022a43
 ms.reviewer: mwahl
 ms.suite: ems
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
 ms.openlocfilehash: 4c3b43e50403890572e77773191a821cf247269c
-ms.lasthandoff: 05/02/2017
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/10/2017
 
 
 ---
 
-# <a name="tier-model-for-partitioning-administrative-privileges"></a>用于对管理权限进行划分的层模型
+<a id="tier-model-for-partitioning-administrative-privileges" class="xliff"></a>
+# 用于对管理权限进行划分的层模型
 
 在当前的威胁环境中，如果攻击者获取了你的系统还不算是一个问题，那什么时候才是问题？ 实际上，内部安全与强大的外围防御同样重要。 本文介绍了一种安全模型，旨在通过从高风险区隔离高特权活动以防止特权提升。 该模型在提供一个良好的用户体验的同时仍坚持了最佳实践和安全原则。
 
-## <a name="elevation-of-privilege-in-active-directory-forests"></a>Active Directory 林中的特权提升
+<a id="elevation-of-privilege-in-active-directory-forests" class="xliff"></a>
+## Active Directory 林中的特权提升
 
 获得对 Windows Server Active Directory (AD) 林永久管理权限的用户、服务或应用程序帐户会为组织的任务和业务带来大量风险。 这些帐户通常是攻击者的目标，因为如果它们遭到破坏，那么攻击者将拥有连接到域中其他服务器或应用程序的权限。
 
 层模型基于管理员所管理的资源在他们之间创建分区。 控制用户工作站的管理员与那些控制应用程序或管理企业标识的管理员相分离。 有关此模型的详细信息，请参阅 [Securing privileged access reference material](http://aka.ms/tiermodel)（保护特权访问的参考资料）。
 
-## <a name="restricting-credential-exposure-with-logon-restrictions"></a>通过登录限制来限制凭据公开
+<a id="restricting-credential-exposure-with-logon-restrictions" class="xliff"></a>
+## 通过登录限制来限制凭据公开
 
 减少管理帐户的凭据被盗风险通常需要重新调整管理实践来限制向攻击者公开。 第一步，建议组织应当执行以下操作：
 

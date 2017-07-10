@@ -16,12 +16,13 @@ ms.translationtype: Human Translation
 ms.sourcegitcommit: 3797f5789bb4e48836eb21776dafd5a2e0e11613
 ms.openlocfilehash: 12c60e12dc5662ff0313e21bb9180b3709969af6
 ms.contentlocale: zh-cn
-ms.lasthandoff: 05/09/2017
+ms.lasthandoff: 07/10/2017
 
 
 ---
 
-# <a name="mim2016-sp1-pam-deployment-scripts"></a>MIM2016 SP1 PAM 部署脚本
+<a id="mim2016-sp1-pam-deployment-scripts" class="xliff"></a>
+# MIM2016 SP1 PAM 部署脚本
 
 在此 Service Pack 中，我们引入了一套部署脚本，更方便部署 PAM。 这些脚本可在下载中心获取。 在尝试使用脚本之前，确保下列假设适用于你的环境，这一点很重要。
 

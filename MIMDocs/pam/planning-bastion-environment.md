@@ -12,15 +12,17 @@ ms.technology: active-directory-domain-services
 ms.assetid: bfc7cb64-60c7-4e35-b36a-bbe73b99444b
 ms.reviewer: mwahl
 ms.suite: ems
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
 ms.openlocfilehash: b459906f0c8d2c631e9b63813e208c9098ea5a4e
-ms.lasthandoff: 05/02/2017
+ms.contentlocale: zh-cn
+ms.lasthandoff: 07/10/2017
 
 
 ---
 
-# <a name="planning-a-bastion-environment"></a>规划堡垒环境
+<a id="planning-a-bastion-environment" class="xliff"></a>
+# 规划堡垒环境
 
 向 Active Directory 添加具有专用管理林的堡垒环境使组织可以在安全控制强于自己现有生产环境的环境中轻松地管理管理帐户、工作站和组。
 
@@ -28,25 +30,29 @@ ms.lasthandoff: 05/02/2017
 
 除了专用管理林之外，可能还用到其他技术。 其中包括限制公开管理凭据的位置、限制该林中用户的角色权限，并确保在用于标准用户活动（例如，电子邮件和 Web 浏览）的主机上不执行管理任务。
 
-## <a name="best-practice-considerations"></a>最佳做法注意事项
+<a id="best-practice-considerations" class="xliff"></a>
+## 最佳做法注意事项
 
 专用管理林是标准的单一域 Active Directory 林，用于 Active Directory 管理。 使用管理林和域的优势是，比生产林具有更多的安全措施，因为生产林的用例设有限制。 而且，由于此林处于隔离状态，并且不信任组织的现有林，因此另一林的安全损害将不会扩展到此专用林。
 
 管理林设计具有以下注意事项：
 
-### <a name="limited-scope"></a>作用域受限
+<a id="limited-scope" class="xliff"></a>
+### 作用域受限
 
 管理林的价值在于提供高级别的安全保障，从而减少了攻击面。 此林可容纳其他管理功能和应用程序，但每增大一次作用域，都将增大林及其资源的攻击面。 目标是限制林的功能，以最小化攻击面。
 
 根据分区管理权限的[层模型](tier-model-for-partitioning-administrative-privileges.md)，专用管理林中的帐户应该在单层中，通常是第 0 层或第 1 层。 如果一个林在第 1 层中，请考虑将其限定于应用程序（例如财务应用）或用户社区（例如外包 IT 供应商）的特定范围。
 
-### <a name="restricted-trust"></a>信任受限
+<a id="restricted-trust" class="xliff"></a>
+### 信任受限
 
 生产 CORP 林应信任管理 PRIV 林，反之则不行。 这可以是域信任，也可以是林信任。 管理林域不需要信任托管的域和林来管理 Active Directory，尽管其他应用程序可能需要双向信任关系、安全验证以及测试。
 
 应使用选择性身份验证，以确保管理林中的帐户仅使用适当的生产主机。 至于在 Active Directory 中维护域控制器和委派权限，这通常需要将域控制器的“允许登录”权限授予管理林中指定的第 0 层管理帐户。 有关详细信息，请参阅 [Configuring Selective Authentication Settings](http://technet.microsoft.com/library/cc816580.aspx)（配置选择性身份验证设置）。
 
-## <a name="maintain-logical-separation"></a>保持逻辑分隔
+<a id="maintain-logical-separation" class="xliff"></a>
+## 保持逻辑分隔
 
 为了确保堡垒环境不受到组织 Active Directory 中的现有或未来安全事件影响，为堡垒环境准备系统时，应使用以下准则：
 
@@ -62,7 +68,8 @@ ms.lasthandoff: 05/02/2017
 
 - 管理堡垒环境服务器的用户必须从现有环境中的管理员无法访问的工作站进行登录，以避免泄露堡垒环境的凭据。
 
-## <a name="ensure-availability-of-administration-services"></a>确保管理服务的可用性
+<a id="ensure-availability-of-administration-services" class="xliff"></a>
+## 确保管理服务的可用性
 
 由于应用程序管理将过渡到堡垒环境，因此需要考虑如何提供足够的可用性以满足这些应用程序的要求。 包括以下技术：
 
@@ -74,7 +81,8 @@ ms.lasthandoff: 05/02/2017
 
 - 每次对专用管理林中的用户或角色定义进行更改后，都要保留 AD 和 SQL 的备份副本。
 
-## <a name="configure-appropriate-active-directory-permissions"></a>配置适当的 Active Directory 权限
+<a id="configure-appropriate-active-directory-permissions" class="xliff"></a>
+## 配置适当的 Active Directory 权限
 
 应根据 Active Directory 管理的要求，对管理林配置最小特权。
 
@@ -92,7 +100,8 @@ ms.lasthandoff: 05/02/2017
 
 - **服务帐户**：Microsoft Identity Manager、SQL Server 以及其他软件都需要这样的帐户。
 
-## <a name="harden-the-hosts"></a>加强主机
+<a id="harden-the-hosts" class="xliff"></a>
+## 加强主机
 
 加入到管理林的所有主机（包括域控制器、服务器和工作站）都应安装了最新的操作系统及 Service Pack 并保持最新。
 
@@ -100,7 +109,8 @@ ms.lasthandoff: 05/02/2017
 
 - 管理林主机应使用安全更新自动更新。 虽然这可能产生中断域控制器维护操作的风险，但它仍极大地缓解了未安装修补程序的漏洞带来的安全风险。
 
-### <a name="identify-administrative-hosts"></a>标识管理主机
+<a id="identify-administrative-hosts" class="xliff"></a>
+### 标识管理主机
 
 系统或工作站的风险应通过在系统中执行最高风险的活动进行衡量，如 Internet 浏览、发送和接收电子邮件，或者使用其他应用程序处理未知或不受信任的内容。
 
@@ -114,7 +124,8 @@ ms.lasthandoff: 05/02/2017
 
 - 承载需要管理的应用程序的服务器，并且无法通过使用 RDP 与受限的管理模式或 Windows PowerShell 远程进行访问。
 
-### <a name="deploy-dedicated-administrative-workstations"></a>部署专用管理工作站
+<a id="deploy-dedicated-administrative-workstations" class="xliff"></a>
+### 部署专用管理工作站
 
 虽然不太方便，但必须为具有高效管理凭据的用户专门配备单独的加强型工作站。 请使用等于或大于权限级别（委托给凭据）的安全级别提供主机，这一点至关重要。 为实现其他保护，请考虑采用以下方法：
 
@@ -144,13 +155,15 @@ ms.lasthandoff: 05/02/2017
 
 其中的某些衡量方式看起来很极端，但最近几年的公开启示都显示出技术精湛的攻击者具有破坏目标的强大能力。
 
-## <a name="prepare-existing-domains-to-be-managed-by-the-bastion-environment"></a>准备在堡垒环境中管理的现有域
+<a id="prepare-existing-domains-to-be-managed-by-the-bastion-environment" class="xliff"></a>
+## 准备在堡垒环境中管理的现有域
 
 MIM 使用 PowerShell cmdlet 在现有 AD 域和堡垒环境中的专用管理林之间建立信任关系。 在部署堡垒环境之后并且在任何用户或组转换为 JIT 之前，`New-PAMTrust` 和 `New-PAMDomainConfiguration` cmdlet 将更新域信任关系并创建 AD 和 MIM 所需的项目。
 
 当现有 Active Directory 拓扑发生改变时，可使用 `Test-PAMTrust`、 `Test-PAMDomainConfiguration`、 `Remove-PAMTrust` 和 `Remove-PAMDomainConfiguration` cmdlet 来更新信任关系。
 
-## <a name="establish-trust-for-each-forest"></a>为每个林建立信任关系
+<a id="establish-trust-for-each-forest" class="xliff"></a>
+## 为每个林建立信任关系
 
 必须为每个现有林都运行一次 `New-PAMTrust` cmdlet。 该命令在管理域中的 MIM 服务计算机上调用。 此命令的参数是现有林顶级域的域名以及该域管理员的凭据。
 
@@ -160,11 +173,13 @@ New-PAMTrust -SourceForest "contoso.local" -Credentials (get-credential)
 
 建立信任关系后，要对每个域都进行配置，以便从堡垒环境中进行管理，如下一部分中所述。
 
-## <a name="enable-management-of-each-domain"></a>启用每个域的管理
+<a id="enable-management-of-each-domain" class="xliff"></a>
+## 启用每个域的管理
 
 启用现有域管理具有七项要求。
 
-### <a name="1-a-security-group-on-the-local-domain"></a>1.本地域上的安全组
+<a id="1-a-security-group-on-the-local-domain" class="xliff"></a>
+### 1.本地域上的安全组
 
 现有域中必须有一个组，其名称为后跟三个美元符号的 NetBIOS 域名（例如，CONTOSO$$$）。 组作用域必须为“本地域”，并且组类型必须为“安全”。 在专用管理林中创建与此域中的组具有相同“安全”标识符的组时需要满足此要求。 通过以下 PowerShell 命令创建此组，由现有域的管理员执行并在已加入到现有域的工作站上运行：
 
@@ -172,7 +187,8 @@ New-PAMTrust -SourceForest "contoso.local" -Credentials (get-credential)
 New-ADGroup -name 'CONTOSO$$$' -GroupCategory Security -GroupScope DomainLocal -SamAccountName 'CONTOSO$$$'
 ```
 
-### <a name="2-success-and-failure-auditing"></a>2.成功和失败的审核
+<a id="2-success-and-failure-auditing" class="xliff"></a>
+### 2.成功和失败的审核
 
 对于审核，域控制器上的组策略设置必须包括“审核”帐户管理和“审核”目录服务访问的成功和失败审核。 可以通过组策略管理控制台实现此目的，由现有域的管理员执行并在已加入到现有域的工作站上运行：
 
@@ -202,7 +218,8 @@ New-ADGroup -name 'CONTOSO$$$' -GroupCategory Security -GroupScope DomainLocal -
 
 消息“计算机策略更新成功完成。” 应在几分钟之后出现。
 
-### <a name="3-allow-connections-to-the-local-security-authority"></a>3.允许连接到本地安全机构
+<a id="3-allow-connections-to-the-local-security-authority" class="xliff"></a>
+### 3.允许连接到本地安全机构
 
 域控制器必须允许本地安全机构 (LSA) 的 TCP/IP 上的 RPC 连接（来自堡垒环境）。 在较旧版本的 Windows Server 上，必须在注册表中启用 LSA 中的 TCP/IP 支持：
 
@@ -210,7 +227,8 @@ New-ADGroup -name 'CONTOSO$$$' -GroupCategory Security -GroupScope DomainLocal -
 New-ItemProperty -Path HKLM:SYSTEM\\CurrentControlSet\\Control\\Lsa -Name TcpipClientSupport -PropertyType DWORD -Value 1
 ```
 
-### <a name="4-create-the-pam-domain-configuration"></a>4.创建 PAM 域配置
+<a id="4-create-the-pam-domain-configuration" class="xliff"></a>
+### 4.创建 PAM 域配置
 
 `New-PAMDomainConfiguration` cmdle 必须在管理域中的 MIM 服务计算机上运行。 此命令的参数是现有域的域名以及该域管理员的凭据。
 
@@ -218,7 +236,8 @@ New-ItemProperty -Path HKLM:SYSTEM\\CurrentControlSet\\Control\\Lsa -Name TcpipC
  New-PAMDomainConfiguration -SourceDomain "contoso" -Credentials (get-credential)
 ```
 
-### <a name="5-give-read-permissions-to-accounts"></a>5.为帐户授予读取权限
+<a id="5-give-read-permissions-to-accounts" class="xliff"></a>
+### 5.为帐户授予读取权限
 
 堡垒林中用于建立角色（使用 `New-PAMUser` 和 `New-PAMGroup` cmdlet 的管理员）的帐户，以及 MIM 监视器服务使用的帐户需要在该域中拥有读取权限。
 
@@ -240,15 +259,18 @@ New-ItemProperty -Path HKLM:SYSTEM\\CurrentControlSet\\Control\\Lsa -Name TcpipC
 
 18. 关闭“Active Directory 用户和计算机”。
 
-### <a name="6-a-break-glass-account"></a>6.Break glass 帐户
+<a id="6-a-break-glass-account" class="xliff"></a>
+### 6.Break glass 帐户
 
 如果特权访问管理项目的目标是减少向域永久分配的具有域管理特权的帐户数量，则域中必须具有 *break glass* 帐户，以防止信任关系以后出现问题。 每个域中都应存在用于紧急访问生产林的帐户，并且应只能登录到预控制器。 对于具有多个站点的组织，可能还需要其他帐户以备不时之需。
 
-### <a name="7-update-permissions-in-the-bastion-environment"></a>7.在堡垒环境中更新权限
+<a id="7-update-permissions-in-the-bastion-environment" class="xliff"></a>
+### 7.在堡垒环境中更新权限
 
 查看该域的系统容器中 AdminSDHolder 对象上的特权。 *AdminSDHolder* 对象具有唯一的访问控制列表 (ACL)，用于控制安全主体成员（为内置特权 Active Directory 组的成员）的权限。 请注意，如果对默认权限进行了任何更改，都会影响到域中具有管理权限的用户，因为这些权限将不适用于帐户在堡垒环境中的用户。
 
-## <a name="select-users-and-groups-for-inclusion"></a>选择要包含的用户和组
+<a id="select-users-and-groups-for-inclusion" class="xliff"></a>
+## 选择要包含的用户和组
 
 下一步是定义 PAM 角色，并关联它们应当访问的用户和组。 对于标识为在堡垒环境中处于托管状态的层而言，这通常为用户和组的一个子集。 有关详细信息，请参阅[定义 Privileged Access Management 角色](defining-roles-for-pam.md)。
 
