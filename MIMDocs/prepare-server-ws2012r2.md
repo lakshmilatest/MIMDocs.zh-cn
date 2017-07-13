@@ -12,15 +12,14 @@ ms.technology: security
 ms.assetid: 51507d0a-2aeb-4cfd-a642-7c71e666d6cd
 ms.reviewer: mwahl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 3623bffb099a83d0eba47ba25e9777c3d590e529
-ms.openlocfilehash: 1cb0d6cd310372ecaeff47c9cc4461ebc43b3390
-ms.lasthandoff: 01/24/2017
-
-
+ms.openlocfilehash: a0241964edb21ca4bf938ae84693b9947f6e2efb
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/13/2017
 ---
-
-# <a name="set-up-an-identity-management-server-windows-server-2012-r2"></a>设置标识管理服务器：Windows Server 2012 R2
+# 设置标识管理服务器：Windows Server 2012 R2
+<a id="set-up-an-identity-management-server-windows-server-2012-r2" class="xliff"></a>
 
 >[!div class="step-by-step"]
 [« 准备域](preparing-domain.md)
@@ -32,7 +31,8 @@ ms.lasthandoff: 01/24/2017
 > - 域名 - **contoso**
 > - 密码 - **Pass@word1**
 
-## <a name="join-windows-server-2012-r2-to-your-domain"></a>将 Windows Server 2012 R2 加入到你的域中
+## 将 Windows Server 2012 R2 加入到你的域中
+<a id="join-windows-server-2012-r2-to-your-domain" class="xliff"></a>
 
 开始使用 Windows Server 2012 R2 计算机（具有最少 8GB 的 RAM）。 安装时，请指定“Windows Server 2012 R2 标准（带有 GUI 的服务器）x64”版本。
 
@@ -63,7 +63,8 @@ ms.lasthandoff: 01/24/2017
     Install-WindowsFeature Web-WebServer, Net-Framework-Features,rsat-ad-powershell,Web-Mgmt-Tools,Application-Server,Windows-Identity-Foundation,Server-Media-Foundation,Xps-Viewer –includeallsubfeature -restart -source d:\sources\SxS
     ```
 
-## <a name="configure-the-server-security-policy"></a>配置服务器安全策略
+## 配置服务器安全策略
+<a id="configure-the-server-security-policy" class="xliff"></a>
 
 将服务器安全策略设置为允许新创建的帐户以服务身份运行。
 
@@ -94,7 +95,8 @@ ms.lasthandoff: 01/24/2017
 12. 关闭本地安全策略窗口。
 
 
-## <a name="change-the-iis-windows-authentication-mode"></a>更改 IIS Windows 身份验证模式
+## 更改 IIS Windows 身份验证模式
+<a id="change-the-iis-windows-authentication-mode" class="xliff"></a>
 
 1.  打开 PowerShell 窗口。
 
@@ -109,4 +111,3 @@ ms.lasthandoff: 01/24/2017
 >[!div class="step-by-step"]  
 [« 准备域](preparing-domain.md)
 [SQL Server 2014 »](prepare-server-sql2014.md)
-

@@ -10,21 +10,14 @@ ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 1ef7b9816d265d17ef68fc54e010e655535dcdc8
-ms.openlocfilehash: 5ab70bac8cbd874153fa56cf7b181144c394ec04
-ms.contentlocale: zh-cn
-ms.lasthandoff: 07/10/2017
-
-
-
+ms.openlocfilehash: 60b28497f6abba14bd186cf2e2f2ce69b08693bc
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/13/2017
 ---
-
-
-
-
-<a id="how-do-i-provision-users-to-ad-ds" class="xliff"></a>
 # 如何将用户预配到 AD DS
+<a id="how-do-i-provision-users-to-ad-ds" class="xliff"></a>
 
 适用于：Microsoft Identity Manager 2016 SP1 (MIM)
 
@@ -32,20 +25,20 @@ ms.lasthandoff: 07/10/2017
 
 本指南包含以下内容：指导你完成将用户从 Microsoft® Identity Manager (MIM) 2016 预配到 Active Directory® 域服务 (AD DS) 的过程中所涉及的主要构建基块；概述如何验证方案是否按预期工作；针对使用 MIM 2016 管理 Active Directory 提供相关建议；列出其他信息来源。
 
-<a id="before-you-begin" class="xliff"></a>
 ## 准备工作
+<a id="before-you-begin" class="xliff"></a>
 
 
 本部分将介绍此文档范围内的相关信息。 “如何操作”指南一般面向已基本熟悉通过 MIM 同步对象的流程（相关[入门指南](http://go.microsoft.com/FWLink/p/?LinkId=190486)中有介绍）的用户。
 
-<a id="audience" class="xliff"></a>
 ### 受众
+<a id="audience" class="xliff"></a>
 
 
 本指南面向满足以下要求的信息技术 (IT) 专业人员：已基本了解 MIM 同步过程的工作原理；希望获得特定方案的实践经验和更多相关概念信息。
 
-<a id="prerequisite-knowledge" class="xliff"></a>
 ### 必备知识
+<a id="prerequisite-knowledge" class="xliff"></a>
 
 
 本文档假定你有权访问正在运行的 MIM 实例并具有以下文档中所述的配置简单同步方案的经验：
@@ -56,37 +49,37 @@ ms.lasthandoff: 07/10/2017
 
 本文档内容的范围限于充当这些介绍性文档的扩展。
 
-<a id="scope" class="xliff"></a>
 ### 范围
+<a id="scope" class="xliff"></a>
 
 
 本文档中概述的方案已进行简化，以满足基本实验室环境的要求。 重点在于帮助你了解所讨论的概念和技术。
 
 本文档有助于你开发一种解决方案，即使用 MIM 管理 AD DS 中的组。
 
-<a id="time-requirements" class="xliff"></a>
 ### 时间要求
+<a id="time-requirements" class="xliff"></a>
 
 
 本文档中的过程需要花费 90 到 120 分钟才能完成。
 
 此预估时间假定已配置测试环境且不包含设置测试环境所需的时间。
 
-<a id="getting-support" class="xliff"></a>
 ### 获取支持
+<a id="getting-support" class="xliff"></a>
 
 
 如果存在与本文档内容相关的问题，或者需要提供想要讨论的一般性反馈，请在 [Forefront Identity Manager 2010 论坛](http://go.microsoft.com/FWLink/p/?LinkId=189654)中发布消息。
 
-<a id="scenario-description" class="xliff"></a>
 ## 方案说明
+<a id="scenario-description" class="xliff"></a>
 
 
 虚构公司 Fabrikam 计划使用 MIM 管理公司 AD DS 中的用户帐户。 在此过程中，Fabrikam 需要将用户预配到 AD DS。 为了启动初始测试，Fabrikam 安装了包括 MIM 和 AD DS 的基本实验室环境。
 在该实验室环境中，Fabrikam 将测试包含 MIM 门户中手动创建的用户的方案。 此方案旨在将用户作为已启用预定义密码的用户预配到 AD DS。
 
-<a id="scenario-design" class="xliff"></a>
 ## 方案设计
+<a id="scenario-design" class="xliff"></a>
 
 
 若要使用本指南，必须具备三个体系结构组件：
@@ -106,8 +99,8 @@ ms.lasthandoff: 07/10/2017
 >[!NOTE]
 有关设置 MIM 的详细信息，请参阅 [FIM 安装指南](http://go.microsoft.com/FWLink/p/?LinkId=165845)。
 
-<a id="scenario-components-list" class="xliff"></a>
 ## 方案组件列表
+<a id="scenario-components-list" class="xliff"></a>
 
 
 下表列出了本指南中方案所包含的组件。
@@ -125,8 +118,8 @@ ms.lasthandoff: 07/10/2017
 
 
 
-<a id="scenario-steps" class="xliff"></a>
 ## 方案步骤
+<a id="scenario-steps" class="xliff"></a>
 
 
 本指南中概述的方案包括下图中所示的构建基块。
@@ -134,22 +127,22 @@ ms.lasthandoff: 07/10/2017
 ![方案步骤](media/how-provision-users-adds/image013.png)
 
 
-<a id="configuring-the-external-systems" class="xliff"></a>
 ## 配置外部系统
+<a id="configuring-the-external-systems" class="xliff"></a>
 
 
 本部分将说明需要在 MIM 环境外部创建的资源。
 
-<a id="step-1-create-the-ou" class="xliff"></a>
 ### 步骤 1：创建 OU
+<a id="step-1-create-the-ou" class="xliff"></a>
 
 
 需要 OU 作为预配示例用户的容器。 有关创建 OU 的详细信息，请参阅[新建组织单位](http://go.microsoft.com/FWLink/p/?LinkId=189655)。
 
 在 AD DS 中创建名为 MIMObjects 的 OU。
 
-<a id="step-2-create-the-active-directory-user-accounts" class="xliff"></a>
 ### 步骤 2：创建 Active Directory 用户帐户
+<a id="step-2-create-the-active-directory-user-accounts" class="xliff"></a>
 
 本指南中的方案需要 2 个 Active Directory 用户帐户：
 
@@ -160,14 +153,14 @@ ms.lasthandoff: 07/10/2017
 这两种情况都只需创建普通用户帐户。 本文档后面部分将介绍这两个帐户特定要求的详细信息。 有关创建用户的详细信息，请参阅[新建用户帐户](http://go.microsoft.com/FWLink/p/?LinkId=189656)。
 
 
-<a id="configuring-the-fim-synchronization-service" class="xliff"></a>
 ## 配置 FIM 同步服务
+<a id="configuring-the-fim-synchronization-service" class="xliff"></a>
 
 
 本部分中的配置步骤需要启动 FIM Synchronization Service Manager。
 
-<a id="creating-the-management-agents" class="xliff"></a>
 ### 创建管理代理
+<a id="creating-the-management-agents" class="xliff"></a>
 
 本指南中的方案需要创建 2 个管理代理：
 
@@ -175,8 +168,8 @@ ms.lasthandoff: 07/10/2017
 
 -   Fabrikam FIMMA - 用于 FIM 服务管理代理的管理代理。
 
-<a id="step-3-create-the-fabrikam-adma-management-agent" class="xliff"></a>
 ### 步骤 3：创建 Fabrikam ADMA 管理代理
+<a id="step-3-create-the-fabrikam-adma-management-agent" class="xliff"></a>
 
 配置用于 AD DS 的管理代理时，请指定与 AD DS 的数据交换中管理代理使用的帐户。 应使用普通用户帐户。 但若要从 AD DS 导入数据，该帐户必须有权轮询 DirSync 控件中的更改。 如果希望管理代理将数据导出到 AD DS，请授予帐户对目标 OU 的足够权限。 有关该主题的详细信息，请参阅[配置 ADMA 帐户](http://go.microsoft.com/FWLink/p/?LinkId=189657)。
 
@@ -207,8 +200,8 @@ ms.lasthandoff: 07/10/2017
 >[!Note]
 确保导入为 ExpectedRulesList 属性配置的属性流规则。
 
-<a id="step-4-create-the-fabrikam-fimma-management-agent" class="xliff"></a>
 ### 步骤 4：创建 Fabrikam FIMMA 管理代理
+<a id="step-4-create-the-fabrikam-fimma-management-agent" class="xliff"></a>
 
 配置 FIM 服务管理代理时，请指定与 FIM 服务的数据交换中管理代理使用的帐户。
 
@@ -239,8 +232,8 @@ ms.lasthandoff: 07/10/2017
 >[!NOTE]
  确保导入为 ExpectedRulesList 属性配置的属性流规则。
 
-<a id="step-5-create-the-run-profiles" class="xliff"></a>
 ### 步骤 5：创建运行配置文件
+<a id="step-5-create-the-run-profiles" class="xliff"></a>
 
 下表列出了需要为本指南中的方案创建的运行配置文件。
 
@@ -260,8 +253,8 @@ ms.lasthandoff: 07/10/2017
  验证环境中是否启用了预配。 可通过运行脚本实现此目的，请参阅使用 Windows PowerShell 启用预配 (http://go.microsoft.com/FWLink/p/?LinkId=189660)。
 
 
-<a id="configuring-the-fim-service" class="xliff"></a>
 ## 配置 FIM 服务
+<a id="configuring-the-fim-service" class="xliff"></a>
 
 
 本指南中的方案需要配置预配策略，如下图所示。
@@ -272,8 +265,8 @@ ms.lasthandoff: 07/10/2017
 
 若要配置 FIM 服务，可在 Windows Internet Explorer® 中导航到 http://localhost/identitymanagement。 在 MIM 门户页上，若要创建预配策略，请从“管理”部分转到相关页面。 若要验证配置，应运行[使用 Windows PowerShell 记录预配策略配置](http://go.microsoft.com/FWLink/p/?LinkId=189661)中的脚本。
 
-<a id="step-6-create-the-synchronization-rule" class="xliff"></a>
 ### 步骤 6：创建同步规则
+<a id="step-6-create-the-synchronization-rule" class="xliff"></a>
 
 下表显示了所需的 Fabrikam 预配同步规则的配置。 根据下表中的数据创建同步规则。
 
@@ -324,8 +317,8 @@ ms.lasthandoff: 07/10/2017
  >[!NOTE]
  重要提示：验证是否为以 DN 为目标的属性流选择“仅初始流”。                                                                          
 
-<a id="step-7-create-the-workflow" class="xliff"></a>
 ### 步骤 7：创建工作流
+<a id="step-7-create-the-workflow" class="xliff"></a>
 
 AD 预配工作流的目的是将 Fabrikam 预配同步规则添加到资源。 下表显示了此配置。  根据下表中的数据创建工作流。
 
@@ -344,8 +337,8 @@ AD 预配工作流的目的是将 Fabrikam 预配同步规则添加到资源。 
 
 
 
-<a id="step-8-create-the-mpr" class="xliff"></a>
 ### 步骤 8：创建 MPR
+<a id="step-8-create-the-mpr" class="xliff"></a>
 
 所需的 MPR 的类型为“集转换”并在资源成为“所有合同工”集的成员时被触发。 下表显示了此配置。  根据下表中的数据创建 MPR。
 
@@ -370,8 +363,8 @@ AD 预配工作流的目的是将 Fabrikam 预配同步规则添加到资源。 
 
 
 
-<a id="initializing-your-environment" class="xliff"></a>
 ## 初始化环境
+<a id="initializing-your-environment" class="xliff"></a>
 
 
 初始化阶段的目标如下所示：
@@ -380,8 +373,8 @@ AD 预配工作流的目的是将 Fabrikam 预配同步规则添加到资源。 
 
 -   将 Active Directory 结构引入 Active Directory 连接器空间。
 
-<a id="step-9-run-the-run-profiles" class="xliff"></a>
 ### 步骤 9：运行运行配置文件
+<a id="step-9-run-the-run-profiles" class="xliff"></a>
 
 下表列出了初始化阶段过程中的运行配置文件。  根据下表运行运行配置文件。
 
@@ -400,8 +393,8 @@ AD 预配工作流的目的是将 Fabrikam 预配同步规则添加到资源。 
 >[!NOTE]
 应验证出站同步规则是否已成功投影到 Metaverse。
 
-<a id="testing-the-configuration" class="xliff"></a>
 ## 测试配置
+<a id="testing-the-configuration" class="xliff"></a>
 
 
 本部分旨在测试你的实际配置。 若要测试配置，请执行以下操作：
@@ -414,8 +407,8 @@ AD 预配工作流的目的是将 Fabrikam 预配同步规则添加到资源。 
 
 4.  验证此用户是否在 AD DS 中存在。
 
-<a id="step-10-create-a-sample-user-in-mim" class="xliff"></a>
 ### 步骤 10：在 MIM 中创建示例用户
+<a id="step-10-create-a-sample-user-in-mim" class="xliff"></a>
 
 
 下表列出了示例用户的属性。 根据下表中的数据创建示例用户。
@@ -431,8 +424,8 @@ AD 预配工作流的目的是将 Fabrikam 预配同步规则添加到资源。 
 
 
 
-<a id="verify-the-provisioning-requisites-of-the-sample-user" class="xliff"></a>
 ### 验证示例用户的预配必备项
+<a id="verify-the-provisioning-requisites-of-the-sample-user" class="xliff"></a>
 
 
 若要将示例用户预配到 AD DS，必须满足两个前提条件：
@@ -441,16 +434,16 @@ AD 预配工作流的目的是将 Fabrikam 预配同步规则添加到资源。 
 
 2.  集用户必须位于出站同步规则的作用域中。
 
-<a id="step-11-verify-the-user-is-a-member-of-all-contractors" class="xliff"></a>
 ### 步骤 11：验证用户是否是“所有合同工”的成员
+<a id="step-11-verify-the-user-is-a-member-of-all-contractors" class="xliff"></a>
 
 若要验证用户是否是“所有合同工”集的成员，可打开集，然后单击“查看成员”。
 
 ![验证成员是否是“所有合同工”的成员](media/how-provision-users-adds/image022.jpg)
 
 
-<a id="step-12-verify-the-user-is-in-the-scope-of-the-outbound-synchronization-rule" class="xliff"></a>
 ### 步骤 12：验证用户是否位于出站同步规则的作用域中
+<a id="step-12-verify-the-user-is-in-the-scope-of-the-outbound-synchronization-rule" class="xliff"></a>
 
 若要验证用户是否位于出站同步规则的作用域中，可打开用户的属性页，然后在“预配”选项卡中查看“预期规则列表”特性。 “预期规则列表”特性应列出 AD 用户
 
@@ -462,8 +455,8 @@ AD 预配工作流的目的是将 Fabrikam 预配同步规则添加到资源。 
 
 
 
-<a id="step-13-synchronize-the-sample-group" class="xliff"></a>
 ### 步骤 13：同步示例组
+<a id="step-13-synchronize-the-sample-group" class="xliff"></a>
 
 
 在开始第一个测试对象同步周期之前，应在测试计划中运行的每个运行配置文件之后跟踪对象的预期状态。 测试计划应包括对象的一般状态（已创建、已更新或已删除）以及所需属性值。
@@ -535,15 +528,15 @@ Fabrikam FIMMA 上运行增量同步旨在执行以下几种操作：
 >[!IMPORTANT]
 每个运行配置文件都必须成功运行。
 
-<a id="step-14-verify-the-provisioned-user-in-ad-ds" class="xliff"></a>
 ### 步骤 14：验证 AD DS 中预配的用户
+<a id="step-14-verify-the-provisioned-user-in-ad-ds" class="xliff"></a>
 
 若要验证示例用户是否已预配到 AD DS，请打开 FIMObjects OU。 Britta Simon 应位于 FIMObjects OU 中。
 
 ![验证用户是否位于 FIMObjects OU 中](media/how-provision-users-adds/image033.jpg)
 
-<a id="summary" class="xliff"></a>
 “摘要”
+<a id="summary" class="xliff"></a>
 =======
 
 本文档旨在介绍将 MIM 中的用户与 AD DS 进行同步的主要构建基块。 在初始测试中，应先从完成任务所需的最少属性开始，然后在常规步骤按预期工作后再向方案添加更多属性。 保持最低级别的复杂性可简化故障排除的过程。
@@ -556,12 +549,12 @@ ExpectedRulesList 属性的对象，这可能会生成孤立的 ERE 对象。
 在以 AD DS 为同步目标的典型同步方案中，MIM 并未对对象的所有属性授权。 例如，使用 FIM 管理 AD DS 中的用户对象时，AD DS 管理代理至少需要提供域和 objectSID 属性。
 必须提供帐户名称、域和 objectSID 属性，用户才能登录到 FIM 门户。 若要从 AD DS 填充这些属性，则 AD DS 连接器空间必须提供一个附加入站同步规则。 在管理具有多来源属性值的对象时，请确保已正确配置属性流优先顺序。 如果未正确配置属性流优先顺序，则同步引擎将阻止填充属性值。 有关属性流优先顺序的详细信息，请参阅 [About Attribute Flow Precedence](http://go.microsoft.com/FWLink/p/?LinkId=189675)（属性流优先顺序介绍）一文。
 
-<a id="see-also" class="xliff"></a>
 另請參閱
+<a id="see-also" class="xliff"></a>
 =========
 
-<a id="other-resources" class="xliff"></a>
 其他資源
+<a id="other-resources" class="xliff"></a>
 ---------------
 
 [使用 FIM 启用或禁用 Active Directory 中的帐户](http://go.microsoft.com/FWLink/p/?LinkId=189670)
@@ -581,4 +574,3 @@ ExpectedRulesList 属性的对象，这可能会生成孤立的 ERE 对象。
 [About Attribute Flow Precedence](http://go.microsoft.com/FWLink/p/?LinkId=189675)（属性流优先顺序介绍）
 
 [关于导出](http://go.microsoft.com/FWLink/p/?LinkId=189676)
-

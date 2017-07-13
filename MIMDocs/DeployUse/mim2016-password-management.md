@@ -11,18 +11,14 @@ ms.prod: identity-manager-2016
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 1ef7b9816d265d17ef68fc54e010e655535dcdc8
 ms.openlocfilehash: 0a5a3f28af58dd59ab805f2836ffeb88f3508ae0
-ms.contentlocale: zh-cn
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/13/2017
 ---
-
-
-<a id="microsoft-identity-manager-2016-password-management" class="xliff"></a>
 # Microsoft Identity Manager 2016 密码管理
+<a id="microsoft-identity-manager-2016-password-management" class="xliff"></a>
 
 管理具有多个数据源的企业环境的复杂问题之一就是管理多个用户帐户的密码。 Microsoft Identity Manager 2016 (MIM) 提供了 2 个密码管理解决方案：
 
@@ -44,8 +40,8 @@ ms.lasthandoff: 07/10/2017
 
 -   独立于 MIM 操作，实时执行密码管理操作。
 
-<a id="password-extensions" class="xliff"></a>
 ## 密码扩展
+<a id="password-extensions" class="xliff"></a>
 
 默认情况下，目录服务器的管理代理支持密码更改和设置操作。 对于基于文件的、数据库形式的和可扩展的连接管理代理（默认情况下，不支持密码更改和设置操作），可创建 .NET 密码扩展动态链接库 (DLL)。
 每当为任一这些管理代理调用密码更改或设置调用时，都会调用 .NET 密码扩展 DLL。 将在 Synchronization Service Manager 中为这些管理代理配置密码扩展设置。 若要深入了解如何配置密码扩展，请参阅“FIM 开发人员参考”。
@@ -62,8 +58,8 @@ ms.lasthandoff: 07/10/2017
 |                                                                           | Microsoft SQL Server                                                                               |
 |                                                                           | Oracle 数据库                                                                                    |
 
-<a id="password-synchronization" class="xliff"></a>
 ## 密码同步
+<a id="password-synchronization" class="xliff"></a>
 
 
 密码同步在 Active Directory 域中与密码更改通知服务 (PCNS) 配合使用，并且允许将来自 Active Directory 的密码更改自动传播到其他连接的数据源。 MIM 通过作为远程过程调用 (RPC) 服务器运行来侦听来自 Active Directory 域控制器的密码更改通知，从而完成此操作。 接收到密码更改请求并对其进行身份验证后，MIM 将对其进行处理，然后再传播到合适的管理代理。
@@ -89,8 +85,8 @@ PCNS 会在每个 Active Directory 域控制器上运行。 接收密码通知�
 -   密码扩展 DLL - 通过密码扩展 DLL，可借助任何数据库、扩展连接或基于文件的管理代理的规则扩展来完成密码设置或更改操作。
     通过创建名为“export_password”的仅导出加密属性可完成此操作，此属性实际不存在于已连接的目录中，但可在设置规则扩展中访问和设置，或可在导出属性流期间使用。 若要深入了解如何配置密码扩展，请参阅 [FIM 开发人员参考](https://msdn.microsoft.com/library/windows/desktop/ee652263(v=vs.100).aspx)。
 
-<a id="preparing-for-password-synchronization" class="xliff"></a>
 ## 准备密码同步
+<a id="preparing-for-password-synchronization" class="xliff"></a>
 
 为 MIM 和 Active Directory 环境设置密码同步前，请验证以下内容：
 
@@ -114,8 +110,8 @@ PCNS 会在每个 Active Directory 域控制器上运行。 接收密码通知�
 
 若要深入了解如何设置密码同步，请参阅“使用密码同步”。
 
-<a id="password-synchronization-process" class="xliff"></a>
 ## 密码同步过程
+<a id="password-synchronization-process" class="xliff"></a>
 
 将密码更改请求从 Active Directory 域控制器同步到其他连接数据源的过程如下图所示：
 
@@ -131,8 +127,8 @@ PCNS 会在每个 Active Directory 域控制器上运行。 接收密码通知�
 
 6.  通过使用联接表信息，MIM 可确定接收密码更改的管理代理并将密码更改推送到这些代理。
 
-<a id="password-synchronization-security" class="xliff"></a>
 ## 密码同步安全
+<a id="password-synchronization-security" class="xliff"></a>
 
 已解决以下密码同步安全问题：
 
@@ -146,8 +142,8 @@ PCNS 会在每个 Active Directory 域控制器上运行。 接收密码通知�
 
 -   安全密码队列 - PCNS 密码队列中存储的密码已加密，直到发送时才解密。
 
-<a id="password-synchronization-error-recovery-scenarios" class="xliff"></a>
 ## 密码同步错误恢复方案
+<a id="password-synchronization-error-recovery-scenarios" class="xliff"></a>
 
 理想情况下，每当用户更改密码时，此更改都将正确无误地进行同步。 下列方案介绍了 MIM 如何从常见的同步错误中恢复：
 
@@ -169,8 +165,8 @@ PCNS 会在每个 Active Directory 域控制器上运行。 接收密码通知�
 | 6927  | 错误       | 密码不符合目标系统的密码策略，因此密码同步设置操作失败。                                      |
 | 6928  | 错误       | 未将目标管理代理的密码扩展配置为支持密码设置操作，因此密码同步设置操作失败。 |
 
-<a id="user-based-password-change-management" class="xliff"></a>
 ## 基于用户的密码更改管理
+<a id="user-based-password-change-management" class="xliff"></a>
 
 MIM 提供了 2 个 Web 应用程序，这两个应用程序都使用 Windows Management Instrumentation (WMI) 进行密码重置。 与密码同步一样，在“管理代理设计器”中配置管理代理时，可激活密码管理。 若要深入了解密码管理和 WMI，请参阅“MIM 开发人员参考”。
 
@@ -179,4 +175,3 @@ MIM 在安装期间创建了 2 个安全组，专门支持密码管理操作：
 -   FIMSyncBrowse - 此组的成员有权在使用 WMI 查询执行搜索操作时收集用户帐户的相关信息。
 
 -   FIMSyncPasswordSet - 此组的成员有权将密码管理界面用于 WMI，执行帐户搜索、密码设置和密码更改操作。
-

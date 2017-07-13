@@ -2,15 +2,14 @@
 layout: LandingPage
 title: "Microsoft Identity Manager 文档 | Microsoft Docs"
 description: "了解如何使用 Microsoft Identity Manager。"
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3797f5789bb4e48836eb21776dafd5a2e0e11613
 ms.openlocfilehash: c49fbae1892bfa0207a1615d11e600fe21d638c8
-ms.contentlocale: zh-cn
-ms.lasthandoff: 07/10/2017
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/13/2017
 ---
-<a id="microsoft-identity-manager-documentation" class="xliff"></a>
 # Microsoft Identity Manager 文档
+<a id="microsoft-identity-manager-documentation" class="xliff"></a>
 
 Microsoft Identity Manager 2016 将 Active Directory、LDAP、Oracle 和其他应用程序等多个本地身份验证存储与 Azure Active Directory 无缝结合在一起，进而结合 Microsoft 的标识和访问管理解决方案。 这向本地 LOB 应用程序和 SaaS 解决方案提供了一致的体验。
 
@@ -147,4 +146,3 @@ Forefront Identity Manager (FIM) 主流支持将于 2017/10/10 结束。 请[升
         </div>
     </li>
 </ul>
-

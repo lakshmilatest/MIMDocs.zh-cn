@@ -12,17 +12,17 @@ ms.technology: security
 ms.assetid: 97edae12-6f86-4f9f-8620-a95a096e482a
 ms.reviewer: mwahl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 54d03fbd03f6c44298139324ea2dc7d945f008bc
-ms.openlocfilehash: 1929703baffad4177ea7ea058cb07f44a9c71667
-ms.lasthandoff: 01/24/2017
-
-
+ms.openlocfilehash: d7f054d8d82dcc0ac71a94f6e44407b0c41a75af
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/13/2017
 ---
+# 在域控制器上部署 MIM 密码更改通知服务
+<a id="deploy-the-mim-password-change-notification-service-on-a-domain-controller" class="xliff"></a>
 
-# <a name="deploy-the-mim-password-change-notification-service-on-a-domain-controller"></a>在域控制器上部署 MIM 密码更改通知服务
-
-## <a name="install-the-password-change-notification-service"></a>安装密码更改通知服务
+## 安装密码更改通知服务
+<a id="install-the-password-change-notification-service" class="xliff"></a>
 密码更改通知服务 (PCNS) 是安装在域控制器上的一项服务，它允许 MIM 将密码同步到其他系统（例如另一个供应商的目录服务器）。 若需要密码同步，请在每一台域控制器服务器上安装 PCNS。
 
 1.  以域管理员身份登录到运行在附带 Active Directory 域服务角色的 Windows Server 上的服务器。
@@ -57,6 +57,6 @@ ms.lasthandoff: 01/24/2017
 
 14. 重新启动计算机才会使对 MIM 密码更改通知服务所做的配置更改生效。 可以通过单击弹出窗口中显示的**是**来重启，或稍后重启。
 
-## <a name="configuring-the-password-change-notification-service"></a>配置密码更改通知服务
+## 配置密码更改通知服务
+<a id="configuring-the-password-change-notification-service" class="xliff"></a>
 以域管理员身份重新连接到 DC 服务器后，请转到 *C:\Program Files\Microsoft Password Change Notification。* 运行 *pcnscfg.exe*。
-

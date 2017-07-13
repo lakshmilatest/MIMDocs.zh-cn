@@ -12,15 +12,14 @@ ms.technology: security
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.reviewer: mwahl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 54d03fbd03f6c44298139324ea2dc7d945f008bc
-ms.openlocfilehash: eb572bc3f062763265a9f24910a82be0cac77a5e
-ms.lasthandoff: 01/24/2017
-
-
+ms.openlocfilehash: 974015bbba3a36e1107da33655eedf94e2938582
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/13/2017
 ---
-
-# <a name="install-mim-2016-mim-service-and-portal"></a>安装 MIM 2016：MIM 服务和门户
+# 安装 MIM 2016：MIM 服务和门户
+<a id="install-mim-2016-mim-service-and-portal" class="xliff"></a>
 
 >[!div class="step-by-step"]
 [« MIM 同步服务](install-mim-sync.md)
@@ -36,7 +35,8 @@ ms.lasthandoff: 01/24/2017
 如果你在最后一步中没有设置 MIM 安装包，请先返回并安装 Microsoft Identity Manager 2016 组件，才继续操作。
 
 
-## <a name="configure-mim-service-and-portal-for-installation"></a>配置 MIM 服务和门户以便安装
+## 配置 MIM 服务和门户以便安装
+<a id="configure-mim-service-and-portal-for-installation" class="xliff"></a>
 
 1. 从解压缩的“服务和门户”子文件夹运行“MIM 服务和门户安装程序”。
 
@@ -78,7 +78,8 @@ ms.lasthandoff: 01/24/2017
 
 16. 选中打开防火墙中的端口 5725 和 5726 的复选框，以及授予所有经过身份验证的用户访问 MIM 门户权限的复选框。
 
-## <a name="configure-mim-password-registration-portal"></a>配置 MIM 密码注册门户
+## 配置 MIM 密码注册门户
+<a id="configure-mim-password-registration-portal" class="xliff"></a>
 
 1.  将 SSPR 注册的服务帐户名设为 *contoso\MIMSSPR*，并将其密码设为 *Pass@word1*。
 
@@ -90,7 +91,8 @@ ms.lasthandoff: 01/24/2017
 
 4. 在下一个 MIM 密码注册门户配置屏幕中，将 *http://CorpIDM.contoso.local* 指定为密码注册门户的 MIM 服务服务器地址。
 
-## <a name="configure-mim-password-reset-portal"></a>配置 FIM 密码重置门户
+## 配置 FIM 密码重置门户
+<a id="configure-mim-password-reset-portal" class="xliff"></a>
 
 1.  将 SSPR 注册的服务帐户名设为 *Contoso\MIMSSPRService*，并将其密码设为 *Pass@word1*。
 
@@ -102,7 +104,8 @@ ms.lasthandoff: 01/24/2017
 
 4. 在下一个 MIM 密码注册门户配置屏幕中，将 *CorpIDname  http://CorpIDname.domain.local* 指定为密码重置门户的 MIM 服务服务器地址。
 
-## <a name="install-mim-service-and-portal"></a>安装 MIM 服务和门户
+## 安装 MIM 服务和门户
+<a id="install-mim-service-and-portal" class="xliff"></a>
 
 所有预安装定义准备就绪后，单击“安装”以开始安装所选的“服务和门户”组件。
 
@@ -150,4 +153,3 @@ ms.lasthandoff: 01/24/2017
 >[!div class="step-by-step"]  
 [« MIM 同步服务](install-mim-sync.md)
 [同步数据库 »](install-mim-sync-ad-service.md)
-

@@ -10,17 +10,14 @@ ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 1ff73d0bdfcbcb4ab79d0d81feca9abdc33f9213
 ms.openlocfilehash: 1e2fb9a9ae508ab601ebad1dec7acc21dc44d13e
-ms.contentlocale: zh-cn
-ms.lasthandoff: 07/10/2017
-
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/13/2017
 ---
-<a id="mim-sp1-4414360--service-dynamic-logging" class="xliff"></a>
 # MIM SP1 (4.4.1436.0) 服务动态日志记录
+<a id="mim-sp1-4414360--service-dynamic-logging" class="xliff"></a>
 在 4.4.1436.0 中引入了新的日志记录功能。 这使得管理员和支持工程师无需重启管理服务即可打开日志记录功能。
 
 安装后，将在 Microsoft.ResourceManagement.Service.exe.config 中看到以下新行
@@ -53,4 +50,3 @@ ms.lasthandoff: 07/10/2017
 若要查看跟踪，可使用[服务跟踪查看器工具](https://msdn.microsoft.com//library/aa751795(v=vs.110).aspx)
 
  ![服务跟踪查看器屏幕截图](media/mim-service-dynamic-logging/screen04.png)
-

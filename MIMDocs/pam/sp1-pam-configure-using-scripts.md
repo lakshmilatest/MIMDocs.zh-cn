@@ -12,15 +12,14 @@ ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: f08b0197341351bd5f33552f26b96132b1356239
 ms.openlocfilehash: bd73f43a096d58e1f7250e28b59e33f4411e88a3
-ms.lasthandoff: 01/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/13/2017
 ---
-
-# <a name="configure-pam-using-scripts"></a>使用脚本配置 PAM
+# 使用脚本配置 PAM
+<a id="configure-pam-using-scripts" class="xliff"></a>
 
 如果选择在单独服务器上安装 SQL 和 SharePoint，则必须使用以下说明进行配置。 如果 SQL、SharePoint 和 PAM 组件安装在同一台计算机上，必须在此计算机上运行以下步骤。
 
@@ -40,11 +39,13 @@ ms.lasthandoff: 01/10/2017
 5. 将同一 PAMDeploymentConfig.xml 复制到所有计算机、CORPDC、PRIVDC、PAM 服务器、SQL Server 和 SharePoint 服务器上的 %SYSTEMDRIVE%\PAM 文件夹。
 
 
-## <a name="deployment-worksheet"></a>部署工作表
+## 部署工作表
+<a id="deployment-worksheet" class="xliff"></a>
 
 在继续操作之前，请更新 PAMDeploymentConfig.xml 并将更新的副本放置到所有计算机上。
 
-### <a name="setup"></a>Setup
+### Setup
+<a id="setup" class="xliff"></a>
 
 |机   | 运行人员   |命令   |
 |---|---|---|
@@ -56,7 +57,8 @@ ms.lasthandoff: 01/10/2017
 | PAMServer  | 本地管理员（加入域后的 MIM 管理员）  | .\PAMDeployment.ps1 菜单选项 5（MIM PAM 安装程序）   |
 |  PAMServer |MIMAdmin   | .\PAMDeployment.ps1 选择菜单选项 6（ PAM 信任安装程序）.\PAMDeployment.ps1 选择菜单选项 6（PAM 信任安装程序） |
 
-### <a name="validation"></a>验证
+### 验证
+<a id="validation" class="xliff"></a>
 
 |  机 | 运行人员   | 命令   |
 |---|---|---|
@@ -69,4 +71,3 @@ ms.lasthandoff: 01/10/2017
 
 >[!div class="step-by-step"]
 [开始 »](sp1-step1-configuring-priv-domain.md)
-

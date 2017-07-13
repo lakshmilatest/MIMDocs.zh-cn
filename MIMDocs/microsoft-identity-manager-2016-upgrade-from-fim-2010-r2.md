@@ -12,15 +12,14 @@ ms.technology: security
 ms.assetid: 9471ccc1-bafe-46ee-b169-1464262380e1
 ms.reviewer: mwahl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2d3092d7d41090e4e03b971fb62ca896cc8db282
 ms.openlocfilehash: 20e733f17d6ed590844c526888b649eb6bf5f322
-ms.lasthandoff: 02/13/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/13/2017
 ---
-
-# <a name="upgrade-from-forefront-identity-manager-2010-r2"></a>从 Forefront 标识管理器 2010 R2 升级
+# 从 Forefront 标识管理器 2010 R2 升级
+<a id="upgrade-from-forefront-identity-manager-2010-r2" class="xliff"></a>
 
 如果你具有Forefront Identity Manager (FIM) 2010 R2 环境，且想要试用 Microsoft Identity Manager (MIM) 2016，请以本文作为指南。 在此升级过程中有 3 个阶段：
 
@@ -37,7 +36,8 @@ ms.lasthandoff: 02/13/2017
 - 为 FIM 2010 R2 配置的本地和环境先决条件（SQL Server、Exchange Server、SharePoint Services 等）。
 
 
-## <a name="preparation"></a>准备
+## 准备
+<a id="preparation" class="xliff"></a>
 
 1.  备份 FIM 服务数据库、FIM 同步数据库、FIM 同步和服务配置和软件。
 
@@ -45,7 +45,8 @@ ms.lasthandoff: 02/13/2017
 
 3.  下载或解压缩 MIM 软件。
 
-## <a name="upgrade-the-synchronization-service"></a>升级同步服务
+## 升级同步服务
+<a id="upgrade-the-synchronization-service" class="xliff"></a>
 
 1.  以管理员身份登录到已部署 FIM 2010 R2 同步服务（“Sync”）的服务器。
 
@@ -83,7 +84,8 @@ ms.lasthandoff: 02/13/2017
 
 13. 请注意，“同步服务”  已重新启动。
 
-## <a name="upgrade-the-service-and-portal"></a>升级服务和门户
+## 升级服务和门户
+<a id="upgrade-the-service-and-portal" class="xliff"></a>
 
 1.  以管理员身份登录到已部署 FIM 2010 R2 服务和门户的服务器。
 
@@ -139,7 +141,8 @@ ms.lasthandoff: 02/13/2017
 
 14. 安装 MIM 门户时，提供 FIM 门户当前托管在其中的 SharePoint 站点集的 URL。 单击“下一步” 。
 
-## <a name="install-the-mim-password-registration-portal"></a>安装 MIM 密码注册门户
+## 安装 MIM 密码注册门户
+<a id="install-the-mim-password-registration-portal" class="xliff"></a>
 
 1. 如果正在安装 MIM 密码注册门户，提供针对密码注册门户请求的 URL。 单击“下一步” 。
 
@@ -169,7 +172,8 @@ ms.lasthandoff: 02/13/2017
 
     2.  确定此门户是否可由外联网用户和局域网用户访问，还是仅限局域网用户访问，如先前针对 FIM 密码重置进行的配置。
 
-## <a name="install-the-mim-password-reset-portal"></a>安装 MIM 密码重置门户
+## 安装 MIM 密码重置门户
+<a id="install-the-mim-password-reset-portal" class="xliff"></a>
 
 1. 如果正在安装 MIM 密码重置门户，提供 MIM 密码重置的访问详细信息和凭据。
 
@@ -189,7 +193,8 @@ ms.lasthandoff: 02/13/2017
 
     2.  指定此门户是否可以由外联网用户和局域网用户访问，还是仅限局域网用户访问。
 
-## <a name="finish-installation-and-upgrade"></a>完成安装和升级
+## 完成安装和升级
+<a id="finish-installation-and-upgrade" class="xliff"></a>
 
 1. 成功完成所有配置定义后，会显示安装页面。 单击“安装”  以开始安装和升级 MIM 服务和门户。
 
@@ -202,4 +207,3 @@ ms.lasthandoff: 02/13/2017
 注意：如果当前在用户的计算机上部署了 FIM 外接程序和扩展以实现 SSPR，那么请务必先将所有 FIM 外接程序和扩展升级到 MIM 2016，再配置新的 MFA 电话入口以用于密码重置。  由于 FIM 2010 和 FIM 2010 R2 外接程序和扩展不识别新的入口，它们会给出错误信息，用户便无法完成密码重置。
 
 有关 Microsoft Identity Manager 2016 SP1 升级指南，请参阅 [Microsoft Identity Manager 2016 Service Pack 1 update package](https://blogs.technet.microsoft.com/iamsupport/2016/11/08/microsoft-identity-manager-2016-service-pack-1-update-package/)（Microsoft Identity Manager 2016 Service Pack 1 更新包）
-

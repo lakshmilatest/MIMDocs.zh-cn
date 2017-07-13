@@ -12,17 +12,14 @@ ms.technology: active-directory-domain-services
 ms.assetid: 0e9993a0-b8ae-40e2-8228-040256adb7e2
 ms.reviewer: mwahl
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
 ms.openlocfilehash: edc15b41d4248887f4a93217f68d8125f6500585
-ms.contentlocale: zh-cn
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/13/2017
 ---
-
-<a id="step-2---prepare-the-first-priv-domain-controller" class="xliff"></a>
 # 步骤 2 - 准备第一个 PRIV 域控制器
+<a id="step-2---prepare-the-first-priv-domain-controller" class="xliff"></a>
 
 >[!div class="step-by-step"]
 [« 步骤 1](step-1-prepare-corp-domain.md)
@@ -30,13 +27,13 @@ ms.lasthandoff: 07/10/2017
 
 在此步骤中，你将创建一个新域，用于为管理员进行身份验证提供堡垒环境。  此林将需要至少一个域控制器和至少一个成员服务器。 成员服务器将在下一步骤中进行配置。
 
-<a id="create-a-new-privileged-access-management-domain-controller" class="xliff"></a>
 ## 创建一个新的 Privileged Access Management 域控制器
+<a id="create-a-new-privileged-access-management-domain-controller" class="xliff"></a>
 
 本节将安装一个虚拟机，充当新林的域控制器
 
-<a id="install-windows-server-2012-r2" class="xliff"></a>
 ### 安装 Windows Server 2012 R2
+<a id="install-windows-server-2012-r2" class="xliff"></a>
 在未安装任何软件的另一台新虚拟机上，请安装 Windows Server 2012 R2 以使计算机为“PRIVDC”。
 
 1. 选择执行 Windows Server 的自定义（非升级）安装。 在安装时，指定 **Windows Server 2012 R2 Standard（带有 GUI 的服务器）x64**；_不要选择_“数据中心或服务器核心”。
@@ -49,8 +46,8 @@ ms.lasthandoff: 07/10/2017
 
 5. 重启服务器后，以管理员身份登录。 使用“控制面板”，配置计算机以检查更新，并安装所需的任何更新。 这可能需要重新启动服务器。
 
-<a id="add-roles" class="xliff"></a>
 ### 添加角色
+<a id="add-roles" class="xliff"></a>
 添加 Active Directory 域服务 (AD DS) 和 DNS 服务器角色。
 
 1. 以管理员身份启动 PowerShell。
@@ -63,8 +60,8 @@ ms.lasthandoff: 07/10/2017
   Install-WindowsFeature AD-Domain-Services,DNS –restart –IncludeAllSubFeature -IncludeManagementTools
   ```
 
-<a id="configure-registry-settings-for-sid-history-migration" class="xliff"></a>
 ### 配置 SID 历史记录迁移所需的注册表设置
+<a id="configure-registry-settings-for-sid-history-migration" class="xliff"></a>
 
 启动 PowerShell 并键入以下命令，以便将源域配置为允许远程过程调用 (RPC) 访问安全帐户管理器 (SAM) 数据库。
 
@@ -72,15 +69,15 @@ ms.lasthandoff: 07/10/2017
 New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name TcpipClientSupport –PropertyType DWORD –Value 1
 ```
 
-<a id="create-a-new-privileged-access-management-forest" class="xliff"></a>
 ## 创建一个新的 Privileged Access Management 林
+<a id="create-a-new-privileged-access-management-forest" class="xliff"></a>
 
 然后，将此服务器提升为新林中的域控制器。
 
 在本文中，名称 priv.contoso.local 用作新林的域名。  林的名称并不重要，并且它不需要从属于组织中现有的林名称。 但是，新林的域名和 NetBIOS 名称必须具有唯一性且不同于组织中任何其他域的名称。  
 
-<a id="create-a-domain-and-forest" class="xliff"></a>
 ### 创建一个域和林
+<a id="create-a-domain-and-forest" class="xliff"></a>
 
 1. 在“PowerShell”窗口中，键入以下命令以创建新域。  此操作还将在上一步骤所创建的高级域 (contoso.local) 中创建一个 DNS 委派。  如果想要在以后配置 DNS，则忽略 `CreateDNSDelegation -DNSDelegationCredential $ca` 参数。
 
@@ -96,8 +93,8 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
 
 完成林创建后，服务器将自动重新启动。
 
-<a id="create-user-and-service-accounts" class="xliff"></a>
 ### 创建用户和服务帐户
+<a id="create-user-and-service-accounts" class="xliff"></a>
 创建用于 MIM 服务和门户设置的用户和服务帐户。 这些帐户都将置于 priv.contoso.local 域的用户容器中。
 
 1. 重启服务器后，以域管理员身份 (PRIV\\Administrator) 登录到 PRIVDC。
@@ -168,8 +165,8 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
   Add-ADGroupMember "Domain Admins" MIMService
   ```
 
-<a id="configure-auditing-and-logon-rights" class="xliff"></a>
 ### 配置审核和登录权限
+<a id="configure-auditing-and-logon-rights" class="xliff"></a>
 
 你需要设置审核权限，以便跨林实现 PAM 配置。  
 
@@ -218,8 +215,8 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
   一分钟后，它将完成并显示消息“计算机策略更新已成功完成”。
 
 
-<a id="configure-dns-name-forwarding-on-privdc" class="xliff"></a>
 ### 在 PRIVDC 上配置 DNS 名称转发
+<a id="configure-dns-name-forwarding-on-privdc" class="xliff"></a>
 
 使用 PRIVDC 中的 PowerShell，配置 DNS 名称转发以使 PRIV 域能够识别其他现有的林。
 
@@ -236,8 +233,8 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
 > [!NOTE]
 > 其他林也必须能够按指定路线将 PRIV 林的 DNS 查询发送到此域控制器。  如果具有多个现有的 Active Directory 林，则还必须为这些林的每一个添加一个 DNS 条件转发器。
 
-<a id="configure-kerberos" class="xliff"></a>
 ### 配置 Kerberos
+<a id="configure-kerberos" class="xliff"></a>
 
 1. 使用 PowerShell 添加 SPN，以便 SharePoint、PAM REST API 和 MIM 服务可以使用 Kerberos 身份验证。
 
@@ -251,8 +248,8 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
 > [!NOTE]
 > 本文的后续步骤将介绍如何在单台计算机上安装 MIM 2016 服务器组件。 如果打算添加另一台服务器以实现高可用性，则将需要如 [FIM 2010: Kerberos Authentication Setup](http://social.technet.microsoft.com/wiki/contents/articles/3385.fim-2010-kerberos-authentication-setup.aspx)（FIM 2010：Kerberos 身份验证设置）中所述的其他 Kerberos 配置。
 
-<a id="configure-delegation-to-give-mim-service-accounts-access" class="xliff"></a>
 ### 配置委派以提供 MIM 服务帐户访问权限
+<a id="configure-delegation-to-give-mim-service-accounts-access" class="xliff"></a>
 
 以域管理员身份在 PRIVDC 上执行以下步骤。
 
@@ -295,13 +292,13 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
   ```
 20. 重新启动 PRIVDC 服务器以使这些更改起效。
 
-<a id="prepare-a-priv-workstation" class="xliff"></a>
 ## 准备 PRIV 工作站
+<a id="prepare-a-priv-workstation" class="xliff"></a>
 
 如果还没有将加入到 PRIV 域以执行 PRIV 资源（例如 MIM）维护的工作站计算机，请按照这些说明来准备工作站。  
 
-<a id="install-windows-81-or-windows-10-enterprise" class="xliff"></a>
 ### 安装 Windows 8.1 或者 Windows 10 企业版
+<a id="install-windows-81-or-windows-10-enterprise" class="xliff"></a>
 
 在未安装任何软件的另一台新虚拟机上，安装 Windows 8.1 或 Windows 10 企业版，以使计算机为“PRIVWKSTN”。
 
@@ -320,4 +317,3 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
 >[!div class="step-by-step"]
 [« 步骤 1](step-1-prepare-corp-domain.md)
 [步骤 3 »](step-3-prepare-pam-server.md)
-
