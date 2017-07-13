@@ -13,17 +13,14 @@ ms.assetid: ef605496-7ed7-40f4-9475-5e4db4857b4f
 ROBOTS: noindex,nofollow
 ms.reviewer: mwahl
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
 ms.openlocfilehash: 3a1ec9db6da0a77f963dde76a3efe8d92f89078d
-ms.contentlocale: zh-cn
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/13/2017
 ---
-
-<a id="step-4--install-mim-components-on-pam-server-and-workstation" class="xliff"></a>
 # 步骤 4 - 在 PAM 服务器和工作站上安装 MIM 组件
+<a id="step-4--install-mim-components-on-pam-server-and-workstation" class="xliff"></a>
 
 >[!div class="step-by-step"]
 [« 步骤 3](step-3-prepare-pam-server.md)
@@ -37,8 +34,8 @@ ms.lasthandoff: 07/10/2017
 
 如果已下载了 MIM，请将 MIM 安装存档解压缩到新的文件夹。
 
-<a id="run-the-service-and-portal-install-program" class="xliff"></a>
-##  运行服务和门户安装程序。  
+##  运行服务和门户安装程序。
+<a id="run-the-service-and-portal-install-program" class="xliff"></a>  
 
 按照安装程序的说明操作并完成安装。
 
@@ -102,8 +99,8 @@ ms.lasthandoff: 07/10/2017
 
 安装完成后，将重新启动服务器，再验证 MIM 门户是否处于活动状态，并使用户能够查看其在 MIM 中的对象资源。
 
-<a id="set-up-mim-portal-management-policy-rules" class="xliff"></a>
 ## 设置 MIM 门户管理策略规则
+<a id="set-up-mim-portal-management-policy-rules" class="xliff"></a>
 
 1. 重启 PAMSRV 后，以 PRIV\Administrator 身份登录。
 
@@ -119,8 +116,8 @@ ms.lasthandoff: 07/10/2017
 
 7. 选择此管理策略规则，取消选中“策略已禁用”，单击“确定”，然后单击“提交”。
 
-<a id="verify-the-firewall-connections" class="xliff"></a>
 ## 确认防火墙连接
+<a id="verify-the-firewall-connections" class="xliff"></a>
 
 防火墙应允许到 TCP 端口 5725、5726、8086 和 8090 的传入连接。
 
@@ -137,8 +134,8 @@ ms.lasthandoff: 07/10/2017
 8.  验证是否有活动网络（作为 priv.contoso.local 列出）和域网络。  
 9. 关闭“控制面板” 。
 
-<a id="set-up-the-sample-web-application" class="xliff"></a>
 ## 设置示例 Web 应用程序
+<a id="set-up-the-sample-web-application" class="xliff"></a>
 
 在本节中你将为 MIM PAM REST API 安装和配置示例 Web 应用程序。
 
@@ -174,8 +171,8 @@ ms.lasthandoff: 07/10/2017
 
 7.  （可选）验证用户是否可以对 REST API 进行身份验证。 在 PAMSRV 上，以管理员身份打开 Web 浏览器。  导航至网站 URL http://pamsrv.priv.contoso.local:8086/api/pamresources/pamroles/ 进行身份验证（如需要），并确保将进行下载。
 
-<a id="install-the-mim-pam-requestor-cmdlets" class="xliff"></a>
 ## 安装 MIM PAM 请求程序 cmdlet
+<a id="install-the-mim-pam-requestor-cmdlets" class="xliff"></a>
 
 在步骤 1 中配置的工作站上安装 MIM PAM 请求程序 cmdlet。
 
@@ -198,4 +195,3 @@ ms.lasthandoff: 07/10/2017
 >[!div class="step-by-step"]
 [« 步骤 3](step-3-prepare-pam-server.md)
 [步骤 5 »](step-5-establish-trust-between-priv-corp-forests.md)
-

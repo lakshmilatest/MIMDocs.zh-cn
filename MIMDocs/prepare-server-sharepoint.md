@@ -12,15 +12,14 @@ ms.technology: security
 ms.assetid: c01487f2-3de6-4fc4-8c3a-7d62f7c2496c
 ms.reviewer: mwahl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 3623bffb099a83d0eba47ba25e9777c3d590e529
-ms.openlocfilehash: 2af432036033f8914d00228cd3d2d1af84f13054
-ms.lasthandoff: 01/24/2017
-
-
+ms.openlocfilehash: 1114be2ce13ca012582676803eb1dc29cadae596
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/13/2017
 ---
-
-# <a name="set-up-an-identity-management-server-sharepoint"></a>设置标识管理服务器：SharePoint
+# 设置标识管理服务器：SharePoint
+<a id="set-up-an-identity-management-server-sharepoint" class="xliff"></a>
 
 >[!div class="step-by-step"]
 [« SQL Server 2014](prepare-server-sql2014.md)
@@ -33,7 +32,8 @@ ms.lasthandoff: 01/24/2017
 > - 密码 - **Pass@word1**
 
 
-## <a name="install-sharepoint-foundation-2013-with-sp1"></a>安装**附带 SP1 的 SharePoint Foundation 2013**。
+## 安装**附带 SP1 的 SharePoint Foundation 2013**。
+<a id="install-sharepoint-foundation-2013-with-sp1" class="xliff"></a>
 
 > [!NOTE]
 > 安装程序需要 Internet 连接才能下载其必备组件。 如果计算机位于不提供 Internet 连接的虚拟网络上，将其他网络接口添加到该计算机以便提供 Internet 连接。 安装完成后可将其禁用。
@@ -60,7 +60,8 @@ ms.lasthandoff: 01/24/2017
 
 4.  安装完成后，运行该向导。
 
-## <a name="run-the-wizard-to-configure-sharepoint"></a>运行向导以配置 SharePoint
+## 运行向导以配置 SharePoint
+<a id="run-the-wizard-to-configure-sharepoint" class="xliff"></a>
 
 按照 **SharePoint 产品配置向导**中列出的步骤配置 SharePoint 以使用 MIM。
 
@@ -80,7 +81,8 @@ ms.lasthandoff: 01/24/2017
 
 8. 在“创建站点集合”  窗口中，单击“跳过” 。  然后单击 **“完成”**。
 
-## <a name="prepare-sharepoint-to-host-the-mim-portal"></a>准备 SharePoint 以承载 MIM 门户
+## 准备 SharePoint 以承载 MIM 门户
+<a id="prepare-sharepoint-to-host-the-mim-portal" class="xliff"></a>
 
 > [!NOTE]
 > 最初，将不配置 SSL。 在启用对此门户的访问之前，请务必配置 SSL 或同等协议层。
@@ -134,4 +136,3 @@ ms.lasthandoff: 01/24/2017
 >[!div class="step-by-step"]  
 [« SQL Server 2014](prepare-server-sql2014.md)
 [Exchange Server »](prepare-server-exchange.md)
-

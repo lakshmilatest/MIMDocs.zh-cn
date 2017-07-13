@@ -12,17 +12,14 @@ ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3797f5789bb4e48836eb21776dafd5a2e0e11613
 ms.openlocfilehash: 12c60e12dc5662ff0313e21bb9180b3709969af6
-ms.contentlocale: zh-cn
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/13/2017
 ---
-
-<a id="mim2016-sp1-pam-deployment-scripts" class="xliff"></a>
 # MIM2016 SP1 PAM 部署脚本
+<a id="mim2016-sp1-pam-deployment-scripts" class="xliff"></a>
 
 在此 Service Pack 中，我们引入了一套部署脚本，更方便部署 PAM。 这些脚本可在下载中心获取。 在尝试使用脚本之前，确保下列假设适用于你的环境，这一点很重要。
 
@@ -37,4 +34,3 @@ ms.lasthandoff: 07/10/2017
 >如果遇到脚本执行的任何问题，可能需要看一下这些日志。 所有脚本日志都保存在 %AppData%\MIMPAMInstall 中。 请将文件夹压缩到 Zip 文件，然后通过电子邮件发送到 mim2016@microsoft.com，写明操作和错误的详细信息。
 
 准备好开始使用 PAM 部署脚本了吗？ 首先来[使用脚本配置 PAM](./pam/sp1-pam-configure-using-scripts.md)。
-

@@ -2,25 +2,25 @@
 title: "支持的软件平台 | Microsoft Docs"
 description: "查找与各 MIM 2016 组件兼容的产品和版本"
 keywords: 
-author: billmath
-ms.author: billmath
+author: fimguy
+ms.author: fimguy
 manager: femila
-ms.date: 03/28/2017
+ms.date: 06/06/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 4978f60d-044d-4e84-8d93-65801fce1144
 ms.reviewer: mwahl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: f1faed3a09023e288a68a8950dae43725f19eb3e
-ms.openlocfilehash: 33c84afa4d6fd2ed7bde33de39dd151f83f07fd4
-ms.lasthandoff: 04/12/2017
-
-
+ms.custom: mim
+ms.openlocfilehash: e8f1d72930cd5998b5d9957e8b8f5dbd958f8342
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/13/2017
 ---
-
-# <a name="supported-platforms-for-mim-2016"></a>MIM 2016 支持的平台
+# MIM 2016 支持的平台
+<a id="supported-platforms-for-mim-2016" class="xliff"></a>
 
 下表介绍了 Microsoft Identity Manager 2016 每个组件支持的平台和版本。 标有 * 的版本仅在 MIM 2016 Service Pack 1 中受支持。
 
@@ -33,18 +33,15 @@ ms.lasthandoff: 04/12/2017
 | | 适用于邮箱设置和 GAL 同步的 Exchange（可选）|Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1<br/>Exchange Server 2016* |
 | | 开发环境（可选） | Visual Studio 2012<br/>Visual Studio 2013 <br/> Visual Studio 2015 <br/> Visual Studio 2017* |
 | | 其他已连接的系统（可选） | Active Directory 域服务<br/>Active Directory<br/>轻型目录服务<br/>SQL Server 2000 或更高版本<br/>SharePoint Server 2013<br/> SharePoint Server 2016 * <br/> 其他第三方产品 |
-| **MIM 服务** （除了 PAM 方案） | Windows Server | Windows Server 2008 R2 SP1<br/>Windows Server 2012<br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |
-| | MIM 服务数据库 | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2<br/>SQL Server 2014 SP1 <br/> SQL Server 2016 * |
-| | 适用于 MIM 服务审批和组管理电子邮件的 Exchange（可选） | Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1 <br/> Exchange Server 2016* <br/> Exchange Online*（仅通知） |
-| **MIM 服务和门户** （仅 PAM 方案）| Windows Server | Windows Server 2012<br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |
+| **MIM 服务和门户** | Windows Server | Windows Server 2012<br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |
 | | 适用于堡垒环境 PAM 林的 Active Directory | Windows Server 2012 R2 <br/> Windows Server 2016 * |
 | | 适用于现有林的 Active Directory | Windows Server 2008 <br/> Windows Server 2008 R2* <br/> Windows Server 2012* <br/> Windows Server 2012 R2* <br/> Windows Server 2016 * |
 | | MIM 服务数据库 | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2<br/>SQL Server 2014 SP1 <br/> SQL Server 2016 * |
 | | SharePoint | SharePoint Foundation 2010<br/>SharePoint Foundation 2013 SP1 <br/> SharePoint 2016 * |
 | | 适用于 MIM 服务审批和组管理电子邮件的邮件服务器（可选） | Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1 <br/> Exchange Server 2016* <br/> Exchange Online*（仅通知） |
-| | 浏览器 | 所有主流浏览器 |
+| | 浏览器 | 所有主流浏览器 * |
 | **MIM 服务报告** | Windows Server | Windows Server 2012 <br/> Windows Server 2016 * |
-| | 数据仓库 | System Center 2012 Service Manager <br/> System Center 2012 R2 Service Manager </br> System Center 2016 Service Manager*（带 4.4.1459）<br/> [System Center 2016 的 SQL Server 版本兼容性](https://technet.microsoft.com/en-us/system-center-docs/system-requirements/sql-server-version-compatibility)
+| | 数据仓库 | System Center 2012 Service Manager <br/> System Center 2012 R2 Service Manager </br> System Center 2016 Service Manager*（带 4.4.1459）<br/> [System Center 2016 的 SQL Server 版本兼容性](https://docs.microsoft.com/system-center/scsm/upgrade-to-sm-2016)
  |
 | **MIM 密码重置和注册门户** | Windows Server | Windows Server 2008 R2 SP1<br/>Windows Server 2012<br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |
 | | Web 浏览器 | 所有主流浏览器 |
@@ -60,4 +57,3 @@ ms.lasthandoff: 04/12/2017
 | | BHOLD 数据库 | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2 <br/> SQL Server 2014 * <br/> SQL Server 2016 * |
 | | 邮件服务器（可选） | Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1 <br/> Exchange Server 2016* |
 | | Web 浏览器 | 带有 Silverlight 的 Internet Explorer 7、8、9、10 或 11 |
-

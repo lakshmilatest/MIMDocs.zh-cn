@@ -12,17 +12,14 @@ ms.technology: active-directory-domain-services
 ms.assetid: 6498f68f-36d3-448c-8fe6-649ad5a7f97d
 ms.reviewer: mwahl
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
 ms.openlocfilehash: 53fe79f251c3b18426f16b4007cda49e67d7b028
-ms.contentlocale: zh-cn
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/13/2017
 ---
-
-<a id="understand-the-components-of-pam" class="xliff"></a>
 # 了解 PAM 的组件
+<a id="understand-the-components-of-pam" class="xliff"></a>
 
 Privileged Access Management 将管理访问权限与日常的用户帐户分开。 该解决方案依赖于并行林：
 
@@ -43,4 +40,3 @@ Privileged Access Management 将管理访问权限与日常的用户帐户分开
 因此，当用户使用 PowerShell cmdlet 请求提升并且其请求获得批准时，MIM 服务会将他们在 PRIV 林中的帐户添加到 PRIV 林中的组。 当用户使用其特权帐户登录时，他们的 Kerberos 令牌将包含一个与 CORP 林中的组的安全标识符 (SID) 相同的 SID。 由于 CORP 林配置为信任 PRIV 林，用于访问 CORP 林中的资源的提升帐户，因此对于检查 Kerberos 组成员身份的资源来说，看起来是该资源的安全组的成员。 这可通过 Kerberos 跨林身份验证提供。
 
 此外，这些成员身份是有时效性的，因此在预配置的时间间隔后，用户的管理帐户将不再属于 PRIV 林中的组。 因此，该帐户不可再用于访问其他资源。
-

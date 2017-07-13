@@ -12,18 +12,18 @@ ms.technology: security
 ms.assetid: bfabc562-a2f0-4cff-ac31-36927f41e102
 ms.reviewer: mwahl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 54d03fbd03f6c44298139324ea2dc7d945f008bc
-ms.openlocfilehash: 89e095cff66984140cdcef3617dd0ccc3d3714d8
-ms.lasthandoff: 02/07/2017
-
-
+ms.openlocfilehash: f8de75a0027371b7ff88b90d3097adc63c02d933
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/13/2017
 ---
-
-# <a name="enroll-smart-cards-for-non-administrators"></a>为非管理员注册智能卡
+# 为非管理员注册智能卡
+<a id="enroll-smart-cards-for-non-administrators" class="xliff"></a>
 如果用户不是计算机的本地管理员，则默认情况下，他们将无法在自己的计算机上注册智能卡。 以下过程可以让你解决此限制。
 
-## <a name="enabling-smart-card-renewal-for-non-admins-in-mim-2016-certificate-manager"></a>在 MIM 2016 证书管理器中启用非管理员智能卡续订
+## 在 MIM 2016 证书管理器中启用非管理员智能卡续订
+<a id="enabling-smart-card-renewal-for-non-admins-in-mim-2016-certificate-manager" class="xliff"></a>
 
 1.  **解压缩 appx 文件**
 
@@ -94,4 +94,3 @@ ms.lasthandoff: 02/07/2017
 7.  **在非管理员帐户中安装 CM 应用**
 
 8.  **启动 CM 应用并注册虚拟智能卡**
-

@@ -12,17 +12,14 @@ ms.technology: security
 ms.assetid: 3ac5b990-1678-4996-996d-cbd84b8426b4
 ms.reviewer: mwahl
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3797f5789bb4e48836eb21776dafd5a2e0e11613
 ms.openlocfilehash: 1eadf7cff67d65c35f784adad94b5032d2792824
-ms.contentlocale: zh-cn
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/13/2017
 ---
-
-<a id="capacity-planning-guide" class="xliff"></a>
 # 容量规划指南
+<a id="capacity-planning-guide" class="xliff"></a>
 
 Microsoft Identity Manager (MIM) 可用于创建、更新和删除整个组织内的用户帐户。 最终用户还可用它来管理其自身帐户的自助服务功能。 甚至在小型环境中，也可快速添加所有这些操作。
 
@@ -30,8 +27,8 @@ Microsoft Identity Manager (MIM) 可用于创建、更新和删除整个组织�
 
 如果你尚不熟悉 MIM 2016 及其组件，请在继续之前获取有关 [Microsoft Identity Manager 2016](microsoft-identity-manager-2016.md) 的更多详细信息。
 
-<a id="overview" class="xliff"></a>
 ## 概述
+<a id="overview" class="xliff"></a>
 有许多变量可能会影响到你的 Microsoft 标识管理器部署的整体容量和性能。 物理部署 MIM 组件（拓扑）的方式以及运行组件的硬件，是决定你可以从 MIM 部署中获得的性能和容量的重要因素。 MIM 策略配置对象的数量和复杂程度作为影响因素可能不那么明显，但在规划容量时它们仍是需要考虑的重要因素。 最后，部署的预期规模以及预期负载通常是影响性能和容量的更明显的因素。
 
 下表讨论了可影响 MIM 2016 部署的预期容量和性能的主要因素。
@@ -45,8 +42,8 @@ Microsoft Identity Manager (MIM) 可用于创建、更新和删除整个组织�
 | 加载 | 使用频率。 例如，你预期给定时间段内创建新组或用户、重置密码或访问门户的频率。 请注意，在小时、天、周或年的时间段期间，负载可能会有变化。 你可能选择设计峰值负载或平均负载，具体取决于组件。 |
 
 
-<a id="hosting-microsoft-identity-manager-components" class="xliff"></a>
 ## 托管 Microsoft 标识管理器组件
+<a id="hosting-microsoft-identity-manager-components" class="xliff"></a>
 
 Microsoft Identity Manager 的组件不需要位于同一台计算机上。 容量计划的一个重要部分就是考虑这些组件，以及将承载它们的物理计算机或虚拟机。
 
@@ -57,8 +54,8 @@ Microsoft Identity Manager 的组件不需要位于同一台计算机上。 容�
 - 如果使用 SAN 作为 MIM 2016 服务数据库配置，那么有哪些其他的应用程序在共享 SAN？ 这些应用程序在争夺 SAN 上的共享磁盘资源时可能会影响数据库性能。
 
 
-<a id="users-and-groups" class="xliff"></a>
 ## 用户和组
+<a id="users-and-groups" class="xliff"></a>
 考虑部署的规模时，环境中的用户数和组数是通常需考虑的因素。 此外，规划中还有其他一些应纳入考虑的相关事项。
 
 - 用户可以创建组吗？ 如果可以，应预估用户创建新组会如何影响你环境中组的增长。
@@ -66,8 +63,8 @@ Microsoft Identity Manager 的组件不需要位于同一台计算机上。 容�
 - 是否将部署动态组？ 了解你的环境中需要多少数量、何种类型的动态组。
 
 
-<a id="expected-load-levels" class="xliff"></a>
 ## 期望负载级别
+<a id="expected-load-levels" class="xliff"></a>
 还应考虑 MIM 组件上的负载的类型。 通过查看环境中的当前应用程序，也许能够估计到此信息。 需考虑的一些相关问题包括：
 
 - 加入或离开组的请求的预期频率。
@@ -81,8 +78,8 @@ Microsoft Identity Manager 的组件不需要位于同一台计算机上。 容�
 - 是否预期负载级别包括从正常到峰值不等的各种不同级别？ 例如在节假日后，往往出现大量的密码重置操作。 请确保在预期的使用峰值之外进行系统维护和执行同步计划。 考虑容量规划时，请务必确保将峰值负载时间段纳入考虑范围。
 
 
-<a id="policy-configuration-objects" class="xliff"></a>
 ## 策略配置对象
+<a id="policy-configuration-objects" class="xliff"></a>
 
 Microsoft Identity Manager 策略配置对象包含 MPR、集、工作流，以及用于特定部署的同步规则。 MIM 部署对于每个客户都是唯一的，因为将更改策略配置以满足每个部署的需求。 与 MIM 策略配置对象相关的重要性能注意事项包括：
 
@@ -97,8 +94,7 @@ MIM 策略配置还包括环境中的相关配置决策。 请确保考虑了以
 - 你会使用无代码设置吗？ 如果使用无代码设置，会影响预期的规则条目数，以及系统中关联的请求和工作流。
 
 
-<a id="see-also" class="xliff"></a>
 ## 另请参阅
+<a id="see-also" class="xliff"></a>
 - [部署 MIM 的拓扑注意事项](topology-considerations.md)
 - [Forefront 标识管理器 (FIM) 2010 容量规划指南](http://go.microsoft.com/fwlink/?LinkId=200180)（可下载）详尽介绍了有关测试版本和性能测试结果的相关信息。
-

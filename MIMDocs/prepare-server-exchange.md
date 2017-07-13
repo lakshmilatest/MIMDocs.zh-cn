@@ -12,21 +12,21 @@ ms.technology: security
 ms.assetid: 34a8c16e-3bed-4e16-939b-b9fe17dd834b
 ms.reviewer: mwahl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 3623bffb099a83d0eba47ba25e9777c3d590e529
-ms.openlocfilehash: 01ccb55d200bfd1615ae62ccd30298117c0d6275
-ms.lasthandoff: 01/24/2017
-
-
+ms.openlocfilehash: ac787f2ff76b19aab815d55018d1b6f0de1f4adb
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/13/2017
 ---
-
-# <a name="set-up-an-identity-management-server-exchange"></a>设置标识管理服务器：Exchange
+# 设置标识管理服务器：Exchange
+<a id="set-up-an-identity-management-server-exchange" class="xliff"></a>
 
 >[!div class="step-by-step"]
 [« SharePoint](prepare-server-sharepoint.md)
 [MIM 同步服务 »](install-mim-sync.md)
 
-## <a name="deploy-microsoft-exchange-server"></a>部署 Microsoft Exchange Server
+## 部署 Microsoft Exchange Server
+<a id="deploy-microsoft-exchange-server" class="xliff"></a>
 如果想要配置 MIM 以便发送和接收电子邮件或设置邮箱，则必须在此环境中安装 Exchange。 如果仍未部署 Exchange，则可安装用于评估目的的试用版：
 
 1. 下载并安装 Microsoft Office 2010 筛选包（版本 2.0）以及 Microsoft Office 2010 筛选包（版本 2.0 SP1）
@@ -42,4 +42,3 @@ ms.lasthandoff: 01/24/2017
 >[!div class="step-by-step"]  
 [« SharePoint](prepare-server-sharepoint.md)
 [MIM 同步服务 »](install-mim-sync.md)
-

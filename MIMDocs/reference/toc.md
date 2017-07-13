@@ -1,84 +1,42 @@
-
 # [了解和探索](/microsoft-identity-manager/understand-explore/microsoft-identity-manager-2016)
-
 # [规划和设计](/microsoft-identity-manager/plan-design/microsoft-identity-manager-2016-supported-platforms)
-
 # [部署和使用](/microsoft-identity-manager/deploy-use/microsoft-identity-manager-deploy)
-
 # [使用 Privileged Access Management](/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services)
-
 # [开发人员参考](microsoft-identity-manager-2016-developer-reference.md)
-
 ## [Microsoft Identity Manager 2016 开发人员参考](microsoft-identity-manager-2016-developer-reference.md)
-
 ### [证书管理 REST API 参考](certificate-management-rest-api-reference.md)
-
 #### [CM REST API 服务详细信息](certificate-management-rest-api-service-details.md)
-
 #### [示例注册演练](sample-enrollment-walkthrough.md)
-
 #### [获取配置文件模板](get-profile-templates.md)
-
 #### [策略操作](policy-operations.md)
-
 ##### [获取工作流策略](get-workflow-policy.md)
-
 ##### [获取智能卡策略](get-smartcard-policy.md)
-
 #### [请求操作](request-operations.md)
-
 ##### [创建请求](create-request.md)
-
 ##### [获取请求](get-request.md)
-
 ##### [取消、放弃或完成请求](cancel-abandon-complete-request.md)
-
 #### [证书请求操作](certificate-request-operations.md)
-
 ##### [获取证书请求生成选项](get-certificate-request-generation-options.md)
-
 ##### [获取证书响应](get-certificate-responses.md)
-
 #### [智能卡操作](smartcard-operations.md)
-
 ##### [将智能卡分配给请求](assign-smartcard-to-request.md)
-
 ##### [获取智能卡数据](get-smartcard-data.md)
-
 ##### [获取智能卡身份验证响应](get-smartcard-authentication-response.md)
-
 ##### [获取智能卡多样化管理密钥](get-smartcard-diversified-admin-key.md)
-
 ##### [获取智能卡建议的 PIN](get-smartcard-proposed-pin.md)
-
 ##### [更新智能卡状态](update-smartcard-status.md)
-
 #### [配置文件操作](profile-operations.md)
-
 ##### [获取配置文件数据](get-profile-data.md)
-
 ##### [获取配置文件状态操作](get-profile-state-operations.md)
-
 #### [证书操作](certificate-operations.md)
-
 ##### [获取智能卡或配置文件证书](get-smartcard-profile-certificates.md)
-
 ##### [获取用户证书](get-user-certificates.md)
-
 ### [Privileged Access Management REST API 参考](privileged-access-management-rest-api-reference.md)
-
 #### [PAM REST API 服务详细信息](privileged-access-management-rest-api-service-details.md)
-
 #### [获取 PAM 角色](privileged-access-management-get-roles.md)
-
 #### [创建 PAM 请求](privileged-access-management-create-request.md)
-
 #### [获取 PAM 请求](privileged-access-management-get-requests.md)
-
 #### [关闭 PAM 请求](privileged-access-management-close-request.md)
-
 #### [获取挂起的 PAM 请求](privileged-access-management-get-pending-requests.md)
-
 #### [批准或拒绝挂起的 PAM 请求](privileged-access-management-approve-reject-pending-request.md)
-
 #### [获取 PAM 会话信息](privileged-access-management-get-session-info.md)

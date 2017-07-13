@@ -12,15 +12,14 @@ ms.technology: security
 ms.assetid: 50345fda-56d7-4b6e-a861-f49ff90a8376
 ms.reviewer: mwahl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 3623bffb099a83d0eba47ba25e9777c3d590e529
-ms.openlocfilehash: e16bcc36fe4bccb621ba4d649aa0b015f2adbcdd
-ms.lasthandoff: 01/24/2017
-
-
+ms.openlocfilehash: bd9c0da17c97cfc15023ad624a249e0f4a2d0825
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/13/2017
 ---
-
-# <a name="set-up-a-domain"></a>设置域
+# 设置域
+<a id="set-up-a-domain" class="xliff"></a>
 
 >[!div class="step-by-step"]
 [Windows Server 2012 R2 »](prepare-server-ws2012r2.md)
@@ -29,7 +28,8 @@ Microsoft Identity Manger (MIM) 适用于你的 Active Directory (AD) 域。 应
 
 本文将指导你完成一些步骤来准备要与 MIM 协同使用的域。
 
-## <a name="create-user-accounts-and-groups"></a>创建用户帐户和组
+## 创建用户帐户和组
+<a id="create-user-accounts-and-groups" class="xliff"></a>
 
 MIM 部署的所有组件都需要在域中具有自己的标识。 这包括服务和同步等 MIM 组件，以及 SharePoint 和 SQL。
 
@@ -92,4 +92,3 @@ MIM 部署的所有组件都需要在域中具有自己的标识。 这包括服
 
 >[!div class="step-by-step"]
 [Windows Server 2012 R2 »](prepare-server-ws2012r2.md)
-
