@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/13/2017
 ---
-# 将 Azure MFA 用于激活
-<a id="using-azure-mfa-for-activation" class="xliff"></a>
+# <a name="using-azure-mfa-for-activation"></a>将 Azure MFA 用于激活
 在配置 PAM 角色时，你可以选择对请求激活角色的用户进行授权的方式。 PAM 授权活动实现的选项有：
 
 - 角色所有者批准
@@ -29,8 +28,7 @@ ms.lasthandoff: 07/13/2017
 
 Microsoft Azure 多因素身份验证 (MFA) 是要求用户通过使用移动应用、电话呼叫或短信验证其登录尝试的身份验证服务。 它可与 Microsoft Azure Active Directory 搭配使用，并且作为一项适用于云和本地企业应用程序的服务。 对于 PAM 方案，不管候选用户先前如何对 Windows PRIV 域进行身份验证，Azure MFA 都提供可以在授权下使用的其他身份验证机制。
 
-## 先决条件
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>先决条件
 
 若要将 Azure MFA 与 MIM 一起使用，你将需要：
 
@@ -39,8 +37,7 @@ Microsoft Azure 多因素身份验证 (MFA) 是要求用户通过使用移动应
 - 适用于候选用户的 Azure Active Directory Premium 许可证或授权 Azure MFA 的替换方法
 - 适用于所有候选用户的电话号码
 
-## 创建 Azure MFA 提供程序
-<a id="creating-an-azure-mfa-provider" class="xliff"></a>
+## <a name="creating-an-azure-mfa-provider"></a>创建 Azure MFA 提供程序
 
 在此部分中，将在 Microsoft Azure Active Directory 中设置 Azure MFA 提供程序。  如果你已在使用 Azure MFA，无论它们是单机配置还是通过 Azure Active Directory Premium 配置，请跳至下一节。
 
@@ -52,8 +49,7 @@ Microsoft Azure 多因素身份验证 (MFA) 是要求用户通过使用移动应
 
 4.  在“名称”  字段中，输入 **PAM**，并在“使用模型”字段中，选择“每个已启用用户”。 如果你已具有 Azure AD 目录，则选择该目录。 最后，单击“创建” 。
 
-## 下载 Azure MFA 服务凭据
-<a id="downloading-the-azure-mfa-service-credentials" class="xliff"></a>
+## <a name="downloading-the-azure-mfa-service-credentials"></a>下载 Azure MFA 服务凭据
 
 接下来，将生成一个包含身份验证材料的文件，PAM 需要该材料才能联系 Azure MFA。
 
@@ -76,8 +72,7 @@ Microsoft Azure 多因素身份验证 (MFA) 是要求用户通过使用移动应
 >[!NOTE]
 > 该 ZIP 文件包含用于对 Azure MFA 服务进行身份验证的密钥材料。
 
-## 配置适用于 Azure MFA 的 MIM 服务
-<a id="configuring-the-mim-service-for-azure-mfa" class="xliff"></a>
+## <a name="configuring-the-mim-service-for-azure-mfa"></a>配置适用于 Azure MFA 的 MIM 服务
 
 1.  以管理员或者安装了 MIM 的用户的身份登录到安装了 MIM 服务的计算机。
 
@@ -106,8 +101,7 @@ Microsoft Azure 多因素身份验证 (MFA) 是要求用户通过使用移动应
 > [!NOTE]
 > 在该过程结束时，请确保文件 **MfaSettings.xml** 及其任何副本或 ZIP 文件均不可公开读取。
 
-## 为 Azure MFA 配置 PAM 用户
-<a id="configure-pam-users-for-azure-mfa" class="xliff"></a>
+## <a name="configure-pam-users-for-azure-mfa"></a>为 Azure MFA 配置 PAM 用户
 
 对于要激活需要 Azure MFA 的角色的用户，其电话号码必须存储在 MIM 中。 有两种方式设置此属性。
 
@@ -120,8 +114,7 @@ Set-PAMUser (Get-PAMUser -SourceDisplayName Jen) -SourcePhoneNumber 12135551212
 ```
 
 
-## 为 Azure MFA 配置 PAM 角色
-<a id="configure-pam-roles-for-azure-mfa" class="xliff"></a>
+## <a name="configure-pam-roles-for-azure-mfa"></a>为 Azure MFA 配置 PAM 角色
 
 将 PAM 角色的所有候选用户的电话号码存储在 MIM 服务数据库中后，可以为 Azure MFA 配置该角色。 将使用 `New-PAMRole` 或 `Set-PAMRole` 命令来完成该操作。 例如，
 
@@ -131,8 +124,7 @@ Set-PAMRole (Get-PAMRole -DisplayName "R") -MFAEnabled 1
 
 可以为某个角色禁用 Azure MFA，方法是指定 `Set-PAMRole` 命令中的参数“-MFAEnabled 0”。
 
-## 疑难解答
-<a id="troubleshooting" class="xliff"></a>
+## <a name="troubleshooting"></a>疑难解答
 
 可以在“特权访问管理”事件日志中找到以下事件：
 

@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/13/2017
 ---
-# 步骤 6 – 将某个组转换为特权访问管理
-<a id="step-6--transition-a-group-to-privileged-access-management" class="xliff"></a>
+# <a name="step-6--transition-a-group-to-privileged-access-management"></a>步骤 6 – 将某个组转换为特权访问管理
 
 >[!div class="step-by-step"]
 [« 步骤 5 ](step-5-establish-trust-between-priv-corp-forests.md)

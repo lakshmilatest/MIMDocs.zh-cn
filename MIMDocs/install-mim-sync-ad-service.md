@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/13/2017
 ---
-# 安装 MIM 2016：同步 Active Directory 和 MIM 服务
-<a id="install-mim-2016-synchronize-active-directory-and-mim-service" class="xliff"></a>
+# <a name="install-mim-2016-synchronize-active-directory-and-mim-service"></a>安装 MIM 2016：同步 Active Directory 和 MIM 服务
 
 >[!div class="step-by-step"]
 [« MIM 服务和门户](install-mim-service-portal.md)
@@ -32,8 +31,7 @@ ms.lasthandoff: 07/13/2017
 
 默认情况下，MIM 同步服务 (Sync) 未配置任何连接器。  典型的第一步是通过 MIM 同步来使用现有的 Active Directory 帐户填充 MIM 服务数据库。 为此，你将使用 MIM 同步服务应用程序。
 
-## 创建 MIM 管理代理
-<a id="create-the-mim-management-agent" class="xliff"></a>
+## <a name="create-the-mim-management-agent"></a>创建 MIM 管理代理
 MIM 管理代理 (MA) 是 MIM 同步到 MIM 服务的连接器。 若要创建此连接器，请使用“创建管理代理向导”。
 
 在配置 MIM 管理代理时，需要指定一个用户帐户。 本文档使用 **MIMMA** 作为此帐户的名称。
@@ -41,8 +39,7 @@ MIM 管理代理 (MA) 是 MIM 同步到 MIM 服务的连接器。 若要创建�
 > [!NOTE]
 > 用于 MIM 管理代理的帐户必须与 MIM 服务安装过程中指定的帐户相同。
 
-###创建 MIM MA
-<a id="to-create-the-mim-ma" class="xliff"></a>
+###<a name="to-create-the-mim-ma"></a>创建 MIM MA
 
 1.  打开“同步服务管理器”。
 
@@ -164,8 +161,7 @@ MIM 管理代理 (MA) 是 MIM 同步到 MIM 服务的连接器。 若要创建�
 
 11.  若要创建管理代理，请单击“配置扩展”页上的“完成”。
 
-## 创建 AD 管理代理
-<a id="create-the-ad-management-agent" class="xliff"></a>
+## <a name="create-the-ad-management-agent"></a>创建 AD 管理代理
 Active Directory 管理代理是 AD 域服务的连接器。 若要创建此连接器，请使用“创建管理代理向导”。
 
 1. 若要打开“创建管理代理向导”，请单击“操作”菜单上的“创建”。
@@ -227,13 +223,11 @@ Active Directory 管理代理是 AD 域服务的连接器。 若要创建此连�
 12. 在“配置扩展”页上，单击“完成”。
 
 
-## 创建运行配置文件
-<a id="create-run-profiles" class="xliff"></a>
+## <a name="create-run-profiles"></a>创建运行配置文件
 
 创建 ADMA 和 MIMMA 连接器的运行配置文件。
 
-### 创建 ADMA 连接器的运行配置文件
-<a id="create-run-profiles-for-the-adma-connector" class="xliff"></a>
+### <a name="create-run-profiles-for-the-adma-connector"></a>创建 ADMA 连接器的运行配置文件
 
 下表展示需要创建的用于 ADMA 连接器的 5 个运行配置文件
 
@@ -265,8 +259,7 @@ Active Directory 管理代理是 AD 域服务的连接器。 若要创建此连�
 
 5. 若要关闭“配置运行配置文件”对话框，请单击“确定”。
 
-### 创建 MIMMA 连接器的运行配置文件
-<a id="create-run-profiles-for-the-mimma-connector" class="xliff"></a>
+### <a name="create-run-profiles-for-the-mimma-connector"></a>创建 MIMMA 连接器的运行配置文件
 
 下表显示与 MIMMA 连接器匹配的五个运行配置文件：
 
@@ -298,8 +291,7 @@ Active Directory 管理代理是 AD 域服务的连接器。 若要创建此连�
 
 5. 若要关闭“配置运行配置文件”对话框，请单击“确定”。
 
-## 配置 MIM 服务
-<a id="configure-the-mim-service" class="xliff"></a>
+## <a name="configure-the-mim-service"></a>配置 MIM 服务
 
 使用 MIM 门户，你将为 MIM 服务创建 AD 用户入站同步规则。
 
@@ -353,12 +345,10 @@ Active Directory 管理代理是 AD 域服务的连接器。 若要创建此连�
 
 8. 在“摘要”选项卡上，单击“提交”。
 
-## 初始化测试环境
-<a id="initialize-the-testing-environment" class="xliff"></a>
+## <a name="initialize-the-testing-environment"></a>初始化测试环境
 需要执行 4 个步骤，才可使用 AD 数据测试 MIM 配置：
 
-### 启用设置
-<a id="enable-provisioning" class="xliff"></a>
+### <a name="enable-provisioning"></a>启用设置
 
 1. 打开“同步服务管理器”。
 
@@ -368,8 +358,7 @@ Active Directory 管理代理是 AD 域服务的连接器。 若要创建此连�
 
 4. 若要关闭“选项”对话框，请单击“确定”。
 
-### 初始化 MIMMA
-<a id="initialize-the-mimma" class="xliff"></a>
+### <a name="initialize-the-mimma"></a>初始化 MIMMA
 
 在此连接器上运行完整同步周期。 完整周期包括以下运行配置文件：
 
@@ -394,15 +383,13 @@ Active Directory 管理代理是 AD 域服务的连接器。 若要创建此连�
 
     - 若要开始运行配置文件，请单击“确定”。
 
-#### 配置属性流优先顺序
-<a id="configure-attribute-flow-precedence" class="xliff"></a>
+#### <a name="configure-attribute-flow-precedence"></a>配置属性流优先顺序
 
 在初始化 MIM 连接器期间，已对 metaverse 应用了配置的同步规则。
 
 调整由此连接器提供的属性的属性流优先顺序，以确保已在 AD 中的属性可以流入 metaverse 并且稍后还可以流入 MIM 服务数据库。
 
-### 初始化 ADMA
-<a id="initialize-the-adma" class="xliff"></a>
+### <a name="initialize-the-adma"></a>初始化 ADMA
 
 若要初始化 Active Directory 连接器，需要在该连接器上运行完全导入和完全同步。 完全导入会将现有对象从 AD 带入连接器空间。 完全同步将更新同步规则，以匹配这些 MIM 连接器。
 
@@ -420,8 +407,7 @@ Active Directory 管理代理是 AD 域服务的连接器。 若要创建此连�
 
     - 若要开始运行配置文件，请单击“确定”。
 
-### 填充 MIM 服务数据库
-<a id="populate-the-mim-service-database" class="xliff"></a>
+### <a name="populate-the-mim-service-database"></a>填充 MIM 服务数据库
 
 若要使用对象填充 MIM 服务数据库，需要在 MIMMA 连接器上运行同步周期。 周期包括：
 

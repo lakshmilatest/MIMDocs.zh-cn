@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/13/2017
 ---
-# 设置标识管理服务器：Windows Server 2012 R2
-<a id="set-up-an-identity-management-server-windows-server-2012-r2" class="xliff"></a>
+# <a name="set-up-an-identity-management-server-windows-server-2012-r2"></a>设置标识管理服务器：Windows Server 2012 R2
 
 >[!div class="step-by-step"]
 [« 准备域](preparing-domain.md)
@@ -31,8 +30,7 @@ ms.lasthandoff: 07/13/2017
 > - 域名 - **contoso**
 > - 密码 - **Pass@word1**
 
-## 将 Windows Server 2012 R2 加入到你的域中
-<a id="join-windows-server-2012-r2-to-your-domain" class="xliff"></a>
+## <a name="join-windows-server-2012-r2-to-your-domain"></a>将 Windows Server 2012 R2 加入到你的域中
 
 开始使用 Windows Server 2012 R2 计算机（具有最少 8GB 的 RAM）。 安装时，请指定“Windows Server 2012 R2 标准（带有 GUI 的服务器）x64”版本。
 
@@ -63,8 +61,7 @@ ms.lasthandoff: 07/13/2017
     Install-WindowsFeature Web-WebServer, Net-Framework-Features,rsat-ad-powershell,Web-Mgmt-Tools,Application-Server,Windows-Identity-Foundation,Server-Media-Foundation,Xps-Viewer –includeallsubfeature -restart -source d:\sources\SxS
     ```
 
-## 配置服务器安全策略
-<a id="configure-the-server-security-policy" class="xliff"></a>
+## <a name="configure-the-server-security-policy"></a>配置服务器安全策略
 
 将服务器安全策略设置为允许新创建的帐户以服务身份运行。
 
@@ -95,8 +92,7 @@ ms.lasthandoff: 07/13/2017
 12. 关闭本地安全策略窗口。
 
 
-## 更改 IIS Windows 身份验证模式
-<a id="change-the-iis-windows-authentication-mode" class="xliff"></a>
+## <a name="change-the-iis-windows-authentication-mode"></a>更改 IIS Windows 身份验证模式
 
 1.  打开 PowerShell 窗口。
 

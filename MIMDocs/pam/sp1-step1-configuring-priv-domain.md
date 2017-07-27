@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/13/2017
 ---
-# 步骤 1 配置 Priv 域
-<a id="step-1-configuring-the-priv-domain" class="xliff"></a>
+# <a name="step-1-configuring-the-priv-domain"></a>步骤 1 配置 Priv 域
 
 >[!div class="step-by-step"]
 [步骤 2 »](sp1-step2-configuring-corp-domain.md)

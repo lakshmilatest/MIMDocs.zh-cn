@@ -18,12 +18,10 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/13/2017
 ---
-# Azure Active Directory 中的混合身份管理审计报告 - 公开预览版（新版）
-<a id="hybrid-identity-management-audit-reports-in-azure-active-directory---public-previewrefresh" class="xliff"></a>
+# <a name="hybrid-identity-management-audit-reports-in-azure-active-directory---public-previewrefresh"></a>Azure Active Directory 中的混合身份管理审计报告 - 公开预览版（新版）
 借助 Azure Active Directory (AD) 审核活动报告，你可以查看单个报表，以监视发生在本地或云中的身份管理活动。 此功能允许你在一个位置管理所有标识和访问数据，从而节省时间并降低总体成本。
 
-## 什么是 Azure Active Directory 混合报告？
-<a id="what-is-azure-active-directory-hybrid-reporting" class="xliff"></a>
+## <a name="what-is-azure-active-directory-hybrid-reporting"></a>什么是 Azure Active Directory 混合报告？
 混合审核报告可帮助 IT 专业人员解决常见的身份管理报告质询。
 
 1. **收集不同系统中的标识管理活动。** 混合报告为你显示 Azure AD 和 Identity Manager 中的标识管理活动。
@@ -32,8 +30,7 @@ ms.lasthandoff: 07/13/2017
 
 3. **降低报告系统基础结构成本。** 借助云中的混合报告，无需使用本地报告数据仓库基础结构。
 
-## BitLocker 是如何工作的？
-<a id="how-does-it-work" class="xliff"></a>
+## <a name="how-does-it-work"></a>BitLocker 是如何工作的？
 
 若要收集本地数据，首先要在 Identity Manager 2016 服务器上安装报告代理。 可从[此处](https://www.microsoft.com/en-us/download/details.aspx?id=55112)的 Microsoft 下载页面下载报告代理。
 
@@ -44,7 +41,6 @@ ms.lasthandoff: 07/13/2017
 4. 活动数据在 Azure 中将存储 1 个月。
 5. Azure 门户会检索审计报告数据，并将此呈现为 Azure 审计报告边栏选项卡中的审计数据。
 
-## 另请参阅
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>另请参阅
 - 获取有关[使用 Identity Manager 混合报告](working-with-identity-manager-hybrid-reporting.md)的更多详细信息
 - 获取有关[Azure Active Directory 门户中的“审核活动”报表](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-audit-logs)的更多详细信息

@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/13/2017
 ---
-# 步骤 4 配置 SharePoint
-<a id="step-4-configuring-sharepoint" class="xliff"></a>
+# <a name="step-4-configuring-sharepoint"></a>步骤 4 配置 SharePoint
 
 >[!div class="step-by-step"]
 [« 步骤 3](sp1-step3-installing-configuring-sql.md)

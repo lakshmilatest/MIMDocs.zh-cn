@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/13/2017
 ---
-# 为 Privileged Access Management 配置 MIM 环境
-<a id="configure-the-mim-environment-for-privileged-access-management" class="xliff"></a>
+# <a name="configure-the-mim-environment-for-privileged-access-management"></a>为 Privileged Access Management 配置 MIM 环境
 在设置跨林访问环境、安装和配置 Active Directory 和 Microsoft Identity Manager 以及演示实时访问请求时，需要完成 7 个步骤。
 
 下面列出了这些步骤，以便你从头开始生成测试环境。 如果要将 PAM 应用到现有的环境中，则可以使用自己的域控制器或者用户帐户，而不是创建一个新的帐户以匹配实例。

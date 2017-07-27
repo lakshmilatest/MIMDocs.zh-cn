@@ -18,12 +18,10 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/13/2017
 ---
-# 使用证书管理器创建软件证书
-<a id="create-software-certificates-with-certificate-manager" class="xliff"></a>
+# <a name="create-software-certificates-with-certificate-manager"></a>使用证书管理器创建软件证书
 注册和续订软件证书无需是管理员，而且也无需虚拟智能卡。 值得注意的是，在某一时刻会提示允许证书操作，这是正常现象。
 
-## 在 MIM 2016 证书管理器中创建软件证书配置文件模板
-<a id="create-a-software-certificate-profile-template-in-mim-2016-certificate-manager" class="xliff"></a>
+## <a name="create-a-software-certificate-profile-template-in-mim-2016-certificate-manager"></a>在 MIM 2016 证书管理器中创建软件证书配置文件模板
 
 1.  创建请求有关虚拟智能卡证书的模板。 打开 mmc。
 
@@ -73,8 +71,7 @@ ms.lasthandoff: 07/13/2017
 
     10. 在列表中选择刚刚创建的新模板（“存档证书模板”），然后单击“确定” 。
 
-## 创建配置文件模板
-<a id="create-the-profile-template" class="xliff"></a>
+## <a name="create-the-profile-template"></a>创建配置文件模板
 
 1.  作为拥有管理员权限的用户登录到 CM 门户。
 

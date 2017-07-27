@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/13/2017
 ---
-# 步骤 8 PAM 部署验证
-<a id="step-8-pam-deployment-verification" class="xliff"></a>
+# <a name="step-8-pam-deployment-verification"></a>步骤 8 PAM 部署验证
 
 >[!div class="step-by-step"]
 [« 步骤 7](sp1-step7-setup-sidhistory-sidfiltering.md)

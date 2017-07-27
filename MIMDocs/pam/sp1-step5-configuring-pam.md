@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/13/2017
 ---
-# 步骤 5 安装/配置 PAM
-<a id="step-5-installingconfiguring-pam" class="xliff"></a>
+# <a name="step-5-installingconfiguring-pam"></a>步骤 5 安装/配置 PAM
 
 >[!div class="step-by-step"]
 [« 步骤 4](sp1-step4-configuring-sharepoint.md)

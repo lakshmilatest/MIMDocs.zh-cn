@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/13/2017
 ---
-# 了解 PAM 的组件
-<a id="understand-the-components-of-pam" class="xliff"></a>
+# <a name="understand-the-components-of-pam"></a>了解 PAM 的组件
 
 Privileged Access Management 将管理访问权限与日常的用户帐户分开。 该解决方案依赖于并行林：
 
