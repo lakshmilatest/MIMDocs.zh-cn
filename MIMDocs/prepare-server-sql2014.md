@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/13/2017
 ---
-# 设置标识管理服务器：SQL Server 2014
-<a id="set-up-an-identity-management-server-sql-server-2014" class="xliff"></a>
+# <a name="set-up-an-identity-management-server-sql-server-2014"></a>设置标识管理服务器：SQL Server 2014
 
 >[!div class="step-by-step"]
 [« Windows Server 2012 R2](prepare-server-ws2012r2.md)
@@ -31,8 +30,7 @@ ms.lasthandoff: 07/13/2017
 > - 域名 - **contoso**
 > - 密码 - **Pass@word1**
 
-## 安装 **SQL Server 2014 标准版**。
-<a id="install-sql-server-2014-standard-edition" class="xliff"></a>
+## <a name="install-sql-server-2014-standard-edition"></a>安装 **SQL Server 2014 标准版**。
 
 1. 以域管理员身份启动 **PowerShell** 。
 

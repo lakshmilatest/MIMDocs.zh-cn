@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/13/2017
 ---
-# 步骤 3 配置 SQL
-<a id="step-3-configuring-sql" class="xliff"></a>
+# <a name="step-3-configuring-sql"></a>步骤 3 配置 SQL
 
 >[!div class="step-by-step"]
 [« 步骤 2](sp1-step2-configuring-corp-domain.md)

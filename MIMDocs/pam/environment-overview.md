@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/13/2017
 ---
-# 环境概述
-<a id="environment-overview" class="xliff"></a>
+# <a name="environment-overview"></a>环境概述
 
 Privileged Access Management 与具有各自分开的驱动器的虚拟机 (VM) 协同工作，这些驱动器在共享网络上相互连接。 可以通过 Windows 8.1、Windows Server 2012 R2 或其他操作系统平台托管这些虚拟机。
 

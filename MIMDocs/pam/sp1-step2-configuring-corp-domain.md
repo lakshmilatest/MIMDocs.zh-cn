@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/13/2017
 ---
-# 步骤 2 配置 CORP 域
-<a id="step-2-configuring-the-corp-domain" class="xliff"></a>
+# <a name="step-2-configuring-the-corp-domain"></a>步骤 2 配置 CORP 域
 
 >[!div class="step-by-step"]
 [« 步骤 1](sp1-step1-configuring-priv-domain.md)

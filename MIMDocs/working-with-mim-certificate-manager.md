@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/13/2017
 ---
-# 使用 MIM 证书管理器
-<a id="working-with-the-mim-certificate-manager" class="xliff"></a>
+# <a name="working-with-the-mim-certificate-manager"></a>使用 MIM 证书管理器
 在你启动并运行 MIM 2016 和证书管理器后，你可以部署 MIM 证书管理器 Windows 应用商店应用程序，以便你的用户可以轻松地管理其物理智能卡、虚拟智能卡和软件证书。 部署 MIM CM 应用的步骤如下所示：
 
 1.  创建证书模板。
@@ -30,8 +29,7 @@ ms.lasthandoff: 07/13/2017
 
 4.  通过 SCCM 或 Intune 部署应用。
 
-## 创建证书模板
-<a id="create-a-certificate-template" class="xliff"></a>
+## <a name="create-a-certificate-template"></a>创建证书模板
 使用与平时相同的方法为 CM 应用创建证书模板，只不过你必须确保证书模板为版本 3 和更高版本。
 
 1.  登录到运行 AD CS 的服务器（证书服务器）。
@@ -70,8 +68,7 @@ ms.lasthandoff: 07/13/2017
 
 16. 从列表中选择你创建的新模板，然后单击“确定” 。
 
-## 创建配置文件模板
-<a id="create-a-profile-template" class="xliff"></a>
+## <a name="create-a-profile-template"></a>创建配置文件模板
 请确保在创建配置文件模板时将其设置为创建/销毁 vSC 并删除数据收集。 CM 应用无法处理已收集的数据，因此禁用它很重要，如下所示。
 
 1.  作为拥有管理员权限的用户登录到 CM 门户。
@@ -96,8 +93,7 @@ ms.lasthandoff: 07/13/2017
 
 11. 你必须通过单击左窗格中的策略，然后选中“示例数据项”  旁边的框来为每个策略禁用数据收集项，然后单击“删除数据收集项” 。 然后单击“确定” 。
 
-## 使 CM 为部署做好准备
-<a id="prepare-the-cm-app-for-deployment" class="xliff"></a>
+## <a name="prepare-the-cm-app-for-deployment"></a>使 CM 为部署做好准备
 
 1.  在命令提示符处，运行以下命令来解包该应用，然后将内容提取到名为 appx 的新子文件夹并创建一个副本，这样你无需修改原始文件。
 
@@ -254,6 +250,5 @@ ms.lasthandoff: 07/13/2017
 
     -   有关 **ConfigureMIimCMClientAndRelyingParty.ps1** 脚本的帮助，请运行 `get-help  -detailed ConfigureMimCMClientAndRelyingParty.ps1`
 
-## 部署应用
-<a id="deploy-the-app" class="xliff"></a>
+## <a name="deploy-the-app"></a>部署应用
 设置 CM 应用后，在下载中心中下载文件 MIMDMModernApp_&lt;version&gt;_AnyCPU_Test.zip 并提取其所有内容。 .appx 文件是安装程序。 你可以使用通常部署 Windows 应用商店应用时使用的任何方式来部署它，使用 [System Center Configuration Manager](https://technet.microsoft.com/library/dn613840.aspx)，或使用 [Intune](https://technet.microsoft.com/library/dn613839.aspx) 旁加载应用，以使用户必须通过公司门户访问它或直接向其计算机推送。

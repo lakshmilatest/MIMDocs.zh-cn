@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/13/2017
 ---
-# 安装 MIM 2016：MIM 同步服务
-<a id="install-mim-2016-mim-synchronization-service" class="xliff"></a>
+# <a name="install-mim-2016-mim-synchronization-service"></a>安装 MIM 2016：MIM 同步服务
 
 >[!div class="step-by-step"]
 [« Exchange Server](prepare-server-exchange.md)
@@ -37,8 +36,7 @@ ms.lasthandoff: 07/13/2017
 
 2. 解压缩 MIM 安装包或装载 MIM 映像 DVD。
 
-## 安装 MIM 2016 同步服务
-<a id="install-mim-2016-synchronization-service" class="xliff"></a>
+## <a name="install-mim-2016-synchronization-service"></a>安装 MIM 2016 同步服务
 
 1. 在已解压缩的 MIM 安装文件夹中，导航到“同步服务”  文件夹。
 

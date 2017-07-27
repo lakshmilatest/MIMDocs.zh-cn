@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/13/2017
 ---
-# 步骤 6 安装 PAM 信任
-<a id="step-6-set-up-the-pam-trust" class="xliff"></a>
+# <a name="step-6-set-up-the-pam-trust"></a>步骤 6 安装 PAM 信任
 
 >[!div class="step-by-step"]
 [« 步骤 5](sp1-step5-configuring-pam.md)

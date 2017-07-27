@@ -18,15 +18,13 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/13/2017
 ---
-# 硬件和软件要求
-<a id="hardware-and-software-requirements" class="xliff"></a>
+# <a name="hardware-and-software-requirements"></a>硬件和软件要求
 
 Privileged Access Management 没有超出基础软件平台所需的任何硬件要求。 只需确保你拥有足够的内存或磁盘空间，以及网络连接。
 
 本文提供了基本部署的最低要求。 此文并非用于演示性能、可伸缩性或高可用性，并且不表示针对大型企业或生产环境的推荐的部署拓扑。
 
-## 从软件包安装
-<a id="installing-from-software-packages" class="xliff"></a>
+## <a name="installing-from-software-packages"></a>从软件包安装
 
 下面的软件可从 TechNet 评估中心或 MSDN 下载：  
 - Microsoft Identity Manager 2016
@@ -36,33 +34,28 @@ Privileged Access Management 没有超出基础软件平台所需的任何硬件
 下面的软件可从 GitHub 下载：  
 - PAMSamplePortal：包含适用于 REST API 的示例 Web 应用程序
 
-## 所需软件
-<a id="required-software" class="xliff"></a>
+## <a name="required-software"></a>所需软件
 
 - Windows Server 2012 R2  
 - Windows 8 1 企业版或 Windows 10 企业版  
 - SQL Server 2012 Service Pack 1 或 SOL Server 2014  
 
-## 评估软件
-<a id="evaluation-software" class="xliff"></a>
+## <a name="evaluation-software"></a>评估软件
 
 如果没有用于 Windows、SQL Server 或 Windows Server 的许可证，则可以下载评估版。
 
-### TechNet 评估中心
-<a id="technet-evaluation-center" class="xliff"></a>
+### <a name="technet-evaluation-center"></a>TechNet 评估中心
 
 - [Windows Server 2012 R2](https://www.microsoft.com/evalcenter/evaluate-windows-server-2012-r2)  
 - [Windows 8.1 企业版](https://www.microsoft.com/evalcenter/evaluate-windows-8-1-enterprise)  
 - [Windows 10 企业版](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise)  
 
-### Microsoft 下载中心
-<a id="microsoft-download-center" class="xliff"></a>
+### <a name="microsoft-download-center"></a>Microsoft 下载中心
 
 - [SQL Server](https://www.microsoft.com/download/details.aspx?id=29066)  
 - [SharePoint Foundation 2013 SP1 及其必备组件](https://www.microsoft.com/download/details.aspx?id=42039)
 
-## 硬件要求
-<a id="hardware-requirements" class="xliff"></a>
+## <a name="hardware-requirements"></a>硬件要求
 
 对于 PAM 的每个组件，请参阅软件产品的系统要求。
 

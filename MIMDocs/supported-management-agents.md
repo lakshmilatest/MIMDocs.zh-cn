@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/13/2017
 ---
-# 连接到目录
-<a id="connect-to-your-directories" class="xliff"></a>
+# <a name="connect-to-your-directories"></a>连接到目录
 
 连接器将特定已连接数据源链接到 Microsoft Identity Manager (MIM)。 连接器将数据从已连接数据源移动到 MIM。 对 MIM 中的数据进行了修改时，连接器还可以将数据导出到已连接数据源，以使其与 MIM 保持同步。 通常，每个已连接目录至少有一个连接器。
 
@@ -27,8 +26,7 @@ ms.lasthandoff: 07/13/2017
 
 本文介绍的是 MIM 中包含的连接器，但用于 Extensible Connectivity 2.0 的连接器可实现与甚至更多数据源的连接。 某些合作伙伴按照这种方式创建了其自己的连接器，wiki [FIM 2010: Management Agents from Partners](http://social.technet.microsoft.com/wiki/contents/articles/1589.fim-2010-management-agents-from-partners.aspx)（FIM 2010：合作伙伴的管理代理）中提供了相关完整列表。
 
-## MIM 2016 中支持的连接器
-<a id="supported-connectors-in-mim-2016" class="xliff"></a>
+## <a name="supported-connectors-in-mim-2016"></a>MIM 2016 中支持的连接器
 
 | Name | 支持的已连接数据源版本 |
 | ---- | ----------------------------------------------- |
@@ -55,7 +53,6 @@ ms.lasthandoff: 07/13/2017
 | 定宽文本文件 | 定宽文本文件 |
 | LDAP 数据交换格式 (LDIF) | LDAP 数据交换格式 (LDIF) |
 
-## 相关主题
-<a id="related-topics" class="xliff"></a>
+## <a name="related-topics"></a>相关主题
 
 [FIM 2010 R2 中的管理代理](https://technet.microsoft.com/library/jj133885.aspx)

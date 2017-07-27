@@ -16,8 +16,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/13/2017
 ---
-# 通过 Windows Server 2016 部署 MIM PAM
-<a id="deploy-mim-pam-with-windows-server-2016" class="xliff"></a>
+# <a name="deploy-mim-pam-with-windows-server-2016"></a>通过 Windows Server 2016 部署 MIM PAM
 
 
 通过此方案，MIM 2016 SP1 可将 Windows Server 2016 的功能用作“PRIV”林的域控制器。  配置此方案时，用户的 Kerberos 票证角色激活的剩余时间将受到限制。 
@@ -25,8 +24,7 @@ ms.lasthandoff: 07/13/2017
 >[!Note]
 Technical Preview 5 之前的 Windows Server 2016 早期技术预览版不可与此 MIM 版本一起使用。
 
-## 准备
-<a id="preparation" class="xliff"></a>
+## <a name="preparation"></a>准备
 
 实验室环境至少需要两个 VM：
 
@@ -143,8 +141,7 @@ Technical Preview 5 之前的 Windows Server 2016 早期技术预览版不可与
 
 -   **当 CORP 和 PRIV 域均位于 Windows Server 2016 域功能级别上时，无需执行**项目 #5（验证信任）。
 
-## 更多信息
-<a id="more-information" class="xliff"></a>
+## <a name="more-information"></a>更多信息
 
 - [Active Directory 域服务的 Privileged Access Management](privileged-identity-management-for-active-directory-domain-services.md)
 - [为 Privileged Access Management 配置 MIM 环境](configuring-mim-environment-for-pam.md)

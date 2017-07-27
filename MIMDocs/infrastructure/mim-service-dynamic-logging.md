@@ -16,8 +16,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/13/2017
 ---
-# MIM SP1 (4.4.1436.0) 服务动态日志记录
-<a id="mim-sp1-4414360--service-dynamic-logging" class="xliff"></a>
+# <a name="mim-sp1-4414360--service-dynamic-logging"></a>MIM SP1 (4.4.1436.0) 服务动态日志记录
 在 4.4.1436.0 中引入了新的日志记录功能。 这使得管理员和支持工程师无需重启管理服务即可打开日志记录功能。
 
 安装后，将在 Microsoft.ResourceManagement.Service.exe.config 中看到以下新行

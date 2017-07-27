@@ -19,6 +19,5 @@ ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/13/2017
 ---
-# MIM 2016 发行说明
-<a id="release-notes-for-mim-2016" class="xliff"></a>
+# <a name="release-notes-for-mim-2016"></a>MIM 2016 发行说明
 目前没有发行说明。
