@@ -5,18 +5,18 @@ keywords:
 author: billmath
 ms.author: billmath
 manager: femila
-ms.date: 03/23/2017
+ms.date: 08/16/2017
 ms.topic: get-started-article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 974015bbba3a36e1107da33655eedf94e2938582
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: 03a0e6e90c1d0059872c4d37c88cb6f4f4095bac
+ms.sourcegitcommit: 451c3ddda84758c87b8eb0359dac4043af52865f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 08/16/2017
 ---
 # <a name="install-mim-2016-mim-service-and-portal"></a>安装 MIM 2016：MIM 服务和门户
 
@@ -62,13 +62,13 @@ ms.lasthandoff: 07/13/2017
 
 10. 请注意，可能会出现如下警告：服务帐户在其当前配置中并不安全。
 
-11. 接受同步服务器位置的默认设置，并将 MIM 管理代理帐户指定为 *contoso\MIMsync*。
+11. 接受同步服务器位置的默认设置，并将 MIM 管理代理帐户指定为 *contoso\MIMMA*。
 
     ![配置 MIM 服务和门户图像](media/MIM-Install13.png)
 
 12. 将 *CORPIDM*（此计算机的名称）指定为 MIM 门户的 MIM 服务服务器地址。
 
-13. 将 *http://CorpIDM.contoso.local:82* 指定为 SharePoint 站点集 URL。
+13. 将 *http://CorpIDM.contoso.local* 指定为 SharePoint 站点集 URL。
 
 14. 将 *http://CorpIDM.contoso.local:8080* 指定为密码注册 URL。
 
@@ -106,7 +106,7 @@ ms.lasthandoff: 07/13/2017
 
 安装完成后，验证 MIM 门户是否处于活动状态。
 
-1. 启动 Internet Explorer 并连接到位于 *http://corpidm.contoso.local:82/identitymanagement* 上的 MIM 门户。 请注意，第一次访问此页可能有一个短暂的延迟。
+1. 启动 Internet Explorer 并连接到位于 *http://corpidm.contoso.local/identitymanagement* 上的 MIM 门户。 请注意，第一次访问此页可能有一个短暂的延迟。
 
     - 如有必要，以 *contoso\Administrator* 身份向 Internet Explorer 进行身份验证。
 
