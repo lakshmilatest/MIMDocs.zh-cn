@@ -5,17 +5,17 @@ keywords:
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
-ms.date: 05/11/2017
+ms.date: 08/18/2017
 ms.topic: reference
 ms.prod: identity-manager-2016
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 
-ms.openlocfilehash: a0d00c7e5d99e43d3fb0b3011a3851f7194bfdf2
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: 694ec1e0d6577c4335fd75ab0984aed9a0e4f220
+ms.sourcegitcommit: 8edd380f54c3e9e83cfabe8adfa31587612e5773
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 08/19/2017
 ---
 # <a name="microsoft-identity-manager-2016-best-practices"></a>Microsoft Identity Manager 2016 最佳做法
 
@@ -448,7 +448,7 @@ MIM 提供了两种类型的 MPR、请求和集转换：
 #### <a name="use-tmprs-to-define-custom-entitlements"></a>使用 TMPR 定义自定义权利
 
 使用集转换 MPR (TMPR) 而不是 RMPR 来定义自定义权利。
-TMPR 提供基于状态的模型，根据定义的转换集或角色的成员身份以及伴随的工作流活动来分配或删除权利。 应始终成对定义 TMPR，一个用于资源向内转换，一个用于资源向外转换。 此外，每个转换 MPR 应包含用于预配和取消预配活动的单独工作流。
+TMPR 提供基于状态的模型，根据定义的转换集或角色的成员身份以及伴随的工作流活动来分配或删除权利。 应始终成对定义 TMPR，一个用于资源向内转换，一个用于资源向外转换。此外，每个转换 MPR 应包含用于预配和取消预配活动的单独工作流。
 
 >[!NOTE]
 任何取消预配的工作流都应确保“连续策略更新”属性设置为 true。
