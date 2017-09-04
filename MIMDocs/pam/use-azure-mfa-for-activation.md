@@ -2,35 +2,36 @@
 title: "使用 Azure MFA 激活 PAM | Microsoft Docs"
 description: "当你的用户激活 Privileged Access Management 中的角色时，将 Azure MFA 设置为安全性的第二层。"
 keywords: 
-author: billmath
-ms.author: billmath
-manager: femila
-ms.date: 03/15/2017
+author: barclayn
+ms.author: barclayn
+manager: mbaldwin
+ms.date: 08/31/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 5134a112-f73f-41d0-a5a5-a89f285e1f73
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: b937b30da2dff9bbfeabf7dceb43fcaca99a1b63
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: dd77c0135bee40a90f3ea9fd5c1b2771cbc21793
+ms.sourcegitcommit: c049dceaf02ab8b6008fe440daae4d07b752ca2e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 08/31/2017
 ---
 # <a name="using-azure-mfa-for-activation"></a>将 Azure MFA 用于激活
+
 在配置 PAM 角色时，你可以选择对请求激活角色的用户进行授权的方式。 PAM 授权活动实现的选项有：
 
 - 角色所有者批准
-- Azure 多重身份验证 (MFA)
+- [Azure 多重身份验证 (MFA)](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication)
 
 如果不启用检查，将自动为候选用户角色激活候选用户。
 
-Microsoft Azure 多因素身份验证 (MFA) 是要求用户通过使用移动应用、电话呼叫或短信验证其登录尝试的身份验证服务。 它可与 Microsoft Azure Active Directory 搭配使用，并且作为一项适用于云和本地企业应用程序的服务。 对于 PAM 方案，不管候选用户先前如何对 Windows PRIV 域进行身份验证，Azure MFA 都提供可以在授权下使用的其他身份验证机制。
+Microsoft Azure 多因素身份验证 (MFA) 是要求用户通过使用移动应用、电话呼叫或短信验证其登录尝试的身份验证服务。 它可与 Microsoft Azure Active Directory 搭配使用，并且作为一项适用于云和本地企业应用程序的服务。 对于 PAM 方案，Azure MFA 提供了其他身份验证机制。 Azure MFA 可用于授权，无论用户如何对 Windows PRIV 域进行身份验证。
 
 ## <a name="prerequisites"></a>先决条件
 
-若要将 Azure MFA 与 MIM 一起使用，你将需要：
+若要将 Azure MFA 与 MIM 一起使用，则需要：
 
 - 每项提供 PAM 的 MIM 服务的 Internet 访问，用于联系 Azure MFA 服务
 - Azure 订阅
@@ -39,7 +40,7 @@ Microsoft Azure 多因素身份验证 (MFA) 是要求用户通过使用移动应
 
 ## <a name="creating-an-azure-mfa-provider"></a>创建 Azure MFA 提供程序
 
-在此部分中，将在 Microsoft Azure Active Directory 中设置 Azure MFA 提供程序。  如果你已在使用 Azure MFA，无论它们是单机配置还是通过 Azure Active Directory Premium 配置，请跳至下一节。
+在此部分中，在 Microsoft Azure Active Directory 中设置 Azure MFA 提供程序。  如果你已在使用 Azure MFA，无论它们是单机配置还是通过 Azure Active Directory Premium 配置，请跳至下一节。
 
 1.  打开 Web 浏览器，以 Azure 订阅管理员的身份连接到 [Azure 经典门户](https://manage.windowsazure.com)。
 
@@ -76,27 +77,27 @@ Microsoft Azure 多因素身份验证 (MFA) 是要求用户通过使用移动应
 
 1.  以管理员或者安装了 MIM 的用户的身份登录到安装了 MIM 服务的计算机。
 
-2.  在安装了 MIM 服务的目录下面创建新的目录文件夹，例如 `C:\\Program Files\\Microsoft Forefront Identity Manager\\2010\\Service\\MfaCerts`。
+2.  在安装了 MIM 服务的目录下面创建新的目录文件夹，例如 ```C:\Program Files\Microsoft Forefront Identity Manager\2010\Service\MfaCerts```。
 
-3.  使用 Windows 资源管理器，导航到在上一部分中下载的 ZIP 文件的 **pf\\certs** 文件夹，并将文件 **cert\_key.p12** 复制到新目录。
+3.  使用 Windows 资源管理器，转到在上一部分中下载的 ZIP 文件的 ```pf\certs``` 文件夹。 将文件 ```cert\_key.p12``` 复制到新目录中。
 
-4.  使用 Windows 资源管理器，导航到 ZIP 的 **pf** 文件夹，并在文本编辑器（如 Wordpad）中打开文件 **pf\_auth.cs**。
+4.  使用 Windows 资源管理器，转到 ZIP 的 ```pf``` 文件夹，并在文本编辑器（如 Wordpad）中打开文件 ```pf\_auth.cs```。
 
-5.  找到以下三个参数：**LICENSE\_KEY**、**GROUP\_KEY**、**CERT\_PASSWORD**。
+5. 找到以下三个参数：```LICENSE\_KEY```、```GROUP\_KEY``` 和 ```CERT\_PASSWORD```。
 
 ![复制 pf\_auth.cs 文件中的值 - 屏幕截图](media/PAM-Azure-MFA-Activation-Image-2.png)
 
-6.  使用记事本打开位于 `C:\\Program Files\\Microsoft Forefront Identity Manager\\2010\\Service` 中的 **MfaSettings.xml** 文件。
+6. 使用记事本打开位于 ```C:\Program Files\Microsoft Forefront Identity Manager\2010\Service``` 中的 **MfaSettings.xml** 文件。
 
-7.  将 pf\_auth.cs 文件中的 LICENSE\_KEY、GROUP\_KEY 和 CERT\_PASSWORD 参数的值复制到它们在 MfaSettings.xml 文件中的各自 xml 元素中。
+7. 将 pf\_auth.cs 文件中的 LICENSE\_KEY、GROUP\_KEY 和 CERT\_PASSWORD 参数的值复制到它们在 MfaSettings.xml 文件中的各自 xml 元素中。
 
-8.  在 **<CertFilePath>** XML 元素中，指定之前提取的 cert\_key.p12 文件的完整路径名称。
+8. 在 **<CertFilePath>** XML 元素中，指定之前提取的 cert\_key.p12 文件的完整路径名称。
 
-9.  在 **<username>** 元素中输入任意用户名。
+9. 在 **<username>** 元素中输入任意用户名。
 
-10.  在 **<DefaultCountryCode>** 元素中，输入你要拨打的用户的国家/地区代码，如 1 代表美国和加拿大。 在使用无国家/地区代码的电话号码注册用户的情况下使用此值。 如果用户的电话号码具有区别于为组织配置的国际国家/地区代码，则该代码必须包含在将注册的电话号码中。
+10. 在 **<DefaultCountryCode>** 元素中，输入你要拨打的用户的国家/地区代码，如 1 代表美国和加拿大。 在使用无国家/地区代码的电话号码注册用户的情况下使用此值。 如果用户的电话号码具有区别于为组织配置的国际国家/地区代码，则该代码必须包含在将注册的电话号码中。
 
-11.  保存并覆盖 MIM 服务文件夹 `C:\\Program Files\\Microsoft Forefront Identity Manager\\2010\\Service` 中的 **MfaSettings.xml** 文件。 
+11. 保存并覆盖 MIM 服务文件夹 ```C:\Program Files\Microsoft Forefront Identity Manager\2010\\Service``` 中的 **MfaSettings.xml** 文件。
 
 > [!NOTE]
 > 在该过程结束时，请确保文件 **MfaSettings.xml** 及其任何副本或 ZIP 文件均不可公开读取。
@@ -109,16 +110,15 @@ Microsoft Azure 多因素身份验证 (MFA) 是要求用户通过使用移动应
 
 其次，`Set-PAMUser` 命令将更新 MIM 服务数据库中的电话号码属性。 例如，下列内容取代 MIM 服务中的现有 PAM 用户的电话号码。 其目录条目保持不变。
 
-```
+```PowerShell
 Set-PAMUser (Get-PAMUser -SourceDisplayName Jen) -SourcePhoneNumber 12135551212
 ```
-
 
 ## <a name="configure-pam-roles-for-azure-mfa"></a>为 Azure MFA 配置 PAM 角色
 
 将 PAM 角色的所有候选用户的电话号码存储在 MIM 服务数据库中后，可以为 Azure MFA 配置该角色。 将使用 `New-PAMRole` 或 `Set-PAMRole` 命令来完成该操作。 例如，
 
-```
+```PowerShell
 Set-PAMRole (Get-PAMRole -DisplayName "R") -MFAEnabled 1
 ```
 
@@ -147,3 +147,8 @@ Set-PAMRole (Get-PAMRole -DisplayName "R") -MFAEnabled 1
 5.  选择时间范围，然后选中其他报表列中“名称”旁边的复选框。 单击“导出至 CSV” 。
 
 6.  当报表已生成时，你可以在门户中查看，或者如果 MFA 报表非常多，可将其下载为 CSV 文件。 “身份验证类型”列中的“SDK”值表示与 PAM 激活请求相关的行：这些是源自 MIM 或其他本地软件的事件。 “用户名”  字段是 MIM 服务数据库中用户对象的 GUID。 如果调用失败，“身份验证”列中的值将为“否”，并且“调用结果”列中的值将包含失败原因的详细信息。
+
+## <a name="next-steps"></a>后续步骤
+
+- [什么是 Azure 多重身份验证](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication)
+- [立即创建免费的 Azure 帐户](https://azure.microsoft.com/free/)
