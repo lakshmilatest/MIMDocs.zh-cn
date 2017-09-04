@@ -2,29 +2,29 @@
 title: "PAM 环境层模型 | Microsoft Docs"
 description: "了解基于对风险的承受程度分离系统的层模型。"
 keywords: 
-author: billmath
-ms.author: billmath
-manager: femila
-ms.date: 03/15/2017
+author: barclayn
+ms.author: barclayn
+manager: mbaldwin
+ms.date: 08/30/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: c6e3cd02-1e32-4194-a8ed-3a0b3d022a43
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 4c3b43e50403890572e77773191a821cf247269c
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: b6598857d5704accbee461366838bb8efb9b2fc0
+ms.sourcegitcommit: c049dceaf02ab8b6008fe440daae4d07b752ca2e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 08/31/2017
 ---
 # <a name="tier-model-for-partitioning-administrative-privileges"></a>用于对管理权限进行划分的层模型
 
-在当前的威胁环境中，如果攻击者获取了你的系统还不算是一个问题，那什么时候才是问题？ 实际上，内部安全与强大的外围防御同样重要。 本文介绍了一种安全模型，旨在通过从高风险区隔离高特权活动以防止特权提升。 该模型在提供一个良好的用户体验的同时仍坚持了最佳实践和安全原则。
+本文介绍了一种安全模型，旨在通过从高风险区隔离高特权活动以防止特权提升。 该模型在提供一个良好的用户体验的同时仍坚持了最佳实践和安全原则。
 
 ## <a name="elevation-of-privilege-in-active-directory-forests"></a>Active Directory 林中的特权提升
 
-获得对 Windows Server Active Directory (AD) 林永久管理权限的用户、服务或应用程序帐户会为组织的任务和业务带来大量风险。 这些帐户通常是攻击者的目标，因为如果它们遭到破坏，那么攻击者将拥有连接到域中其他服务器或应用程序的权限。
+获得对 Windows Server Active Directory (AD) 林永久管理权限的用户、服务或应用程序帐户会为组织的任务和业务带来大量风险。 这些帐户经常成为攻击者的目标，因为一旦入侵，攻击者便有权连接到域中的其他服务器或应用程序。
 
 层模型基于管理员所管理的资源在他们之间创建分区。 控制用户工作站的管理员与那些控制应用程序或管理企业标识的管理员相分离。 有关此模型的详细信息，请参阅 [Securing privileged access reference material](http://aka.ms/tiermodel)（保护特权访问的参考资料）。
 
@@ -48,13 +48,16 @@ ms.lasthandoff: 07/13/2017
 
 可以通过以下方式强制执行登录限制：
 
-- 组策略登录权限限制，包括：  
-    - 拒绝从网络访问该计算机  
-    - 拒绝作为批处理作业登录  
-    - 拒绝作为服务登录  
-    - 拒绝本地登录  
+- 组策略登录权限限制，包括：
+    - 拒绝从网络访问该计算机
+    - 拒绝作为批处理作业登录
+    - 拒绝作为服务登录
+    - 拒绝本地登录
     - 拒绝通过远程桌面设置登录  
 - 如果使用 Windows Server 2012 或更高版本，则使用身份验证策略和接收器
 - 如果帐户在专用管理员林中，则使用选择性身份验证
 
-下一篇文章[规划堡垒环境](planning-bastion-environment.md)将介绍如何添加 Microsoft Identity Manager 的专用管理林以建立管理帐户。
+## <a name="next-steps"></a>后续步骤
+
+- 下一篇文章[规划堡垒环境](planning-bastion-environment.md)将介绍如何添加 Microsoft Identity Manager 的专用管理林以建立管理帐户。
+- [特权访问工作站](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/privileged-access-workstations)提供专用于免受 Internet 攻击和威胁矢量的敏感任务的操作系统。

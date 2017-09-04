@@ -2,21 +2,21 @@
 title: "为 PAM 定义特权角色 | Microsoft Docs"
 description: "决定哪些特权角色应该进行管理，并为每个角色定义管理策略。"
 keywords: 
-author: billmath
-ms.author: billmath
-manager: femila
-ms.date: 03/15/2017
+author: barclayn
+ms.author: barclayn
+manager: mbaldwin
+ms.date: 08/31/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 1a368e8e-68e1-4f40-a279-916e605581bc
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 807ee44c23f367c33b820251012008324bb2c005
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: cfd7c5bee0038740db0ad526072ec248ed9f221d
+ms.sourcegitcommit: 210195369d2ecd610569d57d0f519d683ea6a13b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 09/01/2017
 ---
 # <a name="define-roles-for-privileged-access-management"></a>为 Privileged Access Management 定义角色
 
@@ -24,7 +24,11 @@ ms.lasthandoff: 07/13/2017
 
 定义特权访问管理的角色一种简单直接的方法是对电子表格中的所有信息进行编译。 在角色中列出角色，并使用列来标识管理要求和权限。
 
-管理要求因现有的标识和访问策略或合规性要求而异。 要为每个角色标识的参数可能包括角色的所有者、可能处于该角色的候选用户，以及哪些身份验证、审批或通知控制与角色的使用相关联。
+治理要求因现有的标识和访问策略或符合性要求而异。 用于标识每个角色的参数可能包括：
+
+- 角色所有者。
+- 可以担任相应角色的候选用户
+- 应与角色用法相关联的身份验证、审批或通知控件。
 
 角色权限将取决于要托管的应用程序。 本文使用 Active Directory 作为示例应用程序，将权限分为两类：
 
@@ -38,9 +42,9 @@ ms.lasthandoff: 07/13/2017
 
 若要查找适当的角色，请在管理范围内考虑每个应用程序：
 
-- 应用程序位于第 0 层、第 1 层还是第 2 层？  
-- 影响应用程序的机密性、完整性或可用性的权限有哪些？  
-- 应用程序是否依赖于系统的其他组件，如数据库、网络或安全基础结构、虚拟化或托管平台？
+- 应用程序位于[第 0 层、第 1 层还是第 2 层](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access-reference-material)？
+- 影响应用程序的机密性、完整性或可用性的权限有哪些？
+- 应用程序是否依赖系统的其他组件？ 例如，应用程序是否依赖数据库、网络、安全基础结构、虚拟化或托管平台？
 
 确定如何对这些应用程序的注意事项进行分类。 你希望角色有明确的界限，并且仅为角色提供可完成应用程序内的常见管理任务的足够权限。
 
@@ -80,15 +84,15 @@ ms.lasthandoff: 07/13/2017
 
 ## <a name="select-an-access-method"></a>选择访问方法
 
-如果不同用户群具有截然不同的访问管理要求，则一个特权访问管理系统中可能存在多个角色，但分配了相同的权限。 例如，对于全职员工与来自其他组织的外包 IT 员工，组织可以对他们应用不同的策略。
+Privileged Access Management 系统中可以有多个分配了相同权限的角色。 如果访问治理要求因用户群而异，可能会出现这种情况。 例如，对于全职员工与来自其他组织的外包 IT 员工，组织可以对他们应用不同的策略。
 
-在某些情况下，用户可能会永久地分配一个角色，因此他们不需要请求或激活角色分配。 永久分配情况的示例如下：
+在某些情况下，可以将用户永久分配到某角色。 在这种情况下，用户无需请求或激活角色分配。 永久分配情况的示例如下：
 
 - 现有林中的托管服务帐户
 
-- 现有林中的用户帐户，具有在 PAM 外部托管的凭据（例如，“break glass”帐户，其中诸如“域 / DC 维护”等修复信任和 DC 运行状况问题所需的角色永久地分配给该帐户，同时带有物理安全密码）
+- 现有林中的用户帐户，凭据是在 PAM 外部托管。 这可以是“Break Glass”帐户。 Break Glass 帐户可能需要诸如“域/DC 维护”之类的角色，以便修复信任和 DC 运行状况等问题。 （Break Glass 帐户永久分配到角色，密码受物理保护）
 
-- 管理林中使用密码进行身份验证的用户帐户（例如，需要永久的 24x7 管理权限并且从不支持强身份证验证的设备登录的用户）
+- 管理林中的用户帐户，使用密码进行身份验证。 这可以是需要永久全天候管理权限的用户，他们从无法支持强身份验证的设备进行登录。
 
 - 管理林中使用智能卡或虚拟智能卡的用户帐户（例如，执行罕见维护任务所需的使用离线智能卡的帐户）
 
@@ -96,14 +100,15 @@ ms.lasthandoff: 07/13/2017
 
 ## <a name="delegate-active-directory-permissions"></a>委派 Active Directory 权限
 
-创建新域时，Windows Server 将自动创建默认组，例如“域管理员”。 这些组可以简化入门过程，并可能适合较小的组织。 但是，对于大型组织，或是那些需要更多地隔离管理权限的组织，需要清空如“域管理员”这样的组，并将它们替换为提供细化权限的组。
+创建新域时，Windows Server 将自动创建默认组，例如“域管理员”。 这些组可以简化入门过程，并可能适合较小的组织。 对于大型组织或需要更多地隔离管理权限的组织，应清空这些组，并将它们替换为提供精确权限的组。
 
-域管理员组的一个局限性是它不能包含来自外部域的成员。 另一个局限性是它对以下三种单独的功能授予权限：  
-- 自行管理 Active Directory 服务  
-- 管理 Active Directory 中保存的数据  
+域管理员组的一个局限性是它不能包含来自外部域的成员。 另一个局限性是它对以下三种单独的功能授予权限：
+
+- 自行管理 Active Directory 服务
+- 管理 Active Directory 中保存的数据
 - 启用远程登录到加入域的计算机。
 
-在不使用默认组（如“域管理员”）的情况下，组织可以创建仅提供必要权限的新安全组，并使用 MIM 来动态提供具有这些组成员身份的管理员帐户。
+新建仅提供必要权限的安全组，而不是“域管理员”等默认组。 然后，应使用 MIM 为这些管理员帐户动态提供组成员身份。
 
 ### <a name="service-management-permissions"></a>服务管理权限
 
@@ -111,7 +116,7 @@ ms.lasthandoff: 07/13/2017
 
 | Role | 描述 |
 | ---- | ---- |
-| 域/DC 维护 | “域\管理员”组的成员身份支持对域控制器操作系统进行故障排除和更改、将新的域控制器提升到林和 AD 角色委派中的现有域。
+| 域/DC 维护 | 通过“域\管理员”组中的成员身份，可以进行故障排除和更改域控制器操作系统。 可以执行的操作包括，将新的域控制器提升到林中的现有域和 AD 角色委派。
 |管理虚拟 DC | 使用虚拟化管理软件管理域控制器 (DC) 虚拟机 (VM)。 可以通过完全控制管理工具中所有虚拟机或使用基于角色的访问控制 (RBAC) 功能授予此特权。 |
 | 扩展架构 | 管理架构，包括添加新的对象定义、更改架构对象的权限以及更改对象类型的架构默认权限。 |
 | 备份 Active Directory 数据库 | 对 Active Directory 数据库进行完整的备份，包括委托给 DC 和域的所有密码。 |
@@ -123,7 +128,7 @@ ms.lasthandoff: 07/13/2017
 
 ### <a name="data-management-permissions"></a>数据管理权限
 
-下表提供了一些权限示例，这些权限与用于管理或使用 AD 中保存数据的所含角色相关。
+下表中的权限示例与添加角色来管理或使用 AD 中的数据相关。
 
 | 角色 | 说明 |
 | ---- | ---- |
@@ -139,7 +144,7 @@ ms.lasthandoff: 07/13/2017
 
 ## <a name="example-role-definitions"></a>角色定义示例
 
-角色定义的选择取决于由特权帐户托管的服务器层。 它还取决于对托管应用程序的选择，因为应用程序（如 Exchange）或第三方企业产品（如 SAP）通常以自己的方式对委派管理进行其他角色定义。
+角色定义的选择视托管服务器层而定。 这还取决于选择的托管应用程序。 应用程序（如 Exchange）或第三方企业产品（如 SAP）通常额外提供自己的角色定义，以用于委派管理。
 
 以下部分提供了典型企业方案的示例。
 
@@ -199,3 +204,8 @@ ms.lasthandoff: 07/13/2017
 - 支持人员
 - 安全组管理员
 - 工作站桌边支持
+
+## <a name="next-steps"></a>后续步骤
+
+- [保护特权访问的参考资料](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access-reference-material)
+- [将 Azure MFA 用于激活](use-azure-mfa-for-activation.md)
