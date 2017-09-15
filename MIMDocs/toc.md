@@ -21,6 +21,15 @@
 ### [安装 MIM：服务和门户](install-mim-service-portal.md)
 ### [安装 MIM：同步数据库](install-mim-sync-ad-service.md)
 ## [从 Forefront Identity Manager 2010 R2 升级](microsoft-identity-manager-2016-upgrade-from-fim-2010-R2.md)
+## [安装 MIM 证书管理](./deploy-use/mim-cm-deploy.md)
+## [BHOLD 安装主题](./deploy-use/bhold-installation-guide.md)
+### [BHOLD 核心安装](./deploy-use/bhold-core-installation.md)
+### [BHOLD 集成安装](./deploy-use/bhold-integration-installation.md)
+### [BHOLD 证明安装](./deploy-use/bhold-attestation-installation.md)
+### [BHOLD 模型生成器安装](./deploy-use/bhold-model-generator-installation.md)
+### [BHOLD 报表安装](./deploy-use/bhold-reporting-installation.md)
+### [BHOLD 分析安装](./deploy-use/bhold-analytics-installation.md)
+### [BHOLD 访问管理连接器安装](./deploy-use/bhold-access-management-connector-install.md)
 ## [密码更改通知服务](deploying-mim-password-change-notification-service-on-domain-controller.md)
 ## [Identity Manager 混合报告](working-with-identity-manager-hybrid-reporting.md)
 ## [自助服务密码重置](working-with-self-service-password-reset.md)
@@ -75,7 +84,10 @@
 ### [报表 - 自定义报表和扩展性](https://technet.microsoft.com/library/jj133861)
 ## [Microsoft Identity 软件：公开发布版本历史记录](https://blogs.technet.microsoft.com/iamsupport/idmbuildversions/)
 # [参考](./reference/microsoft-identity-manager-2016-developer-reference.md)
-## [Microsoft Identity Manager 2016 开发人员参考](./reference/microsoft-identity-manager-2016-developer-reference.md)
+## 开发人员参考
+### [MIM 2016 开发人员参考](./reference/microsoft-identity-manager-2016-developer-reference.md)
+### BHOLD
+#### [BHOLD 开发人员参考](./reference/mim2016-bhold-developer-reference.md) 
 ### [证书管理 REST API 参考](./reference/certificate-management-rest-api-reference.md)
 #### [CM REST API 服务详细信息](./reference/certificate-management-rest-api-service-details.md)
 #### [示例注册演练](./reference/sample-enrollment-walkthrough.md)
@@ -117,4 +129,8 @@
 ### [管理代理运行错误代码](./reference/maerrorcodes.md)
 ### [Microsoft Identity Manager 2016 函数参考](./reference/mim2016-functions-reference.md)
 ### [Microsoft Identity Manager 2016 密码管理参考](./infrastructure/mim2016-password-management.md)
-## [版本历史记录](./reference/version-history.md)
+### BHOLD
+#### [BHOLD 概念指南](./understand-explore/bhold-concepts-guide.md)
+## 版本历史记录
+### [MIM 版本历史记录](./reference/version-history.md)
+### [BHOLD 版本历史记录](./reference/version-bhold-history.md)
