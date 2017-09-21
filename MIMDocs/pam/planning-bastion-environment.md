@@ -2,21 +2,21 @@
 title: "规划堡垒环境 | Microsoft Docs"
 description: 
 keywords: 
-author: billmath
-ms.author: billmath
-manager: femila
-ms.date: 03/16/2017
+author: barclayn
+ms.author: barclayn
+manager: mbaldwin
+ms.date: 09/13/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: bfc7cb64-60c7-4e35-b36a-bbe73b99444b
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 402c690b514dce62024f13014c1491433fbd8816
-ms.sourcegitcommit: a0e206fd67245f02d94d5f6c9d606970117dd8ed
+ms.openlocfilehash: 16ad83ab9a0fbe2b93428cf318b5ef138e2f3783
+ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="planning-a-bastion-environment"></a>规划堡垒环境
 
@@ -166,7 +166,7 @@ New-PAMTrust -SourceForest "contoso.local" -Credentials (get-credential)
 
 现有域中必须有一个组，其名称为后跟三个美元符号的 NetBIOS 域名（例如，CONTOSO$$$）。 组作用域必须为“本地域”，并且组类型必须为“安全”。 在专用管理林中创建与此域中的组具有相同“安全”标识符的组时需要满足此要求。 通过以下 PowerShell 命令创建此组，由现有域的管理员执行并在已加入到现有域的工作站上运行：
 
-```
+```PowerShell
 New-ADGroup -name 'CONTOSO$$$' -GroupCategory Security -GroupScope DomainLocal -SamAccountName 'CONTOSO$$$'
 ```
 
@@ -194,7 +194,7 @@ New-ADGroup -name 'CONTOSO$$$' -GroupCategory Security -GroupScope DomainLocal -
 
 7. 关闭“组策略管理编辑器”窗口和“组策略管理”窗口。 然后，通过启动 PowerShell 窗口并键入以下内容应用审核设置：
 
-    ```
+    ```cmd
     gpupdate /force /target:computer
     ```
 
@@ -204,7 +204,7 @@ New-ADGroup -name 'CONTOSO$$$' -GroupCategory Security -GroupScope DomainLocal -
 
 域控制器必须允许本地安全机构 (LSA) 的 TCP/IP 上的 RPC 连接（来自堡垒环境）。 在较旧版本的 Windows Server 上，必须在注册表中启用 LSA 中的 TCP/IP 支持：
 
-```
+```PowerShell
 New-ItemProperty -Path HKLM:SYSTEM\\CurrentControlSet\\Control\\Lsa -Name TcpipClientSupport -PropertyType DWORD -Value 1
 ```
 
@@ -212,7 +212,7 @@ New-ItemProperty -Path HKLM:SYSTEM\\CurrentControlSet\\Control\\Lsa -Name TcpipC
 
 `New-PAMDomainConfiguration` cmdle 必须在管理域中的 MIM 服务计算机上运行。 此命令的参数是现有域的域名以及该域管理员的凭据。
 
-```
+```PowerShell
  New-PAMDomainConfiguration -SourceDomain "contoso" -Credentials (get-credential)
 ```
 

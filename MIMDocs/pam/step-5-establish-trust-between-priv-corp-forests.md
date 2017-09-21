@@ -2,28 +2,27 @@
 title: "部署 PAM 步骤 5 – 林链接 | Microsoft Docs"
 description: "建立 PRIV 和 CORP 林之间的信任关系，以便 PRIV 中的特权用户仍然可以访问 CORP 中的资源。"
 keywords: 
-author: billmath
-ms.author: billmath
-manager: femila
-ms.date: 03/15/2017
+author: barclayn
+ms.author: barclayn
+manager: mbaldwin
+ms.date: 09/13/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: eef248c4-b3b6-4b28-9dd0-ae2f0b552425
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 1239ca2c0c6d376420723da01d7aa42821f5980f
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: 6d57b09508d4c0834619be0281fb373d9d3d361e
+ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="step-5--establish-trust-between-priv-and-corp-forests"></a>步骤 5 - 在 PRIV 和 CORP 林之间建立信任关系
 
 >[!div class="step-by-step"]
 [« 步骤 4](step-4-install-mim-components-on-pam-server.md)
 [步骤 6 »](step-6-transition-group-to-pam.md)
-
 
 对于每个 CORP 域（如 contoso.local），都需要在 PRIV 和 CONTOSO 域控制器之间建立信任关系。 以便 PRIV 域中的用户能够访问 CORP 域中的资源。
 
@@ -36,7 +35,7 @@ ms.lasthandoff: 07/13/2017
 
 2.  验证每个现有的 CORP 域控制器是否能够按指定路线将名称发送到 PRIV 林。 在 PRIV 林外的每个域控制器（例如 CORPDC）上，启动 PowerShell 并键入以下命令：
 
-    ```
+    ```cmd
     nslookup -qt=ns priv.contoso.local.
     ```
     检查输出结果是否指示为一个具有正确 IP 地址的 PRIV 域的名称服务器记录。
@@ -55,14 +54,14 @@ ms.lasthandoff: 07/13/2017
 
 3.  为每个现有的林键入以下 PowerShell 命令。 出现提示时输入 CORP 域管理员 (CONTOSO\Administrator) 的凭据。
 
-    ```
+    ```PowerShell
     $ca = get-credential
     New-PAMTrust -SourceForest "contoso.local" -Credentials $ca
     ```
 
 4.  为现有林中的每个域键入以下 PowerShell 命令。 出现提示时输入 CORP 域管理员 (CONTOSO\Administrator) 的凭据。
 
-    ```
+    ```PowerShell
     $ca = get-credential
     New-PAMDomainConfiguration -SourceDomain "contoso" -Credentials $ca
     ```
@@ -80,9 +79,9 @@ ms.lasthandoff: 07/13/2017
 7.  在常见任务列表中，选择“读取所有用户信息”，然后依次单击“下一步”和“完成”。  
 8.  关闭“Active Directory 用户和计算机”。
 
-9.  打开 PowerShell 窗口。  
-10.  使用 `netdom` 确保已启用 SID 历史记录并已禁用 SID 筛选功能。 键入：  
-    ```
+9.  打开 PowerShell 窗口。
+10.  使用 `netdom` 确保已启用 SID 历史记录并已禁用 SID 筛选功能。 键入：
+    ```cmd
     netdom trust contoso.local /quarantine /domain priv.contoso.local
     netdom trust /enablesidhistory:yes /domain priv.contoso.local
     ```
@@ -98,7 +97,7 @@ ms.lasthandoff: 07/13/2017
 
 3.  键入以下 PowerShell 命令。
 
-    ```
+    ```cmd
     net start "PAM Component service"
     net start "PAM Monitoring service"
     ```

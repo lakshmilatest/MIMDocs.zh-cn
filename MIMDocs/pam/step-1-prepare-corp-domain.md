@@ -2,27 +2,26 @@
 title: "部署 PAM 步骤 1 - CORP 域 | Microsoft Docs"
 description: "准备 CORP 域，其具有将由 Privileged Identity Manager 管理的现有标识或新标识"
 keywords: 
-author: billmath
-ms.author: billmath
-manager: femila
-ms.date: 03/15/2017
+author: barclayn
+ms.author: barclayn
+manager: mbaldwin
+ms.date: 09/13/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 1164e7efb70d911497b08248b68f8d929bc6d3fb
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: d14d2f40972686305abea2426e20f4c13e3e267b
+ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="step-1---prepare-the-host-and-the-corp-domain"></a>步骤 1 - 准备主机和 CORP 域
 
 >[!div class="step-by-step"]
 [步骤 2 »](step-2-prepare-priv-domain-controller.md)
-
 
 在该步骤中你将准备托管堡垒环境。 如果有必要，还将在具有由堡垒环境管理的身份的新域和林（*CORP* 林）中创建域控制器和成员工作站。 此 CORP 林将模拟具有要管理的资源的现有林。 本文档包含要保护的示例资源：一个文件共享。
 
@@ -57,7 +56,7 @@ ms.lasthandoff: 07/13/2017
 
 2. 键入下列命令。
 
-  ```
+  ```PowoerShell
   import-module ServerManager
 
   Add-WindowsFeature AD-Domain-Services,DNS,FS-FileServer –restart –IncludeAllSubFeature -IncludeManagementTools
@@ -67,7 +66,7 @@ ms.lasthandoff: 07/13/2017
 
   这将提示使用安全模式管理员密码。 请注意，将出现 DNS 委派和加密设置的警告消息。 这些都是正常的。
 
-3. 在林创建操作完成后，请注销。 服务器将自动重启。
+3. 在林创建操作完成后，请注销。服务器将自动重启。
 
 4. 在服务器重启后，以该域的管理员身份登录到 CORPDC。 通常为用户 CONTOSO\\管理员，该用户具有在 CORPDC 上安装 Windows 时创建的密码。
 
@@ -81,7 +80,7 @@ ms.lasthandoff: 07/13/2017
 
 2. 键入以下命令，但是将“CONTOSO”替换为 NetBIOS 域名。
 
-  ```
+  ```PowerShell
   import-module activedirectory
 
   New-ADGroup –name 'CONTOSO$$$' –GroupCategory Security –GroupScope DomainLocal –SamAccountName 'CONTOSO$$$'
@@ -102,7 +101,7 @@ ms.lasthandoff: 07/13/2017
 
 2. 键入下列命令。 将密码 'Pass@word1' 替换为其他密码字符串。
 
-  ```
+  ```PowerShell
   import-module activedirectory
 
   New-ADGroup –name CorpAdmins –GroupCategory Security –GroupScope Global –SamAccountName CorpAdmins
@@ -140,7 +139,7 @@ ms.lasthandoff: 07/13/2017
 
 8. 通过启动 PowerShell 窗口并键入以下内容应用审核设置：
 
-  ```
+  ```cmd
   gpupdate /force /target:computer
   ```
 
@@ -154,7 +153,7 @@ ms.lasthandoff: 07/13/2017
 
 2. 键入以下命令，这些命令将源域配置为允许远程过程调用 (RPC) 访问安全帐户管理器 (SAM) 数据库。
 
-  ```
+  ```PowerShell
   New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name TcpipClientSupport –PropertyType DWORD –Value 1
 
   Restart-Computer
@@ -193,7 +192,7 @@ ms.lasthandoff: 07/13/2017
 
 4. 键入下列命令。
 
-  ```
+  ```PowerShell
   mkdir c:\corpfs
 
   New-SMBShare –Name corpfs –Path c:\corpfs –ChangeAccess CorpAdmins
