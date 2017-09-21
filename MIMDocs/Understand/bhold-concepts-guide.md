@@ -5,15 +5,15 @@ keywords:
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
-ms.date: 09/06/2017
+ms.date: 09/14/2017
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 
-ms.openlocfilehash: 0db8c2ebaee204c929dc7345ac6858fff6b0993b
-ms.sourcegitcommit: f29f02fa8437fa55e86afd7b0b99a36d2306b96b
+ms.openlocfilehash: 45054799cdc8bbe6d39fa2beb28e69d13cace031
+ms.sourcegitcommit: ed8dd5563e77ef4a3345b2a52a1426859c95576a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="microsoft-bhold-suite-concepts-guide"></a>Microsoft BHOLD 套件概念指南
 
@@ -341,3 +341,7 @@ Forefront Identity Manager 2010 和 Forefront Identity Manager 2010 R2 的一项
 务必注意，MIM 门户的 BHOLD 扩展支持自助角色和工作流管理，也支持报告功能。 其他 BHOLD 管理功能同证明功能一样，均由单独从 MIM 门户托管的 BHOLD 模块的 Web 门户提供。
 
 ## <a name="next-steps"></a>后续步骤
+
+- [BHOLD 安装指南](../deploy-use/bhold-installation-guide.md)
+- [BHOLD 开发人员参考](../reference/mim2016-bhold-developer-reference.md)
+- [BHOLD 版本历史记录](../reference/version-bhold-history.md)

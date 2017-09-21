@@ -2,10 +2,10 @@
 title: "部署 PAM 步骤 4 – 安装 MIM | Microsoft Docs"
 description: "在 Privileged Access Management 服务器和工作站上安装和配置 MIM 服务和门户。"
 keywords: 
-author: billmath
-ms.author: billmath
-manager: femila
-ms.date: 03/15/2017
+author: barclayn
+ms.author: barclayn
+manager: barclayn
+ms.date: 09/13/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
@@ -13,18 +13,17 @@ ms.assetid: ef605496-7ed7-40f4-9475-5e4db4857b4f
 ROBOTS: noindex,nofollow
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 3a1ec9db6da0a77f963dde76a3efe8d92f89078d
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: b69dfc39da63ec523fb09a58661b5f8367e6042c
+ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="step-4--install-mim-components-on-pam-server-and-workstation"></a>步骤 4 - 在 PAM 服务器和工作站上安装 MIM 组件
 
 >[!div class="step-by-step"]
 [« 步骤 3](step-3-prepare-pam-server.md)
 [步骤 5 »](step-5-establish-trust-between-priv-corp-forests.md)
-
 
 在 PAMSRV 上，以 PRIV\Administrator 身份登录，以便能够安装 MIM 服务和门户以及示例门户 Web 应用程序。
 
@@ -33,7 +32,7 @@ ms.lasthandoff: 07/13/2017
 
 如果已下载了 MIM，请将 MIM 安装存档解压缩到新的文件夹。
 
-##  <a name="run-the-service-and-portal-install-program"></a>运行服务和门户安装程序。  
+## <a name="run-the-service-and-portal-install-program"></a>运行服务和门户安装程序。
 
 按照安装程序的说明操作并完成安装。
 
@@ -140,13 +139,13 @@ ms.lasthandoff: 07/13/2017
 
 3.  在 IIS 中创建一个新网站，站点名称为“MIM Privileged Access Management 示例门户”，物理路径为 C:\Program Files\Microsoft Forefront Identity Manager\2010\Privileged Access Management Portal，端口为 8090。  此操作可使用以下 PowerShell 命令实现：
 
-  ```
+  ```PowerShell
   New-WebSite -Name "MIM Privileged Access Management Example Portal" -Port 8090   -PhysicalPath "C:\Program Files\Microsoft Forefront Identity Manager\2010\Privileged Access Management Portal\"
   ```
 
-4.  设置示例 Web 应用程序，以便将用户重定向至 MIM PAM REST API。 使用文本编辑器（如记事本）编辑文件 **C:\Program Files\Microsoft Forefront Identity Manager\2010\Privileged Access Management REST API\web.config**。 在 **<system.webServer>** 部分中，添加以下行：
+4.  设置示例 Web 应用程序，以便将用户重定向至 MIM PAM REST API。 使用文本编辑器（如记事本）编辑文件 **C:\Program Files\Microsoft Forefront Identity Manager\2010\Privileged Access Management REST API\web.config**。在 **<system.webServer>** 部分中，添加以下行：
 
-  ```
+  ```XML
   <httpProtocol>
     <customHeaders>
       <add name="Access-Control-Allow-Credentials" value="true"  />
@@ -160,7 +159,7 @@ ms.lasthandoff: 07/13/2017
 
 6.  使用以下命令重启 IIS，以便使这些更改生效。
 
-  ```
+  ```cmd
   iisreset
   ```
 

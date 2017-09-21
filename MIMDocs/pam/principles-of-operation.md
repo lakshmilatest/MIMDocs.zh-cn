@@ -2,21 +2,21 @@
 title: "了解 PAM 组件 | Microsoft Docs"
 description: "Privileged Access Management 与 MIM 共享某些组件，且拥有少数自身的组件。 了解它们如何协同工作。"
 keywords: 
-author: billmath
-ms.author: billmath
-manager: femila
-ms.date: 03/15/2017
+author: barclayn
+ms.author: barclayn
+manager: mbaldwin
+ms.date: 09/13/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 6498f68f-36d3-448c-8fe6-649ad5a7f97d
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 53fe79f251c3b18426f16b4007cda49e67d7b028
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: a129088989bb977c191e9dc372fed07044314403
+ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="understand-the-components-of-pam"></a>了解 PAM 的组件
 
@@ -27,7 +27,7 @@ Privileged Access Management 将管理访问权限与日常的用户帐户分开
 
 针对 PAM 配置的 MIM 解决方案包含以下组件：  
 
-- **MIM 服务**：实现用于执行标识和访问管理操作的业务逻辑，包括特权帐户管理和提升请求处理。   
+- **MIM 服务**：实现用于执行标识和访问管理操作的业务逻辑，包括特权帐户管理和提升请求处理。
 - **MIM 门户**：基于 SharePoint 的门户，由 SharePoint 2013 托管，可提供管理员管理和配置 UI。
 - **MIM 服务数据库**：存储在 SQL Server 2012 或 2014 中，保留 MIM 服务所需的标识数据和元数据。
 - **PAM 监视服务**和 **PAM 组件服务**：管理特权帐户的生命周期和在组成员身份生命周期中协助 PRIV AD 的两个服务。

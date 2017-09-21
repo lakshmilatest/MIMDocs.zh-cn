@@ -2,10 +2,10 @@
 title: "部署 PAM 步骤 3 - PAM 服务器 | Microsoft Docs"
 description: "准备 PAM 服务器，它将为你的 Privileged Access Management 部署托管 SQL 和 SharePoint。"
 keywords: 
-author: billmath
-ms.author: billmath
-manager: femila
-ms.date: 03/15/2017
+author: barclayn
+ms.author: barclayn
+manager: mbaldwin
+ms.date: 09/13/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
@@ -13,11 +13,11 @@ ms.assetid: 68ec2145-6faa-485e-b79f-2b0c4ce9eff7
 ROBOTS: noindex,nofollow
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 9a262a256062688542040827653a7df8d82e1044
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: fd52a191a0592441131249451011c4e2f026ea48
+ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="step-3--prepare-a-pam-server"></a>步骤 3 - 准备 PAM 服务器
 
@@ -26,6 +26,7 @@ ms.lasthandoff: 07/13/2017
 [步骤 4 »](step-4-install-mim-components-on-pam-server.md)
 
 ## <a name="install-windows-server-2012-r2"></a>安装 Windows Server 2012 R2
+
 在第三台虚拟机上，安装 Windows Server 2012 R2，尤其是 Windows Server 2012 R2 Standard（带有 GUI 的服务器）x64，以使该计算机为“PAMSRV”。 由于 SQL Server 和 SharePoint 2013 将安装在此计算机上，因此它需要至少 8 GB 的 RAM。
 
 1. 选择“Windows Server 2012 R2 Standard（带有 GUI 的服务器）x64”。
@@ -46,13 +47,14 @@ ms.lasthandoff: 07/13/2017
 
 
 ### <a name="add-the-web-server-iis-and-application-server-roles"></a>添加 Web 服务器 (IIS) 和应用程序服务器角色
+
 添加 Web 服务器 (IIS) 和应用程序服务器角色、.NET Framework 3.5 功能、适用于 Windows PowerShell 的 Active Directory 模块和 SharePoint 所需的其他功能
 
 1.  以 PRIV 域管理员 (PRIV\Administrator) 身份登录并启动 PowerShell。
 
 2.  键入下列命令。 请注意，可能需要为 .NET Framework 3.5 功能的源文件指定不同的位置。 这些功能通常在安装 Windows Server 时并不存在，但在操作系统安装磁盘源文件夹上的并行 (SxS) 文件夹中可见，例如，“d:\Sources\SxS\”。
 
-    ```
+    ```PowerShell
     import-module ServerManager
     Install-WindowsFeature Web-WebServer, Net-Framework-Features,
     rsat-ad-powershell,Web-Mgmt-Tools,Application-Server,
@@ -61,6 +63,7 @@ ms.lasthandoff: 07/13/2017
     ```
 
 ### <a name="configure-the-server-security-policy"></a>配置服务器安全策略
+
 将服务器安全策略配置为允许新创建的帐户以服务身份运行。
 
 1.  启动“本地安全策略”  程序。   
@@ -68,45 +71,49 @@ ms.lasthandoff: 07/13/2017
 3.  在详细信息窗格中，右键单击“作为服务登录” ，然后选择“属性” 。  
 4.  单击“添加用户或组”，并在用户和组名称中，键入“priv\mimmonitor; priv\MIMService; priv\SharePoint; priv\mimcomponent; priv\SqlServer”。 单击“检查名称”，然后单击“确定”。  
 
-5.  单击“确定”以关闭“属性”窗口。  
+5.  单击“确定”以关闭“属性”窗口。
 6.  在详细信息窗格中，右键单击“拒绝从网络访问该计算机”，并选择“属性”。  
 7.  单击“添加用户或组”，在用户和组名称中，键入“priv\mimmonitor; priv\MIMService; priv\mimcomponent”并单击“确定”。  
-8.  单击“确定”以关闭“属性”窗口。  
+8.  单击“确定”以关闭“属性”窗口。
 
 9. 在详细信息窗格中，右键单击“拒绝本地登录”，然后选择“属性”。  
 10. 单击“添加用户或组”，在用户和组名称中，键入“priv\mimmonitor; priv\MIMService; priv\mimcomponent”并单击“确定”。  
 11. 单击“确定”以关闭“属性”窗口。  
 12. 关闭本地安全策略窗口。  
 
-13. 打开“控制面板”并切换至“用户帐户”。  
-14. 单击“允许其他人访问这台计算机” 。  
+13. 打开“控制面板”并切换至“用户帐户”。
+14. 单击“允许其他人访问这台计算机” 。
 15. 单击“添加”，在域 PRIV 中输入用户 MIMADMIN，然后在向导的下一屏幕中，单击“以管理员身份添加此用户”。  
 16. 单击“添加”，在域 PRIV 中输入用户 SharePoint，然后在向导的下一屏幕中，单击“以管理员身份添加此用户”。  
-17. 关闭“控制面板”。  
+17. 关闭“控制面板”。
 
 ### <a name="change-the-iis-configuration"></a>更改 IIS 配置
+
 有两种方式可以更改 IIS 配置以允许应用程序使用 Windows 身份验证模式。 请确保以 MIMAdmin 身份登录，然后按照以下选项之一操作。
 
 想要使用 PowerShell：
-1.  右键单击“PowerShell”，然后选择“以管理员身份运行”。  
-2.  使用这些命令停止 IIS 并解锁应用程序主机设置  
-    ```
+
+1.  右键单击“PowerShell”，然后选择“以管理员身份运行”。
+2.  使用这些命令停止 IIS 并解锁应用程序主机设置
+    ```CMD
     iisreset /STOP
     C:\Windows\System32\inetsrv\appcmd.exe unlock config /section:windowsAuthentication -commit:apphost
     iisreset /START
     ```
 
-想要使用文本编辑器，如“记事本”：   
-1. 打开文件 **C:\Windows\System32\inetsrv\config\applicationHost.config**   
+想要使用文本编辑器，如“记事本”：
+
+1. 打开文件 **C:\Windows\System32\inetsrv\config\applicationHost.config**
 2. 向下滚动到该文件的第 82 行。 标记值 **overrideModeDefault** 应为**<section name="windowsAuthentication" overrideModeDefault="Deny" />**  
 3. 将值 **overrideModeDefault** 更改为 Allow  
 4. 保存该文件，然后使用 PowerShell 命令 `iisreset /START`重启 IIS
 
 ## <a name="install-sql-server"></a>安装 SQL Server
+
 如果 SQL Server 尚未在堡垒环境中，请安装 SQL Server 2012（Service Pack 1 或更高版本）或 SQL Server 2014。 以下步骤假设 SQL 2014。
 
 1. 请确保以 MIMAdmin 身份登录。
-2. 右键单击“PowerShell”，然后选择“以管理员身份运行”。   
+2. 右键单击“PowerShell”，然后选择“以管理员身份运行”。
 3. 导航到 SQL Server 安装程序所在的目录。  
 4. 键入下列命令。  
     ```
@@ -133,6 +140,7 @@ SharePoint 必备组件安装完成后，请安装 SharePoint Foundation 2013 SP
 5.  安装完成后，选择运行该向导。  
 
 ### <a name="configure-sharepoint"></a>配置 SharePoint
+
 运行 SharePoint 产品配置向导以配置 SharePoint。
 
 1.  在“连接到服务器场”选项卡上，将其更改为“创建新服务器场”。  
@@ -146,13 +154,14 @@ SharePoint 必备组件安装完成后，请安装 SharePoint Foundation 2013 SP
 9. 出现“创建网站集”窗口后，单击“跳过”，然后单击“完成”。  
 
 ## <a name="create-a-sharepoint-foundation-2013-web-application"></a>创建 SharePoint Foundation 2013 Web 应用程序
+
 在向导完成后，请使用 PowerShell 创建 SharePoint Foundation 2013 Web 应用程序来承载 MIM 门户。 由于本演练是出于演示目的，所以将不会启用 SSL。
 
 1.  右键单击“SharePoint 2013 命令行管理程序”，选择“以管理员身份运行”，然后运行以下 PowerShell 脚本：
 
-    ```
+    ```PowerShell
     $dbManagedAccount = Get-SPManagedAccount -Identity PRIV\SharePoint
-    New-SpWebApplication -Name "MIM Portal" -ApplicationPool "MIMAppPool"            -ApplicationPoolAccount $dbManagedAccount -AuthenticationMethod "Kerberos" -Port 82 -URL http://PAMSRV.priv.contoso.local
+    New-SpWebApplication -Name "MIM Portal" -ApplicationPool "MIMAppPool" -ApplicationPoolAccount $dbManagedAccount -AuthenticationMethod "Kerberos" -Port 82 -URL http://PAMSRV.priv.contoso.local
     ```
 
 2. 将显示一条警告消息，指示 Windows 经典身份验证方法正在使用中，最后的命令可能需要几分钟才能返回。  完成后，输出将提供新门户的 URL。
@@ -161,11 +170,12 @@ SharePoint 必备组件安装完成后，请安装 SharePoint Foundation 2013 SP
 > 保持 SharePoint 2013 命令行管理程序窗口处于打开状态，以供下一步使用。
 
 ## <a name="create-a-sharepoint-site-collection"></a>创建 Sharepoint 站点集合
+
 接下来，创建一个与该 Web 应用程序相关联的 SharePoint 站点集合来承载 MIM 门户。
 
 1.  启动“SharePoint 2013 命令行管理程序”，如果尚未打开，运行以下 PowerShell 脚本：
 
-    ```
+    ```PowerShell
     $t = Get-SPWebTemplate -compatibilityLevel 14 -Identity "STS#1"
     $w = Get-SPWebApplication http://pamsrv.priv.contoso.local:82
     New-SPSite -Url $w.Url -Template $t -OwnerAlias PRIV\MIMAdmin                -CompatibilityLevel 14 -Name "MIM Portal" -SecondaryOwnerAlias PRIV\BackupAdmin
@@ -178,7 +188,7 @@ SharePoint 必备组件安装完成后，请安装 SharePoint Foundation 2013 SP
 
 2.  在 **SharePoint 2013 命令行管理程序**中运行以下 PowerShell 命令： 这将禁用 SharePoint 服务器端视图状态和 SharePoint 任务**运行状况分析作业(每小时、Microsoft SharePoint Foundation 计时器、所有服务器)**。
 
-    ```
+    ```PowerShell
     $contentService = [Microsoft.SharePoint.Administration.SPWebService]::ContentService;
     $contentService.ViewStateOnServer = $false;
     $contentService.Update();

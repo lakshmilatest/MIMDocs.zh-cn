@@ -2,23 +2,24 @@
 title: "PAM 灾难恢复 | Microsoft Docs"
 description: "了解如何配置 Privileged Access Management，以便获得高可用性和灾难恢复。"
 keywords: 
-author: billmath
-ms.author: billmath
-manager: femila
-ms.date: 03/15/2017
+author: barclayn
+ms.author: barclayn
+manager: mbaldwin
+ms.date: 09/13/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 03e521cd-cbf0-49f8-9797-dbc284c63018
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 2fab9af837ed11b1f2f7f32c9ced6d79c8cc9d00
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: e6e603a4d827639c30880f6997f949d0d1732421
+ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="high-availability-and-disaster-recovery-considerations-for-the-bastion-environment"></a>堡垒环境的高可用性和灾难恢复注意事项
+
 本文介绍了为 Privileged Access Management (PAM) 部署 Active Directory 域服务 (AD DS) 和 Microsoft Identity Manager 2016 (MIM) 时的高可用性和灾难恢复的注意事项。
 
 企业会比较关注 Windows Server、SQL Server 和 Active Directory 中的工作负荷的高可用性和灾难恢复问题。 但是，Privileged Access Management 的堡垒环境的可靠的可用性也很重要。 当用户与组织的 IT 基础结构的组件进行交互以承担管理角色时，堡垒环境是 IT 基础结构中的关键部分。 有关整体的高可用性的更多信息，请下载白皮书 [Microsoft High Availability Overview（Microsoft 高可用性概述）](http://download.microsoft.com/download/3/B/5/3B51A025-7522-4686-AA16-8AE2E536034D/Microsoft%20High%20Availability%20Strategy%20White%20Paper.doc)。
@@ -57,26 +58,31 @@ ms.lasthandoff: 07/13/2017
 用户和组的迁移要求现有林域的控制器，以及堡垒环境的 MIM 和 AD 组件处于联机状态。   如果无法访问现有林域控制器，那么将无法向堡垒环境中添加其他用户和组，但现有用户和组不会受到影响。 如果迁移过程中上述任何一个组件出现故障，则在解决该故障之后管理员可以重试迁移。
 
 ### <a name="mim-administration"></a>MIM 管理
+
 迁移用户和组之后，管理员可以在 MIM 中进一步配置角色分配，将用户作为候选人进行链接，以便将其激活为角色。  他们还可以为审批和 Azure MFA 配置 MIM 策略。  
 
 MIM 管理要求堡垒环境的 MIM 和 AD 组件处于联机状态。
 
 ### <a name="privileged-role-activation"></a>特权角色激活
+
 当用户想要激活特权角色时，他们需要在堡垒环境域中进行身份验证，并向 MIM 提交一个请求。  MIM 包括 SOAP 和 REST API，以及 PowerShell 和网页中的用户界面。
 
 特权角色激活要求堡垒环境的 MIM 和 AD 组件处于联机状态。  此外，如果将 MIM 配置为对所选角色使用 [Azure MFA 激活](use-azure-mfa-for-activation.md)，那么需要访问 Internet 以联系 Azure MFA 服务。
 
 ### <a name="resource-management"></a>资源管理
+
 将用户成功激活为角色后，域控制器将为用户生成现有域的域控制器使用的 Kerberos 票证，并且将识别用户的新临时组成员身份。
 
 资源管理要求资源域的域控制器，以及堡垒环境中的域控制器处于联机状态。  用户被激活之后，发出其 Kerberos 票证并不要求堡垒环境中的 MIM 或 SQL 处于联机状态。  （请注意，如果将 Windows Server 2012 R2 作为堡垒环境的功能级别，则 MIM 需要处于联机状态，以便终止临时组成员身份。）
 
 ### <a name="monitoring-of-users-and-groups-in-the-existing-forest"></a>监视现有林中的用户和组
+
 MIM 还包括 PAM 监视服务，该服务会定期检查现有域中的用户和组，并相应地更新 MIM 数据库和 AD。  角色激活或资源管理过程中并不要求该服务处于联机状态。
 
 监视要求现有林域的控制器，以及堡垒环境的 MIM 和 AD 组件处于联机状态。  
 
 ## <a name="deployment-options"></a>部署选项
+
 [Environment overview（环境概述）](environment-overview.md)介绍了一种基本拓扑，该拓扑适用于不针对高可用性的技术。 本节介绍如何在该拓扑的基础上进行扩展，以便为具有单个站点的组织和具有多个现有站点的组织提供高可用性。
 
 ### <a name="networking"></a>网络
@@ -84,6 +90,7 @@ MIM 还包括 PAM 监视服务，该服务会定期检查现有域中的用户�
 堡垒环境中的计算机之间的网络通信应与现有的网络隔离，例如，可以使用不同的物理或虚拟网络。  根据堡垒环境存在的风险，计算机之间可能还需要有独立的物理互连。  特定的故障转移群集技术对网络接口有额外的要求。
 
 堡垒环境中托管 Active Directory 域服务和托管 MIM 服务的计算机需要与现有林中的资源建立双向连接，以便：
+
 - 由 PRIV 林域控制器对用户进行身份验证
 - 用户请求激活
 - 用户获取现有林中的资源都可使用的 Kerberos 票证
@@ -91,6 +98,7 @@ MIM 还包括 PAM 监视服务，该服务会定期检查现有域中的用户�
 - MIM 使用现有林中的邮件服务器发送电子邮件。
 
 ### <a name="minimal-high-availability-topologies"></a>最小高可用性拓扑
+
 组织可以选择其堡垒环境中的哪些功能需要高可用性，高可用性具有以下约束：
 
 - 堡垒环境提供的任何功能的高可用性需要至少两个域控制器。  
@@ -109,9 +117,11 @@ MIM 还包括 PAM 监视服务，该服务会定期检查现有域中的用户�
 可以为每个功能配置更多服务器，以便在一定负荷条件下提供更高的性能，或者用于实现地理冗余，如下所述。
 
 ### <a name="deployments-supporting-multiple-sites"></a>支持多个站点的部署
-为跨多个站点部署的资源选择适当的部署拓扑取决于三个因素：  
-- 高可用性和灾难恢复的目标与风险  
-- 用于托管堡垒环境的硬件功能  
+
+为跨多个站点部署的资源选择适当的部署拓扑取决于三个因素：
+
+- 高可用性和灾难恢复的目标与风险
+- 用于托管堡垒环境的硬件功能
 - 每个站点的管理工作模型。
 
 一种最简单的方法是在一个特定站点托管堡垒环境。  正常情况下，用户将连接到该站点的堡垒环境中的 MIM 部署并请求激活，激活操作将对每个站点的资源产生影响。  如果网络链接断开或者托管堡垒环境的站点不可用，则可以在另一个站点上访问脱机凭据，以便在网络重新连接之前执行临时管理。  该方法可能适用于本地管理较少并且受限于要将站点重新连接到组织的网络的其余部分的特定站点，例如分支机构。
@@ -135,6 +145,7 @@ MIM 还包括 PAM 监视服务，该服务会定期检查现有域中的用户�
 ![多站点复杂堡垒拓扑 - 关系图](media/bastion6.png)
 
 ### <a name="hosted-bastion-environment"></a>托管的堡垒环境
+
 一些组织也考虑建立独立于他们的任何现有站点的堡垒环境。 堡垒环境软件可以托管在组织的网络内部或外部的托管提供商的虚拟化平台上。  当评估这种方法时，请记住：
 
 - 为了防止来自现有域的攻击，堡垒环境的管理必须独立于现有域的管理帐户。
@@ -143,9 +154,11 @@ MIM 还包括 PAM 监视服务，该服务会定期检查现有域中的用户�
 - MIM 服务的 SQL Server 的高可用性部署需要专门的存储配置，如下面的 [SQL Server 数据库存储](#sql-server-database-storage)一节所述。  目前，并非所有的托管提供程序会提供可以托管适用于 SQL Server 故障转移群集的磁盘配置的 Windows Server。
 
 ## <a name="deployment-preparation-and-recovery-procedures"></a>部署准备和恢复过程
+
 堡垒环境的高可用性或灾难恢复部署准备需要考虑如何在共享存储上安装 Windows Server Active Directory、SQL Server 及其数据库，以及如何安装 MIM 服务和 PAM 组件。
 
 ### <a name="windows-server"></a>Windows Server
+
 Windows Server 包含用于高可用性的内置功能，使多台计算机能够作为一个故障转移群集在一起工作。 群集服务器通过物理电缆和软件进行连接。 如果一个或多个群集节点出现故障，其他节点就会开始提供服务（该过程称为故障转移）。   可从[《故障转移群集概述》](https://technet.microsoft.com/library/hh831579.aspx)中获取更多详细信息。
 
 请确保堡垒环境中的操作系统和应用程序可以接收有关安全问题的更新。 某些更新可能需要重启服务器，因此在各个服务器之间协调应用更新的时间可避免长时间的停机。 一种方法是对 Windows Server 故障转移群集中的服务器使用[群集感知更新](https://technet.microsoft.com/library/hh831694.aspx)。
@@ -153,9 +166,11 @@ Windows Server 包含用于高可用性的内置功能，使多台计算机能�
 堡垒环境中的服务器将加入到域中，并依赖于域服务。 请确保不会无意间将它们配置为依赖于服务（如 DNS）的特定域控制器。
 
 ### <a name="bastion-environment-active-directory"></a>堡垒环境 Active Directory
+
 Windows Server Active Directory 域服务原生支持高可用性和灾难恢复。
 
 #### <a name="preparation"></a>准备
+
 在堡垒环境中特权访问管理的典型的生产部署包含至少两个域控制器。 有关在堡垒环境中设置第一个域控制器的说明包括在部署文章的第 2 步：[Prepare the PRIV domain controller（准备 PRIV 域控制器）](step-2-prepare-priv-domain-controller.md)。
 
 有关添加其他域控制器的过程，请参阅[在现有域中安装副本 Windows Server 2012 域控制器（级别 200）](https://technet.microsoft.com/library/jj574134.aspx)。  
@@ -164,6 +179,7 @@ Windows Server Active Directory 域服务原生支持高可用性和灾难恢复
 > 如果域控制器要在虚拟化平台上托管，例如 Hyper-V，请查阅[虚拟化域控制器部署和配置](https://technet.microsoft.com/library/jj574223.aspx)中的注意事项。
 
 #### <a name="recovery"></a>恢复
+
 在发生故障后，确保堡垒环境中至少一个域控制器可用，然后再重启其他服务器。
 
 在一个域中，Active Directory 在各个域控制器中分配弹性单一主机操作 (FSMO) 角色，如 [How Operations Masters Work](https://technet.microsoft.com/library/cc780487.aspx)（操作主机的工作原理）中所述。  如果一个域控制器出现故障，可能需要传输分配给该域控制器的一个或多个[域控制器角色](https://technet.microsoft.com/library/cc786438.aspx)。
@@ -173,18 +189,22 @@ Windows Server Active Directory 域服务原生支持高可用性和灾难恢复
 此外建议检查加入到堡垒环境中的计算机的 DNS 设置，以及与该域控制器具有信任关系的 CORP 域中的域控制器，以确保没有对它们硬编码为依赖于该域控制器计算机的 IP 地址。
 
 ### <a name="sql-server-database-storage"></a>SQL Server 数据库存储
+
 高可用性部署要求具有 SQL Server 故障转移群集，而 SQL Server 故障转移群集实例则根据数据库和日志存储的所有节点之间的共享存储进行回复。 共享存储可以是 Windows Server 故障转移群集群集磁盘的形式，也可以是存储区域网络 (SAN) 上的磁盘或在 SMB 服务器上的文件共享的形式。  请注意，这些形式只能用于堡垒环境中；建议不要与堡垒环境之外的其他工作负载共享存储，否则可能会损坏堡垒环境的完整性。
 
 ### <a name="sql-server"></a>SQL Server
+
 在堡垒环境中 MIM 服务要求具有 SQL Server 部署。   为实现高可用性，可以使用故障转移群集实例 (FCI) 部署 SQL。 与单独的实例不同，在 FCI 中 SQL Server 的高可用性受到 FCI 中的冗余节点的保护。 当出现故障或进行计划的升级时，资源组所有权将转移到另一个 Windows Server 故障转移群集节点。
 
 如果你只需要支持灾难恢复，而不需要高可用性，那么可以使用日志传送、事务复制、快照复制或数据库镜像，而无需使用故障转移群集。   
 
 #### <a name="preparation"></a>准备
+
 在堡垒环境中安装 SQL Server 时，它必须独立于 CORP 林中已存在的任何 SQL Server。  而且，建议将 SQL Server 部署在与域控制器的服务器不同的专用服务器上。
 详细信息记录在[《AlwaysOn 故障转移群集实例》](https://msdn.microsoft.com/library/ms189134.aspx)的 SQL Server 指南中。
 
 #### <a name="recovery"></a>恢复
+
 如果将 SQL Server 配置为使用日志传送进行灾难恢复，那么必须采取措施在恢复过程中更新 SQL Server。  此外，还需要重启每个 MIM 服务实例。
 
 如果 SQL Server 出现故障，或者 SQL Server 与 MIM 服务之间的连接已中断，那么在还原 SQL Server 后，建议重启每个 MIM 服务。  这样可以确保 MIM 服务重新建立与 SQL Server 的连接。
@@ -206,17 +226,21 @@ MIM 服务需要处理激活请求。  为了在托管 MIM 服务的计算机停
 当 MIM 服务收到请求时，服务分区名称存储为该请求的一个属性。   随后，只允许具有相同的服务分区名称的其他 MIM 服务安装程序与该请求进行交互。  因此，如果 PAM 方案包括手动批准或其他长时间的请求处理，请确保每个 MIM 服务在该配置文件中具有相同的 `servicePartitionName` 属性。
 
 #### <a name="recovery"></a>恢复
+
 在发生故障后，确保在重启 MIM 服务之前堡垒环境中至少有一个 Active Directory 域控制器和 SQL Server 可用。  
 
 工作流实例只能由与启动它的 MIM 服务服务器具有相同的服务分区名称和服务名称的 MIM 服务服务器完成。  如果托管正在处理请求的 MIM 服务的特定计算机出现故障，并且该计算机将不再返回服务中，那么需要在新的计算机上安装 MIM 服务。 安装完成后在新的 MIM 服务上，编辑 *resourcemanagementservice.exe.config* 文件，将新的 MIM 部署的属性 `serviceName` 和 `servicePartitionName` 设为和出现故障的计算机相同的主机名和服务分区名称。
 
 ### <a name="mim-pam-components"></a>MIM PAM 组件
+
 MIM 服务和门户安装程序还包含附加的 PAM 组件，包括 PowerShell 模块和两个服务。
 
 #### <a name="preparation"></a>准备
+
 在堡垒环境中的每个正在安装 MIM 服务的计算机上安装 Privileged Access Management 组件。  你无法随后添加这些组件。
 
 #### <a name="recovery"></a>恢复
+
 从故障中恢复之后，确保 MIM 服务至少在一台服务器上运行。  然后使用 `net start "PAM Monitoring service"` 命令确保在该服务器上同时运行 MIM PAM 监视服务。
 
 如果堡垒环境林功能级别为 Windows Server 2012 R2，请使用命令 `net start "PAM Component service"` 确保在该服务器上还运行 MIM PAM 组件服务。
