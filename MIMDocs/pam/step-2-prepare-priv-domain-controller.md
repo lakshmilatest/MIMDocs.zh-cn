@@ -2,21 +2,21 @@
 title: "部署 PAM 步骤 2 – PRIV DC | Microsoft Docs"
 description: "准备 PRIV 域控制器，它将提供堡垒环境，Privileged Access Management 在此环境中是独立的。"
 keywords: 
-author: billmath
-ms.author: billmath
-manager: femila
-ms.date: 03/15/2017
+author: barclayn
+ms.author: barclayn
+manager: mbaldwin
+ms.date: 09/14/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 0e9993a0-b8ae-40e2-8228-040256adb7e2
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: edc15b41d4248887f4a93217f68d8125f6500585
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: de3392648f187ce6007bba332c0f191d32980c94
+ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="step-2---prepare-the-first-priv-domain-controller"></a>步骤 2 - 准备第一个 PRIV 域控制器
 
@@ -31,6 +31,7 @@ ms.lasthandoff: 07/13/2017
 本节将安装一个虚拟机，充当新林的域控制器
 
 ### <a name="install-windows-server-2012-r2"></a>安装 Windows Server 2012 R2
+
 在未安装任何软件的另一台新虚拟机上，请安装 Windows Server 2012 R2 以使计算机为“PRIVDC”。
 
 1. 选择执行 Windows Server 的自定义（非升级）安装。 在安装时，指定 **Windows Server 2012 R2 Standard（带有 GUI 的服务器）x64**；_不要选择_“数据中心或服务器核心”。
@@ -44,13 +45,14 @@ ms.lasthandoff: 07/13/2017
 5. 重启服务器后，以管理员身份登录。 使用“控制面板”，配置计算机以检查更新，并安装所需的任何更新。 这可能需要重新启动服务器。
 
 ### <a name="add-roles"></a>添加角色
+
 添加 Active Directory 域服务 (AD DS) 和 DNS 服务器角色。
 
 1. 以管理员身份启动 PowerShell。
 
 2. 键入以下命令以准备安装 Windows Server Active Directory。
 
-  ```
+  ```PowerShell
   import-module ServerManager
 
   Install-WindowsFeature AD-Domain-Services,DNS –restart –IncludeAllSubFeature -IncludeManagementTools
@@ -60,7 +62,7 @@ ms.lasthandoff: 07/13/2017
 
 启动 PowerShell 并键入以下命令，以便将源域配置为允许远程过程调用 (RPC) 访问安全帐户管理器 (SAM) 数据库。
 
-```
+```PowerShell
 New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name TcpipClientSupport –PropertyType DWORD –Value 1
 ```
 
@@ -74,9 +76,8 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
 
 1. 在“PowerShell”窗口中，键入以下命令以创建新域。  此操作还将在上一步骤所创建的高级域 (contoso.local) 中创建一个 DNS 委派。  如果想要在以后配置 DNS，则忽略 `CreateDNSDelegation -DNSDelegationCredential $ca` 参数。
 
-  ```
+  ```PowerShell
   $ca= get-credential
-
   Install-ADDSForest –DomainMode 6 –ForestMode 6 –DomainName priv.contoso.local –DomainNetbiosName priv –Force –CreateDNSDelegation –DNSDelegationCredential $ca
   ```
 
@@ -87,13 +88,14 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
 完成林创建后，服务器将自动重新启动。
 
 ### <a name="create-user-and-service-accounts"></a>创建用户和服务帐户
+
 创建用于 MIM 服务和门户设置的用户和服务帐户。 这些帐户都将置于 priv.contoso.local 域的用户容器中。
 
 1. 重启服务器后，以域管理员身份 (PRIV\\Administrator) 登录到 PRIVDC。
 
 2. 启动 PowerShell，键入以下命令。 密码 'Pass@word1' 只是一个示例，应为帐户使用不同的密码。
 
-  ```
+  ```PowerShell
   import-module activedirectory
 
   $sp = ConvertTo-SecureString "Pass@word1" –asplaintext –force
@@ -159,7 +161,7 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
 
 ### <a name="configure-auditing-and-logon-rights"></a>配置审核和登录权限
 
-你需要设置审核权限，以便跨林实现 PAM 配置。  
+你需要设置审核权限，以便跨林实现 PAM 配置。
 
 1. 确保以域管理员身份登录 (PRIV\\Administrator)。
 
@@ -199,7 +201,7 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
 
 19. 以管理员身份启动 PowerShell 窗口，并键入以下命令以从组策略设置中更新 DC。
 
-  ```
+  ```cmd
   gpupdate /force /target:computer
   ```
 
@@ -214,9 +216,9 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
 
 2. 对于每个现有林顶部的每个域，键入以下命令，指定现有的 DNS 域（例如：contoso.local）以及该域的主服务器的 IP 地址。  
 
-  如果在上一步创建了一个 contoso.local 域，则指定  *10.1.1.31* 作为 CORPDC 计算机的虚拟网络 IP 地址。
+  如果在上一步创建了一个 contoso.local 域，则指定 * 10.1.1.31* 作为 CORPDC 计算机的虚拟网络 IP 地址。
 
-  ```
+  ```PowerShell
   Add-DnsServerConditionalForwarderZone –name "contoso.local" –masterservers 10.1.1.31
   ```
 
@@ -227,7 +229,7 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
 
 1. 使用 PowerShell 添加 SPN，以便 SharePoint、PAM REST API 和 MIM 服务可以使用 Kerberos 身份验证。
 
-  ```
+  ```cmd
   setspn -S http/pamsrv.priv.contoso.local PRIV\SharePoint
   setspn -S http/pamsrv PRIV\SharePoint
   setspn -S FIMService/pamsrv.priv.contoso.local PRIV\MIMService
@@ -241,25 +243,24 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
 
 以域管理员身份在 PRIVDC 上执行以下步骤。
 
-1. 启动“Active Directory 用户和计算机” 。  
-2. 右键单击域“priv.contoso.local”并选择“委派控制”。  
-3. 在“选定的用户和组”选项卡上，单击“添加”。  
-4. 在“选择用户、计算机或组”窗口中，键入“mimcomponent; mimmonitor; mimservice” 并单击“检查名称”。 在名称带有下划线后，单击“确定”，然后单击“下一步”。  
+1. 启动“Active Directory 用户和计算机” 。
+2. 右键单击域“priv.contoso.local”并选择“委派控制”。
+3. 在“选定的用户和组”选项卡上，单击“添加”。
+4. 在“选择用户、计算机或组”窗口中，键入“mimcomponent; mimmonitor; mimservice” 并单击“检查名称”。 在名称带有下划线后，单击“确定”，然后单击“下一步”。
 5. 在常见任务列表中，选择“创建、删除和管理用户帐户”和“修改组成员身份”，然后单击“下一步”和“完成”。
 
-6. 再次右键单击域“priv.contoso.local”并选择“委派控制”。  
+6. 再次右键单击域“priv.contoso.local”并选择“委派控制”。
 7. 在“选定的用户和组”选项卡上，单击“添加”。  
-8. 在“选择用户、计算机或组”窗口中，输入“MIMAdmin”，然后单击“检查名称”。 在名称带有下划线后，单击“确定”，然后单击“下一步”。  
-9. 选择“自定义任务” ，使用“常规权限” 应用到“此文件夹” 。    
-10. 在权限列表中，选择以下项：  
-  - **读取**  
-  - **写入**  
-  - **创建所有子对象**  
-  - **删除所有子对象**  
-  - **读取所有属性**  
-  - **写入所有属性**  
-  - **迁移 SID 历史记录**  
-  依次单击“下一步”  、“完成” 。
+8. 在“选择用户、计算机或组”窗口中，输入“MIMAdmin”，然后单击“检查名称”。 在名称带有下划线后，单击“确定”，然后单击“下一步”。
+9. 选择“自定义任务” ，使用“常规权限” 应用到“此文件夹” 。
+10. 在权限列表中，选择以下项：
+  - **读取**
+  - **写入**
+  - **创建所有子对象**
+  - **删除所有子对象**
+  - **读取所有属性**
+  - **写入所有属性**
+  - **迁移 SID 历史记录** 单击“下一步”，然后单击“完成”。
 
 11. 再次右键单击域“priv.contoso.local”并选择“委派控制”。  
 12. 在“选定的用户和组”选项卡上，单击“添加”。  
@@ -269,15 +270,17 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
 16. 关闭“Active Directory 用户和计算机”。
 
 17. 打开命令提示符。  
-18. 查看 PRIV 域中 Admin SD Holder 对象上的访问控制列表。 例如，如果你的域为“priv.contoso.local”，则键入以下命令  
-  ```
+18. 查看 PRIV 域中 Admin SD Holder 对象上的访问控制列表。 例如，如果你的域为“priv.contoso.local”，则键入以下命令
+  ```cmd
   dsacls "cn=adminsdholder,cn=system,dc=priv,dc=contoso,dc=local"
   ```
-19. 根据需要更新访问控制列表，以确保 MIM 服务和 MIM 组件服务可以更新由此 ACL 保护的组成员。  键入命令：  
-  ```
-  dsacls "cn=adminsdholder,cn=system,dc=priv,dc=contoso,dc=local" /G priv\mimservice:WP;"member"  
-  dsacls "cn=adminsdholder,cn=system,dc=priv,dc=contoso,dc=local" /G priv\mimcomponent:WP;"member"
-  ```
+19. 根据需要更新访问控制列表，以确保 MIM 服务和 MIM 组件服务可以更新由此 ACL 保护的组成员。  键入命令：
+
+```cmd
+dsacls "cn=adminsdholder,cn=system,dc=priv,dc=contoso,dc=local" /G priv\mimservice:WP;"member"
+dsacls "cn=adminsdholder,cn=system,dc=priv,dc=contoso,dc=local" /G priv\mimcomponent:WP;"member"
+```
+
 20. 重新启动 PRIVDC 服务器以使这些更改起效。
 
 ## <a name="prepare-a-priv-workstation"></a>准备 PRIV 工作站
