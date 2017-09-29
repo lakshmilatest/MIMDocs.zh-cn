@@ -65,7 +65,7 @@
 ### [步骤 8 PAM 部署验证](./pam/sp1-step8-pam-deployment-verification.md)
 ### [附录](./pam/sp1-pam-deployment-addendum.md)
 # 管理基础结构
-## [Best Practice Analyzer for Identity Manager（用于 Identity Manager 的最佳做法分析器）](https://technet.microsoft.com/library/jj203402)
+## [Best Practice Analyzer for Identity Manager](https://technet.microsoft.com/library/jj203402)（用于 Identity Manager 的最佳做法分析器）
 ## [密码更改通知服务](https://technet.microsoft.com/library/e27c0bc6-c808-4fdb-9e59-58feeb419308)
 ## 证书管理
 ### [CLMUtil 命令行工具](https://technet.microsoft.com/library/cc720647)
@@ -125,6 +125,7 @@
 #### [批准或拒绝挂起的 PAM 请求](./reference/privileged-access-management-approve-reject-pending-request.md)
 #### [获取 PAM 会话信息](./reference/privileged-access-management-get-session-info.md)
 ## 技术参考
+### [Microsoft Identity Manager 2016 SP1 术语](./reference/mim-2016-sp1-terms.md)
 ### [Resource Control Display Configuration XML Reference（资源控制显示配置 XML 参考）](./reference/rcd-configuration-xml-reference.md)
 ### [管理代理运行错误代码](./reference/maerrorcodes.md)
 ### [Microsoft Identity Manager 2016 函数参考](./reference/mim2016-functions-reference.md)
