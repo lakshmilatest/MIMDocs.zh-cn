@@ -1,22 +1,22 @@
 ---
-title: "什么是混合报告 | Microsoft Docs"
+title: "什么是混合报告 | Microsoft 文档"
 description: "使用 Azure Active Directory 中的混合审核活动报告可以查看云端和本地审核的活动。"
 keywords: 
 author: fimguy
 ms.author: fimguy
-manager: femila
-ms.date: 04/28/2017
+manager: bhu
+ms.date: 09/28/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 7320f014-8b60-4866-92de-cfbd3e6edc48
-ms.reviewer: mwahl
+ms.reviewer: fimguy
 ms.suite: ems
-ms.openlocfilehash: 678626e7c32659570de88d8178c16821cceaf7ee
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: 151fbd26011ca76901d181131a88ded8a718a27a
+ms.sourcegitcommit: 0f99de31fe6b52ec692b3886073909f549a451d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="hybrid-identity-management-audit-reports-in-azure-active-directory---public-previewrefresh"></a>Azure Active Directory 中的混合身份管理审计报告 - 公开预览版（新版）
 借助 Azure Active Directory (AD) 审核活动报告，你可以查看单个报表，以监视发生在本地或云中的身份管理活动。 此功能允许你在一个位置管理所有标识和访问数据，从而节省时间并降低总体成本。
@@ -41,6 +41,9 @@ ms.lasthandoff: 07/13/2017
 4. 活动数据在 Azure 中将存储 1 个月。
 5. Azure 门户会检索审计报告数据，并将此呈现为 Azure 审计报告边栏选项卡中的审计数据。
 
-## <a name="see-also"></a>另请参阅
+## <a name="next-steps"></a>后续步骤
 - 获取有关[使用 Identity Manager 混合报告](working-with-identity-manager-hybrid-reporting.md)的更多详细信息
 - 获取有关[Azure Active Directory 门户中的“审核活动”报表](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-audit-logs)的更多详细信息
+- 获取有关[报表保留期策略](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-retention)的更多详细信息
+- 获取有关 [Microsoft Azure 日志集成 (SIEM)](https://docs.microsoft.com/en-us/azure/security/security-azure-log-integration-overview) 的更多详细信息
+- 获取有关 [Azure Active Directory 报告 API](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-api-getting-started) 的更多详细信息
