@@ -5,7 +5,7 @@ keywords:
 author: fimguy
 ms.author: fimguy
 manager: femila
-ms.date: 08/11/2017
+ms.date: 10/5/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -13,11 +13,11 @@ ms.assetid: 4978f60d-044d-4e84-8d93-65801fce1144
 ms.reviewer: mwahl
 ms.suite: ems
 ms.custom: mim
-ms.openlocfilehash: 4c1576d8ee2d3edfe1a522131046b9a3afacf998
-ms.sourcegitcommit: ed8dd5563e77ef4a3345b2a52a1426859c95576a
+ms.openlocfilehash: dd93c5bd4439aa6a485e1fcd6eaff970f07249b3
+ms.sourcegitcommit: ce027818d34f170b7bd216337751c646e0eb8ced
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="supported-platforms-for-mim-2016"></a>MIM 2016 支持的平台
 
@@ -32,14 +32,15 @@ ms.lasthandoff: 09/15/2017
 | | 适用于邮箱设置和 GAL 同步的 Exchange（可选）|Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1<br/>Exchange Server 2016* |
 | | 开发环境（可选） | Visual Studio 2012<br/>Visual Studio 2013 <br/> Visual Studio 2015 <br/> Visual Studio 2017* |
 | | 其他已连接的系统（可选） | Active Directory 域服务<br/>Active Directory<br/>轻型目录服务<br/>SQL Server 2008 或更高版本<br/>SharePoint Server 2013<br/> SharePoint Server 2016 * <br/> 其他第三方产品 |
-| **MIM 服务和门户** | Windows Server | Windows Server 2012<br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |
-| | 适用于堡垒环境 PAM 林的 Active Directory | Windows Server 2012 R2 <br/> Windows Server 2016 * |
-| | 适用于 PAM 方案现有林的 Active Directory | Windows Server 2008 <br/> Windows Server 2008 R2* <br/> Windows Server 2012* <br/> Windows Server 2012 R2* <br/> Windows Server 2016 * |
-| | MIM 服务数据库 | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2<br/>SQL Server 2014 SP1 <br/> SQL Server 2016 * |
+| **MIM 服务和门户** | Windows Server | Windows Server 2008 R2 SP1<br/>Windows Server 2012<br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |
+| |PAM 方案：Windows Server | Windows Server 2012 R2 <br/> Windows Server 2016 * |
+| |PAM 方案：适用于堡垒环境 PAM 林的 Active Directory | Windows Server 2012 R2 <br/> Windows Server 2016 * |
+| |PAM 方案：适用于 PAM 方案现有 (CORP) 林的 Active Directory | Windows Server 2008 <br/> Windows Server 2008 R2* <br/> Windows Server 2012* <br/> Windows Server 2012 R2* <br/> Windows Server 2016 * |
+| | MIM 服务数据库 | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2<br/>SQL Server 2014 SP1 <br/> SQL Server 2016 |
 | | SharePoint | SharePoint Foundation 2010<br/>SharePoint Foundation 2013 SP1 <br/> SharePoint 2016 * |
 | | 适用于 MIM 服务审批和组管理电子邮件的邮件服务器（可选） | Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1 <br/> Exchange Server 2016* <br/> Exchange Online*（仅通知） |
 | | 浏览器 | 所有主流浏览器 *（移动设备受限）|
-| **MIM 服务报告** | Windows Server | Windows Server 2012 <br/> Windows Server 2016 * |
+| **MIM 服务报告** | Windows Server |  Windows Server 2008 R2 SP1<br/>Windows Server 2012 <br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |
 | | 数据仓库 | System Center 2012 Service Manager <br/> System Center 2012 R2 Service Manager </br> System Center 2016 Service Manager*（带 4.4.1459）<br/> [System Center 2016 的 SQL Server 版本兼容性](https://docs.microsoft.com/system-center/scsm/upgrade-to-sm-2016)
  |
 | **MIM 密码重置和注册门户** | Windows Server | Windows Server 2008 R2 SP1<br/>Windows Server 2012<br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |
