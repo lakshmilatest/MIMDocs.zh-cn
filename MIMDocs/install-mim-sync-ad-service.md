@@ -63,7 +63,7 @@ MIM 管理代理 (MA) 是 MIM 同步到 MIM 服务的连接器。 若要创建�
 
     -   用户名：mimma
 
-    -   密码：Pass@word
+    -   密码：Pass@word 
 
     -   域：contoso
 
