@@ -3,20 +3,20 @@ title: "使用自助服务密码重置门户 | Microsoft Docs"
 description: "请参阅 MIM 2016 中有关自助服务密码重置的新增内容，包括 SSPR 如何使用多重身份验证的相关内容。"
 keywords: 
 author: billmath
-ms.author: billmath
-manager: femila
-ms.date: 03/23/2017
+ms.author: barclayn
+manager: mbaldwin
+ms.date: 10/12/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: bbcfee70c71bc2f1a637327721d015434600c5e0
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: c6786ea653f178b25ea3da4fbd3b01d21b79c622
+ms.sourcegitcommit: f077508b5569e2a96084267879c5b6551e1e0905
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="working-with-self-service-password-reset"></a>使用自助服务密码重置
 Microsoft 标识管理器 2016 将附加功能提供给自助服务密码重置功能。 此功能的几个重要功能已得到增强：

@@ -3,20 +3,20 @@ title: "配置 SharePoint for Microsoft Identity Manager 2016 | Microsoft Docs"
 description: "安装和配置 SharePoint Foundation，以便它能承载 MIM 门户页。"
 keywords: 
 author: billmath
-ms.author: billmath
-manager: femila
-ms.date: 03/23/2017
+ms.author: barclayn
+manager: mbaldwin
+ms.date: 10/12/2017
 ms.topic: get-started-article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: c01487f2-3de6-4fc4-8c3a-7d62f7c2496c
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 1114be2ce13ca012582676803eb1dc29cadae596
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: 8646620f8f0ea8e1bdea3705e3db8593aa5a464e
+ms.sourcegitcommit: f077508b5569e2a96084267879c5b6551e1e0905
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="set-up-an-identity-management-server-sharepoint"></a>设置标识管理服务器：SharePoint
 
