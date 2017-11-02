@@ -3,20 +3,20 @@ title: "用于部署的拓扑指南 | Microsoft Docs"
 description: "了解 MIM 2016 组件，并获取有关如何在你的环境中部署它们的建议。"
 keywords: 
 author: billmath
-ms.author: billmath
-manager: femila
-ms.date: 07/13/2017
+ms.author: barclayn
+manager: mbaldwin
+ms.date: 10/12/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 735dc357-dfba-4f68-a5b3-d66d6c018803
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 1695cc2df766df3c38a0e1393f6f974102f9fd36
-ms.sourcegitcommit: 0cb8269f07a5f419d2d1cd760d9cc78b8a1c8aa9
+ms.openlocfilehash: e257a2e64225a4bc545d8a9384167819412e939b
+ms.sourcegitcommit: f077508b5569e2a96084267879c5b6551e1e0905
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="topology-considerations"></a>拓扑注意事项
 你可以在同一服务器上或在多个配置的多个服务器之间部署 Microsoft 标识管理器 (MIM) 组件。 为部署选择的拓扑会影响你所能实现的 MIM 性能。 本文介绍多种你可以考虑实施的部署拓扑。
