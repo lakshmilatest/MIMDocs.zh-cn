@@ -3,50 +3,54 @@ title: "部署 MIM 证书管理器 Windows 应用程序 | Microsoft Docs"
 description: "了解如何部署证书管理器应用以使用户可以管理自己的访问权限。"
 keywords: 
 author: billmath
-ms.author: billmath
-manager: femila
-ms.date: 03/23/2017
+ms.author: barclayn
+manager: mbaldwin
+ms.date: 10/16/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 66060045-d0be-4874-914b-5926fd924ede
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 8a4582695d41ea605f2de4e336c3a780b2b2559f
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: e472d7cdc07aa19464aa1f18447d8c5dc7d0f0ba
+ms.sourcegitcommit: 1e0626a366a41d610e6a117cdf684241eb65ec63
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 10/17/2017
 ---
-# <a name="working-with-the-mim-certificate-manager"></a>使用 MIM 证书管理器
-在你启动并运行 MIM 2016 和证书管理器后，你可以部署 MIM 证书管理器 Windows 应用商店应用程序，以便你的用户可以轻松地管理其物理智能卡、虚拟智能卡和软件证书。 部署 MIM CM 应用的步骤如下所示：
+# <a name="mim-certificate-manager-windows-store-application-deployment"></a>MIM 证书管理器 Windows 应用商店应用程序部署
 
-1.  创建证书模板。
+启动并运行 MIM 2016 和证书管理器后，即可部署 MIM 证书管理器 Windows 应用商店应用程序。 使用 Windows 应用商店应用程序，可让用户管理其物理智能卡、虚拟智能卡和软件证书。 部署 MIM CM 应用的步骤如下所示：
 
-2.  创建配置文件模板。
+1. 创建证书模板。
 
-3.  准备应用。
+2. 创建配置文件模板。
 
-4.  通过 SCCM 或 Intune 部署应用。
+3. 准备应用。
+
+4. 通过 SCCM 或 Intune 部署应用。
 
 ## <a name="create-a-certificate-template"></a>创建证书模板
+
 使用与平时相同的方法为 CM 应用创建证书模板，只不过你必须确保证书模板为版本 3 和更高版本。
 
-1.  登录到运行 AD CS 的服务器（证书服务器）。
+1. 登录到运行 AD CS 的服务器（证书服务器）。
 
-2.  打开 MMC。
+2. 打开 MMC。
 
-3.  单击“文件”&gt;“添加/删除管理单元”；
+3. 单击“文件”&gt;“添加/删除管理单元”。
 
-4.  在可用管理单元列表中，单击“证书模板”，然后单击“添加”。
+4. 在可用管理单元列表中，单击“证书模板”，然后单击“添加”。
 
-5.  现在你将在 MMC 中的“控制台根”  下看到“证书模板”  。 双击它以查看所有可用的证书模板。
+5. 现在你将在 MMC 中的“控制台根”  下看到“证书模板”  。 双击它以查看所有可用的证书模板。
 
-6.  右键单击“智能卡登录”模板，然后单击“复制模板”。
+6. 右键单击“智能卡登录”模板，然后单击“复制模板”。
 
-7.  在“兼容性”选项卡上，在“证书颁发机构”下选择 Windows Server 2008，然后在“证书接收者”下选择 Windows 8.1/Windows Server 2012 R2。
-    此步骤至关重要，因为它可确保你拥有版本 3（或更高版本）的证书模板，而且仅版本 3 适用于证书管理器应用。 由于版本在你第一次创建和保存证书模板时设置，因此如果你未使用此方法创建证书模板，则无法将其修改为正确的版本，应先创建一个新的证书模板才可继续。
+7. 在“兼容性”选项卡的“证书颁发机构”下，选择 Windows Server 2008。 在“证书接收人”下选择 Windows 8.1/Windows Server 2012 R2。 版本模板版本是在你第一次创建并保存证书模板时设置的。 如果尚未以这种方式创建证书模板，则无法将其修改为正确的版本。
 
+    >[!NOTE]
+    此步骤至关重要，因为它可确保你拥有版本 3（或更高版本）的证书模板。 仅版本 3 模板适用于证书管理器应用。
+    
 8.  在“常规”  选项卡上，在“显示名称”  字段中，键入你希望在应用 UI 中显示的名称，例如 **虚拟智能卡登录**。
 
 9. 在“请求处理”选项卡上，将“目的”设置为“签名和加密”，然后在“执行以下操作…”下 选择“在注册过程中提示用户” 。
@@ -69,11 +73,12 @@ ms.lasthandoff: 07/13/2017
 16. 从列表中选择你创建的新模板，然后单击“确定” 。
 
 ## <a name="create-a-profile-template"></a>创建配置文件模板
+
 请确保在创建配置文件模板时将其设置为创建/销毁 vSC 并删除数据收集。 CM 应用无法处理已收集的数据，因此禁用它很重要，如下所示。
 
 1.  作为拥有管理员权限的用户登录到 CM 门户。
 
-2.  转到“管理”&gt;“管理配置文件模板”并确保选中“MIM CM 示例智能卡登录配置文件模板”旁边的框，然后单击“复制所选的配置文件模板”。
+2.  转到“管理”&gt;“管理配置文件模板”。 确保选中“MIM CM 示例智能卡登录配置文件模板”旁边的框，然后单击“复制所选的配置文件模板”。
 
 3.  键入配置文件模板名称，然后单击“确定” 。
 
@@ -91,32 +96,33 @@ ms.lasthandoff: 07/13/2017
 
 10. 在左窗格中，单击“续订策略”&gt;“更改常规设置”。 选择“在续订时重复使用卡”  ，然后单击“确定” 。
 
-11. 你必须通过单击左窗格中的策略，然后选中“示例数据项”  旁边的框来为每个策略禁用数据收集项，然后单击“删除数据收集项” 。 然后单击“确定” 。
+11. 必须通过单击左窗格中的策略，为每个策略禁用数据收集项。 然后选中“示例数据项”旁边的框，再依次单击“删除数据收集项”、“确定”。
 
 ## <a name="prepare-the-cm-app-for-deployment"></a>使 CM 为部署做好准备
 
-1.  在命令提示符处，运行以下命令来解包该应用，然后将内容提取到名为 appx 的新子文件夹并创建一个副本，这样你无需修改原始文件。
+1. 在命令提示符处，运行以下命令来解包该应用。 该命令将内容提取到名为 appx 的新子文件夹并创建一个副本，以便你无需修改原始文件。
 
-    ```
+    ```cmd
     makeappx unpack /l /p <app package name>.appx /d ./appx
     ren <app package name>.appx <app package name>.appx.original
     cd appx
     ```
 
-2.  在 appx 文件夹中，将称为 CustomDataExample.xml 的文件的名称更改为 Custom.data
+2. 在 appx 文件夹中，将称为 CustomDataExample.xml 的文件的名称更改为 Custom.data
 
-3.  打开 Custom.data 文件并根据需要修改参数。
+3. 打开 Custom.data 文件并根据需要修改参数。
 
     |||
     |-|-|
     |MIMCM URL|用于配置 CM 的门户的 FQDN。 例如，https://mimcmServerAddress/certificatemanagement|
-    |ADFS URL|如果你将使用 AD FS，请插入你的 AD FS URL。 例如，https://adfsServerSame/adfs|
+    |ADFS URL|如果你将使用 AD FS，请插入你的 AD FS URL。 例如，https://adfsServerSame/adfs </br> 如果不使用 ADFS，请使用空字符串配置此设置。  例如：```<ADFS URL=""/>``` |
     |PrivacyUrl|你可以将 URL 包含到说明你将如何处理为证书注册收集的用户详细信息的网页。|
     |SupportMail|你可以为支持问题包含电子邮件地址。|
     |LobComplianceEnable|可将其设置为 true 或 false。 默认情况下它设置为 true。|
     |MinimumPinLength|默认情况下它设置为 6。|
     |NonAdmin|可将其设置为 true 或 false。 默认情况下它设置为 false。 仅当你希望在其计算机上不是管理员的用户能够注册并续订证书时修改它。|
-
+>[!IMPORTANT]
+必须为 ADFS URL 指定值。 如果不指定任何值，Modern App 将在首次使用时出错。
 4.  保存该文件并退出编辑器。
 
 5.  对包进行签名时会创建一个签名文件，因此必须删除名为 AppxSignature.p7x 的原始签名文件。
@@ -131,13 +137,13 @@ ms.lasthandoff: 07/13/2017
 
 10. 在命令提示符处，运行以下命令以重新打包 .appx 文件并对其签名。
 
-    ```
+    ```cmd
     cd ..
     makeappx pack /l /d .\appx /p <app package name>.appx
     ```
     应用包名称是你在创建副本时使用的相同名称。
 
-    ```
+    ```cmd
     signtool sign /f <path\>mysign.pfx /p <pfx password> /fd "sha256" <app package name>.ap
     px
     ```
@@ -145,13 +151,13 @@ ms.lasthandoff: 07/13/2017
 
 11. 若要使用 AD FS 身份验证：
 
-    -   打开虚拟智能卡应用程序。 这使你可以更轻松地找到下一步所需的值。
+    -  打开虚拟智能卡应用程序。 这使你可以更轻松地找到下一步所需的值。
 
-    -   若要将应用程序作为客户端添加到 AD FS 服务器并在服务器上配置 CM，请在 AD FS 服务器上，打开 Windows PowerShell 并运行命令 `ConfigureMimCMClientAndRelyingParty.ps1 –redirectUri <redirectUriString> -serverFQDN <MimCmServerFQDN>`。
+    -  若要将应用程序作为客户端添加到 AD FS 服务器并在服务器上配置 CM，请在 AD FS 服务器上，打开 Windows PowerShell 并运行命令 `ConfigureMimCMClientAndRelyingParty.ps1 –redirectUri <redirectUriString> -serverFQDN <MimCmServerFQDN>`。
 
         下面是 ConfigureMimCMClientAndRelyingParty.ps1 脚本：
 
-        ```
+       ```PowerShell
         # HELP
 
         <#
@@ -242,13 +248,22 @@ ms.lasthandoff: 07/13/2017
         Write-Host "RP Trust for MIM CM Service has been created"
         ```
 
-    -   更新 redirectUri 和 serverFQDN 的值。
+    - 更新 redirectUri 和 serverFQDN 的值。
 
-    -   若要查找 redirectUri，在虚拟机智能卡应用程序中打开应用程序设置面板，单击“设置” ，重定向 URI 应在 AD FS 服务器地址栏下方列出。 仅在配置了 ADFS 服务器地址时，该 URI 才会显示。
+    - 若要查找 redirectUri，在虚拟机智能卡应用程序中打开应用程序设置面板，单击“设置” ，重定向 URI 应在 AD FS 服务器地址栏下方列出。 仅在配置了 ADFS 服务器地址时，该 URI 才会显示。
 
-    -   ServerFQDN 仅限 MIMCM 服务器完整计算机名称。
+    - ServerFQDN 仅限 MIMCM 服务器完整计算机名称。
 
-    -   有关 **ConfigureMIimCMClientAndRelyingParty.ps1** 脚本的帮助，请运行 `get-help  -detailed ConfigureMimCMClientAndRelyingParty.ps1`
+    - 有关 ConfigureMIimCMClientAndRelyingParty.ps1 脚本的帮助，请运行： </br> 
+    ```Powershell
+     get-help  -detailed ConfigureMimCMClientAndRelyingParty.ps1
+    ```
 
 ## <a name="deploy-the-app"></a>部署应用
+
 设置 CM 应用后，在下载中心中下载文件 MIMDMModernApp_&lt;version&gt;_AnyCPU_Test.zip 并提取其所有内容。 .appx 文件是安装程序。 你可以使用通常部署 Windows 应用商店应用时使用的任何方式来部署它，使用 [System Center Configuration Manager](https://technet.microsoft.com/library/dn613840.aspx)，或使用 [Intune](https://technet.microsoft.com/library/dn613839.aspx) 旁加载应用，以使用户必须通过公司门户访问它或直接向其计算机推送。
+
+## <a name="next-steps"></a>后续步骤
+
+- [配置配置文件模板](https://technet.microsoft.com/library/cc708656)
+- [Managing Smart Card Applications](https://technet.microsoft.com/library/cc708681)（管理智能卡应用程序）
