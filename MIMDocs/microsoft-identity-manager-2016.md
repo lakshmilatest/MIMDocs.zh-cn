@@ -5,18 +5,18 @@ keywords:
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
-ms.date: 08/18/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: ccdd8a9f-02da-440a-81a8-354800dcd2a8
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 21bb12a70850a5f835ca6715d9683558ac6fad1d
-ms.sourcegitcommit: f2778c5fa5f0cd04e8a74fc15fa340cd118dded5
+ms.openlocfilehash: cd8191e3fdf571f4140bcdd51c54aa25bd663215
+ms.sourcegitcommit: 06add1a636720f74bc0c0f25b4100b19f1bd31da
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="microsoft-identity-manager-2016"></a>Microsoft Identity Manager 2016
 
@@ -28,9 +28,9 @@ Microsoft Identity Manager (MIM) 2016 以 [FIM 2010 R2](https://technet.microsof
 - 证书管理中的新增功能
   - [证书管理 REST API 参考](./reference/certificate-management-rest-api-reference.md)
   - 对多林拓扑的支持
-  - 适用于虚拟智能卡的 Windows 应用
+  - [适用于虚拟智能卡的 Windows 应用](working-with-mim-certificate-manager.md)
   - 更新的事件和故障排除功能 
-- 自助式方案现在包括帐户解锁和用于密码重置的 Azure MFA（多重身份验证）入口。
+- [自助式方案](working-with-self-service-password-reset.md)现在包括帐户解锁和用于密码重置的 Azure MFA（多重身份验证）入口。
 
 ## <a name="hybrid-experience"></a>混合体验
 
