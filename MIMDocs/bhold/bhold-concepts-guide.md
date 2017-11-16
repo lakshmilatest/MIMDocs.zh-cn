@@ -9,11 +9,11 @@ ms.date: 09/14/2017
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 
-ms.openlocfilehash: 45054799cdc8bbe6d39fa2beb28e69d13cace031
-ms.sourcegitcommit: ed8dd5563e77ef4a3345b2a52a1426859c95576a
+ms.openlocfilehash: 0d814dd27fe53ee7cfc46eac24ec577b05f78e52
+ms.sourcegitcommit: 0d8b19c5d4bfd39d9c202a3d2f990144402ca79c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="microsoft-bhold-suite-concepts-guide"></a>Microsoft BHOLD 套件概念指南
 
@@ -342,6 +342,6 @@ Forefront Identity Manager 2010 和 Forefront Identity Manager 2010 R2 的一项
 
 ## <a name="next-steps"></a>后续步骤
 
-- [BHOLD 安装指南](../deploy-use/bhold-installation-guide.md)
+- [BHOLD 安装指南](bhold-installation-guide.md)
 - [BHOLD 开发人员参考](../reference/mim2016-bhold-developer-reference.md)
 - [BHOLD 版本历史记录](../reference/version-bhold-history.md)

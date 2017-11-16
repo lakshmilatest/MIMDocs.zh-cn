@@ -11,10 +11,10 @@ ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 
 ms.openlocfilehash: 33fbe63528d5d7c543ae286f934654538782b4d5
-ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
+ms.sourcegitcommit: 0d8b19c5d4bfd39d9c202a3d2f990144402ca79c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="bhold-core-installation"></a>BHOLD 核心安装
 
@@ -30,7 +30,7 @@ BHOLD 核心模块构成了 Microsoft BHOLD 套件的基础。 必须先安装 B
 
 |          |        |          |
 |----------|--------|----------|
-|组件 |最低 | 推荐 |
+|**组件** |最低 | 推荐 |
 |处理器 | 64 位处理器 | 多核 64 位处理器 |
 | 内存 |3 GB | 6 GB 或更多 |
 |存储| 30 GB 可用空间 |取决于部署大小 |

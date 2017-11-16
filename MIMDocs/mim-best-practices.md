@@ -11,11 +11,11 @@ ms.prod: identity-manager-2016
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 
-ms.openlocfilehash: 694ec1e0d6577c4335fd75ab0984aed9a0e4f220
-ms.sourcegitcommit: 8edd380f54c3e9e83cfabe8adfa31587612e5773
+ms.openlocfilehash: fe361c3f6dd85a478d655a910f0f3ec9802128b0
+ms.sourcegitcommit: 0d8b19c5d4bfd39d9c202a3d2f990144402ca79c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="microsoft-identity-manager-2016-best-practices"></a>Microsoft Identity Manager 2016 最佳做法
 
@@ -189,8 +189,7 @@ MANUAL
 ALTER FULLTEXT INDEX ON [fim].[ObjectValueXml] SET CHANGE_TRACKING = MANUAL
 ```
 
-请务必了解 SQL server 恢复模式的磁盘要求。 根据备份计划，可考虑在初始系统加载期间使用简单恢复模式以限制磁盘空间使用率，但需了解数据丢失的影响。
-使用完整恢复模式时，需要管理备份（包括事务日志的频繁备份）的磁盘使用率，防止磁盘空间使用率过高。
+请务必了解 SQL server 恢复模式的磁盘要求。 根据备份计划，可考虑在初始系统加载期间使用简单恢复模式以限制磁盘空间使用率，但需了解数据丢失的影响。 使用完整恢复模式时，需要管理备份（包括事务日志的频繁备份）的磁盘使用率，防止磁盘空间使用率过高。
 
 >[!IMPORTANT]
 如果不执行这些过程，可能会导致磁盘空间使用率过高，从而导致磁盘空间不足。 可在[恢复模式概述](http://go.microsoft.com/fwlink/?LinkID=185370)中找到有关此主题的更多详细信息。 [FIM 备份和还原指南](http://go.microsoft.com/fwlink/?LinkID=165864)包含更多信息。
@@ -200,7 +199,6 @@ ALTER FULLTEXT INDEX ON [fim].[ObjectValueXml] SET CHANGE_TRACKING = MANUAL
 在初始加载过程中，应仅对管理策略规则 (MPR) 和设置定义应用 FIM 配置所需的最低配置。 完成数据加载后，创建部署所需的其他设置。 使用操作工作流上的连续策略更新设置，通过追溯方式将这些策略应用于已加载数据。
 
 ### <a name="step-3-configure-and-populate-the-fim-service-with-external-identity-data"></a>步骤 3：使用外部标识数据配置和填充 FIM 服务
-
 
 此时，应按照“如何从 Active Directory 同步用户”中所述的步骤进行操作
 
@@ -224,13 +222,11 @@ ALTER FULLTEXT INDEX ON [fim].[ObjectValueXml] SET CHANGE_TRACKING = MANUAL
 
 ### <a name="step-4-apply-your-full-mim-configuration"></a>步骤 4：应用完整的 MIM 配置
 
-
 完成初始数据加载后，应为部署应用完整的 MIM 配置。
 
 根据你的方案，这可能包括创建附加集、MPR 和工作流。 对于需要通过追溯方式应用到系统中的所有现有对象的任何策略，使用操作工作流上的连续策略更新设置，通过追溯方式将这些策略应用于已加载数据。
 
 ### <a name="step-5-reconfigure-sql-to-previous-settings"></a>步骤 5：将 SQL 重新配置为以前的设置
-
 
 请记住将 SQL 设置更改为其正常设置。 这包括：
 
@@ -267,8 +263,7 @@ ActivityInformationConfiguration 对象需要版本号来准确引用生产环�
 
 ### <a name="avoid-cyclic-references"></a>请勿使用循环引用
 
-一般情况下，不建议在 MIM 配置中使用循环引用。
-但是，当集 A 引用集 B 且集 B 也引用集 A 时，有时会出现循环。为避免循环引用的问题，应更改集 A 或集 B 的定义，使其不相互引用。 然后，重新开始迁移过程。 如果存在循环引用，且 Compare-FIMConfig cmdlet 导致错误，则需要手动中断循环。 由于 Compare-FIMConfig cmdlet 以优先级顺序输出更改列表，因此它要求配置对象的引用之间不存在循环。
+一般情况下，不建议在 MIM 配置中使用循环引用。 但是，当集 A 引用集 B 且集 B 也引用集 A 时，有时会出现循环。为避免循环引用的问题，应更改集 A 或集 B 的定义，使其不相互引用。 然后，重新开始迁移过程。 如果存在循环引用，且 Compare-FIMConfig cmdlet 导致错误，则需要手动中断循环。 由于 Compare-FIMConfig cmdlet 以优先级顺序输出更改列表，因此它要求配置对象的引用之间不存在循环。
 
 ## <a name="security"></a>安全
 
@@ -394,17 +389,16 @@ FIM 同步服务的服务帐户不应是用于控制 FIM 同步服务（以 FIMS
 
 MIM 提供了两种类型的 MPR、请求和集转换：
 
--   请求 MPR (RMPR)
+-  请求 MPR (RMPR)
 
- - 用于定义针对资源的创建、读取、更新或删除 (CRUD) 操作的访问控制策略（身份验证、授权和操作）。
- - 在针对 FIM 中的目标资源发出 CRUD 操作时应用。
-   - 根据规则中定义的匹配条件设置范围，即规则应用于哪些 CRUD 请求。
+  - 用于定义针对资源的创建、读取、更新或删除 (CRUD) 操作的访问控制策略（身份验证、授权和操作）。
+  - 在针对 FIM 中的目标资源发出 CRUD 操作时应用。
+  - 根据规则中定义的匹配条件设置范围，即规则应用于哪些 CRUD 请求。
 
-
--   集转换 MPR (TMPR)
- - 用于定义策略，而不管对象如何进入由转换集表示的当前状态。 使用 TMPR 建立权利策略模型。
- - 资源进入或离开关联集时应用。
- - 范围设置为集的成员。
+- 集转换 MPR (TMPR)
+  - 用于定义策略，而不管对象如何进入由转换集表示的当前状态。 使用 TMPR 建立权利策略模型。
+  - 资源进入或离开关联集时应用。
+  - 范围设置为集的成员。
 
 >[备注]有关其他详细信息，请参阅 [Designing Business Policy Rules](http://go.microsoft.com/fwlink/?LinkID=183691)（设计业务策略规则）。
 
@@ -413,18 +407,14 @@ MIM 提供了两种类型的 MPR、请求和集转换：
 应用配置时，请使用最小特权原则。 MPR 控制 FIM 部署的访问策略。 仅启用大多数用户使用的功能。 例如，并非所有用户都使用 FIM 进行组管理，因此应禁用关联组管理 MPR。 默认情况下，FIM 禁用大多数非管理员权限。
 
 #### <a name="duplicate-built-in-mprs-instead-of-directly-modifying"></a>应复制内置 MPR，而不是直接修改
-
 需要修改内置 MPR 时，应使用所需配置创建一个新的 MPR，并关闭内置 MPR。 这可确保对通过升级过程引入的内置 MPR 的任何更改都不会对系统配置产生负面影响。
 
 #### <a name="end-user-permissions-should-use-explicit-attribute-lists-scoped-to-users-business-needs"></a>最终用户权限应使用范围设置为用户业务需求的显式属性列表
-
-通过使用显式属性列表，有助于在向对象添加属性时，防止向无特权用户意外授予权限。
-管理员应明确需要对新属性授予权限，而不是尝试删除权限。
+通过使用显式属性列表，有助于在向对象添加属性时，防止向无特权用户意外授予权限。 管理员应明确需要对新属性授予权限，而不是尝试删除权限。
 
 对数据的访问应将范围设置为用户的业务需求。 例如，组成员不应对其所属组的筛选器属性具有访问权限。 筛选器可能会意外泄露用户通常无法访问的组织数据。
 
 #### <a name="mprs-should-reflect-effective-permissions-in-the-system"></a>MPR 应该反映系统中的有效权限
-
 请勿授予用户从不使用的属性的权限。 例如，不应授予修改核心资源属性（如 objectType）的权限。 尽管有 MPR，在创建资源类型后对其进行的任何修改尝试都会被系统拒绝。
 
 #### <a name="read-permissions-should-be-separate-from-modify-and-create-permissions-when-using-explicit-attributes-in-mprs"></a>在 MPR 中使用显式属性时，读取权限应与修改和创建权限分开
@@ -443,12 +433,9 @@ MIM 提供了两种类型的 MPR、请求和集转换：
 
 在 FIM 中，权限被定义为肯定断言。 因为 FIM 不支持“拒绝”权限，因此向资源授予无限制访问权限会使在权限中提供排除变得复杂。 最佳做法是仅授予必要的权限。
 
->[!NOTE]
-下面为权利部分。 我想知道如何合并它们以避免创建 5 级标头
 #### <a name="use-tmprs-to-define-custom-entitlements"></a>使用 TMPR 定义自定义权利
 
-使用集转换 MPR (TMPR) 而不是 RMPR 来定义自定义权利。
-TMPR 提供基于状态的模型，根据定义的转换集或角色的成员身份以及伴随的工作流活动来分配或删除权利。 应始终成对定义 TMPR，一个用于资源向内转换，一个用于资源向外转换。此外，每个转换 MPR 应包含用于预配和取消预配活动的单独工作流。
+使用集转换 MPR (TMPR) 而不是 RMPR 来定义自定义权利。 TMPR 提供基于状态的模型，根据定义的转换集或角色的成员身份以及伴随的工作流活动来分配或删除权利。 应始终成对定义 TMPR，一个用于资源向内转换，一个用于资源向外转换。此外，每个转换 MPR 应包含用于预配和取消预配活动的单独工作流。
 
 >[!NOTE]
 任何取消预配的工作流都应确保“连续策略更新”属性设置为 true。
@@ -461,8 +448,7 @@ TMPR 提供基于状态的模型，根据定义的转换集或角色的成员身
 
 预配工作流应首先进行检查，确定目标资源是否已根据权利进行预配。 如果是，则不执行任何操作。
 
-取消预配工作流应首先进行检查，确定是否已预配目标资源。 如果是，应取消预配目标资源。
-否则，不执行任何操作。
+取消预配工作流应首先进行检查，确定是否已预配目标资源。 如果是，应取消预配目标资源。 否则，不执行任何操作。
 
 #### <a name="select-run-on-policy-update-for-tmprs"></a>为 TMPR 选择“持续策略更新”
 
@@ -494,19 +480,17 @@ TMPR 提供基于状态的模型，根据定义的转换集或角色的成员身
 
 ### <a name="sets"></a>设置数
 
-为集应用最佳做法时，需要考虑可管理性优化的影响和未来管理的方便性。
-在应用这些建议之前，应按预期生产规模执行适当测试，确定性能与可管理性之间的最佳平衡。
+为集应用最佳做法时，需要考虑可管理性优化的影响和未来管理的方便性。 在应用这些建议之前，应按预期生产规模执行适当测试，确定性能与可管理性之间的最佳平衡。
 
 >[!NOTE]
-以下所有指南适用于动态集和动态组。
+> 以下所有指南适用于动态集和动态组。
 
 
 #### <a name="minimize-the-use-of-dynamic-nesting"></a>最大程度减少动态嵌套的使用
 
 这是指引用另一个集的 ComputedMember 属性的集的筛选器。 使用嵌套集的常见原因是避免在多个集之间复制成员条件。 虽然这种方法可能会提高集的可管理性，但会降低性能。 可通过复制嵌套集的成员条件（而不是复制嵌套集本身）来优化性能。
 
-可能存在必须使用嵌套集来满足功能要求的情况。 以下是应使用嵌套集的主要情况。 例如，若要定义没有全职员工雇主的所有组的集，必须使用集的嵌套，如下所示：`/Group[not(Owner =
-/Set[ObjectID = ‘X’]/ComputedMember]`，其中“X”是“所有全职员工”集的 ObjectID。
+可能存在必须使用嵌套集来满足功能要求的情况。 以下是应使用嵌套集的主要情况。 例如，若要定义没有全职员工雇主的所有组的集，必须使用集的嵌套，如下所示：`/Group[not(Owner = /Set[ObjectID = ‘X’]/ComputedMember]`，其中“X”是“所有全职员工”集的 ObjectID。
 
 #### <a name="minimize-the-use-of-negative-conditions"></a>尽量减少否定条件的使用
 
@@ -540,8 +524,7 @@ Communication Foundation (WCF)。 默认情况下，不启用此选项，并且�
 
 #### <a name="do-not-map-an-authorization-workflow-to-the-password-reset-process"></a>请勿将授权工作流映射到密码重置过程
 
-不应将授权工作流附加到密码重置操作。
-密码重置需要包含活动（如审批活动）的同步响应和授权工作流为异步。
+不应将授权工作流附加到密码重置操作。 密码重置需要包含活动（如审批活动）的同步响应和授权工作流为异步。
 
 #### <a name="do-not-map-multiple-action-activities-to-password-reset"></a>请勿将多个操作活动映射到密码重置
 
