@@ -12,12 +12,15 @@ ms.technology: security
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: c6786ea653f178b25ea3da4fbd3b01d21b79c622
-ms.sourcegitcommit: f077508b5569e2a96084267879c5b6551e1e0905
+ms.openlocfilehash: 90c773c30b0ab23ad29ca1a215745bf59b188764
+ms.sourcegitcommit: 0d8b19c5d4bfd39d9c202a3d2f990144402ca79c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 11/14/2017
 ---
+>[!IMPORTANT]
+由于 Azure 多重身份验证软件开发工具包的弃用通知。 Azure MFA SDK 对现有客户提供的支持将持续到停用日期 2018 年 10 月 1 日前。 新客户和当前客户将无法再通过 Azure 经典门户下载 SDK。 若要下载，需要联系 Azure 客户支持，以便接收生成的 MFA 服务凭据包。 <br> Microsoft 开发团队正在努力通过与 MFA 服务器 SDK 集成来计划对 MFA 的更改。这一更改将包含在即将于 2018 年初发布的修补程序中。
+
 # <a name="working-with-self-service-password-reset"></a>使用自助服务密码重置
 Microsoft 标识管理器 2016 将附加功能提供给自助服务密码重置功能。 此功能的几个重要功能已得到增强：
 
@@ -82,7 +85,7 @@ Azure MFA 提供了额外的身份验证机制，可加强现有的身份验证�
 
 7.  在新窗口中，单击左面板上“配置”下的“设置”。
 
-8.  在“欺诈警报” 下，取消选中“报告欺诈时阻止用户”  。 这样做是为了防止阻塞整个服务。
+8.  在“欺诈警报”下，取消选中**“报告欺诈时阻止用户”。 这样做是为了防止阻塞整个服务。
 
 9. 在打开的“Azure 多重身份验证”  窗口中，单击左侧菜单的“下载”  下的“SDK”  。
 
@@ -136,7 +139,7 @@ Azure MFA 提供了额外的身份验证机制，可加强现有的身份验证�
 
 #### <a name="register-users-for-password-reset"></a>注册用户以进行密码重置
 
-1.  用户将启动 Web 浏览器，导航到 MIM 密码重置注册门户。  （通常此门户将使用 Windows 身份验证配置）。  在该门户中，他们将再次提供其用户名和密码以确认其身份。
+1.  用户将启动 Web 浏览器并导航到 MIM 密码重置注册门户。  （通常此门户将使用 Windows 身份验证配置）。  在该门户中，他们将再次提供其用户名和密码以确认其身份。
 
     他们需要进入密码注册门户，并使用其用户名和密码进行身份验证。
 

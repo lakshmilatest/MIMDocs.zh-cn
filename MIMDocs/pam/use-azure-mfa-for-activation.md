@@ -3,22 +3,26 @@ title: "使用 Azure MFA 激活 PAM | Microsoft Docs"
 description: "当你的用户激活 Privileged Access Management 中的角色时，将 Azure MFA 设置为安全性的第二层。"
 keywords: 
 author: barclayn
-ms.author: barclayn
+ms.author: fimguy
 manager: mbaldwin
-ms.date: 08/31/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 5134a112-f73f-41d0-a5a5-a89f285e1f73
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: dd77c0135bee40a90f3ea9fd5c1b2771cbc21793
-ms.sourcegitcommit: c049dceaf02ab8b6008fe440daae4d07b752ca2e
+ms.openlocfilehash: 4accb4c1db90f11c18917012b9a3ab4966ea6496
+ms.sourcegitcommit: 0d8b19c5d4bfd39d9c202a3d2f990144402ca79c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="using-azure-mfa-for-activation"></a>将 Azure MFA 用于激活
+>[!IMPORTANT]
+由于 Azure 多重身份验证软件开发工具包的弃用通知。 Azure MFA SDK 对现有客户提供的支持将持续到停用日期 2018 年 10 月 1 日前。 新客户和当前客户将无法再通过 Azure 经典门户下载 SDK。 若要下载，需要联系 Azure 客户支持，以便接收生成的 MFA 服务凭据包。 <br> Microsoft 开发团队正在努力通过与 MFA 服务器 SDK 集成来计划对 MFA 的更改。这一更改将包含在即将于 2018 年初发布的修补程序中。
+
+
 
 在配置 PAM 角色时，你可以选择对请求激活角色的用户进行授权的方式。 PAM 授权活动实现的选项有：
 
