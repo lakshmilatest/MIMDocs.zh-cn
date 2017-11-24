@@ -5,17 +5,17 @@ keywords:
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
-ms.date: 08/18/2017
+ms.date: 11/15/2017
 ms.topic: reference
 ms.prod: identity-manager-2016
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 
-ms.openlocfilehash: fe361c3f6dd85a478d655a910f0f3ec9802128b0
-ms.sourcegitcommit: 0d8b19c5d4bfd39d9c202a3d2f990144402ca79c
+ms.openlocfilehash: 7f56882bf005de6c888997c1bf6a9e2feaea410c
+ms.sourcegitcommit: 42253562ac2f9ed689e9db9d0c470213b7926883
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 11/16/2017
 ---
 # <a name="microsoft-identity-manager-2016-best-practices"></a>Microsoft Identity Manager 2016 最佳做法
 
@@ -90,7 +90,7 @@ ms.lasthandoff: 11/14/2017
   WITH OVERRIDE
   ```
 
-  此示例将 SQL Server 重新配置为使用不超过 12 GB 的内存。
+  此示例将 SQL Server 重新配置为使用不超过 12GB 的内存。
 
 4.  使用下列查询验证设置：
 
@@ -108,13 +108,16 @@ ms.lasthandoff: 11/14/2017
 
 ### <a name="backup-and-recovery-configuration"></a>备份和恢复配置
 
-通常，应根据组织的备份策略执行数据库备份。 如果未计划增量日志备份，应将数据库设置为简单恢复模式。 确保在实施备份策略之前，了解不同恢复模式的含义以及这些模式的磁盘空间要求。 完整恢复模式需要频繁的日志备份，防止磁盘空间使用率过高。 有关详细信息，请参阅[恢复模式概述](http://go.microsoft.com/fwlink/?LinkID=185370)和 [FIM 2010 Backup and Restore Guide](http://go.microsoft.com/fwlink/?LinkID=165864)（FIM 2010 备份和还原指南）。
+一般来说，应与数据库管理员合作，共同设计备份和恢复策略。 下面给出了一些建议：
+- 根据组织的备份策略执行数据库备份。 
+- 如果未计划增量日志备份，应将数据库设置为简单恢复模式。 
+- 务必先了解不同恢复模型的含义，再实现备份策略。 了解这些模型的磁盘空间要求。 完整恢复模式需要频繁的日志备份，防止磁盘空间使用率过高。 
 
-## <a name="create-a-backup-administrator-account-for-the-fimservice-after-installation"></a>在安装后为 FIMService 创建备份管理员帐户
+有关详细信息，请参阅[恢复模式概述](http://go.microsoft.com/fwlink/?LinkID=185370)和 [FIM 2010 Backup and Restore Guide](http://go.microsoft.com/fwlink/?LinkID=165864)（FIM 2010 备份和还原指南）。
 
+## <a name="create-a-backup-administrator-account-for-the-fim-service-after-installation"></a>安装后创建 FIMService 的备份管理员帐户
 
->[!IMPORTANT]
-FIMService 管理员组的成员具有对你的 FIM 部署进行操作所需的重要唯一权限。 如果你不能以管理员组成员身份登录，唯一的解决方法是回退到系统的以前备份。 为了缓解此情况，建议在安装后配置过程中将其他用户添加到 FIM 管理组。
+FIMService 管理员组的成员拥有对部署 MIM 至关重要的独有权限。 如果无法以管理员组成员身份登录，唯一的解决方法是回退到系统的以前备份。 为了缓解此情况，建议在安装后配置过程中将其他用户添加到 FIM 管理组。
 
 ## <a name="fim-service"></a>FIM 服务
 
@@ -144,7 +147,7 @@ FIMService 管理员组的成员具有对你的 FIM 部署进行操作所需的�
 
 ### <a name="disable-sharepoint-indexing"></a>禁用 SharePoint 索引
 
-建议禁用 Microsoft Office SharePoint® 索引。 没有文档需要索引，且索引会导致许多错误日志条目和 FIM 2010 的潜在性能问题。 禁用 SharePoint 索引
+建议禁用 Microsoft Office SharePoint® 索引。 无需为文档编制索引。 编制索引会导致 MIM 中出现很多错误日志条目，并可能发生性能问题。 若要禁用 SharePoint 索引，请按照以下步骤操作：
 
 1.  在托管 MIM 2016 门户的服务器上，单击“开始”。
 
@@ -164,16 +167,16 @@ FIMService 管理员组的成员具有对你的 FIM 部署进行操作所需的�
 
 ## <a name="mim-2016-initial-data-load"></a>MIM 2016 初始数据加载
 
-本部分列出用于提高从外部系统到 FIM 2010 的初始数据加载性能的一系列步骤。 请务必了解，许多这些步骤在系统的初始填充过程中是临时的，并且应在完成时对其进行重置。 这是一次性操作，不是连续性同步。
+此部分列出了一系列步骤，可用于提升将数据从外部系统初始加载到 MIM 的性能。 请务必了解，其中许多步骤仅在系统初始填充阶段执行。 应在加载完成后重置它们。 这是一次性操作，不是连续性同步。
 
 >[!NOTE]
-有关如何在 FIM 2010 和 Active Directory 域服务 (AD DS) 之间同步用户的详细信息，请参阅 FIM 文档中的[如何将用户从 Active Directory 同步到 FIM](http://go.microsoft.com/fwlink/?LinkID=188277) 。
+若要详细了解如何在 MIM 和 Active Directory 域服务 (AD DS) 之间同步用户，请参阅 FIM 文档中的[如何将用户从 Active Directory 同步到 FIM](http://go.microsoft.com/fwlink/?LinkID=188277)。
 
 >[!IMPORTANT]
-请确保已应用本指南 SQL 设置部分所述的最佳做法。                                                                                                                                                      |
+请确保已应用本指南 SQL 设置部分所述的最佳做法。 
 
 ### <a name="step-1-configure-the-sql-server-for-initial-data-load"></a>步骤 1：配置 SQL Server 以进行初始数据加载
-计划初始加载大量数据时，可通过临时关闭全文搜索并在 MIM 2016 管理代理 (FIM MA) 上的导出完成后再次启用全文搜索，缩短填充数据库所需时间。
+初始数据加载可能是一个漫长的过程。 计划初始加载大量数据时，可临时禁用全文搜索，并在 MIM 2016 管理代理 (FIM MA) 上完成导出后重新启用全文搜索，从而缩短填充数据库所需的时间。
 
 暂时关闭全文搜索：
 
@@ -184,12 +187,9 @@ FIMService 管理员组的成员具有对你的 FIM 部署进行操作所需的�
 3.  运行以下 SQL 语句：
 
 ```SQL
-ALTER FULLTEXT INDEX ON [fim].[ObjectValueString] SET CHANGE_TRACKING =
-MANUAL
+ALTER FULLTEXT INDEX ON [fim].[ObjectValueString] SET CHANGE_TRACKING = MANUAL
 ALTER FULLTEXT INDEX ON [fim].[ObjectValueXml] SET CHANGE_TRACKING = MANUAL
 ```
-
-请务必了解 SQL server 恢复模式的磁盘要求。 根据备份计划，可考虑在初始系统加载期间使用简单恢复模式以限制磁盘空间使用率，但需了解数据丢失的影响。 使用完整恢复模式时，需要管理备份（包括事务日志的频繁备份）的磁盘使用率，防止磁盘空间使用率过高。
 
 >[!IMPORTANT]
 如果不执行这些过程，可能会导致磁盘空间使用率过高，从而导致磁盘空间不足。 可在[恢复模式概述](http://go.microsoft.com/fwlink/?LinkID=185370)中找到有关此主题的更多详细信息。 [FIM 备份和还原指南](http://go.microsoft.com/fwlink/?LinkID=165864)包含更多信息。
@@ -200,16 +200,11 @@ ALTER FULLTEXT INDEX ON [fim].[ObjectValueXml] SET CHANGE_TRACKING = MANUAL
 
 ### <a name="step-3-configure-and-populate-the-fim-service-with-external-identity-data"></a>步骤 3：使用外部标识数据配置和填充 FIM 服务
 
-此时，应按照“如何从 Active Directory 同步用户”中所述的步骤进行操作
-
-有关如何将组从域服务同步到 FIM 的指南介绍如何配置系统并从 Active Directory 同步用户。 如果需要同步组信息，请参阅“如何将组从 Active Directory 域服务同步到 FIM”指南中的步骤。
+此时，应按照“如何将用户从 Active Directory 域服务同步到 FIM”指南中的过程操作，在系统中配置并同步 Active Directory 中的用户。 如果需要同步组信息，请按照[如何将组从 Active Directory 域服务同步到 FIM](https://technet.microsoft.com/library/ff686936(v=ws.10).aspx) 指南中的过程操作。
 
 #### <a name="synchronization-and-export-sequences"></a>同步和导出序列
 
-若要优化性能，可在导致连接器空间中出现大量挂起导出操作的同步运行后运行导出。
-
-然后，在与受影响的连接器空间相关联的管理代理上运行确认导入。 例如，需要在初始数据加载过程中，在多个管理代理上运行同步运行配置文件时，应在运行每个单独的同步之后运行导出，然后运行增量导入。
-
+若要优化性能，可在导致连接器空间中出现大量挂起导出操作的同步运行后运行导出。 然后，在与受影响的连接器空间相关联的管理代理上运行确认导入。 例如，需要在初始数据加载过程中，在多个管理代理上运行同步运行配置文件时，应在运行每个单独的同步之后运行导出，然后运行增量导入。
 对于初始化周期中每个源管理代理，请执行以下步骤：
 
 1.  源管理代理上的完全导入。
@@ -320,7 +315,7 @@ FIM 同步服务的服务帐户不应是用于控制 FIM 同步服务（以 FIMS
 
 7.  将文件保存到任意位置。 需要在后续步骤中访问此位置。
 
-8.  在 Windows Internet Explorer® 中，浏览到 https://servername/certsrv。 将 servername 替换为颁发证书的服务器名称。
+8.  转到 https://servername/certsrv。 将 servername 替换为颁发证书的服务器名称。
 
 9.  单击“申请新证书”。
 
@@ -374,7 +369,7 @@ FIM 同步服务的服务帐户不应是用于控制 FIM 同步服务（以 FIMS
 
 -   应用本文档中 SQL 设置部分所述的 SQL 设置最佳做法。
 
--   关闭 FIM 2010 R2 门户网站上的 SharePoint 索引。 有关详细信息，请参阅本文档中的“禁用 SharePoint 索引”部分。
+-   在 MIM 门户网站上禁用 SharePoint 索引。 有关详细信息，请参阅本文档中的“禁用 SharePoint 索引”部分。
 
 ## <a name="feature-specific-best-practices--i-want-to-remove-this-and-collapse-this-section-and-just-have-the-specific-features-at-header-2-level-versus-3"></a>特定于功能的最佳做法（我想删除并折叠此部分，只保留 2 级标头与 3 级标头处的特定功能）
 
@@ -392,7 +387,7 @@ MIM 提供了两种类型的 MPR、请求和集转换：
 -  请求 MPR (RMPR)
 
   - 用于定义针对资源的创建、读取、更新或删除 (CRUD) 操作的访问控制策略（身份验证、授权和操作）。
-  - 在针对 FIM 中的目标资源发出 CRUD 操作时应用。
+  - 在 MIM 中对目标资源发出 CRUD 操作请求时应用。
   - 根据规则中定义的匹配条件设置范围，即规则应用于哪些 CRUD 请求。
 
 - 集转换 MPR (TMPR)
@@ -404,7 +399,7 @@ MIM 提供了两种类型的 MPR、请求和集转换：
 
 #### <a name="only-enable-mprs-as-necessary"></a>仅在必要时启用 MPR
 
-应用配置时，请使用最小特权原则。 MPR 控制 FIM 部署的访问策略。 仅启用大多数用户使用的功能。 例如，并非所有用户都使用 FIM 进行组管理，因此应禁用关联组管理 MPR。 默认情况下，FIM 禁用大多数非管理员权限。
+应用配置时，请使用最小特权原则。 MPR 控制 MIM 部署的访问策略。 仅启用大多数用户使用的功能。 例如，并非所有用户都使用 MIM 进行组管理，因此应禁用关联的组管理 MPR。 默认情况下，MIM 禁用大多数非管理员权限。
 
 #### <a name="duplicate-built-in-mprs-instead-of-directly-modifying"></a>应复制内置 MPR，而不是直接修改
 需要修改内置 MPR 时，应使用所需配置创建一个新的 MPR，并关闭内置 MPR。 这可确保对通过升级过程引入的内置 MPR 的任何更改都不会对系统配置产生负面影响。
@@ -431,7 +426,7 @@ MIM 提供了两种类型的 MPR、请求和集转换：
 
 #### <a name="avoid-giving-unrestricted-access-even-to-selected-principal-groups"></a>请勿向选定主体组授予无限制访问权限
 
-在 FIM 中，权限被定义为肯定断言。 因为 FIM 不支持“拒绝”权限，因此向资源授予无限制访问权限会使在权限中提供排除变得复杂。 最佳做法是仅授予必要的权限。
+在 MIM 中，权限被定义为肯定断言。 由于 MIM 不支持“拒绝”权限，因此，如果向资源授予无限制访问权限，则会导致在权限中指定任何例外情况变得复杂起来。 最佳做法是仅授予必要的权限。
 
 #### <a name="use-tmprs-to-define-custom-entitlements"></a>使用 TMPR 定义自定义权利
 
@@ -470,7 +465,7 @@ MIM 提供了两种类型的 MPR、请求和集转换：
 
 3.  禁用 T-Out MPR。
 
-删除权利，但保留当前成员（例如，停止使用 FIM 管理权利）：
+撤消权利而不影响当前成员（例如，停止使用 MIM 管理权利）的具体步骤：
 
 1.  禁用 T-In MPR。 这可避免新的授权。
 
@@ -504,11 +499,11 @@ MIM 提供了两种类型的 MPR、请求和集转换：
 
 #### <a name="kiosk-like-computers-that-are-used-for-password-reset-should-set-local-security-to-clear-the-virtual-memory-pagefile"></a>用于密码重置的网亭式计算机应设置本地安全性，清除虚拟内存页面文件
 
-在要作为网亭的工作站上部署 FIM 2010 密码重置时，建议启用“关闭：清除虚拟内存页面文件本地安全性策略”设置，确保进程内存中的敏感信息对未经授权用户不可用。
+在要作为网亭的工作站上部署 MIM 密码重置时，建议启用“关闭：清除虚拟内存页面文件”本地安全策略设置，以确保未经授权用户无法访问进程内存中的敏感信息。
 
 #### <a name="users-should-always-register-for-a-password-reset-on-a-computer-that-they-are-logged-on-to"></a>用户应该始终在登录的计算机上注册密码重置
 
-用户尝试通过 Web 门户注册密码重置时，无论登录到网站的人员是谁，FIM 2010 会始终代表登录的用户启动注册。 用户应该始终在登录的计算机上注册密码重置。
+当用户尝试通过 Web 门户注册密码重置时，无论是谁登录网站，MIM 始终都会代表登录用户启动注册。 用户应该始终在登录的计算机上注册密码重置。
 
 #### <a name="do-not-set-the-avoidpdconwan-registry-key-to-true"></a>请勿将 AvoidPdcOnWan 注册表项设置为 true
 
@@ -580,7 +575,7 @@ Communication Foundation (WCF)。 默认情况下，不启用此选项，并且�
 
 #### <a name="making-regular-expressions-case-insensitive"></a>将正则表达式设置为不区分大小写
 
-在 FIM 中，将正则表达式设置为不区分大小写是有帮助的。 可使用 ?!: 忽略组中的大小写。 例如，对于“员工类型”，请使用
+在 MIM 中，将正则表达式设置为不区分大小写可能会有所帮助。 可使用 ?!: 忽略组中的大小写。 例如，对于“员工类型”，请使用
 
 `\^(?!:contractor\|full time employee)%.`
 
@@ -590,17 +585,17 @@ Communication Foundation (WCF)。 默认情况下，不启用此选项，并且�
 
 #### <a name="leading-and-trailing-spaces-in-strings-are-ignored"></a>将忽略字符串中的前导和尾部空格
 
-在 FIM 中，可输入带有前导和尾部空格的字符串，但 FIM 系统会忽略这些空格。 如果提交带前导和尾部空格的字符串，同步引擎和 Web 服务将忽略这些空格。
+在 MIM 中，可输入包含前导和尾部空格的字符串，但 MIM 系统会忽略这些空格。 如果提交带前导和尾部空格的字符串，同步引擎和 Web 服务将忽略这些空格。
 
 #### <a name="empty-strings-do-not-equal-null"></a>空字符串不等于 null
 
-在此版本的 FIM 中，空字符串不等于 null。 空字符串输入被视为有效值。 不存在被视为 null。
+在此版 MIM 中，空字符串不等于 null。 空字符串输入被视为有效值。 不存在被视为 null。
 
 ### <a name="workflow-and-request-processing"></a>工作流和请求处理
 
 #### <a name="do-not-delete-default-workflows-that-are-shipped-with-mim-2016"></a>请勿删除 MIM 2016 随附的默认工作流
 
-以下工作流为 FIM 2010 随附的工作流，不应将其删除：
+MIM 随附以下工作流，不得删除它们：
 
 -   过期工作流
 
@@ -634,4 +629,11 @@ Communication Foundation (WCF)。 默认情况下，不启用此选项，并且�
 
 ### <a name="understanding-fim-service-partitions"></a>了解 FIM 服务分区
 
-FIM 的目标是根据配置的业务策略来处理可由各种 FIM 客户端（如 FIM 同步服务和自助服务组件）发起的请求。 按照设计，每个 FIM 服务实例属于由一个或多个 FIM 服务实例组成的逻辑组，也称为 FIM 服务分区。 如果只部署了一个 FIM 服务实例来处理所有请求，可能遇到处理延迟。 某些操作甚至可能超出适用于自助服务操作的默认超时值。 FIM 服务分区可帮助你解决此问题。 有关详细信息，请参阅“了解 FIM 服务分区”。
+MIM 的目标是根据配置的业务策略，处理可由各种 MIM 客户端（如 FIM 同步服务和自助服务组件）发起的请求。 按照设计，每个 FIM 服务实例属于由一个或多个 FIM 服务实例组成的逻辑组，也称为 FIM 服务分区。 如果只部署了一个 FIM 服务实例来处理所有请求，可能遇到处理延迟。 某些操作甚至可能超出适用于自助服务操作的默认超时值。 FIM 服务分区可帮助你解决此问题。
+
+有关详细信息，请参阅[了解 FIM 服务分区](https://social.technet.microsoft.com/wiki/contents/articles/2363.understanding-fim-service-partitions.aspx)。
+
+## <a name="next-steps"></a>后续步骤
+- [FIM 备份和还原指南](http://go.microsoft.com/fwlink/?LinkID=165864)
+- [如何将用户从 Active Directory 同步到 FIM](http://go.microsoft.com/fwlink/?LinkID=188277) 
+- [恢复模型概述](http://go.microsoft.com/fwlink/?LinkID=185370)。

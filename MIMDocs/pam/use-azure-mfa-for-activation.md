@@ -12,15 +12,15 @@ ms.technology: active-directory-domain-services
 ms.assetid: 5134a112-f73f-41d0-a5a5-a89f285e1f73
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 4accb4c1db90f11c18917012b9a3ab4966ea6496
-ms.sourcegitcommit: 0d8b19c5d4bfd39d9c202a3d2f990144402ca79c
+ms.openlocfilehash: 1fb012034685257d35ba4f8a79468145187ae5b6
+ms.sourcegitcommit: 27a23142393bbb0f66a3d533d89a5a8366a29e41
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="using-azure-mfa-for-activation"></a>将 Azure MFA 用于激活
 >[!IMPORTANT]
-由于 Azure 多重身份验证软件开发工具包的弃用通知。 Azure MFA SDK 对现有客户提供的支持将持续到停用日期 2018 年 10 月 1 日前。 新客户和当前客户将无法再通过 Azure 经典门户下载 SDK。 若要下载，需要联系 Azure 客户支持，以便接收生成的 MFA 服务凭据包。 <br> Microsoft 开发团队正在努力通过与 MFA 服务器 SDK 集成来计划对 MFA 的更改。这一更改将包含在即将于 2018 年初发布的修补程序中。
+由于 Azure 多重身份验证软件开发工具包的弃用通知。 在停用日期 2018 年 11 月 14 日前，现有客户仍可使用 Azure MFA SDK。 新客户和当前客户将无法再通过 Azure 经典门户下载 SDK。 若要下载，需要联系 Azure 客户支持，以便接收生成的 MFA 服务凭据包。 <br> Microsoft 开发团队正在努力通过与 MFA 服务器 SDK 集成来计划对 MFA 的更改。这一更改将包含在即将于 2018 年初发布的修补程序中。
 
 
 
