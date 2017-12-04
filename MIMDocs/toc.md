@@ -86,6 +86,13 @@
 # [参考](./reference/microsoft-identity-manager-2016-developer-reference.md)
 ## 开发人员参考
 ### [MIM 2016 开发人员参考](./reference/microsoft-identity-manager-2016-developer-reference.md)
+### Web 服务连接器
+#### [泛型 Web 服务连接器概述](./reference/microsoft-identity-manager-2016-ma-ws.md)
+#### [Web 配置工具的安装步骤](./reference/microsoft-identity-manager-2016-ma-ws-install.md)
+#### [SOAP 的 Web 服务连接器工作流指南](./reference/microsoft-identity-manager-2016-ma-ws-soap.md)
+#### [REST 示例的 Web 服务连接器工作流指南](./reference/microsoft-identity-manager-2016-ma-ws-restgeneric.md)
+#### [Web 服务连接器 REST 示例应用服务](./reference/microsoft-identity-manager-2016-ma-ws-restsample.md)
+#### [Web 服务连接器配置选项](./reference/microsoft-identity-manager-2016-ma-ws-maconfig.md)
 ### BHOLD
 #### [BHOLD 开发人员参考](./reference/mim2016-bhold-developer-reference.md) 
 ### [证书管理 REST API 参考](./reference/certificate-management-rest-api-reference.md)
