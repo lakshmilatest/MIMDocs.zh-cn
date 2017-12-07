@@ -12,11 +12,11 @@ ms.technology: security
 ms.assetid: bfabc562-a2f0-4cff-ac31-36927f41e102
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 263752678e75267d6f58fe3fcb28975984f62f70
-ms.sourcegitcommit: f077508b5569e2a96084267879c5b6551e1e0905
+ms.openlocfilehash: 39becb555d2efe17e60789453dbaf448c90a8b60
+ms.sourcegitcommit: 362475d4018e74e5a17ba574ccaec47a2caebaff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="enroll-smart-cards-for-non-administrators"></a>为非管理员注册智能卡
 如果用户不是计算机的本地管理员，则默认情况下，他们将无法在自己的计算机上注册智能卡。 以下过程可以让你解决此限制。
@@ -63,7 +63,7 @@ ms.lasthandoff: 10/12/2017
 
     `makeappx pack /l /d .\appx /p <app package name>.appx`
 
-    s`igntool sign /f <path\>mysign.pfx /p <pfx password> /fd "sha256" <app package name>.appx`
+    `signtool sign /f <path\>mysign.pfx /p <pfx password> /fd "sha256" <app package name>.appx`
 
 4.  复制配置文件模板并添加初始管理员密钥，以配置 MIM 服务器：
 
