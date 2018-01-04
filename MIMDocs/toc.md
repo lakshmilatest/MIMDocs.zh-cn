@@ -65,7 +65,7 @@
 ### [步骤 8 PAM 部署验证](./pam/sp1-step8-pam-deployment-verification.md)
 ### [附录](./pam/sp1-pam-deployment-addendum.md)
 # 管理基础结构
-## [Best Practice Analyzer for Identity Manager](https://technet.microsoft.com/library/jj203402)（用于 Identity Manager 的最佳做法分析器）
+## [Best Practice Analyzer for Identity Manager（用于 Identity Manager 的最佳做法分析器）](https://technet.microsoft.com/library/jj203402)
 ## [密码更改通知服务](https://technet.microsoft.com/library/e27c0bc6-c808-4fdb-9e59-58feeb419308)
 ## 证书管理
 ### [CLMUtil 命令行工具](https://technet.microsoft.com/library/cc720647)
@@ -93,6 +93,7 @@
 #### [REST 示例的 Web 服务连接器工作流指南](./reference/microsoft-identity-manager-2016-ma-ws-restgeneric.md)
 #### [Web 服务连接器 REST 示例应用服务](./reference/microsoft-identity-manager-2016-ma-ws-restsample.md)
 #### [Web 服务连接器配置选项](./reference/microsoft-identity-manager-2016-ma-ws-maconfig.md)
+#### [导入 Web 服务连接器](./reference/microsoft-identity-manager-2016-ma-ws-import.md)
 ### BHOLD
 #### [BHOLD 开发人员参考](./reference/mim2016-bhold-developer-reference.md) 
 ### [证书管理 REST API 参考](./reference/certificate-management-rest-api-reference.md)
