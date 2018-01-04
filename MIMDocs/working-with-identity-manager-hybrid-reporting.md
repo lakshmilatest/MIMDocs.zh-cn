@@ -12,11 +12,11 @@ ms.technology: security
 ms.assetid: 68df2817-2040-407d-b6d2-f46b9a9a3dbb
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: cf8395583dcfcc2a84237bad80b6a4ca40ce166c
-ms.sourcegitcommit: f077508b5569e2a96084267879c5b6551e1e0905
+ms.openlocfilehash: 17745bfdba831364d32bc2786cc2a38191fe6cc7
+ms.sourcegitcommit: e52bab207117390997c6fa8450de24335b502673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 12/20/2017
 ---
 # <a name="working-with-identity-manager-hybrid-reporting---public-preview-refresh"></a>使用 Identity Manager 混合报告 - 公开预览版（新版）
 
@@ -37,7 +37,7 @@ Azure AD 中可用的前三个 Microsoft 标识管理器 (MIM) 报告是“密�
 > 必须卸载旧版混合代理</br>
 > 如果要卸载混合报告，请卸载 MIMreportingAgent.msi 代理。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 1.  安装 Microsoft 标识管理器 2016 RTM/或 SP1 MIM 服务。
 
@@ -48,13 +48,13 @@ Azure AD 中可用的前三个 Microsoft 标识管理器 (MIM) 报告是“密�
 ## <a name="requirements"></a>要求
 下表列出了使用 Microsoft Identity Manager 混合报告所要满足的要求。
 
-| 要求 | 说明 |
+| 要求 | 描述 |
 | --- | --- |
-| Azure AD 高级版 | 混合报告是一项 Azure AD Premium 功能，必须安装 Azure AD Premium。 </br></br>有关详细信息，请参阅 [Azure AD Premium 入门](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-get-started-premium)。 </br>若要开始 30 天免费试用，请参阅[开始试用](https://azure.microsoft.com/trial/get-started-active-directory/)。 |
-| 必须是 Azure AD 全局管理员才能开始使用 |默认情况下，只有全局管理员才能安装和配置代理，从而入门、访问门户并在 Azure 中执行任意操作。 </br></br>**重要提示：**安装代理时必须使用工作或学校帐户。 不能使用 Microsoft 帐户。 有关详细信息，请参阅[以组织身份注册 Azure](https://docs.microsoft.com/en-us/azure/active-directory/sign-up-organization)。 |
+| Azure AD 高级版 | 混合报告是一项 Azure AD Premium 功能，必须安装 Azure AD Premium。 </br></br>有关详细信息，请参阅 [Azure AD Premium 入门](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)。 </br>若要开始 30 天免费试用，请参阅[开始试用](https://azure.microsoft.com/trial/get-started-active-directory/)。 |
+| 必须是 Azure AD 全局管理员才能开始使用 |默认情况下，只有全局管理员才能安装和配置代理，从而入门、访问门户并在 Azure 中执行任意操作。 </br></br>**重要提示：**安装代理时必须使用工作或学校帐户。 不能使用 Microsoft 帐户。 有关详细信息，请参阅[以组织身份注册 Azure](https://docs.microsoft.com/azure/active-directory/sign-up-organization)。 |
 | 在每个目标 MIM Service 服务器上安装 Microsoft Identity Manager 混合代理 | 混合报告要求在目标服务器上安装和配置代理，用于接收数据并提供监视和分析功能。 </br>|
 | 到 Azure 服务终结点的出站连接 | 安装和运行时期间，代理需要与 Azure 服务终结点相连。 如果出站连接被防火墙屏蔽，请确保已将下列终结点添加到允许列表中： </br></br><li>&#42;.blob.core.windows.net </li><li>&#42;.servicebus.windows.net - 端口：5671 </li><li>&#42;.adhybridhealth.azure.com/</li><li>https://management.azure.com </li><li>https://policykeyservice.dc.ad.msft.net/</li><li>https://login.windows.net</li><li>https://login.microsoftonline.com</li><li>https://secure.aadcdn.microsoftonline-p.com</li> |
-|基于 IP 地址的出站连接 | 有关防火墙上基于 IP 地址的筛选，请参阅 [Azure IP 范围](https://www.microsoft.com/en-us/download/details.aspx?id=41653)。|
+|基于 IP 地址的出站连接 | 有关防火墙上基于 IP 地址的筛选，请参阅 [Azure IP 范围](https://www.microsoft.com/download/details.aspx?id=41653)。|
 | 已为出站流量筛选或禁用 SSL 检查 | 如果网络层有出站流量的 SSL 检查或终端，代理注册步骤或数据上载操作可能会失败。 |
 | 运行代理的服务器上的防火墙端口。 |为了让代理能够与 Azure 服务终结点进行通信，代理要求打开以下防火墙端口。</br></br><li>TCP 端口 443</li><li>TCP 端口 5671</li> |
 | 在启用“IE 增强的安全性”的情况下，允许访问以下网站 |如果启用了“IE 增强的安全配置”，必须在即将安装代理的服务器上允许访问以下网站。</br></br><li>https://login.microsoftonline.com</li><li>https://secure.aadcdn.microsoftonline-p.com</li><li>https://login.windows.net</li><li>Azure Active Directory 信任的组织联合服务器。 例如，https://sts.contoso.com。</li> |
