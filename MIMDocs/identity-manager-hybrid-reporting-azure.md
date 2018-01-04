@@ -1,5 +1,5 @@
 ---
-title: "什么是混合报告 | Microsoft 文档"
+title: "什么是混合报告 | Microsoft Docs"
 description: "使用 Azure Active Directory 中的混合审核活动报告可以查看云端和本地审核的活动。"
 keywords: 
 author: fimguy
@@ -12,11 +12,11 @@ ms.technology: security
 ms.assetid: 7320f014-8b60-4866-92de-cfbd3e6edc48
 ms.reviewer: fimguy
 ms.suite: ems
-ms.openlocfilehash: 151fbd26011ca76901d181131a88ded8a718a27a
-ms.sourcegitcommit: 0f99de31fe6b52ec692b3886073909f549a451d6
+ms.openlocfilehash: ffe372c273aae55278f9b18b45b65425734aa6f7
+ms.sourcegitcommit: e52bab207117390997c6fa8450de24335b502673
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 12/20/2017
 ---
 # <a name="hybrid-identity-management-audit-reports-in-azure-active-directory---public-previewrefresh"></a>Azure Active Directory 中的混合身份管理审计报告 - 公开预览版（新版）
 借助 Azure Active Directory (AD) 审核活动报告，你可以查看单个报表，以监视发生在本地或云中的身份管理活动。 此功能允许你在一个位置管理所有标识和访问数据，从而节省时间并降低总体成本。
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/29/2017
 
 ## <a name="how-does-it-work"></a>BitLocker 是如何工作的？
 
-若要收集本地数据，首先要在 Identity Manager 2016 服务器上安装报告代理。 可从[此处](https://www.microsoft.com/en-us/download/details.aspx?id=55112)的 Microsoft 下载页面下载报告代理。
+若要收集本地数据，首先要在 Identity Manager 2016 服务器上安装报告代理。 可从[此处](https://www.microsoft.com/download/details.aspx?id=55112)的 Microsoft 下载页面下载报告代理。
 
 混合报告的过程将按照以下步骤执行：
 1. 安装报告代理后，Identity Manager 的活动数据将发送到 Windows 事件日志。
@@ -43,7 +43,7 @@ ms.lasthandoff: 09/29/2017
 
 ## <a name="next-steps"></a>后续步骤
 - 获取有关[使用 Identity Manager 混合报告](working-with-identity-manager-hybrid-reporting.md)的更多详细信息
-- 获取有关[Azure Active Directory 门户中的“审核活动”报表](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-audit-logs)的更多详细信息
-- 获取有关[报表保留期策略](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-retention)的更多详细信息
-- 获取有关 [Microsoft Azure 日志集成 (SIEM)](https://docs.microsoft.com/en-us/azure/security/security-azure-log-integration-overview) 的更多详细信息
-- 获取有关 [Azure Active Directory 报告 API](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-api-getting-started) 的更多详细信息
+- 获取有关[Azure Active Directory 门户中的“审核活动”报表](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-activity-audit-logs)的更多详细信息
+- 获取有关[报表保留期策略](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-retention)的更多详细信息
+- 获取有关 [Microsoft Azure 日志集成 (SIEM)](https://docs.microsoft.com/azure/security/security-azure-log-integration-overview) 的更多详细信息
+- 获取有关 [Azure Active Directory 报告 API](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-getting-started) 的更多详细信息
