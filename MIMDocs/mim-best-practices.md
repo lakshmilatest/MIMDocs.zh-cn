@@ -5,17 +5,17 @@ keywords:
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
-ms.date: 11/15/2017
+ms.date: 01/05/2018
 ms.topic: reference
 ms.prod: identity-manager-2016
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 
-ms.openlocfilehash: 7f56882bf005de6c888997c1bf6a9e2feaea410c
-ms.sourcegitcommit: 42253562ac2f9ed689e9db9d0c470213b7926883
+ms.openlocfilehash: bb967bfb43218384044e324c270d3d6b35d33afe
+ms.sourcegitcommit: b4513f0f72ac6efd5c2610863f4e3e8c8e65c860
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="microsoft-identity-manager-2016-best-practices"></a>Microsoft Identity Manager 2016 最佳做法
 
@@ -371,7 +371,7 @@ FIM 同步服务的服务帐户不应是用于控制 FIM 同步服务（以 FIMS
 
 -   在 MIM 门户网站上禁用 SharePoint 索引。 有关详细信息，请参阅本文档中的“禁用 SharePoint 索引”部分。
 
-## <a name="feature-specific-best-practices--i-want-to-remove-this-and-collapse-this-section-and-just-have-the-specific-features-at-header-2-level-versus-3"></a>特定于功能的最佳做法（我想删除并折叠此部分，只保留 2 级标头与 3 级标头处的特定功能）
+## <a name="feature-specific-best-practices"></a>功能特定的最佳做法 
 
 
 ### <a name="request-management"></a>申请管理
@@ -551,7 +551,7 @@ Communication Foundation (WCF)。 默认情况下，不启用此选项，并且�
 
 -   DeletedTime
 
--   说明
+-   描述
 
 -   DetectedRulesList • DisplayName
 
