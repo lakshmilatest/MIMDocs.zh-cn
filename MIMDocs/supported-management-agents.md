@@ -5,18 +5,18 @@ keywords:
 author: fimguy
 ms.author: fimguy
 manager: bhu
-ms.date: 09/26/2017
+ms.date: 1/24/2018
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 8bc2f6d2-9f53-4db6-aee6-a937ae468163
 ms.reviewer: 
 ms.suite: ems
-ms.openlocfilehash: 99e98f3f9cb5e68fde0e3018856bf613c082325d
-ms.sourcegitcommit: ba4cd133f7b49752c5470c9fc46e7e302cc99b49
+ms.openlocfilehash: 1e100a686f009d1a2290d7965fe36eea819148be
+ms.sourcegitcommit: fab9f21eea15d2024f11a59fc9e43db15bd215c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="connect-to-your-directories"></a>连接到目录
 
@@ -28,13 +28,13 @@ ms.lasthandoff: 09/28/2017
 
 ## <a name="supported-connectors-in-mim-2016-sp1"></a>MIM 2016 SP1 中支持的连接器
 
-| Name | 支持的已连接数据源版本 |
+| 名称 | 支持的已连接数据源版本和技术链接 |
 | ---- | ----------------------------------------------- |
 | Active Directory 域服务 | Active Directory 2012、2016 |
 | Active Directory 轻型目录服务 (ADLDS) | Active Directory 轻型目录服务 (ADLDS) |
 | Active Directory 全局地址列表 (GAL) | Active Directory 全局地址列表 (GAL) - Exchange 2013、2016 |
 | Extensible Connectivity 2.0 | 任何基于呼叫或基于文件的数据源 |
-| FIM 服务 | FIM Service Management Agent (Sycronization Service) 必须与已安装的“Forefront Identity Manager Service”是同一版本 |
+| FIM 服务 | FIM 服务管理代理（同步服务）必须与安装的“Forefront Identity Manager Service”具有相同的版本 |
 | IBM DB2 Universal Database | IBM DB2 版本 9.5 或 9.7；IBM DB2 OLEDB v9.5 FP5 或 v9.7 FP1 |
 | IBM Directory Server | IBM Tivoli Directory Server 6.x |
 | Novell eDirectory | Novell eDirectory 版本 8.7.3、8.8.5 和 8.8.6 |
@@ -43,10 +43,11 @@ ms.lasthandoff: 09/28/2017
 | Oracle（以前的 Sun 和 Netscape）Directory Server | Sun Directory Server 6.x、7.x 和 Oracle 11 |
 | [适用于 FIM 2010 R2 的 Windows PowerShell 连接器](https://msdn.microsoft.com/en-us/library/dn640417.aspx) | Windows PowerShell 2.0 或更高版本 |
 | [适用于 FIM 2010 R2 的 Microsoft Azure Active Directory 连接器](https://msdn.microsoft.com/en-us/library/dn511001.aspx) | Microsoft Azure Active Directory |
-| [适用于 FIM 2010 R2 的通用 LDAP 连接器](https://msdn.microsoft.com/en-us/library/dn510997.aspx) | LDAP v3 服务器（与 RFC 4510 兼容） |
+| [适用于 FIM 2010 R2 的通用 LDAP 连接器](https://msdn.microsoft.com/en-us/library/dn510997.aspx) | [LDAP v3 服务器（与 RFC 4510 兼容）](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-connector-genericldap) |
+| [适用于 FIM 2010 R2/MIM 的通用 SQL 连接器](https://msdn.microsoft.com/en-us/library/dn510997.aspx) | [所有 64 位 ODBC 驱动程序均支持该连接器](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-connector-genericsql) |
 | [适用于 Lotus Domino 的连接器](https://msdn.microsoft.com/en-us/library/hh859750.aspx) | Lotus Notes v8.5.x 版 |
 | [SharePoint Services 连接器 UPA](https://msdn.microsoft.com/en-us/library/dn511003.aspx) | 含 User Profile Service Application (UPA) 的 SharePoint Server 2013 或 2016 |
-| [适用于 Web 服务的连接器](https://www.microsoft.com/en-us/download/details.aspx?id=51495) | SAP ECC 5.0 或 6.0；Oracle PeopleSoft 9.1；Oracle 电子商务 12.1 |
+| [适用于 Web 服务的连接器](https://www.microsoft.com/en-us/download/details.aspx?id=51495) | [SAP ECC 5.0 或 6.0；Oracle PeopleSoft 9.1；Oracle eBusiness 12.1](https://docs.microsoft.com/en-us/microsoft-identity-manager/reference/microsoft-identity-manager-2016-ma-ws) |
 | [属性值对文本文件](https://technet.microsoft.com/en-us/library/cc708644(v=ws.10).aspx) | 属性值对文本文件 |
 | [带分隔符的文本文件](https://technet.microsoft.com/en-us/library/cc720612(v=ws.10).aspx) | 带分隔符的文本文件 |
 | [目录服务标记语言 (DSML)](https://technet.microsoft.com/en-us/library/cc720660(v=ws.10).aspx) | 目录服务标记语言 (DSML) 2.0 |

@@ -1,22 +1,19 @@
 ---
-title: "部署 PAM 步骤 7 - 用户访问权限 | Microsoft Docs"
+title: "部署 PAM 步骤 7 - 用户访问权限 | Microsoft 文档"
 description: "作为最后一步，授予特权用户临时访问权限，以演示 Privileged Access Management 部署已成功。"
-keywords: 
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
-ms.date: 09/13/2017
+ms.date: 01/17/2018
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 5325fce2-ae35-45b0-9c1a-ad8b592fcd07
-ms.reviewer: mwahl
-ms.suite: ems
-ms.openlocfilehash: f8ad03bc072dbf6df36a9ef737479dce60b70b8b
-ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
+ms.openlocfilehash: 2d92be315547da1c352c0e60732f9aeecf0c2d90
+ms.sourcegitcommit: 3d8a2493eae1218bfdb75a399ffa4adc8c2a8fdf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 01/20/2018
 ---
 # <a name="step-7--elevate-a-users-access"></a>步骤 7 - 提升用户的访问权限
 
@@ -38,7 +35,12 @@ ms.lasthandoff: 09/14/2017
 
 ## <a name="request-privileged-access-from-mim"></a>从 MIM 中请求特许访问权限。
 
-1. 仍以 CONTOSO\Jen 身份，在 CORPWKSTN 上键入以下命令。
+> [!NOTE]
+> 建议工作站是特权工作站 (PAW)。  有关详细信息，请参阅 [PAW](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/privileged-access-workstations)。
+
+1. 在 PRIVWKSTN 上，以 PRIV\priv.jen 身份登录。
+2. 依次单击“开始”和“运行”，并输入 PowerShell.exe。
+3. 键入下列命令。
 
     ```cmd
     runas /user:Priv.Jen@priv.contoso.local powershell
