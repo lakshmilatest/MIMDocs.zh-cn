@@ -11,6 +11,7 @@
 ## [部署拓扑](topology-considerations.md)
 ## [计划 PAM 部署](./pam/environment-overview.md)
 # [部署和使用](microsoft-identity-manager-deploy.md)
+## [已弃用的功能](microsoft-identity-manager-2016-deprecated-features.md)
 ## [首次部署](microsoft-identity-manager-deploy.md)
 ### [域设置](preparing-domain.md)
 ### [服务器设置：Windows Server](prepare-server-ws2012r2.md)
