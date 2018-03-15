@@ -216,7 +216,7 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
 
 2. 对于每个现有林顶部的每个域，键入以下命令，指定现有的 DNS 域（例如：contoso.local）以及该域的主服务器的 IP 地址。  
 
-  如果在上一步创建了一个 contoso.local 域，则指定 * 10.1.1.31* 作为 CORPDC 计算机的虚拟网络 IP 地址。
+  如果在上一步创建了一个 contoso.local 域，则指定 *10.1.1.31* 作为 CORPDC 计算机的虚拟网络 IP 地址。
 
   ```PowerShell
   Add-DnsServerConditionalForwarderZone –name "contoso.local" –masterservers 10.1.1.31
