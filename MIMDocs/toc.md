@@ -144,3 +144,4 @@
 ## 版本历史记录
 ### [MIM 版本历史记录](./reference/version-history.md)
 ### [BHOLD 版本历史记录](./reference/version-bhold-history.md)
+### [连接器版本发布历史记录](./reference/microsoft-identity-manager-2016-connector-version-history.md)
