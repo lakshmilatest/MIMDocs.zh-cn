@@ -1,7 +1,7 @@
 ---
-title: "通过 Windows Server 2016 部署 MIM Privileged Access Management | Microsoft Docs"
-description: "了解如何使用 Server 2016 部署 Privileged Access Management"
-keywords: 
+title: 通过 Windows Server 2016 部署 MIM Privileged Access Management | Microsoft Docs
+description: 了解如何使用 Server 2016 部署 Privileged Access Management
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -9,12 +9,12 @@ ms.date: 08/18/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
-ms.assetid: 
-ms.openlocfilehash: 8827a8b6d49672a7860c9265efac5f0881a2c018
-ms.sourcegitcommit: 8edd380f54c3e9e83cfabe8adfa31587612e5773
+ms.assetid: ''
+ms.openlocfilehash: 6088afccec45d1353233a32828353149bcf24740
+ms.sourcegitcommit: 48f89d555c0ac7caa97d149ee42e0b9ef6ccc5f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2017
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="deploy-mim-pam-with-windows-server-2016"></a>通过 Windows Server 2016 部署 MIM PAM
 
@@ -77,7 +77,7 @@ Technical Preview 5 之前的 Windows Server 2016 早期技术预览版不可与
 
      a. 启动 PowerShell 窗口并键入 ADSIEdit。
 
-     b。 打开“操作”菜单并单击“连接到”。 在连接点设置上，将命名上下文从“默认命名上下文”更改为“配置”，然后单击“确定”。
+     b. 打开“操作”菜单并单击“连接到”。 在连接点设置上，将命名上下文从“默认命名上下文”更改为“配置”，然后单击“确定”。
 
      c. 连接后，在 ADSI 编辑器下方的窗口左侧，展开“配置”节点以查看“CN=Configuration,DC=priv,....”。 展开 CN=Configuration，然后展开 CN=Services。
 
@@ -130,13 +130,13 @@ Technical Preview 5 之前的 Windows Server 2016 早期技术预览版不可与
     -   建立信任后，以 PRIV\\Administrator 身份登录到 PRIVDC，然后启动 PowerShell 并键入以下命令：
   ```
     netdom trust contoso.local /domain:priv.contoso.local /enablesidhistory:yes
-     /usero:contoso\\administrator /passwordo:Pass\@word1
+     /usero:contoso\administrator /passwordo:Pass@word1
 
      netdom trust contoso.local /domain:priv.contoso.local /quarantine:no
-     /usero:contoso\\administrator /passwordo:Pass\@word1  
+     /usero:contoso\administrator /passwordo:Pass@word1  
 
      netdom trust contoso.local /domain:priv.contoso.local /enablepimtrust:yes
-     /usero:contoso\\administrator /passwordo:Pass\@word1
+     /usero:contoso\administrator /passwordo:Pass@word1
   ```
 
 -   **当 CORP 和 PRIV 域均位于 Windows Server 2016 域功能级别上时，无需执行**项目 #5（验证信任）。
