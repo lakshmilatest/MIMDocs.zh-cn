@@ -13,8 +13,8 @@
 # [部署和使用](../microsoft-identity-manager-deploy.md)
 ## [首次部署](../microsoft-identity-manager-deploy.md)
 ### [域设置](../preparing-domain.md)
-### [服务器设置：Windows Server](../prepare-server-ws2012r2.md)
-### [服务器设置：SQL](../prepare-server-sql2014.md)
+### [服务器设置：Windows Server](../prepare-server-ws2016.md)
+### [服务器设置：SQL](../prepare-server-sql2016.md)
 ### [服务器设置：SharePoint](../prepare-server-sharepoint.md)
 ### [服务器设置：Exchange](../prepare-server-exchange.md)
 ### [安装 MIM：同步](../install-mim-sync.md)
@@ -65,7 +65,7 @@
 ### [步骤 8 PAM 部署验证](../pam/sp1-step8-pam-deployment-verification.md)
 ### [附录](../pam/sp1-pam-deployment-addendum.md)
 # 管理基础结构
-## [Best Practice Analyzer for Identity Manager](https://technet.microsoft.com/library/jj203402)（用于 Identity Manager 的最佳做法分析器）
+## [Best Practice Analyzer for Identity Manager（用于 Identity Manager 的最佳做法分析器）](https://technet.microsoft.com/library/jj203402)
 ## [密码更改通知服务](https://technet.microsoft.com/library/e27c0bc6-c808-4fdb-9e59-58feeb419308)
 ## 证书管理
 ### [CLMUtil 命令行工具](https://technet.microsoft.com/library/cc720647)

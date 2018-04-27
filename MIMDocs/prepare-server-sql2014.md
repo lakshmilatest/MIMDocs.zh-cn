@@ -1,7 +1,7 @@
 ---
-title: "配置 SQL Server for Microsoft Identity Manager 2016 | Microsoft Docs"
-description: "安装 SQL Server 2014，为 MIM 2016 的安装做准备。"
-keywords: 
+title: 配置 SQL Server for Microsoft Identity Manager 2016 | Microsoft Docs
+description: 安装 SQL Server 2014，为 MIM 2016 的安装做准备。
+keywords: ''
 author: billmath
 ms.author: barclayn
 manager: mbaldwin
@@ -13,10 +13,10 @@ ms.assetid: 297df3b3-192e-4ed9-82ed-c95eb5297c84
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: 8a33e09719b8c806de43531d12ea4b65b5cb443a
-ms.sourcegitcommit: f077508b5569e2a96084267879c5b6551e1e0905
+ms.sourcegitcommit: 637988684768c994398b5725eb142e16e4b03bb3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="set-up-an-identity-management-server-sql-server-2014"></a>设置标识管理服务器：SQL Server 2014
 
