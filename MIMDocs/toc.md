@@ -145,3 +145,11 @@
 ### [MIM 版本历史记录](./reference/version-history.md)
 ### [BHOLD 版本历史记录](./reference/version-bhold-history.md)
 ### [连接器版本发布历史记录](./reference/microsoft-identity-manager-2016-connector-version-history.md)
+## 连接器
+### [图表](microsoft-identity-manager-2016-connector-graph.md)
+### [Lotus Notes](./reference/microsoft-identity-manager-2016-connector-domino.md)
+### [通用 LDAP](./reference/microsoft-identity-manager-2016-connector-genericldap.md)
+### [通用 SQL](./reference/microsoft-identity-manager-2016-connector-genericsql.md)
+### [Web 服务](./reference/microsoft-identity-manager-2016-ma-ws.md)
+### [PowerShell](./reference/microsoft-identity-manager-2016-connector-powershell.md)
+### [连接器版本发布历史记录](./reference/microsoft-identity-manager-2016-connector-version-history.md)
