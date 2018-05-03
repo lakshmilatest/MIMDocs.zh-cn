@@ -1,7 +1,7 @@
 ---
-title: "安装 Microsoft Identity Manager 服务和门户 | Microsoft Docs"
-description: "获取为 Microsoft 标识管理器 2016 配置和安装 MIM 服务和门户的步骤"
-keywords: 
+title: 安装 Microsoft Identity Manager 服务和门户 | Microsoft Docs
+description: 获取为 Microsoft 标识管理器 2016 配置和安装 MIM 服务和门户的步骤
+keywords: ''
 author: billmath
 ms.author: barclayn
 manager: mbaldiwn
@@ -12,11 +12,11 @@ ms.technology: security
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 77ceaf1b2152a6fa6e1047656bedda31ce383871
-ms.sourcegitcommit: f077508b5569e2a96084267879c5b6551e1e0905
+ms.openlocfilehash: 204aa33cb21ed3998d9085fc56f0c7bea7afec58
+ms.sourcegitcommit: 32d9a963a4487a8649210745c97a3254645e8744
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="install-mim-2016-mim-service-and-portal"></a>安装 MIM 2016：MIM 服务和门户
 
@@ -50,7 +50,7 @@ ms.lasthandoff: 10/12/2017
 
     ![配置 MIM 数据库连接图像](media/MIM-Install10.png)
 
-7. 在“配置邮件服务器连接”上，输入作为“邮件服务器”的 Exchange 服务器的名称。 如果未配置邮件服务器，则将**localhost**用作邮件服务器名称，并取消选中顶部的两个复选框。 单击“下一步” 。
+7. 在“配置邮件服务器连接”上，输入作为“邮件服务器”的 Exchange 服务器的名称，或者可以使用 O365 邮箱。 如果未配置邮件服务器，则将**localhost**用作邮件服务器名称，并取消选中顶部的两个复选框。 单击“下一步” 。
 
     ![配置邮件服务器连接图像](media/MIM-Install11.png)
 
@@ -68,11 +68,11 @@ ms.lasthandoff: 10/12/2017
 
 12. 将 *CORPIDM*（此计算机的名称）指定为 MIM 门户的 MIM 服务服务器地址。
 
-13. 将 *http://CorpIDM.contoso.local* 指定为 SharePoint 站点集 URL。
+13. 指定 http://mim.contoso.com 作为 SharePoint 网站集 URL。
 
-14. 将 *http://CorpIDM.contoso.local:8080* 指定为密码注册 URL。
+14. 指定 http://passwordregistration.contoso.com 作为密码注册 URL 端口 80，建议稍后使用 443 上的 SSL 证书进行更新。
 
-15. 将 *http://CorpIDM.contoso.local:8088* 指定为密码重置 URL。
+15. 指定 http://passwordreset.contoso.com 作为密码重置 URL 端口 80，建议稍后使用 443 上的 SSL 证书进行更新。
 
 16. 选中打开防火墙中的端口 5725 和 5726 的复选框，以及授予所有经过身份验证的用户访问 MIM 门户权限的复选框。
 
@@ -80,25 +80,25 @@ ms.lasthandoff: 10/12/2017
 
 1.  将 SSPR 注册的服务帐户名设为 *contoso\MIMSSPR*，并将其密码设为 *Pass@word1*。
 
-2.  将 *CORPIDM* 指定为 MIM 密码注册的主机名称，并将该端口设置为 **8080**。 启用“打开防火墙中的端口”选项。
+2.  将“passwordregistration.contoso.com”指定为 MIM 密码注册的主机名，并将该端口设置为“80”。 启用“打开防火墙中的端口”选项。
 
     ![输入 IIS 映像使用的配置信息](media/MIM-Install14.png)
 
 3.  将显示警告 – 阅读该警告，然后单击“下一步” 。
 
-4. 在下一个 MIM 密码注册门户配置屏幕中，将 *http://CorpIDM.contoso.local* 指定为密码注册门户的 MIM 服务服务器地址。
+4. 在下一个 MIM 密码注册门户配置屏幕中，将“mim.contoso.com”指定为密码注册门户的 MIM 服务服务器地址。
 
 ## <a name="configure-mim-password-reset-portal"></a>配置 FIM 密码重置门户
 
-1.  将 SSPR 注册的服务帐户名设为 *Contoso\MIMSSPRService*，并将其密码设为 *Pass@word1*。
+1.  将 SSPR 注册的服务帐户名设为“Contoso\MIMSSPR”，并将其密码设为 Pass@word1。
 
-2.  将 *CORPIDM* 指定为 MIM 密码重置门户的主机名称，并将该端口设置为 **8088**。 启用“打开防火墙中的端口”选项。
+2.  将“passwordreset.contoso.com”指定为 MIM 密码重置门户的主机名称，并将该端口设置为“80”。 启用“打开防火墙中的端口”选项。
 
     ![输入 IIS 映像使用的配置信息](media/MIM-Install15.png)
 
 3.  将显示警告 – 阅读该警告，然后单击“下一步” 。
 
-4. 在下一个 MIM 密码注册门户配置屏幕中，将 *CorpIDname  http://CorpIDname.domain.local* 指定为密码重置门户的 MIM 服务服务器地址。
+4. 在下一个 MIM 密码注册门户配置屏幕中，将“mim.contoso.com”指定为密码重置门户的 MIM 服务服务器地址。
 
 ## <a name="install-mim-service-and-portal"></a>安装 MIM 服务和门户
 
@@ -106,9 +106,9 @@ ms.lasthandoff: 10/12/2017
 
 安装完成后，验证 MIM 门户是否处于活动状态。
 
-1. 启动 Internet Explorer 并连接到位于 *http://corpidm.contoso.local/identitymanagement* 上的 MIM 门户。 请注意，第一次访问此页可能有一个短暂的延迟。
+1. 启动 Internet Explorer 并连接到 http://mim.contoso.com/identitymanagement 上的 MIM 门户。 请注意，第一次访问此页可能有一个短暂的延迟。
 
-    - 如有必要，以 *contoso\Administrator* 身份向 Internet Explorer 进行身份验证。
+    - 如有必要，以 contoso\miminstall 身份向 Internet Explorer 进行身份验证。
 
 2. 在 Internet Explorer 中，打开“Internet 选项” ，更改为“安全”  选项卡，并将该站点添加到“本地 Intranet”  区域（如果尚不存在）。  关闭“Internet 选项”  对话框。
 

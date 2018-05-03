@@ -1,22 +1,22 @@
 ---
-title: "安装 Microsoft Identity Manager 同步服务 | Microsoft Docs"
-description: "通过安装和配置同步服务立刻开始使用 MIM 2016 组件。"
-keywords: 
+title: 安装 Microsoft Identity Manager 同步服务 | Microsoft Docs
+description: 通过安装和配置同步服务立刻开始使用 MIM 2016 组件。
+keywords: ''
 author: billmath
 ms.author: barclayn
 manager: mbaldwin
-ms.date: 10/12/2017
+ms.date: 04/26/2018
 ms.topic: get-started-article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 2585e9c5-ce34-46c7-bdcf-8c08773901dc
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 836279ecc7fce65912df4a1a34a9d48daf9d1151
-ms.sourcegitcommit: f077508b5569e2a96084267879c5b6551e1e0905
+ms.openlocfilehash: f5204d0396e2b485c9e8c210906703c467a67994
+ms.sourcegitcommit: 32d9a963a4487a8649210745c97a3254645e8744
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="install-mim-2016-mim-synchronization-service"></a>安装 MIM 2016：MIM 同步服务
 
@@ -26,17 +26,20 @@ ms.lasthandoff: 10/12/2017
 
 > [!NOTE]
 > 本演练使用名为 Contoso 的公司中的示例名和值。 将其替换为你自己的。 例如：
-> - 域控制器名称 - **mimservername**
+> - 域控制器名称 - corpdc
 > - 域名 - **contoso**
+> - MIM 服务服务器名称 - corpservice
+> - MIM 同步服务器名称 - corpsync
+> - SQL Server 名称 - corpsql
 > - 密码 - **Pass@word1**
 
 要安装 Microsoft Identity Manager 2016 组件，请先设置安装包。
 
-1. 以 *contoso\Administrator* 身份登录到用于标识管理的服务器。
+1. 以 contoso\miminstall 身份登录到用于标识管理同步服务器 corpsync 的服务器。
 
 2. 解压缩 MIM 安装包或装载 MIM 映像 DVD。
 
-## <a name="install-mim-2016-synchronization-service"></a>安装 MIM 2016 同步服务
+## <a name="install-mim-2016-sp1-synchronization-service"></a>安装 MIM 2016 SP1 同步服务
 
 1. 在已解压缩的 MIM 安装文件夹中，导航到“同步服务”  文件夹。
 

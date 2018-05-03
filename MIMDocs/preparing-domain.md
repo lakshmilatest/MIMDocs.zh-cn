@@ -1,7 +1,7 @@
 ---
-title: "设置 Microsoft Identity Manager 2016 的域 | Microsoft Docs"
-description: "安装 MIM 2016 之前，创建 Active Directory 域控制器"
-keywords: 
+title: 设置 Microsoft Identity Manager 2016 的域 | Microsoft Docs
+description: 安装 MIM 2016 之前，创建 Active Directory 域控制器
+keywords: ''
 author: billmath
 ms.author: barclayn
 manager: mbaldwin
@@ -12,16 +12,16 @@ ms.technology: security
 ms.assetid: 50345fda-56d7-4b6e-a861-f49ff90a8376
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 816e816111b27d1cc7dd4f7da2c5a810e7aa22fd
-ms.sourcegitcommit: 9e854a39128a5f81cdbb1379e1fa95ef3a88cdd2
+ms.openlocfilehash: ff8d8a6f66212b006e2c17186dc299a5bcf3f68b
+ms.sourcegitcommit: 32d9a963a4487a8649210745c97a3254645e8744
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="set-up-a-domain"></a>设置域
 
 >[!div class="step-by-step"]
-[Windows Server 2012 R2 »](prepare-server-ws2012r2.md)
+[Windows Server 2016 »](prepare-server-ws2016.md)
 
 Microsoft Identity Manger (MIM) 适用于你的 Active Directory (AD) 域。 应已安装了 AD，并确保你的环境中有一个你能够管理的域的域控制器。
 
@@ -33,8 +33,11 @@ MIM 部署的所有组件都需要在域中具有自己的标识。 这包括服
 
 > [!NOTE]
 > 本演练使用名为 Contoso 的公司中的示例名和值。 将其替换为你自己的。 例如：
-> - 域控制器名称 - **mimservername**
+> - 域控制器名称 - corpdc
 > - 域名 - **contoso**
+> - MIM 服务服务器名称 - corpservice
+> - MIM 同步服务器名称 - corpsync
+> - SQL Server 名称 - corpsql
 > - 密码 - **Pass@word1**
 
 1. 以域管理员的身份登录到域控制器（*例如：Contoso\Administrator*）。
@@ -44,6 +47,9 @@ MIM 部署的所有组件都需要在域中具有自己的标识。 这包括服
     ```PowerShell
     import-module activedirectory
     $sp = ConvertTo-SecureString "Pass@word1" –asplaintext –force
+    New-ADUser –SamAccountName MIMINSTALL –name MIMMA
+    Set-ADAccountPassword –identity MIMINSTALL –NewPassword $sp
+    Set-ADUser –identity MIMINSTALL –Enabled 1 –PasswordNeverExpires 1
     New-ADUser –SamAccountName MIMMA –name MIMMA
     Set-ADAccountPassword –identity MIMMA –NewPassword $sp
     Set-ADUser –identity MIMMA –Enabled 1 –PasswordNeverExpires 1
@@ -65,6 +71,9 @@ MIM 部署的所有组件都需要在域中具有自己的标识。 这包括服
     New-ADUser –SamAccountName BackupAdmin –name BackupAdmin
     Set-ADAccountPassword –identity BackupAdmin –NewPassword $sp
     Set-ADUser –identity BackupAdmin –Enabled 1 -PasswordNeverExpires 1
+    New-ADUser –SamAccountName MIMpool –name BackupAdmin
+    Set-ADAccountPassword –identity MIMPool –NewPassword $sp
+    Set-ADUser –identity MIMPool –Enabled 1 -PasswordNeverExpires 1
     ```
 
 3.  为所有组创建安全组。
@@ -77,15 +86,24 @@ MIM 部署的所有组件都需要在域中具有自己的标识。 这包括服
     New-ADGroup –name MIMSyncPasswordReset –GroupCategory Security –GroupScope Global –SamAccountName MIMSyncPasswordReset
     Add-ADGroupMember -identity MIMSyncAdmins -Members Administrator
     Add-ADGroupmember -identity MIMSyncAdmins -Members MIMService
+    Add-ADGroupmember -identity MIMSyncAdmins -Members MIMInstall
     ```
 
 4.  添加 SPN，以便为服务账户启用 Kerberos 身份验证
 
     ```CMD
-    setspn -S http/mimservername.contoso.local Contoso\SharePoint
-    setspn -S http/mimservername Contoso\SharePoint
-    setspn -S FIMService/mimservername.contoso.local Contoso\MIMService    
+    setspn -S http/mim.contoso.com Contoso\mimpool
+    setspn -S http/mim Contoso\mimpool
+    setspn -S http/passwordreset.contoso.com Contoso\mimsspr
+    setspn -S http/passwordregistration.contoso.com Contoso\mimsspr
+    setspn -S FIMService/mim.contoso.com Contoso\MIMService
+    setspn -S FIMService/corpservice.contoso.com Contoso\MIMService
     ```
+5.  在安装过程中，我们需要添加以下 DNS“A”记录以正确进行名称解析
+
+- 指向 corpservice 物理 IP 地址的 mim.contoso.com
+- 指向 corpservice 物理 IP 地址的 passwordreset.contoso.com
+- 指向 corpservice 物理 IP 地址的 passwordregistration.contoso.com
 
 >[!div class="step-by-step"]
-[Windows Server 2012 R2 »](prepare-server-ws2012r2.md)
+[Windows Server 2016 »](prepare-server-ws2016.md)
