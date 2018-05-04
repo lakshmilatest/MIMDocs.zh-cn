@@ -1,7 +1,7 @@
 ---
-title: "使用自助服务密码重置门户 | Microsoft Docs"
-description: "请参阅 MIM 2016 中有关自助服务密码重置的新增内容，包括 SSPR 如何使用多重身份验证的相关内容。"
-keywords: 
+title: 使用自助服务密码重置门户 | Microsoft Docs
+description: 请参阅 MIM 2016 中有关自助服务密码重置的新增内容，包括 SSPR 如何使用多重身份验证的相关内容。
+keywords: ''
 author: billmath
 ms.author: barclayn
 manager: mbaldwin
@@ -12,11 +12,11 @@ ms.technology: security
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 0463a91275f3e181a66eb460c167bb9a2008f444
-ms.sourcegitcommit: 27a23142393bbb0f66a3d533d89a5a8366a29e41
+ms.openlocfilehash: 18c3e4ea623b4b092bbd9236c5fa1b2a63af0486
+ms.sourcegitcommit: 637988684768c994398b5725eb142e16e4b03bb3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 04/26/2018
 ---
 >[!IMPORTANT]
 由于 Azure 多重身份验证软件开发工具包的弃用通知。 在停用日期 2018 年 11 月 14 日前，现有客户仍可使用 Azure MFA SDK。 新客户和当前客户将无法再通过 Azure 经典门户下载 SDK。 若要下载，需要联系 Azure 客户支持，以便接收生成的 MFA 服务凭据包。 <br> Microsoft 开发团队正在努力通过与 MFA 服务器 SDK 集成来计划对 MFA 的更改。这一更改将包含在即将于 2018 年初发布的修补程序中。
@@ -65,9 +65,9 @@ Azure MFA 提供了额外的身份验证机制，可加强现有的身份验证�
 
 ### <a name="register-your-multi-factor-authentication-provider-in-azure"></a>在 Azure 中注册多重身份验证提供程序
 
-1.  转到 [Azure 经典门户](http://manage.windowsazure.com)并以 Azure 订阅管理员的身份登录。
+1.  创建 [MFA 提供程序](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/multi-factor-authentication-get-started-auth-provider)。
 
-2.  在左下角单击“新建” 。
+2. 建立支持案例并请求适用于 ASP.net 2.0 C# 的 Direct SDK。 由于 Direct SDK 已遭弃用，因此，SDK 将仅提供给 MIM（具有 MFA）的当前用户。 新客户应采用将与 MFA 服务器集成的下一个 MIM 版本。
 
 3.  依次单击“应用服务”&gt;“Active Directory”&gt;“多重身份验证提供程序”&gt;“快速创建”。
 

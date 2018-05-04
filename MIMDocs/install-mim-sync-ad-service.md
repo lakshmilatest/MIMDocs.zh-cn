@@ -1,7 +1,7 @@
 ---
-title: "使用 Microsoft Identity Manager 与 AD 同步 | Microsoft Docs"
-description: "使用管理代理和 MIM 同步服务来同步 Active Directory 和 MIM 数据库。"
-keywords: 
+title: 使用 Microsoft Identity Manager 与 AD 同步 | Microsoft Docs
+description: 使用管理代理和 MIM 同步服务来同步 Active Directory 和 MIM 数据库。
+keywords: ''
 author: billmath
 ms.author: barclayn
 manager: mbaldwin
@@ -12,11 +12,11 @@ ms.technology: security
 ms.assetid: 5e532b67-64a6-4af6-a806-980a6c11a82d
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 31cc9a61bbcb309dae4ee4d09654432d08bf1e28
-ms.sourcegitcommit: f077508b5569e2a96084267879c5b6551e1e0905
+ms.openlocfilehash: 736d933f2c62d440abafdab27f82b3b1ba0f9a06
+ms.sourcegitcommit: 48f89d555c0ac7caa97d149ee42e0b9ef6ccc5f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="install-mim-2016-synchronize-active-directory-and-mim-service"></a>安装 MIM 2016：同步 Active Directory 和 MIM 服务
 
@@ -43,7 +43,7 @@ MIM 管理代理 (MA) 是 MIM 同步到 MIM 服务的连接器。 若要创建�
 
 1.  打开“同步服务管理器”。
 
-2.  若要打开“创建管理代理”向导，请转到“管理操作”页面，然后在“操作”菜单上单击“创建”。
+2.  若要打开“创建管理代理”向导，请转到“管理代理”页面，然后在“操作”菜单上单击“创建”。
 
 3.  在“创建管理代理”页上，提供以下设置，然后单击“下一步”。
 
@@ -117,7 +117,7 @@ MIM 管理代理 (MA) 是 MIM 同步到 MIM 服务的连接器。 若要创建�
     | Domain | 导出 | domain |
     | Email | 导出 | mail |
     | EmployeeID | 导出 | employeeID |
-    | Employee类型 | 导出 | employee类型 |
+    | Employee类型 | 导出 | employeeType |
     | 名字 | 导出 | firstName |
     | 姓氏 | 导出 | lastName |
     | ObjectSID | 导出 | objectSid |
@@ -154,7 +154,7 @@ MIM 管理代理 (MA) 是 MIM 同步到 MIM 服务的连接器。 若要创建�
     | DisplayName | 导入 | displayName |
     | MailNickName | 导入 | mailNickName |
     | 成员 | 导入 | 成员 |
-    | 作用域 | 导入 | scope |
+    | 范围 | 导入 | scope |
     | 类型 | 导入 | 类型 |
 
 10.  在“取消配置设置”页上，单击“下一步”
@@ -231,7 +231,7 @@ Active Directory 管理代理是 AD 域服务的连接器。 若要创建此连�
 
 下表展示需要创建的用于 ADMA 连接器的 5 个运行配置文件
 
-| Name | 类型 |
+| 名称 | 类型 |
 | ---- | ---- |
 | Profile1 | 完全导入（仅阶段） |
 | Profile2 | 完全同步 |
@@ -263,7 +263,7 @@ Active Directory 管理代理是 AD 域服务的连接器。 若要创建此连�
 
 下表显示与 MIMMA 连接器匹配的五个运行配置文件：
 
-| Name | 类型 |
+| 名称 | 类型 |
 | -------- | -------- |
 | Profile1 | 完全导入（仅阶段） |
 | Profile2 | 完全同步 |
@@ -326,7 +326,7 @@ Active Directory 管理代理是 AD 域服务的连接器。 若要创建此连�
     |-|-|-|
     |规则 1|samAccountName|accountName|
     |规则 2|displayName|displayName|
-    |规则 3|Employee类型|employee类型|
+    |规则 3|Employee类型|employeeType|
     |规则 4|givenName|firstName|
     |规则 5|sn|lastName|
     |规则 6|Manager|manager|
