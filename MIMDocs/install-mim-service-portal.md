@@ -5,18 +5,18 @@ keywords: ''
 author: billmath
 ms.author: barclayn
 manager: mbaldiwn
-ms.date: 10/12/2017
+ms.date: 04/30/2018
 ms.topic: get-started-article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 204aa33cb21ed3998d9085fc56f0c7bea7afec58
-ms.sourcegitcommit: 32d9a963a4487a8649210745c97a3254645e8744
+ms.openlocfilehash: fcc137527d8326c82bf3b201039926699bd4e342
+ms.sourcegitcommit: a98a4c1aee12016d480c400f4ff2c6aadb6518ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="install-mim-2016-mim-service-and-portal"></a>安装 MIM 2016：MIM 服务和门户
 
@@ -48,23 +48,23 @@ ms.lasthandoff: 04/27/2018
 
 6. 在**配置 MIM 数据库连接**页上，选择**创建新数据库**。
 
-    ![配置 MIM 数据库连接图像](media/MIM-Install10.png)
+    ![配置 MIM 数据库连接图像](media/install-mim-service-portal/MIM_Install10.png)
 
 7. 在“配置邮件服务器连接”上，输入作为“邮件服务器”的 Exchange 服务器的名称，或者可以使用 O365 邮箱。 如果未配置邮件服务器，则将**localhost**用作邮件服务器名称，并取消选中顶部的两个复选框。 单击“下一步” 。
 
-    ![配置邮件服务器连接图像](media/MIM-Install11.png)
+    ![配置邮件服务器连接图像](media/install-mim-service-portal/MIM_Install11.png)
 
 8. 指定你想要生成新的自签名证书，或选择相关的证书。
 
 9. 指定要使用的服务帐户名称（例如 *MIMService*）、服务帐户密码（例如 *Pass@word1*）、服务帐户域（例如 *contoso*）以及服务电子邮件帐户（例如 *contoso*）。
 
-    ![配置 MIM 服务帐户图像](media/MIM-Install12.png)
+    ![配置 MIM 服务帐户图像](media/install-mim-service-portal/MIM_Install12.png)
 
 10. 请注意，可能会出现如下警告：服务帐户在其当前配置中并不安全。
 
 11. 接受同步服务器位置的默认设置，并将 MIM 管理代理帐户指定为 *contoso\MIMMA*。
 
-    ![配置 MIM 服务和门户图像](media/MIM-Install13.png)
+    ![配置 MIM 服务和门户图像](media/install-mim-service-portal/MIM_Install13.png)
 
 12. 将 *CORPIDM*（此计算机的名称）指定为 MIM 门户的 MIM 服务服务器地址。
 
@@ -82,7 +82,7 @@ ms.lasthandoff: 04/27/2018
 
 2.  将“passwordregistration.contoso.com”指定为 MIM 密码注册的主机名，并将该端口设置为“80”。 启用“打开防火墙中的端口”选项。
 
-    ![输入 IIS 映像使用的配置信息](media/MIM-Install14.png)
+    ![输入 IIS 映像使用的配置信息](media/install-mim-service-portal/MIM_Install14.png)
 
 3.  将显示警告 – 阅读该警告，然后单击“下一步” 。
 
@@ -94,7 +94,7 @@ ms.lasthandoff: 04/27/2018
 
 2.  将“passwordreset.contoso.com”指定为 MIM 密码重置门户的主机名称，并将该端口设置为“80”。 启用“打开防火墙中的端口”选项。
 
-    ![输入 IIS 映像使用的配置信息](media/MIM-Install15.png)
+    ![输入 IIS 映像使用的配置信息](media/install-mim-service-portal/MIM_Install15.png)
 
 3.  将显示警告 – 阅读该警告，然后单击“下一步” 。
 

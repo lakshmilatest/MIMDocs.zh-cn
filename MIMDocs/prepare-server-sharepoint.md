@@ -12,11 +12,11 @@ ms.technology: security
 ms.assetid: c01487f2-3de6-4fc4-8c3a-7d62f7c2496c
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: eceb1ed31b0212970d5cf0eae0bc8d96aa087ff5
-ms.sourcegitcommit: 32d9a963a4487a8649210745c97a3254645e8744
+ms.openlocfilehash: 6922c3c2f66b6dbb0b0751420be9dd778206a3cf
+ms.sourcegitcommit: 8316fa41f06f137dba0739a8700910116b5575d8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="set-up-an-identity-management-server-sharepoint"></a>设置标识管理服务器：SharePoint
 
@@ -68,14 +68,15 @@ ms.lasthandoff: 04/27/2018
 1. 在 **连接到服务器场** 选项卡上，更改为创建新的服务器场。
 
 2. 将此服务器指定为用于配置数据库的数据库服务器（如 corpsql），并将 Contoso\SharePoint 指定为要使用的 SharePoint 的数据库访问帐户。
-    a. 建议在配置向导中选择 [MinRole](https://docs.microsoft.com/en-us/sharepoint/install/overview-of-minrole-server-roles-in-sharepoint-server-2016) 类型的“前端”
 3. 创建一个密码，用作场安全密码。
 
-4. 配置向导完成配置任务 10（共 10 项），单击“完成”，然后将打开 Web 浏览器。
+4. 建议在配置向导中选择 [MinRole](https://docs.microsoft.com/en-us/sharepoint/install/overview-of-minrole-server-roles-in-sharepoint-server-2016) 类型的“前端”
 
-5. 在 Internet Explorer 弹出窗口中，以 Contoso\miminstall 身份（或等效的管理员帐户）进行身份验证才能继续。
+5. 当配置向导完成配置任务 10（共 10 项）后，单击“完成”，将打开 Web 浏览器。
 
-6. 在 Web 向导中（在 Web 应用中），单击“取消/跳过”。
+6. 如果出现 Internet Explorer 弹出窗口，以 Contoso\miminstall 身份（或等效的管理员帐户）进行身份验证才能继续。
+
+7. 在 Web 向导中（在 Web 应用中），单击“取消/跳过”。
 
 
 ## <a name="prepare-sharepoint-to-host-the-mim-portal"></a>准备 SharePoint 以承载 MIM 门户
@@ -94,14 +95,13 @@ ms.lasthandoff: 04/27/2018
     > [!NOTE]
     > 将显示一条警告消息，指示 Windows 经典身份验证方法正在使用中，最后的命令可能需要几分钟才能返回。 完成后，输出将显示新门户的 URL。 保持“SharePoint 2016 命令行管理程序”窗口处于打开状态，以供稍后参考。
 
-2. 启动 SharePoint 2013 命令行管理程序并运行以下 PowerShell 脚本，以创建与 Web 应用程序关联的 **Sharepoint 站点集合**。
+2. 启动 SharePoint 2016 命令行管理程序并运行以下 PowerShell 脚本，以创建与 Web 应用程序关联的 Sharepoint 站点集合。
 
   ```
     $t = Get-SPWebTemplate -compatibilityLevel 15 -Identity "STS#1"
     $w = Get-SPWebApplication http://mim.contoso.com/
     New-SPSite -Url $w.Url -Template $t -OwnerAlias contoso\miminstall -CompatibilityLevel 15 -Name "MIM Portal"
     $s = SpSite($w.Url)
-    $s.AllowSelfServiceUpgrade = $false
     $s.CompatibilityLevel
   ```
 
@@ -119,7 +119,7 @@ ms.lasthandoff: 04/27/2018
 
 4. 在身份管理服务器上，打开一个新的 Web 浏览器选项卡，导航到 http://mim.contoso.com/ 并以 contoso\miminstall 身份登录。  将显示一个名为 *MIM 门户* 的空 SharePoint 站点。
 
-    ![MIM 门户 (http://mim.contoso.com/) 的图像](media/MIM-DeploySP1.png)
+    ![MIM 门户 (http://mim.contoso.com/) 的图像](media/prepare-server-sharepoint/MIM_DeploySP1new.png)
 
 5. 复制该 URL，然后在 Internet Explorer 中打开“Internet 选项”，更改为“安全”选项卡，选择“本地 Intranet”，然后单击“网站”。
 
