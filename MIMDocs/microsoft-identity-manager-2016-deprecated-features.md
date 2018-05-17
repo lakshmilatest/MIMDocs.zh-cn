@@ -1,21 +1,21 @@
 ---
-title: "MIM 弃用功能和未来规划 | Microsoft Docs"
-description: "本文记录 MIM Identity Manager 2016 SP1 已弃用的功能。"
-keywords: 
+title: MIM 弃用功能和未来规划 | Microsoft Docs
+description: 本文记录 MIM Identity Manager 2016 SP1 已弃用的功能。
+keywords: ''
 author: barclayn
 ms.author: davidste
 manager: mbaldwin
-ms.date: 1/31/2017
+ms.date: 2/28/2018
 ms.topic: reference
 ms.prod: identity-manager-2016
 ms.service: microsoft-identity-manager
 ms.technology: security
-ms.assetid: 
-ms.openlocfilehash: d1e016c45261be5fa9c4dba67ead7f88aa14890b
-ms.sourcegitcommit: 24746cf23b4688b3f8290519527259fc469e0373
+ms.assetid: ''
+ms.openlocfilehash: 50f7b135ce0d5a46ea08068a7658b229759d2b50
+ms.sourcegitcommit: 24bb3e82f55971696bdefa6c240f1a27f856e110
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="deprecated-features"></a>已弃用的功能
 
@@ -66,7 +66,7 @@ Microsoft 不建议客户开始进行 Microsoft BHOLD 套件组件的新部署�
 | 规则扩展      | 在进程外运行 metaverse 和 ma 规则扩展 | 不会替换此功能。 Metaverse 和属性流规则将在与同步引擎相同的进程中运行。       |
 | 规则扩展      | 事务属性                                | 不会替换此功能。 应避免使用此实用工具类在入站同步、预配同步和出战同步间传递数据。  |
 | 规则扩展      | ExchangeUtils: Create55\* 方法                     | 将删除为 Exchange 5.5 服务器创建对象的方法。        |
-| 介面            | Mms_Metaverse                                        | 在下一个版本中，将删除所有 ClmUtils 类成员。   |
+| 接口            | Mms_Metaverse                                        | 在下一个版本中，将删除所有 ClmUtils 类成员。   |
 
 ## <a name="next-steps"></a>后续步骤
 了解详细信息：
