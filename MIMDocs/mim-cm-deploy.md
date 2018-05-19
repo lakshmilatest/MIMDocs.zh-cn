@@ -10,19 +10,15 @@ ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: ''
-ms.openlocfilehash: 3c2246ec21ad73cf025daec5c56295ec57838bb2
-ms.sourcegitcommit: 3502d636687e442f7d436ee56218b9b95f5056cf
+ms.openlocfilehash: 241ad68d3f4a692c87d0d2a0069781ad042453c7
+ms.sourcegitcommit: 39f34a38967baa9c0da6ae5b57734b222f5771a5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/12/2018
 ---
 # <a name="deploying-microsoft-identity-manager-certificate-manager-2016-mim-cm"></a>部署 Microsoft Identity Manager 证书管理器 2016 (MIM CM)
 
-Microsoft Identity Manager 证书管理器 2016 (MIM CM) 的安装包含多个步骤。 我们将细分事项，这是简化安装过程的一种方法。 在执行任何实际的 MIM CM 步骤之前必须执行预备步骤。 不执行预备步骤，安装则可能失败。 
-
-1. 部署概述
-2. 预先部署步骤
-3. 还有什么？
+Microsoft Identity Manager 证书管理器 2016 (MIM CM) 的安装包含多个步骤。 我们将细分事项，这是简化安装过程的一种方法。 在执行任何实际的 MIM CM 步骤之前必须执行预备步骤。 不执行预备步骤，安装则可能失败。
 
 下图显示的示例为可能使用的环境类型。 标有数字的系统在图下的列表中列出，成功完成本文中的步骤需要这些系统。 最后，使用 Windows 2016 数据中心服务器：
 
@@ -38,65 +34,75 @@ Microsoft Identity Manager 证书管理器 2016 (MIM CM) 的安装包含多个�
 ## <a name="deployment-overview"></a>部署概述
 
 - 基本操作系统安装
-  - 实验室包含 Windows 2016 数据中心服务器。
-       >[!NOTE]
-有关 MIM 2016 支持的平台的详细信息，请阅读标题为[MIM 2016 支持的平台](/microsoft-identity-manager/microsoft-identity-manager-2016-supported-platforms.md)的文章。
-- 预先部署步骤
-  - [扩展架构](https://msdn.microsoft.com/library/ms676929(v=vs.85).aspx)
-  - 创建服务帐户
-  - [创建证书模板](https://technet.microsoft.com/library/cc753370(v=ws.11).aspx)
-  - IIS
-  - 配置 Kerberos
-  - 与数据库相关的步骤
-    - SQL 配置要求
-    - 数据库权限
-- 部署
+
+    实验室包含 Windows 2016 数据中心服务器。
+
+    >[!NOTE]
+    >有关 MIM 2016 支持的平台的详细信息，请阅读标题为[MIM 2016 支持的平台](/microsoft-identity-manager/microsoft-identity-manager-2016-supported-platforms.md)的文章。
+
+1. 预先部署步骤
+
+    - [扩展架构](https://msdn.microsoft.com/library/ms676929(v=vs.85).aspx)
+
+    - 创建服务帐户
+
+    - [创建证书模板](https://technet.microsoft.com/library/cc753370(v=ws.11).aspx)
+
+    - IIS
+
+    - 配置 Kerberos
+
+    - 与数据库相关的步骤
+
+        - SQL 配置要求
+
+        - 数据库权限
+
+2. 部署
 
 ## <a name="pre-deployment-steps"></a>预先部署步骤
 
-MIM CM 配置向导要求在此过程中提供信息，以便成功完成各步骤。 
-![](media/mim-cm-deploy/image003.png)
+MIM CM 配置向导要求在此过程中提供信息，以便成功完成各步骤。
+
+![图示](media/mim-cm-deploy/image003.png)
 
 ### <a name="extending-the-schema"></a>扩展架构
 
 扩展架构的进程是非常简单的，但是由于其不可逆性，必须谨慎处理。
 
 >[!NOTE]
-此步骤要求使用的帐户具有架构管理员权限。
+>此步骤要求使用的帐户具有架构管理员权限。
 
-- 浏览到 MIM 媒体的位置，并导航到 \\证书管理\\x64 文件夹。
+1. 浏览到 MIM 媒体的位置，并导航到 \\证书管理\\x64 文件夹。
 
-- 将架构文件夹复制到 CORPDC，然后导航到它。
+2. 将架构文件夹复制到 CORPDC，然后导航到它。
 
-    ![](media/mim-cm-deploy/image005.png)
+    ![图示](media/mim-cm-deploy/image005.png)
 
-- 运行脚本 resourceForestModifySchema.vbs 单一林方案
+3. 运行脚本 resourceForestModifySchema.vbs 单一林方案。 为资源林方案运行脚本：
+    - DomainA – 用户位置 (userForestModifySchema.vbs)
+    - ResourceForestB – CM 安装位置 (resourceForestModifySchema.vbs)。
 
-- 为资源林方案运行脚本：
-  - DomainA – 用户位置 (userForestModifySchema.vbs)
-  - ResourceForestB – CM 安装位置 (resourceForestModifySchema.vbs)
+    >[!NOTE]
+    >架构更改是单向操作，并需要林恢复回滚，以确保有必要的备份。 有关通过执行此操作对架构所做的更改的详细信息，请查看文章 [Forefront Identity Manager 2010 Certificate Management Schema Changes](https://technet.microsoft.com/library/jj159298(v=ws.10).aspx)（Forefront Identity Manager 2010 证书管理架构更改）
 
->[!NOTE]
-架构更改是单向操作，并需要林恢复回滚，以确保有必要的备份。 有关通过执行此操作对架构所做的更改的详细信息，请查看文章 [Forefront Identity Manager 2010 Certificate Management Schema Changes](https://technet.microsoft.com/library/jj159298(v=ws.10).aspx)（Forefront Identity Manager 2010 证书管理架构更改）
+    ![图示](media/mim-cm-deploy/image007.png)
 
-![](media/mim-cm-deploy/image007.png)
+4. 运行脚本，脚本完成运行后，将收到一条成功消息。
 
-运行脚本，脚本完成运行后，将收到一条成功消息。
-
-![成功消息](media/mim-cm-deploy/image009.png)
+    ![成功消息](media/mim-cm-deploy/image009.png)
 
 现在，AD 中的架构已扩展为支持 MIM CM。
 
 ### <a name="creating-service-accounts-and-groups"></a>创建服务帐户和组
 
-下表总结了 MIM CM 所需的帐户和权限。
-可以允许 MIM CM 自动创建以下帐户，或者可以在安装前创建它们。 可以更改实际帐户名。 如果是自己创建帐户，请考虑采用能够将用户帐户名和其功能轻松匹配的方式对用户帐户命名。
+下表总结了 MIM CM 所需的帐户和权限。 可以允许 MIM CM 自动创建以下帐户，或者可以在安装前创建它们。 可以更改实际帐户名。 如果是自己创建帐户，请考虑采用能够将用户帐户名和其功能轻松匹配的方式对用户帐户命名。
 
 Users：
 
-![](media/mim-cm-deploy/image010.png)
+![图示](media/mim-cm-deploy/image010.png)
 
-![](media/mim-cm-deploy/image012.png)
+![图示](media/mim-cm-deploy/image012.png)
 
 | **角色**                   | **用户登录名** |
 |----------------------------|---------------------|
@@ -120,9 +126,9 @@ Users：
 | CM 管理员成员     | MIMCM-管理员    |
 | CM 订阅方成员 | MIMCM-订阅方 |
 
-Powershell：代理帐户
+Powershell：代理帐户：
 
-```
+```powershell
 import-module activedirectory
 ## Agent accounts used during setup
 $cmagents = @{
@@ -203,15 +209,19 @@ AD 中已有模板，但我们需要创建自己的版本，与 MIM CM 一起使
 #### <a name="create-the-mim-cm-signing-certificate-template"></a>创建 MIM CM 签名证书模板
 
 1. 从“管理工具”中打开“证书颁发机构”。
+
 2. 在“证书颁发机构”控制台的控制台树中，展开“Contoso-CorpCA”，然后单击“证书模板”。
+
 3. 右键单击 **“证书模板”**，然后单击 **“管理”**。
+
 4. 在“证书模板控制台”的“细节”**窗格**中，选择并右键单击“用户”，然后单击“复制模板”。
+
 5. 在“复制模板”对话框中，选择“Windows Server 2003 Enterprise”，然后单击“确定”。
 
-![显示产生的变化](media/mim-cm-deploy/image014.png)
+    ![显示产生的变化](media/mim-cm-deploy/image014.png)
 
     >[!NOTE]
-    MIM CM does not work with certificates based on version 3 certificate templates. You must create a Windows Server® 2003 Enterprise (version 2)certificate template. See the following link for V3 details https://blogs.msdn.microsoft.com/ms-identity-support/2016/07/14/faq-for-fim-2010-to-support-sha2-kspcng-and-v3-certificate-templates-for-issuing-user-and-agent-certificates-and-mim-2016-upgrade
+    >MIM CM 不适用于基于版本 3 证书模板的证书。 必须创建 Windows Server® 2003 Enterprise（版本 2）证书模板。 有关详细信息，请参阅 [V3 详细信息](https://blogs.msdn.microsoft.com/ms-identity-support/2016/07/14/faq-for-fim-2010-to-support-sha2-kspcng-and-v3-certificate-templates-for-issuing-user-and-agent-certificates-and-mim-2016-upgrade)。
 
 6. 在“新模板的属性”对话框“常规”选项卡上的“模板显示名称”框中，键入“MIM CM 签名”。 将“有效期”更改为“2 年”然后清除“在 Active Directory 中发布证书”复选框。
 
@@ -219,57 +229,57 @@ AD 中已有模板，但我们需要创建自己的版本，与 MIM CM 一起使
 
 8. 在“加密选择”对话框中，禁用“Microsoft Enhanced Cryptographic Provider v1.0”，启用“Microsoft 增强 RSA 和 AES 加密提供程序”，然后单击“确定” 。
 
-在“使用者名称”**Subject Name**选项卡上，清除“在使用者名称中包括电子邮件名” 和“电子邮件名”复选框。
+9. 在“使用者名称”**Subject Name**选项卡上，清除“在使用者名称中包括电子邮件名” 和“电子邮件名”复选框。
 
-在“扩展”**Extensions**选项卡的“这个模板中包括的扩展”列表中，确保选中“应用程序策略”，然后单击“编辑”。
+10. 在“扩展”**Extensions**选项卡的“这个模板中包括的扩展”列表中，确保选中“应用程序策略”，然后单击“编辑”。
 
-在“编辑应用程序策略扩展”对话框，同时选中“加密文件系统”和“安全电子邮件”应用程序策略。 单击 **“删除”**，然后单击 **“确定”**。
+11. 在“编辑应用程序策略扩展”对话框，同时选中“加密文件系统”和“安全电子邮件”应用程序策略。 单击 **“删除”**，然后单击 **“确定”**。
 
-在“安全性”选项卡上，执行以下步骤：
+12. 在“安全性”选项卡上，执行以下步骤：
 
-- 删除“管理员”。
+    - 删除“管理员”。
 
-- 删除“域管理员”。
+    - 删除“域管理员”。
 
-- 删除“域用户”。
+    - 删除“域用户”。
 
-- 仅将“读取”和“写入”权限分配到“Enterprise Admins”。
+    - 仅将“读取”和“写入”权限分配到“Enterprise Admins”。
 
-- 添加“MIMCMAgent”。
+    - 添加“MIMCMAgent”。
 
-- 将“读取”和“注册”权限分配到“MIMCMAgent”。
+    - 将“读取”和“注册”权限分配到“MIMCMAgent”。
 
-在“新模板的属性”对话框中，单击“确定”。
+13. 在“新模板的属性”对话框中，单击“确定”。
 
-使“证书模板控制台”处于打开状态。
+14. 使“证书模板控制台”处于打开状态。
 
 #### <a name="create-the-mim-cm-enrollment-agent-certificate-template"></a>创建 MIM CM 注册代理证书模板
 
--   在“证书模板控制台”的“细节”窗格中，选择并右键单击“注册代理”，然后单击“复制模板” 。
+1. 在“证书模板控制台”的“细节”窗格中，选择并右键单击“注册代理”，然后单击“复制模板” 。
 
-在“复制模板”对话框中，选择“Windows Server 2003 Enterprise”，然后单击“确定”。
+2. 在“复制模板”对话框中，选择“Windows Server 2003 Enterprise”，然后单击“确定”。
 
-在“新模板的属性”对话框“常规”选项卡的“模板显示名称”框中，键入“MIM CM 注册代理”。 请确保“有效期”为“2 年”。
+3. 在“新模板的属性”对话框“常规”选项卡的“模板显示名称”框中，键入“MIM CM 注册代理”。 请确保“有效期”为“2 年”。
 
-在“请求处理”选项卡上，启用“允许导出私钥”，然后单击 CSP 或加密选项卡。
+4. 在“请求处理”选项卡上，启用“允许导出私钥”，然后单击 CSP 或加密选项卡。
 
-在“CSP 选择”对话框中，禁用“Microsoft Base Cryptographic Provider v1.0”和“Microsoft Enhanced Cryptographic Provider v1.0”，启用“Microsoft 增强 RSA 和 AES 加密提供程序”，然后单击“确定”。
+5. 在“CSP 选择”对话框中，禁用“Microsoft Base Cryptographic Provider v1.0”和“Microsoft Enhanced Cryptographic Provider v1.0”，启用“Microsoft 增强 RSA 和 AES 加密提供程序”，然后单击“确定”。
 
-在“安全性”选项卡上，执行以下步骤：
+6. 在“安全性”选项卡上，执行以下步骤：
 
-- 删除“管理员”。
+    - 删除“管理员”。
 
-- 删除“域管理员”。
+    - 删除“域管理员”。
 
-- 仅将“读取”和“写入”权限分配到“Enterprise Admins”。
+    - 仅将“读取”和“写入”权限分配到“Enterprise Admins”。
 
-- 添加“MIMCMEnrollAgent”。
+    - 添加“MIMCMEnrollAgent”。
 
-- 将“读取”和“注册”权限分配到“MIMCMEnrollAgent”。
+    - 将“读取”和“注册”权限分配到“MIMCMEnrollAgent”。
 
-在“新模板的属性”对话框中，单击“确定”。
+7. 在“新模板的属性”对话框中，单击“确定”。
 
-使“证书模板控制台”处于打开状态。
+8. 使“证书模板控制台”处于打开状态。
 
 #### <a name="create-the-mim-cm-key-recovery-agent-certificate-template"></a>创建 MIM CM 密钥恢复代理证书模板
 
@@ -304,37 +314,42 @@ AD 中已有模板，但我们需要创建自己的版本，与 MIM CM 一起使
 1. 还原“证书颁发机构”控制台。
 
 2. 在“证书颁发机构”控制台的控制台树中，右键单击“证书模板”，指向“新建”，然后单击“要颁发的证书模板”。
+
 3. 在“启用证书模板”对话框中，选择“MIM CM 注册代理”、“MIM CM 密钥恢复代理”和“MIM CM 签名”。 单击" **确定**"。
+
 4. 在控制台树中，单击“证书模板”。
+
 5. 验证三个新模板是否显示在“细节”窗格中，然后关闭“证书颁发机构”。
+
     ![MIM CM 签名](media/mim-cm-deploy/image016.png)
+
 6. 关闭所有打开的窗口并注销。
 
-### <a name="iis-configuration"></a>IIS 配置 
+### <a name="iis-configuration"></a>IIS 配置
 
-为了托管 CM 的网站，请安装和配置 IIS
+为了托管 CM 的网站，请安装和配置 IIS。
 
 #### <a name="install-and-configure-iis"></a>安装和配置 IIS
 
-1. 以 MIMINSTALL 帐户，登录到 COR
+1. 以 MIMINSTALL 帐户登录到 CORLog in
 
->[!IMPORTANT]
-MIM 安装帐户应为本地管理员
+    >[!IMPORTANT]
+    >MIM 安装帐户应为本地管理员
 
 2. 打开 PowerShell，运行以下命令
 
-   - ```Install-WindowsFeature –ConfigurationFilePath```
+    `Install-WindowsFeature –ConfigurationFilePath`
 
 >[!NOTE]
- 在默认情况下，使用 IIS 7 安装名为“默认网站”的站点。 如果该站点已重命名或删除，在可以安装 MIM CM 之前，名为“默认网站”的站点必须可用。
+>在默认情况下，使用 IIS 7 安装名为“默认网站”的站点。 如果该站点已重命名或删除，在可以安装 MIM CM 之前，名为“默认网站”的站点必须可用。
 
 #### <a name="configuring-kerberos"></a>配置 Kerberos
 
 MIMCMWebAgent 帐户将运行 MIM CM 门户。 在 IIS 和正常运行的内核模式中，默认在 IIS 中使用身份验证。 将禁用 Kerberos 内核模式身份验证，改为在 MIMCMWebAgent 帐户上配置 SPN。 某些命令在活动目录和 CORPCM 服务器中需要提升的权限。
 
-![](media/mim-cm-deploy/image020.png)
+![图示](media/mim-cm-deploy/image020.png)
 
-```
+```powershell
 #Kerberos settings
 #SPN
 SETSPN -S http/cm.contoso.com contoso\MIMCMWebAgent
@@ -343,12 +358,11 @@ Get-ADUser CONTOSO\MIMCMWebAgent | Set-ADObject -Add @{"msDS-AllowedToDelegateTo
 
 ```
 
-**更新 CORPCM 上的 IIS
+更新 CORPCM 上的 IIS
 
+![图示](media/mim-cm-deploy/image022.png)
 
-![](media/mim-cm-deploy/image022.png)
-
-```
+```powershell
 add-pssnapin WebAdministration
 
 Set-WebConfigurationProperty -Filter System.webServer/security/authentication/WindowsAuthentication -Location 'Default Web Site' -Name enabled -Value $true
@@ -357,9 +371,8 @@ Set-WebConfigurationProperty -Filter System.webServer/security/authentication/Wi
 
 ```
 
-
 >[!NOTE]
-将需要为“cm.contoso.com”添加 DNS A 记录，并指向 CORPCM IP
+>将需要为“cm.contoso.com”添加 DNS A 记录，并指向 CORPCM IP
 
 #### <a name="requiring-ssl-on-the-mim-cm-portal"></a>在 MIM CM 门户上要求 SSL
 
@@ -379,18 +392,18 @@ Set-WebConfigurationProperty -Filter System.webServer/security/authentication/Wi
 
 1. 确保连接到 CORPSQL01 服务器。
 
-2. 确保以 SQL DBA 身份登录
+2. 确保以 SQL DBA 身份登录。
 
 3. 运行以下 T-SQL 脚本，使 CONTOSO\\MIMINSTALL 帐户在转到配置步骤时能够创建数据库
 
->[!NOTE]
-准备好退出和策略模块时，我们将需要回到 SQL
+    >[!NOTE]
+    >准备好退出和策略模块时，我们将需要回到 SQL
 
-```
-create login [CONTOSO\\MIMINSTALL] from windows;
-exec sp_addsrvrolemember 'CONTOSO\\MIMINSTALL', 'dbcreator';
-exec sp_addsrvrolemember 'CONTOSO\\MIMINSTALL', 'securityadmin';  
-```
+    ```sql
+    create login [CONTOSO\\MIMINSTALL] from windows;
+    exec sp_addsrvrolemember 'CONTOSO\\MIMINSTALL', 'dbcreator';
+    exec sp_addsrvrolemember 'CONTOSO\\MIMINSTALL', 'securityadmin';  
+    ```
 
 ![MIM CM 配置向导错误消息](media/mim-cm-deploy/image024.png)
 
@@ -422,14 +435,18 @@ exec sp_addsrvrolemember 'CONTOSO\\MIMINSTALL', 'securityadmin';
 
 ### <a name="configuration-wizard-of-microsoft-identity-manager-2016-certificate-management"></a>Microsoft Identity Manager 2016 证书管理的配置向导
 
-在登录到 CORPCM 之前，请将 MIMINSTALL 添加到配置向导的“域管理员”、“架构管理员”和“本地管理员”组。 可在稍后完成配置之后将它删除。      
-    
+在登录到 CORPCM 之前，请将 MIMINSTALL 添加到配置向导的“域管理员”、“架构管理员”和“本地管理员”组。 可在稍后完成配置之后将它删除。
+
 ![错误消息](media/mim-cm-deploy/image028.png)
 
 1. 从“开始”菜单上，单击“证书管理配置向导”。 以“管理员”身份运行
+
 2. 在“欢迎使用配置向导”页上，单击“下一步”。
+
 3. 在“CA 配置” 页上，确保所选的 CA 是 Contoso-CORPCA-CA所选的服务器是 CORPCA.CONTOSO.COM，然后单击“下一步”。
+
 4. 在“安装 Microsoft® SQL Server® 数据库”页上的“SQL Server 名称”框中，键入“CORPSQL1”，选中“使用我的凭据创建数据库”复选框，然后单击“下一步”。
+
 5. 在“数据库设置”页上，接受 FIMCertificateManagement 的默认数据库名称，确保选中“SQL 集成身份验证”，然后单击“下一步”。
 
 6. 在“设置 Active Directory”页上，接受为服务连接点提供的默认名称，然后单击“下一步”。
@@ -439,35 +456,48 @@ exec sp_addsrvrolemember 'CONTOSO\\MIMINSTALL', 'securityadmin';
 8. 在“代理 - FIM CM”页上，清除“使用 FIM CM 默认设置”复选框，然后单击“自定义帐户”。
 
 9. 在“代理 - FIM CM”多选项卡式对话框中，在每个选项卡上键入以下信息：
-   - 用户名：Update 
-   - 密码：Pass\@word1
-   - 确认密码：Pass\@word1
-   - 使用现有用户：已启用
->[!NOTE]
-我们之前已创建了这些帐户。 请确保为全部六个代理帐户选项卡重复步骤 8 中的过程。
 
-![MIM CM 帐户](media/mim-cm-deploy/image030.png)
+   - 用户名：Update
+
+   - 密码：Pass\@word1
+
+   - 确认密码：Pass\@word1
+
+   - 使用现有用户：已启用
+
+    >[!NOTE]
+    >我们之前已创建了这些帐户。 请确保为全部六个代理帐户选项卡重复步骤 8 中的过程。
+
+    ![MIM CM 帐户](media/mim-cm-deploy/image030.png)
 
 10. 完成所有代理帐户信息后，单击“确定”。
 
 11. 在“代理 - MIM CM”页上，单击“下一步”。
 
 12. 在“设置服务器证书”页上，启用以下证书模板：
+
     - 将用于恢复代理“密钥恢复代理”证书的证书模板：MIMCMKeyRecoveryAgent。
+
     - 将用于 FIM CM 代理证书的证书模板：MIMCMSigning。
+
     - 将用于注册代理证书的证书模板：FIMCMEnrollmentAgent。
+
 13. 在“设置服务器证书”页上，单击“下一步”。
+
 14. 在“安装电子邮件服务器、文档打印”页的“指定要使用的 SMTP 服务器名称，以便通过电子邮件发送注册通知”框中，单击“下一步”。
+
 15. 在“已准备好进行配置”页上，单击“配置”。
+
 16. 在“配置向导 - Microsoft Forefront Identity Manager 2010 R2”警告对话框中，单击“确定” 确认未在 IIS 虚拟目录上启用 SSL。
 
     ![media/image17.png](media/mim-cm-deploy/image032.png)
 
     >[!NOTE] 
-    在配置向导完成执行之前，切勿单击“完成”按钮。 可在以下位置找到向导日志：%programfiles%\\Microsoft Forefront Identity Management\\2010年\\证书管理\\config.log
+    >在配置向导完成执行之前，切勿单击“完成”按钮。 可在以下位置找到向导日志：%programfiles%\\Microsoft Forefront Identity Management\\2010年\\证书管理\\config.log
+
 17. 单击 **“完成”**。
 
-![已完成 MIM CM 向导](media/mim-cm-deploy/image033.png)
+    ![已完成 MIM CM 向导](media/mim-cm-deploy/image033.png)
 
 18. 关闭所有打开的窗口。
 
@@ -475,7 +505,7 @@ exec sp_addsrvrolemember 'CONTOSO\\MIMINSTALL', 'securityadmin';
 
 20. 从服务器 CORPCM 访问网站 https://cm.contoso.com/certificatemanagement  
 
-    ![](media/mim-cm-deploy/image035.png)
+    ![图示](media/mim-cm-deploy/image035.png)
 
 ### <a name="verify-the-cng-key-isolation-service"></a>验证 CNG 密钥隔离服务
 
@@ -500,7 +530,7 @@ exec sp_addsrvrolemember 'CONTOSO\\MIMINSTALL', 'securityadmin';
 3. 在“Web”窗口，右键单击“Web.config”，然后单击“打开”。
 
     >[!Note]
-    在记事本中打开 Web.config 文件
+    >在记事本中打开 Web.config 文件
 
 4. 在打开文件后，按 CTRL+F。
 
@@ -549,7 +579,7 @@ exec sp_addsrvrolemember 'CONTOSO\\MIMINSTALL', 'securityadmin';
 6. 在“自定义安装”页，选择“MIM CM 更新服务”，然后单击“将无法使用这项功能”。
 
     >[!Note]
-    这将使“MIM CM CA 文件”成为对安装启用的唯一功能。
+    >这将使“MIM CM CA 文件”成为对安装启用的唯一功能。
 
 7. 在“自定义安装”页上，单击“下一步”。
 
@@ -585,7 +615,7 @@ exec sp_addsrvrolemember 'CONTOSO\\MIMINSTALL', 'securityadmin';
 12. 在事件列表中，验证自证书服务上次重启后，最新事件不包括任何“警告”或“错误”事件。
 
     >[!NOTE] 
-    最新事件应该声明使用 ```SYSTEM\CurrentControlSet\Services\CertSvc\Configuration\ContosoRootCA\ExitModules\Clm.Exit``` 中的设置加载的退出模块
+    >最新事件应该声明使用 `SYSTEM\CurrentControlSet\Services\CertSvc\Configuration\ContosoRootCA\ExitModules\Clm.Exit` 中的设置加载的退出模块
 
 13. 最小化事件查看器。
 
@@ -602,7 +632,7 @@ exec sp_addsrvrolemember 'CONTOSO\\MIMINSTALL', 'securityadmin';
 5. 选择指纹，然后按 CTRL+C。
 
     >[!NOTE]
-    不要在指纹字符列表中包含先导空格。
+    >不要在指纹字符列表中包含先导空格。
 
 6. 在“证书”对话框中，单击“确定”。
 
@@ -615,8 +645,8 @@ exec sp_addsrvrolemember 'CONTOSO\\MIMINSTALL', 'securityadmin';
 10. 在“查找内容”框中，键入空格字符，然后单击“全部替换” 。
 
     >[!Note]
-    此操作将删除指纹中字符间的所有空格。
-    
+    >此操作将删除指纹中字符间的所有空格。
+
 11. 在“替换”对话框中，单击“取消”。
 
 12. 选择已转换的“thumbprintstring”，然后按 CTRL+C。
@@ -629,143 +659,239 @@ exec sp_addsrvrolemember 'CONTOSO\\MIMINSTALL', 'securityadmin';
 
 2. 右键单击“contoso-CORPCA-CA”，然后单击“属性”。
 
-3.  在“contoso CORPCA CA 属性”对话框的“策略模块”选项卡上，单击“属性”。
+3. 在“contoso CORPCA CA 属性”对话框的“策略模块”选项卡上，单击“属性”。
 
-- 在“常规”选项卡上，确保选中“将非 FIM CM 请求传递到默认策略模块进行处理”。
-- 在“签名证书”选项卡上，单击“添加”。
-- 在“证书”对话框中，右键单击“请指定十六进制编码的证书哈希”框，然后单击“粘贴”。
-- 在“证书”对话框中，单击“确定”。
-    >[!Note]
-    如果“确定”按钮未启用，则从 clmAgent 证书复制指纹时，会意外地将隐藏字符包含在指纹字符串中。 在此练习中，重复自“任务 4：将 MIMCMAgent 证书的指纹复制到 Windows 剪贴板”开始的所有步骤。
+    - 在“常规”选项卡上，确保选中“将非 FIM CM 请求传递到默认策略模块进行处理”。
 
-- 在“配置属性”对话框中，确保指纹显示在“有效的签名证书”列表中，然后单击“确定”。
+    - 在“签名证书”选项卡上，单击“添加”。
 
-- 在“FIM 证书管理”消息框中，单击“确定”。
+    - 在“证书”对话框中，右键单击“请指定十六进制编码的证书哈希”框，然后单击“粘贴”。
 
-- 在“contoso-CORPCA-CA 属性”对话框中，单击“确定”。
+    - 在“证书”对话框中，单击“确定”。
+    
+        >[!Note]
+        >如果“确定”按钮未启用，则从 clmAgent 证书复制指纹时，会意外地将隐藏字符包含在指纹字符串中。 在此练习中，重复自“任务 4：将 MIMCMAgent 证书的指纹复制到 Windows 剪贴板”开始的所有步骤。
 
-- 右键单击 contoso-CORPCA-CA****，指向“所有任务”，然后单击“停止服务”。
+4. 在“配置属性”对话框中，确保指纹显示在“有效的签名证书”列表中，然后单击“确定”。
 
-- 等待 Active Directory 证书服务停止。
+5. 在“FIM 证书管理”消息框中，单击“确定”。
 
-- 右键单击 contoso-CORPCA-CA****，指向“所有任务”，然后单击“启动服务”。
+6. 在“contoso-CORPCA-CA 属性”对话框中，单击“确定”。
 
-- 关闭“证书颁发机构”控制台。
+7. 右键单击 contoso-CORPCA-CA****，指向“所有任务”，然后单击“停止服务”。
 
-- 关闭所有打开的窗口，然后注销。
+8. 等待 Active Directory 证书服务停止。
 
-- 部署的最后一个步骤是确保 CONTOSO\\MIMCM 管理员可以部署和创建模板，并配置系统，而无需是构架管理员和域管理员。 下一个脚本将使用 dsacls 通过 ACL 列出证书模板的权限。 请运行具有完全权限的帐户，以更改林中每个现有证书模板的安全性读取和写入权限。
+9. 右键单击 contoso-CORPCA-CA****，指向“所有任务”，然后单击“启动服务”。
 
-- 第一个步骤：配置服务连接点和目标组权限以及委派配置文件模板管理
-  - 配置服务连接点 (SCP) 上的权限。
+10. 关闭“证书颁发机构”控制台。
 
-  - 配置委派的配置文件模板管理。
+11. 关闭所有打开的窗口，然后注销。
 
-  - 配置服务连接点 (SCP) 上的权限。 \<无脚本\>
+部署的最后一个步骤是确保 CONTOSO\\MIMCM 管理员可以部署和创建模板，并配置系统，而无需是构架管理员和域管理员。 下一个脚本将使用 dsacls 通过 ACL 列出证书模板的权限。 请运行具有完全权限的帐户，以更改林中每个现有证书模板的安全性读取和写入权限。
 
-     -   确保连接到 CORPDC 虚拟服务器。
+第一个步骤：配置服务连接点和目标组权限以及委派配置文件模板管理
 
-     -   以 contoso\\corpadmin 身份登录
+1. 配置服务连接点 (SCP) 上的权限。
 
-     -   从“管理工具”中打开“Active Directory 用户和计算机”。
+2. 配置委派的配置文件模板管理。
 
-     -   在“Active Directory 用户和计算机”的“查看”菜单上，确保“高级功能”已启用。
+3. 配置服务连接点 (SCP) 上的权限。 \<无脚本\>
 
-     -   在控制台树中，展开“Contoso.com \| System \| Microsoft \| Certificate Lifecycle Manager”，然后单击“CORPCM”。
+4.   确保连接到 CORPDC 虚拟服务器。
 
-     -   右键单击“CORPCM”，然后单击“属性”。
+5. 以 contoso\\corpadmin 身份登录
 
-     -   在“CORPCM 属性”对话框中的“安全性”选项卡上，添加具有相应权限的以下组：
+6. 从“管理工具”中打开“Active Directory 用户和计算机”。
 
-    | Group          | 权限                                                                                                                                                         |
-    |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+7. 在“Active Directory 用户和计算机”的“查看”菜单上，确保“高级功能”已启用。
+
+8. 在控制台树中，展开“Contoso.com \| System \| Microsoft \| Certificate Lifecycle Manager”，然后单击“CORPCM”。
+
+9. 右键单击“CORPCM”，然后单击“属性”。
+
+10. 在“CORPCM 属性”对话框中的“安全性”选项卡上，添加具有相应权限的以下组：
+
+    | Group          | 权限      |
+    |----------------|------------------|
     | mimcm-管理员 | 读取 </br> FIM CM 审核</br> FIM CM 注册代理</br> FIM CM 请求注册</br> FIM CM 请求恢复</br> FIM CM 请求续订</br> FIM CM 请求撤销 </br> FIM CM 请求取消阻止智能卡 |
-    | mimcm-支持人员 | 读取</br> FIM CM 注册代理</br> FIM CM 请求撤销</br> FIM CM 请求取消阻止智能卡                                                                                |
-- 在“CORPDC 属性”对话框中，单击“确定”。
+    | mimcm-支持人员 | 读取</br> FIM CM 注册代理</br> FIM CM 请求撤销</br> FIM CM 请求取消阻止智能卡 |
 
-- 使“Active Directory 用户和计算机”处于打开状态。
+11. 在“CORPDC 属性”对话框中，单击“确定”。
 
-- 在下级用户对象上配置权限
-    - 确保仍位于“Active Directory 用户和计算机”控制台中。
-    - 在控制台树中，右键单击“Contoso.com”，然后单击“属性”。
-    - 在“**安全**”选项卡上，单击“**高级**”。
-    - 在“Contoso 的高级安全设置”对话框中，单击“添加”。
-    - 在“选择用户、计算机、服务帐户或组”对话框的“输入要选择的对象名称”框中，键入“mimcm-管理员”，然后单击“确定”。
-    - 在“Contoso 的权限条目”对话框的“应用于”列表中，选择“下级用户对象”，然后为以下权限选中“允许”复选框：
-        - 读取所有属性
-        - 读取权限
-        - FIM CM 审核
-        - FIM CM 注册代理
-        - FIM CM 请求注册
-        - FIM CM 请求恢复
-        - FIM CM 请求更新
-        - FIM CM 请求撤销
-        - FIM CM 请求取消阻止智能卡
-    - 在“Contoso 的权限条目”对话框中，单击“确定”。
-    - 在“Contoso 的高级安全设置”对话框中，单击“添加”。
-    - 在“选择用户、计算机、服务帐户或组”对话框的“输入要选择的对象名称”框中，键入“mimcm-支持人员”，然后单击“确定”。
-    - 在“Contoso 的权限条目”对话框的“应用于”列表中，选择“下级用户对象”，然后为以下权限选中“允许”复选框：- 读取所有属性 - 读取权限 - FIM CM 注册代理 - FIM CM 请求撤销 - FIM CM 请求取消阻止智能卡
-    - 在“Contoso 的权限条目”对话框中，单击“确定”。
-    - 在“Contoso 的高级安全设置”对话框中，单击“确定” 。
-    - 在“contoso.com 属性”对话框中，单击“确定”。
-    - 使“Active Directory 用户和计算机”处于打开状态。
+12. 使“Active Directory 用户和计算机”处于打开状态。
 
-    - 配置下级用户对象上的权限\<无脚本\>
-        - 确保仍位于“Active Directory 用户和计算机”控制台中。
-        - 在控制台树中，右键单击“Contoso.com”，然后单击“属性”。
-        - 在“**安全**”选项卡上，单击“**高级**”。
-        - 在“Contoso 的高级安全设置”对话框中，单击“添加”。
-        - 在“选择用户、计算机、服务帐户或组”对话框的“输入要选择的对象名称”框中，键入“mimcm-管理员”，然后单击“确定”。
-        - 在“CONTOSO 的权限条目”对话框的“应用于”列表中，选择“下级用户对象”，然后为以下权限选中“允许”复选框：
-            - 读取所有属性
-            - 读取权限
-            - FIM CM 审核
-            - FIM CM 注册代理
-            - FIM CM 请求注册
-            - FIM CM 请求恢复
-            - FIM CM 请求更新
-            - FIM CM 请求撤销
-            - FIM CM 请求取消阻止智能卡
-    - 在“CONTOSO 的权限条目”对话框中，单击“确定”。
-    - 在“CONTOSO 的高级安全设置”对话框中，单击“添加”。
-    - 在“选择用户、计算机、服务帐户或组”对话框的“输入要选择的对象名称”框中，键入“mimcm-支持人员”，然后单击“确定”。
-    - 在“CONTOSO 的权限条目”对话框的“应用于”列表中，选择“下级用户对象”，然后为以下权限选中“允许”复选框：- 读取所有属性 - 读取权限 - FIM CM 注册代理 - FIM CM 请求撤销 - FIM CM 请求取消阻止智能卡
-    - 在“contoso 的权限条目”对话框中，单击“确定”。
-    - -在“Contoso 的高级安全设置”对话框中，单击“确定”。
-    - 在“contoso.com 属性”对话框中，单击“确定”。
-    - 使“Active Directory 用户和计算机”处于打开状态。
-- 第二个步骤：委派证书模板管理权限\<脚本\>
-    - 委派证书模板容器上的权限。
-    - 委派 OID 容器上的权限。
-    - 委派现有证书模板上的权限。
-- 定义证书模板容器上的权限。
-     1. 还原“Active Directory 站点和服务”控制台。
-     2. 在控制台树中，依次展开“服务”、“公钥服务”，然后单击“证书模板”。
-     3. 在控制台树中，右键单击“证书模板”，然后单击“委派控制”。
-     4. 在“控制委派”向导中，单击“下一步”。
-     5. 在“用户或组”页上，单击“添加”。
-     6. 在“选择用户、计算机或组”对话框的“输入要选择的对象名称”框中，键入“mimcm-管理员”，然后单击“确定”。
-     7. 在“用户或组”页上，单击“下一步”。
-     8. 在“要委派的任务”页上，依次单击“创建要委托的自定义任务”、“下一步”。
-     9.  在“Active Directory 对象类型”页上，确保选中“此文件夹、此文件夹中的现有对象和此文件夹中新对象的创建”，然后单击“下一步”。
-     10. 在“权限”页的“权限”列表中，选中“完全控制”复选框，然后单击“下一步”。
-     11. 在“完成控制委派向导”页上，单击“完成”。
+在下级用户对象上配置权限
 
-- 定义 OID 容器上的权限。
-     1. 在控制台树中，右键单击“OID”，然后单击“属性”。
-     2. 在“OID 属性”对话框的“安全性”选项卡上，单击“高级”。
-     3. 在“OID 的高级安全设置”对话框中，单击“添加”。
-     4. 在“选择用户、计算机、服务帐户或组”对话框的“输入要选择的对象名称”框中，键入“mimcm-管理员”，然后单击“确定”。
-     5. 在“OID 的权限条目”对话框中，确保权限应用于“这个对象及全部后代”，单击“完全控制”，然后单击“确定”。
-     6. 在“OID 的高级安全设置”对话框中，单击“确定”。
-     7. 在“OID 属性”对话框中，单击“确定”。
-     8. 关闭“Active Directory 站点和服务”。
+1. 确保仍位于“Active Directory 用户和计算机”控制台中。
+
+2. 在控制台树中，右键单击“Contoso.com”，然后单击“属性”。
+
+3. 在“**安全**”选项卡上，单击“**高级**”。
+
+4. 在“Contoso 的高级安全设置”对话框中，单击“添加”。
+
+5. 在“选择用户、计算机、服务帐户或组”对话框的“输入要选择的对象名称”框中，键入“mimcm-管理员”，然后单击“确定”。
+
+6. 在“Contoso 的权限条目”对话框的“应用于”列表中，选择“下级用户对象”，然后为以下权限选中“允许”复选框：
+
+    - 读取所有属性
+    
+    - 读取权限
+
+    - FIM CM 审核
+
+    - FIM CM 注册代理
+
+    - FIM CM 请求注册
+
+    - FIM CM 请求恢复
+
+    - FIM CM 请求更新
+
+    - FIM CM 请求撤销
+
+    - FIM CM 请求取消阻止智能卡
+
+7. 在“Contoso 的权限条目”对话框中，单击“确定”。
+
+8. 在“Contoso 的高级安全设置”对话框中，单击“添加”。
+
+9. 在“选择用户、计算机、服务帐户或组”对话框的“输入要选择的对象名称”框中，键入“mimcm-支持人员”，然后单击“确定”。
+
+10. 在“Contoso 的权限条目”对话框的“应用于”列表中，选择“下级用户对象”，然后为以下“权限”选中“允许”复选框：
+
+    - 读取所有属性
+
+    - 读取权限
+
+    - FIM CM 注册代理
+
+    - FIM CM 请求撤销
+
+    - FIM CM 请求取消阻止智能卡
+
+11. 在“Contoso 的权限条目”对话框中，单击“确定”。
+
+12. -在“Contoso 的高级安全设置”对话框中，单击“确定”。
+
+13. 在“contoso.com 属性”对话框中，单击“确定”。
+
+14. 使“Active Directory 用户和计算机”处于打开状态。
+
+配置下级用户对象上的权限\<无脚本\>
+
+1. 确保仍位于“Active Directory 用户和计算机”控制台中。
+
+2. 在控制台树中，右键单击“Contoso.com”，然后单击“属性”。
+
+3. 在“**安全**”选项卡上，单击“**高级**”。
+
+4. 在“Contoso 的高级安全设置”对话框中，单击“添加”。
+
+5. 在“选择用户、计算机、服务帐户或组”对话框的“输入要选择的对象名称”框中，键入“mimcm-管理员”，然后单击“确定”。
+
+6. 在“CONTOSO 的权限条目”对话框的“应用于”列表中，选择“下级用户对象”，然后为以下“权限”选中“允许”复选框：
+
+    - 读取所有属性
+
+    - 读取权限
+
+    - FIM CM 审核
+
+    - FIM CM 注册代理
+
+    - FIM CM 请求注册
+
+    - FIM CM 请求恢复
+
+    - FIM CM 请求更新
+
+    - FIM CM 请求撤销
+
+    - FIM CM 请求取消阻止智能卡
+
+7. 在“CONTOSO 的权限条目”对话框中，单击“确定”。
+
+8. 在“CONTOSO 的高级安全设置”对话框中，单击“添加”。
+
+9. 在“选择用户、计算机、服务帐户或组”对话框的“输入要选择的对象名称”框中，键入“mimcm-支持人员”，然后单击“确定”。
+
+10. 在“CONTOSO 的权限条目”对话框的“应用于”列表中，选择“下级用户对象”，然后为以下“权限”选中“允许”复选框：
+
+    - 读取所有属性
+
+    - 读取权限
+
+    - FIM CM 注册代理
+
+    - FIM CM 请求撤销
+
+    - FIM CM 请求取消阻止智能卡
+
+11. 在“contoso 的权限条目”对话框中，单击“确定”。
+
+12. -在“Contoso 的高级安全设置”对话框中，单击“确定”。
+
+13. 在“contoso.com 属性”对话框中，单击“确定”。
+
+14. 使“Active Directory 用户和计算机”处于打开状态。
+
+第二个步骤：委派证书模板管理权限\<脚本\>
+
+- 委派证书模板容器上的权限。
+
+- 委派 OID 容器上的权限。
+
+- 委派现有证书模板上的权限。
+
+定义证书模板容器上的权限：
+
+1. 还原“Active Directory 站点和服务”控制台。
+
+2. 在控制台树中，依次展开“服务”、“公钥服务”，然后单击“证书模板”。
+
+3. 在控制台树中，右键单击“证书模板”，然后单击“委派控制”。
+
+4. 在“控制委派”向导中，单击“下一步”。
+
+5. 在“用户或组”页上，单击“添加”。
+
+6. 在“选择用户、计算机或组”对话框的“输入要选择的对象名称”框中，键入“mimcm-管理员”，然后单击“确定”。
+
+7. 在“用户或组”页上，单击“下一步”。
+
+8. 在“要委派的任务”页上，依次单击“创建要委托的自定义任务”、“下一步”。
+
+9.  在“Active Directory 对象类型”页上，确保选中“此文件夹、此文件夹中的现有对象和此文件夹中新对象的创建”，然后单击“下一步”。
+
+10. 在“权限”页的“权限”列表中，选中“完全控制”复选框，然后单击“下一步”。
+
+11. 在“完成控制委派向导”页上，单击“完成”。
+
+定义 OID 容器上的权限：
+
+1. 在控制台树中，右键单击“OID”，然后单击“属性”。
+
+2. 在“OID 属性”对话框的“安全性”选项卡上，单击“高级”。
+
+3. 在“OID 的高级安全设置”对话框中，单击“添加”。
+
+4. 在“选择用户、计算机、服务帐户或组”对话框的“输入要选择的对象名称”框中，键入“mimcm-管理员”，然后单击“确定”。
+
+5. 在“OID 的权限条目”对话框中，确保权限应用于“这个对象及全部后代”，单击“完全控制”，然后单击“确定”。
+
+6. 在“OID 的高级安全设置”对话框中，单击“确定”。
+
+7. 在“OID 属性”对话框中，单击“确定”。
+
+8. 关闭“Active Directory 站点和服务”。
 
 脚本：OID、配置文件模板和证书模板容器上的权限
 
-![](media/mim-cm-deploy/image021.png)
+![图示](media/mim-cm-deploy/image021.png)
 
-```
+```powershell
 import-module activedirectory
 $adace = @{
 "OID" = "AD:\\CN=OID,CN=Public Key Services,CN=Services,CN=Configuration,DC=contoso,DC=com";
@@ -789,76 +915,150 @@ $acl.AddAccessRule($ace)
 
 脚本：委派现有证书模板上的权限。  
 
-![](media/mim-cm-deploy/image039.png)  
+![图示](media/mim-cm-deploy/image039.png)
 
-dsacls "CN=Administrator,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
+```shell
+dsacls "CN=Administrator,CN=Certificate Templates,CN=Public Key
+Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G
+Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
 
-dsacls "CN=CA,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
+dsacls "CN=CA,CN=Certificate Templates,CN=Public Key
+Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G
+Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
 
-dsacls "CN=CAExchange,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
+dsacls "CN=CAExchange,CN=Certificate Templates,CN=Public Key
+Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G
+Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
 
-dsacls "CN=CEPEncryption,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
+dsacls "CN=CEPEncryption,CN=Certificate Templates,CN=Public Key
+Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G
+Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
 
-dsacls "CN=ClientAuth,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
+dsacls "CN=ClientAuth,CN=Certificate Templates,CN=Public Key
+Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G
+Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
 
-dsacls "CN=CodeSigning,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
+dsacls "CN=CodeSigning,CN=Certificate Templates,CN=Public Key
+Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G
+Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
 
-dsacls "CN=CrossCA,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
+dsacls "CN=CrossCA,CN=Certificate Templates,CN=Public Key
+Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G
+Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
 
-dsacls "CN=CTLSigning,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
+dsacls "CN=CTLSigning,CN=Certificate Templates,CN=Public Key
+Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G
+Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
 
-dsacls "CN=DirectoryEmailReplication,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
+dsacls "CN=DirectoryEmailReplication,CN=Certificate Templates,CN=Public Key
+Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G
+Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
 
-dsacls "CN=DomainController,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
+dsacls "CN=DomainController,CN=Certificate Templates,CN=Public Key
+Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G
+Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
 
-dsacls "CN=DomainControllerAuthentication,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
+dsacls "CN=DomainControllerAuthentication,CN=Certificate Templates,CN=Public Key
+Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G
+Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
 
-dsacls "CN=EFS,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
+dsacls "CN=EFS,CN=Certificate Templates,CN=Public Key
+Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G
+Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
 
-dsacls "CN=EFSRecovery,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
+dsacls "CN=EFSRecovery,CN=Certificate Templates,CN=Public Key
+Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G
+Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
 
-dsacls "CN=EnrollmentAgent,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
+dsacls "CN=EnrollmentAgent,CN=Certificate Templates,CN=Public Key
+Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G
+Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
 
-dsacls "CN=EnrollmentAgentOffline,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
+dsacls "CN=EnrollmentAgentOffline,CN=Certificate Templates,CN=Public Key
+Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G
+Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
 
-dsacls "CN=ExchangeUser,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
+dsacls "CN=ExchangeUser,CN=Certificate Templates,CN=Public Key
+Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G
+Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
 
-dsacls "CN=ExchangeUserSignature,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
+dsacls "CN=ExchangeUserSignature,CN=Certificate Templates,CN=Public Key
+Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G
+Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
 
-dsacls "CN=FIMCMSigning,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
+dsacls "CN=FIMCMSigning,CN=Certificate Templates,CN=Public Key
+Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G
+Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
 
-dsacls "CN=FIMCMEnrollmentAgent,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
+dsacls "CN=FIMCMEnrollmentAgent,CN=Certificate Templates,CN=Public Key
+Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G
+Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
 
-dsacls "CN=FIMCMKeyRecoveryAgent,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
+dsacls "CN=FIMCMKeyRecoveryAgent,CN=Certificate Templates,CN=Public Key
+Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G
+Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
 
-dsacls "CN=IPSecIntermediateOffline,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
+dsacls "CN=IPSecIntermediateOffline,CN=Certificate Templates,CN=Public Key
+Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G
+Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
 
-dsacls "CN=IPSecIntermediateOnline,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
+dsacls "CN=IPSecIntermediateOnline,CN=Certificate Templates,CN=Public Key
+Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G
+Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
 
-dsacls "CN=KerberosAuthentication,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
+dsacls "CN=KerberosAuthentication,CN=Certificate Templates,CN=Public Key
+Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G
+Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
 
-dsacls "CN=KeyRecoveryAgent,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
+dsacls "CN=KeyRecoveryAgent,CN=Certificate Templates,CN=Public Key
+Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G
+Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
 
-dsacls "CN=Machine,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
+dsacls "CN=Machine,CN=Certificate Templates,CN=Public Key
+Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G
+Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
 
-dsacls "CN=MachineEnrollmentAgent,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
+dsacls "CN=MachineEnrollmentAgent,CN=Certificate Templates,CN=Public Key
+Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G
+Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
 
-dsacls "CN=OCSPResponseSigning,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
+dsacls "CN=OCSPResponseSigning,CN=Certificate Templates,CN=Public Key
+Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G
+Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
 
-dsacls "CN=OfflineRouter,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
+dsacls "CN=OfflineRouter,CN=Certificate Templates,CN=Public Key
+Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G
+Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
 
-dsacls "CN=RASAndIASServer,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
+dsacls "CN=RASAndIASServer,CN=Certificate Templates,CN=Public Key
+Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G
+Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
 
-dsacls "CN=SmartCardLogon,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
+dsacls "CN=SmartCardLogon,CN=Certificate Templates,CN=Public Key
+Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G
+Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
 
-dsacls "CN=SmartCardUser,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
+dsacls "CN=SmartCardUser,CN=Certificate Templates,CN=Public Key
+Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G
+Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
 
-dsacls "CN=SubCA,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
+dsacls "CN=SubCA,CN=Certificate Templates,CN=Public Key
+Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G
+Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
 
-dsacls "CN=User,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
+dsacls "CN=User,CN=Certificate Templates,CN=Public Key
+Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G
+Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
 
-dsacls "CN=UserSignature,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
+dsacls "CN=UserSignature,CN=Certificate Templates,CN=Public Key
+Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G
+Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
 
-dsacls "CN=WebServer,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
+dsacls "CN=WebServer,CN=Certificate Templates,CN=Public Key
+Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G
+Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
 
-dsacls "CN=Workstation,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
+dsacls "CN=Workstation,CN=Certificate Templates,CN=Public Key
+Services,CN=Services,CN=Configuration,DC=Contoso,DC=com" /G
+Contoso\\MIMCM-Managers:SDDTRCWDWOLCWPRPCCDCWSLO
+```
