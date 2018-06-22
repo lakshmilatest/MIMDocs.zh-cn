@@ -1,7 +1,7 @@
 ---
-title: "规划堡垒环境 | Microsoft Docs"
-description: 
-keywords: 
+title: 规划堡垒环境 | Microsoft Docs
+description: ''
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/14/2017
+ms.locfileid: "22052410"
 ---
 # <a name="planning-a-bastion-environment"></a>规划堡垒环境
 

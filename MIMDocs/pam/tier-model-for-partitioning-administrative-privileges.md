@@ -1,7 +1,7 @@
 ---
-title: "PAM 环境层模型 | Microsoft Docs"
-description: "了解基于对风险的承受程度分离系统的层模型。"
-keywords: 
+title: PAM 环境层模型 | Microsoft Docs
+description: 了解基于对风险的承受程度分离系统的层模型。
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -17,6 +17,7 @@ ms.sourcegitcommit: c049dceaf02ab8b6008fe440daae4d07b752ca2e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/31/2017
+ms.locfileid: "21942725"
 ---
 # <a name="tier-model-for-partitioning-administrative-privileges"></a>用于对管理权限进行划分的层模型
 

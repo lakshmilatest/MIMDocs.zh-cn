@@ -1,7 +1,7 @@
 ---
-title: "附录"
-description: "这是介绍 PAM 脚本化部署的文档的附录。 其中介绍了如何配置 PRIV 域和 CORP 域，以及如何设置客户端执行验证并提供如何请求协助的信息。"
-keywords: 
+title: 附录
+description: 这是介绍 PAM 脚本化部署的文档的附录。 其中介绍了如何配置 PRIV 域和 CORP 域，以及如何设置客户端执行验证并提供如何请求协助的信息。
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: MBaldwin
@@ -10,13 +10,14 @@ ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.openlocfilehash: 010fcac1d512775ed5c84031a42a4c5836cff34f
 ms.sourcegitcommit: 8edd380f54c3e9e83cfabe8adfa31587612e5773
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/19/2017
+ms.locfileid: "20896948"
 ---
 # <a name="pam-deployment-scripts-addendum"></a>PAM 部署脚本附录：
 

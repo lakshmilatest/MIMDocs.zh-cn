@@ -1,7 +1,7 @@
 ---
-title: "Active Directory 域服务的 Privileged Access Management | Microsoft Docs"
-description: "了解 Privileged Access Management，以及它如何帮助你管理和保护 Active Directory 环境。"
-keywords: 
+title: Active Directory 域服务的 Privileged Access Management | Microsoft Docs
+description: 了解 Privileged Access Management，以及它如何帮助你管理和保护 Active Directory 环境。
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -17,6 +17,7 @@ ms.sourcegitcommit: c049dceaf02ab8b6008fe440daae4d07b752ca2e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/31/2017
+ms.locfileid: "21942708"
 ---
 # <a name="privileged-access-management-for-active-directory-domain-services"></a>Active Directory 域服务的 Privileged Access Management
 

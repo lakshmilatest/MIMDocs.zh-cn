@@ -1,7 +1,7 @@
 ---
-title: "PAM 灾难恢复 | Microsoft Docs"
-description: "了解如何配置 Privileged Access Management，以便获得高可用性和灾难恢复。"
-keywords: 
+title: PAM 灾难恢复 | Microsoft Docs
+description: 了解如何配置 Privileged Access Management，以便获得高可用性和灾难恢复。
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/14/2017
+ms.locfileid: "22052308"
 ---
 # <a name="high-availability-and-disaster-recovery-considerations-for-the-bastion-environment"></a>堡垒环境的高可用性和灾难恢复注意事项
 

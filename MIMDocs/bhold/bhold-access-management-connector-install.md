@@ -1,7 +1,7 @@
 ---
-title: "BHOLD 访问管理连接器安装 | Microsoft Docs"
-description: "BHOLD 连接器模块支持数据的初始同步和正在进行的同步"
-keywords: 
+title: BHOLD 访问管理连接器安装 | Microsoft Docs
+description: BHOLD 连接器模块支持数据的初始同步和正在进行的同步
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -9,12 +9,13 @@ ms.date: 09/07/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
-ms.assetid: 
+ms.assetid: ''
 ms.openlocfilehash: 6d7f19f470d0c0f82a68652115ab9265a13b3508
 ms.sourcegitcommit: 0d8b19c5d4bfd39d9c202a3d2f990144402ca79c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/14/2017
+ms.locfileid: "24522322"
 ---
 # <a name="access-management-connector-installation"></a>访问管理连接器安装
 

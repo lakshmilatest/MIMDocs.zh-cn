@@ -1,7 +1,7 @@
 ---
 title: Microsoft Identity Manager 2016 | Microsoft Docs
-description: "MIM 包括 FIM 2010 的访问权限管理功能，有助于管理用户、凭据、策略及组织中的访问权限。"
-keywords: 
+description: MIM 包括 FIM 2010 的访问权限管理功能，有助于管理用户、凭据、策略及组织中的访问权限。
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 06add1a636720f74bc0c0f25b4100b19f1bd31da
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/17/2017
+ms.locfileid: "23451151"
 ---
 # <a name="microsoft-identity-manager-2016"></a>Microsoft Identity Manager 2016
 

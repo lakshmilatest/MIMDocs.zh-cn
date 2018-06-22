@@ -1,7 +1,7 @@
 ---
-title: "Microsoft Identity Manager 2016 的发行说明 | Microsoft Docs"
-description: "查找有关最新 MIM 版本的信息。"
-keywords: 
+title: Microsoft Identity Manager 2016 的发行说明 | Microsoft Docs
+description: 查找有关最新 MIM 版本的信息。
+keywords: ''
 author: billmath
 ms.author: barclayn
 manager: mbaldwin
@@ -18,6 +18,7 @@ ms.sourcegitcommit: f077508b5569e2a96084267879c5b6551e1e0905
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/12/2017
+ms.locfileid: "23137568"
 ---
 # <a name="release-notes-for-mim-2016"></a>MIM 2016 发行说明
 目前没有发行说明。

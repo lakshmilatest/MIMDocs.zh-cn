@@ -6,6 +6,7 @@
 ## [Azure 中的混合报告](identity-manager-hybrid-reporting-azure.md)
 # [规划和设计](microsoft-identity-manager-2016-supported-platforms.md)
 ## [支持的平台](microsoft-identity-manager-2016-supported-platforms.md)
+## [支持的语言](microsoft-identity-manager-2016-language-support.md)
 ## [连接到目录](supported-management-agents.md)
 ## [容量规划](capacity-planning-guide.md)
 ## [部署拓扑](topology-considerations.md)

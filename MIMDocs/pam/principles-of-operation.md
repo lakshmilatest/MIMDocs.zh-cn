@@ -1,7 +1,7 @@
 ---
-title: "了解 PAM 组件 | Microsoft Docs"
-description: "Privileged Access Management 与 MIM 共享某些组件，且拥有少数自身的组件。 了解它们如何协同工作。"
-keywords: 
+title: 了解 PAM 组件 | Microsoft Docs
+description: Privileged Access Management 与 MIM 共享某些组件，且拥有少数自身的组件。 了解它们如何协同工作。
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/14/2017
+ms.locfileid: "22052359"
 ---
 # <a name="understand-the-components-of-pam"></a>了解 PAM 的组件
 

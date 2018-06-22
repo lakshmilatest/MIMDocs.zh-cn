@@ -1,7 +1,7 @@
 ---
-title: "为 PAM 定义特权角色 | Microsoft Docs"
-description: "决定哪些特权角色应该进行管理，并为每个角色定义管理策略。"
-keywords: 
+title: 为 PAM 定义特权角色 | Microsoft Docs
+description: 决定哪些特权角色应该进行管理，并为每个角色定义管理策略。
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 210195369d2ecd610569d57d0f519d683ea6a13b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/01/2017
+ms.locfileid: "21943751"
 ---
 # <a name="define-roles-for-privileged-access-management"></a>为 Privileged Access Management 定义角色
 
