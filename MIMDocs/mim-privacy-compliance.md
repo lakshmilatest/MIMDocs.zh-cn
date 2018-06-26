@@ -12,10 +12,10 @@ ms.technology: security
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.suite: ems
 ms.openlocfilehash: 6bcf9ab26ba38f3c6eefbdb315d4975320a597b9
-ms.sourcegitcommit: 66db63fe2813130764e52381f4f9c8e549d77d39
+ms.sourcegitcommit: d82c05aa814015fc6bdab37133eafec3366bea3b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/26/2018
 ms.locfileid: "34449677"
 ---
 # <a name="microsoft-identity-manager-data-handling"></a>Microsoft Identity Manager 数据处理 
@@ -116,7 +116,7 @@ PAM 可以使用上述相同的语法，或者可以使用 [MIMPAM 模块](https
 - [使用规则扩展](https://msdn.microsoft.com/en-us/library/windows/desktop/ms698810(v=vs.100).aspx)
 - [Understanding Data Synchronization with External Systems](https://docs.microsoft.com/en-us/previous-versions/mim/jj133850(v%3dws.10))（了解如何与外部系统进行数据同步）
 
-### <a name="service-and-portal--pam"></a>服务和门户 / PAM
+### <a name="service-and-portal--pam"></a>服务和门户/PAM
 
 可以使用 FIMAutomation 或 PAM cmdlet 来更新要包含 PAM 数据的服务和门户。 如果有门户，也可以通过搜索直接进行更新并修改该对象。 有一点需要注意，根据配置，只从门户进行更新并不意味着它会保持不变。 因为权威来源很大程度上取决于整体配置。
 
