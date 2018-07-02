@@ -1,7 +1,7 @@
 ---
-title: "部署 PAM 步骤 5 – 林链接 | Microsoft Docs"
-description: "建立 PRIV 和 CORP 林之间的信任关系，以便 PRIV 中的特权用户仍然可以访问 CORP 中的资源。"
-keywords: 
+title: 部署 PAM 步骤 5 – 林链接 | Microsoft Docs
+description: 建立 PRIV 和 CORP 林之间的信任关系，以便 PRIV 中的特权用户仍然可以访问 CORP 中的资源。
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -12,17 +12,18 @@ ms.technology: active-directory-domain-services
 ms.assetid: eef248c4-b3b6-4b28-9dd0-ae2f0b552425
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: ba4b94c1f0f0879436e370a7f2f041c720bd1f60
-ms.sourcegitcommit: 362475d4018e74e5a17ba574ccaec47a2caebaff
+ms.openlocfilehash: df4294ca6dbc98ec684e690d3ce66765d27cc359
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289085"
 ---
 # <a name="step-5--establish-trust-between-priv-and-corp-forests"></a>步骤 5 - 在 PRIV 和 CORP 林之间建立信任关系
 
->[!div class="step-by-step"]
-[« 步骤 4](step-4-install-mim-components-on-pam-server.md)
-[步骤 6 »](step-6-transition-group-to-pam.md)
+> [!div class="step-by-step"]
+> [« 步骤 4](step-4-install-mim-components-on-pam-server.md)
+> [步骤 6 »](step-6-transition-group-to-pam.md)
 
 对于每个 CORP 域（如 contoso.local），都需要在 PRIV 和 CONTOSO 域控制器之间建立信任关系。 以便 PRIV 域中的用户能够访问 CORP 域中的资源。
 
@@ -70,17 +71,17 @@ ms.lasthandoff: 12/01/2017
 
 对于现有的每个林，启用 PRIV 管理员和监视服务对 AD 的读取访问权限。
 
-1.  登录到现有 CORP 林域控制器 (CORPDC)，作为此林的顶级域的域管理员 (Contoso\Administrator)。  
-2.  启动“Active Directory 用户和计算机” 。  
-3.  右键单击域“contoso.local”并选择“委托控件”。  
-4.  在“选定的用户和组”选项卡上，单击“添加”。  
-5.  在“选择用户、计算机或组”窗口上，单击“位置”并将位置更改为 priv.contoso.local。  在“对象名称”上，键入“Domain Admins”并单击“检查名称”。 当出现弹出窗口时，输入用户名 *priv\administrator* 及其密码。  
-6.  在“Domain Admins”后添加“; MIMMonitor”。 为名称 **Domain Admins** 和 **MIMMonitor** 加上下划线后，单击“确定”，然后单击“下一步”。  
-7.  在常见任务列表中，选择“读取所有用户信息”，然后依次单击“下一步”和“完成”。  
-8.  关闭“Active Directory 用户和计算机”。
+1. 登录到现有 CORP 林域控制器 (CORPDC)，作为此林的顶级域的域管理员 (Contoso\Administrator)。  
+2. 启动“Active Directory 用户和计算机” 。  
+3. 右键单击域“contoso.local”并选择“委托控件”。  
+4. 在“选定的用户和组”选项卡上，单击“添加”。  
+5. 在“选择用户、计算机或组”窗口上，单击“位置”并将位置更改为 priv.contoso.local。  在“对象名称”上，键入“Domain Admins”并单击“检查名称”。 当出现弹出窗口时，输入用户名 *priv\administrator* 及其密码。  
+6. 在“Domain Admins”后添加“; MIMMonitor”。 为名称 **Domain Admins** 和 **MIMMonitor** 加上下划线后，单击“确定”，然后单击“下一步”。  
+7. 在常见任务列表中，选择“读取所有用户信息”，然后依次单击“下一步”和“完成”。  
+8. 关闭“Active Directory 用户和计算机”。
 
-9.  打开 PowerShell 窗口。
-10.  使用 `netdom` 确保已启用 SID 历史记录并已禁用 SID 筛选功能。 键入：
+9. 打开 PowerShell 窗口。
+10. 使用 `netdom` 确保已启用 SID 历史记录并已禁用 SID 筛选功能。 键入：
     ```cmd
     netdom trust contoso.local /quarantine:no /domain priv.contoso.local
     netdom trust /enablesidhistory:yes /domain priv.contoso.local
@@ -104,6 +105,6 @@ ms.lasthandoff: 12/01/2017
 
 下一步将介绍向 PAM 移动组。
 
->[!div class="step-by-step"]
-[« 步骤 4](step-4-install-mim-components-on-pam-server.md)
-[步骤 6 »](step-6-transition-group-to-pam.md)
+> [!div class="step-by-step"]
+> [« 步骤 4](step-4-install-mim-components-on-pam-server.md)
+> [步骤 6 »](step-6-transition-group-to-pam.md)

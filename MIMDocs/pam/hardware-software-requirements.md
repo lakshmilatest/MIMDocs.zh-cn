@@ -1,7 +1,7 @@
 ---
-title: "PAM 软件要求 | Microsoft Docs"
-description: "查找用于成功部署 Privileged Access Management 的硬件和软件要求"
-keywords: 
+title: PAM 软件要求 | Microsoft Docs
+description: 查找用于成功部署 Privileged Access Management 的硬件和软件要求
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -12,18 +12,19 @@ ms.technology: active-directory-domain-services
 ms.assetid: 82a9085c-9667-4b3b-8079-657eab1d1e58
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 2ff6fd997dc5bc7e4a4949520e978ae2d8283d4b
-ms.sourcegitcommit: f29f02fa8437fa55e86afd7b0b99a36d2306b96b
+ms.openlocfilehash: c53d8cc815f792d1a1246a7434350f1cfb087844
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36288956"
 ---
 # <a name="hardware-and-software-requirements"></a>硬件和软件要求
 
 Privileged Access Management 没有超出基础软件平台所需的任何硬件要求。 只需确保你拥有足够的内存或磁盘空间，以及网络连接。
 
->[!IMPORTANT]
-本文提供了基本部署的最低要求。 不用于演示性能、可伸缩性或高可用性。 不描述为大型企业或生产环境推荐的部署拓扑。
+> [!IMPORTANT]
+> 本文提供了基本部署的最低要求。 不用于演示性能、可伸缩性或高可用性。 不描述为大型企业或生产环境推荐的部署拓扑。
 
 ## <a name="installing-from-software-packages"></a>从软件包安装
 
@@ -76,4 +77,4 @@ Privileged Access Management 没有超出基础软件平台所需的任何硬件
 对于 PAMSRV：
 
 - [Windows Server 2012 R2](https://technet.microsoft.com/library/dn303418.aspx)
-- [SQL Server 2012](https://msdn.microsoft.com/library/ms143506(sql.110).aspx) 或 [SQL Server 2014](https://msdn.microsoft.com/en-us/library/ms143506(v=sql.120).aspx)
+- [SQL Server 2012](https://msdn.microsoft.com/library/ms143506(sql.110).aspx) 或 [SQL Server 2014](https://msdn.microsoft.com/library/ms143506(v=sql.120).aspx)

@@ -1,7 +1,7 @@
 ---
-title: "步骤 4 配置 SharePoint"
-description: "这是使用脚本配置 PAM 的第 4 步。 此步骤会配置 SharePoint，以便将其作为 PAM 部署的一部分。"
-keywords: 
+title: 步骤 4 配置 SharePoint
+description: 这是使用脚本配置 PAM 的第 4 步。 此步骤会配置 SharePoint，以便将其作为 PAM 部署的一部分。
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: MBaldwin
@@ -10,19 +10,20 @@ ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: f8d033bec440c6efed26dd959acc713638258dd3
-ms.sourcegitcommit: 8edd380f54c3e9e83cfabe8adfa31587612e5773
+ms.openlocfilehash: e46b7cf75eb60930441e309448773353668ed454
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289622"
 ---
 # <a name="step-4-configuring-sharepoint"></a>步骤 4 配置 SharePoint
 
->[!div class="step-by-step"]
-[« 步骤 3](sp1-step3-installing-configuring-sql.md)
-[步骤 5 »](sp1-step5-configuring-pam.md)
+> [!div class="step-by-step"]
+> [« 步骤 3](sp1-step3-installing-configuring-sql.md)
+> [步骤 5 »](sp1-step5-configuring-pam.md)
 
 SharePoint 必须是附带 SP1 的 SharePoint Foundation 2013。
 
@@ -46,11 +47,11 @@ SharePoint 必须是附带 SP1 的 SharePoint Foundation 2013。
 
 1. 在“**连接到服务器场**”选项卡上，将其更改为“**创建新服务器场**”。
 2. 将 **SQLServer** 指定为用于配置数据库的数据库服务器，并将 **SharePoint ServiceAccount** 指定为 SharePoint 要使用的数据库访问帐户。
-3. 指定一个密码作为场安全密码**（后面将不会再使用它）**
+3. 指定一个密码作为场安全密码 **（后面将不会再使用它）**
 4. 接受其余的 SharePoint 配置向导默认设置以创建单服务器场
 
 可在[步骤 3 - 准备 PAM 服务器](/microsoft-identity-manager/pam/step-3-prepare-pam-server)中的**配置 SharePoint** 部分找到详细信息，操作完成时，再次运行“.\PAMDeployment.ps1”脚本，选择选项 4（SharePoint 安装程序）来完成此步骤。
 
->[!div class="step-by-step"]
-[« 步骤 3](sp1-step3-installing-configuring-sql.md)
-[步骤 5 »](sp1-step5-configuring-pam.md)
+> [!div class="step-by-step"]
+> [« 步骤 3](sp1-step3-installing-configuring-sql.md)
+> [步骤 5 »](sp1-step5-configuring-pam.md)

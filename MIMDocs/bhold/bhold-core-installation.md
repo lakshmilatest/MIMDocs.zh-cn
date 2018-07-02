@@ -1,7 +1,7 @@
 ---
-title: "BHOLD 核心安装 | Microsoft Docs"
-description: "BHOLD 套件安装核心文档"
-keywords: 
+title: BHOLD 核心安装 | Microsoft Docs
+description: BHOLD 套件安装核心文档
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -9,12 +9,13 @@ ms.date: 09/07/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
-ms.assetid: 
-ms.openlocfilehash: 33fbe63528d5d7c543ae286f934654538782b4d5
-ms.sourcegitcommit: 0d8b19c5d4bfd39d9c202a3d2f990144402ca79c
+ms.assetid: ''
+ms.openlocfilehash: 752605be1392e514f5b132a654134185b38e2cef
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36290129"
 ---
 # <a name="bhold-core-installation"></a>BHOLD 核心安装
 
@@ -98,8 +99,8 @@ BHOLD 核心模块必须能够使用登录专用的用户帐户登录域，并�
 |---------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 对域/计算机使用安全提供程序 | 选中后，会指定 Active Directory 域服务安全控制对 BHOLD 核心的访问。                                                                                                                                                                                                  | 选定复选框。 重要说明：如果未选中此复选框，则安装将失败。                                                                 |
 | **域**                                  | 指定包含 BHOLD 服务器、服务帐户和应用程序组的域。 重要说明：指定域名时，请使用 NetBIOS（短）名称，不要使用完全限定的域名 (FQDN)。 例如，如果域的 FQDN 是 fabrikam.com，将域名指定为 CONTOSO。 | 在此处填写域名：                                                                                                                                        |
-| 应用程序组                       | 指定之前在 [Required user and group](https://technet.microsoft.com/en-us/library/jj134095(v=ws.10).aspx#rug)（所需用户和组）中创建的安全组的名称。                                                                                                                                  | 在此处填写组名称：                                                                                                                                         |
-| 服务用户                            | 指定之前在 [Required user and group](https://technet.microsoft.com/en-us/library/jj134095(v=ws.10).aspx#rug)（所需用户和组）中创建的服务用户帐户的登录名。                                                                                                                      | 在此处填写用户帐户名称：                                                                                                                                  |
+| 应用程序组                       | 指定之前在 [Required user and group](https://technet.microsoft.com/library/jj134095(v=ws.10).aspx#rug)（所需用户和组）中创建的安全组的名称。                                                                                                                                  | 在此处填写组名称：                                                                                                                                         |
+| 服务用户                            | 指定之前在 [Required user and group](https://technet.microsoft.com/library/jj134095(v=ws.10).aspx#rug)（所需用户和组）中创建的服务用户帐户的登录名。                                                                                                                      | 在此处填写用户帐户名称：                                                                                                                                  |
 | **密码**                                | 指定 BHOLD 核心服务用户帐户的密码。                                                                                                                                                                                                                                              | 在此处填写密码：重要说明：确保将此密码保存在一个隐藏的安全位置。                                                                |
 | **网站 IP/端口**                         | 指定要在 Intranet 服务器上创建的网站的 IP 地址和端口号。 仅当不使用同一个 IP 地址作为默认网站时，更改默认值 (\*)。 仅当默认端口 (5151) 已在使用时，将端口号更改为可用端口。             | 如果默认网站使用非默认 IP 地址，则在此处填写：如果已在使用默认端口号，则在此处填写 BHOLD 网站端口号： |
 
@@ -168,8 +169,8 @@ BHOLD 核心安装完成后，必须配置 Windows 防火墙，并在 Internet I
 
 如果用于联系 BHOLD 网站的网络名称与服务器主机名不同，则必须确定 HTTP 的服务主体名称 (SPN)。 例如，如果使用 DNS 中的 CNAME 资源记录指定服务器别名，或者如果使用网络负载均衡，则必须在 Active Directory 中注册这些额外的网络地址。 如果未能这样操作，则 Internet Explorer 联系 BHOLD 网站时无法使用 Kerberos 协议。
 
->[!IMPORTANT]
-如果 BHOLD 核心模块安装在与 FIM 门户相同的计算机上，则必须使用不同的主机名，为运行 BHOLD 核心的服务器和运行 FIM 门户的服务器创建 DNS 资源记录（CNAME 或 A）。 仅可为特定的服务类型/服务器别名对确定一个 SPN，由于 BHOLD 核心和 FIM 门户通常在不同的帐户下运行，因此需要单独的 SPN。 如果已在其他帐户下确定了 SPN，则 setspn 命令会报告错误。
+> [!IMPORTANT]
+> 如果 BHOLD 核心模块安装在与 FIM 门户相同的计算机上，则必须使用不同的主机名，为运行 BHOLD 核心的服务器和运行 FIM 门户的服务器创建 DNS 资源记录（CNAME 或 A）。 仅可为特定的服务类型/服务器别名对确定一个 SPN，由于 BHOLD 核心和 FIM 门户通常在不同的帐户下运行，因此需要单独的 SPN。 如果已在其他帐户下确定了 SPN，则 setspn 命令会报告错误。
 
 若要完成该过程，必须至少具有域管理员的成员资格或同等权限。
 
@@ -213,9 +214,9 @@ BHOLD 核心安装完成后，必须配置 Windows 防火墙，并在 Internet I
 
 ## <a name="next-steps"></a>后续步骤
 
-安装 BHOLD 核心并确定安装成功后，可以安装其他模块。 此时，BHOLD 数据库实际上将为空，仅包含一个用户帐户、根帐户，以及一个组织单位 (orgunit)，即根 orgunit。 要向 BHOLD 数据库添加更多用户，可以根据需要安装访问管理连接器模块，或 BHOLD 模型生成器模块。 可以使用访问管理连接器模块从 FIM 同步服务中导入用户数据，也可以使用 BHOLD 模型生成器从一组结构化文件中导入用户数据。 有关使用访问管理连接器模块的详细信息，请参阅 [Test Lab Guide: BHOLD Access Management Connector](https://technet.microsoft.com/en-us/library/jj853085(v=ws.10).aspx)（测试实验室指南：BHOLD 访问管理连接器）。
+安装 BHOLD 核心并确定安装成功后，可以安装其他模块。 此时，BHOLD 数据库实际上将为空，仅包含一个用户帐户、根帐户，以及一个组织单位 (orgunit)，即根 orgunit。 要向 BHOLD 数据库添加更多用户，可以根据需要安装访问管理连接器模块，或 BHOLD 模型生成器模块。 可以使用访问管理连接器模块从 FIM 同步服务中导入用户数据，也可以使用 BHOLD 模型生成器从一组结构化文件中导入用户数据。 有关使用访问管理连接器模块的详细信息，请参阅 [Test Lab Guide: BHOLD Access Management Connector](https://technet.microsoft.com/library/jj853085(v=ws.10).aspx)（测试实验室指南：BHOLD 访问管理连接器）。
 
 有关使用 BHOLD 模型生成器模块的详细信息，请参阅：
 
-- [Microsoft BHOLD Suite Concepts Guide](https://technet.microsoft.com/en-us/library/jj134102(v=ws.10).aspx)（Microsoft BHOLD 套件概念指南）
-- [Microsoft BHOLD Suite TechnicalReference](https://technet.microsoft.com/en-us/library/jj134935(v=ws.10).aspx)（Microsoft BHOLD 套件技术参考）。
+- [Microsoft BHOLD Suite Concepts Guide](https://technet.microsoft.com/library/jj134102(v=ws.10).aspx)（Microsoft BHOLD 套件概念指南）
+- [Microsoft BHOLD Suite TechnicalReference](https://technet.microsoft.com/library/jj134935(v=ws.10).aspx)（Microsoft BHOLD 套件技术参考）。

@@ -1,7 +1,7 @@
 ---
-title: "配置 MIM 2016 for Privileged Access Management | Microsoft Docs"
-description: "安装 MIM 并为 Privileged Access Management 对其进行配置的路线图。"
-keywords: 
+title: 配置 MIM 2016 for Privileged Access Management | Microsoft Docs
+description: 安装 MIM 并为 Privileged Access Management 对其进行配置的路线图。
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -12,11 +12,12 @@ ms.technology: active-directory-domain-services
 ms.assetid: c4ca5b58-ad0c-48af-a9eb-b71b22d0c67c
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 79de8ef08b49a41638a09e829efbd8c17301004b
-ms.sourcegitcommit: 210195369d2ecd610569d57d0f519d683ea6a13b
+ms.openlocfilehash: 5180d487dcaabcf024ba76cb86c9d849bdf1adc1
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289544"
 ---
 # <a name="configure-the-mim-environment-for-privileged-access-management"></a>为 Privileged Access Management 配置 MIM 环境
 
@@ -38,5 +39,5 @@ ms.lasthandoff: 09/01/2017
 
 7.  演示请求、接收和使用对受保护资源的提升的特权访问权限。
 
->[!div class="step-by-step"]
-[开始 »](step-1-prepare-corp-domain.md)
+> [!div class="step-by-step"]
+> [开始 »](step-1-prepare-corp-domain.md)

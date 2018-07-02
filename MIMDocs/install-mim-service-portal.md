@@ -12,23 +12,24 @@ ms.technology: security
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: fcc137527d8326c82bf3b201039926699bd4e342
-ms.sourcegitcommit: a98a4c1aee12016d480c400f4ff2c6aadb6518ee
+ms.openlocfilehash: 562ca6a977509cad7c3423ef42d4b6f6705494d3
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289510"
 ---
 # <a name="install-mim-2016-mim-service-and-portal"></a>安装 MIM 2016：MIM 服务和门户
 
->[!div class="step-by-step"]
-[« MIM 同步服务](install-mim-sync.md)
-[同步数据库 »](install-mim-sync-ad-service.md)
-
+> [!div class="step-by-step"]
+> [« MIM 同步服务](install-mim-sync.md)
+> [同步数据库 »](install-mim-sync-ad-service.md)
+> 
 > [!NOTE]
 > 本演练使用名为 Contoso 的公司中的示例名和值。 将其替换为你自己的。 例如：
 > - 域控制器名称 - **mimservername**
 > - 域名 - **contoso**
-> - 密码 - **Pass@word1**
+> - 密码 - <strong>Pass@word1</strong>
 > - 服务帐户名称 - **MIMService**
 
 如果你在最后一步中没有设置 MIM 安装包，请先返回并安装 Microsoft Identity Manager 2016 组件，才继续操作。
@@ -56,7 +57,7 @@ ms.lasthandoff: 05/03/2018
 
 8. 指定你想要生成新的自签名证书，或选择相关的证书。
 
-9. 指定要使用的服务帐户名称（例如 *MIMService*）、服务帐户密码（例如 *Pass@word1*）、服务帐户域（例如 *contoso*）以及服务电子邮件帐户（例如 *contoso*）。
+9. 指定要使用的服务帐户名称（例如 *MIMService*）、服务帐户密码（例如 <em>Pass@word1</em>）、服务帐户域（例如 *contoso*）以及服务电子邮件帐户（例如 *contoso*）。
 
     ![配置 MIM 服务帐户图像](media/install-mim-service-portal/MIM_Install12.png)
 
@@ -78,25 +79,25 @@ ms.lasthandoff: 05/03/2018
 
 ## <a name="configure-mim-password-registration-portal"></a>配置 MIM 密码注册门户
 
-1.  将 SSPR 注册的服务帐户名设为 *contoso\MIMSSPR*，并将其密码设为 *Pass@word1*。
+1. 将 SSPR 注册的服务帐户名设为 *contoso\MIMSSPR*，并将其密码设为 <em>Pass@word1</em>。
 
-2.  将“passwordregistration.contoso.com”指定为 MIM 密码注册的主机名，并将该端口设置为“80”。 启用“打开防火墙中的端口”选项。
+2. 将“passwordregistration.contoso.com”指定为 MIM 密码注册的主机名，并将该端口设置为“80”。 启用“打开防火墙中的端口”选项。
 
-    ![输入 IIS 映像使用的配置信息](media/install-mim-service-portal/MIM_Install14.png)
+   ![输入 IIS 映像使用的配置信息](media/install-mim-service-portal/MIM_Install14.png)
 
-3.  将显示警告 – 阅读该警告，然后单击“下一步” 。
+3. 将显示警告 – 阅读该警告，然后单击“下一步” 。
 
 4. 在下一个 MIM 密码注册门户配置屏幕中，将“mim.contoso.com”指定为密码注册门户的 MIM 服务服务器地址。
 
 ## <a name="configure-mim-password-reset-portal"></a>配置 FIM 密码重置门户
 
-1.  将 SSPR 注册的服务帐户名设为“Contoso\MIMSSPR”，并将其密码设为 Pass@word1。
+1. 将 SSPR 注册的服务帐户名设为“Contoso\MIMSSPR”，并将其密码设为 Pass@word1。
 
-2.  将“passwordreset.contoso.com”指定为 MIM 密码重置门户的主机名称，并将该端口设置为“80”。 启用“打开防火墙中的端口”选项。
+2. 将“passwordreset.contoso.com”指定为 MIM 密码重置门户的主机名称，并将该端口设置为“80”。 启用“打开防火墙中的端口”选项。
 
-    ![输入 IIS 映像使用的配置信息](media/install-mim-service-portal/MIM_Install15.png)
+   ![输入 IIS 映像使用的配置信息](media/install-mim-service-portal/MIM_Install15.png)
 
-3.  将显示警告 – 阅读该警告，然后单击“下一步” 。
+3. 将显示警告 – 阅读该警告，然后单击“下一步” 。
 
 4. 在下一个 MIM 密码注册门户配置屏幕中，将“mim.contoso.com”指定为密码重置门户的 MIM 服务服务器地址。
 
@@ -144,7 +145,7 @@ ms.lasthandoff: 05/03/2018
 
 > [!NOTE]
 > 可选：此时，你可以安装 MIM 外接程序和扩展。
-
->[!div class="step-by-step"]  
-[« MIM 同步服务](install-mim-sync.md)
-[同步数据库 »](install-mim-sync-ad-service.md)
+> 
+> [!div class="step-by-step"]  
+> [« MIM 同步服务](install-mim-sync.md)
+> [同步数据库 »](install-mim-sync-ad-service.md)

@@ -13,11 +13,12 @@ ms.assetid: 4978f60d-044d-4e84-8d93-65801fce1144
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: mim
-ms.openlocfilehash: 3ff2ca7b9a268d4723861fcdec7f2f11932a6026
-ms.sourcegitcommit: 3502d636687e442f7d436ee56218b9b95f5056cf
+ms.openlocfilehash: 1054d611ae0b230005a0f79be69f5c6c2bba7af2
+ms.sourcegitcommit: c773edc8262b38df50d82dae0f026bb49500d0a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34479292"
 ---
 # <a name="supported-platforms-for-mim-2016"></a>MIM 2016 支持的平台
 
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/16/2018
 | |PAM 方案：适用于 PAM 方案现有 (CORP) 林的 Active Directory | Windows Server 2008 <br/> Windows Server 2008 R2* <br/> Windows Server 2012* <br/> Windows Server 2012 R2* <br/> Windows Server 2016 * |
 | | MIM 服务数据库 | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2<br/>SQL Server 2014 SP1 <br/> SQL Server 2016 |
 | | SharePoint | SharePoint Foundation 2010<br/>SharePoint Foundation 2013 SP1 <br/> SharePoint 2016 * |
-| | 适用于 MIM 服务审批和组管理电子邮件的邮件服务器（可选） | Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1 <br/> Exchange Server 2016* <br/> Exchange Online *（仅在版本 [4.4.1749.0](https://docs.microsoft.com/en-us/microsoft-identity-manager/reference/version-history#version-4417490) 前通知） |
+| | 适用于 MIM 服务审批和组管理电子邮件的邮件服务器（可选） | Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1 <br/> Exchange Server 2016* <br/> Exchange Online *（仅在版本 [4.4.1749.0](https://docs.microsoft.com/microsoft-identity-manager/reference/version-history#version-4417490) 前通知） |
 | | 浏览器 | 所有受支持的主流浏览器 *（取决于移动设备）|
 | **MIM 服务报告** | Windows Server |  Windows Server 2008 R2 SP1<br/>Windows Server 2012 <br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |
 | | 数据仓库 | System Center 2012 Service Manager <br/> System Center 2012 R2 Service Manager </br> System Center 2016 Service Manager*（带 4.4.1459）<br/> [System Center 2016 的 SQL Server 版本兼容性](https://docs.microsoft.com/system-center/scsm/upgrade-to-sm-2016)

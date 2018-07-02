@@ -1,7 +1,7 @@
 ---
-title: "用于部署的拓扑指南 | Microsoft Docs"
-description: "了解 MIM 2016 组件，并获取有关如何在你的环境中部署它们的建议。"
-keywords: 
+title: 用于部署的拓扑指南 | Microsoft Docs
+description: 了解 MIM 2016 组件，并获取有关如何在你的环境中部署它们的建议。
+keywords: ''
 author: billmath
 ms.author: barclayn
 manager: mbaldwin
@@ -12,18 +12,19 @@ ms.technology: security
 ms.assetid: 735dc357-dfba-4f68-a5b3-d66d6c018803
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: e257a2e64225a4bc545d8a9384167819412e939b
-ms.sourcegitcommit: f077508b5569e2a96084267879c5b6551e1e0905
+ms.openlocfilehash: f67068709cf9910fa04110fce75623fd2f94ca4a
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289806"
 ---
 # <a name="topology-considerations"></a>拓扑注意事项
 你可以在同一服务器上或在多个配置的多个服务器之间部署 Microsoft 标识管理器 (MIM) 组件。 为部署选择的拓扑会影响你所能实现的 MIM 性能。 本文介绍多种你可以考虑实施的部署拓扑。
 
 
->[!NOTE]
-这些选项适用于仅使用 MIM 同步、MIM 服务和 MIM 门户进行身份管理的部署。  如果部署使用 MIM CM、MIM BHOLD 套件，或用于特权访问管理，可以使用不同的部署选项。
+> [!NOTE]
+> 这些选项适用于仅使用 MIM 同步、MIM 服务和 MIM 门户进行身份管理的部署。  如果部署使用 MIM CM、MIM BHOLD 套件，或用于特权访问管理，可以使用不同的部署选项。
 
 
 ## <a name="mim-components"></a>MIM 组件

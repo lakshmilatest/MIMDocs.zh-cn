@@ -1,7 +1,7 @@
 ---
-title: "步骤 7 安装 SID 历史记录/SID 筛选"
-description: "这是使用脚本配置 Privileged Identity Manager 的第 7 步。 该步骤包含设置 SID 历史记录/SID 筛选。"
-keywords: 
+title: 步骤 7 安装 SID 历史记录/SID 筛选
+description: 这是使用脚本配置 Privileged Identity Manager 的第 7 步。 该步骤包含设置 SID 历史记录/SID 筛选。
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: MBaldwin
@@ -10,19 +10,20 @@ ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: e3d8578e9d58ccc2f3dc3bb4ff437d124bf15291
-ms.sourcegitcommit: 8edd380f54c3e9e83cfabe8adfa31587612e5773
+ms.openlocfilehash: d2512690ce648767157a7417e5b41095c970b8eb
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289102"
 ---
 # <a name="step-7-set-up-sid-historysid-filtering"></a>步骤 7 设置 SID 历史记录/SID 筛选
 
->[!div class="step-by-step"]
-[« 步骤 6](sp1-step6-setup-pam-trust.md)
-[步骤 8 »](sp1-step8-pam-deployment-verification.md)
+> [!div class="step-by-step"]
+> [« 步骤 6](sp1-step6-setup-pam-trust.md)
+> [步骤 8 »](sp1-step8-pam-deployment-verification.md)
 
 **这对于仅 PRIV 环境而言不需要** 使用 MIMAdmin 帐户登录 PAMServer。
 
@@ -38,6 +39,6 @@ ms.lasthandoff: 08/19/2017
 对于 SID 历史记录： </br></br>
 “为此信任启用 SID 历史记录”或“已经为此信任启用 SID 历史记录”。
 
->[!div class="step-by-step"]
-[« 步骤 6](sp1-step6-setup-pam-trust.md)
-[步骤 8 »](sp1-step8-pam-deployment-verification.md)
+> [!div class="step-by-step"]
+> [« 步骤 6](sp1-step6-setup-pam-trust.md)
+> [步骤 8 »](sp1-step8-pam-deployment-verification.md)

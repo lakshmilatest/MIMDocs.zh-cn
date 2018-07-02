@@ -12,18 +12,19 @@ ms.technology: security
 ms.assetid: 2585e9c5-ce34-46c7-bdcf-8c08773901dc
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: d2f8c000205aacafaeb4e159ef692e9666b4b965
-ms.sourcegitcommit: a98a4c1aee12016d480c400f4ff2c6aadb6518ee
+ms.openlocfilehash: c68b33b2ff28d75b6f4e63fa8caf0c87727a5927
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289391"
 ---
 # <a name="install-mim-2016-mim-synchronization-service"></a>安装 MIM 2016：MIM 同步服务
 
->[!div class="step-by-step"]
-[« Exchange Server](prepare-server-exchange.md)
-[MIM 服务和门户 »](install-mim-service-portal.md)
-
+> [!div class="step-by-step"]
+> [« Exchange Server](prepare-server-exchange.md)
+> [MIM 服务和门户 »](install-mim-service-portal.md)
+> 
 > [!NOTE]
 > 本演练使用名为 Contoso 的公司中的示例名和值。 将其替换为你自己的。 例如：
 > - 域控制器名称 - corpdc
@@ -31,7 +32,7 @@ ms.lasthandoff: 05/03/2018
 > - MIM 服务服务器名称 - corpservice
 > - MIM 同步服务器名称 - corpsync
 > - SQL Server 名称 - corpsql
-> - 密码 - **Pass@word1**
+> - 密码 - <strong>Pass@word1</strong>
 
 要安装 Microsoft Identity Manager 2016 组件，请先设置安装包。
 
@@ -55,37 +56,37 @@ ms.lasthandoff: 05/03/2018
 
     ![自定义安装图像](media/install-mim-sync/MIM_Install2.png)
 
-6.  在同步服务数据库配置屏幕中，选择：
+6. 在同步服务数据库配置屏幕中，选择：
 
-    1.  SQL Server 位于：名为 corpsql.contoso.com 的远程计算机上。
+   1.  SQL Server 位于：名为 corpsql.contoso.com 的远程计算机上。
 
-    2.  SQL Server 实例为：默认实例
+   2.  SQL Server 实例为：默认实例
 
-    ![数据库连接图像](media/install-mim-sync/MIM_Install3.png)
+   ![数据库连接图像](media/install-mim-sync/MIM_Install3.png)
 
-7.  根据之前创建的帐户配置同步服务帐户：
+7. 根据之前创建的帐户配置同步服务帐户：
 
-    1.  服务帐户： *MIMSync*
+   1. 服务帐户： *MIMSync*
 
-    2.  密码：*Pass@word1*
+   2. 密码：<em>Pass@word1</em>
 
-    3.  服务帐户域或本地计算机名称： *contoso*
+   3. 服务帐户域或本地计算机名称： *contoso*
 
-    ![服务帐户图像](media/install-mim-sync/MIM_Install4.png)
+   ![服务帐户图像](media/install-mim-sync/MIM_Install4.png)
 
-8.  提供具有相关安全组的 MIM 同步服务安装程序：
+8. 提供具有相关安全组的 MIM 同步服务安装程序：
 
-    1. Administrator = *contoso\MIMSyncAdmins*
+   1. Administrator = *contoso\MIMSyncAdmins*
 
-    2. Operator= *contoso\MIMSyncOperators*
+   2. Operator= *contoso\MIMSyncOperators*
 
-    3. Joiner = *contoso\MIMSyncJoiners*
+   3. Joiner = *contoso\MIMSyncJoiners*
 
-    4. Connector Browse = *contoso\MIMSyncBrowse*
+   4. Connector Browse = *contoso\MIMSyncBrowse*
 
-    5. WMI Password Management= *contoso\MIMSyncPasswordReset*
+   5. WMI Password Management= *contoso\MIMSyncPasswordReset*
 
-    ![安全组图像](media/install-mim-sync/MIM_Install5.png)
+   ![安全组图像](media/install-mim-sync/MIM_Install5.png)
 
 9. 在安全设置屏幕中，选中“为入站 RPC 通信启用防火墙规则”，然后单击“下一步”。
 
@@ -103,6 +104,6 @@ ms.lasthandoff: 05/03/2018
 
     5. 你需要注销，然后登录，才能使组成员身份更改生效。 单击“是”以注销。
 
->[!div class="step-by-step"]  
-[« Exchange Server](prepare-server-exchange.md)
-[MIM 服务和门户 »](install-mim-service-portal.md)
+> [!div class="step-by-step"]  
+> [« Exchange Server](prepare-server-exchange.md)
+> [MIM 服务和门户 »](install-mim-service-portal.md)

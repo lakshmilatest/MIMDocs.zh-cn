@@ -1,7 +1,7 @@
 ---
-title: "使用脚本配置 PAM"
-description: "本文是使用脚本配置 PAM 系列的一部分。 它介绍了如何修改 PAM 部署脚本将使用 XML 文件。"
-keywords: 
+title: 使用脚本配置 PAM
+description: 本文是使用脚本配置 PAM 系列的一部分。 它介绍了如何修改 PAM 部署脚本将使用 XML 文件。
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: MBaldwin
@@ -10,13 +10,14 @@ ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: 5718ec64fff049cb8717e4cbb36784c8f4ee4db3
-ms.sourcegitcommit: c13f814ce753e1fdacc7d0814087f59542e5098f
+ms.openlocfilehash: 741d722ce315b7265278997275d05981f44826e8
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289415"
 ---
 # <a name="configure-pam-using-scripts"></a>使用脚本配置 PAM
 
@@ -66,5 +67,5 @@ ms.lasthandoff: 07/26/2017
 |  CORPClient | <PRIV>\PRIV.pamRequestor 用户，如果是 PRIVOnly：<CORP>\pamrequestor   | Import-module .\PAMValidation.psm1；Test-PAMValidationScenarioNoApprovalRequest  |
 
 
->[!div class="step-by-step"]
-[开始 »](sp1-step1-configuring-priv-domain.md)
+> [!div class="step-by-step"]
+> [开始 »](sp1-step1-configuring-priv-domain.md)

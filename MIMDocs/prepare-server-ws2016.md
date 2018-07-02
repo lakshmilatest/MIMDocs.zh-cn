@@ -12,26 +12,27 @@ ms.technology: security
 ms.assetid: 51507d0a-2aeb-4cfd-a642-7c71e666d6cd
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 7c77ed0ceb541b9b00ebb9954ce65a53f0f44442
-ms.sourcegitcommit: 32d9a963a4487a8649210745c97a3254645e8744
+ms.openlocfilehash: bfc79d27f015ee3d57c33c26ecae0f5b8ff38370
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289483"
 ---
 # <a name="set-up-an-identity-management-servers-windows-server-2016"></a>设置标识管理服务器：Windows Server 2016
 
->[!div class="step-by-step"]
-[« 准备域](preparing-domain.md)
-[SQL Server 2016 »](prepare-server-sql2016.md)
-
+> [!div class="step-by-step"]
+> [« 准备域](preparing-domain.md)
+> [SQL Server 2016 »](prepare-server-sql2016.md)
+> 
 > [!NOTE]
 > 本演练使用名为 Contoso 的公司中的示例名和值。 将其替换为你自己的。 例如：
 > - 域控制器名称 - corpdc
 > - 域名 - **contoso**
 > - MIM 服务服务器名称 - corpservice
-> - MIM 同步服务服务器名称 - corpsync
+> - MIM 同步服务器名称 - corpsync
 > - SQL Server 名称 - corpsql
-> - 密码 - **Pass@word1**
+> - 密码 - <strong>Pass@word1</strong>
 
 ## <a name="join-windows-server-2016-to-your-domain"></a>将 Windows Server 2016 加入到域中
 
@@ -41,7 +42,7 @@ ms.lasthandoff: 04/27/2018
 
 2. 使用控制面板，为计算机提供一个网络上的静态 IP 地址。 配置该网络接口以便将 DNS 查询发送到上一步骤中的域控制器的 IP 地址，并将计算机名称设置为“CORPSERVICE”。  这将需要重新启动服务器。
 
-3. 打开控制面板，然后将计算机加入到上一步配置的域 contoso.com 中。这包括提供域管理员的用户名和凭据（例如 *Contoso\Administrator*）。  显示欢迎使用消息后，关闭该对话框并再次重新启动此服务器。
+3. 打开控制面板，然后将计算机加入到上一步配置的域 contoso.com 中。  这包括提供域管理员的用户名和凭据（例如 *Contoso\Administrator*）。  显示欢迎使用消息后，关闭该对话框并再次重新启动此服务器。
 
 4. 使用本地计算机管理员的域帐户（如 Contoso\MIMINSTALL）登录到计算机 CORPSERVICE。
 
@@ -112,6 +113,6 @@ ms.lasthandoff: 04/27/2018
     iisreset /START
     ```
 
->[!div class="step-by-step"]  
-[« 准备域](preparing-domain.md)
-[SQL Server 2016 »](prepare-server-sql2016.md)
+> [!div class="step-by-step"]  
+> [« 准备域](preparing-domain.md)
+> [SQL Server 2016 »](prepare-server-sql2016.md)

@@ -1,7 +1,7 @@
 ---
-title: "部署 PAM 步骤 1 - CORP 域 | Microsoft Docs"
-description: "准备 CORP 域，其具有将由 Privileged Identity Manager 管理的现有标识或新标识"
-keywords: 
+title: 部署 PAM 步骤 1 - CORP 域 | Microsoft Docs
+description: 准备 CORP 域，其具有将由 Privileged Identity Manager 管理的现有标识或新标识
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -12,16 +12,17 @@ ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: d14d2f40972686305abea2426e20f4c13e3e267b
-ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
+ms.openlocfilehash: f0d2ebd198ad6aee2b2b6ba07c83f5147243f598
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289595"
 ---
 # <a name="step-1---prepare-the-host-and-the-corp-domain"></a>步骤 1 - 准备主机和 CORP 域
 
->[!div class="step-by-step"]
-[步骤 2 »](step-2-prepare-priv-domain-controller.md)
+> [!div class="step-by-step"]
+> [步骤 2 »](step-2-prepare-priv-domain-controller.md)
 
 在该步骤中你将准备托管堡垒环境。 如果有必要，还将在具有由堡垒环境管理的身份的新域和林（*CORP* 林）中创建域控制器和成员工作站。 此 CORP 林将模拟具有要管理的资源的现有林。 本文档包含要保护的示例资源：一个文件共享。
 
@@ -56,15 +57,15 @@ ms.lasthandoff: 09/14/2017
 
 2. 键入下列命令。
 
-  ```PowoerShell
-  import-module ServerManager
+   ```PowoerShell
+   import-module ServerManager
 
-  Add-WindowsFeature AD-Domain-Services,DNS,FS-FileServer –restart –IncludeAllSubFeature -IncludeManagementTools
+   Add-WindowsFeature AD-Domain-Services,DNS,FS-FileServer –restart –IncludeAllSubFeature -IncludeManagementTools
 
-  Install-ADDSForest –DomainMode Win2008R2 –ForestMode Win2008R2 –DomainName contoso.local –DomainNetbiosName contoso –Force -NoDnsOnNetwork
-  ```
+   Install-ADDSForest –DomainMode Win2008R2 –ForestMode Win2008R2 –DomainName contoso.local –DomainNetbiosName contoso –Force -NoDnsOnNetwork
+   ```
 
-  这将提示使用安全模式管理员密码。 请注意，将出现 DNS 委派和加密设置的警告消息。 这些都是正常的。
+   这将提示使用安全模式管理员密码。 请注意，将出现 DNS 委派和加密设置的警告消息。 这些都是正常的。
 
 3. 在林创建操作完成后，请注销。服务器将自动重启。
 
@@ -80,11 +81,11 @@ ms.lasthandoff: 09/14/2017
 
 2. 键入以下命令，但是将“CONTOSO”替换为 NetBIOS 域名。
 
-  ```PowerShell
-  import-module activedirectory
+   ```PowerShell
+   import-module activedirectory
 
-  New-ADGroup –name 'CONTOSO$$$' –GroupCategory Security –GroupScope DomainLocal –SamAccountName 'CONTOSO$$$'
-  ```
+   New-ADGroup –name 'CONTOSO$$$' –GroupCategory Security –GroupScope DomainLocal –SamAccountName 'CONTOSO$$$'
+   ```
 
 在某些情况下该组可能已经存在 - 如果 AD 迁移场景中也使用该域，则这是正常情况。
 
@@ -101,21 +102,21 @@ ms.lasthandoff: 09/14/2017
 
 2. 键入下列命令。 将密码 'Pass@word1' 替换为其他密码字符串。
 
-  ```PowerShell
-  import-module activedirectory
+   ```PowerShell
+   import-module activedirectory
 
-  New-ADGroup –name CorpAdmins –GroupCategory Security –GroupScope Global –SamAccountName CorpAdmins
+   New-ADGroup –name CorpAdmins –GroupCategory Security –GroupScope Global –SamAccountName CorpAdmins
 
-  New-ADUser –SamAccountName Jen –name Jen
+   New-ADUser –SamAccountName Jen –name Jen
 
-  Add-ADGroupMember –identity CorpAdmins –Members Jen
+   Add-ADGroupMember –identity CorpAdmins –Members Jen
 
-  $jp = ConvertTo-SecureString "Pass@word1" –asplaintext –force
+   $jp = ConvertTo-SecureString "Pass@word1" –asplaintext –force
 
-  Set-ADAccountPassword –identity Jen –NewPassword $jp
+   Set-ADAccountPassword –identity Jen –NewPassword $jp
 
-  Set-ADUser –identity Jen –Enabled 1 -DisplayName "Jen"
-  ```
+   Set-ADUser –identity Jen –Enabled 1 -DisplayName "Jen"
+   ```
 
 ### <a name="configure-auditing"></a>配置审核
 
@@ -139,9 +140,9 @@ ms.lasthandoff: 09/14/2017
 
 8. 通过启动 PowerShell 窗口并键入以下内容应用审核设置：
 
-  ```cmd
-  gpupdate /force /target:computer
-  ```
+   ```cmd
+   gpupdate /force /target:computer
+   ```
 
 几分钟后将显示消息“计算机策略更新已成功完成”。
 
@@ -153,11 +154,11 @@ ms.lasthandoff: 09/14/2017
 
 2. 键入以下命令，这些命令将源域配置为允许远程过程调用 (RPC) 访问安全帐户管理器 (SAM) 数据库。
 
-  ```PowerShell
-  New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name TcpipClientSupport –PropertyType DWORD –Value 1
+   ```PowerShell
+   New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name TcpipClientSupport –PropertyType DWORD –Value 1
 
-  Restart-Computer
-  ```
+   Restart-Computer
+   ```
 
 这将重启域控制器，CORPDC。 有关此注册表设置的详细信息，请参阅[《如何解决在使用 ADMTv2 进行林间 SIDHistory 迁移时出现的问题》](http://support.microsoft.com/kb/322970)。
 
@@ -192,21 +193,21 @@ ms.lasthandoff: 09/14/2017
 
 4. 键入下列命令。
 
-  ```PowerShell
-  mkdir c:\corpfs
+   ```PowerShell
+   mkdir c:\corpfs
 
-  New-SMBShare –Name corpfs –Path c:\corpfs –ChangeAccess CorpAdmins
+   New-SMBShare –Name corpfs –Path c:\corpfs –ChangeAccess CorpAdmins
 
-  $acl = Get-Acl c:\corpfs
+   $acl = Get-Acl c:\corpfs
 
-  $car = New-Object System.Security.AccessControl.FileSystemAccessRule( "CONTOSO\CorpAdmins", "FullControl", "Allow")
+   $car = New-Object System.Security.AccessControl.FileSystemAccessRule( "CONTOSO\CorpAdmins", "FullControl", "Allow")
 
-  $acl.SetAccessRule($car)
+   $acl.SetAccessRule($car)
 
-  Set-Acl c:\corpfs $acl
-  ```
+   Set-Acl c:\corpfs $acl
+   ```
 
 在下一步骤中你将要准备 PRIV 域控制器。
 
->[!div class="step-by-step"]
-[步骤 2 »](step-2-prepare-priv-domain-controller.md)
+> [!div class="step-by-step"]
+> [步骤 2 »](step-2-prepare-priv-domain-controller.md)

@@ -12,16 +12,17 @@ ms.technology: security
 ms.assetid: 50345fda-56d7-4b6e-a861-f49ff90a8376
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: ff8d8a6f66212b006e2c17186dc299a5bcf3f68b
-ms.sourcegitcommit: 32d9a963a4487a8649210745c97a3254645e8744
+ms.openlocfilehash: ddab5b1ab57d3d332d5cd36ecc5a29abd83222ec
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289024"
 ---
 # <a name="set-up-a-domain"></a>设置域
 
->[!div class="step-by-step"]
-[Windows Server 2016 »](prepare-server-ws2016.md)
+> [!div class="step-by-step"]
+> [Windows Server 2016 »](prepare-server-ws2016.md)
 
 Microsoft Identity Manger (MIM) 适用于你的 Active Directory (AD) 域。 应已安装了 AD，并确保你的环境中有一个你能够管理的域的域控制器。
 
@@ -38,7 +39,7 @@ MIM 部署的所有组件都需要在域中具有自己的标识。 这包括服
 > - MIM 服务服务器名称 - corpservice
 > - MIM 同步服务器名称 - corpsync
 > - SQL Server 名称 - corpsql
-> - 密码 - **Pass@word1**
+> - 密码 - <strong>Pass@word1</strong>
 
 1. 以域管理员的身份登录到域控制器（*例如：Contoso\Administrator*）。
 
@@ -105,5 +106,5 @@ MIM 部署的所有组件都需要在域中具有自己的标识。 这包括服
 - 指向 corpservice 物理 IP 地址的 passwordreset.contoso.com
 - 指向 corpservice 物理 IP 地址的 passwordregistration.contoso.com
 
->[!div class="step-by-step"]
-[Windows Server 2016 »](prepare-server-ws2016.md)
+> [!div class="step-by-step"]
+> [Windows Server 2016 »](prepare-server-ws2016.md)

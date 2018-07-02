@@ -12,18 +12,19 @@ ms.technology: security
 ms.assetid: c01487f2-3de6-4fc4-8c3a-7d62f7c2496c
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 6922c3c2f66b6dbb0b0751420be9dd778206a3cf
-ms.sourcegitcommit: 8316fa41f06f137dba0739a8700910116b5575d8
+ms.openlocfilehash: f69648e7e4229ca7c8de895cdf10ccb2c5f368e2
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289527"
 ---
 # <a name="set-up-an-identity-management-server-sharepoint"></a>设置标识管理服务器：SharePoint
 
->[!div class="step-by-step"]
-[« SQL Server 2016](prepare-server-sql2016.md)
-[Exchange Server »](prepare-server-exchange.md)
-
+> [!div class="step-by-step"]
+> [« SQL Server 2016](prepare-server-sql2016.md)
+> [Exchange Server »](prepare-server-exchange.md)
+> 
 > [!NOTE]
 > 本演练使用名为 Contoso 的公司中的示例名和值。 将其替换为你自己的。 例如：
 > - 域控制器名称 - corpdc
@@ -31,7 +32,7 @@ ms.lasthandoff: 05/04/2018
 > - MIM 服务服务器名称 - corpservice
 > - MIM 同步服务器名称 - corpsync
 > - SQL Server 名称 - corpsql
-> - 密码 - **Pass@word1**
+> - 密码 - <strong>Pass@word1</strong>
 
 
 ## <a name="install-sharepoint-2016"></a>安装 SharePoint 2016
@@ -97,25 +98,25 @@ ms.lasthandoff: 05/04/2018
 
 2. 启动 SharePoint 2016 命令行管理程序并运行以下 PowerShell 脚本，以创建与 Web 应用程序关联的 Sharepoint 站点集合。
 
-  ```
+   ```
     $t = Get-SPWebTemplate -compatibilityLevel 15 -Identity "STS#1"
     $w = Get-SPWebApplication http://mim.contoso.com/
     New-SPSite -Url $w.Url -Template $t -OwnerAlias contoso\miminstall -CompatibilityLevel 15 -Name "MIM Portal"
     $s = SpSite($w.Url)
     $s.CompatibilityLevel
-  ```
+   ```
 
-  > [!NOTE]
-  > 验证 CompatibilityLevel 变量的结果是否为“15”。 如果结果不是“15”，则站点集合不是为正确体验版本创建的；删除该站点集合并重新创建。
+   > [!NOTE]
+   > 验证 CompatibilityLevel 变量的结果是否为“15”。 如果结果不是“15”，则站点集合不是为正确体验版本创建的；删除该站点集合并重新创建。
 
 3. 通过在“SharePoint 2016 命令行管理程序”中运行以下 PowerShell 命令来禁用“SharePoint 服务器端视图状态”和 SharePoint 任务“运行状况分析作业（每小时、Microsoft SharePoint Foundation 计时器、所有服务器）”：
 
-  ```
-  $contentService = [Microsoft.SharePoint.Administration.SPWebService]::ContentService;
-  $contentService.ViewStateOnServer = $false;
-  $contentService.Update();
-  Get-SPTimerJob hourly-all-sptimerservice-health-analysis-job | disable-SPTimerJob
-  ```
+   ```
+   $contentService = [Microsoft.SharePoint.Administration.SPWebService]::ContentService;
+   $contentService.ViewStateOnServer = $false;
+   $contentService.Update();
+   Get-SPTimerJob hourly-all-sptimerservice-health-analysis-job | disable-SPTimerJob
+   ```
 
 4. 在身份管理服务器上，打开一个新的 Web 浏览器选项卡，导航到 http://mim.contoso.com/ 并以 contoso\miminstall 身份登录。  将显示一个名为 *MIM 门户* 的空 SharePoint 站点。
 
@@ -129,6 +130,6 @@ ms.lasthandoff: 05/04/2018
 
 7. 打开“管理工具”程序，导航到“服务”，找到 SharePoint 管理服务，并启动它（如果未运行）。
 
->[!div class="step-by-step"]  
-[« SQL Server 2016](prepare-server-sql2016.md)
-[Exchange Server »](prepare-server-exchange.md)
+> [!div class="step-by-step"]  
+> [« SQL Server 2016](prepare-server-sql2016.md)
+> [Exchange Server »](prepare-server-exchange.md)

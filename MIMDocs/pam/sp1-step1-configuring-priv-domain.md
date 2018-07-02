@@ -1,7 +1,7 @@
 ---
-title: "步骤 1 配置 Priv 域"
-description: "准备 CORP 域，其具有将由 Privileged Identity Manager 使用脚本进行管理的现有标识或新标识"
-keywords: 
+title: 步骤 1 配置 Priv 域
+description: 准备 CORP 域，其具有将由 Privileged Identity Manager 使用脚本进行管理的现有标识或新标识
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: MBaldwin
@@ -10,21 +10,22 @@ ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: 40822bb7702cf3d7ac23ecd6e98ac392f2d3a480
-ms.sourcegitcommit: 8edd380f54c3e9e83cfabe8adfa31587612e5773
+ms.openlocfilehash: e5be140e7ffea7b0c7cacbc1c82d3b2883804203
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36290299"
 ---
 # <a name="step-1-configuring-the-priv-domain"></a>步骤 1 配置 Priv 域
 
->[!div class="step-by-step"]
-[步骤 2 »](sp1-step2-configuring-corp-domain.md)
+> [!div class="step-by-step"]
+> [步骤 2 »](sp1-step2-configuring-corp-domain.md)
 
 1. 以管理员身份登录 PRIVDC
-  * 如果这是仅限 PRIV 环境，请登录 CORPDC
+   * 如果这是仅限 PRIV 环境，请登录 CORPDC
 2. 以管理员身份运行 PowerShell
 3. cd $env: SYSTEMDRIVE\PAM
 4. .\PAMDeployment.ps1
@@ -41,5 +42,5 @@ ms.lasthandoff: 08/19/2017
 将在 $env: SYSTEMDRIVE\PAM 中生成的 SIDs.txt 复制到 CORPDC 上类似的文件夹。 这是 CORPDC 为 PRIV 用户设置权限以读取 CORP 用户属性所需的操作。
 该脚本完成后，系统将提示你重新启动计算机以使更改生效。
 
->[!div class="step-by-step"]
-[步骤 2 »](sp1-step2-configuring-corp-domain.md)
+> [!div class="step-by-step"]
+> [步骤 2 »](sp1-step2-configuring-corp-domain.md)

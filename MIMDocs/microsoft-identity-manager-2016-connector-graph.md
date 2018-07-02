@@ -10,11 +10,12 @@ ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
-ms.openlocfilehash: a0e2e280c3678867efc2ae8afa46c04ed38a1e11
-ms.sourcegitcommit: 637988684768c994398b5725eb142e16e4b03bb3
+ms.openlocfilehash: a66d424e8388005855ac8e64623f5a00f89682e9
+ms.sourcegitcommit: c773edc8262b38df50d82dae0f026bb49500d0a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34479360"
 ---
 <a name="the-microsoft-identity-manager-management-agent-for-microsoft-graph-public-preview"></a>用于 Microsoft Graph的 Microsoft Identity Manager 管理代理（公共预览版）
 =======================================================================================
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/26/2018
 <a name="b2b-account-lifecycle-management"></a>B2B 帐户生命周期管理
 --------------------------------
 
-用于 Microsoft Graph（预览版）的 Microsoft Identity Manager 管理代理预览版中的初始方案是外部用户 AD 帐户生命周期管理。 在这种情况下，组织已邀请来宾访问其 Azure AD 目录，并希望通过 [Azure AD 应用程序](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-application-proxy-publish)代理或其他网关机制为这些来宾提供对本地 Windows 集成身份验证或基于 Kerberos 的应用程序的访问权限。 Azure AD 应用程序代理要求每个用户都拥有自己的 AD DS 帐户，以便进行标识和委派
+用于 Microsoft Graph（预览版）的 Microsoft Identity Manager 管理代理预览版中的初始方案是外部用户 AD 帐户生命周期管理。 在这种情况下，组织已邀请来宾访问其 Azure AD 目录，并希望通过 [Azure AD 应用程序](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-publish)代理或其他网关机制为这些来宾提供对本地 Windows 集成身份验证或基于 Kerberos 的应用程序的访问权限。 Azure AD 应用程序代理要求每个用户都拥有自己的 AD DS 帐户，以便进行标识和委派
 
 未来可能会添加其他方案，并且[在此处记录](./microsoft-identity-manager-2016-graph-b2b-scenario.md)
 
@@ -186,7 +187,7 @@ HTTP 超时（秒）：将在每次对 WebAPI 应用程序发起 HTTP 调用期�
 
 图 7. “访问令牌已过期。” 错误
 
-此问题的原因可能是从 Azure 端配置访问令牌生存期。 默认情况下，访问令牌在 1 小时后过期。 要延长过期时间，请参阅[本文](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-configurable-token-lifetimes)。
+此问题的原因可能是从 Azure 端配置访问令牌生存期。 默认情况下，访问令牌在 1 小时后过期。 要延长过期时间，请参阅[本文](https://docs.microsoft.com/azure/active-directory/active-directory-configurable-token-lifetimes)。
 
 使用 [Azure AD PowerShell 模块公共预览版本](https://www.powershellgallery.com/packages/AzureADPreview)的示例
 

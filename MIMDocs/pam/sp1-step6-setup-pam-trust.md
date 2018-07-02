@@ -1,7 +1,7 @@
 ---
-title: "步骤 6 安装 PAM 信任"
-description: "步骤 6 使用脚本配置 PAM。 本部分介绍在 corp 域和 priv 域间设置必要的信任"
-keywords: 
+title: 步骤 6 安装 PAM 信任
+description: 步骤 6 使用脚本配置 PAM。 本部分介绍在 corp 域和 priv 域间设置必要的信任
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: MBaldwin
@@ -10,19 +10,20 @@ ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: a24b2a5a196e633379b696ee82e9428dd67454ca
-ms.sourcegitcommit: 8edd380f54c3e9e83cfabe8adfa31587612e5773
+ms.openlocfilehash: 5e3bed084b655535b0ac7b8b4252cdf541f6121f
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36288769"
 ---
 # <a name="step-6-set-up-the-pam-trust"></a>步骤 6 安装 PAM 信任
 
->[!div class="step-by-step"]
-[« 步骤 5](sp1-step5-configuring-pam.md)
-[步骤 7 »](sp1-step7-setup-sidhistory-sidfiltering.md)
+> [!div class="step-by-step"]
+> [« 步骤 5](sp1-step5-configuring-pam.md)
+> [步骤 7 »](sp1-step7-setup-sidhistory-sidfiltering.md)
 
 **这对于仅 PRIV 环境而言不需要** 使用 MIMAdmin 帐户登录 PAMServer。
 
@@ -32,8 +33,8 @@ ms.lasthandoff: 08/19/2017
 4. .\PAMDeployment.ps1
 5. 选择菜单选项 6（PAM 信任安装程序）
 
-  出现提示时，请输入 CORP 管理员帐户的凭据。 提供凭据后，将建立信任关系并完成配置。
+   出现提示时，请输入 CORP 管理员帐户的凭据。 提供凭据后，将建立信任关系并完成配置。
 
->[!div class="step-by-step"]
-[« 步骤 5](sp1-step5-configuring-pam.md)
-[步骤 7 »](sp1-step7-setup-sidhistory-sidfiltering.md)
+> [!div class="step-by-step"]
+> [« 步骤 5](sp1-step5-configuring-pam.md)
+> [步骤 7 »](sp1-step7-setup-sidhistory-sidfiltering.md)

@@ -1,7 +1,7 @@
 ---
-title: "BHOLD SP1 安装 | Microsoft Docs"
-description: "BHOLD SP1 安装文档"
-keywords: 
+title: BHOLD SP1 安装 | Microsoft Docs
+description: BHOLD SP1 安装文档
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -9,12 +9,13 @@ ms.date: 09/11/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
-ms.assetid: 
-ms.openlocfilehash: c36a9d02e90101b98ade913224e573ed21dc3d5c
-ms.sourcegitcommit: 0d8b19c5d4bfd39d9c202a3d2f990144402ca79c
+ms.assetid: ''
+ms.openlocfilehash: 11cde4e3b2779f9c32d9849a47713acf5f120b3c
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289690"
 ---
 # <a name="microsoft-bhold-suite-sp1-60-installation-guide"></a>Microsoft BHOLD 套件 SP1 (6.0) 安装指南
 
@@ -29,8 +30,8 @@ Microsoft® BHOLD 套件服务包 1 (SP1) 是应用程序的集合，与 Microso
 - BHOLD 证明
 
 
->[!NOTE]
-适用于：Microsoft Identity Manager 2016 SP1
+> [!NOTE]
+> 适用于：Microsoft Identity Manager 2016 SP1
 
 ## <a name="what-this-document-covers"></a>本文档包括
 
@@ -70,8 +71,8 @@ BHOLD 套件 SP1 和 FIM 门户一起安装在一台服务器上时，必须为 
 
 ![双服务器体系结构](media/bhold-installation-guide/dual.png)
 
->[!IMPORTANT]
-BHOLD FIM 集成模块的报表功能要求 BHOLD 数据库和 FIM 数据库安装在同一个 SQL Server 实例上，并且 BHOLD 服务帐户必须拥有对 FIM 服务数据库的访问权限。
+> [!IMPORTANT]
+> BHOLD FIM 集成模块的报表功能要求 BHOLD 数据库和 FIM 数据库安装在同一个 SQL Server 实例上，并且 BHOLD 服务帐户必须拥有对 FIM 服务数据库的访问权限。
 
 ### <a name="two-tier-architecture"></a>双层体系结构
 
@@ -109,7 +110,7 @@ Windows 可以配置为通过 Internet 连接从 Microsoft 检索根证书。 �
 
 ## <a name="upgrading-bhold-suite"></a>升级 BHOLD 套件
 
-不能升级现有 BHOLD 套件安装。 而是必须先卸载现有的 BHOLD 套件安装，然后才能更新 BHOLD 模块。 如果具有现有的 BHOLD 角色模型，则安装更新的 BHOLD 核心模块时，可以升级 BHOLD 数据库并使用。 有关详细信息，请参阅 [Replacing BHOLD Suite with BHOLD Suite SP1](https://technet.microsoft.com/en-us/library/jj874043(v=ws.10).aspx)（将 BHOLD 套件替换为 BHOLD 套件 SP1）。
+不能升级现有 BHOLD 套件安装。 而是必须先卸载现有的 BHOLD 套件安装，然后才能更新 BHOLD 模块。 如果具有现有的 BHOLD 角色模型，则安装更新的 BHOLD 核心模块时，可以升级 BHOLD 数据库并使用。 有关详细信息，请参阅 [Replacing BHOLD Suite with BHOLD Suite SP1](https://technet.microsoft.com/library/jj874043(v=ws.10).aspx)（将 BHOLD 套件替换为 BHOLD 套件 SP1）。
 
 
 ## <a name="next-steps"></a>后续步骤

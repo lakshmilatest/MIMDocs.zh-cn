@@ -1,7 +1,7 @@
 ---
-title: "部署 PAM 步骤 6 - 移动组 | Microsoft Docs"
-description: "将组迁移到 PRIV 林，以便可以通过 Privileged Access Management 对它们进行管理。"
-keywords: 
+title: 部署 PAM 步骤 6 - 移动组 | Microsoft Docs
+description: 将组迁移到 PRIV 林，以便可以通过 Privileged Access Management 对它们进行管理。
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -12,17 +12,18 @@ ms.technology: active-directory-domain-services
 ms.assetid: 7b689eff-3a10-4f51-97b2-cb1b4827b63c
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 550ad1e68ed8464dc7361e7a35ef35ee97753a9a
-ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
+ms.openlocfilehash: 3a7359c664e1c4aeacbc571242c2b348be186a89
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289578"
 ---
 # <a name="step-6--transition-a-group-to-privileged-access-management"></a>步骤 6 – 将某个组转换为特权访问管理
 
->[!div class="step-by-step"]
-[« 步骤 5 ](step-5-establish-trust-between-priv-corp-forests.md)
-[步骤 7 »](step-7-elevate-user-access.md)
+> [!div class="step-by-step"]
+> [« 步骤 5 ](step-5-establish-trust-between-priv-corp-forests.md)
+> [步骤 7 »](step-7-elevate-user-access.md)
 
 使用 PowerShell cmdlet 在 PRIV 林中创建了特权帐户。 这些 cmdlet 执行以下功能：
 
@@ -42,26 +43,26 @@ ms.lasthandoff: 09/14/2017
    Import-Module ActiveDirectory
 ```
 
-3.  针对现有林中的用户帐户，在 PRIV 中创建相应的用于演示的用户帐户。
+3. 针对现有林中的用户帐户，在 PRIV 中创建相应的用于演示的用户帐户。
 
-    在 PowerShell 中键入以下命令。  如果之前未在 contoso.local 中使用名称 Jen 创建用户，请根据情况更改命令的参数。 密码 'Pass@word1' 只是一个示例，应更改为唯一密码值。
+   在 PowerShell 中键入以下命令。  如果之前未在 contoso.local 中使用名称 Jen 创建用户，请根据情况更改命令的参数。 密码 'Pass@word1' 只是一个示例，应更改为唯一密码值。
 
- ```PowerShell
-        $sj = New-PAMUser –SourceDomain CONTOSO.local –SourceAccountName Jen
-        $jp = ConvertTo-SecureString "Pass@word1" –asplaintext –force
-        Set-ADAccountPassword –identity priv.Jen –NewPassword $jp
-        Set-ADUser –identity priv.Jen –Enabled 1
-  ```
+   ```PowerShell
+       $sj = New-PAMUser –SourceDomain CONTOSO.local –SourceAccountName Jen
+       $jp = ConvertTo-SecureString "Pass@word1" –asplaintext –force
+       Set-ADAccountPassword –identity priv.Jen –NewPassword $jp
+       Set-ADUser –identity priv.Jen –Enabled 1
+   ```
 
 4. 出于演示目的，将一个组及其成员 Jen，从 CONTOSO 复制到 PRIV 域。
 
     运行以下命令，在系统提示你输入 CORP 域管理员 (CONTOSO\Administrator) 密码时请指定该密码：
 
- ```PowerShell
+   ```PowerShell
         $ca = get-credential –UserName CONTOSO\Administrator –Message "CORP forest domain admin credentials"
         $pg = New-PAMGroup –SourceGroupName "CorpAdmins" –SourceDomain CONTOSO.local                 –SourceDC CORPDC.contoso.local –Credentials $ca
         $pr = New-PAMRole –DisplayName "CorpAdmins" –Privileges $pg –Candidates $sj
- ```
+   ```
 
     **New-PAMGroup** 命令采用以下参数（供参考）：
 
@@ -70,19 +71,19 @@ ms.lasthandoff: 09/14/2017
      -   CORP 林域控制器的 NetBIOS 名称  
      -   CORP 林中的域管理员用户的凭据  
 
-5.  （可选）在 CORPDC 上，从 **CONTOSO CorpAdmins** 组中删除 Jen 的帐户（如果仍存在）。  这仅仅是出于演示的需要，用来说明如何将权限与 PRIV 林中创建的帐户相关联。
+5. （可选）在 CORPDC 上，从 **CONTOSO CorpAdmins** 组中删除 Jen 的帐户（如果仍存在）。  这仅仅是出于演示的需要，用来说明如何将权限与 PRIV 林中创建的帐户相关联。
 
-    1.  以 CONTOSO\Administrator 身份登录到 CORPDC。
+   1.  以 CONTOSO\Administrator 身份登录到 CORPDC。
 
-    2.  启动 PowerShell，运行以下命令并确认更改。
+   2.  启动 PowerShell，运行以下命令并确认更改。
 
-        ```PowerShell
-        Remove-ADGroupMember -identity "CorpAdmins" -Members "Jen"
-        ```
+       ```PowerShell
+       Remove-ADGroupMember -identity "CorpAdmins" -Members "Jen"
+       ```
 
 
 如果你想要证明跨林的访问权限对用户的管理员帐户有效，则继续下一步。
 
->[!div class="step-by-step"]
-[« 步骤 5 ](step-5-establish-trust-between-priv-corp-forests.md)
-[步骤 7 »](step-7-elevate-user-access.md)
+> [!div class="step-by-step"]
+> [« 步骤 5 ](step-5-establish-trust-between-priv-corp-forests.md)
+> [步骤 7 »](step-7-elevate-user-access.md)

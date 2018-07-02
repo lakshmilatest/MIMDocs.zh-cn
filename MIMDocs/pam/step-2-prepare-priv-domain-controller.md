@@ -1,7 +1,7 @@
 ---
-title: "部署 PAM 步骤 2 – PRIV DC | Microsoft Docs"
-description: "准备 PRIV 域控制器，它将提供堡垒环境，Privileged Access Management 在此环境中是独立的。"
-keywords: 
+title: 部署 PAM 步骤 2 – PRIV DC | Microsoft Docs
+description: 准备 PRIV 域控制器，它将提供堡垒环境，Privileged Access Management 在此环境中是独立的。
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -12,17 +12,18 @@ ms.technology: active-directory-domain-services
 ms.assetid: 0e9993a0-b8ae-40e2-8228-040256adb7e2
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: de3392648f187ce6007bba332c0f191d32980c94
-ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
+ms.openlocfilehash: 960ec81d822e02a848c3ef9ac1b65f5fa0d9e61a
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289449"
 ---
 # <a name="step-2---prepare-the-first-priv-domain-controller"></a>步骤 2 - 准备第一个 PRIV 域控制器
 
->[!div class="step-by-step"]
-[« 步骤 1](step-1-prepare-corp-domain.md)
-[步骤 3 »](step-3-prepare-pam-server.md)
+> [!div class="step-by-step"]
+> [« 步骤 1](step-1-prepare-corp-domain.md)
+> [步骤 3 »](step-3-prepare-pam-server.md)
 
 在此步骤中，你将创建一个新域，用于为管理员进行身份验证提供堡垒环境。  此林将需要至少一个域控制器和至少一个成员服务器。 成员服务器将在下一步骤中进行配置。
 
@@ -52,11 +53,11 @@ ms.lasthandoff: 09/14/2017
 
 2. 键入以下命令以准备安装 Windows Server Active Directory。
 
-  ```PowerShell
-  import-module ServerManager
+   ```PowerShell
+   import-module ServerManager
 
-  Install-WindowsFeature AD-Domain-Services,DNS –restart –IncludeAllSubFeature -IncludeManagementTools
-  ```
+   Install-WindowsFeature AD-Domain-Services,DNS –restart –IncludeAllSubFeature -IncludeManagementTools
+   ```
 
 ### <a name="configure-registry-settings-for-sid-history-migration"></a>配置 SID 历史记录迁移所需的注册表设置
 
@@ -76,10 +77,10 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
 
 1. 在“PowerShell”窗口中，键入以下命令以创建新域。  此操作还将在上一步骤所创建的高级域 (contoso.local) 中创建一个 DNS 委派。  如果想要在以后配置 DNS，则忽略 `CreateDNSDelegation -DNSDelegationCredential $ca` 参数。
 
-  ```PowerShell
-  $ca= get-credential
-  Install-ADDSForest –DomainMode 6 –ForestMode 6 –DomainName priv.contoso.local –DomainNetbiosName priv –Force –CreateDNSDelegation –DNSDelegationCredential $ca
-  ```
+   ```PowerShell
+   $ca= get-credential
+   Install-ADDSForest –DomainMode 6 –ForestMode 6 –DomainName priv.contoso.local –DomainNetbiosName priv –Force –CreateDNSDelegation –DNSDelegationCredential $ca
+   ```
 
 2. 当出现弹出窗口时，为 CORP 林管理员提供凭据（如：用户名 CONTOSO\\Administrator 和步骤 1 中对应的密码）。
 
@@ -95,69 +96,69 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
 
 2. 启动 PowerShell，键入以下命令。 密码 'Pass@word1' 只是一个示例，应为帐户使用不同的密码。
 
-  ```PowerShell
-  import-module activedirectory
+   ```PowerShell
+   import-module activedirectory
 
-  $sp = ConvertTo-SecureString "Pass@word1" –asplaintext –force
+   $sp = ConvertTo-SecureString "Pass@word1" –asplaintext –force
 
-  New-ADUser –SamAccountName MIMMA –name MIMMA
+   New-ADUser –SamAccountName MIMMA –name MIMMA
 
-  Set-ADAccountPassword –identity MIMMA –NewPassword $sp
+   Set-ADAccountPassword –identity MIMMA –NewPassword $sp
 
-  Set-ADUser –identity MIMMA –Enabled 1 –PasswordNeverExpires 1
+   Set-ADUser –identity MIMMA –Enabled 1 –PasswordNeverExpires 1
 
-  New-ADUser –SamAccountName MIMMonitor –name MIMMonitor -DisplayName MIMMonitor
+   New-ADUser –SamAccountName MIMMonitor –name MIMMonitor -DisplayName MIMMonitor
 
-  Set-ADAccountPassword –identity MIMMonitor –NewPassword $sp
+   Set-ADAccountPassword –identity MIMMonitor –NewPassword $sp
 
-  Set-ADUser –identity MIMMonitor –Enabled 1 –PasswordNeverExpires 1
+   Set-ADUser –identity MIMMonitor –Enabled 1 –PasswordNeverExpires 1
 
-  New-ADUser –SamAccountName MIMComponent –name MIMComponent -DisplayName MIMComponent
+   New-ADUser –SamAccountName MIMComponent –name MIMComponent -DisplayName MIMComponent
 
-  Set-ADAccountPassword –identity MIMComponent –NewPassword $sp
+   Set-ADAccountPassword –identity MIMComponent –NewPassword $sp
 
-  Set-ADUser –identity MIMComponent –Enabled 1 –PasswordNeverExpires 1
+   Set-ADUser –identity MIMComponent –Enabled 1 –PasswordNeverExpires 1
 
-  New-ADUser –SamAccountName MIMSync –name MIMSync
+   New-ADUser –SamAccountName MIMSync –name MIMSync
 
-  Set-ADAccountPassword –identity MIMSync –NewPassword $sp
+   Set-ADAccountPassword –identity MIMSync –NewPassword $sp
 
-  Set-ADUser –identity MIMSync –Enabled 1 –PasswordNeverExpires 1
+   Set-ADUser –identity MIMSync –Enabled 1 –PasswordNeverExpires 1
 
-  New-ADUser –SamAccountName MIMService –name MIMService
+   New-ADUser –SamAccountName MIMService –name MIMService
 
-  Set-ADAccountPassword –identity MIMService –NewPassword $sp
+   Set-ADAccountPassword –identity MIMService –NewPassword $sp
 
-  Set-ADUser –identity MIMService –Enabled 1 –PasswordNeverExpires 1
+   Set-ADUser –identity MIMService –Enabled 1 –PasswordNeverExpires 1
 
-  New-ADUser –SamAccountName SharePoint –name SharePoint
+   New-ADUser –SamAccountName SharePoint –name SharePoint
 
-  Set-ADAccountPassword –identity SharePoint –NewPassword $sp
+   Set-ADAccountPassword –identity SharePoint –NewPassword $sp
 
-  Set-ADUser –identity SharePoint –Enabled 1 –PasswordNeverExpires 1
+   Set-ADUser –identity SharePoint –Enabled 1 –PasswordNeverExpires 1
 
-  New-ADUser –SamAccountName SqlServer –name SqlServer
+   New-ADUser –SamAccountName SqlServer –name SqlServer
 
-  Set-ADAccountPassword –identity SqlServer –NewPassword $sp
+   Set-ADAccountPassword –identity SqlServer –NewPassword $sp
 
-  Set-ADUser –identity SqlServer –Enabled 1 –PasswordNeverExpires 1
+   Set-ADUser –identity SqlServer –Enabled 1 –PasswordNeverExpires 1
 
-  New-ADUser –SamAccountName BackupAdmin –name BackupAdmin
+   New-ADUser –SamAccountName BackupAdmin –name BackupAdmin
 
-  Set-ADAccountPassword –identity BackupAdmin –NewPassword $sp
+   Set-ADAccountPassword –identity BackupAdmin –NewPassword $sp
 
-  Set-ADUser –identity BackupAdmin –Enabled 1 -PasswordNeverExpires 1
+   Set-ADUser –identity BackupAdmin –Enabled 1 -PasswordNeverExpires 1
 
-  New-ADUser -SamAccountName MIMAdmin -name MIMAdmin
+   New-ADUser -SamAccountName MIMAdmin -name MIMAdmin
 
-  Set-ADAccountPassword –identity MIMAdmin  -NewPassword $sp
+   Set-ADAccountPassword –identity MIMAdmin  -NewPassword $sp
 
-  Set-ADUser -identity MIMAdmin -Enabled 1 -PasswordNeverExpires 1
+   Set-ADUser -identity MIMAdmin -Enabled 1 -PasswordNeverExpires 1
 
-  Add-ADGroupMember "Domain Admins" SharePoint
+   Add-ADGroupMember "Domain Admins" SharePoint
 
-  Add-ADGroupMember "Domain Admins" MIMService
-  ```
+   Add-ADGroupMember "Domain Admins" MIMService
+   ```
 
 ### <a name="configure-auditing-and-logon-rights"></a>配置审核和登录权限
 
@@ -201,11 +202,11 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
 
 19. 以管理员身份启动 PowerShell 窗口，并键入以下命令以从组策略设置中更新 DC。
 
-  ```cmd
-  gpupdate /force /target:computer
-  ```
+    ```cmd
+    gpupdate /force /target:computer
+    ```
 
-  一分钟后，它将完成并显示消息“计算机策略更新已成功完成”。
+    一分钟后，它将完成并显示消息“计算机策略更新已成功完成”。
 
 
 ### <a name="configure-dns-name-forwarding-on-privdc"></a>在 PRIVDC 上配置 DNS 名称转发
@@ -216,11 +217,11 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
 
 2. 对于每个现有林顶部的每个域，键入以下命令，指定现有的 DNS 域（例如：contoso.local）以及该域的主服务器的 IP 地址。  
 
-  如果在上一步创建了一个 contoso.local 域，则指定 *10.1.1.31* 作为 CORPDC 计算机的虚拟网络 IP 地址。
+   如果在上一步创建了一个 contoso.local 域，则指定  *10.1.1.31* 作为 CORPDC 计算机的虚拟网络 IP 地址。
 
-  ```PowerShell
-  Add-DnsServerConditionalForwarderZone –name "contoso.local" –masterservers 10.1.1.31
-  ```
+   ```PowerShell
+   Add-DnsServerConditionalForwarderZone –name "contoso.local" –masterservers 10.1.1.31
+   ```
 
 > [!NOTE]
 > 其他林也必须能够按指定路线将 PRIV 林的 DNS 查询发送到此域控制器。  如果具有多个现有的 Active Directory 林，则还必须为这些林的每一个添加一个 DNS 条件转发器。
@@ -229,12 +230,12 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
 
 1. 使用 PowerShell 添加 SPN，以便 SharePoint、PAM REST API 和 MIM 服务可以使用 Kerberos 身份验证。
 
-  ```cmd
-  setspn -S http/pamsrv.priv.contoso.local PRIV\SharePoint
-  setspn -S http/pamsrv PRIV\SharePoint
-  setspn -S FIMService/pamsrv.priv.contoso.local PRIV\MIMService
-  setspn -S FIMService/pamsrv PRIV\MIMService
-  ```
+   ```cmd
+   setspn -S http/pamsrv.priv.contoso.local PRIV\SharePoint
+   setspn -S http/pamsrv PRIV\SharePoint
+   setspn -S FIMService/pamsrv.priv.contoso.local PRIV\MIMService
+   setspn -S FIMService/pamsrv PRIV\MIMService
+   ```
 
 > [!NOTE]
 > 本文的后续步骤将介绍如何在单台计算机上安装 MIM 2016 服务器组件。 如果打算添加另一台服务器以实现高可用性，则将需要如 [FIM 2010: Kerberos Authentication Setup](http://social.technet.microsoft.com/wiki/contents/articles/3385.fim-2010-kerberos-authentication-setup.aspx)（FIM 2010：Kerberos 身份验证设置）中所述的其他 Kerberos 配置。
@@ -254,13 +255,13 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
 8. 在“选择用户、计算机或组”窗口中，输入“MIMAdmin”，然后单击“检查名称”。 在名称带有下划线后，单击“确定”，然后单击“下一步”。
 9. 选择“自定义任务” ，使用“常规权限” 应用到“此文件夹” 。
 10. 在权限列表中，选择以下项：
-  - **读取**
-  - **写入**
-  - **创建所有子对象**
-  - **删除所有子对象**
-  - **读取所有属性**
-  - **写入所有属性**
-  - **迁移 SID 历史记录** 单击“下一步”，然后单击“完成”。
+    - **读取**
+    - **写入**
+    - **创建所有子对象**
+    - **删除所有子对象**
+    - **读取所有属性**
+    - **写入所有属性**
+    - **迁移 SID 历史记录** 单击“下一步”，然后单击“完成”。
 
 11. 再次右键单击域“priv.contoso.local”并选择“委派控制”。  
 12. 在“选定的用户和组”选项卡上，单击“添加”。  
@@ -271,9 +272,9 @@ New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name Tcpip
 
 17. 打开命令提示符。  
 18. 查看 PRIV 域中 Admin SD Holder 对象上的访问控制列表。 例如，如果你的域为“priv.contoso.local”，则键入以下命令
-  ```cmd
-  dsacls "cn=adminsdholder,cn=system,dc=priv,dc=contoso,dc=local"
-  ```
+    ```cmd
+    dsacls "cn=adminsdholder,cn=system,dc=priv,dc=contoso,dc=local"
+    ```
 19. 根据需要更新访问控制列表，以确保 MIM 服务和 MIM 组件服务可以更新由此 ACL 保护的组成员。  键入命令：
 
 ```cmd
@@ -299,10 +300,10 @@ dsacls "cn=adminsdholder,cn=system,dc=priv,dc=contoso,dc=local" /G priv\mimcompo
 
 4. 使用“控制面板”，将 PRIVWKSTN 计算机加入到 priv.contoso.local 域。 此操作将需要提供 PRIV 域管理员凭据。 完成此步骤后，重启计算机 PRIVWKSTN。
 
-若要了解更多详细信息，请参阅[保护访问特权工作站](https://technet.microsoft.com/en-us/library/mt634654.aspx)。
+若要了解更多详细信息，请参阅[保护访问特权工作站](https://technet.microsoft.com/library/mt634654.aspx)。
 
 下一步将介绍准备 PAM 服务器。
 
->[!div class="step-by-step"]
-[« 步骤 1](step-1-prepare-corp-domain.md)
-[步骤 3 »](step-3-prepare-pam-server.md)
+> [!div class="step-by-step"]
+> [« 步骤 1](step-1-prepare-corp-domain.md)
+> [步骤 3 »](step-3-prepare-pam-server.md)

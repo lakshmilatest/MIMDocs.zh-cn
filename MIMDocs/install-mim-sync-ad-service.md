@@ -12,22 +12,23 @@ ms.technology: security
 ms.assetid: 5e532b67-64a6-4af6-a806-980a6c11a82d
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 736d933f2c62d440abafdab27f82b3b1ba0f9a06
-ms.sourcegitcommit: 48f89d555c0ac7caa97d149ee42e0b9ef6ccc5f5
+ms.openlocfilehash: 119dca043ec478e68317c14103204da2482eb001
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36290146"
 ---
 # <a name="install-mim-2016-synchronize-active-directory-and-mim-service"></a>安装 MIM 2016：同步 Active Directory 和 MIM 服务
 
->[!div class="step-by-step"]
-[« MIM 服务和门户](install-mim-service-portal.md)
-
+> [!div class="step-by-step"]
+> [« MIM 服务和门户](install-mim-service-portal.md)
+> 
 > [!NOTE]
 > 本演练使用名为 Contoso 的公司中的示例名和值。 将其替换为你自己的。 例如：
 > - 域控制器名称 - **mimservername**
 > - 域名 - **contoso**
-> - 密码 - **Pass@word1**
+> - 密码 - <strong>Pass@word1</strong>
 
 默认情况下，MIM 同步服务 (Sync) 未配置任何连接器。  典型的第一步是通过 MIM 同步来使用现有的 Active Directory 帐户填充 MIM 服务数据库。 为此，你将使用 MIM 同步服务应用程序。
 
@@ -39,7 +40,7 @@ MIM 管理代理 (MA) 是 MIM 同步到 MIM 服务的连接器。 若要创建�
 > [!NOTE]
 > 用于 MIM 管理代理的帐户必须与 MIM 服务安装过程中指定的帐户相同。
 
-###<a name="to-create-the-mim-ma"></a>创建 MIM MA
+### <a name="to-create-the-mim-ma"></a>创建 MIM MA
 
 1.  打开“同步服务管理器”。
 
@@ -429,5 +430,5 @@ Active Directory 管理代理是 AD 域服务的连接器。 若要创建此连�
     - 在**运行配置文件**列表中，选择想要运行的运行配置文件。
     - 单击**确定**以启动运行配置文件。
 
->[!div class="step-by-step"]
-[« MIM 服务和门户](install-mim-service-portal.md)
+> [!div class="step-by-step"]
+> [« MIM 服务和门户](install-mim-service-portal.md)

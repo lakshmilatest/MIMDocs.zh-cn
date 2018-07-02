@@ -11,19 +11,20 @@ ms.prod: identity-manager-2016
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: ''
-ms.openlocfilehash: 50f7b135ce0d5a46ea08068a7658b229759d2b50
-ms.sourcegitcommit: 24bb3e82f55971696bdefa6c240f1a27f856e110
+ms.openlocfilehash: a4239f1d69d8a43d70dd38af16e9ef8be62bd33c
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36288905"
 ---
 # <a name="deprecated-features"></a>已弃用的功能
 
 本文记录 Microsoft Identity Manager 2016 SP1 已弃用的功能。 如果 Microsoft Identity Manager 中仍有某个功能，则仍然支持该功能。 不建议为新部署使用这些功能，因为可能会在某个未来版本中删除它们。  我们不建议开发人员在任何新的应用程序或解决方案中使用已弃用的功能。
 
->[!NOTE]
-使用 ** 对 Microsoft Identity Manager SP1 中已删除的特性和功能进行了标识。 <br>
-有关详细信息，请参阅 [Microsoft Identity Manager 的支持周期](https://support.microsoft.com/en-us/lifecycle/search?alpha=Microsoft%20Forefront%20Identity%20Manager%202010%20R2%20Service%20Pack%201,Microsoft%20Identity%20Manager%202016,Microsoft%20Forefront%20Identity%20Manager%202010)
+> [!NOTE]
+> 使用 ** 对 Microsoft Identity Manager SP1 中已删除的特性和功能进行了标识。 <br>
+> 有关详细信息，请参阅 [Microsoft Identity Manager 的支持周期](https://support.microsoft.com/en-us/lifecycle/search?alpha=Microsoft%20Forefront%20Identity%20Manager%202010%20R2%20Service%20Pack%201,Microsoft%20Identity%20Manager%202016,Microsoft%20Forefront%20Identity%20Manager%202010)
 
 
 ## <a name="bhold"></a>BHOLD 
@@ -31,6 +32,7 @@ ms.lasthandoff: 05/17/2018
 Microsoft 不建议客户开始进行 Microsoft BHOLD 套件组件的新部署。 BHOLD 的现有部署将继续受到支持。 Azure AD 现在提供[访问评审](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview)，替换某些 BHOLD 证明活动功能。
 
 ## <a name="certificate-management"></a>证书管理 
+
 | “类别”                | **已弃用的功能**              | **替换和注释**           |
 |-----------------------------|-------------------------------------|----------------------------------------------|
 | 管理代理 | **FIM 证书管理 | MIM 2016 中已删除了 FIM 证书管理代理。                                                             |
@@ -53,8 +55,8 @@ Microsoft 不建议客户开始进行 Microsoft BHOLD 套件组件的新部署�
 | 管理代理           | 配置分区显示名称    | 不会替换此功能。 此选项仅用于提供 WMI 接口中某个分区的备用名称。                                                                                                                                                                       |
 | 运行配置文件                | 组合的配置文件                   | 将删除组合配置文件的增量导入/同步、完全导入/增量同步和完全导入/同步。 应改为通过两个步骤运行配置文件。 
 
->[!NOTE]
-应仅在性能将受到大量现有断电器影响的环境中保留组合的运行配置文件。
+> [!NOTE]
+> 应仅在性能将受到大量现有断电器影响的环境中保留组合的运行配置文件。
 
 
 | “类别”                | **已弃用的功能**              | **替换和注释**           |

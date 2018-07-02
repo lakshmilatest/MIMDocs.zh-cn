@@ -1,7 +1,7 @@
 ---
-title: "Microsoft Identity Manager 2016 密码管理 | Microsoft Docs"
-description: 
-keywords: 
+title: Microsoft Identity Manager 2016 密码管理 | Microsoft Docs
+description: ''
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -10,12 +10,13 @@ ms.topic: reference
 ms.prod: identity-manager-2016
 ms.service: microsoft-identity-manager
 ms.technology: security
-ms.assetid: 
-ms.openlocfilehash: 156551f4083c71ee7059e817213751393db5833e
-ms.sourcegitcommit: 5ba5d916c0ca1e5aa501592af0cef714bfdc8afe
+ms.assetid: ''
+ms.openlocfilehash: 86b8b9bdf5c6441d0708cd874742fa48b65177fa
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289357"
 ---
 # <a name="microsoft-identity-manager-2016-password-management"></a>Microsoft Identity Manager 2016 密码管理
 
@@ -61,8 +62,8 @@ ms.lasthandoff: 08/02/2017
 
 密码同步在 Active Directory 域中与密码更改通知服务 (PCNS) 配合使用，并且允许将来自 Active Directory 的密码更改自动传播到其他连接的数据源。 MIM 通过作为远程过程调用 (RPC) 服务器运行来侦听来自 Active Directory 域控制器的密码更改通知，从而完成此操作。 接收到密码更改请求并对其进行身份验证后，MIM 将对其进行处理，然后再传播到合适的管理代理。
 
->[!IMPORTANT]
-MIM 不支持双向密码同步。 配置双向密码同步会创建一个循环，这将占用服务器资源并且可能会对 Active Directory 和 MIM 产生负面影响。
+> [!IMPORTANT]
+> MIM 不支持双向密码同步。 配置双向密码同步会创建一个循环，这将占用服务器资源并且可能会对 Active Directory 和 MIM 产生负面影响。
 
 PCNS 会在每个 Active Directory 域控制器上运行。 接收密码通知的系统被称为目标。 必须将 MIM 服务器配置为 Active Directory 中的 PCNS 目标，然后才能发送密码通知。 PCNS 配置必须定义包含组并选择性地定义排除组。 这些组用于限制来自域的敏感密码流。 例如，若要发送所有用户密码而不发送管理员密码，可选择将“域用户”用作包含组并将“域管理员”用作排除组。 若要深入了解如何配置密码更改通知服务，请参阅[使用密码同步](https://technet.microsoft.com/library/jj590288(v=ws.10).aspx)
 
@@ -110,7 +111,7 @@ PCNS 会在每个 Active Directory 域控制器上运行。 接收密码通知�
 
 将密码更改请求从 Active Directory 域控制器同步到其他连接数据源的过程如下图所示：
 
-1.  用户通过按 Ctrl+Alt+Del 可启动密码更改请求。 密码更改请求（包括新密码）将发送到最近的域控制器。
+1.  用户通过按 Ctrl+Alt+Del 可启动密码更改请求。密码更改请求（包括新密码）将发送到最近的域控制器。
 
 2.  域控制器将记录密码更改请求并通知密码更改通知筛选器 (Pcnsflt.dll)。
 
@@ -149,7 +150,7 @@ PCNS 会在每个 Active Directory 域控制器上运行。 接收密码通知�
 
 有些错误十分严重，导致再多的重试都无法促使操作成功。 在这些情况下，将记录错误事件并停止进程。 以下事件不会重试：
 
-| 事件 | 严重性    | 说明                                                                                                                                                            |
+| 事件 | 严重性    | 描述                                                                                                                                                            |
 |-------|-------------|-----------|
 | 6919  | 信息 | 时间戳已过时，因此未执行密码同步设置操作。                                                                      |
 | 6921  | 错误       | 目标管理代理上未启用密码管理，因此未执行密码同步设置操作。                                |
