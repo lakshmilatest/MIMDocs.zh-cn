@@ -3,11 +3,12 @@ layout: LandingPage
 ms.topic: landing-page
 title: Microsoft Identity Manager 文档 | Microsoft Docs
 description: 了解如何使用 Microsoft Identity Manager。
-ms.openlocfilehash: 99fdb07edc7bd8996e620f27de9f5906aa6a15ed
-ms.sourcegitcommit: 637988684768c994398b5725eb142e16e4b03bb3
+ms.openlocfilehash: 46aaf8fffc6cf4629c2d2768979ba6a5a68c2f54
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36288881"
 ---
 # <a name="microsoft-identity-manager-documentation"></a>Microsoft Identity Manager 文档
 
@@ -71,8 +72,8 @@ Microsoft Identity Manager 2016 将 Active Directory、LDAP、Oracle 和其他�
 
 ---
 <br>
->[!Warning]
-Forefront Identity Manager (FIM) 主流支持已于 2017 年 10 月 10 日结束。 请[升级](microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md)到 Microsoft Identity Manager 2016。 更多信息： </br>  - [此处](https://support.microsoft.com/lifecycle/search?alpha=Microsoft%20Forefront%20Identity%20Manager%202010%20R2%20Service%20Pack%201,Microsoft%20Identity%20Manager%202016,Microsoft%20Forefront%20Identity%20Manager%202010)提供了 FIM 生命周期信息 </br> - 有关公用版标识产品的信息，请参阅 [Microsoft Identity Software: Public Release Build Versions](https://blogs.technet.microsoft.com/iamsupport/idmbuildversions/)（Microsoft 标识软件：公用版本）一文
+&gt;[!Warning]
+Forefront Identity Manager (FIM) 主流支持已于 2017 年 10 月 10 日结束。 请<a href="microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md" data-raw-source="[upgrade](microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md)">升级</a>到 Microsoft Identity Manager 2016。 更多信息： </br>  - <a href="https://support.microsoft.com/lifecycle/search?alpha=Microsoft%20Forefront%20Identity%20Manager%202010%20R2%20Service%20Pack%201,Microsoft%20Identity%20Manager%202016,Microsoft%20Forefront%20Identity%20Manager%202010" data-raw-source="[here](https://support.microsoft.com/lifecycle/search?alpha=Microsoft%20Forefront%20Identity%20Manager%202010%20R2%20Service%20Pack%201,Microsoft%20Identity%20Manager%202016,Microsoft%20Forefront%20Identity%20Manager%202010)">此处</a>提供了 FIM 生命周期信息 </br> - 有关公用版标识产品的信息，请参阅 <a href="https://blogs.technet.microsoft.com/iamsupport/idmbuildversions/" data-raw-source="[Microsoft Identity Software: Public Release Build Versions](https://blogs.technet.microsoft.com/iamsupport/idmbuildversions/)">Microsoft Identity Software: Public Release Build Versions</a>（Microsoft 标识软件：公用版本）一文
 
 <h2>参考</h2>
 <ul class="panelContent cardsFTitle">
