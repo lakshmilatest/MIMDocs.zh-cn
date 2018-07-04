@@ -10,20 +10,21 @@ ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
-ms.openlocfilehash: 77d322f447546897ad18f0981e5faad12efafef1
-ms.sourcegitcommit: 637988684768c994398b5725eb142e16e4b03bb3
+ms.openlocfilehash: ac11a4dfb23944d50dbbcf0b0d70c915f186c159
+ms.sourcegitcommit: c773edc8262b38df50d82dae0f026bb49500d0a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34479156"
 ---
 <a name="azure-ad-business-to-business-b2b-collaboration-with-microsoft-identity-managermim-2016-sp1-with-azure-application-proxy-public-preview"></a>通过 Azure 应用程序代理（公共预览版）实现 Microsoft Identity Manager (MIM) 2016 SP1 与 Azure AD 企业对企业 (B2B) 之间的协作
 ============================================================================================================================
 
-预览版中的初始方案是外部用户 AD 帐户生命周期管理。   在这种情况下，组织已邀请来宾访问其 Azure AD 目录，并希望通过 [Azure AD 应用程序](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-application-proxy-publish)代理或其他网关机制为这些来宾提供对本地 Windows 集成身份验证或基于 Kerberos 的应用程序的访问权限。 Azure AD 应用程序代理要求每个用户都拥有自己的 AD DS 帐户，以便进行标识和委派
+预览版中的初始方案是外部用户 AD 帐户生命周期管理。   在这种情况下，组织已邀请来宾访问其 Azure AD 目录，并希望通过 [Azure AD 应用程序](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-publish)代理或其他网关机制为这些来宾提供对本地 Windows 集成身份验证或基于 Kerberos 的应用程序的访问权限。 Azure AD 应用程序代理要求每个用户都拥有自己的 AD DS 帐户，以便进行标识和委派
 
 ## <a name="scenario-specific-supported-guidance"></a>特定于方案的受支持指南
 
-在这种情况下，组织已邀请来宾访问其 Azure AD 目录，并希望向这些来宾授予对本地 Windows 的访问权限。 通过 [Azure AD 应用程序](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-application-proxy-publish)代理或其他网关机制的集成身份验证或基于 Kerberos 的应用程序。 Azure AD 应用程序代理要求每个用户都拥有自己的 AD DS 帐户，以便进行标识和委派
+在这种情况下，组织已邀请来宾访问其 Azure AD 目录，并希望向这些来宾授予对本地 Windows 的访问权限。 通过 [Azure AD 应用程序](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-publish)代理或其他网关机制的集成身份验证或基于 Kerberos 的应用程序。 Azure AD 应用程序代理要求每个用户都拥有自己的 AD DS 帐户，以便进行标识和委派
 
 对使用 MIM 和 Azure 应用程序代理配置 B2B 做出的一些假设
 
@@ -33,14 +34,14 @@ ms.lasthandoff: 04/26/2018
 
     -   使用 [Azure AD Connect](http://robsgroupsblog.com/blog/how-to-write-back-an-office-group-in-azure-active-directory-to-a-mail-enabled-security-group-in-an-on-premises-active-directory) 控制应用程序访问的 Office 组
 
--   你已设置应用程序代理连接器和连接器组，如果没有，则可以访问[此处](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-application-proxy-enable#install-and-register-a-connector)进行安装和配置
+-   你已设置应用程序代理连接器和连接器组，如果没有，则可以访问[此处](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-enable#install-and-register-a-connector)进行安装和配置
 
 -   发布一个或多个应用程序，这些应用程序依赖于 Windows 集成身份验证或通过 Azure AD 应用代理的各 AD 帐户
 
--   你已邀请或你邀请一位或多位在 Azure AD <https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-self-service-portal>中创建的来宾
+-   你已邀请或你邀请一位或多位在 Azure AD <https://docs.microsoft.com/azure/active-directory/active-directory-b2b-self-service-portal>中创建的来宾
 
 -   安装了 Microsoft Identity Manager，并且执行了服务和门户以及 Active Directory 管理代理的基本配置。
-    <https://docs.microsoft.com/en-us/microsoft-identity-manager/microsoft-identity-manager-deploy>
+    <https://docs.microsoft.com/microsoft-identity-manager/microsoft-identity-manager-deploy>
 
 ## <a name="b2b-end-to-end-deployment"></a>B2B 端到端部署
 
@@ -188,7 +189,7 @@ Indexed = True
 
 接下来的步骤将需要配置 FIM 服务管理代理和 Active Directory 域服务管理代理的最低配置。
 
-有关配置的更多详细信息，请参阅此处<https://technet.microsoft.com/en-us/library/ff686263(v=ws.10).aspx> - 如何将用户设置为 AD DS
+有关配置的更多详细信息，请参阅此处<https://technet.microsoft.com/library/ff686263(v=ws.10).aspx> - 如何将用户设置为 AD DS
 
 ### <a name="synchronization-rule-import-guest-user-to-mv-to-synchronization-service-metaverse-from-azure-active-directorybr"></a>同步规则：将来宾用户导入 MV 以便从 Azure Active Directory 同步服务 Metaverse<br>
 
@@ -292,10 +293,10 @@ Indexed = True
 <a name="next-steps"></a>后续步骤
 ----------
 
-[How Do I Provision Users to AD DS](https://technet.microsoft.com/en-us/library/ff686263(v=ws.10).aspx)（如何将用户预配到 AD DS）
+[How Do I Provision Users to AD DS](https://technet.microsoft.com/library/ff686263(v=ws.10).aspx)（如何将用户预配到 AD DS）
 
-[Functions Reference for FIM 2010](https://technet.microsoft.com/en-us/library/ff800820(v=ws.10).aspx)（FIM 2010 的函数参考）
+[Functions Reference for FIM 2010](https://technet.microsoft.com/library/ff800820(v=ws.10).aspx)（FIM 2010 的函数参考）
 
-[如何提供对本地应用程序的安全远程访问](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-application-proxy-get-started)
+[如何提供对本地应用程序的安全远程访问](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started)
 
 [下载用于 Microsoft Graph 的 Microsoft Identity Manager 管理代理（预览版）](http://go.microsoft.com/fwlink/?LinkId=717495)
