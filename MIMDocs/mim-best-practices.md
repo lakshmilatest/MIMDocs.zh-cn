@@ -1,7 +1,7 @@
 ---
-title: "Microsoft Identity Manager 2016 最佳做法 | Microsoft Docs"
-description: 
-keywords: 
+title: Microsoft Identity Manager 2016 最佳做法 | Microsoft Docs
+description: ''
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -10,20 +10,21 @@ ms.topic: reference
 ms.prod: identity-manager-2016
 ms.service: microsoft-identity-manager
 ms.technology: security
-ms.assetid: 
-ms.openlocfilehash: bb967bfb43218384044e324c270d3d6b35d33afe
-ms.sourcegitcommit: b4513f0f72ac6efd5c2610863f4e3e8c8e65c860
+ms.assetid: ''
+ms.openlocfilehash: 9ef96b88942fd33107d9021ddddb90d0d80dbed1
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36290112"
 ---
 # <a name="microsoft-identity-manager-2016-best-practices"></a>Microsoft Identity Manager 2016 最佳做法
 
 本主题介绍部署和操作 Microsoft Identity Manager 2016 (MIM) 的最佳做法
 
 ## <a name="sql-setup"></a>SQL 设置
->[!NOTE]
-有关设置运行 SQL 的服务器的以下建议假设一个 FIMService 专用的 SQL 实例和一个 FIMSynchronizationService 数据库专用的 SQL 实例。 如果在合并环境中运行 FIMService，则必须对配置进行适当调整。
+> [!NOTE]
+> 有关设置运行 SQL 的服务器的以下建议假设一个 FIMService 专用的 SQL 实例和一个 FIMSynchronizationService 数据库专用的 SQL 实例。 如果在合并环境中运行 FIMService，则必须对配置进行适当调整。
 
 对结构化查询语言 (SQL) 服务器的配置对于优化系统性能至关重要。 在大规模实施中达到最佳 MIM 性能取决于运行 SQL 的服务器的最佳做法的应用。 有关详细信息，请参阅有关 SQL 最佳做法的下列主题：
 
@@ -71,40 +72,40 @@ ms.lasthandoff: 01/08/2018
 
 根据 SQL 服务器上的内存大小，以及是否与其他服务（即 MIM 2016 服务和 MIM 2016 同步服务）共享 SQL 服务器，可能需要限制 SQL 的内存使用量。 可通过以下步骤执行此操作。
 
-1.  启动 SQL Server Enterprise Manager。
+1. 启动 SQL Server Enterprise Manager。
 
-2.  选择“新建查询”。
+2. 选择“新建查询”。
 
-3.  运行以下查询：
+3. 运行以下查询：
 
-  ```SQL
-  USE master
+   ```SQL
+   USE master
 
-  EXEC sp_configure 'show advanced options', 1
+   EXEC sp_configure 'show advanced options', 1
 
-  RECONFIGURE WITH OVERRIDE
+   RECONFIGURE WITH OVERRIDE
 
-  USE master
+   USE master
 
-  EXEC sp_configure 'max server memory (MB)', 12000--- max=12G RECONFIGURE
-  WITH OVERRIDE
-  ```
+   EXEC sp_configure 'max server memory (MB)', 12000--- max=12G RECONFIGURE
+   WITH OVERRIDE
+   ```
 
-  此示例将 SQL Server 重新配置为使用不超过 12GB 的内存。
+   此示例将 SQL Server 重新配置为使用不超过 12GB 的内存。
 
-4.  使用下列查询验证设置：
+4. 使用下列查询验证设置：
 
-  ```SQL
-  USE master
+   ```SQL
+   USE master
 
-  EXEC sp_configure 'max server memory (MB)'--- verify the setting
+   EXEC sp_configure 'max server memory (MB)'--- verify the setting
 
-  USE master
+   USE master
 
-  EXEC sp_configure 'show advanced options', 0
+   EXEC sp_configure 'show advanced options', 0
 
-  RECONFIGURE WITH OVERRIDE
-  ```
+   RECONFIGURE WITH OVERRIDE
+   ```
 
 ### <a name="backup-and-recovery-configuration"></a>备份和恢复配置
 
@@ -169,11 +170,11 @@ FIMService 管理员组的成员拥有对部署 MIM 至关重要的独有权限�
 
 此部分列出了一系列步骤，可用于提升将数据从外部系统初始加载到 MIM 的性能。 请务必了解，其中许多步骤仅在系统初始填充阶段执行。 应在加载完成后重置它们。 这是一次性操作，不是连续性同步。
 
->[!NOTE]
-若要详细了解如何在 MIM 和 Active Directory 域服务 (AD DS) 之间同步用户，请参阅 FIM 文档中的[如何将用户从 Active Directory 同步到 FIM](http://go.microsoft.com/fwlink/?LinkID=188277)。
-
->[!IMPORTANT]
-请确保已应用本指南 SQL 设置部分所述的最佳做法。 
+> [!NOTE]
+> 若要详细了解如何在 MIM 和 Active Directory 域服务 (AD DS) 之间同步用户，请参阅 FIM 文档中的[如何将用户从 Active Directory 同步到 FIM](http://go.microsoft.com/fwlink/?LinkID=188277)。
+> 
+> [!IMPORTANT]
+> 请确保已应用本指南 SQL 设置部分所述的最佳做法。 
 
 ### <a name="step-1-configure-the-sql-server-for-initial-data-load"></a>步骤 1：配置 SQL Server 以进行初始数据加载
 初始数据加载可能是一个漫长的过程。 计划初始加载大量数据时，可临时禁用全文搜索，并在 MIM 2016 管理代理 (FIM MA) 上完成导出后重新启用全文搜索，从而缩短填充数据库所需的时间。
@@ -191,8 +192,8 @@ ALTER FULLTEXT INDEX ON [fim].[ObjectValueString] SET CHANGE_TRACKING = MANUAL
 ALTER FULLTEXT INDEX ON [fim].[ObjectValueXml] SET CHANGE_TRACKING = MANUAL
 ```
 
->[!IMPORTANT]
-如果不执行这些过程，可能会导致磁盘空间使用率过高，从而导致磁盘空间不足。 可在[恢复模式概述](http://go.microsoft.com/fwlink/?LinkID=185370)中找到有关此主题的更多详细信息。 [FIM 备份和还原指南](http://go.microsoft.com/fwlink/?LinkID=165864)包含更多信息。
+> [!IMPORTANT]
+> 如果不执行这些过程，可能会导致磁盘空间使用率过高，从而导致磁盘空间不足。 可在[恢复模式概述](http://go.microsoft.com/fwlink/?LinkID=185370)中找到有关此主题的更多详细信息。 [FIM 备份和还原指南](http://go.microsoft.com/fwlink/?LinkID=165864)包含更多信息。
 
 ### <a name="step-2-apply-the-minimum-necessary-mim-configuration-during-the-load-process"></a>步骤 2：在加载过程中应用所需的最低 MIM 配置
 
@@ -288,8 +289,8 @@ ActivityInformationConfiguration 对象需要版本号来准确引用生产环�
 
 FIM 同步服务的服务帐户不应是用于控制 FIM 同步服务（以 FIMSync 开头的组，例如 FIMSyncAdmins 等）访问权限的安全组成员。
 
->[!IMPORTANT]
- 如果选择两个服务帐户使用同一帐户的选项，并将 FIM 服务和 FIM 同步服务分开，则无法在 mms 同步服务服务器上设置“拒绝从网络访问此计算机”。 如果访问被拒绝，将禁止 FIM 服务联系 FIM 同步服务以更改配置和管理密码。
+> [!IMPORTANT]
+>  如果选择两个服务帐户使用同一帐户的选项，并将 FIM 服务和 FIM 同步服务分开，则无法在 mms 同步服务服务器上设置“拒绝从网络访问此计算机”。 如果访问被拒绝，将禁止 FIM 服务联系 FIM 同步服务以更改配置和管理密码。
 
 ### <a name="password-reset-deployed-to-kiosk-like-computers-should-set-local-security-to-clear-virtual-memory-pagefile"></a>部署到网亭式计算机的密码重置应设置本地安全性以清除虚拟内存页面文件
 
@@ -315,7 +316,7 @@ FIM 同步服务的服务帐户不应是用于控制 FIM 同步服务（以 FIMS
 
 7.  将文件保存到任意位置。 需要在后续步骤中访问此位置。
 
-8.  转到 https://servername/certsrv。 将 servername 替换为颁发证书的服务器名称。
+8.  浏览到 https://servername/certsrv。 将 servername 替换为颁发证书的服务器名称。
 
 9.  单击“申请新证书”。
 
@@ -357,7 +358,7 @@ FIM 同步服务的服务帐户不应是用于控制 FIM 同步服务（以 FIMS
 
 28. 单击“操作”，然后单击“备用访问映射”。
 
-29. 单击 http://servername。
+29. 单击“http://servername”。
 
 30. 将 http://servername 更改为 https://servername，然后单击“确定”。
 
@@ -384,7 +385,7 @@ FIM 同步服务的服务帐户不应是用于控制 FIM 同步服务（以 FIMS
 
 MIM 提供了两种类型的 MPR、请求和集转换：
 
--  请求 MPR (RMPR)
+- 请求 MPR (RMPR)
 
   - 用于定义针对资源的创建、读取、更新或删除 (CRUD) 操作的访问控制策略（身份验证、授权和操作）。
   - 在 MIM 中对目标资源发出 CRUD 操作请求时应用。
@@ -432,8 +433,8 @@ MIM 提供了两种类型的 MPR、请求和集转换：
 
 使用集转换 MPR (TMPR) 而不是 RMPR 来定义自定义权利。 TMPR 提供基于状态的模型，根据定义的转换集或角色的成员身份以及伴随的工作流活动来分配或删除权利。 应始终成对定义 TMPR，一个用于资源向内转换，一个用于资源向外转换。此外，每个转换 MPR 应包含用于预配和取消预配活动的单独工作流。
 
->[!NOTE]
-任何取消预配的工作流都应确保“连续策略更新”属性设置为 true。
+> [!NOTE]
+> 任何取消预配的工作流都应确保“连续策略更新”属性设置为 true。
 
 #### <a name="enable-the-set-transition-in-mpr-last"></a>最后启用“集向内转换 MPR”
 

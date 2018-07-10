@@ -1,7 +1,7 @@
 ---
-title: "部署 PAM 步骤 4 – 安装 MIM | Microsoft Docs"
-description: "在 Privileged Access Management 服务器和工作站上安装和配置 MIM 服务和门户。"
-keywords: 
+title: 部署 PAM 步骤 4 – 安装 MIM | Microsoft Docs
+description: 在 Privileged Access Management 服务器和工作站上安装和配置 MIM 服务和门户。
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: barclayn
@@ -13,17 +13,18 @@ ms.assetid: ef605496-7ed7-40f4-9475-5e4db4857b4f
 ROBOTS: noindex,nofollow
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: b69dfc39da63ec523fb09a58661b5f8367e6042c
-ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
+ms.openlocfilehash: 81fe10b8fbf8ada08983c4bf3c58f85215cf1d66
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36290027"
 ---
 # <a name="step-4--install-mim-components-on-pam-server-and-workstation"></a>步骤 4 - 在 PAM 服务器和工作站上安装 MIM 组件
 
->[!div class="step-by-step"]
-[« 步骤 3](step-3-prepare-pam-server.md)
-[步骤 5 »](step-5-establish-trust-between-priv-corp-forests.md)
+> [!div class="step-by-step"]
+> [« 步骤 3](step-3-prepare-pam-server.md)
+> [步骤 5 »](step-5-establish-trust-between-priv-corp-forests.md)
 
 在 PAMSRV 上，以 PRIV\Administrator 身份登录，以便能够安装 MIM 服务和门户以及示例门户 Web 应用程序。
 
@@ -36,30 +37,30 @@ ms.lasthandoff: 09/14/2017
 
 按照安装程序的说明操作并完成安装。
 
-1.  选择组件功能时请包含 MIM 服务（包括 Privileged Access Management，但不包括 MIM 报告）和 MIM 门户  
+1. 选择组件功能时请包含 MIM 服务（包括 Privileged Access Management，但不包括 MIM 报告）和 MIM 门户  
 
-    ![自定义安装 - 屏幕截图](./media/PAM_GS_MIM_2015_Service_Portal.png)
+   ![自定义安装 - 屏幕截图](./media/PAM_GS_MIM_2015_Service_Portal.png)
 
-2.  配置通用服务和 MIM 数据库连接时，请指定**创建一个新数据库**。
+2. 配置通用服务和 MIM 数据库连接时，请指定**创建一个新数据库**。
 
-    > [!NOTE]
-    > 如果为实现高可用性安装 MIM 服务多次，请为所有后续安装指定**使用现有数据库**。
+   > [!NOTE]
+   > 如果为实现高可用性安装 MIM 服务多次，请为所有后续安装指定**使用现有数据库**。
 
-3.  在配置邮件服务器连接时，请将邮件服务器设置为 CORP 环境的 Exchange 或 SMTP 服务器的主机名（如果没有邮件服务器，请使用 corpdc.contoso.local），并取消选中“使用 SSL”和“邮件服务器是 Exchange Server 2007 或 Exchange Server 2010”复选框。
+3. 在配置邮件服务器连接时，请将邮件服务器设置为 CORP 环境的 Exchange 或 SMTP 服务器的主机名（如果没有邮件服务器，请使用 corpdc.contoso.local），并取消选中“使用 SSL”和“邮件服务器是 Exchange Server 2007 或 Exchange Server 2010”复选框。
 
-4.  选择以生成新的自签名证书。
+4. 选择以生成新的自签名证书。
 
-5.  设置以下帐户凭据：
-    - 服务帐户名称：*MIMService*  
-    - 服务帐户密码：*Pass@word1*（或者步骤 2 中创建的密码）  
-    - 服务帐户域：*PRIV*  
-    - 服务电子邮件帐户：*MIMService@priv.contoso.local*  
+5. 设置以下帐户凭据：
+   - 服务帐户名称：*MIMService*  
+   - 服务帐户密码：<em>Pass@word1</em>（或者步骤 2 中创建的密码）  
+   - 服务帐户域：*PRIV*  
+   - 服务电子邮件帐户：<em>MIMService@priv.contoso.local</em>  
 
-6.  接受同步服务器主机名的默认值，并将 MIM 管理代理帐户指定为“PRIV\MIMMA”。 将显示 MIM 同步服务不存在的警告消息。 这没有关系，因为此场景中不使用 MIM 同步服务。
+6. 接受同步服务器主机名的默认值，并将 MIM 管理代理帐户指定为“PRIV\MIMMA”。 将显示 MIM 同步服务不存在的警告消息。 这没有关系，因为此场景中不使用 MIM 同步服务。
 
-7.  将*“PAMSRV”*指定为 MIM 服务服务器地址。
+7. 将 *“PAMSRV”* 指定为 MIM 服务服务器地址。
 
-8.  将 *http://pamsrv.priv.contoso.local:82* 设为 SharePoint 网站集 URL。
+8. 将 http://pamsrv.priv.contoso.local:82 设置为 SharePoint 网站集 URL。
 
 9. 将注册门户 URL 留空。
 
@@ -67,11 +68,11 @@ ms.lasthandoff: 09/14/2017
 
 11. 将 PAM REST API 主机名留空，并将 8086 指定为端口号。
 
-  ![PAM REST API 的绑定信息 - 屏幕截图](./media/PAM_GS_MIM_2015_Service_Portal_configure_application_pool.png)
+    ![PAM REST API 的绑定信息 - 屏幕截图](./media/PAM_GS_MIM_2015_Service_Portal_configure_application_pool.png)
 
 12. 将 MIM PAM REST API 帐户配置为使用和 SharePoint 一样的帐户（因为 MIM 门户也位于该服务器上）：
     - 应用程序池帐户名：SharePoint  
-    - 应用程序池帐户密码：*Pass@word1*（或者步骤 2 中创建的密码）  
+    - 应用程序池帐户密码：<em>Pass@word1</em>（或者步骤 2 中创建的密码）  
     - 应用程序池帐户域：PRIV  
 
     ![应用程序池帐户凭据 - 屏幕截图](./media/PAM_GS_Configure_Component_Service.png)
@@ -80,17 +81,17 @@ ms.lasthandoff: 09/14/2017
 
 13. 配置 MIM PAM 组件服务：
     - 服务帐户名称：MIMComponent
-    - 服务帐户密码：*Pass@word1*（或者步骤 2 中创建的密码）  
+    - 服务帐户密码：<em>Pass@word1</em>（或者步骤 2 中创建的密码）  
     - 服务帐户域：*PRIV*
 
-  ![PAM 组件服务帐户凭据 - 屏幕截图](./media/PAM_GS_Configure_MIM_PAM_component_service.png)
+    ![PAM 组件服务帐户凭据 - 屏幕截图](./media/PAM_GS_Configure_MIM_PAM_component_service.png)
 
 14. 配置 PAM 监视服务：
     - 服务帐户名称：MIMMonitor  
-    - 服务帐户密码：*Pass@word1*（或者步骤 2 中创建的密码）  
+    - 服务帐户密码：<em>Pass@word1</em>（或者步骤 2 中创建的密码）  
     - 服务帐户域：*PRIV*  
 
-  ![PAM 监视服务帐户凭据 - 屏幕截图](./media/PAM_GS_Configur_PAM_Monitoring_service.png)
+    ![PAM 监视服务帐户凭据 - 屏幕截图](./media/PAM_GS_Configur_PAM_Monitoring_service.png)
 
 15. 在“输入 MIM 密码门户信息”页面上，将复选框留空并继续。 单击“下一步”以继续安装。
 
@@ -100,7 +101,7 @@ ms.lasthandoff: 09/14/2017
 
 1. 重启 PAMSRV 后，以 PRIV\Administrator 身份登录。
 
-2. 启动 Internet Explorer 并连接到 MIM 门户，网址为 http://pamsrv.priv.contoso.local:82/identitymanagement。 首次打开此页面时可能会延迟片刻。
+2. 启动 Internet Explorer 并连接到 MIM 门户 http://pamsrv.priv.contoso.local:82/identitymanagement。 首次打开此页面时可能会延迟片刻。
 
 3. 如有必要，在 Internet Explorer 中以 PRIV\Administrator 身份登录。
 
@@ -133,37 +134,37 @@ ms.lasthandoff: 09/14/2017
 
 在本节中你将为 MIM PAM REST API 安装和配置示例 Web 应用程序。
 
-1.  从示例 web 应用程序存档中以 zip 文件形式下载[身份管理示例](https://github.com/Azure/identity-management-samples)。
+1. 从示例 web 应用程序存档中以 zip 文件形式下载[身份管理示例](https://github.com/Azure/identity-management-samples)。
 
 2. 将 **identity-management-samples-master\Privileged-Access-Management-Portal\src** 文件夹中的内容解压缩到新文件夹 **C:\Program Files\Microsoft Forefront Identity Manager\2010\Privileged Access Management Portal** 中。
 
-3.  在 IIS 中创建一个新网站，站点名称为“MIM Privileged Access Management 示例门户”，物理路径为 C:\Program Files\Microsoft Forefront Identity Manager\2010\Privileged Access Management Portal，端口为 8090。  此操作可使用以下 PowerShell 命令实现：
+3. 在 IIS 中创建一个新网站，站点名称为“MIM Privileged Access Management 示例门户”，物理路径为 C:\Program Files\Microsoft Forefront Identity Manager\2010\Privileged Access Management Portal，端口为 8090。  此操作可使用以下 PowerShell 命令实现：
 
-  ```PowerShell
-  New-WebSite -Name "MIM Privileged Access Management Example Portal" -Port 8090   -PhysicalPath "C:\Program Files\Microsoft Forefront Identity Manager\2010\Privileged Access Management Portal\"
-  ```
+   ```PowerShell
+   New-WebSite -Name "MIM Privileged Access Management Example Portal" -Port 8090   -PhysicalPath "C:\Program Files\Microsoft Forefront Identity Manager\2010\Privileged Access Management Portal\"
+   ```
 
-4.  设置示例 Web 应用程序，以便将用户重定向至 MIM PAM REST API。 使用文本编辑器（如记事本）编辑文件 **C:\Program Files\Microsoft Forefront Identity Manager\2010\Privileged Access Management REST API\web.config**。在 **<system.webServer>** 部分中，添加以下行：
+4. 设置示例 Web 应用程序，以便将用户重定向至 MIM PAM REST API。 使用文本编辑器（如记事本）编辑文件 **C:\Program Files\Microsoft Forefront Identity Manager\2010\Privileged Access Management REST API\web.config**。在 **<system.webServer>** 部分中，添加以下行：
 
-  ```XML
-  <httpProtocol>
-    <customHeaders>
-      <add name="Access-Control-Allow-Credentials" value="true"  />
-      <add name="Access-Control-Allow-Headers" value="content-type" />
-      <add name="Access-Control-Allow-Origin" value="http://pamsrv:8090" />  
-    </customHeaders>
-  </httpProtocol>
-  ```
+   ```XML
+   <httpProtocol>
+   <customHeaders>
+     <add name="Access-Control-Allow-Credentials" value="true"  />
+     <add name="Access-Control-Allow-Headers" value="content-type" />
+     <add name="Access-Control-Allow-Origin" value="http://pamsrv:8090" />  
+   </customHeaders>
+   </httpProtocol>
+   ```
 
-5.  配置示例 Web 应用程序。 使用文本编辑器（如记事本）编辑文件 **C:\Program Files\Microsoft Forefront Identity Manager\2010\Privileged Access Management Portal\js\utils.js**。 将 **pamRespApiUrl** 的值设置为 *http://pamsrv.priv.contoso.local:8086/api/pamresources/*。
+5. 配置示例 Web 应用程序。 使用文本编辑器（如记事本）编辑文件 **C:\Program Files\Microsoft Forefront Identity Manager\2010\Privileged Access Management Portal\js\utils.js**。 将 pamRespApiUrl 的值设置为 http://pamsrv.priv.contoso.local:8086/api/pamresources/。
 
-6.  使用以下命令重启 IIS，以便使这些更改生效。
+6. 使用以下命令重启 IIS，以便使这些更改生效。
 
-  ```cmd
-  iisreset
-  ```
+   ```cmd
+   iisreset
+   ```
 
-7.  （可选）验证用户是否可以对 REST API 进行身份验证。 在 PAMSRV 上，以管理员身份打开 Web 浏览器。  导航至网站 URL http://pamsrv.priv.contoso.local:8086/api/pamresources/pamroles/ 进行身份验证（如需要），并确保将进行下载。
+7. （可选）验证用户是否可以对 REST API 进行身份验证。 在 PAMSRV 上，以管理员身份打开 Web 浏览器。  导航到网站 URL http://pamsrv.priv.contoso.local:8086/api/pamresources/pamroles/，根据需要进行身份验证，并确保可进行下载。
 
 ## <a name="install-the-mim-pam-requestor-cmdlets"></a>安装 MIM PAM 请求程序 cmdlet
 
@@ -185,6 +186,6 @@ ms.lasthandoff: 09/14/2017
 
 在下一步中你将在 PRIV 和 CORP 林之间建立信任关系。
 
->[!div class="step-by-step"]
-[« 步骤 3](step-3-prepare-pam-server.md)
-[步骤 5 »](step-5-establish-trust-between-priv-corp-forests.md)
+> [!div class="step-by-step"]
+> [« 步骤 3](step-3-prepare-pam-server.md)
+> [步骤 5 »](step-5-establish-trust-between-priv-corp-forests.md)

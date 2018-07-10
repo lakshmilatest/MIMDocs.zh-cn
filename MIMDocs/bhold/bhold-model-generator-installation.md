@@ -1,7 +1,7 @@
 ---
-title: "BHOLD 模型生成器安装 | Microsoft Docs"
-description: "使用 BHOLD 模型可以从各种来源构造数据"
-keywords: 
+title: BHOLD 模型生成器安装 | Microsoft Docs
+description: 使用 BHOLD 模型可以从各种来源构造数据
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -9,12 +9,13 @@ ms.date: 09/07/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
-ms.assetid: 
-ms.openlocfilehash: 96363fb3b0067ff5c8f8c2f32e9a855464038653
-ms.sourcegitcommit: 0d8b19c5d4bfd39d9c202a3d2f990144402ca79c
+ms.assetid: ''
+ms.openlocfilehash: 90e7da2a1e39b802723ff0714bd0caccf9649440
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289129"
 ---
 # <a name="bhold-model-generator-installation"></a>BHOLD 模型生成器安装
 
@@ -24,12 +25,12 @@ ms.lasthandoff: 11/14/2017
 
 安装 BHOLD 模型生成器模块前，必须安装以下各项：
 
-1. 在计划安装 BHOLD 模型生成器模块的服务器上安装 BHOLD 核心模块。 有关安装 BHOLD 核心模块的信息，请参阅 [BHOLD Core Installation](https://technet.microsoft.com/en-us/library/jj134095(v=ws.10).aspx)（BHOLD 核心安装）。
+1. 在计划安装 BHOLD 模型生成器模块的服务器上安装 BHOLD 核心模块。 有关安装 BHOLD 核心模块的信息，请参阅 [BHOLD Core Installation](https://technet.microsoft.com/library/jj134095(v=ws.10).aspx)（BHOLD 核心安装）。
 
 2. 必须安装适用于 Microsoft Jet 的 Microsoft OLE DB 提供程序。 有关详细信息，请参阅[此文](http://support.microsoft.com/kb/271908)。
 
->[!WARNING]
-请勿在生产网络中安装 BHOLD 模型生成器。 BHOLD 模型生成器可以过渡环境中脱机使用，创建可导入到企业角色模型的规范化角色模型。 在生产网络中运行 BHOLD 模型生成器可能会导致丢失现有的角色模型。
+> [!WARNING]
+> 请勿在生产网络中安装 BHOLD 模型生成器。 BHOLD 模型生成器可以过渡环境中脱机使用，创建可导入到企业角色模型的规范化角色模型。 在生产网络中运行 BHOLD 模型生成器可能会导致丢失现有的角色模型。
 
 ## <a name="before-you-begin"></a>在开始之前
 
@@ -39,18 +40,18 @@ Microsoft Access 数据库引擎 2010 可再发行组件
 
  
 
-来自 \<<http://daipvstf:8080/tfs/ActiveDirectory/IAM/_workitems>\>
+网站为：*\<*<http://daipvstf:8080/tfs/ActiveDirectory/IAM/_workitems>*\>*
 
  
 
-<https://www.microsoft.com/zh-cn/download/confirmation.aspx?id=13255>
+<https://www.microsoft.com/en-us/download/confirmation.aspx?id=13255>
 
 帐户设置
 
 | **项目**                                    | **描述**                                                                                                                                                                                                           | **值**                                                                                                                                                                                                                                                                                                            |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 对域/计算机使用安全提供程序 | 选中后，会指定 Active Directory 域服务安全控制对 BHOLD 核心的访问。                                                                                                                | 选定复选框。 重要说明：如果未选中此复选框，则安装将失败。                                                                                                                                                                                                                   |
-| **域**                                  | 指定包含在安装 BHOLD 核心时创建的服务帐户的域。 有关详细信息，请参阅 [BHOLD Core Installation](https://technet.microsoft.com/en-us/library/jj134095(v=ws.10).aspx)（BHOLD 核心安装）。 | 域名由向导自动提供。 仅当不正确时，更改名称。 重要说明：指定域名时，请使用 NetBIOS（短）名称，不要使用完全限定的域名 (FQDN)。 例如，如果域的 FQDN 是 fabrikam.com，将域名指定为 FABRIKAM。 |
+| **域**                                  | 指定包含在安装 BHOLD 核心时创建的服务帐户的域。 有关详细信息，请参阅 [BHOLD Core Installation](https://technet.microsoft.com/library/jj134095(v=ws.10).aspx)（BHOLD 核心安装）。 | 域名由向导自动提供。 仅当不正确时，更改名称。 重要说明：指定域名时，请使用 NetBIOS（短）名称，不要使用完全限定的域名 (FQDN)。 例如，如果域的 FQDN 是 fabrikam.com，将域名指定为 FABRIKAM。 |
 | **User**                                    | 指定 BHOLD 核心服务用户帐户的登录名。                                                                                                                                                          | 在此处填写用户帐户名称：                                                                                                                                                                                                                                                                                    |
 | **密码**                                | 指定服务用户帐户的密码。                                                                                                                                                                       | 在此处填写密码：重要说明：确保将此密码保存在一个隐藏的安全位置。                                                                                                                                                                                                                  |
 
@@ -74,7 +75,7 @@ Microsoft Access 数据库引擎 2010 可再发行组件
 
 ## <a name="next-steps"></a>后续步骤
 
-- 有关如何创建输入文件的信息，请参阅 [Microsoft BHOLD Suite Technical Reference](https://technet.microsoft.com/en-us/library/jj134935(v=ws.10).aspx)（Microsoft BHOLD 套件技术参考）
+- 有关如何创建输入文件的信息，请参阅 [Microsoft BHOLD Suite Technical Reference](https://technet.microsoft.com/library/jj134935(v=ws.10).aspx)（Microsoft BHOLD 套件技术参考）
 - [BHOLD 安装指南](bhold-installation-guide.md)
 - [BHOLD 开发人员参考](../reference/mim2016-bhold-developer-reference.md)
 - [BHOLD 版本历史记录](../reference/version-bhold-history.md)

@@ -1,7 +1,7 @@
 ---
-title: "部署 PAM 步骤 3 - PAM 服务器 | Microsoft Docs"
-description: "准备 PAM 服务器，它将为你的 Privileged Access Management 部署托管 SQL 和 SharePoint。"
-keywords: 
+title: 部署 PAM 步骤 3 - PAM 服务器 | Microsoft Docs
+description: 准备 PAM 服务器，它将为你的 Privileged Access Management 部署托管 SQL 和 SharePoint。
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -13,17 +13,18 @@ ms.assetid: 68ec2145-6faa-485e-b79f-2b0c4ce9eff7
 ROBOTS: noindex,nofollow
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: fd52a191a0592441131249451011c4e2f026ea48
-ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
+ms.openlocfilehash: 3eb79847baed69ef53a27e09443ff9bf4647b347
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289908"
 ---
 # <a name="step-3--prepare-a-pam-server"></a>步骤 3 - 准备 PAM 服务器
 
->[!div class="step-by-step"]
-[« 步骤 2](step-2-prepare-priv-domain-controller.md)
-[步骤 4 »](step-4-install-mim-components-on-pam-server.md)
+> [!div class="step-by-step"]
+> [« 步骤 2](step-2-prepare-priv-domain-controller.md)
+> [步骤 4 »](step-4-install-mim-components-on-pam-server.md)
 
 ## <a name="install-windows-server-2012-r2"></a>安装 Windows Server 2012 R2
 
@@ -93,13 +94,13 @@ ms.lasthandoff: 09/14/2017
 
 想要使用 PowerShell：
 
-1.  右键单击“PowerShell”，然后选择“以管理员身份运行”。
-2.  使用这些命令停止 IIS 并解锁应用程序主机设置
-    ```CMD
-    iisreset /STOP
-    C:\Windows\System32\inetsrv\appcmd.exe unlock config /section:windowsAuthentication -commit:apphost
-    iisreset /START
-    ```
+1. 右键单击“PowerShell”，然后选择“以管理员身份运行”。
+2. 使用这些命令停止 IIS 并解锁应用程序主机设置
+   ```CMD
+   iisreset /STOP
+   C:\Windows\System32\inetsrv\appcmd.exe unlock config /section:windowsAuthentication -commit:apphost
+   iisreset /START
+   ```
 
 想要使用文本编辑器，如“记事本”：
 
@@ -215,6 +216,6 @@ SharePoint 必备组件安装完成后，请安装 SharePoint Foundation 2013 SP
 
 在步骤 4 中，将在 PAM 服务器上开始安装 MIM 组件。
 
->[!div class="step-by-step"]
-[« 步骤 2](step-2-prepare-priv-domain-controller.md)
-[步骤 4 »](step-4-install-mim-components-on-pam-server.md)
+> [!div class="step-by-step"]
+> [« 步骤 2](step-2-prepare-priv-domain-controller.md)
+> [步骤 4 »](step-4-install-mim-components-on-pam-server.md)

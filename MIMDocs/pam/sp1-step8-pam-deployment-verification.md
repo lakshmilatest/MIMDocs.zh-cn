@@ -1,7 +1,7 @@
 ---
-title: "步骤 8 PAM 部署验证"
-description: "PAM 的脚本化部署包括验证可执行 PAM 方案的脚本，从而验证 PAM 部署是否按预期运行。"
-keywords: 
+title: 步骤 8 PAM 部署验证
+description: PAM 的脚本化部署包括验证可执行 PAM 方案的脚本，从而验证 PAM 部署是否按预期运行。
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: MBaldwin
@@ -10,19 +10,20 @@ ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: 28fcbe10366df749796be76f83f608561b5f39d3
-ms.sourcegitcommit: 8edd380f54c3e9e83cfabe8adfa31587612e5773
+ms.openlocfilehash: b01980c020b1027c3b40eaf49b4431631ee041be
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289466"
 ---
 # <a name="step-8-pam-deployment-verification"></a>步骤 8 PAM 部署验证
 
->[!div class="step-by-step"]
-[« 步骤 7](sp1-step7-setup-sidhistory-sidfiltering.md)
-[附录 »](sp1-pam-deployment-addendum.md)
+> [!div class="step-by-step"]
+> [« 步骤 7](sp1-step7-setup-sidhistory-sidfiltering.md)
+> [附录 »](sp1-pam-deployment-addendum.md)
 
 部署包附带可执行 PAM 方案的验证脚本，以验证 PAM 部署是否按预期运行。
 若要使用部署验证，请修改名为 <PamValidation/> 的PAMDeploymentConfig.xml 部分。
@@ -76,6 +77,6 @@ ms.lasthandoff: 08/19/2017
   初始情况下，用户不具备资源访问权限。 用户实时添加到角色后，将授予用户访问权限。 请求持续时间到期后，用户将无权再次访问。
   对于请求到期时间，该脚本使用默认值（11 分钟）。
 
->[!div class="step-by-step"]
-[« 步骤 7](sp1-step7-setup-sidhistory-sidfiltering.md)
-[附录 »](sp1-pam-deployment-addendum.md)
+> [!div class="step-by-step"]
+> [« 步骤 7](sp1-step7-setup-sidhistory-sidfiltering.md)
+> [附录 »](sp1-pam-deployment-addendum.md)

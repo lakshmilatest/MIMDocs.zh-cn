@@ -3,32 +3,33 @@ title: 使用自助服务密码重置门户 | Microsoft Docs
 description: 请参阅 MIM 2016 中有关自助服务密码重置的新增内容，包括 SSPR 如何使用多重身份验证的相关内容。
 keywords: ''
 author: billmath
-ms.author: barclayn
-manager: mbaldwin
-ms.date: 10/12/2017
+ms.author: billmath
+manager: mtillman
+ms.reviewer: davidste
+ms.date: 06/26/2018
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
-ms.reviewer: mwahl
-ms.suite: ems
-ms.openlocfilehash: 18c3e4ea623b4b092bbd9236c5fa1b2a63af0486
-ms.sourcegitcommit: 637988684768c994398b5725eb142e16e4b03bb3
+ms.openlocfilehash: b1b30b744a5f735512f31d98184a561ce3f9b047
+ms.sourcegitcommit: 03617b441135a55b664e0d81cce4d17541bee93b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36963369"
 ---
->[!IMPORTANT]
-由于 Azure 多重身份验证软件开发工具包的弃用通知。 在停用日期 2018 年 11 月 14 日前，现有客户仍可使用 Azure MFA SDK。 新客户和当前客户将无法再通过 Azure 经典门户下载 SDK。 若要下载，需要联系 Azure 客户支持，以便接收生成的 MFA 服务凭据包。 <br> Microsoft 开发团队正在努力通过与 MFA 服务器 SDK 集成来计划对 MFA 的更改。这一更改将包含在即将于 2018 年初发布的修补程序中。
-
 # <a name="working-with-self-service-password-reset"></a>使用自助服务密码重置
+
+> [!IMPORTANT]
+> 由于 Azure 多重身份验证软件开发工具包的弃用通知。 在停用日期 2018 年 11 月 14 日前，现有客户仍可使用 Azure MFA SDK。 新客户和当前客户将无法再通过 Azure 经典门户下载 SDK。 若要下载，需要联系 Azure 客户支持，以便接收生成的 MFA 服务凭据包。 <br> Microsoft 开发团队正在通过与 MFA Server SDK 集成来处理对 MFA 的更改。  这将包括在即将发布的修补程序中，请参阅公告的[版本历史记录](/reference/version-history.md)。
+
 Microsoft 标识管理器 2016 将附加功能提供给自助服务密码重置功能。 此功能的几个重要功能已得到增强：
 
 -   自助服务密码重置门户和 Windows 登录屏幕现在允许用户解锁其帐户，而无需更改密码或呼叫支持管理员。 用户会因各种合理原因导致他们的帐户遭锁定，例如，输入旧密码，使用双语计算机并将键盘设置为错误的语言，或试图登录到已向他人的帐户开放的共享工作站。
 
--   添加了新的身份验证入口 - 电话入口。 这允许通过电话呼叫进行用户身份验证。
+-   添加了新的身份验证入口 - 电话入口。 此入口允许通过电话呼叫进行用户身份验证。
 
--   已为 Microsoft Azure 多重身份验证 (MFA) 服务添加了此支持。 这可以用于现有的 SMS 一次性密码入口或新的电话入口。
+-   已为 Microsoft Azure 多重身份验证 (MFA) 服务添加此支持。 此服务可以用于现有的 SMS 一次性密码入口或新的电话入口。
 
 ## <a name="azure-for-multi-factor-authentication"></a>Azure 多重身份验证
 Windows Azure 多重身份验证是一种身份验证服务，该服务要求用户使用移动应用、电话呼叫或短信来验证其登录尝试。 它可与 Microsoft Azure Active Directory 搭配使用，并且作为一项适用于云和本地企业应用程序的服务。
@@ -56,16 +57,16 @@ Azure MFA 提供了额外的身份验证机制，可加强现有的身份验证�
 
     -   在 MIM 门户中配置同步规则，以允许用户数据同步并促进 MIM 服务中基于同步的活动。
 
--   在服务器或单独的客户端计算机上部署了 MIM 2016 加载项&amp;扩展，包括集成了 SSPR Windows 登录的客户端。
+-   在服务器或单独的客户端计算机上部署了 MIM 2016 加载项&amp;扩展，其中包括集成了 SSPR Windows 登录的客户端。
 
 ## <a name="prepare-mim-to-work-with-multi-factor-authentication"></a>准备 MIM 以使用多重身份验证
 配置 MIM 同步以支持密码重置和帐户解锁功能。 有关详细信息，请参阅[安装 FIM 外接程序和扩展](https://technet.microsoft.com/library/ff512688%28v=ws.10%29.aspx)、[安装 FIM SSPR](https://technet.microsoft.com/library/hh322891%28v=ws.10%29.aspx)、[SSPR 身份验证入口](https://technet.microsoft.com/library/jj134288%28v=ws.10%29.aspx)和 [SSPR 测试实验指南](https://technet.microsoft.com/library/hh826057%28v=ws.10%29.aspx)
 
-在下一部分中，将在 Microsoft Azure Active Directory 中设置 Azure MFA 提供程序。 作为该过程的一部分，将生成一个包含的身份验证材料的文件，MFA 需要该材料才能联系 Azure MFA。  若要继续，将需要 Azure 订阅。
+在下一部分中，将在 Microsoft Azure Active Directory 中设置 Azure MFA 提供程序。 你将生成一个包含身份验证材料的文件，MFA 需要该材料才能联系 Azure MFA。  若要继续，将需要 Azure 订阅。
 
 ### <a name="register-your-multi-factor-authentication-provider-in-azure"></a>在 Azure 中注册多重身份验证提供程序
 
-1.  创建 [MFA 提供程序](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/multi-factor-authentication-get-started-auth-provider)。
+1.  创建 [MFA 提供程序](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-auth-provider)。
 
 2. 建立支持案例并请求适用于 ASP.net 2.0 C# 的 Direct SDK。 由于 Direct SDK 已遭弃用，因此，SDK 将仅提供给 MIM（具有 MFA）的当前用户。 新客户应采用将与 MFA 服务器集成的下一个 MIM 版本。
 
@@ -85,7 +86,7 @@ Azure MFA 提供了额外的身份验证机制，可加强现有的身份验证�
 
 7.  在新窗口中，单击左面板上“配置”下的“设置”。
 
-8.  在“欺诈警报”下，取消选中**“报告欺诈时阻止用户”。 这样做是为了防止阻塞整个服务。
+8.  在“欺诈警报”下，取消选中**“报告欺诈时阻止用户”。 取消选中此框是为了防止阻止整个服务。
 
 9. 在打开的“Azure 多重身份验证”  窗口中，单击左侧菜单的“下载”  下的“SDK”  。
 
@@ -117,13 +118,13 @@ Azure MFA 提供了额外的身份验证机制，可加强现有的身份验证�
 
 9. 在 `<username>` 元素中输入任意用户名。
 
-10. 在 `<DefaultCountryCode>` 元素中，输入默认国家/地区代码。 如果用户注册的电话号码未附带国家/地区代码，这是他们将得到的国家/地区代码。 如果用户有一个国际国家/地区代码，它必须包含在已注册的电话号码中。
+10. 在 `<DefaultCountryCode>` 元素中，输入默认国家/地区代码。 如果用户注册的电话号码未附带国家/地区代码，则他们将得到此代码。 如果用户有一个国际国家/地区代码，它必须包含在已注册的电话号码中。
 
 11. 使用同一位置中的相同名称保存 MfaSettings.xml 文件。
 
 #### <a name="configure-the-phone-gate-or-the-one-time-password-sms-gate"></a>配置电话入口或一次性密码 SMS 入口
 
-1.  启动 Internet Explorer 并导航到 MIM 门户，作为 MIM 管理员进行身份验证，然后单击左侧导航栏中的  **工作流** 。
+1.  启动 Internet Explorer 并导航到 MIM 门户，作为 MIM 管理员进行身份验证，然后单击左侧导航栏中的“工作流”。
 
     ![MIM 门户导航图像](media/MIM-SSPR-workflow.jpg)
 

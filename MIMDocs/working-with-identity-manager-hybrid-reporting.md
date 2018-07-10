@@ -1,7 +1,7 @@
 ---
-title: "通过 Identity Manager 2016 使用 Azure 中的混合报告 | Microsoft 文档"
-description: "了解如何将本地和云中的数据结合到 Azure 中的混合报告内，以及如何管理和查看这些报告。"
-keywords: 
+title: 通过 Identity Manager 2016 使用 Azure 中的混合报告 | Microsoft 文档
+description: 了解如何将本地和云中的数据结合到 Azure 中的混合报告内，以及如何管理和查看这些报告。
+keywords: ''
 author: fimguy
 ms.author: davidste
 manager: mbaldwin
@@ -11,11 +11,12 @@ ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 68df2817-2040-407d-b6d2-f46b9a9a3dbb
 ms.suite: ems
-ms.openlocfilehash: e135cc5066220765d97568b3a1e1b984a876b2a2
-ms.sourcegitcommit: b4a39928c5fa1d7718046563c0809bcbf11d833d
+ms.openlocfilehash: 3c9e8c0fa0a0de3cf9710003d4d7f4ed9c0b03bd
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289639"
 ---
 # <a name="work-with-hybrid-reporting-in-identity-manager"></a>使用 Identity Manager 中的混合报告
 
@@ -50,16 +51,18 @@ Azure Active Directory (Azure AD) 中提供了前三种 Microsoft Identity Manag
 ## <a name="requirements"></a>要求
 下表列出了使用 Identity Manager 混合报告的要求：
 
-| 要求 | 描述 |
-| --- | --- |
-| Azure AD 高级版 | 混合报告是一项 Azure AD Premium 功能，必须安装 Azure AD Premium。 </br>有关详细信息，请参阅 [Azure AD Premium 入门](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)。 </br>获取 [Azure AD Premium 免费 30 天试用版](https://azure.microsoft.com/trial/get-started-active-directory/)。 |
-| 你必须是 Azure AD 的全局管理员。 |默认情况下，只有全局管理员才能安装和配置代理，从而开始使用、访问门户并在 Azure 中执行任意操作。 </br>重要提示：安装代理时必须使用工作帐户或学校帐户。 不能使用 Microsoft 帐户。 有关详细信息，请参阅[以组织身份注册 Azure](https://docs.microsoft.com/azure/active-directory/sign-up-organization)。 |
-| 在每个目标 Identity Manager Service 服务器上安装 Identity Manager 混合代理 | 为了接收数据并提供监视和分析功能，混合报告需要在目标服务器上安装和配置代理。  </br>|
-| 到 Azure 服务终结点的出站连接 | 安装和运行时期间，代理需要与 Azure 服务终结点相连。 如果出站连接被防火墙屏蔽，请确保已将下列终结点添加到允许列表中：<ul><li>\*.blob.core.windows.net </li><li>\*.servicebus.windows.net - 端口：5671 </li><li>\*.adhybridhealth.azure.com/</li><li>https://management.azure.com </li><li>https://policykeyservice.dc.ad.msft.net/</li><li>https://login.windows.net</li><li>https://login.microsoftonline.com</li><li>https://secure.aadcdn.microsoftonline-p.com</li></ul> |
-|基于 IP 地址的出站连接 | 有关防火墙上基于 IP 地址的筛选，请参阅 [Azure IP 范围](https://www.microsoft.com/download/details.aspx?id=41653)。|
-| 已为出站流量筛选或禁用 SSL 检查 | 如果网络层有针对出站流量的 SSL 检查或终止，则代理注册步骤或数据上传操作可能会失败。 |
-| 运行代理的服务器上的防火墙端口 | 为了与 Azure 服务终结点进行通信，代理需要打开以下防火墙端口：<ul><li>TCP 端口 443</li><li>TCP 端口 5671</li></ul> |
-| 如果启用了 Internet Explorer 增强的安全性，则允许访问某些网站 |如果启用了 Internet Explorer 增强的安全性，则必须在已安装代理的服务器上允许访问以下网站：<ul><li>https://login.microsoftonline.com</li><li>https://secure.aadcdn.microsoftonline-p.com</li><li>https://login.windows.net</li><li>你的组织受 Azure Active Directory 信任的联合服务器（例如，https://sts.contoso.com）。</li></ul> |
+
+|                                         要求                                         |                                                                                                                                                                                                                                                                                    描述                                                                                                                                                                                                                                                                                     |
+|---------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                      Azure AD 高级版                                       |                                                                                                        混合报告是一项 Azure AD Premium 功能，必须安装 Azure AD Premium。 </br>有关详细信息，请参阅 [Azure AD Premium 入门](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)。 </br>获取 [Azure AD Premium 免费 30 天试用版](https://azure.microsoft.com/trial/get-started-active-directory/)。                                                                                                         |
+|                     你必须是 Azure AD 的全局管理员。                     |                                                                   默认情况下，只有全局管理员才能安装和配置代理，从而开始使用、访问门户并在 Azure 中执行任意操作。 </br>重要提示：安装代理时必须使用工作帐户或学校帐户。 不能使用 Microsoft 帐户。 有关详细信息，请参阅[以组织身份注册 Azure](https://docs.microsoft.com/azure/active-directory/sign-up-organization)。                                                                   |
+| 在每个目标 Identity Manager Service 服务器上安装 Identity Manager 混合代理 |                                                                                                                                                                                                       为了接收数据并提供监视和分析功能，混合报告需要在目标服务器上安装和配置代理。  </br>                                                                                                                                                                                                       |
+|                    到 Azure 服务终结点的出站连接                     | 安装和运行时期间，代理需要与 Azure 服务终结点相连。 如果出站连接被防火墙屏蔽，请确保已将下列终结点添加到允许列表中：<ul><li>\*.blob.core.windows.net </li><li>\*.servicebus.windows.net - 端口：5671 </li><li>\*.adhybridhealth.azure.com/</li><li><https://management.azure.com> </li><li><https://policykeyservice.dc.ad.msft.net/></li><li><https://login.windows.net></li><li><https://login.microsoftonline.com></li><li><https://secure.aadcdn.microsoftonline-p.com></li></ul> |
+|                         基于 IP 地址的出站连接                         |                                                                                                                                                                                                                      有关防火墙上基于 IP 地址的筛选，请参阅 [Azure IP 范围](https://www.microsoft.com/download/details.aspx?id=41653)。                                                                                                                                                                                                                      |
+|                 已为出站流量筛选或禁用 SSL 检查                 |                                                                                                                                                                                                               如果网络层有针对出站流量的 SSL 检查或终止，则代理注册步骤或数据上传操作可能会失败。                                                                                                                                                                                                                |
+|                      运行代理的服务器上的防火墙端口                       |                                                                                                                                                                                                          为了与 Azure 服务终结点进行通信，代理需要打开以下防火墙端口：<ul><li>TCP 端口 443</li><li>TCP 端口 5671</li></ul>                                                                                                                                                                                                          |
+|          如果启用了 Internet Explorer 增强的安全性，则允许访问某些网站           |                                                                                如果启用了 Internet Explorer 增强的安全性，则必须在已安装代理的服务器上允许访问以下网站：<ul><li><https://login.microsoftonline.com></li><li><https://secure.aadcdn.microsoftonline-p.com></li><li><https://login.windows.net></li><li>你的组织受 Azure Active Directory 信任的联合服务器（例如 <https://sts.contoso.com>）。</li></ul>                                                                                |
+
 </BR>
 
 ## <a name="install-identity-manager-reporting-agent-in-azure-ad"></a>在 Azure AD 中安装 Identity Manager 报告代理

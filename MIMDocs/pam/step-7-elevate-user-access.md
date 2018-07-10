@@ -1,6 +1,6 @@
 ---
-title: "部署 PAM 步骤 7 - 用户访问权限 | Microsoft 文档"
-description: "作为最后一步，授予特权用户临时访问权限，以演示 Privileged Access Management 部署已成功。"
+title: 部署 PAM 步骤 7 - 用户访问权限 | Microsoft Docs
+description: 作为最后一步，授予特权用户临时访问权限，以演示 Privileged Access Management 部署已成功。
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -9,16 +9,17 @@ ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 5325fce2-ae35-45b0-9c1a-ad8b592fcd07
-ms.openlocfilehash: 2d92be315547da1c352c0e60732f9aeecf0c2d90
-ms.sourcegitcommit: 3d8a2493eae1218bfdb75a399ffa4adc8c2a8fdf
+ms.openlocfilehash: 9515d17767a75b349b0d3150fb90c136c478baa2
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289840"
 ---
 # <a name="step-7--elevate-a-users-access"></a>步骤 7 - 提升用户的访问权限
 
->[!div class="step-by-step"]
-[« 步骤 6](step-6-transition-group-to-pam.md)
+> [!div class="step-by-step"]
+> [« 步骤 6](step-6-transition-group-to-pam.md)
 
 
 此步骤演示了用户可以通过 MIM 请求对某个角色的访问权限。
@@ -90,7 +91,7 @@ dir \\corpwkstn\corpfs
     ```
 
 3. 出现提示时，键入 PRIV.Jen 帐户的密码。 将出现新的 Web 浏览器窗口。
-4. 导航到 http://pamsrv.priv.contoso.local:8090 ，并确保示例门户中的网页可见。
+4. 导航到 http://pamsrv.priv.contoso.local:8090，并确保示例门户中的网页可见。
 5. 在 Internet Explorer 中，依次选择“工具” > “Internet 选项”，然后单击“安全”选项卡。
 6. 依次单击“本地 Intranet 区域” > “站点” > “高级”，然后将该网站添加到该区域。
 7. 关闭“Internet 选项”  对话框。
@@ -103,5 +104,5 @@ dir \\corpwkstn\corpfs
 
 完成本演练中的步骤后，你已演示了一个 Privileged Access Management 方案，其中在有限时间内对用户权限进行了提升，从而允许用户使用独立的特权帐户访问受保护的资源。 当提升会话过期时，特权帐户将无法再访问受保护的资源。 哪些安全组表示特权角色的决策由 PAM 管理员来协调。 访问权限迁移到 Privileged Access Management 系统后，以前可使用原始用户帐户实现的访问现在只能通过登录特殊特权帐户来实现，并且仅在请求时提供。 因此，高特权组的组成员资源只在有限时间内有效。
 
->[!div class="step-by-step"]
-[« 步骤 6](step-6-transition-group-to-pam.md)
+> [!div class="step-by-step"]
+> [« 步骤 6](step-6-transition-group-to-pam.md)

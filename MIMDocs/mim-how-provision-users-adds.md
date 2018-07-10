@@ -1,7 +1,7 @@
 ---
 title: Microsoft Identity Manager 2016 | Microsoft Docs
-description: "了解使用 Microsoft Identity Manager 2016 在 ADDS 中创建用户的过程"
-keywords: 
+description: 了解使用 Microsoft Identity Manager 2016 在 ADDS 中创建用户的过程
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -9,12 +9,13 @@ ms.date: 08/18/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
-ms.assetid: 
-ms.openlocfilehash: 171aa1a2e19ea9f78f9fadbc7368404702095d71
-ms.sourcegitcommit: 0d8b19c5d4bfd39d9c202a3d2f990144402ca79c
+ms.assetid: ''
+ms.openlocfilehash: a12a8436d70b3ae866df0f615e10a3d76f791168
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36290095"
 ---
 # <a name="how-do-i-provision-users-to-ad-ds"></a>如何将用户预配到 AD DS
 
@@ -87,8 +88,8 @@ ms.lasthandoff: 11/14/2017
 
 可在一台计算机上运行所有组件。
 
->[!NOTE]
-有关设置 MIM 的详细信息，请参阅 [FIM 安装指南](http://go.microsoft.com/FWLink/p/?LinkId=165845)。
+> [!NOTE]
+> 有关设置 MIM 的详细信息，请参阅 [FIM 安装指南](http://go.microsoft.com/FWLink/p/?LinkId=165845)。
 
 ## <a name="scenario-components-list"></a>方案组件列表
 
@@ -160,8 +161,8 @@ ms.lasthandoff: 11/14/2017
 
 在 AD DS 中，用户使用 sAMAccountName 属性登录目录服务仍是常见操作。 如果不指定此属性的值，目录服务会为其生成随机值。 但是，这些随机值并非用户友好型，这也是此属性的用户友好版本通常包含在导出到 AD DS 过程的原因。 若要使用户能够登录到 AD DS，还需要包括导出逻辑中使用 unicodePwd 属性创建的密码。
 
->[!Note]                                
-请确保指定为 unicodePwd 的值符合目标 AD DS 的密码策略。
+> [!Note]
+> 请确保指定为 unicodePwd 的值符合目标 AD DS 的密码策略。
 
 为 AD DS 帐户设置密码时，还需要创建一个帐户作为已启用的帐户。 可通过设置 userAccountControl 属性来实现此目的。 有关 userAccountControl 属性的详细信息，请参阅[使用 FIM 启用或禁用 Active Directory 中的帐户](http://go.microsoft.com/FWLink/p/?LinkId=189658)。
 
@@ -180,8 +181,8 @@ ms.lasthandoff: 11/14/2017
 - 使用适用于 Active Directory 的管理代理
 - 配置目录分区
 
->[!Note]
-确保导入为 ExpectedRulesList 属性配置的属性流规则。
+> [!Note]
+> 确保导入为 ExpectedRulesList 属性配置的属性流规则。
 
 ### <a name="step-4-create-the-fabrikam-fimma-management-agent"></a>步骤 4：创建 Fabrikam FIMMA 管理代理
 
@@ -194,7 +195,7 @@ ms.lasthandoff: 11/14/2017
 | 管理代理设计器页面 | 配置 |
 |------------|------------------------------------|
 | 创建管理代理 | 1.管理代理适用对象：FIM 服务管理代理 <br/> 2.名称：Fabrikam FIMMA |
-| 连接到数据库     | 使用以下设置： <br/> · 服务器：localhost <br/> · 数据库：FIMService <br/> · FIM 服务基址：http://localhost:5725 <br/> <br/> 提供为此管理代理创建的帐户相关信息 |
+| 连接到数据库     | 使用以下设置： <br/> · 服务器：localhost <br/> · 数据库：FIMService <br/> &#183; FIM 服务基址：http://localhost:5725 <br/> <br/> 提供为此管理代理创建的帐户相关信息 |
 | 选择对象类型                                     | 除了已选择的对象类型，请选择“人员”。   |
 | 配置对象类型映射                          | 除了已存在的对象类型映射，请将“数据源对象类型”人员的映射添加到“Metaverse”对象类型人员。 |
 | 配置属性流                                | 除了已存在的属性流映射，请添加以下属性流映射： <br/><br/> ![属性流](media/how-provision-users-adds/image018.jpg) |
@@ -211,8 +212,8 @@ ms.lasthandoff: 11/14/2017
 
 -   配置目录分区
 
->[!NOTE]
- 确保导入为 ExpectedRulesList 属性配置的属性流规则。
+> [!NOTE]
+>  确保导入为 ExpectedRulesList 属性配置的属性流规则。
 
 ### <a name="step-5-create-the-run-profiles"></a>步骤 5：创建运行配置文件
 
@@ -226,12 +227,12 @@ ms.lasthandoff: 11/14/2017
 根据上表为每个管理代理创建运行配置文件。
 
 
->[!Note]
-有关详细信息，请参阅 MIM 帮助中的创建管理代理运行配置文件。                                                                                                                  
-
-
->[!Important]
- 验证环境中是否启用了预配。 可通过运行脚本实现此目的，请参阅使用 Windows PowerShell 启用预配 (http://go.microsoft.com/FWLink/p/?LinkId=189660)。
+> [!Note]
+> 有关详细信息，请参阅 MIM 帮助中的创建管理代理运行配置文件。                                                                                                                  
+> 
+> 
+> [!Important]
+>  验证环境中是否启用了预配。 可通过运行脚本实现此目的，请参阅“使用 Windows PowerShell 启用预配”(http://go.microsoft.com/FWLink/p/?LinkId=189660)。
 
 
 ## <a name="configuring-the-fim-service"></a>配置 FIM 服务
@@ -251,14 +252,14 @@ ms.lasthandoff: 11/14/2017
 
 | 同步规则配置                                                                         |                                                                             |                                                           
 |------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------|
-| Name                                                                                                       | Active Directory 用户出站同步规则                         |                                                          
-| 说明                                                                                               |                                                                             |                                                           
+| 名称                                                                                                       | Active Directory 用户出站同步规则                         |                                                          
+| 描述                                                                                               |                                                                             |                                                           
 | 优先级                                                                                                | 2                                                                           |                                                           
 | 数据流方向   | 出站             |       
 | 依赖关系       |         |                                         
 
 
-| 作用域 |                                                                             |                                                           
+| 范围 |                                                                             |                                                           
 |--------|-------|
 | Metaverse 资源类型 | 个人 |                                                         
 | 外部系统                   |Fabrikam ADMA                                                               |                                                       
@@ -293,8 +294,8 @@ ms.lasthandoff: 11/14/2017
 
 
 
- >[!NOTE]
- 重要提示：验证是否为以 DN 为目标的属性流选择“仅初始流”。                                                                          
+> [!NOTE]
+>  重要提示：验证是否为以 DN 为目标的属性流选择“仅初始流”。                                                                          
 
 ### <a name="step-7-create-the-workflow"></a>步骤 7：创建工作流
 
@@ -302,14 +303,14 @@ AD 预配工作流的目的是将 Fabrikam 预配同步规则添加到资源。 
 
 | 工作流配置               |                                                                 |
 |--------------------------------------|-----------------------------------------------------------------|
-| Name                                 | Active Directory 用户预配工作流                     |
-| 说明                          |                                                                 |
+| 名称                                 | Active Directory 用户预配工作流                     |
+| 描述                          |                                                                 |
 | 工作流类型                        | 操作                                                          |
 | 策略更新时运行                 | False                                                           |
 
 | 同步规则                 |                                                                 |
 |--------------------------------------|-----------------------------------------------------------------|
-| Name                                 | Active Directory 用户出站同步规则             |
+| 名称                                 | Active Directory 用户出站同步规则             |
 | 操作                               | 添加                                                             |
 
 
@@ -321,8 +322,8 @@ AD 预配工作流的目的是将 Fabrikam 预配同步规则添加到资源。 
 
 | MPR 配置                    |                                                             |
 |--------------------------------------|-------------------------------------------------------------|
-| Name                                 | AD 用户预配管理策略规则                 |
-| 说明                          |                                                             |
+| 名称                                 | AD 用户预配管理策略规则                 |
+| 描述                          |                                                             |
 | 类型                                 | 集转换                                              |
 | 授予权限                   | False                                                       |
 | 已禁用                             | False                                                       |
@@ -365,8 +366,8 @@ AD 预配工作流的目的是将 Fabrikam 预配同步规则添加到资源。 
 
 
 
->[!NOTE]
-应验证出站同步规则是否已成功投影到 Metaverse。
+> [!NOTE]
+> 应验证出站同步规则是否已成功投影到 Metaverse。
 
 ## <a name="testing-the-configuration"></a>测试配置
 
@@ -490,8 +491,8 @@ Fabrikam FIMMA 上运行增量同步旨在执行以下几种操作：
 
 根据本部分中的说明运行运行配置文件。
 
->[!IMPORTANT]
-每个运行配置文件都必须成功运行。
+> [!IMPORTANT]
+> 每个运行配置文件都必须成功运行。
 
 ### <a name="step-14-verify-the-provisioned-user-in-ad-ds"></a>步骤 14：验证 AD DS 中预配的用户
 
@@ -512,7 +513,7 @@ ExpectedRulesList 属性的对象，这可能会生成孤立的 ERE 对象。
 在以 AD DS 为同步目标的典型同步方案中，MIM 并未对对象的所有属性授权。 例如，使用 FIM 管理 AD DS 中的用户对象时，AD DS 管理代理至少需要提供域和 objectSID 属性。
 必须提供帐户名称、域和 objectSID 属性，用户才能登录到 FIM 门户。 若要从 AD DS 填充这些属性，则 AD DS 连接器空间必须提供一个附加入站同步规则。 在管理具有多来源属性值的对象时，请确保已正确配置属性流优先顺序。 如果未正确配置属性流优先顺序，则同步引擎将阻止填充属性值。 有关属性流优先顺序的详细信息，请参阅 [About Attribute Flow Precedence](http://go.microsoft.com/FWLink/p/?LinkId=189675)（属性流优先顺序介绍）一文。
 
-<a name="see-also"></a>另請參閱
+<a name="see-also"></a>另请参阅
 =========
 
 <a name="other-resources"></a>其他資源

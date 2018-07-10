@@ -1,7 +1,7 @@
 ---
-title: "BHOLD FIM/MIM 集成安装 | Microsoft Docs"
-description: "BHOLD 集成模块会向 MIM 和 FIM 添加自助服务角色管理"
-keywords: 
+title: BHOLD FIM/MIM 集成安装 | Microsoft Docs
+description: BHOLD 集成模块会向 MIM 和 FIM 添加自助服务角色管理
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -9,12 +9,13 @@ ms.date: 09/12/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
-ms.assetid: 
-ms.openlocfilehash: ef68de19bd0eabd6d9203469ecc991d496f05846
-ms.sourcegitcommit: 0d8b19c5d4bfd39d9c202a3d2f990144402ca79c
+ms.assetid: ''
+ms.openlocfilehash: 08a0aaa60891727482e80c8998cc075eacf042cf
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36290163"
 ---
 # <a name="bhold-fimmim-integration-installation"></a>BHOLD FIM/MIM 集成安装
 
@@ -30,10 +31,10 @@ BHOLD FIM 集成模块扩展了 FIM 门户和 FIM 服务，因此用户可以在
 - Internet information Services 和 ASP.NET
 - Microsoft Silverlight 工具
 
-此外，BHOLD 核心和访问管理连接器模块必须已部署到该环境的某个服务器上，FIM 必须配置有一个或多个 BHOLD 管理代理。 有关如何安装和配置 BHOLD 核心模块的信息，请参阅 [BHOLD Core Installation](https://technet.microsoft.com/en-us/library/jj134095(v=ws.10).aspx)（BHOLD 核心安装）。 有关如何安装和使用访问管理连接器模块的信息，请参阅 [Access Management Connector Installation](https://technet.microsoft.com/en-us/library/jj874042(v=ws.10).aspx)（访问管理连接器安装）和 [Test Lab Guide: BHOLD Access Management Connector](https://technet.microsoft.com/en-us/library/jj853085(v=ws.10).aspx)（测试实验室指南：BHOLD 访问管理连接器）。
+此外，BHOLD 核心和访问管理连接器模块必须已部署到该环境的某个服务器上，FIM 必须配置有一个或多个 BHOLD 管理代理。 有关如何安装和配置 BHOLD 核心模块的信息，请参阅 [BHOLD Core Installation](https://technet.microsoft.com/library/jj134095(v=ws.10).aspx)（BHOLD 核心安装）。 有关如何安装和使用访问管理连接器模块的信息，请参阅 [Access Management Connector Installation](https://technet.microsoft.com/library/jj874042(v=ws.10).aspx)（访问管理连接器安装）和 [Test Lab Guide: BHOLD Access Management Connector](https://technet.microsoft.com/library/jj853085(v=ws.10).aspx)（测试实验室指南：BHOLD 访问管理连接器）。
 
->[!IMPORTANT]
-FIM 服务数据库的名称必须是 FIMService。 如果未使用默认 FIM 服务数据库名称安装 FIM，则 BHOLD FIM 集成安装将失败。
+> [!IMPORTANT]
+> FIM 服务数据库的名称必须是 FIMService。 如果未使用默认 FIM 服务数据库名称安装 FIM，则 BHOLD FIM 集成安装将失败。
 
 ## <a name="before-you-begin"></a>在开始之前
 
@@ -46,7 +47,7 @@ FIM 服务数据库的名称必须是 FIMService。 如果未使用默认 FIM �
 | **项目**                            | **描述**                                                                                                                                                                                                               | **值**                                                                                                                                                                                                                                                                                                            |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **对域使用安全提供程序** | 选中后，会指定 Active Directory 域服务安全控制对 BHOLD 核心的访问。                                                                                                                    | 选定复选框。 重要说明：如果未选中此复选框，则安装将失败。                                                                                                                                                                                                                   |
-| **域**                          | 指定包含在安装 BHOLD 核心时创建的服务帐户的域。 有关详细信息，请参阅 [BHOLD Core Installation](https://technet.microsoft.com/en-us/library/jj134095(v=ws.10).aspx)（BHOLD 核心安装）。 | 域名由向导自动提供。 仅当不正确时，更改名称。 重要说明：指定域名时，请使用 NetBIOS（短）名称，不要使用完全限定的域名 (FQDN)。 例如，如果域的 FQDN 是 fabrikam.com，将域名指定为 FABRIKAM。 |
+| **域**                          | 指定包含在安装 BHOLD 核心时创建的服务帐户的域。 有关详细信息，请参阅 [BHOLD Core Installation](https://technet.microsoft.com/library/jj134095(v=ws.10).aspx)（BHOLD 核心安装）。 | 域名由向导自动提供。 仅当不正确时，更改名称。 重要说明：指定域名时，请使用 NetBIOS（短）名称，不要使用完全限定的域名 (FQDN)。 例如，如果域的 FQDN 是 fabrikam.com，将域名指定为 FABRIKAM。 |
 | **用户名**                        | 指定 BHOLD 核心服务用户帐户的登录名。                                                                                                                                                              | 在此处填写用户帐户名称：                                                                                                                                                                                                                                                                                    |
 | **密码**                        | 指定服务用户帐户的密码。                                                                                                                                                                           | 在此处填写密码：重要说明：确保将此密码保存在一个隐藏的安全位置。                                                                                                                                                                                                                  |
 
@@ -95,7 +96,7 @@ FIM 服务数据库的名称必须是 FIMService。 如果未使用默认 FIM �
 
 2.  单击“开始”，然后单击“Internet Explorer”。
 
-3.  如果 SharePoint 配置为使用 SSL 安全，则在地址栏中键入 <https://localhost>，否则键入 <http://localhost>。
+3.  如果 SharePoint 配置为使用 SSL 安全性，则在地址栏中键入 <https://localhost>，否则键入 <http://localhost>。
 
 4.  在“团队网站”页左侧，单击“人员和组”。
 
@@ -192,20 +193,20 @@ BHOLD 通过以下三种方式之一选择自助服务请求的审批者：
 19. 在“修改组织单位属性/跟”页的“审批者”中，键入批准角色分配请求的用户的域和用户名，键入的格式为：\<域\>\\\<用户\>，其中\<域\>是 NetBIOS（短）域名，\<用户\>是用户的登录名。
 20. 单击" **确定**"。
 
->[!IMPORTANT]
-域和用户名必须匹配 BHOLD 核心数据库中用户的默认别名。
+> [!IMPORTANT]
+> 域和用户名必须匹配 BHOLD 核心数据库中用户的默认别名。
 
 指定组织单位审批者的一种替代方法是在 BHOLD 核心数据库中指定建议角色的审批者。 为此，请创建 approver1 属性，将其添加到与角色对象类型关联的属性类型集，然后修改每个建议的角色，从而指定审批者。
 
 为提供更佳的工作流安全性，除审批者外，还应通过为 OrgUnit 和角色创建和填充以下属性，指定其他审批模式和用户：
 
-- escalator*\<n\>*
+- escalator<em>\<n\></em>
 
-- owner*\<n\>*
+- owner<em>\<n\></em>
 
-- securityOfficer*\<n\>*
+- securityOfficer<em>\<n\></em>
 
-- notification*\<n\>*
+- notification<em>\<n\></em>
 
 其中，\<n\> 指示可选的数字后缀，以提供相同类型的多个属性。
 
@@ -213,8 +214,8 @@ BHOLD 通过以下三种方式之一选择自助服务请求的审批者：
 
 BHOLD FIM 集成安装会在 FIM 服务中创建集、工作流定义和管理策略规则 (MPR)。 如果已自定义 FIM 部署以更改可发出请求的管理员集或用户集，应确保 MPR 引用正确的用户集。
 
->[!NOTE]
-用户帐户必须先从 FIM 同步服务同步到 BHOLD 数据库，FIM 门户的用户才能使用 BHOLD 提供的自助服务功能。 具体而言，每个用户如果可以发出自助服务请求，或者指定为自助服务请求的审批者或呈报者，则在 BHOLD 核心数据库和 FIM 服务数据库中必须存在用户记录。
+> [!NOTE]
+> 用户帐户必须先从 FIM 同步服务同步到 BHOLD 数据库，FIM 门户的用户才能使用 BHOLD 提供的自助服务功能。 具体而言，每个用户如果可以发出自助服务请求，或者指定为自助服务请求的审批者或呈报者，则在 BHOLD 核心数据库和 FIM 服务数据库中必须存在用户记录。
 
 ## <a name="next-steps"></a>后续步骤
 

@@ -10,11 +10,12 @@ ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: ''
-ms.openlocfilehash: 241ad68d3f4a692c87d0d2a0069781ad042453c7
-ms.sourcegitcommit: 39f34a38967baa9c0da6ae5b57734b222f5771a5
+ms.openlocfilehash: 25a511dc590b02019c65a688c9b2c8dc821fff50
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36290078"
 ---
 # <a name="deploying-microsoft-identity-manager-certificate-manager-2016-mim-cm"></a>部署 Microsoft Identity Manager 证书管理器 2016 (MIM CM)
 
@@ -80,13 +81,13 @@ MIM CM 配置向导要求在此过程中提供信息，以便成功完成各步�
     ![图示](media/mim-cm-deploy/image005.png)
 
 3. 运行脚本 resourceForestModifySchema.vbs 单一林方案。 为资源林方案运行脚本：
-    - DomainA – 用户位置 (userForestModifySchema.vbs)
-    - ResourceForestB – CM 安装位置 (resourceForestModifySchema.vbs)。
+   - DomainA – 用户位置 (userForestModifySchema.vbs)
+   - ResourceForestB – CM 安装位置 (resourceForestModifySchema.vbs)。
 
-    >[!NOTE]
-    >架构更改是单向操作，并需要林恢复回滚，以确保有必要的备份。 有关通过执行此操作对架构所做的更改的详细信息，请查看文章 [Forefront Identity Manager 2010 Certificate Management Schema Changes](https://technet.microsoft.com/library/jj159298(v=ws.10).aspx)（Forefront Identity Manager 2010 证书管理架构更改）
+     >[!NOTE]
+     >架构更改是单向操作，并需要林恢复回滚，以确保有必要的备份。 有关通过执行此操作对架构所做的更改的详细信息，请查看文章 [Forefront Identity Manager 2010 Certificate Management Schema Changes](https://technet.microsoft.com/library/jj159298(v=ws.10).aspx)（Forefront Identity Manager 2010 证书管理架构更改）
 
-    ![图示](media/mim-cm-deploy/image007.png)
+     ![图示](media/mim-cm-deploy/image007.png)
 
 4. 运行脚本，脚本完成运行后，将收到一条成功消息。
 
@@ -355,7 +356,6 @@ MIMCMWebAgent 帐户将运行 MIM CM 门户。 在 IIS 和正常运行的内核�
 SETSPN -S http/cm.contoso.com contoso\MIMCMWebAgent
 #Delegation for certificate authority
 Get-ADUser CONTOSO\MIMCMWebAgent | Set-ADObject -Add @{"msDS-AllowedToDelegateTo"="rpcss/CORPCA","rpcss/CORPCA.contoso.com"}
-
 ```
 
 更新 CORPCM 上的 IIS
@@ -368,7 +368,6 @@ add-pssnapin WebAdministration
 Set-WebConfigurationProperty -Filter System.webServer/security/authentication/WindowsAuthentication -Location 'Default Web Site' -Name enabled -Value $true
 Set-WebConfigurationProperty -Filter System.webServer/security/authentication/WindowsAuthentication -Location 'Default Web Site' -Name useKernelMode -Value $false
 Set-WebConfigurationProperty -Filter System.webServer/security/authentication/WindowsAuthentication -Location 'Default Web Site' -Name useAppPoolCredentials -Value $true
-
 ```
 
 >[!NOTE]
@@ -465,10 +464,10 @@ Set-WebConfigurationProperty -Filter System.webServer/security/authentication/Wi
 
    - 使用现有用户：已启用
 
-    >[!NOTE]
-    >我们之前已创建了这些帐户。 请确保为全部六个代理帐户选项卡重复步骤 8 中的过程。
+     >[!NOTE]
+     >我们之前已创建了这些帐户。 请确保为全部六个代理帐户选项卡重复步骤 8 中的过程。
 
-    ![MIM CM 帐户](media/mim-cm-deploy/image030.png)
+     ![MIM CM 帐户](media/mim-cm-deploy/image030.png)
 
 10. 完成所有代理帐户信息后，单击“确定”。
 
@@ -602,9 +601,9 @@ Set-WebConfigurationProperty -Filter System.webServer/security/authentication/Wi
 
 6. 在“contoso-CORPCA-CA 属性”对话框中，单击“确定”。
 
-7. 右键单击 contoso-CORPCA-CA****，指向“所有任务”，然后单击“停止服务”。 等待 Active Directory 证书服务停止。
+7. 右键单击 contoso-CORPCA-CA，指向“所有任务”，然后单击“停止服务”。 等待 Active Directory 证书服务停止。
 
-8. 右键单击 contoso-CORPCA-CA****，指向“所有任务”，然后单击“启动服务”。
+8. 右键单击 contoso-CORPCA-CA，指向“所有任务”，然后单击“启动服务”。
 
 9. 最小化证书颁发机构控制台。
 
@@ -668,7 +667,7 @@ Set-WebConfigurationProperty -Filter System.webServer/security/authentication/Wi
     - 在“证书”对话框中，右键单击“请指定十六进制编码的证书哈希”框，然后单击“粘贴”。
 
     - 在“证书”对话框中，单击“确定”。
-    
+
         >[!Note]
         >如果“确定”按钮未启用，则从 clmAgent 证书复制指纹时，会意外地将隐藏字符包含在指纹字符串中。 在此练习中，重复自“任务 4：将 MIMCMAgent 证书的指纹复制到 Windows 剪贴板”开始的所有步骤。
 
@@ -678,11 +677,11 @@ Set-WebConfigurationProperty -Filter System.webServer/security/authentication/Wi
 
 6. 在“contoso-CORPCA-CA 属性”对话框中，单击“确定”。
 
-7. 右键单击 contoso-CORPCA-CA****，指向“所有任务”，然后单击“停止服务”。
+7. 右键单击 contoso-CORPCA-CA，指向“所有任务”，然后单击“停止服务”。
 
 8. 等待 Active Directory 证书服务停止。
 
-9. 右键单击 contoso-CORPCA-CA****，指向“所有任务”，然后单击“启动服务”。
+9. 右键单击 contoso-CORPCA-CA，指向“所有任务”，然后单击“启动服务”。
 
 10. 关闭“证书颁发机构”控制台。
 
@@ -736,7 +735,7 @@ Set-WebConfigurationProperty -Filter System.webServer/security/authentication/Wi
 6. 在“Contoso 的权限条目”对话框的“应用于”列表中，选择“下级用户对象”，然后为以下权限选中“允许”复选框：
 
     - 读取所有属性
-    
+
     - 读取权限
 
     - FIM CM 审核
@@ -904,7 +903,7 @@ $adace.GetEnumerator() | **Foreach-Object** {
 $acl = **Get-Acl** *-Path* $_.Value
 $sid=(**Get-ADGroup** "MIMCM-Managers").SID
 $p = **New-Object** System.Security.Principal.SecurityIdentifier($sid)
-##https://msdn.microsoft.com/en-us/library/system.directoryservices.activedirectorysecurityinheritance(v=vs.110).aspx
+##https://msdn.microsoft.com/library/system.directoryservices.activedirectorysecurityinheritance(v=vs.110).aspx
 $ace = **New-Object** System.DirectoryServices.ActiveDirectoryAccessRule
 ($p,[System.DirectoryServices.ActiveDirectoryRights]"GenericAll",[System.Security.AccessControl.AccessControlType]::Allow,
 [DirectoryServices.ActiveDirectorySecurityInheritance]::All)
