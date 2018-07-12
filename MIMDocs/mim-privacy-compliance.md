@@ -11,12 +11,12 @@ ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.suite: ems
-ms.openlocfilehash: 6bcf9ab26ba38f3c6eefbdb315d4975320a597b9
-ms.sourcegitcommit: d82c05aa814015fc6bdab37133eafec3366bea3b
+ms.openlocfilehash: e7134e060647153b5d525e9785139eb8c38f8569
+ms.sourcegitcommit: 6b2c77788a69f751fc7f5c18e678aa1fabf23ebb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34449677"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38952499"
 ---
 # <a name="microsoft-identity-manager-data-handling"></a>Microsoft Identity Manager 数据处理 
 
@@ -59,22 +59,22 @@ MIM 中与用户相关的所有数据均源自 Active Directory (AD) 和 HR 数�
 
 如果只安装了服务服务器（不带门户 UI），则可基于 [FIMAutomation PSSnapin] 运行搜索语法，可在[此处](https://social.technet.microsoft.com/wiki/contents/articles/22713.fim-portals-use-powershell-to-find-all-users-without-a-manager.aspx)找到示例。
 
-PAM 可以使用上述相同的语法，或者可以使用 [MIMPAM 模块](https://docs.microsoft.com/en-us/powershell/module/mimpam/get-pamuser?view=idm-ps-2016sp1)，特别是 get-pamuser cmdlet 来搜索 PAM 环境中的用户。
+PAM 可以使用上述相同的语法，或者可以使用 [MIMPAM 模块](https://docs.microsoft.com/powershell/module/mimpam/get-pamuser?view=idm-ps-2016sp1)，特别是 get-pamuser cmdlet 来搜索 PAM 环境中的用户。
 
 搜索可用数据的其他报告选项位于服务和门户中。
-- [混合报告](https://docs.microsoft.com/en-us/microsoft-identity-manager/identity-manager-hybrid-reporting-azure)
-- [通过 SCSM 进行报告](https://docs.microsoft.com/en-us/previous-versions/mim/jj133853%28v%3dws.10%29)
+- [混合报告](https://docs.microsoft.com/microsoft-identity-manager/identity-manager-hybrid-reporting-azure)
+- [通过 SCSM 进行报告](https://docs.microsoft.com/previous-versions/mim/jj133853%28v%3dws.10%29)
 
 ### <a name="bhold"></a>BHOLD
 Bhold Core 服务有一个可用来搜索用户或属性的 UI。 
 
 ![bhold 搜索](media/mim-privacy-compliance/mim-privacy-compliance-bhold.PNG)
 
-如果正在将 BHOLD 与[访问管理连接器](https://docs.microsoft.com/en-us/microsoft-identity-manager/bhold/bhold-access-management-connector-install)同步以获取同步服务，用户将能够看到已连接的用户对象以及发送到 BHOLD Core 的属性。
+如果正在将 BHOLD 与[访问管理连接器](https://docs.microsoft.com/microsoft-identity-manager/bhold/bhold-access-management-connector-install)同步以获取同步服务，用户将能够看到已连接的用户对象以及发送到 BHOLD Core 的属性。
 
 此外，还可以加载 BHOLD 报告模块。
 
-- [BHOLD 报告](https://docs.microsoft.com/en-us/microsoft-identity-manager/bhold/bhold-concepts-guide#reporting)
+- [BHOLD 报告](https://docs.microsoft.com/microsoft-identity-manager/bhold/bhold-concepts-guide#reporting)
 
 ### <a name="certificate-management"></a>证书管理
 证书管理服务搜索内置于该 UI。 管理员将启动并选择“查找用户并查看或管理其信息”  
@@ -89,9 +89,9 @@ Bhold Core 服务有一个可用来搜索用户或属性的 UI。
 
 
 ### <a name="service-and-portal--pam"></a>服务和门户 / PAM
-借助服务和门户以及 PAM，你可以导出此数据，基于 [FIMAutomation PSSnapin] 运行搜索语法（可在[此处](https://social.technet.microsoft.com/wiki/contents/articles/22713.fim-portals-use-powershell-to-find-all-users-without-a-manager.aspx)找到示例），并将其发送到 [csv](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/export-csv?view=powershell-6)。
+借助服务和门户以及 PAM，你可以导出此数据，基于 [FIMAutomation PSSnapin] 运行搜索语法（可在[此处](https://social.technet.microsoft.com/wiki/contents/articles/22713.fim-portals-use-powershell-to-find-all-users-without-a-manager.aspx)找到示例），并将其发送到 [csv](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/export-csv?view=powershell-6)。
 
-PAM 可以使用上述相同的语法，或者可以使用 [MIMPAM 模块](https://docs.microsoft.com/en-us/powershell/module/mimpam/get-pamuser?view=idm-ps-2016sp1)，特别是 get-pamuser 来搜索 PAM 环境中的用户并将其发送到 csv。
+PAM 可以使用上述相同的语法，或者可以使用 [MIMPAM 模块](https://docs.microsoft.com/powershell/module/mimpam/get-pamuser?view=idm-ps-2016sp1)，特别是 get-pamuser 来搜索 PAM 环境中的用户并将其发送到 csv。
 
 - [示例：使用 PowerShell 查询 MIM 服务](https://gallery.technet.microsoft.com/Querying-The-FIMMIM-dcb82de3)
 
@@ -107,14 +107,14 @@ PAM 可以使用上述相同的语法，或者可以使用 [MIMPAM 模块](https
 
 ### <a name="synchronization-service"></a>同步服务
 
-为了执行管理操作，管理员必须是同步操作的一部分或[此处](https://docs.microsoft.com/en-us/previous-versions/mim/jj590183(v%3dws.10))定义的管理员。
+为了执行管理操作，管理员必须是同步操作的一部分或[此处](https://docs.microsoft.com/previous-versions/mim/jj590183(v%3dws.10))定义的管理员。
 
 通过定义来自权威来源中的规则来完成数据更新。 管理控制台帮助识别权威来源以在源上对其进行更新。 另一种选择是创建同步规则或规则扩展来控制数据更新（如果 HR 数据等来源仍需要保留）。 这些是可用的支持选项。
 
 有关更新属性的不同方式的详细信息，请参阅以下内容。 
 
-- [使用规则扩展](https://msdn.microsoft.com/en-us/library/windows/desktop/ms698810(v=vs.100).aspx)
-- [Understanding Data Synchronization with External Systems](https://docs.microsoft.com/en-us/previous-versions/mim/jj133850(v%3dws.10))（了解如何与外部系统进行数据同步）
+- [使用规则扩展](https://msdn.microsoft.com/library/windows/desktop/ms698810(v=vs.100).aspx)
+- [Understanding Data Synchronization with External Systems](https://docs.microsoft.com/previous-versions/mim/jj133850(v%3dws.10))（了解如何与外部系统进行数据同步）
 
 ### <a name="service-and-portal--pam"></a>服务和门户/PAM
 
@@ -139,8 +139,8 @@ MIM 中的数据从其连接的数据源同步并始终从其进行更新。 在
 同步服务如同许多其他方法一样依据业务流程来处理数据或删除数据。 为了便于理解，下面介绍一些文章来帮助了解有关删除和更新属性的方法： 
 
 - [Understanding Deprovisioning](https://social.technet.microsoft.com/wiki/contents/articles/1270.understanding-deprovisioning-in-fim.aspx)（了解取消设置）
-- [使用规则扩展](https://msdn.microsoft.com/en-us/library/windows/desktop/ms698810(v=vs.100).aspx)
-- [MIM 最佳做法](https://docs.microsoft.com/en-us/microsoft-identity-manager/mim-best-practices)
+- [使用规则扩展](https://msdn.microsoft.com/library/windows/desktop/ms698810(v=vs.100).aspx)
+- [MIM 最佳做法](https://docs.microsoft.com/microsoft-identity-manager/mim-best-practices)
 
 ### <a name="service-and-portal--pam"></a>服务和门户/PAM
 
@@ -177,6 +177,6 @@ Bhold 等连接到同步服务的大多数系统可以配置为在删除 HR 等�
 ![mim-privacy-compliance-ceip2.PNG](media/mim-privacy-compliance/mim-privacy-compliance-ceip2.PNG)
 
 ## <a name="next-steps"></a>后续步骤 
-- [有关 SQL 相关隐私指南](https://docs.microsoft.com/en-us/sql/relational-databases/security/microsoft-sql-and-the-gdpr-requirements?view=sql-server-2017)
+- [有关 SQL 相关隐私指南](https://docs.microsoft.com/sql/relational-databases/security/microsoft-sql-and-the-gdpr-requirements?view=sql-server-2017)
 - [服务信任门户的 GDPR 部分](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)
 - [FIM 2010 存档：提升 - 实现 Forefront Identity Manager 2010](https://social.technet.microsoft.com/wiki/contents/articles/35789.fim-2010-archive-ramp-up-implementing-forefront-identity-manager-2010.aspx)
