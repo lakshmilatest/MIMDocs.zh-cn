@@ -8,12 +8,12 @@ ms.date: 06/27/2018
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
-ms.openlocfilehash: 090e82cac6c734beb9767e2d2e6230320e44c26f
-ms.sourcegitcommit: c6cb2556bb9f2256b959a3c95db7ca5bbfc2b437
+ms.openlocfilehash: ca1dacdd32a025bc08c00bde6088d85d6444be99
+ms.sourcegitcommit: 8b2623f6247621098d386cbe84e10b5b5373abfb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065136"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39149907"
 ---
 # <a name="conversion-of-mim-specific-services-to-gmsa"></a>将 MIM 特定服务转换为 gMSA
 
@@ -48,7 +48,7 @@ ms.locfileid: "37065136"
 
 -   <https://technet.microsoft.com/en-us/library/jj128430(v=ws.11).aspx>
 
-Windows 域控制器上的 Fist Step
+Windows 域控制器上的第一个步骤
 
 1.  如果需要，创建密钥分发服务 (KDS) 根密钥（每个域仅一次）。 DC 上的 KDS 服务使用根密钥（以及其他信息）来生成密码。
 
@@ -61,7 +61,7 @@ Windows 域控制器上的 Fist Step
 ## <a name="synchronization-service"></a>同步服务
 -----------------------
 
-1.  Fist Step 创建名为“MIMSync_Servers”的组并将所有同步服务器添加到此组。
+1.  创建名为“MIMSync_Servers”的组并将所有同步服务器添加到此组。
 
 ![](media/a4dc3f6c0cb1f715ba690744f54dce5c.png)
 

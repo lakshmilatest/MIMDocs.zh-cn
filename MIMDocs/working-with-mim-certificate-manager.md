@@ -116,7 +116,7 @@ ms.locfileid: "36289867"
 
    |                     |                                                                                                                                                                                                          |
    |---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   |      MIMCM URL      |                                              用于配置 CM 的门户的 FQDN。 例如，https://mimcmServerAddress/certificatemanagement                                              |
+   |      MIMCM URL      |                                              用于配置 CM 的门户的 FQDN。 例如， https://mimcmServerAddress/certificatemanagement                                               |
    |      ADFS URL       | 如果你将使用 AD FS，请插入你的 AD FS URL。 例如，<https://adfsServerSame/adfs> </br> 如果不使用 ADFS，请使用空字符串配置此设置。  例如：```<ADFS URL=""/>``` |
    |     PrivacyUrl      |                                         你可以将 URL 包含到说明你将如何处理为证书注册收集的用户详细信息的网页。                                          |
    |     SupportMail     |                                                                           你可以为支持问题包含电子邮件地址。                                                                           |

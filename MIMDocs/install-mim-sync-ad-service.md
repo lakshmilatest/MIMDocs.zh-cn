@@ -58,7 +58,7 @@ MIM 管理代理 (MA) 是 MIM 同步到 MIM 服务的连接器。 若要创建�
 
     -   数据库：FIMService
 
-    -   MIM 服务基址：http://localhost:5725
+    -   MIM 服务基址： http://localhost:5725 
 
     -   身份验证模式：Windows 集成的身份验证
 
