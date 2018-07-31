@@ -232,7 +232,7 @@ ms.locfileid: "36290095"
 > 
 > 
 > [!Important]
->  验证环境中是否启用了预配。 可通过运行脚本实现此目的，请参阅“使用 Windows PowerShell 启用预配”(http://go.microsoft.com/FWLink/p/?LinkId=189660)。
+>  验证环境中是否启用了预配。 可通过运行脚本实现此目的，请参阅“使用 Windows PowerShell 启用预配 (http://go.microsoft.com/FWLink/p/?LinkId=189660) 。
 
 
 ## <a name="configuring-the-fim-service"></a>配置 FIM 服务
@@ -244,7 +244,7 @@ ms.locfileid: "36290095"
 
 此预配策略的目的是将组纳入 AD 用户出站同步规则的作用域。 通过将资源纳入同步规则的作用域，同步引擎能够根据你的配置将资源预配到 AD DS。
 
-若要配置 FIM 服务，可在 Windows Internet Explorer® 中导航到 http://localhost/identitymanagement。 在 MIM 门户页上，若要创建预配策略，请从“管理”部分转到相关页面。 若要验证配置，应运行[使用 Windows PowerShell 记录预配策略配置](http://go.microsoft.com/FWLink/p/?LinkId=189661)中的脚本。
+若要配置 FIM 服务，可在 Windows Internet Explorer® 中导航到 http://localhost/identitymanagement 。 在 MIM 门户页上，若要创建预配策略，请从“管理”部分转到相关页面。 若要验证配置，应运行[使用 Windows PowerShell 记录预配策略配置](http://go.microsoft.com/FWLink/p/?LinkId=189661)中的脚本。
 
 ### <a name="step-6-create-the-synchronization-rule"></a>步骤 6：创建同步规则
 
