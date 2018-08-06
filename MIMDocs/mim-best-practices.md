@@ -358,9 +358,9 @@ FIM 同步服务的服务帐户不应是用于控制 FIM 同步服务（以 FIMS
 
 28. 单击“操作”，然后单击“备用访问映射”。
 
-29. 单击“http://servername”。
+29. 单击“ http://servername ”。
 
-30. 将 http://servername 更改为 https://servername，然后单击“确定”。
+30. 将 http://servername 更改为 https://servername ，然后单击“确定”。
 
 31. 依次单击“开始”、“运行”，键入 iisreset，然后单击“确定”。
 
