@@ -105,7 +105,7 @@ ms.locfileid: "36289908"
 想要使用文本编辑器，如“记事本”：
 
 1. 打开文件 **C:\Windows\System32\inetsrv\config\applicationHost.config**
-2. 向下滚动到该文件的第 82 行。 标记值 **overrideModeDefault** 应为**<section name="windowsAuthentication" overrideModeDefault="Deny" />**  
+2. 向下滚动到该文件的第 82 行。 标记值 **overrideModeDefault**应为 **<section name="windowsAuthentication" overrideModeDefault="Deny" />**  
 3. 将值 **overrideModeDefault** 更改为 Allow   
 4. 保存该文件，然后使用 PowerShell 命令 `iisreset /START`重启 IIS
 
