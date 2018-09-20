@@ -8,12 +8,12 @@ ms.date: 06/27/2018
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
-ms.openlocfilehash: ca1dacdd32a025bc08c00bde6088d85d6444be99
-ms.sourcegitcommit: 8b2623f6247621098d386cbe84e10b5b5373abfb
+ms.openlocfilehash: 61ff4a806f496396a6ab84e933268e59d58f6670
+ms.sourcegitcommit: 28834821cbddd6384613d8ba45424c35f4c39ce6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39149907"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45538585"
 ---
 # <a name="conversion-of-mim-specific-services-to-gmsa"></a>将 MIM 特定服务转换为 gMSA
 
@@ -44,9 +44,9 @@ ms.locfileid: "39149907"
 
 -   [组托管服务帐户概述](https://docs.microsoft.com/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview)
 
--   <https://docs.microsoft.com/en-us/powershell/module/addsadministration/new-adserviceaccount?view=win10-ps>
+-   <https://docs.microsoft.com/powershell/module/addsadministration/new-adserviceaccount?view=win10-ps>
 
--   <https://technet.microsoft.com/en-us/library/jj128430(v=ws.11).aspx>
+-   <https://technet.microsoft.com/library/jj128430(v=ws.11).aspx>
 
 Windows 域控制器上的第一个步骤
 
@@ -110,7 +110,7 @@ Windows 域控制器上的第一个步骤
 ![](media/ef5f16085ec1b2b1637fa3d577a95dbf.png)
 
 
-5. 安装最新的[修补程序 4.5.x.x](https://docs.microsoft.com/en-us/microsoft-identity-manager/reference/version-history) 或更高版本。
+5. 安装最新的[修补程序 4.5.x.x](https://docs.microsoft.com/microsoft-identity-manager/reference/version-history) 或更高版本。
 
 - 修补后，停止 FIM 同步服务。
 - 控制面板程序和功能 Microsoft Identity Manager
@@ -159,7 +159,7 @@ Windows 域控制器上的第一个步骤
 
     在连接网络时（通常在启动循环早期），启动 Microsoft 密钥分发服务。
 
-    请参阅关于类似问题的讨论：<https://social.technet.microsoft.com/Forums/en-US/a290c5c0-3112-409f-8cb0-ff23e083e5d1/ad-fs-windows-2012-r2-adfssrv-hangs-in-starting-mode?forum=winserverDS>
+    请参阅关于类似问题的讨论：<https://social.technet.microsoft.com/Forums/a290c5c0-3112-409f-8cb0-ff23e083e5d1/ad-fs-windows-2012-r2-adfssrv-hangs-in-starting-mode?forum=winserverDS>
 
 4.  运行 MIM 服务的提升 MSI 并选择更改。
 

@@ -12,12 +12,12 @@ ms.technology: security
 ms.assetid: c01487f2-3de6-4fc4-8c3a-7d62f7c2496c
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: f69648e7e4229ca7c8de895cdf10ccb2c5f368e2
-ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
+ms.openlocfilehash: a64ee79897ce73242d0f8510842fdcb6758fab2c
+ms.sourcegitcommit: 28834821cbddd6384613d8ba45424c35f4c39ce6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36289527"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45538568"
 ---
 # <a name="set-up-an-identity-management-server-sharepoint"></a>设置标识管理服务器：SharePoint
 
@@ -71,7 +71,7 @@ ms.locfileid: "36289527"
 2. 将此服务器指定为用于配置数据库的数据库服务器（如 corpsql），并将 Contoso\SharePoint 指定为要使用的 SharePoint 的数据库访问帐户。
 3. 创建一个密码，用作场安全密码。
 
-4. 建议在配置向导中选择 [MinRole](https://docs.microsoft.com/en-us/sharepoint/install/overview-of-minrole-server-roles-in-sharepoint-server-2016) 类型的“前端”
+4. 建议在配置向导中选择 [MinRole](https://docs.microsoft.com/sharepoint/install/overview-of-minrole-server-roles-in-sharepoint-server-2016) 类型的“前端”
 
 5. 当配置向导完成配置任务 10（共 10 项）后，单击“完成”，将打开 Web 浏览器。
 
