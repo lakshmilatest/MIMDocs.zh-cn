@@ -7,15 +7,15 @@ ms.author: davidste
 manager: mbaldwin
 ms.date: 06/25/2018
 ms.topic: article
-ms.service: microsoft-identity-manager
+ms.prod: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: ''
-ms.openlocfilehash: 35d210b06a1e58b3b8f4f08677c2a4151f540246
-ms.sourcegitcommit: 88d4e41d8d57f44f4c6c4468fdbd37c2d7e91fd5
+ms.openlocfilehash: ff82b2fce31abe417509347ce7b477dd1b4056f2
+ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36957533"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49332331"
 ---
 # <a name="mim-sp1-4414360--service-dynamic-logging"></a>MIM SP1 (4.4.1436.0) 服务动态日志记录
 在 4.4.1436.0 中引入了新的日志记录功能。 这使得管理员和支持工程师无需重启管理服务即可打开日志记录功能。

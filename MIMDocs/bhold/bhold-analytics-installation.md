@@ -2,20 +2,19 @@
 title: BHOLD 分析安装 | Microsoft Docs
 description: BHOLD 分析模块可以基于规则测试数据访问权限
 keywords: ''
-author: barclayn
-ms.author: barclayn
-manager: mbaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 09/07/2017
 ms.topic: article
-ms.service: microsoft-identity-manager
-ms.technology: security
+ms.prod: microsoft-identity-manager
 ms.assetid: ''
-ms.openlocfilehash: 24e43d8ad886fcd7bfa7a9e694754b956f1659cd
-ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
+ms.openlocfilehash: ec7069156aa033b33a139ae83e26abcdea7b482a
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36290265"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358323"
 ---
 # <a name="bhold-analytics-installation"></a>BHOLD 分析安装
 

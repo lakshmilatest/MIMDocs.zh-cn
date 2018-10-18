@@ -8,14 +8,13 @@ ms.reviewer: fimguy
 manager: mtillman
 ms.date: 09/04/2018
 ms.topic: article
-ms.service: microsoft-identity-manager
-ms.technology: active-directory-domain-services
-ms.openlocfilehash: 85ab84231c2ebfede125ffaf5fb39964e8a8450c
-ms.sourcegitcommit: acb2c61831cb634278acc439d6d9496ff51a6a54
+ms.prod: microsoft-identity-manager
+ms.openlocfilehash: 750947d04f540e2c8317861c5826c2145deba1fd
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43694773"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358376"
 ---
 # <a name="use-a-custom-multi-factor-authentication-provider-via-an-api-during-pam-role-activation-or-in-sspr"></a>通过 API 使用自定义多重身份验证提供程序激活 PAM 角色或 SSPR
 
@@ -28,7 +27,7 @@ MIM 客户有两个其他选项：
 
 本文概述如何通过客户开发的 API 和集成 SDK，结合使用自定义多重身份验证提供程序和 MIM。  
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 要结合使用自定义多重身份验证提供程序 API 和 MIM，需要：
 

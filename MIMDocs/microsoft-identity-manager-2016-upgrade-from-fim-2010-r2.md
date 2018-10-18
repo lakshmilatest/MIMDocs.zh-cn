@@ -2,22 +2,21 @@
 title: 从 FIM 2010 R2 升级到 Microsoft Identity Manager 2016 | Microsoft Docs
 description: 了解如何升级你的 FIM 2010 R2 组件，然后安装 MIM 2016 中的新增组件。
 keywords: ''
-author: fimguy
-ms.author: barclayn
-manager: mbaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 10/12/2017
 ms.topic: article
-ms.service: microsoft-identity-manager
-ms.technology: security
+ms.prod: microsoft-identity-manager
 ms.assetid: 9471ccc1-bafe-46ee-b169-1464262380e1
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 46cc77654543045d1dbf1f1a750e76c4a35b727e
-ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
+ms.openlocfilehash: 07998c20fcdc325cd33d8f9ee3d06c9c8572b654
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36289884"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358663"
 ---
 # <a name="upgrade-from-forefront-identity-manager-2010-r2"></a>从 Forefront 标识管理器 2010 R2 升级
 

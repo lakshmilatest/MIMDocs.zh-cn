@@ -1,19 +1,18 @@
 ---
 title: 启用 gMSA 后更新用于通知和批准的 MIM 特定服务帐户 | Microsoft Docs
 description: 描述配置 gMSA 的基本步骤的主题。
-author: fimguy
+author: billmath
 ms.author: billmath
 manager: mtillman
 ms.date: 06/27/2018
 ms.topic: article
-ms.service: microsoft-identity-manager
-ms.technology: security
-ms.openlocfilehash: cc33293c0a836f9e5118fc372abc5d96c1a5373d
-ms.sourcegitcommit: c6cb2556bb9f2256b959a3c95db7ca5bbfc2b437
+ms.prod: microsoft-identity-manager
+ms.openlocfilehash: af293106b11651dfd720c03165938f8079a3e49b
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065154"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358206"
 ---
 # <a name="update-of-mim-specific-service-account-for-notifications-to-gmsa"></a>将用于通知的 MIM 特定服务帐户更新为 gMSA
 ===========================================

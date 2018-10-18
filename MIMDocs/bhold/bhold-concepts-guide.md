@@ -2,19 +2,18 @@
 title: Microsoft BHOLD 套件概念指南 | Microsoft Docs
 description: 通过安装和配置同步服务立刻开始使用 MIM 2016 组件。
 keywords: ''
-author: barclayn
-ms.author: barclayn
-manager: mbaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 09/14/2017
-ms.service: microsoft-identity-manager
-ms.technology: security
 ms.assetid: ''
-ms.openlocfilehash: 521025de3dc16a9bda02aed8287faeb3449192c1
-ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
+ms.prod: microsoft-identity-manager
+ms.openlocfilehash: 32bd77140cf70047eaa02d363a1348e73783f87a
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36290061"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358833"
 ---
 # <a name="microsoft-bhold-suite-concepts-guide"></a>Microsoft BHOLD 套件概念指南
 

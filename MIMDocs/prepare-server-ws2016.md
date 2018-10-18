@@ -2,22 +2,21 @@
 title: 配置 Windows Server 2016 for MIM 2016 SP1 | Microsoft Docs
 description: 获取准备 Windows Server 2016 SP1 以使用 MIM 2016 的步骤和最低要求。
 keywords: ''
-author: fimguy
-ms.author: davidste
-manager: mbaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 04/26/2018
 ms.topic: get-started-article
-ms.service: microsoft-identity-manager
-ms.technology: security
+ms.prod: microsoft-identity-manager
 ms.assetid: 51507d0a-2aeb-4cfd-a642-7c71e666d6cd
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: bfc79d27f015ee3d57c33c26ecae0f5b8ff38370
-ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
+ms.openlocfilehash: 49e549913a5fd87528df2205b8d5b0a83f3d2b24
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36289483"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358238"
 ---
 # <a name="set-up-an-identity-management-servers-windows-server-2016"></a>设置标识管理服务器：Windows Server 2016
 

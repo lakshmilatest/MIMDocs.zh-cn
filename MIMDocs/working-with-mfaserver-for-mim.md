@@ -2,20 +2,19 @@
 title: 使用 Azure 多重身份验证服务器 SDK 激活 PAM 或 SSPR 方案 | Microsoft Docs
 description: 设置 Azure 多重身份验证服务器 SDK，使其在用户激活 Privileged Access Management 和自助密码重置中的角色时作为第二安全层。
 keywords: ''
-author: fimguy
+author: billmath
 ms.author: billmath
 manager: mtillman
 ms.date: 09/02/2018
 ms.topic: article
-ms.service: microsoft-identity-manager
-ms.technology: security
+ms.prod: microsoft-identity-manager
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
-ms.openlocfilehash: 7191e445688cc9e3c5c02b9c6852c869a28a937a
-ms.sourcegitcommit: ad0690bd57e3d056397108bf1c8417965d69a32c
+ms.openlocfilehash: b92a217dd86d9e4de177ebec9ecec7c76222d7b1
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43772672"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358272"
 ---
 # <a name="use-azure-multi-factor-authentication-server-to-activate-pam-or-sspr"></a>使用 Azure 多重身份验证服务器激活 PAM 或 SSPR
 以下文档介绍如何设置 Azure MFA 服务器，使其在用户激活 Privileged Access Management 和自助密码重置中的角色时作为第二安全层。
@@ -25,7 +24,7 @@ ms.locfileid: "43772672"
 
 下面这篇文章将概述发布后，从 Azure MFA SDK 到 Azure 多重身份验证服务器 SDK 的配置更新和针对简单切换进行启用的步骤，因为该内容将添加到即将推出的修补程序中，请参阅[版本历史记录](/reference/version-history.md)，了解相关公告。 
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 要结合使用 MIM 和 Azure 多重身份验证服务器，需要：
 

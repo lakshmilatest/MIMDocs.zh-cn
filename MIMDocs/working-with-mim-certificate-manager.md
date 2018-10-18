@@ -3,21 +3,20 @@ title: 部署 MIM 证书管理器 Windows 应用程序 | Microsoft Docs
 description: 了解如何部署证书管理器应用以使用户可以管理自己的访问权限。
 keywords: ''
 author: billmath
-ms.author: barclayn
-manager: mbaldwin
+ms.author: billmath
+manager: mtillman
 ms.date: 10/16/2017
 ms.topic: article
-ms.service: microsoft-identity-manager
-ms.technology: security
+ms.prod: microsoft-identity-manager
 ms.assetid: 66060045-d0be-4874-914b-5926fd924ede
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: bf655d451e86261ffd3043117a56f4daccb4b460
-ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
+ms.openlocfilehash: 8ff9edce6da865418e300095ff0827853a35d4eb
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36289867"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358340"
 ---
 # <a name="mim-certificate-manager-windows-store-application-deployment"></a>MIM 证书管理器 Windows 应用商店应用程序部署
 
@@ -117,7 +116,7 @@ ms.locfileid: "36289867"
    |                     |                                                                                                                                                                                                          |
    |---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |      MIMCM URL      |                                              用于配置 CM 的门户的 FQDN。 例如， https://mimcmServerAddress/certificatemanagement                                               |
-   |      ADFS URL       | 如果你将使用 AD FS，请插入你的 AD FS URL。 例如，<https://adfsServerSame/adfs> </br> 如果不使用 ADFS，请使用空字符串配置此设置。  例如：```<ADFS URL=""/>``` |
+   |      ADFS URL       | 如果你将使用 AD FS，请插入你的 AD FS URL。 例如， <https://adfsServerSame/adfs>  </br> 如果不使用 ADFS，请使用空字符串配置此设置。  例如：```<ADFS URL=""/>``` |
    |     PrivacyUrl      |                                         你可以将 URL 包含到说明你将如何处理为证书注册收集的用户详细信息的网页。                                          |
    |     SupportMail     |                                                                           你可以为支持问题包含电子邮件地址。                                                                           |
    | LobComplianceEnable |                                                                     可将其设置为 true 或 false。 默认情况下它设置为 true。                                                                      |

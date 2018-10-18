@@ -2,21 +2,20 @@
 title: Azure 中的混合报告是什么？ | Microsoft Docs
 description: 使用 Azure Active Directory 中的混合审核活动报告可以在云中和本地查看已审核的事件。
 keywords: ''
-author: davidste
-ms.author: davidste
-manager: bhu
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 02/20/2018
 ms.topic: article
-ms.service: microsoft-identity-manager
-ms.technology: security
+ms.prod: microsoft-identity-manager
 ms.assetid: 7320f014-8b60-4866-92de-cfbd3e6edc48
 ms.suite: ems
-ms.openlocfilehash: eb9725df484fb5ac2ee44bd9a0423bdb4fbe7e86
-ms.sourcegitcommit: b4a39928c5fa1d7718046563c0809bcbf11d833d
+ms.openlocfilehash: dd87f00fb3faded60671a47a0ba1dab7e4c2a531
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2018
-ms.locfileid: "29370372"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358170"
 ---
 # <a name="hybrid-identity-management-audit-reporting-in-azure-active-directory"></a>Azure Active Directory 中的混合身份管理审核报告
 借助 Azure Active Directory (Azure AD) 审核活动报告，你可以在本地或云中监视身份管理活动。 通过在单个报告中管理所有身份和访问数据，可以节省时间并降低总体成本。

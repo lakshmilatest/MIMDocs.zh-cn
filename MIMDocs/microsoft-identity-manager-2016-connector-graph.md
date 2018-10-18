@@ -4,18 +4,17 @@ author: fimguy
 description: 用于 Microsoft Graph 的 Microsoft Identity Manager 连接器支持外部用户 AD 帐户生命周期管理。 在这种情况下，组织已邀请来宾访问其 Azure AD 目录，并希望为这些来宾授予对本地 Windows 集成身份验证或基于 Kerberos 的应用程序的访问权限
 keywords: ''
 ms.author: billmath
-manager: bhu
+manager: mtillman
 ms.date: 10/02/2018
 ms.topic: article
-ms.service: microsoft-identity-manager
-ms.technology: security
+ms.prod: microsoft-identity-manager
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
-ms.openlocfilehash: 09052bc9f5cecd0a599e9a93ee43cc44ce435671
-ms.sourcegitcommit: 032b3cdd8a88b1ccfb30c0070f216020feee6293
+ms.openlocfilehash: 2e376bcc88518b911f93ce9cd4ab920eb428815b
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48045643"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358646"
 ---
 <a name="microsoft-identity-manager-connector-for-microsoft-graph"></a>用于 Microsoft Graph 的 Microsoft Identity Manager 连接器
 =======================================================================================

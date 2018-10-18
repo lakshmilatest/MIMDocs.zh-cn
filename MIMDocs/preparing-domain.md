@@ -3,21 +3,20 @@ title: 设置 Microsoft Identity Manager 2016 的域 | Microsoft Docs
 description: 安装 MIM 2016 之前，创建 Active Directory 域控制器
 keywords: ''
 author: billmath
-ms.author: barclayn
-manager: mbaldwin
+ms.author: billmath
+manager: mtillman
 ms.date: 10/26/2017
 ms.topic: get-started-article
-ms.service: microsoft-identity-manager
-ms.technology: security
+ms.prod: microsoft-identity-manager
 ms.assetid: 50345fda-56d7-4b6e-a861-f49ff90a8376
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: ddab5b1ab57d3d332d5cd36ecc5a29abd83222ec
-ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
+ms.openlocfilehash: cbba7abe810fea0943e087206f7b0b6e3baa7cbb
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36289024"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49357865"
 ---
 # <a name="set-up-a-domain"></a>设置域
 

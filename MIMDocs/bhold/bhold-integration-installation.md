@@ -2,20 +2,19 @@
 title: BHOLD FIM/MIM 集成安装 | Microsoft Docs
 description: BHOLD 集成模块会向 MIM 和 FIM 添加自助服务角色管理
 keywords: ''
-author: barclayn
-ms.author: barclayn
-manager: mbaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 09/12/2017
 ms.topic: article
-ms.service: microsoft-identity-manager
-ms.technology: security
+ms.prod: microsoft-identity-manager
 ms.assetid: ''
-ms.openlocfilehash: 08a0aaa60891727482e80c8998cc075eacf042cf
-ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
+ms.openlocfilehash: 317c9ae4c940a509b6ac328cd5bb7cd7baa4dde9
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36290163"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358799"
 ---
 # <a name="bhold-fimmim-integration-installation"></a>BHOLD FIM/MIM 集成安装
 

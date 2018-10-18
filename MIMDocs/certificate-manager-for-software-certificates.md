@@ -3,21 +3,20 @@ title: 使用模板在证书管理器中申请证书 | Microsoft Docs
 description: 了解如何使用证书管理器来创建和续订带配置文件模板的软件证书。
 keywords: ''
 author: billmath
-ms.author: barclayn
-manager: mbaldwin
+ms.author: billmath
+manager: mtillman
 ms.date: 10/12/2017
 ms.topic: article
-ms.service: microsoft-identity-manager
-ms.technology: security
+ms.prod: microsoft-identity-manager
 ms.assetid: fed5ada9-d80f-4825-aad7-4172ac5d71d3
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: aebf5af709f4f775ce13be49d8f9075a94e864a2
-ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
+ms.openlocfilehash: e9454643f425a6bd306c2828479129312d5a5d4f
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36290316"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358357"
 ---
 # <a name="create-software-certificates-with-certificate-manager"></a>使用证书管理器创建软件证书
 注册和续订软件证书无需是管理员，而且也无需虚拟智能卡。 值得注意的是，在某一时刻会提示允许证书操作，这是正常现象。
