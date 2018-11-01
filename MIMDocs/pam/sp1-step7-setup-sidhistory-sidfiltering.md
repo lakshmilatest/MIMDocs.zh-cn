@@ -2,22 +2,21 @@
 title: 步骤 7 安装 SID 历史记录/SID 筛选
 description: 这是使用脚本配置 Privileged Identity Manager 的第 7 步。 该步骤包含设置 SID 历史记录/SID 筛选。
 keywords: ''
-author: barclayn
-ms.author: barclayn
-manager: MBaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 08/18/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: f10febeb02452517d49a897729f8d2ee12f85328
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: f85dd4eff32d5207948ec332bf2e9850b14a86fe
+ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49332948"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50379322"
 ---
 # <a name="step-7-set-up-sid-historysid-filtering"></a>步骤 7 设置 SID 历史记录/SID 筛选
 

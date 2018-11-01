@@ -2,22 +2,21 @@
 title: 步骤 4 配置 SharePoint
 description: 这是使用脚本配置 PAM 的第 4 步。 此步骤会配置 SharePoint，以便将其作为 PAM 部署的一部分。
 keywords: ''
-author: barclayn
-ms.author: barclayn
-manager: MBaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 08/18/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: af91fc1283e8576b38dcfef3deda2d2da6eed24e
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: 422c4c973d76f5b91fb2463e237ead1984153484
+ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49333201"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50379424"
 ---
 # <a name="step-4-configuring-sharepoint"></a>步骤 4 配置 SharePoint
 

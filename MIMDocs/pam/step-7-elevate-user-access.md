@@ -1,20 +1,19 @@
 ---
 title: 部署 PAM 步骤 7 - 用户访问权限 | Microsoft Docs
 description: 作为最后一步，授予特权用户临时访问权限，以演示 Privileged Access Management 部署已成功。
-author: barclayn
-ms.author: barclayn
-manager: mbaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 01/17/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: active-directory-domain-services
 ms.assetid: 5325fce2-ae35-45b0-9c1a-ad8b592fcd07
-ms.openlocfilehash: 150e850e9184fef189b00e6aee3fab50939f47b9
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: d00eaa284f1d54a1cbe2e0f8b936bbc41c19caea
+ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49332810"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50379613"
 ---
 # <a name="step-7--elevate-a-users-access"></a>步骤 7 - 提升用户的访问权限
 

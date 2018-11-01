@@ -2,22 +2,21 @@
 title: 部署 PAM 步骤 6 - 移动组 | Microsoft Docs
 description: 将组迁移到 PRIV 林，以便可以通过 Privileged Access Management 对它们进行管理。
 keywords: ''
-author: barclayn
-ms.author: barclayn
-manager: mbaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 09/13/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: active-directory-domain-services
 ms.assetid: 7b689eff-3a10-4f51-97b2-cb1b4827b63c
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: f449ca475d8b1fe72203bf4cd3b5dd3c65329d13
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: 0473ea9e01a44aeb4acbebe01e6e6f989c8581d0
+ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49332929"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50379305"
 ---
 # <a name="step-6--transition-a-group-to-privileged-access-management"></a>步骤 6 – 将某个组转换为特权访问管理
 

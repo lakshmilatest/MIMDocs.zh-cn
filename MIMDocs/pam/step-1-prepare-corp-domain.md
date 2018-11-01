@@ -2,22 +2,21 @@
 title: 部署 PAM 步骤 1 - CORP 域 | Microsoft Docs
 description: 准备 CORP 域，其具有将由 Privileged Identity Manager 管理的现有标识或新标识
 keywords: ''
-author: barclayn
-ms.author: barclayn
-manager: mbaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 09/13/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 0c2261ba908ecd3bef991d5b98efbcb6bf56bedd
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: dda6a05337e9a9778135fc7d833a38369540b3e0
+ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49333558"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50379984"
 ---
 # <a name="step-1---prepare-the-host-and-the-corp-domain"></a>步骤 1 - 准备主机和 CORP 域
 

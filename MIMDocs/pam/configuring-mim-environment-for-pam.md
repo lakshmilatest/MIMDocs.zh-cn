@@ -2,22 +2,21 @@
 title: 配置 MIM 2016 for Privileged Access Management | Microsoft Docs
 description: 安装 MIM 并为 Privileged Access Management 对其进行配置的路线图。
 keywords: ''
-author: barclayn
-ms.author: barclayn
-manager: mbaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 08/31/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: active-directory-domain-services
 ms.assetid: c4ca5b58-ad0c-48af-a9eb-b71b22d0c67c
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: ade3557c99dc2e0623000f47df0e9519178c0641
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: fd444f9c67f1daeaf33883a988f54a97e12e685c
+ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49334051"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50379509"
 ---
 # <a name="configure-the-mim-environment-for-privileged-access-management"></a>为 Privileged Access Management 配置 MIM 环境
 

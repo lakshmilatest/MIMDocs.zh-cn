@@ -2,22 +2,21 @@
 title: 什么是 ADDS 的 PAM？ | Microsoft Docs
 description: Privileged Access Management (PAM) 可帮助组织限制现有 Active Directory 环境内的特权访问权限。
 keywords: ''
-author: barclayn
-ms.author: barclayn
-manager: mbaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 03/13/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: active-directory-domain-services
 ms.assetid: cf3796f7-bc68-4cf7-b887-c5b14e855297
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: ce5d168c429928ec46b090dec038f1b5bbe61666
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: 40ed05c1f77cace74b86dc3a5675855993d4bc56
+ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49334408"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50379882"
 ---
 # <a name="privileged-access-management-for-active-directory-domain-services"></a>Active Directory 域服务的 Privileged Access Management
 

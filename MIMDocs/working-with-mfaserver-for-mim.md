@@ -5,16 +5,16 @@ keywords: ''
 author: billmath
 ms.author: billmath
 manager: mtillman
-ms.date: 09/02/2018
+ms.date: 10/29/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
-ms.openlocfilehash: b92a217dd86d9e4de177ebec9ecec7c76222d7b1
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: 69b7f8f4b94f9f94b2aef6afd9573ad8173e148e
+ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358272"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50379788"
 ---
 # <a name="use-azure-multi-factor-authentication-server-to-activate-pam-or-sspr"></a>使用 Azure 多重身份验证服务器激活 PAM 或 SSPR
 以下文档介绍如何设置 Azure MFA 服务器，使其在用户激活 Privileged Access Management 和自助密码重置中的角色时作为第二安全层。
@@ -22,7 +22,7 @@ ms.locfileid: "49358272"
 > [!IMPORTANT]
 > 由于 Azure 多重身份验证软件开发工具包的弃用通知。 在停用日期 2018 年 11 月 14 日前，现有客户仍可使用 Azure MFA SDK。 新客户和当前客户将无法再通过 Azure 经典门户下载 SDK。 若要下载，需要联系 Azure 客户支持，以便接收生成的 MFA 服务凭据包。 <br> Microsoft 开发团队正在通过与 Azure 多重身份验证服务器 SDK 集成来处理对 MFA 的更改。
 
-下面这篇文章将概述发布后，从 Azure MFA SDK 到 Azure 多重身份验证服务器 SDK 的配置更新和针对简单切换进行启用的步骤，因为该内容将添加到即将推出的修补程序中，请参阅[版本历史记录](/reference/version-history.md)，了解相关公告。 
+下面这篇文章将概述发布后，从 Azure MFA SDK 到 Azure 多重身份验证服务器 SDK 的配置更新和针对简单切换进行启用的步骤，因为该内容将添加到即将推出的修补程序中，请参阅[版本历史记录](./reference/version-history.md)，了解相关公告。 
 
 ## <a name="prerequisites"></a>必备条件
 
@@ -33,7 +33,7 @@ ms.locfileid: "49358272"
 - 安装已在使用 Azure MFA SDK
 - 适用于候选用户的 Azure Active Directory Premium 许可证或授权 Azure MFA 的替换方法
 - 适用于所有候选用户的电话号码
-- MIM 修补程序 4.5. 或更高版本，请参阅[版本历史记录](/reference/version-history.md)，了解相关公告
+- MIM 修补程序 4.5. 或更高版本，请参阅[版本历史记录](./reference/version-history.md)，了解相关公告
 
 ## <a name="azure-multi-factor-authentication-server-configuration"></a>Azure 多重身份验证服务器配置 
 > [!NOTE] 

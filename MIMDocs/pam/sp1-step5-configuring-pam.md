@@ -2,22 +2,21 @@
 title: 步骤 5 安装/配置 PAM
 description: 这是使用脚本配置 Privileged Identity Manager 的第 5 步，其中还介绍了在 PAM 服务器上进行部署的步骤。
 keywords: ''
-author: barclayn
-ms.author: barclayn
-manager: MBaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 08/18/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: e3e0d45f01f651400842b52e275ca4b6939f78c4
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: 03c5b1cb52f16090e6b241d588bbded6be4c6687
+ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49333830"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50379356"
 ---
 # <a name="step-5-installingconfiguring-pam"></a>步骤 5 安装/配置 PAM
 

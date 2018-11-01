@@ -2,25 +2,24 @@
 title: 通过 Windows Server 2016 部署 MIM Privileged Access Management | Microsoft Docs
 description: 了解如何使用 Server 2016 部署 Privileged Access Management
 keywords: ''
-author: barclayn
-ms.author: barclayn
-manager: mbaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 08/18/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: active-directory-domain-services
 ms.assetid: ''
-ms.openlocfilehash: fca3ed1b37a1cc3bf9833c2de4d606845867d5d8
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: 347eda5872792872a9bb30357c45835303f92e01
+ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49332895"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50379744"
 ---
 # <a name="deploy-mim-pam-with-windows-server-2016"></a>通过 Windows Server 2016 部署 MIM PAM
 
 
-通过此方案，MIM 2016 SP1 可将 Windows Server 2016 的功能用作“PRIV”林的域控制器。  配置此方案时，用户的 Kerberos 票证角色激活的剩余时间将受到限制。 
+通过此方案，MIM 2016 SP1 可将 Windows Server 2016 的功能用作“PRIV”林的域控制器。  配置此方案时，用户的 Kerberos 票证角色激活的剩余时间将受到限制。 
 
 > [!Note]
 > Technical Preview 5 之前的 Windows Server 2016 早期技术预览版不可与此 MIM 版本一起使用。

@@ -9,14 +9,13 @@ manager: mtillman
 ms.date: 07/06/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: active-directory-domain-services
 ms.assetid: 5134a112-f73f-41d0-a5a5-a89f285e1f73
-ms.openlocfilehash: 10c8d4246122daa507d79a3f2e26e945c6ab5709
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: 9cb1e37f966db5c663694aaccd71f2b4c799dd4b
+ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49333711"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50379933"
 ---
 # <a name="using-azure-mfa-for-activation"></a>将 Azure MFA 用于激活
 > [!IMPORTANT]
@@ -43,7 +42,7 @@ Microsoft Azure 多因素身份验证 (MFA) 是要求用户通过使用移动应
 
 ## <a name="creating-an-azure-mfa-provider"></a>创建 Azure MFA 提供程序
 
-在此部分中，在 Microsoft Azure Active Directory 中设置 Azure MFA 提供程序。  如果你已在使用 Azure MFA，无论它们是单机配置还是通过 Azure Active Directory Premium 配置，请跳至下一节。
+在此部分中，在 Microsoft Azure Active Directory 中设置 Azure MFA 提供程序。  如果你已在使用 Azure MFA，无论它们是单机配置还是通过 Azure Active Directory Premium 配置，请跳至下一节。
 
 1.  打开 Web 浏览器，以 Azure 订阅管理员的身份连接到 [Azure 经典门户](https://manage.windowsazure.com)。
 
@@ -71,7 +70,7 @@ Microsoft Azure 多因素身份验证 (MFA) 是要求用户通过使用移动应
 
 ![下载 Multi-Factor Authentication SDK - 屏幕截图](media/PAM-Azure-MFA-Activation-Image-1.png)
 
-7.  将生成的 ZIP 文件复制到安装了 MIM 服务的每个系统。 
+7.  将生成的 ZIP 文件复制到安装了 MIM 服务的每个系统。 
 
 >[!NOTE]
 > 该 ZIP 文件包含用于对 Azure MFA 服务进行身份验证的密钥材料。
