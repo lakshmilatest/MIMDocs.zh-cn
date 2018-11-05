@@ -7,12 +7,12 @@ manager: mtillman
 ms.date: 06/27/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.openlocfilehash: d3c0b6677c42d4f14d4f6255a2a661d3ef23661d
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: 63f2509d35355a8fe3a59b173756257298079a92
+ms.sourcegitcommit: 6374aa4f7d58b7218626d36d0fc2dc4b38cb8332
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358289"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50237224"
 ---
 # <a name="conversion-of-mim-specific-services-to-gmsa"></a>将 MIM 特定服务转换为 gMSA
 
@@ -82,9 +82,9 @@ Windows 域控制器上的第一个步骤
 
     -   在安装了同步服务的服务器上，查找同步服务密钥管理工具
 
-    -   默认情况下，已选择 **Export key set**
+    -   默认情况下，已选择“导出密钥集” 
 
-    -   单击“下一步”
+    -   单击“下一步” ****
 
     -   现在将提示你输入现有同步帐户信息
 
@@ -96,13 +96,13 @@ Windows 域控制器上的第一个步骤
 
         -   域 - 同步服务帐户所属的域
 
-    -   单击“下一步”
+    -   单击“下一步” ****
 
     -   如果输入的信息不正确，你将收到以下错误
 
     -   现在你已成功输入帐户信息，因此可以选择更改备份加密密钥的目标位置（导出文件位置）
 
-        -   默认情况下，导出文件位置为 **C:\\Windows\\system32**\\miiskeys-1.bin。
+        -   默认情况下，导出文件位置为 C:\\Windows\\system32\\miiskeys-1.bin ****。
 
 4. 安装 Microsoft Identity Manager SP1 同步服务内部版本 4.4.1302.0。 可在批量许可证下载中心或 MSDN 下载网站上找到。 安装完成后，保存键集 miiskeys.bin。
 
@@ -152,7 +152,7 @@ Windows 域控制器上的第一个步骤
 
 ![](media/0201f0281325c80eb70f91cbf0ac4d5b.jpg)
 
-3.  **注意**：  由于重启 Windows 后，Microsoft 密钥分发服务未启动，使用托管帐户的服务在重启服务器后挂起的已知问题。 无法启动此服务，也无法重启 Windows。 至少在 Windows Server 2012 R2 上，这个问题是可复现的。 此问题的解决方法为运行命令 
+3.  **注意**：  由于重启 Windows 后，Microsoft 密钥分发服务未启动，使用托管帐户的服务在重启服务器后挂起的已知问题。 无法启动此服务，也无法重启 Windows。 至少在 Windows Server 2012 R2 上，这个问题是可复现的。 此问题的解决方法为运行命令 
 
 -   **sc triggerinfo kdssvc start/networkon**
 
