@@ -1,4 +1,4 @@
-# [了解和探索](microsoft-identity-manager-2016.md)
+# [概述](microsoft-identity-manager-2016.md)
 ## [什么是 MIM 2016？](microsoft-identity-manager-2016.md)
 ## [Service Pack 1 新增功能](Microsoft-identity-manager-2016-sp1-release-notes.md)
 ### [MIM2016 SP1 PAM 部署脚本](sp1-deployment-scripts.md)
