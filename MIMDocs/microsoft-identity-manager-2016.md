@@ -1,49 +1,49 @@
 ---
-title: Microsoft Identity Manager 2016 | Microsoft Docs
+title: Microsoft Identity Manager | Microsoft Docs
 description: MIM 包括 FIM 2010 的访问权限管理功能，有助于管理用户、凭据、策略及组织中的访问权限。
 keywords: ''
 author: billmath
 ms.author: billmath
 manager: mtillman
-ms.date: 05/02/2018
+ms.date: 11/05/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.assetid: ccdd8a9f-02da-440a-81a8-354800dcd2a8
-ms.reviewer: mwahl
-ms.suite: ems
-ms.openlocfilehash: abbd661fa1bef13ad92b916f8485934390905bf4
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.technology: security
+ms.openlocfilehash: b25819d864f773578ba8aa52217c7b27536b7327
+ms.sourcegitcommit: f73a83f424d7e32b0119e870bc0020c061e966f7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358306"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51265259"
 ---
-# <a name="microsoft-identity-manager-2016"></a>Microsoft Identity Manager 2016
+# <a name="microsoft-identity-manager-2016-news-and-updates"></a>Microsoft Identity Manager 2016 新增内容和更新
 
-Microsoft Identity Manager (MIM) 2016 以 [FIM 2010 R2](https://technet.microsoft.com/library/jj133885.aspx) 的标识和访问管理功能为基础。 如同其前身，MIM 有助于管理组织中的用户、凭据、策略和访问。  此外，MIM 2016 增加了混合体验、特权访问管理功能，并支持新的平台。
+Microsoft Identity Manager (MIM) 2016 以 Forefront Identity Manager 的标识和访问管理功能为基础。 如同其前身，MIM 有助于管理组织中的用户、凭据、策略和访问。  此外，MIM 2016 增加了混合体验、特权访问管理功能，并支持新的平台。
 
-除 [FIM](https://technet.microsoft.com/library/jj133868) 中包含的现有标识管理功能外， MIM 2016 还提供了新增功能和增强功能，如：
+主流支持的当前版本是 MIM 2016 Service Pack 1 (SP1)。  此 2017 年 8 月发布的版本包括对 MIM 门户、PAM 场景的更新以及添加的对新平台的支持。  运行 MIM 2016 SP1 之前的 FIM 或 MIM 版本的客户应升级到 MIM 2016 SP1 或更高版本的修补程序。  详细了解[升级到 MIM 2016 SP1](microsoft-identity-manager-2016-sp1-release-notes.md)。
 
-- 特权标识管理
-- 证书管理中的新增功能
-  - [证书管理 REST API 参考](./reference/certificate-management-rest-api-reference.md)
-  - 对多林拓扑的支持
-  - [适用于虚拟智能卡的 Windows 应用](working-with-mim-certificate-manager.md)
-  - 更新的事件和故障排除功能 
-- [自助式方案](working-with-self-service-password-reset.md)现在包括帐户解锁和用于密码重置的 Azure MFA（多重身份验证）入口。
+## <a name="updates-since-mim-2016-sp1"></a>自 MIM 2016 SP1 以来的更新
 
-## <a name="hybrid-experience"></a>混合体验
+Microsoft 在持续发布周期定期向 MIM 交付更新，包括客户请求的增强功能和 bug 修复。
 
-Microsoft Identity Manager 2016 与 [Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-whatis) 协同工作，以便用户能够控制整个环境。 Azure AD 中的混合报表在一个地方集中显示云数据和本地数据。 此外，[自助服务密码重置门户](working-with-self-service-password-reset.md)支持 Azure 多重身份验证 (MFA)。
+### <a name="major-new-and-updated-scenarios"></a>主要新方案和更新的方案
 
-## <a name="privileged-identity-management"></a>特权标识管理
+- [Azure AD B2B 与 MIM 和 Azure 应用代理的协作处于预览状态](microsoft-identity-manager-2016-graph-b2b-scenario.md)，上次更新时间为 2018 年 4 月
+- [混合 MIM 报告为正式版](https://cloudblogs.microsoft.com/enterprisemobility/2018/02/23/hybrid-mim-reporting-now-available-in-azure-active-directory/)，上次更新时间为 2018 年 2 月
+- [修订了 MIM 弃用功能列表](microsoft-identity-manager-2016-deprecated-features.md)，上次更新时间为 2018 年 2 月
 
-借助 Privileged Identity Management，可基于任务暂时性地访问敏感资源，从而对管理访问权限进行控制和管理。 这意味着你可仅授予用户所需的足够权限，从而降低网络攻击者获取完全管理访问权限的几率。 此外，特权标识管理还可从现有 Active Directory 林提取和隔离管理帐户。
+### <a name="recent-software-releases"></a>最新软件版本
 
-MIM 支持用于管理 Active Directory 的本地 Privileged Identity Management 解决方案。 请从[使用 Privileged Access Management](./pam/privileged-identity-management-for-active-directory-domain-services.md) 开始。
+- [MIM 连接器版本](./reference/microsoft-identity-manager-2016-connector-version-history.md)，上次更新时间为 2018 年 3 月
+- [MIM 同步、服务、门户、CM、加载项和客户端版本](./reference/version-history.md)，上次更新时间为 2017 年 11 月
+- [MIM BHOLD 模块版本](./reference/version-bhold-history.md)，上次更新时间为 2017 年 9 月
+
+
+
 
 ## <a name="related-topics"></a>相关主题
 
-- Microsoft Identity Manager 与其前身 Forefront Identity Manager 仍然紧密相关。 如果仍然使用 FIM，或者想要引用其他文档，请参阅 [FIM 2010 R2 文档路线图](https://technet.microsoft.com/library/jj133885.aspx)。
-- [部署 MIM 的拓扑注意事项](topology-considerations.md) 本文介绍了多种可以考虑实施的部署拓扑。
-- [容量计划指南](capacity-planning-guide.md) 可以利用本指南以及测试环境，了解针对你的部署的适当范围。
+有关在 MIM 2016 及更早版本中添加的方案的详细信息，请参阅 [Microsoft Identity Manager 2016](microsoft-identity-manager-2016.md)。
+
+有关部署 MIM 和最新版本的文档的详细信息，请参阅 [MIM 文档路线图](https://docs.microsoft.com/en-us/microsoft-identity-manager/)。
+
