@@ -1,6 +1,5 @@
 # [了解和探索](../microsoft-identity-manager-2016.md)
 ## [什么是 MIM 2016？](../microsoft-identity-manager-2016.md)
-## [Service Pack 1 新增功能](../Microsoft-identity-manager-2016-sp1-release-notes.md)
 ### [MIM2016 SP1 PAM 部署脚本](../sp1-deployment-scripts.md)
 ## [了解 PAM](../pam/privileged-identity-management-for-active-directory-domain-services.md)
 ## [Azure 中的混合报告](../identity-manager-hybrid-reporting-azure.md)
