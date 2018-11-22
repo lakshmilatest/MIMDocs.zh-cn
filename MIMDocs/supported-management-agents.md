@@ -11,12 +11,12 @@ ms.prod: microsoft-identity-manager
 ms.assetid: 8bc2f6d2-9f53-4db6-aee6-a937ae468163
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: 16dba460d9b5f9ce81076f8f883c352b1e8f4a81
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: 4c39b5e3ba651464989bd0bc1f600629c7e89a0f
+ms.sourcegitcommit: 3b514aba69af203f176b40cdb7c2a51c477c944a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358395"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51718243"
 ---
 # <a name="connect-to-your-directories"></a>连接到目录
 
@@ -44,7 +44,7 @@ ms.locfileid: "49358395"
 | [适用于 FIM 2010 R2 的 Windows PowerShell 连接器](https://msdn.microsoft.com/library/dn640417.aspx) | Windows PowerShell 2.0 或更高版本 |
 | [适用于 FIM 2010 R2 的 Microsoft Azure Active Directory 连接器](https://msdn.microsoft.com/library/dn511001.aspx) | Microsoft Azure Active Directory |
 | [适用于 FIM 2010 R2 的通用 LDAP 连接器](https://msdn.microsoft.com/library/dn510997.aspx) | [LDAP v3 服务器（与 RFC 4510 兼容）](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-connector-genericldap) |
-| [适用于 FIM 2010 R2/MIM 的通用 SQL 连接器](https://msdn.microsoft.com/library/dn510997.aspx) | [所有 64 位 ODBC 驱动程序均支持该连接器](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-connector-genericsql) |
+| [适用于 FIM 2010 R2/MIM 的通用 SQL 连接器](./reference/microsoft-identity-manager-2016-connector-genericsql.md) | [所有 64 位 ODBC 驱动程序均支持该连接器](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-connector-genericsql.md) |
 | [适用于 Lotus Domino 的连接器](https://msdn.microsoft.com/library/hh859750.aspx) | Lotus Notes v8.5.x 版 |
 | [SharePoint Services 连接器 UPA](https://msdn.microsoft.com/library/dn511003.aspx) | 含 User Profile Service Application (UPA) 的 SharePoint Server 2013 或 2016 |
 | [适用于 Web 服务的连接器](https://www.microsoft.com/en-us/download/details.aspx?id=51495) | [SAP ECC 5.0 或 6.0；Oracle PeopleSoft 9.1；Oracle eBusiness 12.1](https://docs.microsoft.com/microsoft-identity-manager/reference/microsoft-identity-manager-2016-ma-ws) |

@@ -9,18 +9,18 @@ ms.date: 11/05/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.technology: security
-ms.openlocfilehash: b25819d864f773578ba8aa52217c7b27536b7327
-ms.sourcegitcommit: f73a83f424d7e32b0119e870bc0020c061e966f7
+ms.openlocfilehash: 67064d930935f0091c14c64bf271dd0e1ded6bb4
+ms.sourcegitcommit: 3b514aba69af203f176b40cdb7c2a51c477c944a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51265259"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51718239"
 ---
 # <a name="microsoft-identity-manager-2016-news-and-updates"></a>Microsoft Identity Manager 2016 新增内容和更新
 
 Microsoft Identity Manager (MIM) 2016 以 Forefront Identity Manager 的标识和访问管理功能为基础。 如同其前身，MIM 有助于管理组织中的用户、凭据、策略和访问。  此外，MIM 2016 增加了混合体验、特权访问管理功能，并支持新的平台。
 
-主流支持的当前版本是 MIM 2016 Service Pack 1 (SP1)。  此 2017 年 8 月发布的版本包括对 MIM 门户、PAM 场景的更新以及添加的对新平台的支持。  运行 MIM 2016 SP1 之前的 FIM 或 MIM 版本的客户应升级到 MIM 2016 SP1 或更高版本的修补程序。  详细了解[升级到 MIM 2016 SP1](microsoft-identity-manager-2016-sp1-release-notes.md)。
+主流支持的当前版本是 MIM 2016 Service Pack 1 (SP1)。  此 2017 年 8 月发布的版本包括对 MIM 门户、PAM 场景的更新以及添加的对新平台的支持。  运行 MIM 2016 SP1 之前的 FIM 或 MIM 版本的客户应升级到 MIM 2016 SP1 或更高版本的修补程序。  详细了解[升级到 MIM 2016 SP1](./reference/version-history.md)。
 
 ## <a name="updates-since-mim-2016-sp1"></a>自 MIM 2016 SP1 以来的更新
 
