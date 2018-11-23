@@ -12,12 +12,12 @@ ms.assetid: 4978f60d-044d-4e84-8d93-65801fce1144
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: mim
-ms.openlocfilehash: 0501dbeb279dc37655d1d9a5e99545b07eea0623
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: 077a0330e3a9169583331854525d19cee2d9eaf4
+ms.sourcegitcommit: 3b514aba69af203f176b40cdb7c2a51c477c944a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358672"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51718314"
 ---
 # <a name="supported-platforms-for-mim-2016"></a>MIM 2016 支持的平台
 
@@ -47,7 +47,7 @@ ms.locfileid: "49358672"
 | **MIM 密码重置和注册门户** | Windows Server | Windows Server 2008 R2 SP1<br/>Windows Server 2012<br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |
 | | Web 浏览器 | 所有受支持的主流浏览器 |
 | **MIM 加载项和扩展** | Windows | Windows 7<br/>Windows 8<br/>Windows 8.1<br/>Windows 10 |
-| | Outlook 集成（可选） | Outlook 2010<br/>Outlook 2013 <br/> Outlook 2016（在 Windows 10 上） * |
+| | Outlook 集成（可选） | Outlook 2010（在 Windows 上，即点即用除外）<br/>Outlook 2013（在 Windows 上，即点即用除外） <br/> Outlook 2016（在 Windows 10 上，即点即用除外）* |
 | | PAM PowerShell 请求程序 cmdlet（可选） | Windows 8.1<br/>Windows 10 |
 | **MIM 证书管理**（服务器和 CA 集成） | Windows server | Windows Server 2008 R2 SP1<br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |
 | | 证书颁发机构 | Windows Server 2008 R2 SP1<br/>Windows Server 2012<br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |

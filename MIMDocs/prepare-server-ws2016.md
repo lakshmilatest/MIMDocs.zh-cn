@@ -11,14 +11,14 @@ ms.prod: microsoft-identity-manager
 ms.assetid: 51507d0a-2aeb-4cfd-a642-7c71e666d6cd
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 49e549913a5fd87528df2205b8d5b0a83f3d2b24
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: a0fa1e837fd73872043748ee73f19a29d1d1412f
+ms.sourcegitcommit: 3b514aba69af203f176b40cdb7c2a51c477c944a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358238"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51718331"
 ---
-# <a name="set-up-an-identity-management-servers-windows-server-2016"></a>设置标识管理服务器：Windows Server 2016
+# <a name="set-up-an-identity-management-server-windows-server-2016"></a>设置标识管理服务器：Windows Server 2016
 
 > [!div class="step-by-step"]
 > [« 准备域](preparing-domain.md)
@@ -39,9 +39,9 @@ ms.locfileid: "49358238"
 
 1. 以其管理员身份登录到新计算机。
 
-2. 使用控制面板，为计算机提供一个网络上的静态 IP 地址。 配置该网络接口以便将 DNS 查询发送到上一步骤中的域控制器的 IP 地址，并将计算机名称设置为“CORPSERVICE”。  这将需要重新启动服务器。
+2. 使用控制面板，为计算机提供一个网络上的静态 IP 地址。 配置该网络接口以便将 DNS 查询发送到上一步骤中的域控制器的 IP 地址，并将计算机名称设置为“CORPSERVICE”。  此操作需要重启服务器。
 
-3. 打开控制面板，然后将计算机加入到上一步配置的域 contoso.com 中。  这包括提供域管理员的用户名和凭据（例如 *Contoso\Administrator*）。  显示欢迎使用消息后，关闭该对话框并再次重新启动此服务器。
+3. 打开控制面板，然后将计算机加入到上一步配置的域 contoso.com 中。  此操作包括提供域管理员的用户名和凭据（例如 Contoso\Administrator）。  显示欢迎使用消息后，关闭该对话框并再次重新启动此服务器。
 
 4. 使用本地计算机管理员的域帐户（如 Contoso\MIMINSTALL）登录到计算机 CORPSERVICE。
 
@@ -75,7 +75,7 @@ ms.locfileid: "49358238"
 
 2. 导航到“本地策略”>“用户权限分配”。
 
-3. 在详细信息窗格中，右键单击“作为服务登录” ，然后选择“属性” 。
+3. 在详细信息窗格中，右键单击“作为服务登录”，然后选择“属性” 。
 
     ![本地安全策略映像](media/MIM-DeployWS3.png)
 
@@ -85,7 +85,7 @@ ms.locfileid: "49358238"
 
 6.  在“详细信息”窗格中，右键单击“拒绝从网络访问该计算机”，并选择“属性”。>
 
-[!NOTE] 如果分离角色服务器，此步骤将使一些有趣的功能（如 SSPR 功能）中断。
+[!NOTE] 分离角色服务器会导致某些功能中断，例如 SSPR。
 
 7. 单击“添加用户或组”，在文本框中键入 `contoso\MIMSync; contoso\MIMService`，然后单击“确定”。
 
