@@ -5,21 +5,23 @@ keywords: ''
 author: billmath
 ms.author: billmath
 manager: mtillman
-ms.date: 05/22/2018
+ms.date: 12/02/2018
 ms.topic: get-started-article
 ms.prod: microsoft-identity-manager
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.suite: ems
-ms.openlocfilehash: 4102ffc450b993faaa62da66bb25f242b7e39280
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: f75eb69360852c9f629b60d4900638c8b51e068a
+ms.sourcegitcommit: 9e420840815adb133ac014a8694de9af4d307815
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358714"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52825784"
 ---
 # <a name="microsoft-identity-manager-data-handling"></a>Microsoft Identity Manager 数据处理 
 
-本文将介绍组织如何完成贵组织需要跨多个已连接数据源实践或实施的搜索、删除、更新以及报告操作决策。 在决定删除或更新方法前，了解身份管理器系统 (MIM) 的当前设计和配置至关重要。 下面介绍一些方案，客户将需要考虑并回答以下问题： 
+本文为组织如何作出可应用于多个连接的数据源的决定提供了指导。  这可以通过搜索、删除、更新和报告操作来实现。  在决定删除或更新方法前，了解身份管理器系统 (MIM) 的当前设计和配置至关重要。 
+
+下面介绍一些方案，客户将需要考虑并回答以下问题： 
 
 - 需要什么数据来进行身份管理以帮助完成业务流程？
 - 当前数据将存储在 MIM 中的哪个位置？
