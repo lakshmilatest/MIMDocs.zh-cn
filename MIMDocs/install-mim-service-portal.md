@@ -11,12 +11,12 @@ ms.prod: microsoft-identity-manager
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 535c80fa2ff1b6250ae9a3f340cb514e58f390a9
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: fc70a0edb610fcb862d85902dd5e611e65f6e689
+ms.sourcegitcommit: 9e420840815adb133ac014a8694de9af4d307815
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358612"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52825801"
 ---
 # <a name="install-mim-2016-mim-service-and-portal"></a>安装 MIM 2016：MIM 服务和门户
 
@@ -68,11 +68,11 @@ ms.locfileid: "49358612"
 
 12. 将 *CORPIDM*（此计算机的名称）指定为 MIM 门户的 MIM 服务服务器地址。
 
-13. 指定 http://mim.contoso.com 作为 SharePoint 网站集 URL。
+13. 将 `*http://mim.contoso.com*` 指定为 SharePoint 网站集 URL。
 
-14. 指定 http://passwordregistration.contoso.com 作为密码注册 URL 端口 80，建议稍后使用 443 上的 SSL 证书进行更新。
+14. 指定 `*http://passwordregistration.contoso.com*` 作为密码注册 URL 端口 80，建议稍后使用 443 上的 SSL 证书进行更新。
 
-15. 指定 http://passwordreset.contoso.com 作为密码重置 URL 端口 80，建议稍后使用 443 上的 SSL 证书进行更新。
+15. 指定 `*http://passwordreset.contoso.com*` 作为密码重置 URL 端口 80，建议稍后使用 443 上的 SSL 证书进行更新。
 
 16. 选中打开防火墙中的端口 5725 和 5726 的复选框，以及授予所有经过身份验证的用户访问 MIM 门户权限的复选框。
 
