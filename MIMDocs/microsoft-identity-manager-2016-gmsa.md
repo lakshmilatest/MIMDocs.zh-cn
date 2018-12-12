@@ -7,12 +7,12 @@ manager: mtillman
 ms.date: 06/27/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.openlocfilehash: 63f2509d35355a8fe3a59b173756257298079a92
-ms.sourcegitcommit: 6374aa4f7d58b7218626d36d0fc2dc4b38cb8332
+ms.openlocfilehash: 96d375d82a71a21f0be444d628f387c4e1ffdd09
+ms.sourcegitcommit: 9e420840815adb133ac014a8694de9af4d307815
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50237224"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52825767"
 ---
 # <a name="conversion-of-mim-specific-services-to-gmsa"></a>将 MIM 特定服务转换为 gMSA
 
@@ -84,7 +84,7 @@ Windows 域控制器上的第一个步骤
 
     -   默认情况下，已选择“导出密钥集” 
 
-    -   单击“下一步” ****
+    -   单击“下一步”
 
     -   现在将提示你输入现有同步帐户信息
 
@@ -96,7 +96,7 @@ Windows 域控制器上的第一个步骤
 
         -   域 - 同步服务帐户所属的域
 
-    -   单击“下一步” ****
+    -   单击“下一步”
 
     -   如果输入的信息不正确，你将收到以下错误
 
