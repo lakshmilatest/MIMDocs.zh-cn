@@ -9,12 +9,12 @@ ms.date: 09/19/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: ''
-ms.openlocfilehash: 01c5c8357c8cb0424bd38b61836919f5c2c3e96a
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: 7ab76d386d8633de8919167c6b8f26b5137323e5
+ms.sourcegitcommit: 9e420840815adb133ac014a8694de9af4d307815
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358867"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52825835"
 ---
 # <a name="deploying-microsoft-identity-manager-certificate-manager-2016-mim-cm"></a>部署 Microsoft Identity Manager 证书管理器 2016 (MIM CM)
 
@@ -499,9 +499,9 @@ Set-WebConfigurationProperty -Filter System.webServer/security/authentication/Wi
 
 18. 关闭所有打开的窗口。
 
-19. 在浏览器中将 https://cm.contoso.com/certificatemanagement 添加到本地 Intranet 区域。
+19. 在浏览器中将 `https://cm.contoso.com/certificatemanagement` 添加到本地 Intranet 区域。
 
-20. 从服务器 CORPCM 访问网站 https://cm.contoso.com/certificatemanagement  
+20. 从服务器 CORPCM 访问网站 `https://cm.contoso.com/certificatemanagement`  
 
     ![图示](media/mim-cm-deploy/image035.png)
 
