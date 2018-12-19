@@ -102,7 +102,7 @@ Windows 域控制器上的第一个步骤
 
     -   现在你已成功输入帐户信息，因此可以选择更改备份加密密钥的目标位置（导出文件位置）
 
-        -   默认情况下，导出文件位置为 C:\\Windows\\system32\\miiskeys-1.bin ****。
+        -   默认情况下，导出文件位置为  **C:\\Windows\\system32**\\miiskeys-1.bin。
 
 4. 安装 Microsoft Identity Manager SP1 同步服务内部版本 4.4.1302.0。 可在批量许可证下载中心或 MSDN 下载网站上找到。 安装完成后，保存键集 miiskeys.bin。
 
