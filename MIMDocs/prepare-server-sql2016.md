@@ -11,14 +11,14 @@ ms.prod: microsoft-identity-manager
 ms.assetid: 297df3b3-192e-4ed9-82ed-c95eb5297c84
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 169f7e01398655e2aebb5ce62e9ce933153c436e
-ms.sourcegitcommit: 9e420840815adb133ac014a8694de9af4d307815
+ms.openlocfilehash: 2dc7c1ffecbd4f52ab031512f501922f458324a3
+ms.sourcegitcommit: 4ae62943aea3aab622195896956c5c88ecd9e97c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52825750"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53815896"
 ---
-# <a name="set-up-an-identity-management-server-sql-server-2016"></a>设置标识管理服务器：SQL Server 2016
+# <a name="set-up-an-identity-management-server-sql-server-2016"></a>设置身份管理服务器：SQL Server 2016
 
 > [!div class="step-by-step"]
 > [« Windows Server 2016](prepare-server-ws2016.md)
@@ -44,6 +44,7 @@ ms.locfileid: "52825750"
     ```
     .\setup.exe /Q /IACCEPTSQLSERVERLICENSETERMS /ACTION=install /FEATURES=SQL /INSTANCENAME=MSSQLSERVER /SQLSVCACCOUNT="contoso\SqlServer" /SQLSVCPASSWORD="Pass@word1"   /AGTSVCSTARTUPTYPE=Automatic /AGTSVCACCOUNT="NT AUTHORITY\Network Service" /SQLSYSADMINACCOUNTS="contoso\Administrator"
     ```
+    
 有关 SQL 部署帐户和服务的详细信息，可参阅[此处](https://docs.microsoft.com/sql/database-engine/configure-windows/configure-windows-service-accounts-and-permissions?view=sql-server-2017)
 > [!NOTE]
 > SSMS 不再包含在 SQL 2016 中。 可在[此处](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017)查看下载详细信息
