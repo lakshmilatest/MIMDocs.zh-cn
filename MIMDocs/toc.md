@@ -12,6 +12,7 @@
 ## [计划 PAM 部署](./pam/environment-overview.md)
 # [部署和使用](microsoft-identity-manager-deploy.md)
 ## [已弃用的功能](microsoft-identity-manager-2016-deprecated-features.md)
+## [授权和下载](microsoft-identity-manager-licensing.md)
 ## [数据处理](mim-privacy-compliance.md)
 ## [首次部署](microsoft-identity-manager-deploy.md)
 ### [域设置](preparing-domain.md)
@@ -21,7 +22,7 @@
 ### [服务器设置：Exchange](prepare-server-exchange.md)
 ### [安装 MIM：同步](install-mim-sync.md)
 ### [安装 MIM：服务和门户](install-mim-service-portal.md)
-### [安装 MIM：同步数据库](install-mim-sync-ad-service.md)
+### [安装 MIM：SQL 数据库](install-mim-sync-ad-service.md)
 ## [从 Forefront Identity Manager 2010 R2 升级](microsoft-identity-manager-2016-upgrade-from-fim-2010-R2.md)
 ## [安装 MIM 证书管理](mim-cm-deploy.md)
 ## [BHOLD 安装主题](./bhold/bhold-installation-guide.md)
@@ -84,7 +85,7 @@
 ### [导出性能指南](https://technet.microsoft.com/library/hh322883)
 ## 报表
 ### [报表 - 自定义报表和扩展性](https://technet.microsoft.com/library/jj133861)
-## [Microsoft Identity 软件：公开发布版本历史记录](https://blogs.technet.microsoft.com/iamsupport/idmbuildversions/)
+## [Microsoft 标识软件：公开发布内部版本](https://blogs.technet.microsoft.com/iamsupport/idmbuildversions/)
 # [参考](./reference/microsoft-identity-manager-2016-developer-reference.md)
 ## 开发人员参考
 ### [MIM 2016 开发人员参考](./reference/microsoft-identity-manager-2016-developer-reference.md)

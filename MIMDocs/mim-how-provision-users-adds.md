@@ -1,5 +1,5 @@
 ---
-title: Microsoft Identity Manager 2016 | Microsoft Docs
+title: 将 Microsoft Identity Manager 2016 用户预配到 AD | Microsoft Docs
 description: 了解使用 Microsoft Identity Manager 2016 在 ADDS 中创建用户的过程
 keywords: ''
 author: billmath
@@ -9,12 +9,12 @@ ms.date: 08/18/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: ''
-ms.openlocfilehash: 88473df88271937b07450df409353c0b3ca08684
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: 5e259df617c5a95fcd54f49c9cbb70f9cd0c36a4
+ms.sourcegitcommit: 486f860f0951413aed335138eb6ad4ce6c50ed4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358782"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56852657"
 ---
 # <a name="how-do-i-provision-users-to-ad-ds"></a>如何将用户预配到 AD DS
 
@@ -169,8 +169,8 @@ ms.locfileid: "49358782"
 
 | 管理代理设计器页面                          | 配置                                                  |
 |---------------------------------------------------------|----------------------------------------------------------------|
-| 创建管理代理                                 | 1.管理代理适用对象：AD DS  <br/> 2.名称：Fabrikam ADMA |
-| 连接到 Active Directory 林                      | 1.选择目录分区：“DC=Fabrikam,DC=com”   <br/>   2.单击“容器”打开“选择容器”对话框，确保“MIMObjects”是唯一选中的 OU。        |
+| 创建管理代理                                 | 1.**管理代理用于：** AD DS  <br/> 2.**名称：** Fabrikam ADMA |
+| 连接到 Active Directory 林                      | 1.**选择目录分区：**“DC=Fabrikam,DC=com”   <br/>   2.单击“容器”打开“选择容器”对话框，确保“MIMObjects”是唯一选中的 OU。        |
 | 选择对象类型                                     | 除了已选择的对象类型，请选择“用户”。 |
 | 选择属性                                       | 1.单击“全部显示”。 <br/>   2.选择以下属性： <br/> &nbsp;&nbsp;&nbsp;° displayName <br/> &nbsp;&nbsp;&nbsp;° givenName <br/> &nbsp;&nbsp;&nbsp;° sn <br/> &nbsp;&nbsp;&nbsp;° SamAccountName <br/> &nbsp;&nbsp;&nbsp;° unicodePwd <br/> &nbsp;&nbsp;&nbsp;° userAccountControl     
 
@@ -193,8 +193,8 @@ ms.locfileid: "49358782"
 
 | 管理代理设计器页面 | 配置 |
 |------------|------------------------------------|
-| 创建管理代理 | 1.管理代理适用对象：FIM 服务管理代理 <br/> 2.名称：Fabrikam FIMMA |
-| 连接到数据库     | 使用以下设置： <br/> · 服务器：localhost <br/> · 数据库：FIMService <br/> &#183; FIM 服务基址：http://localhost:5725 <br/> <br/> 提供为此管理代理创建的帐户相关信息 |
+| 创建管理代理 | 1.**管理代理用于：** FIM 服务管理代理 <br/> 2.名称：Fabrikam FIMMA |
+| 连接到数据库     | 使用以下设置： <br/> · 服务器：localhost <br/> &#183; **数据库：** FIMService <br/> &#183; FIM 服务基址：http://localhost:5725 <br/> <br/> 提供为此管理代理创建的帐户相关信息 |
 | 选择对象类型                                     | 除了已选择的对象类型，请选择“人员”。   |
 | 配置对象类型映射                          | 除了已存在的对象类型映射，请将“数据源对象类型”人员的映射添加到“Metaverse”对象类型人员。 |
 | 配置属性流                                | 除了已存在的属性流映射，请添加以下属性流映射： <br/><br/> ![属性流](media/how-provision-users-adds/image018.jpg) |
@@ -280,7 +280,7 @@ ms.locfileid: "49358782"
 |-------------------|---------------------- |---------------|
 | 允许 Null                 | 目标                                                                 | 源                                                    |
 | false                       | dn                                                                          | \+("CN=",displayName,",OU=MIMObjects,DC=fabrikam,DC=com") |
-| false                       | userAccountControl                                                          | 常量：512                                         |
+| false                       | userAccountControl                                                          | **常量：** 512                                         |
 | false                                                                     | unicodePwd                    | 常量：P\@\$\$W0rd                                    |
 
 | 永久性出站属性流  |                                                                     |                                                           |
@@ -406,7 +406,7 @@ AD 预配工作流的目的是将 Fabrikam 预配同步规则添加到资源。 
 
 2.  集用户必须位于出站同步规则的作用域中。
 
-### <a name="step-11-verify-the-user-is-a-member-of-all-contractors"></a>步骤 11：验证用户是否是“所有合同工”的成员
+### <a name="step-11-verify-the-user-is-a-member-of-all-contractors"></a>步骤 11：验证用户是否是“所有承包商”的成员
 
 若要验证用户是否是“所有合同工”集的成员，可打开集，然后单击“查看成员”。
 
@@ -524,7 +524,7 @@ ExpectedRulesList 属性的对象，这可能会生成孤立的 ERE 对象。
 
 [如何管理我的 FIM MA 帐户](http://go.microsoft.com/FWLink/p/?LinkId=189672)
 
-[Detecting Nonauthoritative Accounts – Part 1: Envisioning](http://go.microsoft.com/FWLink/p/?LinkId=189673)（检测未经授权帐户 - 第 1 部分：构想）
+[检测非授权帐户 - 第 1 部分：构想](http://go.microsoft.com/FWLink/p/?LinkId=189673)
 
 [廉价版连接器检测机制](http://go.microsoft.com/FWLink/p/?LinkId=189674)
 

@@ -11,12 +11,12 @@ ms.prod: microsoft-identity-manager
 ms.assetid: 2585e9c5-ce34-46c7-bdcf-8c08773901dc
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 1bc313a66776778fe3617969645076a6d2d10418
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: cec04cf430ba38ec40b61e4aad68fd8447d13c99
+ms.sourcegitcommit: 4f0b2883922bcb8fbef6b4284c35c6ca62c11565
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49357830"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56952173"
 ---
 # <a name="install-mim-2016-mim-synchronization-service"></a>安装 MIM 2016：MIM 同步服务
 
@@ -37,7 +37,7 @@ ms.locfileid: "49357830"
 
 1. 以 contoso\miminstall 身份登录到用于标识管理同步服务器 corpsync 的服务器。
 
-2. 解压缩 MIM 安装包或装载 MIM 映像 DVD。
+2. 解压缩 MIM 安装包或装载 MIM 映像 DVD。  如果没有此 DVD，请参阅 [Microsoft Identity Manager 授权和下载](microsoft-identity-manager-licensing.md)。
 
 ## <a name="install-mim-2016-sp1-synchronization-service"></a>安装 MIM 2016 SP1 同步服务
 
@@ -57,15 +57,15 @@ ms.locfileid: "49357830"
 
 6. 在同步服务数据库配置屏幕中，选择：
 
-   1.  SQL Server 位于：名为 corpsql.contoso.com 的远程计算机上。
+   1.  SQL Server 的位置：名为 corpsql.contoso.com 的远程计算机。
 
-   2.  SQL Server 实例为：默认实例
+   2.  SQL Server 实例为：**默认实例**
 
    ![数据库连接图像](media/install-mim-sync/MIM_Install3.png)
 
 7. 根据之前创建的帐户配置同步服务帐户：
 
-   1. 服务帐户： *MIMSync*
+   1. 服务帐户：*MIMSync*
 
    2. 密码：<em>Pass@word1</em>
 

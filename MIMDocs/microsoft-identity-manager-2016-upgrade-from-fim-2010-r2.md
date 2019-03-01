@@ -11,12 +11,12 @@ ms.prod: microsoft-identity-manager
 ms.assetid: 9471ccc1-bafe-46ee-b169-1464262380e1
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 07998c20fcdc325cd33d8f9ee3d06c9c8572b654
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: 36b5e97675d5900bf3b5348ad4857827c426e60e
+ms.sourcegitcommit: 4f0b2883922bcb8fbef6b4284c35c6ca62c11565
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358663"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56952156"
 ---
 # <a name="upgrade-from-forefront-identity-manager-2010-r2"></a>从 Forefront 标识管理器 2010 R2 升级
 
@@ -41,7 +41,7 @@ ms.locfileid: "49358663"
 
 2.  在已安装 FIM 2010 R2 组件的每台服务器上（例如 *CORPIDM*），以 Contoso\Administrator 身份登录。 在此部署示例中，将 FIM 2010 R2 升级到 **MIM**需要具有管理权限。
 
-3.  下载或解压缩 MIM 软件。
+3.  下载或解压缩 MIM 软件。  如果没有此软件，请参阅 [Microsoft Identity Manager 授权和下载](microsoft-identity-manager-licensing.md)。
 
 ## <a name="upgrade-the-synchronization-service"></a>升级同步服务
 
@@ -197,6 +197,6 @@ ms.locfileid: "49358663"
 
 4. 请注意， **Forefront Identity Manager 服务** 已重新启动。
 
-注意：如果当前在用户的计算机上部署了 FIM 外接程序和扩展以实现 SSPR，那么请务必先将所有 FIM 外接程序和扩展升级到 MIM 2016，再配置新的 MFA 电话入口以用于密码重置。  由于 FIM 2010 和 FIM 2010 R2 外接程序和扩展不识别新的入口，它们会给出错误信息，用户便无法完成密码重置。
+注意：如果当前在用户计算机上部署了 FIM 加载项和扩展以实现 SSPR，请务必先将所有 FIM 加载项和扩展升级到 MIM 2016，再配置新的 MFA 电话入口以用于密码重置。  由于 FIM 2010 和 FIM 2010 R2 外接程序和扩展不识别新的入口，它们会给出错误信息，用户便无法完成密码重置。
 
 有关 Microsoft Identity Manager 2016 SP1 升级指南，请参阅 [Microsoft Identity Manager 2016 Service Pack 1 update package](https://blogs.technet.microsoft.com/iamsupport/2016/11/08/microsoft-identity-manager-2016-service-pack-1-update-package/)（Microsoft Identity Manager 2016 Service Pack 1 更新包）
