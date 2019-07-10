@@ -10,16 +10,16 @@ ms.date: 07/06/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: 5134a112-f73f-41d0-a5a5-a89f285e1f73
-ms.openlocfilehash: 9cb1e37f966db5c663694aaccd71f2b4c799dd4b
-ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
+ms.openlocfilehash: 72dd1d3cf34e28567fa672b747a04347b150797e
+ms.sourcegitcommit: f58926a9e681131596a25b66418af410a028ad2c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50379933"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67690790"
 ---
 # <a name="using-azure-mfa-for-activation"></a>将 Azure MFA 用于激活
 > [!IMPORTANT]
-> 由于 Azure 多重身份验证软件开发工具包的弃用通知。 在停用日期 2018 年 11 月 14 日前，现有客户仍可使用 Azure MFA SDK。 新客户和当前客户将无法再通过 Azure 经典门户下载 SDK。 若要下载，需要联系 Azure 客户支持，以便接收生成的 MFA 服务凭据包。 <br> Microsoft 开发团队正在通过与 MFA Server SDK 集成来处理对 MFA 的更改。  这将包括在即将发布的修补程序中，请参阅公告的[版本历史记录](/reference/version-history.md)。 
+> 由于 Azure 多重身份验证软件开发工具包的弃用通知。 在停用日期 2018 年 11 月 14 日前，现有客户仍可使用 Azure MFA SDK。 新客户和当前客户将无法再通过 Azure 经典门户下载 SDK。 若要下载，需要联系 Azure 客户支持，以便接收生成的 MFA 服务凭据包。 <br> Microsoft 开发团队正在通过与 MFA Server SDK 集成来处理对 MFA 的更改。  这将包括在即将发布的修补程序中，请参阅公告的[版本历史记录](../reference/version-history.md)。 
 
 
 在配置 PAM 角色时，你可以选择对请求激活角色的用户进行授权的方式。 PAM 授权活动实现的选项有：
@@ -46,11 +46,11 @@ Microsoft Azure 多因素身份验证 (MFA) 是要求用户通过使用移动应
 
 1.  打开 Web 浏览器，以 Azure 订阅管理员的身份连接到 [Azure 经典门户](https://manage.windowsazure.com)。
 
-2.  在左下角单击“新建” 。
+2.  在左下角单击“新建”  。
 
-3.  依次单击“应用服务”>“Active Directory”>“多因素身份验证提供程序”>“快速创建”。
+3.  依次单击“应用服务”>“Active Directory”>“多因素身份验证提供程序”>“快速创建”。 
 
-4.  在“名称”  字段中，输入 **PAM**，并在“使用模型”字段中，选择“每个已启用用户”。 如果你已具有 Azure AD 目录，则选择该目录。 最后，单击“创建” 。
+4.  在“名称”  字段中，输入 **PAM**，并在“使用模型”字段中，选择“每个已启用用户”。 如果你已具有 Azure AD 目录，则选择该目录。 最后，单击“创建”  。
 
 ## <a name="downloading-the-azure-mfa-service-credentials"></a>下载 Azure MFA 服务凭据
 
@@ -60,13 +60,13 @@ Microsoft Azure 多因素身份验证 (MFA) 是要求用户通过使用移动应
 
 2.  在 Azure 门户菜单中单击“Active Directory”  ，然后单击“多重身份验证提供程序”  选项卡。
 
-3.  单击你将用于 PAM 的“Azure MFA 提供程序”，然后单击“管理” 。
+3.  单击你将用于 PAM 的“Azure MFA 提供程序”，然后单击“管理”  。
 
-4.  在新窗口中，单击左侧面板上“配置” 下的“设置” 。
+4.  在新窗口中，单击左侧面板上“配置”  下的“设置”  。
 
-5.  在“Azure 多因素身份验证”  窗口中，单击“下载”  下的“SDK” 。
+5.  在“Azure 多因素身份验证”  窗口中，单击“下载”  下的“SDK”  。
 
-6.  单击 ZIP 列中语言为 **ASP.net 2.0 C\#** 的 SDK 文件的“下载”链接。
+6.  单击 ZIP 列中语言为 **ASP.net 2.0 C\#** 的 SDK 文件的“下载”链接。 
 
 ![下载 Multi-Factor Authentication SDK - 屏幕截图](media/PAM-Azure-MFA-Activation-Image-1.png)
 
@@ -140,15 +140,15 @@ Set-PAMRole (Get-PAMRole -DisplayName "R") -MFAEnabled 1
 
 1.  打开 Web 浏览器，以 Azure AD 全局管理员的身份连接到 [Azure 经典门户](https://manage.windowsazure.com)。
 
-2.  在 Azure 门户菜单中选择“Active Directory”，然后选择“多重身份验证提供程序”选项卡。
+2.  在 Azure 门户菜单中选择“Active Directory”  ，然后选择“多重身份验证提供程序”  选项卡。
 
-3.  单击你将用于 PAM 的 Azure MFA 提供程序，然后单击“管理”。
+3.  单击你将用于 PAM 的 Azure MFA 提供程序，然后单击“管理”  。
 
-4.  在新窗口中，单击“用法” ，然后单击“用户详细信息” 。
+4.  在新窗口中，单击“用法”  ，然后单击“用户详细信息”  。
 
-5.  选择时间范围，然后选中其他报表列中“名称”旁边的复选框。 单击“导出至 CSV” 。
+5.  选择时间范围，然后选中其他报表列中“名称”  旁边的复选框。 单击“导出至 CSV”  。
 
-6.  当报表已生成时，你可以在门户中查看，或者如果 MFA 报表非常多，可将其下载为 CSV 文件。 “身份验证类型”列中的“SDK”值表示与 PAM 激活请求相关的行：这些是源自 MIM 或其他本地软件的事件。 “用户名”  字段是 MIM 服务数据库中用户对象的 GUID。 如果调用失败，“身份验证”列中的值将为“否”，并且“调用结果”列中的值将包含失败原因的详细信息。
+6.  当报表已生成时，你可以在门户中查看，或者如果 MFA 报表非常多，可将其下载为 CSV 文件。 “身份验证类型”列中的“SDK”值表示与 PAM 激活请求相关的行：这些是源自 MIM 或其他本地软件的事件。   “用户名”  字段是 MIM 服务数据库中用户对象的 GUID。 如果调用失败，“身份验证”  列中的值将为“否”，  并且“调用结果”  列中的值将包含失败原因的详细信息。
 
 ## <a name="next-steps"></a>后续步骤
 
