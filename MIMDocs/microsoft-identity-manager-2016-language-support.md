@@ -9,12 +9,12 @@ ms.date: 05/23/2018
 ms.topic: get-started-article
 ms.prod: microsoft-identity-manager
 ms.assetid: 50345fda-56d7-4b6e-a861-f49ff90a8376
-ms.openlocfilehash: 61d5f4ec20f5e29d1846a6822bec9669b364760f
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: 2d843dcd5285d02a67955e763769a16f1a535abb
+ms.sourcegitcommit: f58926a9e681131596a25b66418af410a028ad2c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358697"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67690735"
 ---
 # <a name="supported-languages"></a>支持的语言
 
@@ -30,12 +30,12 @@ Microsoft MIM 服务和门户语言包支持以下 33 种语言。
 > [!IMPORTANT]
 > SSPR 加载项和门户中的文本将得到本地化，但问题还需要额外的工作进行处理。 将需要创建 AuthN 工作流（以及随附集和 MPR 来对它们进行定位）以将每种语言的问题定位到目标位置。
 
-|       Language        | FIM(4.3.x.x)/MIM(4.4.xx) | MIM(4.5.x.x) |
+|       语言        | FIM(4.3.x.x)/MIM(4.4.xx) | MIM(4.5.x.x) |
 |-----------------------|--------------------------|--------------|
 |       保加利亚语       |          bg-BG           |      bg      |
-| 简体中文  |          zh-CN           |   zh-hans    |
+| 中文（简体）  |          zh-CN           |   zh-hans    |
 |   中文（台湾）    |          zh-TW           |   zh-hant    |
-|       克罗地亚语        |          hr-HR           |      人力资源      |
+|       克罗地亚语        |          hr-HR           |      hr      |
 |         捷克语         |          cs-CZ           |      cs      |
 |        丹麦语         |          da-DK           |      da      |
 |         荷兰语         |          nl-NL           |      nl      |
@@ -69,9 +69,9 @@ Microsoft MIM 服务和门户语言包支持以下 33 种语言。
 ## <a name="certificate-management"></a>证书管理 
 Microsoft 证书管理支持以下 9 种语言。 
 
-|Language|FIM(4.3.x.x)/MIM(4.4.xx)|新的 MIM(4.5.x.x)
+|语言|FIM(4.3.x.x)/MIM(4.4.xx)|新的 MIM(4.5.x.x)
 |-----|-----|-----|-----|
-|简体中文|zh-CN|zh-hans|
+|中文（简体）|zh-CN|zh-hans|
 |中文（台湾）|zh-TW|zh-hant|
 |荷兰语|nl-NL|nl|
 |法语|fr-FR|fr|
@@ -84,10 +84,10 @@ Microsoft 证书管理支持以下 9 种语言。
 ## <a name="certificate-management-modern-application"></a>证书管理现代应用程序  
 Microsoft 证书管理现代应用程序支持以下 33 种语言。 
 
-|Language | [1.0.225.104](https://www.microsoft.com/en-us/download/details.aspx?id=54954) | |
+|语言 | [1.0.225.104](https://www.microsoft.com/en-us/download/details.aspx?id=54954) | |
 |-----|-----|-----|-----|
 |荷兰语|nl-NL|nl|
-|简体中文|zh-CN|zh-hans|
+|中文（简体）|zh-CN|zh-hans|
 |中文（台湾）|zh-TW|zh-hant|
 |捷克语|cs-CZ|cs|
 |丹麦语|da-DK|da|
@@ -112,4 +112,4 @@ Microsoft 证书管理现代应用程序支持以下 33 种语言。
 ## <a name="next-steps"></a>后续步骤
 
 - [首次部署](microsoft-identity-manager-deploy.md)
-- [版本历史记录](/reference/version-history.md)
+- [版本历史记录](reference/version-history.md)

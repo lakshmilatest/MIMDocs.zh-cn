@@ -9,12 +9,12 @@ manager: mtillman
 ms.date: 09/04/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.openlocfilehash: 750947d04f540e2c8317861c5826c2145deba1fd
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: 7fb111520f94541672fc56d0fd2ee95bfcd3a49e
+ms.sourcegitcommit: f58926a9e681131596a25b66418af410a028ad2c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358376"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67690748"
 ---
 # <a name="use-a-custom-multi-factor-authentication-provider-via-an-api-during-pam-role-activation-or-in-sspr"></a>通过 API 使用自定义多重身份验证提供程序激活 PAM 角色或 SSPR
 
@@ -32,7 +32,7 @@ MIM 客户有两个其他选项：
 要结合使用自定义多重身份验证提供程序 API 和 MIM，需要：
 
 - 适用于所有候选用户的电话号码
-- MIM 修补程序 [4.5.202.0](https://www.microsoft.com/download/details.aspx?id=57278) 或更高版本 - 请查阅[版本历史记录](/reference/version-history.md)，了解相关公告
+- MIM 修补程序 [4.5.202.0](https://www.microsoft.com/download/details.aspx?id=57278) 或更高版本 - 请查阅[版本历史记录](reference/version-history.md)，了解相关公告
 - 针对 SSPR 或 PAM 配置的 MIM 服务
 
 ## <a name="approach-using-custom-multi-factor-authentication-code"></a>使用自定义多重身份验证代码的方法
