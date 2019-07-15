@@ -5,27 +5,27 @@ keywords: ''
 author: billmath
 ms.author: billmath
 manager: mtillman
-ms.date: 08/30/2018
+ms.date: 05/11/2019
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
-ms.openlocfilehash: 3a86569a8de77f4cf4d5aeafe0cd01dab40232b3
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: 90452391170114270765e9a7fe08e98eea0747e4
+ms.sourcegitcommit: f58926a9e681131596a25b66418af410a028ad2c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358460"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67690693"
 ---
 # <a name="self-service-password-reset-deployment-options"></a>自助密码重置部署选项
 
-对于获得 [Azure Active Directory Premium 许可](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-licensing)的新客户，建议使用 [Azure AD 自助密码重置](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-howitworks.md)，以提供最终用户体验。  Azure AD 自助密码重置可同时为用户提供基于 Web 和 Windows 集成的体验（用于重置其自己的密码），并支持多种与 MIM 相同的功能，包括备用电子邮件和问答入口。  部署 Azure AD 自助密码重置时，Azure AD Connect 支持[将新密码写回 AD DS](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-writeback.md)，并且 MIM [密码变更通知服务](deploying-mim-password-change-notification-service-on-domain-controller.md)还可用于向其他系统（例如另一供应商的目录服务器）转发该密码。  部署用于[密码管理](infrastructure/mim2016-password-management.md)的 MIM 不需要部署 MIM 服务或 MIM 自助密码重置或注册门户。  相反，可以执行以下步骤：
+对于获得 [Azure Active Directory Premium 许可](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-licensing)的新客户，建议使用 [Azure AD 自助密码重置](/azure/active-directory/authentication/concept-sspr-howitworks)，以提供最终用户体验。  Azure AD 自助密码重置可同时为用户提供基于 Web 和 Windows 集成的体验（用于重置其自己的密码），并支持多种与 MIM 相同的功能，包括备用电子邮件和问答入口。  部署 Azure AD 自助密码重置时，Azure AD Connect 支持[将新密码写回 AD DS](/azure/active-directory/authentication/concept-sspr-writeback)，并且 MIM [密码变更通知服务](deploying-mim-password-change-notification-service-on-domain-controller.md)还可用于向其他系统（例如另一供应商的目录服务器）转发该密码。  部署用于[密码管理](infrastructure/mim2016-password-management.md)的 MIM 不需要部署 MIM 服务或 MIM 自助密码重置或注册门户。  相反，可以执行以下步骤：
 
 - 首先，如果需要向 Azure AD 和 AD DS 之外的目录发送密码，请将与连接器的 MIM 同步部署到 Active Directory 域服务和其他任何目标系统，配置用于[密码管理](infrastructure/mim2016-password-management.md)的 MIM，并部署[密码变更通知服务](deploying-mim-password-change-notification-service-on-domain-controller.md)。
-- 其次，如果需要向 Azure AD 之外的目录发送密码，请配置用于[将新密码写回 AD DS](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-writeback.md)的 Azure AD Connect。
-- （可选）[预注册用户](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-authenticationdata.md)。
-- 最后，[向最终用户推广 Azure AD 自助密码重置](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment.md)。
+- 其次，如果需要向 Azure AD 之外的目录发送密码，请配置用于[将新密码写回 AD DS](/azure/active-directory/authentication/concept-sspr-writeback)的 Azure AD Connect。
+- （可选）[预注册用户](/azure/active-directory/authentication/howto-sspr-authenticationdata)。
+- 最后，[向最终用户推广 Azure AD 自助密码重置](/azure/active-directory/authentication/howto-sspr-deployment)。
 
-对于以前部署过用于自助密码重置的 Forefront Identity Manager (FIM) 并获得 Azure Active Directory Premium 授权的现有客户，建议计划过渡到 Azure AD 自助密码重置。  可以将最终用户过渡到 Azure AD 自助密码重置，而无需重新注册，方法是[通过 PowerShell 同步或设置用户的备用电子邮件地址或移动电话号码](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-authenticationdata.md)。 用户注册 Azure AD 自助密码重置后，FIM 密码重置门户即可停止使用。
+对于以前部署过用于自助密码重置的 Forefront Identity Manager (FIM) 并获得 Azure Active Directory Premium 授权的现有客户，建议计划过渡到 Azure AD 自助密码重置。  可以将最终用户过渡到 Azure AD 自助密码重置，而无需重新注册，方法是[通过 PowerShell 同步或设置用户的备用电子邮件地址或移动电话号码](/azure/active-directory/authentication/howto-sspr-authenticationdata)。 用户注册 Azure AD 自助密码重置后，FIM 密码重置门户即可停止使用。
 
 对于尚未为其用户部署 Azure AD 自助密码重置的客户，MIM 还提供自助密码重置门户。  与 FIM 相比，MIM 2016 包含以下更改：
 
@@ -79,7 +79,7 @@ Azure MFA 提供了额外的身份验证机制，可加强现有的身份验证�
 
 ### <a name="register-your-multi-factor-authentication-provider-in-azure"></a>在 Azure 中注册多重身份验证提供程序
 
-1.  创建 [MFA 提供程序](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/multi-factor-authentication-get-started-auth-provider.md)。
+1.  创建 [MFA 提供程序](/azure/multi-factor-authentication/multi-factor-authentication-get-started-auth-provider)。
 
 2. 建立支持案例并请求适用于 ASP.net 2.0 C# 的 Direct SDK。 由于 Direct SDK 已遭弃用，因此，SDK 将仅提供给 MIM（具有 MFA）的当前用户。 新客户应采用将与 MFA 服务器集成的下一个 MIM 版本。
 
@@ -99,7 +99,7 @@ Azure MFA 提供了额外的身份验证机制，可加强现有的身份验证�
 
     ![pf_auth.cs 代码图像](media/MIM-SSPR-pFile.png)
 
-6.  在 **C:\Program Files\Microsoft Forefront Identity Manager\2010\Service**中打开该文件： **MfaSettings**.xml。
+6.  在“C:\Program Files\Microsoft Forefront Identity Manager\2010\Service”中，打开以下文件  ：MfaSettings.xml。 
 
 7.  将 pf_aut.cs 文件中 `LICENSE_KEY, GROUP_KEY, CERT_PASSWORD` 参数的值复制到它们各自在 MfaSettings.xml 文件中的 xml 元素中。
 
@@ -117,13 +117,15 @@ Azure MFA 提供了额外的身份验证机制，可加强现有的身份验证�
 
     ![MIM 门户导航图像](media/MIM-SSPR-workflow.jpg)
 
-2.  选中“密码重置身份验证工作流” 。
+2.  选中“密码重置身份验证工作流”  。
 
     ![MIM 门户工作流图像](media/MIM-SSPR-PwdResetAuthNworkflow.jpg)
 
-3.  单击“活动”  选项卡，然后向下滚动到“添加活动” 。
+3.  单击“活动”  选项卡，然后向下滚动到“添加活动”  。
 
-4.  选择“电话入口” 或“一次性密码 SMS 入口”，单击“选择”，然后单击“确定”。
+4.  选择“电话入口”  或“一次性密码 SMS 入口”  ，单击“选择”  ，然后单击“确定”  。
+
+注意：如果使用 Azure MFA 服务器或另一个本身生成一次性密码的提供程序，请确保上面配置的长度字段与 MFA 提供程序生成的长度字段长度相同。  对于 Azure MFA 服务器，长度为 6。  Azure MFA 服务器还会生成自己的消息文本，因此将忽略短信。
 
 你的组织中的用户现在可以注册以进行密码重置。  在此过程中，他们将输入其电话号码或手机号码，这样系统就知道如何呼叫他们（或向他们发送 SMS 消息）。
 
@@ -133,7 +135,7 @@ Azure MFA 提供了额外的身份验证机制，可加强现有的身份验证�
 
     他们需要进入密码注册门户，并使用其用户名和密码进行身份验证。
 
-2.  在“电话号码”  或“移动电话”   字段中，他们必须输入国家/地区代码、一个空格和电话号码，然后单击“下一步” 。
+2.  在“电话号码”  或“移动电话”   字段中，他们必须输入国家/地区代码、一个空格和电话号码，然后单击“下一步”  。
 
     ![MIM 电话验证图像](media/MIM-SSPR-PhoneVerification.JPG)
 
@@ -148,7 +150,7 @@ Azure MFA 提供了额外的身份验证机制，可加强现有的身份验证�
 
 #### <a name="windows-desktop-login-integrated-password-reset"></a>集成了 Windows 桌面登录的密码重置
 
-1.  如果用户在登录屏幕中数次输入了错误的密码，他们将可以选择单击“登录时遇到问题？” 。
+1.  如果用户在登录屏幕中数次输入了错误的密码，他们将可以选择单击“登录时遇到问题？”  。
 
     ![登录屏幕图像](media/MIM-SSPR-problemsloggingin.JPG)
 
@@ -165,7 +167,7 @@ Azure MFA 提供了额外的身份验证机制，可加强现有的身份验证�
     如果你还设置了其他入口，用户将需要在后续屏幕中提供更多信息。
 
     > [!NOTE]
-    > 如果用户缺乏耐心，并且未按井号键 # 就单击“下一步”，身份验证将失败。
+    > 如果用户缺乏耐心，并且未按井号键 # 就单击“下一步”  ，身份验证将失败。
 
 5.  身份验证成功后，将提供给用户两个选项：解锁帐户并保持当前密码，或设置一个新密码。
 
@@ -173,7 +175,7 @@ Azure MFA 提供了额外的身份验证机制，可加强现有的身份验证�
 
 #### <a name="access-from-the-self-service-portal"></a>从自助服务门户访问
 
-1.  用户可以打开 Web 浏览器，导航到“密码重置门户”  并输入其用户名，然后单击“下一步” 。
+1.  用户可以打开 Web 浏览器，导航到“密码重置门户”  并输入其用户名，然后单击“下一步”  。
 
     如果已配置 MFA，用户将接到一个电话。 然后 Azure MFA 将在后台拨打用户在注册该服务时提供的电话号码。
 
@@ -182,7 +184,7 @@ Azure MFA 提供了额外的身份验证机制，可加强现有的身份验证�
 2.  如果你还设置了其他入口，用户将需要在后续屏幕中提供更多信息。
 
     > [!NOTE]
-    > 如果用户缺乏耐心，并且未按井号键 # 就单击“下一步”，身份验证将失败。
+    > 如果用户缺乏耐心，并且未按井号键 # 就单击“下一步”  ，身份验证将失败。
 
 3.  用户必须对以下两个选项做出选择：重置密码或解锁帐户。 如果用户选择解锁帐户，该帐户将解除锁定。
 
