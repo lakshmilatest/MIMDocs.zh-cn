@@ -9,12 +9,12 @@ ms.date: 09/11/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: ''
-ms.openlocfilehash: d5edf4c16f32c401db32abb9bab1fa7e9e23e4a5
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: 05eb2afc0ddbf6104e27a5c24e121a55bd805292
+ms.sourcegitcommit: 4c4bc7aa42cd5984c838abdd302490355ddcb4ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358495"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68238900"
 ---
 # <a name="microsoft-bhold-suite-sp1-60-installation-guide"></a>Microsoft BHOLD 套件 SP1 (6.0) 安装指南
 
@@ -30,7 +30,7 @@ Microsoft® BHOLD 套件服务包 1 (SP1) 是应用程序的集合，与 Microso
 
 
 > [!NOTE]
-> 适用于：Microsoft Identity Manager 2016 SP1
+> 适用对象  ：Microsoft Identity Manager 2016 SP1
 
 ## <a name="what-this-document-covers"></a>本文档包括
 
@@ -38,7 +38,7 @@ Microsoft® BHOLD 套件服务包 1 (SP1) 是应用程序的集合，与 Microso
 
 ## <a name="pre-requisite-knowledge"></a>必备知识
 
-本文档假定你已基本了解如何在服务器计算机上安装软件。 还假定你具有 Active Directory® 域服务、Microsoft Identity Manager SP1 (FIM) 和 Microsoft SQL Server 2008 数据库软件的基本知识。 有关如何设置和配置 AD DS 和 FIM 等相关技术未在本文档中说明。 有关 Microsoft BHOLD 模块执行的函数的信息，请参阅 [the Microsoft BHOLD suite concepts guide](https://technet.microsoft.com/library/jj134102(v=ws.10).aspx)（Microsoft BHOLD 套件概念指南）。
+本文档假定你已基本了解如何在服务器计算机上安装软件。 还假定你具有 Active Directory® 域服务、Microsoft Identity Manager SP1 (FIM) 和 Microsoft SQL Server 2012 数据库软件的基本知识。 有关如何设置和配置 AD DS 和 FIM 等相关技术未在本文档中说明。 有关 Microsoft BHOLD 模块执行的函数的信息，请参阅 [the Microsoft BHOLD suite concepts guide](https://technet.microsoft.com/library/jj134102(v=ws.10).aspx)（Microsoft BHOLD 套件概念指南）。
 
 ## <a name="audience"></a>受众
 
@@ -87,7 +87,6 @@ BHOLD 套件 SP1 和 FIM 门户一起安装在一台服务器上时，必须为 
 - 在物理磁盘级别上，将日志文件与数据文件隔离开。
 - 如果使用 RAID 提供存储冗余，请使用 RAID 级别 10 (1+0)。 请勿使用 RAID 级别 5。
 - 对运行 SQL Server 的服务器使用超过 2 GB 的物理内存时，请确保配置正确的设置。
-- 为了获得最佳的 BHOLD 性能，请使用 Microsoft SQL Server 2008 R2 或更高版本。
 
 有关 SQL Server 最佳做法的详细信息，请参阅 Microsoft TechNet 库中的 [Storage Top 10 Best Practices](https://www.microsoft.com/technet/prodtechnol/sql/bestpractice/storage-top-10.mspx)（10 大最佳存储做法）。
 

@@ -41,7 +41,7 @@ Privileged Access Management 没有超出基础软件平台所需的任何硬件
 
 - Windows Server 2012 R2
 - Windows 10 企业版
-- SQL Server 2012 Service Pack 1 或 SOL Server 2014
+- SQL Server 2012 Service Pack 1 或 SQL Server 2014
 
 ## <a name="evaluation-software"></a>评估软件
 
