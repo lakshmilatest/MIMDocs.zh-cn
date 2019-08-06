@@ -6,17 +6,17 @@ author: billmath
 ms.author: billmath
 manager: mtillman
 ms.date: 04/26/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: microsoft-identity-manager
 ms.assetid: 297df3b3-192e-4ed9-82ed-c95eb5297c84
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 2dc7c1ffecbd4f52ab031512f501922f458324a3
-ms.sourcegitcommit: 4ae62943aea3aab622195896956c5c88ecd9e97c
+ms.openlocfilehash: d32638bda8fd757233af0c697ea3d1ac9eb47eb9
+ms.sourcegitcommit: 65e11fd639464ed383219ef61632decb69859065
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53815896"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68701375"
 ---
 # <a name="set-up-an-identity-management-server-sql-server-2016"></a>设置身份管理服务器：SQL Server 2016
 
@@ -26,14 +26,14 @@ ms.locfileid: "53815896"
 > 
 > [!NOTE]
 > 本演练使用名为 Contoso 的公司中的示例名和值。 将其替换为你自己的。 例如：
-> - 域控制器名称 - corpdc
+> - 域控制器名称 - corpdc 
 > - 域名 - **contoso**
-> - MIM 服务服务器名称 - corpservice
-> - MIM 同步服务器名称 - corpsync
-> - SQL Server 名称 - corpsql
+> - MIM 服务服务器名称 - corpservice 
+> - MIM 同步服务器名称 - corpsync 
+> - SQL Server 名称 - corpsql 
 > - 密码 - <strong>Pass@word1</strong>
 
-## <a name="install-sql-server-2016-standardenterprise-edition"></a>安装 SQL Server 2016 标准版/企业版
+## <a name="install-sql-server-2016-standardenterprise-edition"></a>安装 SQL Server 2016 标准版/企业版 
 
 1. 以域管理员身份启动 **PowerShell** 。
 

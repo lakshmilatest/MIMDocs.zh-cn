@@ -6,17 +6,17 @@ author: billmath
 ms.author: billmath
 manager: mtillman
 ms.date: 10/26/2017
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: microsoft-identity-manager
 ms.assetid: 50345fda-56d7-4b6e-a861-f49ff90a8376
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: cbba7abe810fea0943e087206f7b0b6e3baa7cbb
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: 35845cc9bb4358f3f837b8a007de15da972c980d
+ms.sourcegitcommit: 65e11fd639464ed383219ef61632decb69859065
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49357865"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68701312"
 ---
 # <a name="set-up-a-domain"></a>设置域
 
@@ -33,11 +33,11 @@ MIM 部署的所有组件都需要在域中具有自己的标识。 这包括服
 
 > [!NOTE]
 > 本演练使用名为 Contoso 的公司中的示例名和值。 将其替换为你自己的。 例如：
-> - 域控制器名称 - corpdc
+> - 域控制器名称 - corpdc 
 > - 域名 - **contoso**
-> - MIM 服务服务器名称 - corpservice
-> - MIM 同步服务器名称 - corpsync
-> - SQL Server 名称 - corpsql
+> - MIM 服务服务器名称 - corpservice 
+> - MIM 同步服务器名称 - corpsync 
+> - SQL Server 名称 - corpsql 
 > - 密码 - <strong>Pass@word1</strong>
 
 1. 以域管理员的身份登录到域控制器（*例如：Contoso\Administrator*）。
