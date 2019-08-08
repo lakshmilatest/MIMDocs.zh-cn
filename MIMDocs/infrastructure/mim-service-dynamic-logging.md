@@ -6,12 +6,13 @@ ms.author: billmath
 manager: mtillman
 ms.date: 10/29/2018
 ms.topic: article
-ms.openlocfilehash: e5d8bcc640ad77b71a515b13bcb3bcf6985654f5
-ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
+ms.prod: microsoft-identity-manager
+ms.openlocfilehash: 90ef2ab63be3914d1d48c7319821177e7e62f9e0
+ms.sourcegitcommit: 65e11fd639464ed383219ef61632decb69859065
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50380079"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68701303"
 ---
 # <a name="mim-sp1-4414360--service-dynamic-logging"></a>MIM SP1 (4.4.1436.0) 服务动态日志记录
 
@@ -30,7 +31,7 @@ ms.locfileid: "50380079"
 - 关键 = 默认级别服务将仅写入关键事件
 - 行 8 (dynamicLogging mode="true" loggingLevel="Critical") 更新为首选日志记录值
 
-动态日志记录配置位于行 266：Microsoft.ResourceManagement.Service.exe.config
+动态日志记录配置位于第 266 行：Microsoft.ResourceManagement.Service.exe.config
 
 ![高亮部分显示具有各种可用日志记录区域的行](media/mim-service-dynamic-logging/screen02.png)
 
@@ -50,7 +51,7 @@ ms.locfileid: "50380079"
 
 # <a name="updates-build-45xx-or-greater"></a>更新：内部版本 4.5.x.x 或更高版本
 
-在内部版本 4.5.x.x 中，我们修订了日志记录功能，从而将默认日志记录级别指定为“警告”。 该服务将消息写入到两个文件中（在扩展名之前添加“00”和“01”索引）。 文件位于“C:\Program Files\Microsoft Forefront Identity Manager\2010\Service”目录内。 当文件超过最大限制时，服务开始写入另一个文件。 如果存在另一个文件，它将被覆盖。 默认文件最大为 1 GB。 要更改默认最大大小，必须将带有最大文件大小 (KB) 值的“maxOutputFileSizeKB”参数添加到侦听器中（请参阅下面的示例）并重启 MIM 服务。 服务启动后，它会将日志附加到更新的文件中（如果超出空间限制，则会覆盖最旧的文件）。 
+在内部版本 4.5.x.x 中，我们修订了日志记录功能，从而将默认日志记录级别指定为“警告”  。 该服务将消息写入到两个文件中（在扩展名之前添加“00”和“01”索引）。 文件位于“C:\Program Files\Microsoft Forefront Identity Manager\2010\Service”目录内。 当文件超过最大限制时，服务开始写入另一个文件。 如果存在另一个文件，它将被覆盖。 默认文件最大为 1 GB。 要更改默认最大大小，必须将带有最大文件大小 (KB) 值的  “maxOutputFileSizeKB”参数添加到侦听器中（请参阅下面的示例）并重启 MIM 服务。 服务启动后，它会将日志附加到更新的文件中（如果超出空间限制，则会覆盖最旧的文件）。 
 
 > [!NOTE] 
 > 服务会在写入消息之前检查文件大小，因此文件大小可能大于某个消息大小的最大限制。 默认情况下，日志的大小约为 6 GB（3 个带有两个 1 GB 大小的文件的侦听器）。
