@@ -5,25 +5,25 @@ keywords: ''
 author: billmath
 ms.author: billmath
 manager: mtillman
-ms.date: 04/30/2018
+ms.date: 10/18/2019
 ms.topic: conceptual
 ms.prod: microsoft-identity-manager
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
-ms.reviewer: mwahl
+ms.reviewer: markwahl-msft
 ms.suite: ems
-ms.openlocfilehash: ca2a9a4a646387b044e3a504c19eae904b2a6be1
-ms.sourcegitcommit: 65e11fd639464ed383219ef61632decb69859065
+ms.openlocfilehash: 1f7aa8e257ef4fd1d97ee602a4e0f3f878d8c1b6
+ms.sourcegitcommit: 323c2748dcc6b6991b1421dd8e3721588247bc17
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68701290"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568069"
 ---
 # <a name="install-mim-2016-mim-service-and-portal"></a>安装 MIM 2016：MIM 服务和门户
 
 > [!div class="step-by-step"]
 > [« MIM 同步服务](install-mim-sync.md)
 > [同步数据库 »](install-mim-sync-ad-service.md)
-> 
+ 
 > [!NOTE]
 > 本演练使用名为 Contoso 的公司中的示例名和值。 将其替换为你自己的。 例如：
 > - 域控制器名称 - **mimservername**
@@ -57,22 +57,26 @@ ms.locfileid: "68701290"
 8. 指定你想要生成新的自签名证书，或选择相关的证书。
 
 9. 指定要使用的服务帐户名称（例如 *MIMService*）、服务帐户密码（例如 <em>Pass@word1</em>）、服务帐户域（例如 *contoso*）以及服务电子邮件帐户（例如 *contoso*）。
+    >[!NOTE]
+    >MIM 2016 SP2 及更高版本：若使用的是组托管的服务帐户，需要确保  $ 字符位于服务帐户名称的末尾，例如 MIMService$，并将服务帐户密码字段保留为空。
 
     ![配置 MIM 服务帐户图像](media/install-mim-service-portal/MIM_Install12.png)
 
 10. 请注意，可能会出现如下警告：服务帐户在其当前配置中并不安全。
 
 11. 接受同步服务器位置的默认设置，并将 MIM 管理代理帐户指定为 *contoso\MIMMA*。
+    >[!NOTE]
+    >MIM 2016 SP2 及更高版本：若计划将 MIM 同步服务组托管服务帐户用于 MIM 同步，请启用“使用 MIM 同步帐户”功能，然后输入 MIM 同步服务 gMSA 名称作为 MIM MA 帐户，例如 contoso\MIMSync$。 
 
     ![配置 MIM 服务和门户图像](media/install-mim-service-portal/MIM_Install13.png)
 
 12. 将 *CORPIDM*（此计算机的名称）指定为 MIM 门户的 MIM 服务服务器地址。
 
-13. 将 `* http://mim.contoso.com*` 指定为 SharePoint 网站集 URL。
+13. 将 `http://mim.contoso.com` 指定为 SharePoint 网站集 URL。
 
-14. 指定 `* http://passwordregistration.contoso.com*` 作为密码注册 URL 端口 80，建议稍后使用 443 上的 SSL 证书进行更新。
+14. 指定 `http://passwordregistration.contoso.com` 作为密码注册 URL 端口 80，建议稍后使用 443 上的 SSL 证书进行更新。
 
-15. 指定 `* http://passwordreset.contoso.com*` 作为密码重置 URL 端口 80，建议稍后使用 443 上的 SSL 证书进行更新。
+15. 指定 `http://passwordreset.contoso.com` 作为密码重置 URL 端口 80，建议稍后使用 443 上的 SSL 证书进行更新。
 
 16. 选中打开防火墙中的端口 5725 和 5726 的复选框，以及授予所有经过身份验证的用户访问 MIM 门户权限的复选框。
 
@@ -107,7 +111,6 @@ ms.locfileid: "68701290"
 安装完成后，验证 MIM 门户是否处于活动状态。
 
 1. 启动 Internet Explorer 并连接到 http://mim.contoso.com/identitymanagement  上的 MIM 门户。 请注意，第一次访问此页可能有一个短暂的延迟。
-
     - 如有必要，以 contoso\miminstall  身份向 Internet Explorer 进行身份验证。
 
 2. 在 Internet Explorer 中，打开“Internet 选项”  ，更改为“安全”  选项卡，并将该站点添加到“本地 Intranet”  区域（如果尚不存在）。  关闭“Internet 选项”  对话框。
@@ -130,9 +133,8 @@ ms.locfileid: "68701290"
 
     3.  验证是否出现以下两个规则：
 
-        -   Forefront Identity Manager 服务 (STS)。
-
-        -   Forefront Identity Manager 服务 (Webservice)。
+    -   Forefront Identity Manager 服务 (STS)。
+    -   Forefront Identity Manager 服务 (Webservice)。
 
     4.  完成向导并关闭“Windows 防火墙”  应用程序。
 
@@ -144,7 +146,7 @@ ms.locfileid: "68701290"
 
 > [!NOTE]
 > 可选：此时，可以安装 MIM 加载项和扩展。
-> 
+ 
 > [!div class="step-by-step"]  
 > [« MIM 同步服务](install-mim-sync.md)
 > [同步数据库 »](install-mim-sync-ad-service.md)

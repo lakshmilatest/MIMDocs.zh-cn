@@ -5,15 +5,15 @@ keywords: ''
 author: billmath
 ms.author: billmath
 manager: mtillman
-ms.date: 11/05/2018
+ms.date: 10/18/2019
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.openlocfilehash: e1419f7b7ae49ec56f4294051d8e094846ac2ed0
-ms.sourcegitcommit: 65e11fd639464ed383219ef61632decb69859065
+ms.openlocfilehash: 1af53aee05d10fa7c7f77cef3c6dba1051be24b1
+ms.sourcegitcommit: b09a8c93983d9d92ca4871054650b994e9996ecf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68701461"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73329389"
 ---
 # <a name="microsoft-identity-manager-2016-news-and-updates"></a>Microsoft Identity Manager 2016 新增内容和更新
 
@@ -25,23 +25,25 @@ Microsoft Identity Manager (MIM) 2016 以 Forefront Identity Manager 的标识�
  - 将目录内容与 HR 系统和其他权威来源集成
  - 通过常见的 API 和协议、Microsoft 提供的连接器和合作伙伴提供的连接器，同步目录、数据库和本地应用之间的标识
 
-主流支持的当前版本是 MIM 2016 Service Pack 1 (SP1)。  此 2017 年 8 月发布的版本包括对 MIM 门户、PAM 场景的更新以及添加的对新平台的支持。  运行 MIM 2016 SP1 之前的 FIM 或 MIM 版本的客户应升级到 MIM 2016 SP1 或更高版本的修补程序。  详细了解[升级到 MIM 2016 SP1](./reference/version-history.md)。
-
-## <a name="updates-since-mim-2016-sp1"></a>自 MIM 2016 SP1 以来的更新
+主流支持的当前版本是 MIM 2016 Service Pack 1 以及 Service Pack 2 (SP2)。  运行 MIM 2016 SP1 之前的 FIM 或 MIM 版本的客户应升级到 MIM 2016 SP2 或更高版本的修补程序。
 
 Microsoft 在持续发布周期定期向 MIM 交付更新，包括客户请求的增强功能和 bug 修复。
 
+## <a name="updates-in-mim-2016-sp2"></a>MIM 2016 SP2 中的更新
+
+MIM 2016 Service Pack 2 是 MIM 2016 SP1 以来的现有修补程序的汇总。 它还引入了配置将组托管服务帐户用于 MIM 同步服务和 MIM 服务的选项，并允许使用其他更新的平台软件部署 MIM。 有关详细信息，请参阅 [MIM 2016 版本历史记录](./reference/version-history.md)
+
 ### <a name="major-new-and-updated-scenarios"></a>主要新方案和更新的方案
 
-- [Azure AD B2B 与 MIM Graph 连接器 和 Azure 应用代理的协作已正式发布](microsoft-identity-manager-2016-graph-b2b-scenario.md)，上次更新时间为 2018 年 4 月
-- [混合 MIM 报告为正式版](https://cloudblogs.microsoft.com/enterprisemobility/2018/02/23/hybrid-mim-reporting-now-available-in-azure-active-directory/)，上次更新时间为 2018 年 2 月
+- [Azure AD B2B 与 MIM Graph 连接器和 Azure 应用代理的协作已正式发布](microsoft-identity-manager-2016-graph-b2b-scenario.md)，上次更新时间为 2019 年 7 月
+- [混合 MIM 报告为正式版](https://cloudblogs.microsoft.com/enterprisemobility/2018/02/23/hybrid-mim-reporting-now-available-in-azure-active-directory/)，上次更新时间为 2019 年 4 月
 - [修订了 MIM 弃用功能列表](microsoft-identity-manager-2016-deprecated-features.md)，上次更新时间为 2018 年 2 月
 
 ### <a name="recent-software-releases"></a>最新软件版本
 
-- [MIM 连接器版本](./reference/microsoft-identity-manager-2016-connector-version-history.md)，上次更新时间为 2018 年 3 月
-- [MIM 同步、服务、门户、CM、加载项和客户端版本](./reference/version-history.md)，上次更新时间为 2017 年 11 月
-- [MIM BHOLD 模块版本](./reference/version-bhold-history.md)，上次更新时间为 2017 年 9 月
+- [MIM 连接器版本](./reference/microsoft-identity-manager-2016-connector-version-history.md)，上次更新时间为 2019 年 7月
+- [MIM 同步、服务、门户、CM、加载项和客户端版本](./reference/version-history.md)，上次更新时间为 2019 年 10 月
+- [MIM BHOLD 模块版本](./reference/version-bhold-history.md)，上次更新时间为 2018 年 10 月
 
 
 
@@ -50,5 +52,5 @@ Microsoft 在持续发布周期定期向 MIM 交付更新，包括客户请求�
 
 有关在 MIM 2016 及更早版本中添加的方案的详细信息，请参阅 [Microsoft Identity Manager 2016](microsoft-identity-manager-2016.md)。
 
-有关部署 MIM 和最新版本的文档的详细信息，请参阅 [MIM 文档路线图](https://docs.microsoft.com/en-us/microsoft-identity-manager/)。
+有关部署 MIM 和最新版本的文档的详细信息，请参阅 [MIM 文档路线图](https://docs.microsoft.com/microsoft-identity-manager/)。
 

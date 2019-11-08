@@ -1,29 +1,34 @@
 ---
-title: 配置 Windows Server 2016 for MIM 2016 SP1 | Microsoft Docs
-description: 获取准备 Windows Server 2016 SP1 以使用 MIM 2016 的步骤和最低要求。
+title: 为 MIM 2016 SP2 配置 Windows Server 2016 或 Windows Server 2019 | Microsoft Docs
+description: 获取准备 Windows Server 2016 或 Windows Server 2019 以使用 MIM 2016 SP2 的步骤和最低要求。
 keywords: ''
 author: billmath
 ms.author: billmath
 manager: mtillman
-ms.date: 04/26/2018
+ms.date: 10/18/2019
 ms.topic: conceptual
 ms.prod: microsoft-identity-manager
 ms.assetid: 51507d0a-2aeb-4cfd-a642-7c71e666d6cd
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 7348507593426ba112feef9d68686ee493a6391d
-ms.sourcegitcommit: 65e11fd639464ed383219ef61632decb69859065
+ms.openlocfilehash: c6d5d5081f0e932b9c60d8f2025b54e47dc352d5
+ms.sourcegitcommit: 323c2748dcc6b6991b1421dd8e3721588247bc17
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68701412"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568039"
 ---
-# <a name="set-up-an-identity-management-server-windows-server-2016"></a>设置身份管理服务器：Windows Server 2016
+# <a name="set-up-an-identity-management-server-windows-server-2016-or-2019"></a>设置身份管理服务器：Windows Server 2016 或 Windows Server 2019
 
 > [!div class="step-by-step"]
 > [« 准备域](preparing-domain.md)
-> [SQL Server 2016 »](prepare-server-sql2016.md)
+> [SQL Server »](prepare-server-sql2016.md)
 > 
+
+> [!NOTE]
+> Windows Server 2019 设置过程与 Windows Server 2016 设置过程没有区别。
+
+
 > [!NOTE]
 > 本演练使用名为 Contoso 的公司中的示例名和值。 将其替换为你自己的。 例如：
 > - 域控制器名称 - corpdc 
@@ -85,8 +90,6 @@ ms.locfileid: "68701412"
 
 6.  在“详细信息”窗格中，右键单击“拒绝从网络访问该计算机”  ，并选择“属性”  。>
 
-[!NOTE] 分离角色服务器会导致某些功能中断，例如 SSPR。
-
 7. 单击“添加用户或组”  ，在文本框中键入 `contoso\MIMSync; contoso\MIMService`，然后单击“确定”  。
 
 8. 单击“确定”  以关闭“拒绝从网络属性访问此计算机”属性  窗口。
@@ -99,6 +102,19 @@ ms.locfileid: "68701412"
 
 12. 关闭本地安全策略窗口。
 
+## <a name="software-prerequisites"></a>软件必备项
+
+请先确保已安装所有软件必备项，然后再安装 MIM 2016 SP2 组件：
+
+13. 安装 [Visual C++ 2013 Redistributable Packages](https://www.microsoft.com/download/details.aspx?id=40784)。
+
+14. 安装 .NET Framework 4.6。
+
+15. 在托管 MIM 同步服务的服务器上，MIM 同步服务需要 [SQL Server Native Client](https://www.microsoft.com/download/details.aspx?id=50402)。
+
+16. 在托管 MIM 服务的服务器上，MIM 服务需要 .NET Framework 3.5。
+
+17. （可选）若使用的是 TLS 1.2 或 FIPS 模式，请参阅[“仅 TLS 1.2 ”或 FIPS 模式环境中的 MIM 2016 SP2](preparing-tls.md)。
 
 ## <a name="change-the-iis-windows-authentication-mode-if-needed"></a>更改 IIS Windows 身份验证模式（如果需要）
 
@@ -114,4 +130,4 @@ ms.locfileid: "68701412"
 
 > [!div class="step-by-step"]  
 > [« 准备域](preparing-domain.md)
-> [SQL Server 2016 »](prepare-server-sql2016.md)
+> [SQL Server »](prepare-server-sql2016.md)

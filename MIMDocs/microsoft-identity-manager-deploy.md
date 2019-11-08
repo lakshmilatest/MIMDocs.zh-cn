@@ -5,20 +5,20 @@ keywords: ''
 author: billmath
 ms.author: billmath
 manager: mtillman
-ms.date: 10/12/2017
+ms.date: 10/17/2019
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: fa0af422-b5e9-4599-9d9b-cb6c18ea07f9
-ms.reviewer: mwahl
+ms.reviewer: markwahl-msft
 ms.suite: ems
-ms.openlocfilehash: fdf3745979be2d911c9cc1c245149328311e7ad8
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: 8216dc144dd7cee2ccb30d89198f6d2bb3a726c1
+ms.sourcegitcommit: b09a8c93983d9d92ca4871054650b994e9996ecf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358136"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73329444"
 ---
-# <a name="deploy-microsoft-identity-manager-2016-sp1"></a>部署 Microsoft Identity Manager 2016 SP1
+# <a name="deploy-microsoft-identity-manager-2016-sp2"></a>部署 Microsoft Identity Manager 2016 SP2
 本部分中的文章提供部署 Microsoft 标识管理器 (MIM) 2016 的分步说明，这些说明适用于此前未部署过 FIM 或 MIM 的新服务器上的最终用户自助服务方案。
 
 > [!NOTE]
@@ -28,20 +28,25 @@ ms.locfileid: "49358136"
 
 部署 MIM 的过程与部署其前身 FIM 2010 R2 的过程非常类似。 如果想引用 FIM 文档，请参阅 [Forefront Identity Manager 2010 R2 部署指南](https://technet.microsoft.com/library/jj134310)。
 
-## <a name="first-prepare-a-domain"></a>第一步：准备域
+## <a name="first-prepare-a-domain"></a>第 1 步：准备域
 MIM 与 Active Directory (AD) 协同工作，因此请按照以下步骤来配置你的 AD 域控制器。
 - [域设置](preparing-domain.md)
 
-## <a name="next-prepare-an-identity-management-servers"></a>第二步：准备标识管理服务器
-设置并配置好域后，准备你的企业标识管理服务器。 这包括设置：
-- [Windows Server 2016](prepare-server-ws2016.md)
-- [SQL Server 2016](prepare-server-sql2016.md)
-- [SharePoint 2016](prepare-server-sharepoint.md)
+
+## <a name="next-prepare-an-identity-management-servers"></a>第 2 步：准备标识管理服务器
+设置并配置好域后，准备你的企业标识管理服务器。
+
+有关支持的平台的详细信息，请参阅 [MIM 2016 或更高版本支持的平台](microsoft-identity-manager-2016-supported-platforms.md)
+
+ 这包括设置：
+- [Windows Server](prepare-server-ws2016.md)
+- [SQL Server](prepare-server-sql2016.md)
+- [SharePoint Server](prepare-server-sharepoint.md)
 - [Exchange Server](prepare-server-exchange.md)（可选）
 
-## <a name="finally-install-microsoft-identity-manager-2016-sp1-components"></a>第三步：安装 Microsoft 标识管理器 2016 SP1 组件
+## <a name="finally-install-microsoft-identity-manager-2016-sp2-components"></a>第 3 步：安装 Microsoft 标识管理器 2016 SP2 组件
 设置好域和服务器后，便可立即安装 MIM 组件，并将其配置为与 AD 同步。
 - [MIM 同步服务](install-mim-sync.md)
 - [MIM 服务和门户](install-mim-service-portal.md)
 - [同步 Active Directory 和 MIM 服务数据库](install-mim-sync-ad-service.md)
-- [MIM 2016 或更高版本支持的平台](microsoft-identity-manager-2016-supported-platforms.md)
+

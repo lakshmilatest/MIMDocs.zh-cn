@@ -11,19 +11,23 @@ ms.prod: microsoft-identity-manager
 ms.assetid: c01487f2-3de6-4fc4-8c3a-7d62f7c2496c
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 46080360dd0ad6c3554e2d9b3418ac518b75a5cd
-ms.sourcegitcommit: 65e11fd639464ed383219ef61632decb69859065
+ms.openlocfilehash: 62ef8796717dbcaea18d21bc3d28248efdeef92e
+ms.sourcegitcommit: 323c2748dcc6b6991b1421dd8e3721588247bc17
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68701383"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568110"
 ---
 # <a name="set-up-an-identity-management-server-sharepoint"></a>设置身份管理服务器：SharePoint
 
 > [!div class="step-by-step"]
-> [« SQL Server 2016](prepare-server-sql2016.md)
+> [« SQL Server](prepare-server-sql2016.md)
 > [Exchange Server »](prepare-server-exchange.md)
 > 
+
+> [!NOTE]
+> 除了必须要执行一个额外的步骤来解锁 MIM 门户使用的 ASHX 文件以外，SharePoint Server 2019 设置过程与 SharePoint Server 2016 设置过程没有区别。 
+
 > [!NOTE]
 > 本演练使用名为 Contoso 的公司中的示例名和值。 将其替换为你自己的。 例如：
 > - 域控制器名称 - corpdc 
@@ -46,10 +50,9 @@ ms.locfileid: "68701383"
     -   更改为 SharePoint 解压缩所在的目录。
 
     -   键入下列命令。
-
-        ```
-        .\prerequisiteinstaller.exe
-        ```
+    ```
+    .\prerequisiteinstaller.exe
+    ```
 
 2.  安装 **SharePoint** 必备组件后，通过键入以下命令安装 **SharePoint 2016**：
 
@@ -86,7 +89,7 @@ ms.locfileid: "68701383"
 
 1. 启动 SharePoint 2016 命令行管理程序  并运行以下 PowerShell 脚本，以创建 SharePoint 2016 Web 应用程序  。
 
-    ```
+    ```PowerShell
     New-SPManagedAccount ##Will prompt for new account enter contoso\mimpool 
     $dbManagedAccount = Get-SPManagedAccount -Identity contoso\mimpool
     New-SpWebApplication -Name "MIM Portal" -ApplicationPool "MIMAppPool" -ApplicationPoolAccount $dbManagedAccount -AuthenticationMethod "Kerberos" -Port 80 -URL http://mim.contoso.com
@@ -96,21 +99,33 @@ ms.locfileid: "68701383"
     > 将显示一条警告消息，指示 Windows 经典身份验证方法正在使用中，最后的命令可能需要几分钟才能返回。 完成后，输出将显示新门户的 URL。 保持“SharePoint 2016 命令行管理程序”  窗口处于打开状态，以供稍后参考。
 
 2. 启动 SharePoint 2016 命令行管理程序并运行以下 PowerShell 脚本，以创建与 Web 应用程序关联的 Sharepoint 站点集合  。
-
-   ```
+    ```PowerShell
     $t = Get-SPWebTemplate -compatibilityLevel 15 -Identity "STS#1"
     $w = Get-SPWebApplication http://mim.contoso.com/
     New-SPSite -Url $w.Url -Template $t -OwnerAlias contoso\miminstall -CompatibilityLevel 15 -Name "MIM Portal"
     $s = SpSite($w.Url)
     $s.CompatibilityLevel
-   ```
+    ```
+    > [!NOTE]
+    > 验证 CompatibilityLevel  变量的结果是否为“15”。 如果结果不是“15”，则站点集合不是为正确体验版本创建的；删除该站点集合并重新创建。
 
+    > [!IMPORTANT]
+    > SharePoint Server 2019 使用不同的 Web 应用程序属性来保存阻止的文件扩展名列表。 因此，必须从 SharePoint 命令行管理程序手动执行三个额外的命令，才能解锁 MIM 门户使用的 .ASHX 文件。
+    <br/>
+    **仅对 SharePoint 2019 执行接下来的三个命令：**
+
+    ```PowerShell
+    $w.BlockedASPNetExtensions.Remove("ashx")
+    $w.Update()
+    $w.BlockedASPNetExtensions
+    ```
    > [!NOTE]
-   > 验证 CompatibilityLevel  变量的结果是否为“15”。 如果结果不是“15”，则站点集合不是为正确体验版本创建的；删除该站点集合并重新创建。
+   > 验证 BlockedASPNetExtensions 列表是否不再包含 ASHX 扩展名，否则多个 MIM 门户页面将无法正确呈现。 
+
 
 3. 通过在“SharePoint 2016 命令行管理程序”  中运行以下 PowerShell 命令来禁用“SharePoint 服务器端视图状态”  和 SharePoint 任务“运行状况分析作业（每小时、Microsoft SharePoint Foundation 计时器、所有服务器）”：
 
-   ```
+   ```PowerShell
    $contentService = [Microsoft.SharePoint.Administration.SPWebService]::ContentService;
    $contentService.ViewStateOnServer = $false;
    $contentService.Update();
@@ -130,5 +145,5 @@ ms.locfileid: "68701383"
 7. 打开“管理工具”  程序，导航到“服务”  ，找到 SharePoint 管理服务，并启动它（如果未运行）。
 
 > [!div class="step-by-step"]  
-> [« SQL Server 2016](prepare-server-sql2016.md)
+> [« SQL Server](prepare-server-sql2016.md)
 > [Exchange Server »](prepare-server-exchange.md)

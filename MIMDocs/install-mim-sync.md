@@ -5,25 +5,25 @@ keywords: ''
 author: billmath
 ms.author: billmath
 manager: mtillman
-ms.date: 05/01/2018
+ms.date: 10/18/2019
 ms.topic: conceptual
 ms.prod: microsoft-identity-manager
 ms.assetid: 2585e9c5-ce34-46c7-bdcf-8c08773901dc
-ms.reviewer: mwahl
+ms.reviewer: markwahl-msft
 ms.suite: ems
-ms.openlocfilehash: fba7eb3caea1f00c37f00f3fd2bf67dfe3f12871
-ms.sourcegitcommit: 65e11fd639464ed383219ef61632decb69859065
+ms.openlocfilehash: b9bc580710a13b3a0868b0580d55469a753e7f33
+ms.sourcegitcommit: 323c2748dcc6b6991b1421dd8e3721588247bc17
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68701273"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568083"
 ---
 # <a name="install-mim-2016-mim-synchronization-service"></a>安装 MIM 2016：MIM 同步服务
 
 > [!div class="step-by-step"]
 > [« Exchange Server](prepare-server-exchange.md)
 > [MIM 服务和门户 »](install-mim-service-portal.md)
-> 
+ 
 > [!NOTE]
 > 本演练使用名为 Contoso 的公司中的示例名和值。 将其替换为你自己的。 例如：
 > - 域控制器名称 - corpdc 
@@ -63,6 +63,8 @@ ms.locfileid: "68701273"
 
    ![数据库连接图像](media/install-mim-sync/MIM_Install3.png)
 
+    3. *MIM 2016 SP2 和更高版本*：配置 MIM 同步服务数据库名称
+
 7. 根据之前创建的帐户配置同步服务帐户：
 
    1. 服务帐户：*MIMSync*
@@ -71,7 +73,10 @@ ms.locfileid: "68701273"
 
    3. 服务帐户域或本地计算机名称： *contoso*
 
-   ![服务帐户图像](media/install-mim-sync/MIM_Install4.png)
+    >[!NOTE]
+    >MIM 2016 SP2 及更高版本：对于组托管的服务帐户，请确保  $ 字符位于服务帐户名称的末尾，例如 MIMSync$，并将密码字段保留为空。
+
+    ![服务帐户图像](media/install-mim-sync/MIM_Install4.png)
 
 8. 提供具有相关安全组的 MIM 同步服务安装程序：
 
@@ -97,7 +102,7 @@ ms.locfileid: "68701273"
 
     3. 会出现为加密密钥创建备份的通知 – 单击“确定”  ，然后选择要存储加密密钥备份的文件夹。
 
-        ![MIM 同步备份加密密钥通知图像](media/MIM-Install7.png)
+    ![MIM 同步备份加密密钥通知图像](media/MIM-Install7.png)
 
     4. 当安装程序成功完成安装时，请单击“完成”  。
 

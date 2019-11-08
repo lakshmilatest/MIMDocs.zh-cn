@@ -11,12 +11,12 @@ ms.prod: microsoft-identity-manager
 ms.assetid: 5e532b67-64a6-4af6-a806-980a6c11a82d
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 69698721b0fbabc78cf5bb4c1032ab8fc2613772
-ms.sourcegitcommit: 65e11fd639464ed383219ef61632decb69859065
+ms.openlocfilehash: 1627bae6aecdfc3d57261485de04a78feb264013
+ms.sourcegitcommit: b09a8c93983d9d92ca4871054650b994e9996ecf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68701199"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73329326"
 ---
 # <a name="install-mim-2016-synchronize-active-directory-and-mim-service"></a>安装 MIM 2016：同步 Active Directory 和 MIM 服务
 
@@ -37,7 +37,7 @@ MIM 管理代理 (MA) 是 MIM 同步到 MIM 服务的连接器。 若要创建�
 在配置 MIM 管理代理时，需要指定一个用户帐户。 本文档使用 **MIMMA** 作为此帐户的名称。
 
 > [!NOTE]
-> 用于 MIM 管理代理的帐户必须与 MIM 服务安装过程中指定的帐户相同。
+> 用于 MIM 管理代理的帐户必须与 MIM 服务安装过程中指定的帐户相同。 若计划启用“使用 MIMSync 帐户”功能，必须使用组托管的服务帐户安装 MIM 同步服务。
 
 ### <a name="to-create-the-mim-ma"></a>创建 MIM MA
 
@@ -52,7 +52,6 @@ MIM 管理代理 (MA) 是 MIM 同步到 MIM 服务的连接器。 若要创建�
     -   名称：MIMMA
 
 4.  在“连接到数据库”  页上，提供以下设置，然后单击“下一步” 
-
     -   服务器：localhost
 
     -   数据库：FIMService
