@@ -11,12 +11,12 @@ ms.prod: microsoft-identity-manager
 ms.assetid: 735dc357-dfba-4f68-a5b3-d66d6c018803
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 42562e92b3fe0daa63110d33d8952a3a1fc3de17
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: d9d749029d52c7e685e581ffe603aca63752ca3e
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358074"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73636995"
 ---
 # <a name="topology-considerations"></a>拓扑注意事项
 你可以在同一服务器上或在多个配置的多个服务器之间部署 Microsoft 标识管理器 (MIM) 组件。 为部署选择的拓扑会影响你所能实现的 MIM 性能。 本文介绍多种你可以考虑实施的部署拓扑。
@@ -65,4 +65,5 @@ ms.locfileid: "49358074"
 如果计算机运行承载了 MIM 同步服务和 MIM 服务数据库的 SQL Server，则其将极大影响 MIM 部署的整体性能。 因此，请遵循 SQL Server 文档中有关优化数据库性能的建议。 有关详细信息，请参阅以下文档：
 
 ## <a name="see-also"></a>另请参阅
-- [Forefront 标识管理器 (FIM) 2010 容量规划指南](http://go.microsoft.com/fwlink/?LinkId=200180)（可下载）详尽介绍了有关测试版本和性能测试结果的相关信息。
+
+- [Forefront Identity Manager (FIM) 2010 容量规划指南](https://www.microsoft.com/en-us/download/details.aspx?id=7437)（可下载）详尽介绍了测试版本和性能测试结果的相关信息。

@@ -11,12 +11,12 @@ ms.prod: microsoft-identity-manager
 ms.assetid: 3ac5b990-1678-4996-996d-cbd84b8426b4
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 7df93a0a24aee886ec4d07ee2894d93a91606fa0
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: b14066543c036eb4ec8a350843743b87902a13a1
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358364"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73636983"
 ---
 # <a name="capacity-planning-guide"></a>容量规划指南
 
@@ -96,4 +96,4 @@ MIM 策略配置还包括环境中的相关配置决策。 请确保考虑了以
 ## <a name="next-steps"></a>后续步骤
 
 - [部署 MIM 的拓扑注意事项](topology-considerations.md)
-- [Forefront Identity Manager (FIM) 2010 容量规划指南](http://go.microsoft.com/fwlink/?LinkId=200180)（可下载）详尽介绍了测试版本和性能测试结果的相关信息。
+- [Forefront Identity Manager (FIM) 2010 容量规划指南](https://www.microsoft.com/en-us/download/details.aspx?id=7437)（可下载）详尽介绍了测试版本和性能测试结果的相关信息。
