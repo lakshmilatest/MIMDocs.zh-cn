@@ -10,11 +10,11 @@ ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: ''
 ms.openlocfilehash: 5e259df617c5a95fcd54f49c9cbb70f9cd0c36a4
-ms.sourcegitcommit: 486f860f0951413aed335138eb6ad4ce6c50ed4d
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56852657"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64519962"
 ---
 # <a name="how-do-i-provision-users-to-ad-ds"></a>如何将用户预配到 AD DS
 
@@ -97,9 +97,9 @@ ms.locfileid: "56852657"
 
 | ![组织单位](media/how-provision-users-adds/image005.jpg)   | 组织单位                | MIM 对象 - 用作预配用户目标的组织单位 (OU)。                                                       |
 |----------------------------------------|------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| ![用户帐户](media/how-provision-users-adds/image006.jpg)   | 用户帐户                      | · ADMA - 具有足够权限可连接到 AD DS 的 Active Directory 用户帐户。<br/> · FIMMA - 具有足够权限可连接到 MIM 的 Active Directory 用户帐户。
+| ![用户帐户](media/how-provision-users-adds/image006.jpg)   | 用户帐户                      | · ADMA  - 具有足够权限可连接到 AD DS 的 Active Directory 用户帐户。<br/> · FIMMA  - 具有足够权限可连接到 MIM 的 Active Directory 用户帐户。
                                                                  |
-| ![管理代理和运行配置文件](media/how-provision-users-adds/image007.jpg)  | 管理代理和运行配置文件 | · Fabrikam ADMA - 与 AD DS 交换数据的管理代理。 <br/> · Fabrikam FIMMA - 与 MIM 交换数据的管理代理。                                                                                 |
+| ![管理代理和运行配置文件](media/how-provision-users-adds/image007.jpg)  | 管理代理和运行配置文件 | · Fabrikam ADMA  - 与 AD DS 交换数据的管理代理。 <br/> · Fabrikam FIMMA - 与 MIM 交换数据的管理代理。                                                                                 |
 | ![同步规则](media/how-provision-users-adds/image008.jpg)  | 同步规则              | Fabrikam Group 出站同步规则 - 将用户预配到 AD DS 的出站同步规则。                                     |
 | ![设置数](media/how-provision-users-adds/image009.jpg)   | 设置数                               | 所有合同工 - 一个集，其中所有对象的动态成员资格都具有合同工的 EmployeeType 属性。                                |
 | ![工作流](media/how-provision-users-adds/image010.jpg)  | 工作流                          | AD 预配工作流 - 将 MIM 用户纳入 AD 出站同步规则的作用域的工作流。                                |
@@ -132,9 +132,9 @@ ms.locfileid: "56852657"
 
 本指南中的方案需要 2 个 Active Directory 用户帐户：
 
-- ADMA - 被 Active Directory 管理代理使用。
+- ADMA  - 被 Active Directory 管理代理使用。
 
-- FIMMA - 被 FIM 服务管理代理使用。
+- FIMMA  - 被 FIM 服务管理代理使用。
 
 这两种情况都只需创建普通用户帐户。 本文档后面部分将介绍这两个帐户特定要求的详细信息。 有关创建用户的详细信息，请参阅[新建用户帐户](http://go.microsoft.com/FWLink/p/?LinkId=189656)。
 
@@ -148,9 +148,9 @@ ms.locfileid: "56852657"
 
 本指南中的方案需要创建 2 个管理代理：
 
--   Fabrikam ADMA - 用于 AD DS 的管理代理。
+-   Fabrikam ADMA  - 用于 AD DS 的管理代理。
 
--   Fabrikam FIMMA - 用于 FIM 服务管理代理的管理代理。
+-   Fabrikam FIMMA  - 用于 FIM 服务管理代理的管理代理。
 
 ### <a name="step-3-create-the-fabrikam-adma-management-agent"></a>步骤 3：创建 Fabrikam ADMA 管理代理
 
@@ -170,9 +170,9 @@ ms.locfileid: "56852657"
 | 管理代理设计器页面                          | 配置                                                  |
 |---------------------------------------------------------|----------------------------------------------------------------|
 | 创建管理代理                                 | 1.**管理代理用于：** AD DS  <br/> 2.**名称：** Fabrikam ADMA |
-| 连接到 Active Directory 林                      | 1.**选择目录分区：**“DC=Fabrikam,DC=com”   <br/>   2.单击“容器”打开“选择容器”对话框，确保“MIMObjects”是唯一选中的 OU。        |
-| 选择对象类型                                     | 除了已选择的对象类型，请选择“用户”。 |
-| 选择属性                                       | 1.单击“全部显示”。 <br/>   2.选择以下属性： <br/> &nbsp;&nbsp;&nbsp;° displayName <br/> &nbsp;&nbsp;&nbsp;° givenName <br/> &nbsp;&nbsp;&nbsp;° sn <br/> &nbsp;&nbsp;&nbsp;° SamAccountName <br/> &nbsp;&nbsp;&nbsp;° unicodePwd <br/> &nbsp;&nbsp;&nbsp;° userAccountControl     
+| 连接到 Active Directory 林                      | 1.**选择目录分区：** “DC=Fabrikam,DC=com”   <br/>   2.单击“容器”  打开“选择容器”  对话框，确保“MIMObjects”  是唯一选中的 OU。        |
+| 选择对象类型                                     | 除了已选择的对象类型，请选择“用户”  。 |
+| 选择属性                                       | 1.单击“全部显示”  。 <br/>   2.选择以下属性： <br/> &nbsp;&nbsp;&nbsp;° displayName  <br/> &nbsp;&nbsp;&nbsp;° givenName  <br/> &nbsp;&nbsp;&nbsp;° sn  <br/> &nbsp;&nbsp;&nbsp;° SamAccountName  <br/> &nbsp;&nbsp;&nbsp;° unicodePwd  <br/> &nbsp;&nbsp;&nbsp;° userAccountControl      
 
 有关详细信息，请参阅帮助中的下列主题：
 - 创建管理代理
@@ -193,10 +193,10 @@ ms.locfileid: "56852657"
 
 | 管理代理设计器页面 | 配置 |
 |------------|------------------------------------|
-| 创建管理代理 | 1.**管理代理用于：** FIM 服务管理代理 <br/> 2.名称：Fabrikam FIMMA |
-| 连接到数据库     | 使用以下设置： <br/> · 服务器：localhost <br/> &#183; **数据库：** FIMService <br/> &#183; FIM 服务基址：http://localhost:5725 <br/> <br/> 提供为此管理代理创建的帐户相关信息 |
-| 选择对象类型                                     | 除了已选择的对象类型，请选择“人员”。   |
-| 配置对象类型映射                          | 除了已存在的对象类型映射，请将“数据源对象类型”人员的映射添加到“Metaverse”对象类型人员。 |
+| 创建管理代理 | 1.**管理代理用于：** FIM 服务管理代理 <br/> 2.名称：  Fabrikam FIMMA |
+| 连接到数据库     | 使用以下设置： <br/> · 服务器：  localhost <br/> &#183; **数据库：** FIMService <br/> &#183; FIM 服务基址：  http://localhost:5725 <br/> <br/> 提供为此管理代理创建的帐户相关信息 |
+| 选择对象类型                                     | 除了已选择的对象类型，请选择“人员”  。   |
+| 配置对象类型映射                          | 除了已存在的对象类型映射，请将“数据源对象类型”  人员的映射添加到“Metaverse”  对象类型人员。 |
 | 配置属性流                                | 除了已存在的属性流映射，请添加以下属性流映射： <br/><br/> ![属性流](media/how-provision-users-adds/image018.jpg) |
 
 
@@ -504,7 +504,7 @@ Fabrikam FIMMA 上运行增量同步旨在执行以下几种操作：
 
 本文档旨在介绍将 MIM 中的用户与 AD DS 进行同步的主要构建基块。 在初始测试中，应先从完成任务所需的最少属性开始，然后在常规步骤按预期工作后再向方案添加更多属性。 保持最低级别的复杂性可简化故障排除的过程。
 
-测试配置时，很有可能会删除和重新创建测试对象。 对于包含 
+测试配置时，很有可能会删除和重新创建测试对象。 对于包含
 
 ExpectedRulesList 属性的对象，这可能会生成孤立的 ERE 对象。
 有关如何从测试环境中移除这些对象的说明，请参阅[从环境中移除孤立的 ExpectedRuleEntry 对象的方法](http://go.microsoft.com/FWLink/p/?LinkId=189667)。

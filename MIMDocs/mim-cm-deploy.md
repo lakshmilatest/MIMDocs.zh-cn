@@ -10,10 +10,10 @@ ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: ''
 ms.openlocfilehash: 9a9e00f7dca118627a5140967a104d13273cbc26
-ms.sourcegitcommit: f58926a9e681131596a25b66418af410a028ad2c
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "67690798"
 ---
 # <a name="deploying-microsoft-identity-manager-certificate-manager-2016-mim-cm"></a>部署 Microsoft Identity Manager 证书管理器 2016 (MIM CM)
@@ -668,7 +668,7 @@ Set-WebConfigurationProperty -Filter System.webServer/security/authentication/Wi
     - 在“证书”  对话框中，单击“确定”  。
 
         >[!Note]
-        >如果“确定”  按钮未启用，则从 clmAgent 证书复制指纹时，会意外地将隐藏字符包含在指纹字符串中。 在此练习中，重复自“任务 4：将 MIMCMAgent 证书的指纹复制到 Windows 剪贴板”开始的所有步骤  。
+        >如果“确定”  按钮未启用，则从 clmAgent 证书复制指纹时，会意外地将隐藏字符包含在指纹字符串中。 在此练习中，重复自“任务 4：将 MIMCMAgent 证书的指纹复制到 Windows 剪贴板”开始的所有步骤**。
 
 4. 在“配置属性”  对话框中，确保指纹显示在“有效的签名证书”  列表中，然后单击“确定”  。
 
@@ -885,7 +885,7 @@ Set-WebConfigurationProperty -Filter System.webServer/security/authentication/Wi
 
 8. 关闭“Active Directory 站点和服务”  。
 
-脚本：对 OID、配置文件模板和证书模板容器的权限 
+脚本：对 OID、配置文件模板和证书模板容器的权限**
 
 ![图示](media/mim-cm-deploy/image021.png)
 
@@ -911,7 +911,7 @@ $acl.AddAccessRule($ace)
 }
 ```
 
-脚本：委派对现有证书模板的权限  。  
+脚本：委派对现有证书模板的权限**。  
 
 ![图示](media/mim-cm-deploy/image039.png)
 

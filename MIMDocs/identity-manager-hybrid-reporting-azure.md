@@ -11,11 +11,11 @@ ms.prod: microsoft-identity-manager
 ms.assetid: 7320f014-8b60-4866-92de-cfbd3e6edc48
 ms.suite: ems
 ms.openlocfilehash: dd87f00fb3faded60671a47a0ba1dab7e4c2a531
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358170"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64516775"
 ---
 # <a name="hybrid-identity-management-audit-reporting-in-azure-active-directory"></a>Azure Active Directory 中的混合身份管理审核报告
 借助 Azure Active Directory (Azure AD) 审核活动报告，你可以在本地或云中监视身份管理活动。 通过在单个报告中管理所有身份和访问数据，可以节省时间并降低总体成本。

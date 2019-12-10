@@ -12,11 +12,11 @@ ms.assetid: bfc7cb64-60c7-4e35-b36a-bbe73b99444b
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: f8fd71d2244760d3a6561c6f55bf676e6f42561a
-ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50380062"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64518875"
 ---
 # <a name="planning-a-bastion-environment"></a>规划堡垒环境
 
@@ -40,7 +40,7 @@ ms.locfileid: "50380062"
 
 ### <a name="restricted-trust"></a>信任受限
 
-生产 CORP 林应信任管理 PRIV 林，反之则不行。 这可以是域信任，也可以是林信任。 管理林域不需要信任托管的域和林来管理 Active Directory，尽管其他应用程序可能需要双向信任关系、安全验证以及测试。
+生产 CORP  林应信任管理 PRIV  林，反之则不行。 这可以是域信任，也可以是林信任。 管理林域不需要信任托管的域和林来管理 Active Directory，尽管其他应用程序可能需要双向信任关系、安全验证以及测试。
 
 应使用选择性身份验证，以确保管理林中的帐户仅使用适当的生产主机。 至于在 Active Directory 中维护域控制器和委派权限，这通常需要将域控制器的“允许登录”权限授予管理林中指定的第 0 层管理帐户。 有关详细信息，请参阅 [Configuring Selective Authentication Settings](http://technet.microsoft.com/library/cc816580.aspx)（配置选择性身份验证设置）。
 
@@ -164,7 +164,7 @@ New-PAMTrust -SourceForest "contoso.local" -Credentials (get-credential)
 
 ### <a name="1-a-security-group-on-the-local-domain"></a>1.本地域上的安全组
 
-现有域中必须有一个组，其名称为后跟三个美元符号的 NetBIOS 域名（例如，CONTOSO$$$）。 组作用域必须为“本地域”，并且组类型必须为“安全”。 在专用管理林中创建与此域中的组具有相同“安全”标识符的组时需要满足此要求。 通过以下 PowerShell 命令创建此组，由现有域的管理员执行并在已加入到现有域的工作站上运行：
+现有域中必须有一个组，其名称为后跟三个美元符号的 NetBIOS 域名（例如，CONTOSO$$$  ）。 组作用域必须为“本地域”  ，并且组类型必须为“安全”  。 在专用管理林中创建与此域中的组具有相同“安全”标识符的组时需要满足此要求。 通过以下 PowerShell 命令创建此组，由现有域的管理员执行并在已加入到现有域的工作站上运行：
 
 ```PowerShell
 New-ADGroup -name 'CONTOSO$$$' -GroupCategory Security -GroupScope DomainLocal -SamAccountName 'CONTOSO$$$'
@@ -174,21 +174,21 @@ New-ADGroup -name 'CONTOSO$$$' -GroupCategory Security -GroupScope DomainLocal -
 
 对于审核，域控制器上的组策略设置必须包括“审核”帐户管理和“审核”目录服务访问的成功和失败审核。 可以通过组策略管理控制台实现此目的，由现有域的管理员执行并在已加入到现有域的工作站上运行：
 
-3. 转到“开始” > “管理工具” > “组策略管理”。
+3. 转到“开始”   > “管理工具”   > “组策略管理”  。
 
-4. 导航到“林: contoso.local” > “域” > “contoso.local” > “域控制器” > “默认域控制器策略”。 将出现通知性消息。
+4. 导航到“林: contoso.local”   > “域”   > “contoso.local”   > “域控制器”   > “默认域控制器策略”  。 将出现通知性消息。
 
     ![默认域控制器策略 - 屏幕截图](media/pam-group-policy-management.jpg)
 
-5. 右键单击“默认域控制器策略”，然后选择“编辑”。 将出现一个新窗口。
+5. 右键单击“默认域控制器策略”  ，然后选择“编辑”  。 将出现一个新窗口。
 
-6. 在“组策略管理编辑器”窗口中的“默认域控制器策略”树下，导航到“计算机配置” > “策略” > “Windows 设置” > “安全设置” > “本地策略” > “审核策略”。
+6. 在“组策略管理编辑器”窗口中的“默认域控制器策略”树下，导航到“计算机配置”   > “策略”   > “Windows 设置”   > “安全设置”   > “本地策略”   > “审核策略”  。
 
     ![组策略管理编辑器 - 屏幕截图](media/pam-group-policy-management-editor.jpg)
 
-5. 在详细信息窗格中，右键单击“审核帐户管理”，然后选择“属性”。 选择“定义这些策略设置”，在“成功”和“失败”上分别放置一个复选框，然后依次单击“应用”和“确定”。
+5. 在详细信息窗格中，右键单击“审核帐户管理”  ，然后选择“属性”  。 选择“定义这些策略设置”  ，在“成功”  和“失败”  上分别放置一个复选框，然后依次单击“应用”  和“确定”  。
 
-6. 在详细信息窗格中右键单击“审核目录服务访问”，然后选择“属性”。 选择“定义这些策略设置”，在“成功”和“失败”上分别放置一个复选框，然后依次单击“应用”和“确定”。
+6. 在详细信息窗格中右键单击“审核目录服务访问”  ，然后选择“属性”  。 选择“定义这些策略设置”  ，在“成功”  和“失败”  上分别放置一个复选框，然后依次单击“应用”  和“确定”  。
 
     ![成功和失败的策略设置 - 屏幕截图](media/pam-group-policy-management-editor2.jpg)
 
@@ -220,21 +220,21 @@ New-ItemProperty -Path HKLM:SYSTEM\\CurrentControlSet\\Control\\Lsa -Name TcpipC
 
 堡垒林中用于建立角色（使用 `New-PAMUser` 和 `New-PAMGroup` cmdlet 的管理员）的帐户，以及 MIM 监视器服务使用的帐户需要在该域中拥有读取权限。
 
-执行以下步骤将为用户 PRIV\Administrator在 CORPDC  域控制器上开启域 Contoso 的读取访问：
+执行以下步骤将为用户 PRIV\Administrator  在 CORPDC  域控制器上开启域 Contoso  的读取访问：
 
 1. 确保你以 Contoso 域管理员（如 Contoso\Administrator）的身份登录到 CORPDC。
 
 2. 启动 Active Directory 用户和计算机。
 
-3. 右键单击域“contoso.local”并选择“委托控件”。
+3. 右键单击域“contoso.local”  并选择“委托控件”  。
 
-4. 在“选定的用户和组”选项卡上单击“添加”。
+4. 在“选定的用户和组”选项卡上单击“添加”  。
 
-5. 在“选择用户、计算机或组”弹出窗口上，单击“位置”，并将位置更改为 priv.contoso.local。 在“对象名称”上，键入“Domain Admins”并单击“检查名称”。 当显示弹出窗口时，为用户名键入 priv\administrator 和密码。
+5. 在“选择用户、计算机或组”弹出窗口上，单击“位置”  ，并将位置更改为 priv.contoso.local  。 在“对象名称”上，键入“Domain Admins”  并单击“检查名称”  。 当显示弹出窗口时，为用户名键入 priv\administrator  和密码。
 
-6. 在域管理员后键入“; MIMMonitor”。 为名称 Domain Admins 和 MIMMonitor 加了下划线后，单击“确定”，然后单击“下一步”。
+6. 在域管理员后键入“; MIMMonitor”  。 为名称 Domain Admins 和 MIMMonitor 加了下划线后，单击“确定”  ，然后单击“下一步”  。
 
-7. 在常见任务列表中，选择“读取所有用户信息”，然后依次单击“下一步”和“完成”。
+7. 在常见任务列表中，选择“读取所有用户信息”  ，然后依次单击“下一步”  和“完成”  。
 
 18. 关闭“Active Directory 用户和计算机”。
 
@@ -244,7 +244,7 @@ New-ItemProperty -Path HKLM:SYSTEM\\CurrentControlSet\\Control\\Lsa -Name TcpipC
 
 ### <a name="7-update-permissions-in-the-bastion-environment"></a>7.在堡垒环境中更新权限
 
-查看该域的系统容器中 AdminSDHolder 对象上的特权。 *AdminSDHolder* 对象具有唯一的访问控制列表 (ACL)，用于控制安全主体成员（为内置特权 Active Directory 组的成员）的权限。 请注意，如果对默认权限进行了任何更改，都会影响到域中具有管理权限的用户，因为这些权限将不适用于帐户在堡垒环境中的用户。
+查看该域的系统容器中 AdminSDHolder  对象上的特权。 *AdminSDHolder* 对象具有唯一的访问控制列表 (ACL)，用于控制安全主体成员（为内置特权 Active Directory 组的成员）的权限。 请注意，如果对默认权限进行了任何更改，都会影响到域中具有管理权限的用户，因为这些权限将不适用于帐户在堡垒环境中的用户。
 
 ## <a name="select-users-and-groups-for-inclusion"></a>选择要包含的用户和组
 

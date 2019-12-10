@@ -15,7 +15,7 @@ ms.openlocfilehash: d9d749029d52c7e685e581ffe603aca63752ca3e
 ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73636995"
 ---
 # <a name="topology-considerations"></a>拓扑注意事项

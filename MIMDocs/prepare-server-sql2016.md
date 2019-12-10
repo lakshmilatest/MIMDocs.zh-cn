@@ -12,10 +12,10 @@ ms.assetid: 297df3b3-192e-4ed9-82ed-c95eb5297c84
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: 4be699f123bf7d48b709ee8b8e91e2222cd492e2
-ms.sourcegitcommit: 323c2748dcc6b6991b1421dd8e3721588247bc17
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73568026"
 ---
 # <a name="set-up-an-identity-management-server-sql-server-2016-or-2017"></a>设置身份管理服务器：SQL Server 2016 或 SQL Server 2017

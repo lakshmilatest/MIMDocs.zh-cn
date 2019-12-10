@@ -12,11 +12,11 @@ ms.assetid: 7b689eff-3a10-4f51-97b2-cb1b4827b63c
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: 0473ea9e01a44aeb4acbebe01e6e6f989c8581d0
-ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50379305"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64517824"
 ---
 # <a name="step-6--transition-a-group-to-privileged-access-management"></a>步骤 6 – 将某个组转换为特权访问管理
 
@@ -33,7 +33,7 @@ ms.locfileid: "50379305"
 
 需要为每个组以及组的每个成员运行一次 cmdlet。 迁移 cmdlet 不会更改或修改 CORP 林中的任何用户或组：此操作随后由 PAM 管理员手动执行。
 
-1. 以 PRIV\MIMAdmin 身份直接登录或从 PRIV 工作站登录到 PAMSRV。
+1. 以 PRIV\MIMAdmin 身份直接登录或从 PRIV 工作站登录到 PAMSRV。 
 
 2.  启动 PowerShell，键入以下命令。
 
@@ -44,7 +44,7 @@ ms.locfileid: "50379305"
 
 3. 针对现有林中的用户帐户，在 PRIV 中创建相应的用于演示的用户帐户。
 
-   在 PowerShell 中键入以下命令。  如果之前未在 contoso.local 中使用名称 Jen 创建用户，请根据情况更改命令的参数。 密码 'Pass@word1' 只是一个示例，应更改为唯一密码值。
+   在 PowerShell 中键入以下命令。  如果之前未在 contoso.local 中使用名称 Jen  创建用户，请根据情况更改命令的参数。 密码 'Pass@word1' 只是一个示例，应更改为唯一密码值。
 
    ```PowerShell
        $sj = New-PAMUser –SourceDomain CONTOSO.local –SourceAccountName Jen
@@ -72,7 +72,7 @@ ms.locfileid: "50379305"
 
 5. （可选）在 CORPDC 上，从 **CONTOSO CorpAdmins** 组中删除 Jen 的帐户（如果仍存在）。  这仅仅是出于演示的需要，用来说明如何将权限与 PRIV 林中创建的帐户相关联。
 
-   1.  以 CONTOSO\Administrator 身份登录到 CORPDC。
+   1.  以 CONTOSO\Administrator 身份登录到 CORPDC。 
 
    2.  启动 PowerShell，运行以下命令并确认更改。
 

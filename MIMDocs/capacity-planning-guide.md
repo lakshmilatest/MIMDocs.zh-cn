@@ -15,7 +15,7 @@ ms.openlocfilehash: b14066543c036eb4ec8a350843743b87902a13a1
 ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73636983"
 ---
 # <a name="capacity-planning-guide"></a>容量规划指南

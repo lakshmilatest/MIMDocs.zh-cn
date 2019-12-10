@@ -12,11 +12,11 @@ ms.assetid: c6e3cd02-1e32-4194-a8ed-3a0b3d022a43
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: 8e7b7217714f0ef74c1d959eb51dac07018d6e77
-ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50379717"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64517846"
 ---
 # <a name="tier-model-for-partitioning-administrative-privileges"></a>用于对管理权限进行划分的层模型
 

@@ -12,11 +12,11 @@ ms.assetid: 97edae12-6f86-4f9f-8620-a95a096e482a
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: 4acc2f5cf9ec9c5f752d7d794570e7bc24cd36e8
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49357866"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64516602"
 ---
 # <a name="deploy-the-mim-password-change-notification-service-on-a-domain-controller"></a>在域控制器上部署 MIM 密码更改通知服务
 
@@ -29,7 +29,7 @@ ms.locfileid: "49357866"
 
 3.  找到 *Password Change Notification Service.msi* 文件，右键单击它，并创建一个快捷方式。
 
-4.  找到该快捷方式文件，右键单击并打开其“属性” 。
+4.  找到该快捷方式文件，右键单击并打开其“属性”  。
 
 5.  在目标字段中，将该前导码 *msiexec.exe /i* 添加到 msi 文件路径之前，并将后缀 *SCHEMAONLY=TRUE* 添加到 msi 路径之后。 例如，如果安装程序文件夹是 *C:\PCNS*，则要运行的命令将如下所示：（都在同一行）。
 
@@ -39,19 +39,19 @@ ms.locfileid: "49357866"
 
 6.  将更改保存到快捷方式文件中。
 
-7.  运行快捷方式文件以便在架构扩展模式下启动 PCNS 安装。 出现以下屏幕时，单击“下一步” 。
+7.  运行快捷方式文件以便在架构扩展模式下启动 PCNS 安装。 出现以下屏幕时，单击“下一步”  。
 
 8.  你将收到通知，安装程序马上要开始更新密码更改通知服务的 Active Directory 架构。 单击“确定”  继续进行架构更新。
 
-9. 当架构扩展过程完成后，将出现以下屏幕，单击“完成” 。
+9. 当架构扩展过程完成后，将出现以下屏幕，单击“完成”  。
 
-10. 再次运行 *Password Change Notification Service.msi* 文件 – 这一次直接运行（不需要运行字符串）。  出现以下屏幕时，单击“下一步” 。
+10. 再次运行 *Password Change Notification Service.msi* 文件 – 这一次直接运行（不需要运行字符串）。  出现以下屏幕时，单击“下一步”  。
 
-11. 接受许可协议并单击“下一步” 。
+11. 接受许可协议并单击“下一步”  。
 
 12. 单击此项可开始安装。
 
-13. 出现安装成功完成屏幕时，单击“完成” 。
+13. 出现安装成功完成屏幕时，单击“完成”  。
 
 14. 重新启动计算机才会使对 MIM 密码更改通知服务所做的配置更改生效。 可以通过单击弹出窗口中显示的**是**来重启，或稍后重启。
 
