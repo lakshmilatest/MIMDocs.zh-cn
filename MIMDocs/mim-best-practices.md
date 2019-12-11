@@ -10,11 +10,11 @@ ms.topic: reference
 ms.prod: microsoft-identity-manager
 ms.assetid: ''
 ms.openlocfilehash: 8987bc53af37b32b95b00c3df67d9581d4e47120
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358850"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64518777"
 ---
 # <a name="microsoft-identity-manager-2016-best-practices"></a>Microsoft Identity Manager 2016 最佳做法
 
@@ -129,11 +129,11 @@ FIMService 管理员组的成员拥有对部署 MIM 至关重要的独有权限�
 
 #### <a name="to-configure-the-service-account"></a>配置服务帐户
 
-1.  在 Exchange 管理控制台中，选择“FIM 服务的服务帐户”。
+1.  在 Exchange 管理控制台中，选择“FIM 服务的服务帐户”  。
 
-2.  选择“属性”，选择“邮件流设置”，然后选择“邮件传送限制”。
+2.  选择“属性”，选择“邮件流设置”，然后选择“邮件传送限制”  。
 
-3.  选择“要求所有发件人都经过身份验证”复选框。
+3.  选择“要求所有发件人都经过身份验证”  复选框。
 
 有关详细信息，请参阅[配置邮件传送限制](http://go.microsoft.com/fwlink/?LinkID=183625)。
 
@@ -220,7 +220,7 @@ ALTER FULLTEXT INDEX ON [fim].[ObjectValueXml] SET CHANGE_TRACKING = MANUAL
 
 根据你的方案，这可能包括创建附加集、MPR 和工作流。 对于需要通过追溯方式应用到系统中的所有现有对象的任何策略，使用操作工作流上的连续策略更新设置，通过追溯方式将这些策略应用于已加载数据。
 
-### <a name="step-5-reconfigure-sql-to-previous-settings"></a>步骤 5：将 SQL 重新配置为以前的设置
+### <a name="step-5-reconfigure-sql-to-previous-settings"></a>步骤 5：将 SQL 预配置到之前的设置
 
 请记住将 SQL 设置更改为其正常设置。 这包括：
 
@@ -292,7 +292,7 @@ FIM 同步服务的服务帐户不应是用于控制 FIM 同步服务（以 FIMS
 
 ### <a name="password-reset-deployed-to-kiosk-like-computers-should-set-local-security-to-clear-virtual-memory-pagefile"></a>部署到网亭式计算机的密码重置应设置本地安全性以清除虚拟内存页面文件
 
-在要作为网亭的工作站上部署 FIM 密码重置时，建议启用“关闭：清除虚拟内存页面文件本地安全性策略”设置，确保进程内存中的敏感信息对未经授权用户不可用。
+在要作为网亭的工作站上部署 FIM 密码重置时，建议启用“关闭:清除虚拟内存页面文件本地安全性策略”设置，确保进程内存中的敏感信息对未经授权用户不可用。
 
 ### <a name="implementing-ssl-for-the-fim-portal"></a>实现 FIM 门户的 SSL
 
@@ -314,7 +314,7 @@ FIM 同步服务的服务帐户不应是用于控制 FIM 同步服务（以 FIMS
 
 7.  将文件保存到任意位置。 需要在后续步骤中访问此位置。
 
-8.  浏览到 https://servername/certsrv。 将 servername 替换为颁发证书的服务器名称。
+8.  浏览到 https://servername/certsrv 。 将 servername 替换为颁发证书的服务器名称。
 
 9.  单击“申请新证书”。
 
@@ -498,7 +498,7 @@ MIM 提供了两种类型的 MPR、请求和集转换：
 
 #### <a name="kiosk-like-computers-that-are-used-for-password-reset-should-set-local-security-to-clear-the-virtual-memory-pagefile"></a>用于密码重置的网亭式计算机应设置本地安全性，清除虚拟内存页面文件
 
-在要作为网亭的工作站上部署 MIM 密码重置时，建议启用“关闭：清除虚拟内存页面文件”本地安全策略设置，以确保未经授权用户无法访问进程内存中的敏感信息。
+在计划成为展台的工作站上部署 MIM 密码重置时，建议启用“关闭:清除虚拟内存页面文件本地安全性策略”设置，确保进程内存中的敏感信息对未经授权用户不可用。
 
 #### <a name="users-should-always-register-for-a-password-reset-on-a-computer-that-they-are-logged-on-to"></a>用户应该始终在登录的计算机上注册密码重置
 

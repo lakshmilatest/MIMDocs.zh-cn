@@ -12,11 +12,11 @@ ms.assetid: 1a368e8e-68e1-4f40-a279-916e605581bc
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: 38a9fc174c037e5d7c3ea17b46dcf9f6ea924822
-ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50380011"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64518595"
 ---
 # <a name="define-roles-for-privileged-access-management"></a>为 Privileged Access Management 定义角色
 
@@ -134,10 +134,10 @@ Privileged Access Management 系统中可以有多个分配了相同权限的角
 | ---- | ---- |
 | 修改第 1 层管理员 OU                 | 在 Active Directory 中修改包含第 1 层管理员对象的 OU |
 | 修改第 2 层管理员 OU                 | 在 Active Directory 中修改包含第 2 层管理员对象的 OU |
-| 帐户管理: 创建/删除/移动 | 修改标准用户帐户                                      |
-| 帐户管理: 重置解锁       | 重设密码并解锁帐户                                  |
-| 安全组: 创建修改          | 在 Active Directory 中创建和修改安全组              |
-| 安全组: 删除                 | 在 Active Directory 中删除安全组                         |
+| 帐户管理：创建/删除/移动 | 修改标准用户帐户                                      |
+| 帐户管理：重置/解锁       | 重设密码并解锁帐户                                  |
+| 安全组：创建/修改          | 在 Active Directory 中创建和修改安全组              |
+| 安全组：删除                 | 在 Active Directory 中删除安全组                         |
 | GPO 管理                         | 管理域/林中不影响第 0 层服务器的所有 GPO             |
 | 加入电脑/本地管理员                    | 所有工作站的本地管理权限                               |
 | 加入 Srv/本地管理员                   | 所有服务器的本地管理权限                                    |

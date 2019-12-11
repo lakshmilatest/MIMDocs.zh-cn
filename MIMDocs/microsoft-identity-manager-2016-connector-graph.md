@@ -10,11 +10,11 @@ ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
 ms.openlocfilehash: 2e376bcc88518b911f93ce9cd4ab920eb428815b
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358646"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64519418"
 ---
 <a name="microsoft-identity-manager-connector-for-microsoft-graph"></a>用于 Microsoft Graph 的 Microsoft Identity Manager 连接器
 =======================================================================================
@@ -22,7 +22,7 @@ ms.locfileid: "49358646"
 <a name="summary"></a>“摘要” 
 =======
 
-[用于 Microsoft Graph 的 Microsoft Identity Manager 连接器](http://go.microsoft.com/fwlink/?LinkId=717495)为 Azure AD Premium 客户启用其他集成方案。  它在 MIM 同步 Metaverse 中显示从 [Microsoft Graph API](https://developer.microsoft.com/en-us/graph/) v1 和 beta 版中获取的附加对象。
+[用于 Microsoft Graph 的 Microsoft Identity Manager 连接器](http://go.microsoft.com/fwlink/?LinkId=717495)为 Azure AD Premium 客户启用其他集成方案。  它在 MIM 同步 Metaverse 中显示从 [Microsoft Graph API](https://developer.microsoft.com/en-us/graph/) v1 和 beta 版中获取的附加对象。
 
 <a name="scenarios-covered"></a>涵盖的方案
 =================
@@ -37,7 +37,7 @@ ms.locfileid: "49358646"
 <a name="other-identity-management-scenarios"></a>其他标识管理方案
 ---------------
 
-连接器可用于其他特定标识管理方案，包括在 Azure AD 中创建、读取、更新和删除用户、组和联系人对象，而不仅仅是将用户和组同步到 Azure AD。 在评估可能的方案时，请记住：此连接器无法在某种方案中运行，这会导致数据流重叠，与 Azure AD Connect 部署发生实际或潜在的同步冲突。  [Azure AD Connect](https://www.microsoft.com/en-us/download/details.aspx?id=47594) 是一种建议方法，它通过将用户和组从本地目录同步到 Azure AD 来集成本地目录和 Azure AD。  Azure AD Connect 具有更多同步功能，并支持密码和设备写回等方案，这些方案对于 MIM 创建的对象是不可能实现的。 例如，如果数据被引入到 AD DS，请确保将其从 Azure AD Connect 中排除，尝试将这些对象匹配回 Azure AD 目录。  此连接器也不能用于更改 Azure AD Connect 创建的 Azure AD 对象。
+连接器可用于其他特定标识管理方案，包括在 Azure AD 中创建、读取、更新和删除用户、组和联系人对象，而不仅仅是将用户和组同步到 Azure AD。 在评估可能的方案时，请记住：此连接器无法在某种方案中运行，这会导致数据流重叠，与 Azure AD Connect 部署发生实际或潜在的同步冲突。  [Azure AD Connect](https://www.microsoft.com/en-us/download/details.aspx?id=47594) 是一种建议方法，它通过将用户和组从本地目录同步到 Azure AD 来集成本地目录和 Azure AD。  Azure AD Connect 具有更多同步功能，并支持密码和设备写回等方案，这些方案对于 MIM 创建的对象是不可能实现的。 例如，如果数据被引入到 AD DS，请确保将其从 Azure AD Connect 中排除，尝试将这些对象匹配回 Azure AD 目录。  此连接器也不能用于更改 Azure AD Connect 创建的 Azure AD 对象。
 
 
 
@@ -99,8 +99,8 @@ ms.locfileid: "49358646"
 =======================
 
 
-9.  在 Synchronization Service Manager UI 中，选择“连接器”和“创建”。
-选择“Graph (Microsoft)”，创建连接器并为其指定一个描述性名称。
+9.  在 Synchronization Service Manager UI 中，选择“连接器”和“创建”。 ****   ****
+选择“Graph (Microsoft)”，创建连接器并为其指定一个描述性名称。 ****  
 
 ![](media/microsoft-identity-manager-2016-graph-b2b-scenario/d95c6b2cc7951b607388cbd25920d7d0.png)
 
@@ -213,7 +213,7 @@ Graph 应用程序需要访问令牌才能访问 Graph API。 连接器将为每
 
 ![](media/microsoft-identity-manager-2016-ma-graph/a26ded518f94b9b557064b73615c71f6.png)
 
-New-AzureADPolicy -Definition \@('{"TokenLifetimePolicy":{"Version":1, **"AccessTokenLifetime":"5:00:00"**}}') -DisplayName "OrganizationDefaultPolicyScenario" -IsOrganizationDefault \$true -Type "TokenLifetimePolicy"
+New-AzureADPolicy -Definition \@('{"TokenLifetimePolicy":{"Version":1, **"AccessTokenLifetime":"5:00:00"** }}') -DisplayName "OrganizationDefaultPolicyScenario" -IsOrganizationDefault \$true -Type "TokenLifetimePolicy"
 
 <a name="next-steps"></a>后续步骤
 ----------

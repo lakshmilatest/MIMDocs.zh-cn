@@ -8,11 +8,11 @@ ms.date: 06/27/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.openlocfilehash: 96d375d82a71a21f0be444d628f387c4e1ffdd09
-ms.sourcegitcommit: 9e420840815adb133ac014a8694de9af4d307815
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52825767"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64520557"
 ---
 # <a name="conversion-of-mim-specific-services-to-gmsa"></a>将 MIM 特定服务转换为 gMSA
 
@@ -20,7 +20,7 @@ ms.locfileid: "52825767"
 
 所需修补程序：\<链接到最新的知识库 (KB)\>
 
-支持：
+已支持：
 
 -   MIM 同步服务 (FIMSynchronizationService)
 -   MIM 服务 (FIMService)
@@ -82,9 +82,9 @@ Windows 域控制器上的第一个步骤
 
     -   在安装了同步服务的服务器上，查找同步服务密钥管理工具
 
-    -   默认情况下，已选择“导出密钥集” 
+    -   默认情况下，已选择“导出密钥集”   
 
-    -   单击“下一步”
+    -   单击“下一步” 
 
     -   现在将提示你输入现有同步帐户信息
 
@@ -96,7 +96,7 @@ Windows 域控制器上的第一个步骤
 
         -   域 - 同步服务帐户所属的域
 
-    -   单击“下一步”
+    -   单击“下一步” 
 
     -   如果输入的信息不正确，你将收到以下错误
 
@@ -118,7 +118,7 @@ Windows 域控制器上的第一个步骤
 ![](media/dc98c011bec13a33b229a0e792b78404.png)
 
 -  清除帐户名称
--  键入服务帐户名称“MIMSyncGMSA”（带屏幕截图上的 \$ 符号）
+-  键入服务帐户名称“MIMSyncGMSA”  （带屏幕截图上的 \$ 符号）
 - 。 密码留空。
 
 ![](media/38df9369bf13e1c3066a49ed20e09041.png)

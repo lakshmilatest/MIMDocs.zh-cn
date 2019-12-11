@@ -10,16 +10,16 @@ ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
 ms.openlocfilehash: 139c58510117ad422529a4ff0facd23040023713
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358765"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64520961"
 ---
 <a name="azure-ad-business-to-business-b2b-collaboration-with-microsoft-identity-managermim-2016-sp1-with-azure-application-proxy"></a>通过 Azure 应用程序代理实现 Microsoft Identity Manager (MIM) 2016 SP1 与 Azure AD 企业对企业 (B2B) 之间的协作
 ============================================================================================================================
 
-初始方案是外部用户 AD 帐户生命周期管理。   在这种情况下，组织已邀请来宾访问其 Azure AD 目录，并希望通过 [Azure AD 应用程序代理](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-publish)或其他网关机制为这些来宾提供对本地 Windows 集成身份验证或基于 Kerberos 的应用程序的访问权限。 Azure AD 应用程序代理要求每个用户都拥有自己的 AD DS 帐户，以便进行标识和委派。
+初始方案是外部用户 AD 帐户生命周期管理。   在这种情况下，组织已邀请来宾访问其 Azure AD 目录，并希望通过 [Azure AD 应用程序代理](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-publish)或其他网关机制为这些来宾提供对本地 Windows 集成身份验证或基于 Kerberos 的应用程序的访问权限。 Azure AD 应用程序代理要求每个用户都拥有自己的 AD DS 帐户，以便进行标识和委派。
 
 ## <a name="scenario-specific-guidance"></a>特定于方案的指南
 
@@ -63,26 +63,26 @@ Contoso Pharmaceuticals 与 Trey Research Inc. 合作，属于后者的研发部
 因此，从 Azure AD 通过 MIM 引入到 AD DS 的用户需要在存储后，Azure AD 不会尝试将这些用户同步回 Azure AD。
 实现这一点的一种方法是在 AD DS 中创建新的组织单位，并将 Azure AD Connect 配置为排除该组织单位。  
 
-详细信息请参阅 [Azure AD Connect 同步：配置筛选](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-configure-filtering)。 
+详细信息请参阅 [Azure AD Connect sync:Configure filtering](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-configure-filtering)（Azure AD Connect 同步：配置筛选）。 
  
 
 ## <a name="create-the-azure-ad-application"></a>创建 Azure AD 应用程序 
 
 
-请注意：在 MIM 同步中创建图形连接器的管理代理之前，请确保已查看了部署[Graph 连接器](microsoft-identity-manager-2016-connector-graph.md)的指南，并创建了具有客户端 ID 和机密的应用程序。
+注意：在 MIM 同步中创建图形连接器的管理代理之前，请确保已查看了部署 [Graph 连接器](microsoft-identity-manager-2016-connector-graph.md)的指南，并创建了具有客户端 ID 和机密的应用程序。
 确保应用程序至少已授予以下权限之一：`User.Read.All`、`User.ReadWrite.All`、`Directory.Read.All` 或 `Directory.ReadWrite.All`。 
 
 ## <a name="create-the-new-management-agent"></a>创建新的管理代理
 
 
-在 Synchronization Service Manager UI 中，选择“连接器”和“创建”。
-选择“Graph (Microsoft)”并为其指定一个描述性名称。
+在 Synchronization Service Manager UI 中，选择“连接器”和“创建”。 ****   ****
+选择“Graph (Microsoft)”并为其指定一个描述性名称。 ****  
 
 ![](media/microsoft-identity-manager-2016-graph-b2b-scenario/d95c6b2cc7951b607388cbd25920d7d0.png)
 
 ### <a name="connectivity"></a>连接性
 
-在连接页面上，必须指定 Graph API 版本。 生产就绪 PAI 为 V 1.0，非生产为 Beta 版本。
+在连接页面上，必须指定 Graph API 版本。 生产就绪 PAI 为 V 1.0，非生产为 Beta 版本   。
 
 ![](media/microsoft-identity-manager-2016-graph-b2b-scenario/6fabfe20af0207f1556f0df18fd16f60.png)
 
@@ -181,11 +181,11 @@ Contoso Pharmaceuticals 与 Trey Research Inc. 合作，属于后者的研发部
 
 然后填写以下详细信息
 
-属性名称：userPrincipalName
+属性名称：userPrincipalName 
 
-属性类型：String (Indexable)
+属性类型:字符串（可编制索引） 
 
-Indexed = True
+Indexed = True 
 
 ![](media/microsoft-identity-manager-2016-graph-b2b-scenario/9fba1ff9feefb17b82478ac7010edbfa.png)
 
@@ -199,7 +199,7 @@ Indexed = True
 
 有关配置的更多详细信息，请参阅此处<https://technet.microsoft.com/library/ff686263(v=ws.10).aspx> - 如何将用户设置为 AD DS
 
-### <a name="synchronization-rule-import-guest-user-to-mv-to-synchronization-service-metaverse-from-azure-active-directorybr"></a>同步规则：将来宾用户导入 MV 以便从 Azure Active Directory 同步服务 Metaverse<br>
+### <a name="synchronization-rule-import-guest-user-to-mv-to-synchronization-service-metaverse-from-azure-active-directorybr"></a>同步规则：将来宾用户导入 MV，以从 Azure Active Directory 同步服务 Metaverse<br>
 
 导航到 MIM 门户，选择“同步规则”并单击“新建”。  通过图形连接器创建 B2B 流的入站同步规则。
 ![](media/microsoft-identity-manager-2016-graph-b2b-scenario/ba39855f54268aa824cd8d484bae83cf.png)
@@ -249,7 +249,7 @@ Indexed = True
 | **Y**                 |                           | [RandomNum(0,999)+userPrincipalName⇒unicodePwd](javascript:void(0);)  |
 | **Y**                 |                           | [262656⇒userAccountControl](javascript:void(0);)                      |
 
-### <a name="optional-synchronization-rule-import-b2b-guest-user-objects-sid-to-allow-for-login-to-mim"></a>可选的同步规则：导入 B2B 来宾用户对象 SID 以便登录到 MIM 
+### <a name="optional-synchronization-rule-import-b2b-guest-user-objects-sid-to-allow-for-login-to-mim"></a>可选同步规则：导入 B2B 来宾用户对象 SID 以登录到 MIM 
 
 此入站同步规则将 Active Directory 中用户的 SID 属性带回 MIM，因此用户可以访问 MIM 门户。  MIM 门户要求用户在 MIM 服务数据库中填充属性 `samAccountName`、`domain` 和 `objectSid`。
 

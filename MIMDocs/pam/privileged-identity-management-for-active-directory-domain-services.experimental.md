@@ -11,12 +11,13 @@ ms.prod: microsoft-identity-manager
 ms.assetid: cf3796f7-bc68-4cf7-b887-c5b14e855297
 ms.reviewer: mwahl
 ms.suite: ems
+experiment_id: kgremban_images
 ms.openlocfilehash: 40ed05c1f77cace74b86dc3a5675855993d4bc56
-ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50379882"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64518355"
 ---
 # <a name="privileged-access-management-for-active-directory-domain-services"></a>Active Directory 域服务的 Privileged Access Management
 
@@ -46,9 +47,9 @@ PAM 基于实时管理准则构建，该管理与[充分管理 (JEA)](http://cha
 
 PAM 安装和操作具有四个步骤。
 
-1. **准备域**：标识现有林中的哪些组具有重要权限。 在堡垒林中，重新创建这些不含成员的组。
+1. **准备**：标识现有林中的哪些组具有重要权限。 在堡垒林中，重新创建这些不含成员的组。
 
-2. **保护**：当用户请求实时管理时，设置生命周期和身份验证保护，例如 Multi-Factor Authentication (MFA)。 MFA 有助于防止以编程方式实现的恶意软件攻击或以下凭据被盗。
+2. **保护**：当用户请求实时管理时，设置生命周期和身份验证保护，例如多重身份验证 (MFA)。 MFA 有助于防止以编程方式实现的恶意软件攻击或以下凭据被盗。
 
 3. **操作**：在满足身份验证要求并批准某个请求后，用户帐户即可临时添加到堡垒林中的某个特权组。 在预设时间段内，管理员具有分配给该组的所有特权和访问权限。 此时间段过后，该帐户将从该组中删除。
 
@@ -70,13 +71,13 @@ PAM 基于 AD DS 中的新功能（特别是域帐户身份验证和授权）和
 
 PAM 具有以下优势：
 
-- **隔离/划分特权范围**：对于还用于非特权任务（例如查看电子邮件或浏览 Internet）的帐户，用户不持有特权。 用户需要请求权限。 所有请求都是基于 PAM 管理员定义的 MIM 策略进行批准或拒绝。 在批准请求之前，特权访问不可用。
+- **权限的隔离/范围**：对于还用于非特权任务（例如查看电子邮件或浏览 Internet）的帐户，用户不持有特权。 用户需要请求权限。 所有请求都是基于 PAM 管理员定义的 MIM 策略进行批准或拒绝。 在批准请求之前，特权访问不可用。
 
 - **升级和证明**：提供新的身份验证和授权质询，有助于管理单独的管理帐户的生命周期。 用户可以请求提升管理帐户，并使该请求通过 MIM 工作流。
 
 - **附加日志记录**：除了内置 MIM 工作流，还有其他 PAM 日志记录，用于标识该请求、确定授权方式，以及批准后所发生的任何事件。
 
-- **可自定义的工作流**：基于请求用户或已请求角色的参数，可以针对不同方案配置 MIM 工作流，并且可以使用多个工作流。
+- **自定义的工作流**：基于请求用户或已请求角色的参数，可针对不同方案配置 MIM 工作流，还可使用多个工作流。
 
 ## <a name="how-do-users-request-privileged-access"></a>用户如何请求特权访问？
 

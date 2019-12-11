@@ -10,11 +10,11 @@ ms.topic: reference
 ms.prod: microsoft-identity-manager
 ms.assetid: ''
 ms.openlocfilehash: 45b46ed10f7eda506fe1fc1af94c4be06a1a37b9
-ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50380186"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64516587"
 ---
 # <a name="microsoft-identity-manager-2016-password-management"></a>Microsoft Identity Manager 2016 密码管理
 
@@ -67,18 +67,18 @@ PCNS 会在每个 Active Directory 域控制器上运行。 接收密码通知�
 
 密码同步过程所需的组件包括：
 
--   密码更改通知服务 (Pcnssvc.exe) - 密码更改通知服务将在域控制器上运行，负责接收来自本地密码筛选器的密码更改通知、对其进行排队以供运行 MIM 的目标服务器使用，以及使用 RPC 传送通知。 该服务将加密密码并确保密码的安全性，直到将其成功传送到运行 MIM 的目标服务器。
+-   密码更改通知服务 (Pcnssvc.exe)  - 密码更改通知服务将在域控制器上运行，负责接收来自本地密码筛选器的密码更改通知、对其进行排队以供运行 MIM 的目标服务器使用，以及使用 RPC 传送通知。 该服务将加密密码并确保密码的安全性，直到将其成功传送到运行 MIM 的目标服务器。
 
--   服务主体名称 (SPN) - SPN 是 Active Directory 中帐户对象上的属性， Kerberos 协议用它来手动对 PCNS 和目标进行身份验证。 SPN 将确保 PCNS 向运行 MIM 的正确服务器进行身份验证，并且没有其他服务可接收密码更改通知。 使用 setspn.exe 工具可创建并分配 SPN。 若要深入了解如何配置 SPN，请参阅“使用密码同步”。
+-   服务主体名称 (SPN)  - SPN 是 Active Directory 中帐户对象上的属性， Kerberos 协议用它来手动对 PCNS 和目标进行身份验证。 SPN 将确保 PCNS 向运行 MIM 的正确服务器进行身份验证，并且没有其他服务可接收密码更改通知。 使用 setspn.exe 工具可创建并分配 SPN。 若要深入了解如何配置 SPN，请参阅“使用密码同步”。
 
--   密码更改通知筛选器 (Pcnsflt.dll) - 密码筛选器用于获取来自 Active Directory 的纯文本密码。 此筛选器通过本地安全机构 (LSA) 加载到每个 Windows Server 域控制器，这些域控制器会将密码分发到运行 MIM 的目标服务器。 安装筛选器并重启域控制器后，筛选器将开始接收来自域控制器的密码更改通知。 密码通知筛选器将与在域控制器上运行的其他筛选器同时运行。
+-   密码更改通知筛选器 (Pcnsflt.dll)  - 密码筛选器用于获取来自 Active Directory 的纯文本密码。 此筛选器通过本地安全机构 (LSA) 加载到每个 Windows Server 域控制器，这些域控制器会将密码分发到运行 MIM 的目标服务器。 安装筛选器并重启域控制器后，筛选器将开始接收来自域控制器的密码更改通知。 密码通知筛选器将与在域控制器上运行的其他筛选器同时运行。
 
--   密码更改通知服务配置实用程序 (Pcnscfg.exe) - pcnscfg.exe 实用程序用于管理和维护存储在 Active Directory 中的密码更改通知服务配置参数。 对运行 MIM 的目标服务器进行身份验证以及向其发送密码通知时，将使用这些配置参数，如定义目标服务器、密码队列重试间隔和启用或禁用目标服务器。
+-   密码更改通知服务配置实用程序 (Pcnscfg.exe)  - pcnscfg.exe 实用程序用于管理和维护存储在 Active Directory 中的密码更改通知服务配置参数。 对运行 MIM 的目标服务器进行身份验证以及向其发送密码通知时，将使用这些配置参数，如定义目标服务器、密码队列重试间隔和启用或禁用目标服务器。
     服务配置存储在 Active Directory 中，因此只需更新一台域控制器上的配置。 Active Directory 会将更改复制到所有其他域控制器。
 
--   运行 MIM 的服务器上的远程过程调用 (RPC) 服务器 - 启用密码同步后，将启动运行 MIM 的服务器上的 RPC 服务器，使其能够接收来自密码更改通知服务的通知。 RPC 将动态选择要使用的端口范围。 如果要求 MIM 通过防火墙与 Active Directory 林进行通信，则必须打开端口范围。
+-   运行 MIM 的服务器上的远程过程调用 (RPC) 服务器  - 启用密码同步后，将启动运行 MIM 的服务器上的 RPC 服务器，使其能够接收来自密码更改通知服务的通知。 RPC 将动态选择要使用的端口范围。 如果要求 MIM 通过防火墙与 Active Directory 林进行通信，则必须打开端口范围。
 
--   密码扩展 DLL - 通过密码扩展 DLL，可借助任何数据库、扩展连接或基于文件的管理代理的规则扩展来完成密码设置或更改操作。
+-   密码扩展 DLL  - 通过密码扩展 DLL，可借助任何数据库、扩展连接或基于文件的管理代理的规则扩展来完成密码设置或更改操作。
     通过创建名为“export_password”的仅导出加密属性可完成此操作，此属性实际不存在于已连接的目录中，但可在设置规则扩展中访问和设置，或可在导出属性流期间使用。 若要深入了解如何配置密码扩展，请参阅 [FIM 开发人员参考](https://msdn.microsoft.com/library/windows/desktop/ee652263(v=vs.100).aspx)。
 
 ## <a name="preparing-for-password-synchronization"></a>准备密码同步
@@ -139,12 +139,12 @@ PCNS 会在每个 Active Directory 域控制器上运行。 接收密码通知�
 
 理想情况下，每当用户更改密码时，此更改都将正确无误地进行同步。 下列方案介绍了 MIM 如何从常见的同步错误中恢复：
 
--   Active Directory 中的密码通知未能发送到 MIM - 如果网络故障或运行 MIM 的服务器不可用，则可能发生此错误。 密码更改通知仍然由 PCNS 在本地域控制器上进行排列。 PCNS 将根据通知的重试间隔配置重新发送通知。
+-   Active Directory 中的密码通知未能发送到 MIM  - 如果网络故障或运行 MIM 的服务器不可用，则可能发生此错误。 密码更改通知仍然由 PCNS 在本地域控制器上进行排列。 PCNS 将根据通知的重试间隔配置重新发送通知。
 
--   未能将密码同步到目标数据源 - 如果网络故障或目标数据源不可用，则可能发生此错误。
+-   未能将密码同步到目标数据源  - 如果网络故障或目标数据源不可用，则可能发生此错误。
     密码更改通知将根据管理代理的重试尝试和重试间隔配置进行排队和重试。 所有密码将在存储以供重试时进行加密，而在操作成功或达到重试限制时删除。
 
--   失败后激活运行 MIM 的热备用服务器 - 如果运行 MIM 的主服务器失败，则可配置温备用服务器来同步密码并在不会造成密码更改丢失的情况下激活它。 有关详细信息，请参阅 [MIISactivate: Server Activation Tool](https://technet.microsoft.com/library/jj590194(v=ws.10).aspx)（MIISactivate：服务器激活工具）
+-   失败后激活运行 MIM 的热备用服务器  - 如果运行 MIM 的主服务器失败，则可配置温备用服务器来同步密码并在不会造成密码更改丢失的情况下激活它。 有关详细信息，请参阅 [MIISactivate:Server Activation Tool](https://technet.microsoft.com/library/jj590194(v=ws.10).aspx)（MIISactivate：服务器激活工具）
 
 有些错误十分严重，导致再多的重试都无法促使操作成功。 在这些情况下，将记录错误事件并停止进程。 以下事件不会重试：
 

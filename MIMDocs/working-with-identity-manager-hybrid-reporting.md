@@ -11,11 +11,11 @@ ms.prod: microsoft-identity-manager
 ms.assetid: 68df2817-2040-407d-b6d2-f46b9a9a3dbb
 ms.suite: ems
 ms.openlocfilehash: 18e4127b1d854a53734142bb58442627619491ef
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358493"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64517497"
 ---
 # <a name="work-with-hybrid-reporting-in-identity-manager"></a>使用 Identity Manager 中的混合报告
 
@@ -24,13 +24,13 @@ ms.locfileid: "49358493"
 ## <a name="available-hybrid-reports"></a>可用混合报告
 Azure Active Directory (Azure AD) 中提供了前三种 Microsoft Identity Manager 报告，如下所示：
 
-- 密码重置活动：当用户使用自助服务密码重置 (SSPR) 执行密码重置时显示每个实例，并提供用于身份验证的入口或方法。
+- **密码重置活动**：当用户使用自助服务密码重置 (SSPR) 执行密码重置时显示每个实例，并提供用于身份验证的入口或方法。
 
-- 密码重置注册：显示用户每次注册 SSPR 的时间以及进行身份验证所用的方法。 例如，所用的方法可能是手机号码或问答。
+- **密码重置注册**：显示用户每次注册 SSPR 的时间以及进行身份验证所用的方法。 例如，所用的方法可能是手机号码或问答。
    > [!NOTE]
-   > 对于“密码重置注册”报告，不区分 SMS 入口和 MFA 入口。 两者均视为移动电话方法。
+   > 对于“密码重置注册”  报告，不区分 SMS 入口和 MFA 入口。 两者均视为移动电话方法。
 
-- 自助服务组活动：显示某人为在组和组创建中添加或删除自己而所作的每次尝试。
+- **自助服务组活动**：显示某人为在组和组创建中添加或删除自己而所作的每次尝试。
 
     ![Azure 混合报告 - 密码重置活动图像](media/MIM-Hybrid-passwordreset2.jpg)
 
@@ -54,7 +54,7 @@ Azure Active Directory (Azure AD) 中提供了前三种 Microsoft Identity Manag
 |                                         要求                                         |                                                                                                                                                                                                                                                                                    描述                                                                                                                                                                                                                                                                                     |
 |---------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                      Azure AD 高级版                                       |                                                                                                        混合报告是一项 Azure AD Premium 功能，必须安装 Azure AD Premium。 </br>有关详细信息，请参阅 [Azure AD Premium 入门](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)。 </br>获取 [Azure AD Premium 免费 30 天试用版](https://azure.microsoft.com/trial/get-started-active-directory/)。                                                                                                         |
-|                     你必须是 Azure AD 的全局管理员。                     |                                                                   默认情况下，只有全局管理员才能安装和配置代理，从而开始使用、访问门户并在 Azure 中执行任意操作。 </br>重要提示：安装代理时必须使用工作帐户或学校帐户。 不能使用 Microsoft 帐户。 有关详细信息，请参阅[以组织身份注册 Azure](https://docs.microsoft.com/azure/active-directory/sign-up-organization)。                                                                   |
+|                     你必须是 Azure AD 的全局管理员。                     |                                                                   默认情况下，只有全局管理员才能安装和配置代理，从而开始使用、访问门户并在 Azure 中执行任意操作。 </br>**重要提示**：安装代理时必须使用工作帐户或学校帐户。 不能使用 Microsoft 帐户。 有关详细信息，请参阅[以组织身份注册 Azure](https://docs.microsoft.com/azure/active-directory/sign-up-organization)。                                                                   |
 | 在每个目标 Identity Manager Service 服务器上安装 Identity Manager 混合代理 |                                                                                                                                                                                                       为了接收数据并提供监视和分析功能，混合报告需要在目标服务器上安装和配置代理。  </br>                                                                                                                                                                                                       |
 |                    到 Azure 服务终结点的出站连接                     | 安装和运行时期间，代理需要与 Azure 服务终结点相连。 如果出站连接被防火墙屏蔽，请确保已将下列终结点添加到允许列表中：<ul><li>\*.blob.core.windows.net </li><li>\*.servicebus.windows.net - 端口：5671 </li><li>\*.adhybridhealth.azure.com/</li><li><https://management.azure.com> </li><li><https://policykeyservice.dc.ad.msft.net/></li><li><https://login.windows.net></li><li><https://login.microsoftonline.com></li><li><https://secure.aadcdn.microsoftonline-p.com></li></ul> |
 |                         基于 IP 地址的出站连接                         |                                                                                                                                                                                                                      有关防火墙上基于 IP 地址的筛选，请参阅 [Azure IP 范围](https://www.microsoft.com/download/details.aspx?id=41653)。                                                                                                                                                                                                                      |
@@ -71,11 +71,11 @@ Azure Active Directory (Azure AD) 中提供了前三种 Microsoft Identity Manag
 
 2.  下载 Identity Manager 报告代理，然后执行以下操作：
 
-    a. 登录到 Azure AD 管理门户，然后选择 Active Directory。
+    a. 登录到 Azure AD 管理门户，然后选择 Active Directory  。
 
     b. 双击你是全局管理员且拥有 Azure AD Premium 订阅的目录。
 
-    c. 选择“配置”，然后下载报告代理。
+    c. 选择“配置”  ，然后下载报告代理。
 
 3.  通过执行以下操作安装报告代理：
 
@@ -101,9 +101,9 @@ Azure Active Directory (Azure AD) 中提供了前三种 Microsoft Identity Manag
 
 3.  在订阅的可用目录列表中，选择租户目录。
 
-4.  选择“审核日志”。
+4.  选择“审核日志”  。
 
-5.  在“类别”下拉列表中，确保选择“MIM 服务”。
+5.  在“类别”下拉列表中，确保选择“MIM 服务”   。
 
 > [!IMPORTANT]
 > Identity Manager 审核数据需要经过一段时间才能显示在 Azure 门户中。
@@ -112,7 +112,7 @@ Azure Active Directory (Azure AD) 中提供了前三种 Microsoft Identity Manag
 如果要停止将报告审核数据从 Identity Manager 上传到 Azure AD，请卸载混合报告代理。 使用 Windows 的“添加或删除程序”工具来卸载 Identity Manager 混合报告。
 
 ## <a name="windows-events-used-for-hybrid-reporting"></a>用于混合报告的 Windows 事件
-通过 Identity Manager 生成的事件存储在 Windows 事件日志中。 你可以通过选择“应用程序和服务日志” > “Identity Manager 请求日志”在“事件查看器”中查看事件。 每个 Identity Manager 请求将以 JSON 结构导出为 Windows 事件日志中的一个事件。 你可以将结果导出到你的安全信息和事件管理 (SIEM) 系统。
+通过 Identity Manager 生成的事件存储在 Windows 事件日志中。 你可以通过选择“应用程序和服务日志”   > “Identity Manager 请求日志”  在“事件查看器”中查看事件  。 每个 Identity Manager 请求将以 JSON 结构导出为 Windows 事件日志中的一个事件。 你可以将结果导出到你的安全信息和事件管理 (SIEM) 系统。
 
 |事件类型|ID|事件详细信息|
 |--------------|------|-----------------|

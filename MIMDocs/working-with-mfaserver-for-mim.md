@@ -10,11 +10,11 @@ ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
 ms.openlocfilehash: 69b7f8f4b94f9f94b2aef6afd9573ad8173e148e
-ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50379788"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64517729"
 ---
 # <a name="use-azure-multi-factor-authentication-server-to-activate-pam-or-sspr"></a>使用 Azure 多重身份验证服务器激活 PAM 或 SSPR
 以下文档介绍如何设置 Azure MFA 服务器，使其在用户激活 Privileged Access Management 和自助密码重置中的角色时作为第二安全层。
@@ -44,7 +44,7 @@ ms.locfileid: "50379788"
 ![working-with-mfaserver-for-mim_downloadmfa](media/working-with-mfaserver-for-mim/working-with-mfaserver-for-mim_downloadmfa.PNG)
 
 ### <a name="step-2-generate-activation-credentials"></a>步骤 2：生成激活凭据
-使用“生成激活凭据以开始使用”链接，以生成激活凭据。 生成后，保存供稍后使用。
+使用“生成激活凭据以开始使用”链接，以生成激活凭据  。 生成后，保存供稍后使用。
 
 ### <a name="step-3-install-the-azure-multi-factor-authentication-server"></a>步骤 3：安装 Azure 多重身份验证服务器
 下载服务器后，即可[安装](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-mfaserver-deploy#install-and-configure-the-mfa-server)它。  需要激活凭据。 
