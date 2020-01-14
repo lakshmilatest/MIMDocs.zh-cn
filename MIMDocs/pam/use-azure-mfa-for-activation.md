@@ -10,16 +10,18 @@ ms.date: 07/06/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: 5134a112-f73f-41d0-a5a5-a89f285e1f73
-ms.openlocfilehash: 72dd1d3cf34e28567fa672b747a04347b150797e
-ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
+ms.openlocfilehash: 6c3a2d87037a818a9a8784b0d4a7b86227fcaef4
+ms.sourcegitcommit: 28a20aaa1f08b428cc1ae0eae43ae47de4d9d22a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67690790"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75684051"
 ---
 # <a name="using-azure-mfa-for-activation"></a>将 Azure MFA 用于激活
 > [!IMPORTANT]
-> 由于 Azure 多重身份验证软件开发工具包的弃用通知。 在停用日期 2018 年 11 月 14 日前，现有客户仍可使用 Azure MFA SDK。 新客户和当前客户将无法再通过 Azure 经典门户下载 SDK。 若要下载，需要联系 Azure 客户支持，以便接收生成的 MFA 服务凭据包。 <br> Microsoft 开发团队正在通过与 MFA Server SDK 集成来处理对 MFA 的更改。  这将包括在即将发布的修补程序中，请参阅公告的[版本历史记录](../reference/version-history.md)。 
+> 由于已宣布弃用 Azure 多重身份验证软件开发工具包，因此在 2018 年 11 月 14 日停用日期之前，将对现有客户提供 Azure MFA SDK 支持。 新客户和当前客户将无法再通过 Azure 经典门户下载 Azure MFA SDK。 有关使用 Azure MFA 服务器的信息，请参阅[在 PAM 或 SSPR 中使用 Azure MFA 服务器](../working-with-mfaserver-for-mim.md)。
+
+
 
 
 在配置 PAM 角色时，你可以选择对请求激活角色的用户进行授权的方式。 PAM 授权活动实现的选项有：
@@ -54,7 +56,11 @@ Microsoft Azure 多因素身份验证 (MFA) 是要求用户通过使用移动应
 
 ## <a name="downloading-the-azure-mfa-service-credentials"></a>下载 Azure MFA 服务凭据
 
-接下来，将生成一个包含身份验证材料的文件，PAM 需要该材料才能联系 Azure MFA。
+> [!IMPORTANT]
+> Azure MFA SDK 不再可用。 有关使用 Azure MFA 服务器的信息，请转为参阅[在 PAM 或 SSPR 中使用 Azure MFA 服务器](../working-with-mfaserver-for-mim.md)。
+
+
+在此之前，你要生成一个包含身份验证材料的文件，PAM 需要该材料才能联系 Azure MFA。
 
 1. 打开 Web 浏览器，以 Azure 订阅管理员的身份连接到 [Azure 经典门户](https://manage.windowsazure.com)。
 
@@ -130,7 +136,7 @@ Set-PAMRole (Get-PAMRole -DisplayName "R") -MFAEnabled 1
 
 可以在“特权访问管理”事件日志中找到以下事件：
 
-| ID  | 严重性 | 生成者 | 描述 |
+| ID  | 严重性 | 生成者 | 说明 |
 |-----|----------|--------------|-------------|
 | 101 | 错误       | MIM 服务            | 用户未完成 Azure MFA（例如，没有应答电话） |
 | 103 | 信息 | MIM 服务            | 用户在激活过程中完成了 Azure MFA                       |

@@ -1,6 +1,6 @@
 ---
-title: 使用 Azure 多重身份验证服务器 SDK 激活 PAM 或 SSPR 方案 | Microsoft Docs
-description: 设置 Azure 多重身份验证服务器 SDK，使其在用户激活 Privileged Access Management 和自助密码重置中的角色时作为第二安全层。
+title: 使用 Azure 多重身份验证服务器激活 PAM 或 SSPR 方案 | Microsoft Docs
+description: 设置 Azure 多重身份验证服务器，使其在用户激活 Privileged Access Management 和自助密码重置中的角色时作为第二安全层。
 keywords: ''
 author: billmath
 ms.author: billmath
@@ -9,20 +9,20 @@ ms.date: 10/29/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
-ms.openlocfilehash: 69b7f8f4b94f9f94b2aef6afd9573ad8173e148e
-ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
+ms.openlocfilehash: 39ebec3002f488077cfda28a5780b0c78c19f363
+ms.sourcegitcommit: 28a20aaa1f08b428cc1ae0eae43ae47de4d9d22a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "64517729"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75684085"
 ---
 # <a name="use-azure-multi-factor-authentication-server-to-activate-pam-or-sspr"></a>使用 Azure 多重身份验证服务器激活 PAM 或 SSPR
 以下文档介绍如何设置 Azure MFA 服务器，使其在用户激活 Privileged Access Management 和自助密码重置中的角色时作为第二安全层。
 
 > [!IMPORTANT]
-> 由于 Azure 多重身份验证软件开发工具包的弃用通知。 在停用日期 2018 年 11 月 14 日前，现有客户仍可使用 Azure MFA SDK。 新客户和当前客户将无法再通过 Azure 经典门户下载 SDK。 若要下载，需要联系 Azure 客户支持，以便接收生成的 MFA 服务凭据包。 <br> Microsoft 开发团队正在通过与 Azure 多重身份验证服务器 SDK 集成来处理对 MFA 的更改。
+> 由于已宣布弃用 Azure 多重身份验证软件开发工具包，因此在 2018 年 11 月 14 日停用日期之前，将对现有客户提供 Azure MFA SDK 支持。 新客户和当前客户将无法再通过 Azure 经典门户下载 SDK。 若要下载，需要联系 Azure 客户支持，以便接收生成的 MFA 服务凭据包。
 
-下面这篇文章将概述发布后，从 Azure MFA SDK 到 Azure 多重身份验证服务器 SDK 的配置更新和针对简单切换进行启用的步骤，因为该内容将添加到即将推出的修补程序中，请参阅[版本历史记录](./reference/version-history.md)，了解相关公告。 
+下面的文章概述了实现从 Azure MFA SDK 迁移到 Azure 多重身份验证服务器时的配置更新和步骤。
 
 ## <a name="prerequisites"></a>必备条件
 
@@ -43,11 +43,11 @@ ms.locfileid: "64517729"
 登录 [Azure 门户](https://portal.azure.com/)并下载 Azure MFA 服务器。
 ![working-with-mfaserver-for-mim_downloadmfa](media/working-with-mfaserver-for-mim/working-with-mfaserver-for-mim_downloadmfa.PNG)
 
-### <a name="step-2-generate-activation-credentials"></a>步骤 2：生成激活凭据
+### <a name="step-2-generate-activation-credentials"></a>步骤 2:生成激活凭据
 使用“生成激活凭据以开始使用”链接，以生成激活凭据  。 生成后，保存供稍后使用。
 
 ### <a name="step-3-install-the-azure-multi-factor-authentication-server"></a>步骤 3：安装 Azure 多重身份验证服务器
-下载服务器后，即可[安装](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-mfaserver-deploy#install-and-configure-the-mfa-server)它。  需要激活凭据。 
+下载服务器后，即可[安装](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-deploy#install-and-configure-the-mfa-server)它。  需要激活凭据。 
 
 ### <a name="step-4-create-your-iis-web-application-that-will-host-the-sdk"></a>步骤 4：创建将承载 SDK 的 IIS Web 应用程序
 1. 打开 IIS 管理器 ![working-with-mfaserver-for-mim_iis.PNG](media/working-with-mfaserver-for-mim/working-with-mfaserver-for-mim_iis.PNG)
@@ -67,7 +67,7 @@ ms.locfileid: "64517729"
 
 ### <a name="step-1-patch-server-to-452020"></a>步骤 1：将修补程序服务器升级到 4.5.202.0
  
-### <a name="step-2-backup-and-open-the-mfasettingsxml-located-in-the-cprogram-filesmicrosoft-forefront-identity-manager2010service"></a>步骤 2：备份并打开位于“C:\Program Files\Microsoft Forefront Identity Manager\2010\Service”中的 MfaSettings.xml
+### <a name="step-2-backup-and-open-the-mfasettingsxml-located-in-the-cprogram-filesmicrosoft-forefront-identity-manager2010service"></a>步骤 2:备份并打开位于“C:\Program Files\Microsoft Forefront Identity Manager\2010\Service”中的 MfaSettings.xml
 
 ### <a name="step-3-update-the-following-lines"></a>步骤 3：更新以下行
 1. 删除/清除以下配置条目行 <br>
@@ -87,9 +87,9 @@ ms.locfileid: "64517729"
 > 若要还原设置，请将 MfaSettings.xml 替换为步骤 2 中的备份文件
 
 
-## <a name="next-steps"></a>后续步骤
+## <a name="see-also"></a>另请参阅
 
--    [Azure 多重身份验证服务器入门](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-mfaserver-deploy)
+-    [Azure 多重身份验证服务器入门](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-deploy)
 - [什么是 Azure 多重身份验证](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication)
 - [使用自定义多重身份验证 API 激活 PAM 或 SSPR](Working-with-custommfaserver-for-mim.md)
 - [MIM 版本发布历史记录](./reference/version-history.md)
