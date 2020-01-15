@@ -92,7 +92,6 @@
 ### [导出性能指南](https://technet.microsoft.com/library/hh322883)
 ## 报表
 ### [报表 - 自定义报表和扩展性](https://technet.microsoft.com/library/jj133861)
-## [Microsoft 标识软件：公开发布内部版本](https://blogs.technet.microsoft.com/iamsupport/idmbuildversions/)
 # [参考](./reference/microsoft-identity-manager-2016-developer-reference.md)
 ## 开发人员参考
 ### [MIM 2016 开发人员参考](./reference/microsoft-identity-manager-2016-developer-reference.md)

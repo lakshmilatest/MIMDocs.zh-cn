@@ -4,12 +4,12 @@ ms.topic: landing-page
 ms.prod: microsoft-identity-manager
 title: Microsoft Identity Manager 文档 | Microsoft Docs
 description: 了解如何使用 Microsoft Identity Manager。
-ms.openlocfilehash: fb89ce57b751cf150306f0a10d2e051377fa1181
-ms.sourcegitcommit: 2d4eeaec83199473d987fed9fae557ecefe7c1bd
+ms.openlocfilehash: b117b5226ab5181f3a4a2999bae9a7067beeec42
+ms.sourcegitcommit: 8c23165aa69f26f484b9a01482cd4e990fe783d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2018
-ms.locfileid: "49474172"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75955927"
 ---
 # <a name="microsoft-identity-manager-documentation"></a>Microsoft Identity Manager 文档
 
@@ -74,9 +74,8 @@ Microsoft Identity Manager 2016 将 Active Directory、LDAP、Oracle 和其他�
 ---
 
 > [!WARNING]
-> Forefront Identity Manager (FIM) 主流支持已于 2017 年 10 月 10 日结束。 请<a href="microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md" data-raw-source="[upgrade](microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md)">升级</a>到 Microsoft Identity Manager 2016。 更多信息： 
+> Forefront Identity Manager (FIM) 主流支持已于 2017 年 10 月 10 日结束。 请<a href="microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md" data-raw-source="[upgrade](microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md)">升级</a>到 Microsoft Identity Manager 2016。 详细信息： 
 > - <a href="https://support.microsoft.com/lifecycle/search?alpha=Microsoft%20Forefront%20Identity%20Manager%202010%20R2%20Service%20Pack%201,Microsoft%20Identity%20Manager%202016,Microsoft%20Forefront%20Identity%20Manager%202010" data-raw-source="[here](https://support.microsoft.com/lifecycle/search?alpha=Microsoft%20Forefront%20Identity%20Manager%202010%20R2%20Service%20Pack%201,Microsoft%20Identity%20Manager%202016,Microsoft%20Forefront%20Identity%20Manager%202010)">此处</a>提供了 FIM 生命周期信息 
-> - 有关公用版标识产品的信息，请参阅 <a href="https://blogs.technet.microsoft.com/iamsupport/idmbuildversions/" data-raw-source="[Microsoft Identity Software: Public Release Build Versions](https://blogs.technet.microsoft.com/iamsupport/idmbuildversions/)">Microsoft Identity Software: Public Release Build Versions</a>（Microsoft 标识软件：公用版本）一文
 
 <h2>参考</h2>
 <ul class="panelContent cardsFTitle">
