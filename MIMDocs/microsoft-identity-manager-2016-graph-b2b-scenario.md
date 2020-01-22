@@ -9,12 +9,12 @@ ms.date: 10/02/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
-ms.openlocfilehash: 139c58510117ad422529a4ff0facd23040023713
-ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
+ms.openlocfilehash: ba70cd299f2ebec31555bb40b935a6b54779d198
+ms.sourcegitcommit: 1ca298d61f6020623f1936f86346b47ec5105d44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "64520961"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76256625"
 ---
 <a name="azure-ad-business-to-business-b2b-collaboration-with-microsoft-identity-managermim-2016-sp1-with-azure-application-proxy"></a>通过 Azure 应用程序代理实现 Microsoft Identity Manager (MIM) 2016 SP1 与 Azure AD 企业对企业 (B2B) 之间的协作
 ============================================================================================================================
@@ -31,8 +31,6 @@ ms.locfileid: "64520961"
 -   你已按照文章中有关如何下载和安装 [Graph 连接器](microsoft-identity-manager-2016-connector-graph.md)的说明进行操作。
 
 -   你已配置 Azure AD Connect，用于将用户和组同步到 Azure AD。
-
--   你已配置 Azure AD Connect，用于同步 Office 组，以便控制应用程序[返回本地 AD DS](http://robsgroupsblog.com/blog/how-to-write-back-an-office-group-in-azure-active-directory-to-a-mail-enabled-security-group-in-an-on-premises-active-directory)
 
 -   你已设置应用程序代理连接器和连接器组，如果没有，则可以访问[此处](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-enable#install-and-register-a-connector)进行安装和配置
 
@@ -63,7 +61,7 @@ Contoso Pharmaceuticals 与 Trey Research Inc. 合作，属于后者的研发部
 因此，从 Azure AD 通过 MIM 引入到 AD DS 的用户需要在存储后，Azure AD 不会尝试将这些用户同步回 Azure AD。
 实现这一点的一种方法是在 AD DS 中创建新的组织单位，并将 Azure AD Connect 配置为排除该组织单位。  
 
-详细信息请参阅 [Azure AD Connect sync:Configure filtering](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-configure-filtering)（Azure AD Connect 同步：配置筛选）。 
+详细信息请参阅 [Azure AD Connect sync:Configure filtering](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-configure-filtering)（Azure AD Connect 同步：配置筛选）。 
  
 
 ## <a name="create-the-azure-ad-application"></a>创建 Azure AD 应用程序 
@@ -126,7 +124,7 @@ Contoso Pharmaceuticals 与 Trey Research Inc. 合作，属于后者的研发部
 
 ![](media/microsoft-identity-manager-2016-graph-b2b-scenario/58da80f5475cf01a97a6843dd279385c.png)
 
-#### <a name="configure-anchors"></a>配置定位点
+#### <a name="configure-anchors"></a>配置定位标记
 
 在“配置定位点”屏幕上，配置定位点属性是必需的步骤。 默认情况下，使用 ID 属性进行用户映射。
 
@@ -318,4 +316,4 @@ Indexed = True
 
 [如何提供对本地应用程序的安全远程访问](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started)
 
-[下载用于 Microsoft Graph 的 Microsoft Identity Manager 连接器](http://go.microsoft.com/fwlink/?LinkId=717495)
+[下载用于 Microsoft Graph 的 Microsoft Identity Manager 连接器](https://go.microsoft.com/fwlink/?LinkId=717495)
