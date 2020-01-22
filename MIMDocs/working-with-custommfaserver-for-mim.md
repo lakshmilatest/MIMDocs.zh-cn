@@ -9,12 +9,12 @@ manager: mtillman
 ms.date: 09/04/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.openlocfilehash: 7fb111520f94541672fc56d0fd2ee95bfcd3a49e
-ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
+ms.openlocfilehash: 9ce531fb3f6f9c831ecdb716f006f947611871e6
+ms.sourcegitcommit: 1ca298d61f6020623f1936f86346b47ec5105d44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67690748"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76256591"
 ---
 # <a name="use-a-custom-multi-factor-authentication-provider-via-an-api-during-pam-role-activation-or-in-sspr"></a>通过 API 使用自定义多重身份验证提供程序激活 PAM 角色或 SSPR
 
@@ -22,7 +22,7 @@ Azure AD Premium 或 Azure MFA 的客户可以在两个 MIM 方案中集成 Azur
 
 MIM 客户有两个其他选项：
 
- - 使用自定义一次性密码提供程序，这只适用于 MIM SSPR 方案和有案可稽的指南[使用 OTP SMS 入口配置自助密码重置](https://docs.microsoft.com/en-us/previous-versions/mim/hh824692(v=ws.10))
+ - 使用自定义一次性密码提供程序，这只适用于 MIM SSPR 方案和有案可稽的指南[使用 OTP SMS 入口配置自助密码重置](https://docs.microsoft.com/previous-versions/mim/hh824692(v=ws.10))
  - 使用自定义多重身份验证电话服务提供程序。 这同时适用于 MIM SSPR 和 PAM 方案，如本文中所述
 
 本文概述如何通过客户开发的 API 和集成 SDK，结合使用自定义多重身份验证提供程序和 MIM。  
@@ -32,7 +32,7 @@ MIM 客户有两个其他选项：
 要结合使用自定义多重身份验证提供程序 API 和 MIM，需要：
 
 - 适用于所有候选用户的电话号码
-- MIM 修补程序 [4.5.202.0](https://www.microsoft.com/download/details.aspx?id=57278) 或更高版本 - 请查阅[版本历史记录](reference/version-history.md)，了解相关公告
+- MIM 修补程序 4.5.202.0 或更高版本 - 请查阅[版本历史记录](reference/version-history.md)，了解相关公告
 - 针对 SSPR 或 PAM 配置的 MIM 服务
 
 ## <a name="approach-using-custom-multi-factor-authentication-code"></a>使用自定义多重身份验证代码的方法
@@ -41,7 +41,7 @@ MIM 客户有两个其他选项：
 
 下载并安装 MIM 修补程序 [4.5.202.0](https://www.microsoft.com/download/details.aspx?id=57278) 或更高版本。
 
-### <a name="step-2-create-a-dll-which-implements-the-iphoneserviceprovider-interface"></a>步骤 2：创建可实现 IPhoneServiceProvider 接口的 DLL
+### <a name="step-2-create-a-dll-which-implements-the-iphoneserviceprovider-interface"></a>步骤 2:创建可实现 IPhoneServiceProvider 接口的 DLL
 
 DLL 必须包括一个可实现以下三种方法的类：
 
@@ -156,6 +156,6 @@ namespace CustomPhoneGate
 
 ## <a name="next-steps"></a>后续步骤
 
-- [Azure 多重身份验证服务器入门](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-mfaserver-deploy)
+- [Azure 多重身份验证服务器入门](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-deploy)
 - [什么是 Azure 多重身份验证](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication)
 - [MIM 版本发布历史记录](./reference/version-history.md)

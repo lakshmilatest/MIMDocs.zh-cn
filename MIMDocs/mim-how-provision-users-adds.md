@@ -9,12 +9,12 @@ ms.date: 08/18/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: ''
-ms.openlocfilehash: 5e259df617c5a95fcd54f49c9cbb70f9cd0c36a4
-ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
+ms.openlocfilehash: 77f1eb5d8355472c7aee7bc9f389ca8b24ab76a9
+ms.sourcegitcommit: 1ca298d61f6020623f1936f86346b47ec5105d44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "64519962"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76256608"
 ---
 # <a name="how-do-i-provision-users-to-ad-ds"></a>如何将用户预配到 AD DS
 
@@ -27,7 +27,7 @@ ms.locfileid: "64519962"
 ## <a name="before-you-begin"></a>准备工作
 
 
-本部分将介绍此文档范围内的相关信息。 “如何操作”指南一般面向已基本熟悉通过 MIM 同步对象的流程（相关[入门指南](http://go.microsoft.com/FWLink/p/?LinkId=190486)中有介绍）的用户。
+本部分将介绍此文档范围内的相关信息。 “如何操作”指南一般面向已基本熟悉通过 MIM 同步对象的流程（相关[入门指南](https://go.microsoft.com/FWLink/p/?LinkId=190486)中有介绍）的用户。
 
 ### <a name="audience"></a>受众
 
@@ -39,9 +39,9 @@ ms.locfileid: "64519962"
 
 本文档假定你有权访问正在运行的 MIM 实例并具有以下文档中所述的配置简单同步方案的经验：
 
--   [Introduction to Inbound Synchronization](http://go.microsoft.com/FWLink/p/?LinkId=189652)（入站同步简介）
+-   [Introduction to Inbound Synchronization](https://go.microsoft.com/FWLink/p/?LinkId=189652)（入站同步简介）
 
--   [Introduction to Outbound Synchronization](http://go.microsoft.com/FWLink/p/?LinkId=189653)（出站同步简介）
+-   [Introduction to Outbound Synchronization](https://go.microsoft.com/FWLink/p/?LinkId=189653)（出站同步简介）
 
 本文档内容的范围限于充当这些介绍性文档的扩展。
 
@@ -62,7 +62,7 @@ ms.locfileid: "64519962"
 ### <a name="getting-support"></a>获取支持
 
 
-如果存在与本文档内容相关的问题，或者需要提供想要讨论的一般性反馈，请在 [Forefront Identity Manager 2010 论坛](http://go.microsoft.com/FWLink/p/?LinkId=189654)中发布消息。
+如果存在与本文档内容相关的问题，或者需要提供想要讨论的一般性反馈，请在 [Forefront Identity Manager 2010 论坛](https://go.microsoft.com/FWLink/p/?LinkId=189654)中发布消息。
 
 ## <a name="scenario-description"></a>方案说明
 
@@ -88,7 +88,7 @@ ms.locfileid: "64519962"
 可在一台计算机上运行所有组件。
 
 > [!NOTE]
-> 有关设置 MIM 的详细信息，请参阅 [FIM 安装指南](http://go.microsoft.com/FWLink/p/?LinkId=165845)。
+> 有关设置 MIM 的详细信息，请参阅 [FIM 安装指南](https://go.microsoft.com/FWLink/p/?LinkId=165845)。
 
 ## <a name="scenario-components-list"></a>方案组件列表
 
@@ -124,11 +124,11 @@ ms.locfileid: "64519962"
 ### <a name="step-1-create-the-ou"></a>步骤 1：创建 OU
 
 
-需要 OU 作为预配示例用户的容器。 有关创建 OU 的详细信息，请参阅[新建组织单位](http://go.microsoft.com/FWLink/p/?LinkId=189655)。
+需要 OU 作为预配示例用户的容器。 有关创建 OU 的详细信息，请参阅[新建组织单位](https://go.microsoft.com/FWLink/p/?LinkId=189655)。
 
 在 AD DS 中创建名为 MIMObjects 的 OU。
 
-### <a name="step-2-create-the-active-directory-user-accounts"></a>步骤 2：创建 Active Directory 用户帐户
+### <a name="step-2-create-the-active-directory-user-accounts"></a>步骤 2:创建 Active Directory 用户帐户
 
 本指南中的方案需要 2 个 Active Directory 用户帐户：
 
@@ -136,7 +136,7 @@ ms.locfileid: "64519962"
 
 - FIMMA  - 被 FIM 服务管理代理使用。
 
-这两种情况都只需创建普通用户帐户。 本文档后面部分将介绍这两个帐户特定要求的详细信息。 有关创建用户的详细信息，请参阅[新建用户帐户](http://go.microsoft.com/FWLink/p/?LinkId=189656)。
+这两种情况都只需创建普通用户帐户。 本文档后面部分将介绍这两个帐户特定要求的详细信息。 有关创建用户的详细信息，请参阅[新建用户帐户](https://go.microsoft.com/FWLink/p/?LinkId=189656)。
 
 
 ## <a name="configuring-the-fim-synchronization-service"></a>配置 FIM 同步服务
@@ -154,7 +154,7 @@ ms.locfileid: "64519962"
 
 ### <a name="step-3-create-the-fabrikam-adma-management-agent"></a>步骤 3：创建 Fabrikam ADMA 管理代理
 
-配置用于 AD DS 的管理代理时，请指定与 AD DS 的数据交换中管理代理使用的帐户。 应使用普通用户帐户。 但若要从 AD DS 导入数据，该帐户必须有权轮询 DirSync 控件中的更改。 如果希望管理代理将数据导出到 AD DS，请授予帐户对目标 OU 的足够权限。 有关该主题的详细信息，请参阅[配置 ADMA 帐户](http://go.microsoft.com/FWLink/p/?LinkId=189657)。
+配置用于 AD DS 的管理代理时，请指定与 AD DS 的数据交换中管理代理使用的帐户。 应使用普通用户帐户。 但若要从 AD DS 导入数据，该帐户必须有权轮询 DirSync 控件中的更改。 如果希望管理代理将数据导出到 AD DS，请授予帐户对目标 OU 的足够权限。 有关该主题的详细信息，请参阅[配置 ADMA 帐户](https://go.microsoft.com/FWLink/p/?LinkId=189657)。
 
 若要在 AD DS 中创建用户，则必须流出对象的 DN。 除此之外，最好流出名字、姓氏和显示名称，确保对象可发现。
 
@@ -163,7 +163,7 @@ ms.locfileid: "64519962"
 > [!Note]
 > 请确保指定为 unicodePwd 的值符合目标 AD DS 的密码策略。
 
-为 AD DS 帐户设置密码时，还需要创建一个帐户作为已启用的帐户。 可通过设置 userAccountControl 属性来实现此目的。 有关 userAccountControl 属性的详细信息，请参阅[使用 FIM 启用或禁用 Active Directory 中的帐户](http://go.microsoft.com/FWLink/p/?LinkId=189658)。
+为 AD DS 帐户设置密码时，还需要创建一个帐户作为已启用的帐户。 可通过设置 userAccountControl 属性来实现此目的。 有关 userAccountControl 属性的详细信息，请参阅[使用 FIM 启用或禁用 Active Directory 中的帐户](https://go.microsoft.com/FWLink/p/?LinkId=189658)。
 
 下表列出了需要配置的特定于方案的最重要设置。
 
@@ -187,14 +187,14 @@ ms.locfileid: "64519962"
 
 配置 FIM 服务管理代理时，请指定与 FIM 服务的数据交换中管理代理使用的帐户。
 
-应使用普通用户帐户。 该帐户必须与 MIM 安装过程中指定的帐户相同。 对于可用于确定安装期间指定的 FIMMA 帐户名称以及测试此帐户是否仍有效的脚本，请使用 Windows PowerShell 完成 [FIM MA 帐户配置快速测试](http://go.microsoft.com/FWLink/p/?LinkId=189659)。
+应使用普通用户帐户。 该帐户必须与 MIM 安装过程中指定的帐户相同。 对于可用于确定安装期间指定的 FIMMA 帐户名称以及测试此帐户是否仍有效的脚本，请使用 Windows PowerShell 完成 [FIM MA 帐户配置快速测试](https://go.microsoft.com/FWLink/p/?LinkId=189659)。
 
 下表列出了需要配置的特定于方案的最重要设置。 根据下表中提供的信息创建管理代理。  
 
 | 管理代理设计器页面 | 配置 |
 |------------|------------------------------------|
 | 创建管理代理 | 1.**管理代理用于：** FIM 服务管理代理 <br/> 2.名称：  Fabrikam FIMMA |
-| 连接到数据库     | 使用以下设置： <br/> · 服务器：  localhost <br/> &#183; **数据库：** FIMService <br/> &#183; FIM 服务基址：  http://localhost:5725 <br/> <br/> 提供为此管理代理创建的帐户相关信息 |
+| 连接到数据库     | 使用以下设置： <br/> · 服务器：  localhost <br/> &#183; **数据库：** FIMService <br/> &#183; **FIM 服务基址：** http://localhost:5725 <br/> <br/> 提供为此管理代理创建的帐户相关信息 |
 | 选择对象类型                                     | 除了已选择的对象类型，请选择“人员”  。   |
 | 配置对象类型映射                          | 除了已存在的对象类型映射，请将“数据源对象类型”  人员的映射添加到“Metaverse”  对象类型人员。 |
 | 配置属性流                                | 除了已存在的属性流映射，请添加以下属性流映射： <br/><br/> ![属性流](media/how-provision-users-adds/image018.jpg) |
@@ -231,7 +231,7 @@ ms.locfileid: "64519962"
 > 
 > 
 > [!Important]
->  验证环境中是否启用了预配。 可通过运行脚本实现此目的，请参阅“使用 Windows PowerShell 启用预配 (http://go.microsoft.com/FWLink/p/?LinkId=189660) 。
+>  验证环境中是否启用了预配。 可通过运行脚本实现此目的，请参阅“使用 Windows PowerShell 启用预配 (https://go.microsoft.com/FWLink/p/?LinkId=189660) 。
 
 
 ## <a name="configuring-the-fim-service"></a>配置 FIM 服务
@@ -243,7 +243,7 @@ ms.locfileid: "64519962"
 
 此预配策略的目的是将组纳入 AD 用户出站同步规则的作用域。 通过将资源纳入同步规则的作用域，同步引擎能够根据你的配置将资源预配到 AD DS。
 
-若要配置 FIM 服务，可在 Windows Internet Explorer® 中导航到 http://localhost/identitymanagement 。 在 MIM 门户页上，若要创建预配策略，请从“管理”部分转到相关页面。 若要验证配置，应运行[使用 Windows PowerShell 记录预配策略配置](http://go.microsoft.com/FWLink/p/?LinkId=189661)中的脚本。
+若要配置 FIM 服务，可在 Windows Internet Explorer® 中导航到 http://localhost/identitymanagement 。 在 MIM 门户页上，若要创建预配策略，请从“管理”部分转到相关页面。 若要验证配置，应运行[使用 Windows PowerShell 记录预配策略配置](https://go.microsoft.com/FWLink/p/?LinkId=189661)中的脚本。
 
 ### <a name="step-6-create-the-synchronization-rule"></a>步骤 6：创建同步规则
 
@@ -252,7 +252,7 @@ ms.locfileid: "64519962"
 | 同步规则配置                                                                         |                                                                             |                                                           
 |------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------|
 | 名称                                                                                                       | Active Directory 用户出站同步规则                         |                                                          
-| 描述                                                                                               |                                                                             |                                                           
+| 说明                                                                                               |                                                                             |                                                           
 | 优先级                                                                                                | 2                                                                           |                                                           
 | 数据流方向   | 出站             |       
 | 依赖关系       |         |                                         
@@ -303,7 +303,7 @@ AD 预配工作流的目的是将 Fabrikam 预配同步规则添加到资源。 
 | 工作流配置               |                                                                 |
 |--------------------------------------|-----------------------------------------------------------------|
 | 名称                                 | Active Directory 用户预配工作流                     |
-| 描述                          |                                                                 |
+| 说明                          |                                                                 |
 | 工作流类型                        | 操作                                                          |
 | 策略更新时运行                 | False                                                           |
 
@@ -322,7 +322,7 @@ AD 预配工作流的目的是将 Fabrikam 预配同步规则添加到资源。 
 | MPR 配置                    |                                                             |
 |--------------------------------------|-------------------------------------------------------------|
 | 名称                                 | AD 用户预配管理策略规则                 |
-| 描述                          |                                                             |
+| 说明                          |                                                             |
 | 类型                                 | 集转换                                              |
 | 授予权限                   | False                                                       |
 | 已禁用                             | False                                                       |
@@ -459,7 +459,7 @@ AD 预配工作流的目的是将 Fabrikam 预配同步规则添加到资源。 
 | Fabrikam FIMMA   | 1.导出 <br/> 2.增量导入       |
 
 
-从 FIM 服务数据库导入后，Britta Simon 和将 Britta 关联到 AD 用户出站同步规则的 ExpectedRuleEntry 对象将被暂存在 Fabrikam FIMMA 连接器空间中。 在连接器空间查看 Britta 的属性时，在 FIM 门户中配置的特性值旁还可找到对 Expected Rule Entry 对象的有效引用。 以下屏幕截图演示了此示例。
+从 FIM 服务数据库导入后，Britta Simon 和将 Britta 关联到 AD 用户出站同步规则的 ExpectedRuleEntry 对象将被暂存在 Fabrikam FIMMA 连接器空间中。 在连接器空间查看 Britta 的属性时，在 FIM 门户中配置的特性值旁还可找到对 Expected Rule Entry 对象的有效引用。 以下屏幕截图显示了相关示例。
 
 ![连接器空间对象属性](media/how-provision-users-adds/image025.jpg)
 
@@ -481,7 +481,7 @@ Fabrikam FIMMA 上运行增量同步旨在执行以下几种操作：
 
 ![已应用的同步规则](media/how-provision-users-adds/image028.jpg)
 
-由于新对象已预配到 ADMA 连接器空间，因此该管理代理上应有一个 Add 挂起导出。 通过使用用于实现此目的的脚本，可查看针对 Fabrikam ADMA 报告的 Add 挂起导出。 若要使用脚本，请参阅[使用 Windows PowerShell 显示管理代理的导出状态](http://go.microsoft.com/FWLink/p/?LinkId=189664)。
+由于新对象已预配到 ADMA 连接器空间，因此该管理代理上应有一个 Add 挂起导出。 
 
 ![管理代理的挂起导出](media/how-provision-users-adds/image029.jpg)
 
@@ -507,10 +507,10 @@ Fabrikam FIMMA 上运行增量同步旨在执行以下几种操作：
 测试配置时，很有可能会删除和重新创建测试对象。 对于包含
 
 ExpectedRulesList 属性的对象，这可能会生成孤立的 ERE 对象。
-有关如何从测试环境中移除这些对象的说明，请参阅[从环境中移除孤立的 ExpectedRuleEntry 对象的方法](http://go.microsoft.com/FWLink/p/?LinkId=189667)。
+有关如何从测试环境中移除这些对象的说明，请参阅[从环境中移除孤立的 ExpectedRuleEntry 对象的方法](https://go.microsoft.com/FWLink/p/?LinkId=189667)。
 
 在以 AD DS 为同步目标的典型同步方案中，MIM 并未对对象的所有属性授权。 例如，使用 FIM 管理 AD DS 中的用户对象时，AD DS 管理代理至少需要提供域和 objectSID 属性。
-必须提供帐户名称、域和 objectSID 属性，用户才能登录到 FIM 门户。 若要从 AD DS 填充这些属性，则 AD DS 连接器空间必须提供一个附加入站同步规则。 在管理具有多来源属性值的对象时，请确保已正确配置属性流优先顺序。 如果未正确配置属性流优先顺序，则同步引擎将阻止填充属性值。 有关属性流优先顺序的详细信息，请参阅 [About Attribute Flow Precedence](http://go.microsoft.com/FWLink/p/?LinkId=189675)（属性流优先顺序介绍）一文。
+必须提供帐户名称、域和 objectSID 属性，用户才能登录到 FIM 门户。 若要从 AD DS 填充这些属性，则 AD DS 连接器空间必须提供一个附加入站同步规则。 在管理具有多来源属性值的对象时，请确保已正确配置属性流优先顺序。 如果未正确配置属性流优先顺序，则同步引擎将阻止填充属性值。 有关属性流优先顺序的详细信息，请参阅 [About Attribute Flow Precedence](https://go.microsoft.com/FWLink/p/?LinkId=189675)（属性流优先顺序介绍）一文。
 
 <a name="see-also"></a>另请参阅
 =========
@@ -518,20 +518,18 @@ ExpectedRulesList 属性的对象，这可能会生成孤立的 ERE 对象。
 <a name="other-resources"></a>其他資源
 ---------------
 
-[使用 FIM 启用或禁用 Active Directory 中的帐户](http://go.microsoft.com/FWLink/p/?LinkId=189670)
+[使用 FIM 启用或禁用 Active Directory 中的帐户](https://go.microsoft.com/FWLink/p/?LinkId=189670)
 
-[关于引用属性](http://go.microsoft.com/FWLink/p/?LinkId=189671)
+[了解引用属性处理](https://go.microsoft.com/FWLink/p/?LinkId=189671)
 
-[如何管理我的 FIM MA 帐户](http://go.microsoft.com/FWLink/p/?LinkId=189672)
+[如何管理 FIM MA 帐户](https://go.microsoft.com/FWLink/p/?LinkId=189672)
 
-[检测非授权帐户 - 第 1 部分：构想](http://go.microsoft.com/FWLink/p/?LinkId=189673)
+[检测非授权帐户 - 第 1 部分：构想](https://go.microsoft.com/FWLink/p/?LinkId=189673)
 
-[廉价版连接器检测机制](http://go.microsoft.com/FWLink/p/?LinkId=189674)
+[如何检测连接器](https://go.microsoft.com/FWLink/p/?LinkId=189674)
 
-[配置 ADMA 帐户](http://go.microsoft.com/FWLink/p/?LinkId=189657)
+[如何配置 ADMA 帐户](https://go.microsoft.com/FWLink/p/?LinkId=189657)
 
-[从环境中移除孤立的 ExpectedRuleEntry 对象的方法](http://go.microsoft.com/FWLink/p/?LinkId=189667)
+[About Attribute Flow Precedence](https://go.microsoft.com/FWLink/p/?LinkId=189675)（属性流优先顺序介绍）
 
-[About Attribute Flow Precedence](http://go.microsoft.com/FWLink/p/?LinkId=189675)（属性流优先顺序介绍）
-
-[关于导出](http://go.microsoft.com/FWLink/p/?LinkId=189676)
+[了解导出](https://social.technet.microsoft.com/wiki/contents/articles/1861.understanding-exports-in-ilm-2007.aspx)
